@@ -32,6 +32,20 @@ jobs:
         run: "yarn --immutable"
       - name: "build packages"
         run: "yarn workspaces foreach --all --exclude . run build"
+      - name: "Login"
+        run: |
+          git config user.email "team-aap@nav.no"
+          git config user.name "Team Aap"
+          git remote set-url origin https://github-actions[bot]:$GITHUB_TOKEN@github.com/navikt/aap-backend-typescript-types.git
+          git fetch origin
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - name: "Create a .npmrc file for the github package repository"
+        uses: "FerLuisxd/create-npmrc@3"
+        with:
+          org_name: "navikt"
+        env:
+          AUTH_TOKEN: "${{secrets.GITHUB_TOKEN}}"
       - name: Create release Pull Request or publish to NPM
         id: changesets
         uses: changesets/action@v1
