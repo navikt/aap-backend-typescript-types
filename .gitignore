@@ -1,0 +1,8 @@
+.idea
+
+/packages/aap-postmottak-typescript-types/node_modules
+/packages/aap-postmottak-typescript-types/dist
+/packages/aap-postmottak-typescript-types/.yarn
+
+/node_modules
+.yarn

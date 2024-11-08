@@ -1,0 +1,43 @@
+name: "Build and publish"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+    paths-ignore:
+      - "**/*.md"
+      - "**/*.yml"
+jobs:
+  "buildAndPublish":
+    runs-on: "ubuntu-latest"
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
+      SKIP_YARN_COREPACK_CHECK: true
+    permissions:
+      contents: write
+      id-token: write
+      packages: write
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: "actions/setup-node@v4"
+        with:
+          node-version: "22"
+          registry-url: "https://npm.pkg.github.com"
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Bygg
+        run: corepack enable
+      - name: "install dependencies"
+        run: "yarn --immutable"
+      - name: "build packages"
+        run: "yarn workspaces foreach --all --exclude . run build"
+      - name: Create release Pull Request or publish to NPM
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: yarn changeset version
+          publish: yarn changeset publish
+          createGithubReleases: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}

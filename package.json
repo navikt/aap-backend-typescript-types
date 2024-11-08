@@ -1,0 +1,28 @@
+{
+  "name": "aap-backend-typescript-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn workspaces foreach --all --exclude . run test",
+    "build": "yarn workspaces foreach --all run build",
+    "changeset": "changeset"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navikt/aap-backend-typescript-types.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navikt/aap-backend-typescript-types/issues"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.8"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.5.0"
+}
