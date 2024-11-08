@@ -1,7 +1,7 @@
 {
   "name": "@navikt/aap-postmottak-typescript-types",
   "author": "Nav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "build": "yarn run clean && tsup",
