@@ -1,4 +1,4 @@
-name: Merge Dependabot pull requester
+name: Merge pull request fra changesets/action
 on:
   workflow_dispatch:
   pull_request:
