@@ -1,0 +1,46 @@
+name: Lag typescript typer fra json og publiser
+
+on:
+  repository_dispatch:
+    types: [ trigger-workflow ]
+    inputs:
+      schema-json-string:
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+            node-version: 22
+            registry-url: https://npm.pkg.github.com
+            cache: yarn
+      - name: Skriv json string til fil
+        run: |
+          echo ${{ inputs.schema-json-string }} > ./packages/aap-behandlingsflyt-typescript-types/openapi.json
+          cat ./packages/aap-behandlingsflyt-typescript-types/openapi.json
+      -   name: generer schema fra json
+          run: |
+              yarn install --immutable
+              yarn openapi-typescript ./packages/aap-behandlingsflyt-typescript-types/openapi.json -o ./packages/aap-behandlingsflyt-typescript-types/schema.d.ts
+#            -   name: TODO: sammenlign schemas og se om det må publiseres ny verson
+#                run: hei
+      -   name: lag changeset-fil
+          run: |
+              echo "---\n '@navikt/aap-behandlingsflyt-typescript-types': patch\n---\n \nny versjon av typescript typer" > .changeset/test.md
+      - name: changeset version, commit og publish
+        run: |
+          yarn changeset version
+          git config user.email "team-aap@nav.no"
+          git config user.name "Team Aap"
+          git add ./packages/
+          git commit -m ":label: genererte backendtyper"
+          yarn changeset publish
+          git push origin --tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
