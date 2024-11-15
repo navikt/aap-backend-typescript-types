@@ -53,7 +53,7 @@ jobs:
       - name: lag changeset-fil
         run: |
           echo '---' > .changeset/test.md
-          echo '"@navikt\/aap-${{ inputs.appNavn }}-typescript-types": patch' >> .changeset/test.md
+          echo '"@navikt/aap-${{ inputs.appNavn }}-typescript-types": patch' >> .changeset/test.md
           echo '---' >> .changeset/test.md
           echo '' >> .changeset/test.md
           echo 'ny versjon av typescript typer' >> .changeset/test.md
@@ -66,7 +66,7 @@ jobs:
           git config user.name "Team Aap"
           git add ./packages/
           git commit -m ":label: genererte backendtyper"
-          yarn changeset publish
+          yarn changeset publish --otp ${{ secrets.GITHUB_TOKEN }}
           git push origin --tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
