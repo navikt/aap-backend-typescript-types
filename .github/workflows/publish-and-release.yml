@@ -48,8 +48,8 @@ jobs:
       #                run: hei
       - name: lag changeset-fil
         run: |
-          echo '---' >> .changeset/test.md
-          echo '@navikt/aap-${{ inputs.appNavn }}-typescript-types': patch' >> .changeset/test.md
+          echo '---' > .changeset/test.md
+          echo '"@navikt/aap-${{ inputs.appNavn }}-typescript-types": patch' >> .changeset/test.md
           echo '---' >> .changeset/test.md
           echo '' >> .changeset/test.md
           echo 'ny versjon av typescript typer' >> .changeset/test.md
