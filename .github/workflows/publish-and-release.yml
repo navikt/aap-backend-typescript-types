@@ -1,8 +1,7 @@
 name: Lag typescript typer fra json og publiser
 
 on:
-  repository_dispatch:
-    types: [ trigger-workflow ]
+  workflow_dispatch:
     inputs:
       schema-json-string:
         required: true
