@@ -59,15 +59,23 @@ jobs:
           echo 'ny versjon av typescript typer' >> .changeset/test.md
       - name: output changeset
         run: cat .changeset/test.md
-      - name: changeset version, commit og publish
+      - name: changeset version og commit
         run: |
           yarn changeset version
           git config user.email "team-aap@nav.no"
           git config user.name "Team Aap"
           git add ./packages/
           git commit -m ":label: genererte backendtyper"
-          yarn changeset publish --otp ${{ secrets.GITHUB_TOKEN }}
-          git push origin --tags
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish ublish to NPM
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: yarn changeset publish
+          createGithubReleases: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
