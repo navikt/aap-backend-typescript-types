@@ -16,6 +16,10 @@ jobs:
     env:
       NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
       SKIP_YARN_COREPACK_CHECK: true
+    permissions:
+      contents: write
+      id-token: write
+      packages: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -49,10 +53,12 @@ jobs:
       - name: lag changeset-fil
         run: |
           echo '---' > .changeset/test.md
-          echo '"@navikt/aap-${{ inputs.appNavn }}-typescript-types": patch' >> .changeset/test.md
+          echo '"@navikt\/aap-${{ inputs.appNavn }}-typescript-types": patch' >> .changeset/test.md
           echo '---' >> .changeset/test.md
           echo '' >> .changeset/test.md
           echo 'ny versjon av typescript typer' >> .changeset/test.md
+      - name: output changeset
+        run: cat .changeset/test.md
       - name: changeset version, commit og publish
         run: |
           yarn changeset version
