@@ -3,7 +3,10 @@ name: Lag typescript typer fra json og publiser
 on:
   workflow_dispatch:
     inputs:
-      schema-json-string:
+      artifactId:
+        required: true
+        type: string
+      appNavn:
         required: true
         type: string
 
@@ -15,22 +18,22 @@ jobs:
         uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-            node-version: 22
-            registry-url: https://npm.pkg.github.com
-            cache: yarn
+          node-version: 22
+          registry-url: https://npm.pkg.github.com
+          cache: yarn
       - name: Skriv json string til fil
         run: |
-          echo ${{ inputs.schema-json-string }} > ./packages/aap-behandlingsflyt-typescript-types/openapi.json
+          echo ${{ inputs.artifactId }} > ./packages/aap-behandlingsflyt-typescript-types/openapi.json
           cat ./packages/aap-behandlingsflyt-typescript-types/openapi.json
-      -   name: generer schema fra json
-          run: |
-              yarn install --immutable
-              yarn openapi-typescript ./packages/aap-behandlingsflyt-typescript-types/openapi.json -o ./packages/aap-behandlingsflyt-typescript-types/schema.d.ts
-#            -   name: TODO: sammenlign schemas og se om det må publiseres ny verson
-#                run: hei
-      -   name: lag changeset-fil
-          run: |
-              echo "---\n '@navikt/aap-behandlingsflyt-typescript-types': patch\n---\n \nny versjon av typescript typer" > .changeset/test.md
+      - name: generer schema fra json
+        run: |
+          yarn install --immutable
+          yarn openapi-typescript ./packages/aap-behandlingsflyt-typescript-types/openapi.json -o ./packages/aap-behandlingsflyt-typescript-types/schema.d.ts
+      #            -   name: TODO: sammenlign schemas og se om det må publiseres ny verson
+      #                run: hei
+      - name: lag changeset-fil
+        run: |
+          echo "---\n '@navikt/aap-behandlingsflyt-typescript-types': patch\n---\n \nny versjon av typescript typer" > .changeset/test.md
       - name: changeset version, commit og publish
         run: |
           yarn changeset version
