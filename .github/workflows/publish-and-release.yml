@@ -40,10 +40,6 @@ jobs:
       - name: Unzip artifact
         run: |
           unzip -o artifact.zip -d ./packages/aap-${{ inputs.appNavn }}-typescript-types
-      - name: Skriv json string til fil
-        run: |
-          echo ${{ inputs.artifactId }} > ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json
-          cat ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json
       - name: generer schema fra json
         run: |
           yarn install --immutable
