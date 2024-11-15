@@ -48,7 +48,11 @@ jobs:
       #                run: hei
       - name: lag changeset-fil
         run: |
-          echo "---\n '@navikt/aap-${{ inputs.appNavn }}-typescript-types': patch\n---\n \nny versjon av typescript typer" > .changeset/test.md
+          echo '---' >> .changeset/test.md
+          echo '@navikt/aap-${{ inputs.appNavn }}-typescript-types': patch' >> .changeset/test.md
+          echo '---' >> .changeset/test.md
+          echo '' >> .changeset/test.md
+          echo 'ny versjon av typescript typer' >> .changeset/test.md
       - name: changeset version, commit og publish
         run: |
           yarn changeset version
