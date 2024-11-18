@@ -2274,6 +2274,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
+        /**
+         * Hente alle underveis-vurderinger på en behandling
+         * @description * periode: Perioden denne vurdering gjelder for
+         *     * meldePeriode: Meldeperioden denne vurderingen faller inn i
+         *     * trekk: Total trekk for hele perioden
+         */
         get: {
             parameters: {
                 query?: never;
@@ -2321,7 +2327,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             tidspunkt: string;
         };
@@ -2562,12 +2568,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             opprettet: string;
             /** @enum {string} */
@@ -2637,13 +2643,25 @@ export interface components {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.underveis.flate.GraderingDto": {
-            /** Format: int32 */
+            /**
+             * Format: int32
+             * @description Hvor mye man har jobbet i en meldeperiode i prosent
+             */
             andelArbeid: number;
-            /** Format: int32 */
+            /**
+             * Format: int32
+             * @description Vurdert arbeidsevne (i prosent) av veileder
+             */
             fastsattArbeidsevne: number;
-            /** Format: int32 */
+            /**
+             * Format: int32
+             * @description Gradering (i prosent) før vurdering av grenseverdi
+             */
             gradering: number;
-            /** Format: int32 */
+            /**
+             * Format: int32
+             * @description Maksverdi for endelig gradering (i prosent)
+             */
             grenseverdi: number;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.underveis.flate.UnderveisperiodeDto": {
@@ -2696,7 +2714,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             opprettet: string;
             personId: string;
@@ -2760,7 +2778,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             vurderingsTidspunkt: string;
         };
@@ -2940,7 +2958,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             vurderingsTidspunkt: string;
         };
@@ -3083,7 +3101,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             opprettet: string;
             /** Format: uuid */
@@ -3102,7 +3120,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             tidsstempel: string;
         };
@@ -3245,7 +3263,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3258,7 +3276,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             opprettet: string;
             /** Format: uuid */
@@ -3286,7 +3304,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3297,7 +3315,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3386,7 +3404,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-11-18T13:50:59.098017624
+             * @example 2024-11-18T14:51:38.017589252
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
