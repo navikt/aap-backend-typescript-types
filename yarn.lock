@@ -331,6 +331,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@navikt/aap-brev-typescript-types@workspace:packages/aap-brev-typescript-types":
+  version: 0.0.0-use.local
+  resolution: "@navikt/aap-brev-typescript-types@workspace:packages/aap-brev-typescript-types"
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
