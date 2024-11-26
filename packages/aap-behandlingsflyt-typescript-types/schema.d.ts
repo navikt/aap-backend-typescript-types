@@ -2047,7 +2047,7 @@ export interface paths {
                 header?: never;
                 path: {
                     /** @description brevbestillingReferanse */
-                    referanse: string;
+                    brevbestillingReferanse: string;
                 };
                 cookie?: never;
             };
@@ -2365,7 +2365,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             tidspunkt: string;
         };
@@ -2606,12 +2606,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             opprettet: string;
             /** @enum {string} */
@@ -2625,7 +2625,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.brev.bestilling.BrevbestillingReferanse": {
             /** Format: uuid */
-            referanse: string;
+            brevbestillingReferanse: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.BestillLegeerkl\u00E6ringDto": {
             behandlerNavn: string;
@@ -2752,7 +2752,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             opprettet: string;
             personId: string;
@@ -2816,7 +2816,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             vurderingsTidspunkt: string;
         };
@@ -2996,7 +2996,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             vurderingsTidspunkt: string;
         };
@@ -3139,7 +3139,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             opprettet: string;
             /** Format: uuid */
@@ -3158,7 +3158,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             tidsstempel: string;
         };
@@ -3301,7 +3301,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3314,7 +3314,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             opprettet: string;
             /** Format: uuid */
@@ -3342,7 +3342,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3353,7 +3353,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3442,7 +3442,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-11-26T07:47:07.733127475
+             * @example 2024-11-26T08:25:13.35812944
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
