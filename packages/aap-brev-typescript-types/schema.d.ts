@@ -178,7 +178,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.brev.api.Journalf\u00F8rBrevRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevRequest"];
                 };
             };
             responses: {
@@ -188,7 +188,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.brev.api.JournalpostIdResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.JournalpostIdResponse"];
                     };
                 };
             };
@@ -419,60 +419,6 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "no.nav.aap.brev.api.Journalf\u00F8rBrevRequest": {
-            brev: components["schemas"]["no.nav.aap.brev.bestilling.PdfBrev"];
-            journalpostInfo: components["schemas"]["no.nav.aap.brev.journalf\u00F8ring.JournalpostInfo"];
-        };
-        "no.nav.aap.brev.api.JournalpostIdResponse": {
-            journalpostId: components["schemas"]["no.nav.aap.brev.journalf\u00F8ring.JournalpostId"];
-        };
-        "no.nav.aap.brev.bestilling.Blokk": {
-            innhold: components["schemas"]["no.nav.aap.brev.bestilling.FormattertTekst"][];
-            /** @enum {string} */
-            type: "AVSNITT" | "LISTE";
-        };
-        "no.nav.aap.brev.bestilling.FormattertTekst": {
-            formattering: ("UNDERSTREK" | "KURSIV" | "FET")[];
-            tekst: string;
-        };
-        "no.nav.aap.brev.bestilling.Innhold": {
-            blokker: components["schemas"]["no.nav.aap.brev.bestilling.Blokk"][];
-            overskrift?: string | null;
-        };
-        "no.nav.aap.brev.bestilling.Mottaker": {
-            ident: string;
-            navn: string;
-        };
-        "no.nav.aap.brev.bestilling.PdfBrev": {
-            /**
-             * Format: date
-             * @example 2024-11-27
-             */
-            dato: string;
-            mottaker: components["schemas"]["no.nav.aap.brev.bestilling.Mottaker"];
-            overskrift?: string | null;
-            saksnummer: components["schemas"]["no.nav.aap.brev.bestilling.Saksnummer"];
-            tekstbolker: components["schemas"]["no.nav.aap.brev.bestilling.Tekstbolk"][];
-        };
-        "no.nav.aap.brev.bestilling.Saksnummer": {
-            nummer: string;
-        };
-        "no.nav.aap.brev.bestilling.Tekstbolk": {
-            innhold: components["schemas"]["no.nav.aap.brev.bestilling.Innhold"][];
-            overskrift?: string | null;
-        };
-        "no.nav.aap.brev.journalf\u00F8ring.JournalpostId": {
-            id: string;
-        };
-        "no.nav.aap.brev.journalf\u00F8ring.JournalpostInfo": {
-            brevkode: string;
-            /** Format: uuid */
-            eksternReferanseId: string;
-            fnr: string;
-            navn: string;
-            saksnummer: components["schemas"]["no.nav.aap.brev.bestilling.Saksnummer"];
-            tittel: string;
-        };
         "no.nav.aap.brev.kontrakt.BestillBrevRequest": {
             /** Format: uuid */
             behandlingReferanse: string;
@@ -522,12 +468,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG";
             /**
              * Format: date-time
-             * @example 2024-11-27T11:39:16.939575043
+             * @example 2024-11-27T11:53:20.077995011
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-11-27T11:39:16.939575043
+             * @example 2024-11-27T11:53:20.077995011
              */
             opprettet: string;
             /** Format: uuid */
@@ -547,6 +493,51 @@ export interface components {
             /** Format: uuid */
             id: string;
             kanRedigeres: boolean;
+            overskrift?: string | null;
+        };
+        "no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevRequest": {
+            brev: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev"];
+            brevkode: string;
+            /** Format: uuid */
+            eksternReferanseId: string;
+            fnr: string;
+            navn: string;
+            saksnummer: string;
+            tittel: string;
+        };
+        "no.nav.aap.brev.kontrakt.JournalpostIdResponse": {
+            journalpostId: string;
+        };
+        "no.nav.aap.brev.kontrakt.PdfBrev": {
+            /**
+             * Format: date
+             * @example 2024-11-27
+             */
+            dato: string;
+            mottaker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Mottaker"];
+            overskrift?: string | null;
+            saksnummer: string;
+            tekstbolker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Tekstbolk"][];
+        };
+        "no.nav.aap.brev.kontrakt.PdfBrev.Blokk": {
+            innhold: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.FormattertTekst"][];
+            /** @enum {string} */
+            type: "AVSNITT" | "LISTE";
+        };
+        "no.nav.aap.brev.kontrakt.PdfBrev.FormattertTekst": {
+            formattering: ("UNDERSTREK" | "KURSIV" | "FET")[];
+            tekst: string;
+        };
+        "no.nav.aap.brev.kontrakt.PdfBrev.Innhold": {
+            blokker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Blokk"][];
+            overskrift?: string | null;
+        };
+        "no.nav.aap.brev.kontrakt.PdfBrev.Mottaker": {
+            ident: string;
+            navn: string;
+        };
+        "no.nav.aap.brev.kontrakt.PdfBrev.Tekstbolk": {
+            innhold: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Innhold"][];
             overskrift?: string | null;
         };
         "no.nav.aap.brev.kontrakt.Tekstbolk": {
@@ -569,7 +560,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-11-27T11:39:16.939575043
+             * @example 2024-11-27T11:53:20.077995011
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
