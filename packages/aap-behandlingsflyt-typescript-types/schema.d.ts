@@ -2367,7 +2367,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             tidspunkt: string;
         };
@@ -2515,7 +2515,7 @@ export interface components {
              * @example 2024-12-02
              */
             "f\u00F8dselsdato": string;
-            ident: components["schemas"]["no.nav.aap.verdityper.sakogbehandling.Ident"];
+            ident: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.flate.BeregningDTO": {
             /** @enum {string} */
@@ -2608,12 +2608,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             opprettet: string;
             /** @enum {string} */
@@ -2736,7 +2736,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             opprettet: string;
             personId: string;
@@ -2771,7 +2771,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.register.barn.OppgitteBarn": {
             /** Format: int64 */
             id?: number | null;
-            identer: components["schemas"]["no.nav.aap.verdityper.sakogbehandling.Ident"][];
+            identer: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.MedlemskapUnntakGrunnlag": {
             unntak: components["schemas"]["no.nav.aap.komponenter.tidslinje.Segment<no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.Unntak>"][];
@@ -2800,7 +2800,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             vurderingsTidspunkt: string;
         };
@@ -2980,7 +2980,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             vurderingsTidspunkt: string;
         };
@@ -3123,7 +3123,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             opprettet: string;
             /** Format: uuid */
@@ -3143,7 +3143,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             tidsstempel: string;
         };
@@ -3301,11 +3301,15 @@ export interface components {
             type: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer": Record<string, never>;
+        "no.nav.aap.behandlingsflyt.sakogbehandling.Ident": {
+            aktivIdent: boolean;
+            identifikator: string;
+        };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.Dokument": {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3318,7 +3322,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             opprettet: string;
             /** Format: uuid */
@@ -3346,7 +3350,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3357,7 +3361,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3446,7 +3450,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-02T12:26:09.998908007
+             * @example 2024-12-02T12:29:23.298503569
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -3458,10 +3462,6 @@ export interface components {
             "s\u00F8ker": string[];
         };
         "no.nav.aap.verdityper.dokument.JournalpostId": {
-            identifikator: string;
-        };
-        "no.nav.aap.verdityper.sakogbehandling.Ident": {
-            aktivIdent: boolean;
             identifikator: string;
         };
     };
