@@ -1,6 +1,6 @@
 {
   "name": "@navikt/aap-behandlingsflyt-typescript-types",
-  "version": "0.0.94",
+  "version": "0.0.95",
   "author": "NAV",
   "license": "MIT",
   "publishConfig": {
