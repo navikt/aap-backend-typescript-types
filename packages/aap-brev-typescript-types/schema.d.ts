@@ -468,12 +468,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG";
             /**
              * Format: date-time
-             * @example 2024-11-29T10:55:31.584457916
+             * @example 2024-12-03T14:12:02.509375046
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-11-29T10:55:31.584457916
+             * @example 2024-12-03T14:12:02.509375046
              */
             opprettet: string;
             /** Format: uuid */
@@ -511,7 +511,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.PdfBrev": {
             /**
              * Format: date
-             * @example 2024-11-29
+             * @example 2024-12-03
              */
             dato: string;
             mottaker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Mottaker"];
@@ -560,7 +560,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-11-29T10:55:31.584457916
+             * @example 2024-12-03T14:12:02.509375046
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
