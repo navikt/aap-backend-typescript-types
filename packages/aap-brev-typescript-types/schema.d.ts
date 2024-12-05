@@ -188,7 +188,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.JournalpostIdResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevResponse"];
                     };
                 };
             };
@@ -468,12 +468,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG";
             /**
              * Format: date-time
-             * @example 2024-12-05T13:40:57.935964267
+             * @example 2024-12-05T14:07:19.958409827
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-05T13:40:57.935964267
+             * @example 2024-12-05T14:07:19.958409827
              */
             opprettet: string;
             /** Format: uuid */
@@ -505,8 +505,10 @@ export interface components {
             saksnummer: string;
             tittel: string;
         };
-        "no.nav.aap.brev.kontrakt.JournalpostIdResponse": {
+        "no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevResponse": {
+            dokumenter: string[];
             journalpostId: string;
+            journalpostferdigstilt: boolean;
         };
         "no.nav.aap.brev.kontrakt.PdfBrev": {
             /**
@@ -560,7 +562,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-05T13:40:57.935964267
+             * @example 2024-12-05T14:07:19.958409827
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
