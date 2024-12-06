@@ -1411,7 +1411,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.BeregningDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.BeregningDTO"];
                     };
                 };
             };
@@ -2286,7 +2286,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             tidspunkt: string;
         };
@@ -2436,53 +2436,53 @@ export interface components {
             "f\u00F8dselsdato": string;
             ident: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"];
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.BeregningDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.BeregningDTO": {
             /** @enum {string} */
             beregningstypeDTO: "STANDARD" | "UFØRE" | "YRKESSKADE" | "YRKESSKADE_UFØRE";
-            grunnlag11_19?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.Grunnlag11_19DTO"];
-            "grunnlagUf\u00F8re"?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.Uf\u00F8reGrunnlagDTO"];
-            grunnlagYrkesskade?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeGrunnlagDTO"];
-            "grunnlagYrkesskadeUf\u00F8re"?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeUf\u00F8reGrunnlagDTO"];
+            grunnlag11_19?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.Grunnlag11_19DTO"];
+            "grunnlagUf\u00F8re"?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reGrunnlagDTO"];
+            grunnlagYrkesskade?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeGrunnlagDTO"];
+            "grunnlagYrkesskadeUf\u00F8re"?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeUf\u00F8reGrunnlagDTO"];
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.Grunnlag11_19DTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.Grunnlag11_19DTO": {
             "gjennomsnittligInntektSiste3\u00E5r": number;
             grunnlag: number;
-            "inntektSiste\u00C5r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO"];
-            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO"][];
+            "inntektSiste\u00C5r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO"];
+            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO"][];
             "nedsattArbeidsevne\u00C5r": string;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO": {
             inntektIG: number;
             inntektIKroner: number;
             justertTilMaks6G: number;
             "\u00E5r": string;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.StandardBeregningDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.StandardBeregningDTO": {
             andelGangerInntekt: number;
             andelGangerInntektIG: number;
             inntektIG: number;
             /** Format: int32 */
             prosentVekting: number;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.StandardYrkesskadeDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.StandardYrkesskadeDTO": {
             andelGangerInntekt: number;
             andelGangerInntektIG: number;
             inntektIG: number;
             /** Format: int32 */
             prosentVekting: number;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.Uf\u00F8reGrunnlagDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reGrunnlagDTO": {
             "gjennomsnittligInntektSiste3\u00E5r": number;
             "gjennomsnittligInntektSiste3\u00E5rUf\u00F8r": number;
             grunnlag: number;
-            "inntektSiste\u00C5r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO"];
-            "inntektSiste\u00C5rUf\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.Uf\u00F8reInntektDTO"];
-            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO"][];
+            "inntektSiste\u00C5r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO"];
+            "inntektSiste\u00C5rUf\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reInntektDTO"];
+            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO"][];
             "nedsattArbeidsevne\u00C5r": string;
-            "uf\u00F8reInntekter": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.Uf\u00F8reInntektDTO"][];
+            "uf\u00F8reInntekter": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reInntektDTO"][];
             "ytterligereNedsattArbeidsevne\u00C5r": string;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.Uf\u00F8reInntektDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reInntektDTO": {
             inntektIG: number;
             inntektIKroner: number;
             "justertForUf\u00F8reGrad": number;
@@ -2492,19 +2492,19 @@ export interface components {
             "uf\u00F8reGrad": number;
             "\u00E5r": string;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeGrunnlagDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeGrunnlagDTO": {
             "gjennomsnittligInntektSiste3\u00E5r": number;
             grunnlag: number;
-            "inntektSiste\u00C5r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO"];
-            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.InntektDTO"][];
+            "inntektSiste\u00C5r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO"];
+            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.InntektDTO"][];
             "nedsattArbeidsevne\u00C5r": string;
-            standardBeregning: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.StandardBeregningDTO"];
-            standardYrkesskade: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.StandardYrkesskadeDTO"];
+            standardBeregning: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.StandardBeregningDTO"];
+            standardYrkesskade: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.StandardYrkesskadeDTO"];
             yrkesskadeGrunnlag: number;
             yrkesskadeTidspunkt: string;
-            yrkesskadeinntekt: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeInntektDTO"];
+            yrkesskadeinntekt: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeInntektDTO"];
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeInntektDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeInntektDTO": {
             andelGangerInntekt: number;
             andelGangerInntektIG: number;
             "antatt\u00C5rligInntektIGYrkesskadeTidspunktet": number;
@@ -2513,10 +2513,10 @@ export interface components {
             /** Format: int32 */
             prosentVekting: number;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeUf\u00F8reGrunnlagDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeUf\u00F8reGrunnlagDTO": {
             grunnlag: number;
-            "uf\u00F8reGrunnlag": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.Uf\u00F8reGrunnlagDTO"];
-            yrkesskadeGrunnlag: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.flate.YrkesskadeGrunnlagDTO"];
+            "uf\u00F8reGrunnlag": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reGrunnlagDTO"];
+            yrkesskadeGrunnlag: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.YrkesskadeGrunnlagDTO"];
         };
         "no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag": {
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
@@ -2527,12 +2527,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             opprettet: string;
             /** @enum {string} */
@@ -2656,7 +2656,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             opprettet: string;
             personId: string;
@@ -2720,7 +2720,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             vurderingsTidspunkt: string;
         };
@@ -2900,7 +2900,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             vurderingsTidspunkt: string;
         };
@@ -3044,7 +3044,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             opprettet: string;
             /** Format: uuid */
@@ -3064,7 +3064,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             tidsstempel: string;
         };
@@ -3241,7 +3241,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3254,7 +3254,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             opprettet: string;
             /** Format: uuid */
@@ -3282,7 +3282,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3293,7 +3293,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3382,7 +3382,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:35:04.35861055
+             * @example 2024-12-06T12:56:55.163477293
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
