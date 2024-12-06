@@ -427,6 +427,7 @@ export interface components {
             saksnummer: string;
             /** @enum {string} */
             sprak: "EN" | "NB" | "NN";
+            vedlegg: components["schemas"]["no.nav.aap.brev.kontrakt.Vedlegg"][];
         };
         "no.nav.aap.brev.kontrakt.BestillBrevResponse": {
             /** Format: uuid */
@@ -468,12 +469,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG";
             /**
              * Format: date-time
-             * @example 2024-12-06T12:25:58.326809005
+             * @example 2024-12-06T12:30:10.300830492
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:25:58.326809005
+             * @example 2024-12-06T12:30:10.300830492
              */
             opprettet: string;
             /** Format: uuid */
@@ -548,6 +549,10 @@ export interface components {
             innhold: components["schemas"]["no.nav.aap.brev.kontrakt.Innhold"][];
             overskrift?: string | null;
         };
+        "no.nav.aap.brev.kontrakt.Vedlegg": {
+            dokumentInfoId: string;
+            journalpostId: string;
+        };
         "no.nav.aap.motor.api.JobbInfoDto": {
             /** Format: int32 */
             "antallFeilendeFors\u00F8k": number;
@@ -562,7 +567,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:25:58.326809005
+             * @example 2024-12-06T12:30:10.300830492
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
