@@ -337,6 +337,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@navikt/aap-postmottak-typescript-types@workspace:packages/aap-postmottak-typescript-types":
+  version: 0.0.0-use.local
+  resolution: "@navikt/aap-postmottak-typescript-types@workspace:packages/aap-postmottak-typescript-types"
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
