@@ -160,7 +160,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/journalforbrev": {
+    "/api/dokumentinnhenting/journalfor-behandler-bestilling": {
         parameters: {
             query?: never;
             header?: never;
@@ -178,7 +178,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Journalf\u00F8rBehandlerBestillingRequest"];
                 };
             };
             responses: {
@@ -188,7 +188,46 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Journalf\u00F8rBehandlerBestillingResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/dokumentinnhenting/ekspeder-journalpost-behandler-bestilling": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
                     };
                 };
             };
@@ -469,12 +508,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG";
             /**
              * Format: date-time
-             * @example 2024-12-06T12:30:10.300830492
+             * @example 2024-12-06T12:48:36.981353428
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:30:10.300830492
+             * @example 2024-12-06T12:48:36.981353428
              */
             opprettet: string;
             /** Format: uuid */
@@ -483,6 +522,9 @@ export interface components {
             "spr\u00E5k": "EN" | "NB" | "NN";
             /** @enum {string} */
             status: "REGISTRERT" | "UNDER_ARBEID" | "FERDIGSTILT";
+        };
+        "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
+            journalpostId: string;
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             /** Format: uuid */
@@ -496,52 +538,26 @@ export interface components {
             kanRedigeres: boolean;
             overskrift?: string | null;
         };
-        "no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevRequest": {
-            brev: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev"];
+        "no.nav.aap.brev.kontrakt.Journalf\u00F8rBehandlerBestillingRequest": {
+            brevAvsnitt: string[];
             brevkode: string;
-            /** Format: uuid */
-            eksternReferanseId: string;
-            fnr: string;
-            navn: string;
-            saksnummer: string;
-            tittel: string;
-        };
-        "no.nav.aap.brev.kontrakt.Journalf\u00F8rBrevResponse": {
-            dokumenter: string[];
-            journalpostId: string;
-            journalpostferdigstilt: boolean;
-        };
-        "no.nav.aap.brev.kontrakt.PdfBrev": {
+            brukerFnr: string;
             /**
              * Format: date
              * @example 2024-12-06
              */
             dato: string;
-            mottaker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Mottaker"];
-            overskrift?: string | null;
+            /** Format: uuid */
+            eksternReferanseId: string;
+            mottakerHprnr: string;
+            mottakerNavn: string;
             saksnummer: string;
-            tekstbolker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Tekstbolk"][];
+            tittel: string;
         };
-        "no.nav.aap.brev.kontrakt.PdfBrev.Blokk": {
-            innhold: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.FormattertTekst"][];
-            /** @enum {string} */
-            type: "AVSNITT" | "LISTE";
-        };
-        "no.nav.aap.brev.kontrakt.PdfBrev.FormattertTekst": {
-            formattering: ("UNDERSTREK" | "KURSIV" | "FET")[];
-            tekst: string;
-        };
-        "no.nav.aap.brev.kontrakt.PdfBrev.Innhold": {
-            blokker: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Blokk"][];
-            overskrift?: string | null;
-        };
-        "no.nav.aap.brev.kontrakt.PdfBrev.Mottaker": {
-            ident: string;
-            navn: string;
-        };
-        "no.nav.aap.brev.kontrakt.PdfBrev.Tekstbolk": {
-            innhold: components["schemas"]["no.nav.aap.brev.kontrakt.PdfBrev.Innhold"][];
-            overskrift?: string | null;
+        "no.nav.aap.brev.kontrakt.Journalf\u00F8rBehandlerBestillingResponse": {
+            dokumenter: string[];
+            journalpostFerdigstilt: boolean;
+            journalpostId: string;
         };
         "no.nav.aap.brev.kontrakt.Tekstbolk": {
             /** Format: uuid */
@@ -567,7 +583,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-06T12:30:10.300830492
+             * @example 2024-12-06T12:48:36.981353428
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
