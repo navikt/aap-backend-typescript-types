@@ -9,6 +9,11 @@ on:
       appNavn:
         required: true
         type: string
+      with-enums:
+        required: false
+        type: boolean
+        default: false
+        description: enum flag in openapi-typescript command
 
 jobs:
   build:
@@ -41,9 +46,16 @@ jobs:
       - name: Unzip artifact
         run: |
           unzip -o artifact.zip -d ./packages/aap-${{ inputs.appNavn }}-typescript-types
-      - name: generer schema fra json
+      - name: install dependencies
         run: |
           yarn install --immutable
+      - name: generer schema fra json med enums
+        if: ${{ inputs.with-enums == true }}
+        run: |
+          yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.ts --enum
+      - name: generer schema fra json
+        if: ${{ inputs.with-enums != true }}
+        run: |
           yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.d.ts
       #            -   name: TODO: sammenlign schemas og se om det må publiseres ny verson
       #                run: hei
