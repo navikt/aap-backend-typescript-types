@@ -508,12 +508,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG";
             /**
              * Format: date-time
-             * @example 2024-12-09T07:47:27.594788582
+             * @example 2024-12-09T08:52:07.231576337
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-09T07:47:27.594788582
+             * @example 2024-12-09T08:52:07.231576337
              */
             opprettet: string;
             /** Format: uuid */
@@ -583,7 +583,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-09T07:47:27.594788582
+             * @example 2024-12-09T08:52:07.231576337
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
