@@ -530,12 +530,12 @@ export interface components {
             definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.DefinisjonDTO"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.BehandlingFlytStoppetHendelse": {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
             /** @enum {string} */
-            behandlingType: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage";
+            behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
              * @example 2024-12-09T11:11:01.928453681
@@ -550,16 +550,16 @@ export interface components {
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
             versjon: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.DefinisjonDTO": {
             /** @enum {string} */
-            behovType: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "VENTEPUNKT";
+            behovType: NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType;
             /** @enum {string} */
-            "l\u00F8sesISteg": "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "FASTSETT_UTTAK" | "SAMORDNING_GRADERING" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "BREV" | "IVERKSETT_VEDTAK" | "UDEFINERT";
+            "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg;
             /** @enum {string} */
-            type: "9001" | "9002" | "9003" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5097" | "5098" | "5099" | "5050";
+            type: NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
             endretAv: string;
@@ -569,14 +569,14 @@ export interface components {
              */
             frist?: string | null;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
              * @example 2024-12-09T11:11:01.928453681
              */
             tidsstempel: string;
             /** @enum {string|null} */
-            "\u00E5rsakTilSattP\u00E5Vent"?: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_MASKINELL_AVKLARING" | null;
+            "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer": Record<string, never>;
         "no.nav.aap.oppgave.AvklaringsbehovReferanseDto": {
@@ -601,7 +601,7 @@ export interface components {
             /** Format: uuid */
             behandlingRef?: string | null;
             /** @enum {string} */
-            behandlingstype: "FØRSTEGANGSBEHANDLING" | "REVURDERING" | "TILBAKEKREVING" | "KLAGE" | "DOKUMENT_HÅNDTERING" | "JOURNALFØRING";
+            behandlingstype: NoNavAapOppgaveOppgaveDtoBehandlingstype;
             endretAv?: string | null;
             /**
              * Format: date-time
@@ -627,7 +627,7 @@ export interface components {
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET";
+            status: NoNavAapOppgaveOppgaveDtoStatus;
             /** Format: int64 */
             versjon: number;
         };
@@ -639,7 +639,7 @@ export interface components {
         };
         "no.nav.aap.oppgave.filter.FilterDto": {
             avklaringsbehovKoder: string[];
-            behandlingstyper: ("FØRSTEGANGSBEHANDLING" | "REVURDERING" | "TILBAKEKREVING" | "KLAGE" | "DOKUMENT_HÅNDTERING" | "JOURNALFØRING")[];
+            behandlingstyper: NoNavAapOppgaveFilterFilterDtoBehandlingstyper[];
             beskrivelse: string;
             endretAv?: string | null;
             /**
@@ -680,26 +680,26 @@ export interface components {
         };
         "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
             /** @enum {string|null} */
-            behandlingstype?: "FØRSTEGANGSBEHANDLING" | "REVURDERING" | "TILBAKEKREVING" | "KLAGE" | "DOKUMENT_HÅNDTERING" | "JOURNALFØRING" | null;
+            behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.DefinisjonDTO"];
             endringer: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO"][];
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.DefinisjonDTO": {
             /** @enum {string} */
-            behovType: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "VENTEPUNKT";
+            behovType: NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType;
             /** @enum {string} */
-            "l\u00F8sesISteg": "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
+            "l\u00F8sesISteg": NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg;
             /** @enum {string} */
-            type: "9001" | "1337" | "1338" | "1339" | "1340" | "1341";
+            type: NoNavAapPostmottakKontraktHendelseDefinisjonDTOType;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.DokumentflytStoppetHendelse": {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
             /** @enum {string} */
-            behandlingType: "DokumentHåndtering" | "Journalføring";
+            behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
              * @example 2024-12-09T11:11:01.928453681
@@ -714,7 +714,7 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO": {
             endretAv: string;
@@ -724,7 +724,7 @@ export interface components {
              */
             frist?: string | null;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
              * @example 2024-12-09T11:11:01.928453681
@@ -743,4 +743,176 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET",
+    TOTRINNS_VURDERT = "TOTRINNS_VURDERT",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    KVALITETSSIKRET = "KVALITETSSIKRET",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
+    AVBRUTT = "AVBRUTT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Revurdering = "Revurdering",
+    Tilbakekreving = "Tilbakekreving",
+    Klage = "Klage"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
+    OPPRETTET = "OPPRETTET",
+    UTREDES = "UTREDES",
+    IVERKSETTES = "IVERKSETTES",
+    AVSLUTTET = "AVSLUTTET"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType {
+    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+    MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
+    VENTEPUNKT = "VENTEPUNKT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg {
+    START_BEHANDLING = "START_BEHANDLING",
+    VURDER_ALDER = "VURDER_ALDER",
+    VURDER_LOVVALG = "VURDER_LOVVALG",
+    VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
+    AVKLAR_STUDENT = "AVKLAR_STUDENT",
+    VURDER_BISTANDSBEHOV = "VURDER_BISTANDSBEHOV",
+    VURDER_SYKEPENGEERSTATNING = "VURDER_SYKEPENGEERSTATNING",
+    FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
+    VURDER_YRKESSKADE = "VURDER_YRKESSKADE",
+    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    KVALITETSSIKRING = "KVALITETSSIKRING",
+    BARNETILLEGG = "BARNETILLEGG",
+    AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
+    FASTSETT_ARBEIDSEVNE = "FASTSETT_ARBEIDSEVNE",
+    FASTSETT_BEREGNINGSTIDSPUNKT = "FASTSETT_BEREGNINGSTIDSPUNKT",
+    FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
+    VIS_GRUNNLAG = "VIS_GRUNNLAG",
+    FASTSETT_UTTAK = "FASTSETT_UTTAK",
+    SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
+    DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
+    BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
+    SIMULERING = "SIMULERING",
+    FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
+    FATTE_VEDTAK = "FATTE_VEDTAK",
+    BREV = "BREV",
+    IVERKSETT_VEDTAK = "IVERKSETT_VEDTAK",
+    UDEFINERT = "UDEFINERT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType {
+    Value9001 = "9001",
+    Value9002 = "9002",
+    Value9003 = "9003",
+    Value5001 = "5001",
+    Value5003 = "5003",
+    Value5004 = "5004",
+    Value5005 = "5005",
+    Value5006 = "5006",
+    Value5007 = "5007",
+    Value5008 = "5008",
+    Value5009 = "5009",
+    Value5010 = "5010",
+    Value5011 = "5011",
+    Value5012 = "5012",
+    Value5013 = "5013",
+    Value5014 = "5014",
+    Value5097 = "5097",
+    Value5098 = "5098",
+    Value5099 = "5099",
+    Value5050 = "5050"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET",
+    TOTRINNS_VURDERT = "TOTRINNS_VURDERT",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    KVALITETSSIKRET = "KVALITETSSIKRET",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
+    AVBRUTT = "AVBRUTT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent {
+    VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
+    VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
+    VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
+    VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL",
+    VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
+    VENTER_P__MASKINELL_AVKLARING = "VENTER_P\u00C5_MASKINELL_AVKLARING"
+}
+export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    TILBAKEKREVING = "TILBAKEKREVING",
+    KLAGE = "KLAGE",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveOppgaveDtoStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET"
+}
+export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    TILBAKEKREVING = "TILBAKEKREVING",
+    KLAGE = "KLAGE",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    TILBAKEKREVING = "TILBAKEKREVING",
+    KLAGE = "KLAGE",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
+    AVBRUTT = "AVBRUTT"
+}
+export enum NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType {
+    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+    MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
+    VENTEPUNKT = "VENTEPUNKT"
+}
+export enum NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg {
+    KATEGORISER_DOKUMENT = "KATEGORISER_DOKUMENT",
+    DIGITALISER_DOKUMENT = "DIGITALISER_DOKUMENT",
+    START_BEHANDLING = "START_BEHANDLING",
+    AVKLAR_TEMA = "AVKLAR_TEMA",
+    SETT_FAGSAK = "SETT_FAGSAK",
+    ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALF\u00D8RING",
+    OVERLEVER_TIL_FAGSYSTEM = "OVERLEVER_TIL_FAGSYSTEM",
+    UDEFINERT = "UDEFINERT",
+    AVKLAR_SAK = "AVKLAR_SAK",
+    ENDRE_TEMA = "ENDRE_TEMA",
+    VIDERESEND = "VIDERESEND"
+}
+export enum NoNavAapPostmottakKontraktHendelseDefinisjonDTOType {
+    Value9001 = "9001",
+    Value1337 = "1337",
+    Value1338 = "1338",
+    Value1339 = "1339",
+    Value1340 = "1340",
+    Value1341 = "1341"
+}
+export enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
+    DokumentH_ndtering = "DokumentH\u00E5ndtering",
+    Journalf_ring = "Journalf\u00F8ring"
+}
+export enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus {
+    OPPRETTET = "OPPRETTET",
+    UTREDES = "UTREDES",
+    IVERKSETTES = "IVERKSETTES",
+    AVSLUTTET = "AVSLUTTET"
+}
+export enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
+    AVBRUTT = "AVBRUTT"
+}
 export type operations = Record<string, never>;
