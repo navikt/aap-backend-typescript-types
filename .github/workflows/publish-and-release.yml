@@ -52,7 +52,7 @@ jobs:
       - name: generer schema fra json med enums
         if: ${{ inputs.with-enums == true }}
         run: |
-          yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.ts --enum
+          yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.d.ts --enum
       - name: generer schema fra json
         if: ${{ inputs.with-enums != true }}
         run: |
