@@ -337,9 +337,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@navikt/aap-postmottak-typescript-types@workspace:packages/aap-postmottak-typescript-types":
+"@navikt/aap-postmottak-backend-typescript-types@workspace:packages/aap-postmottak-backend-typescript-types":
   version: 0.0.0-use.local
-  resolution: "@navikt/aap-postmottak-typescript-types@workspace:packages/aap-postmottak-typescript-types"
+  resolution: "@navikt/aap-postmottak-backend-typescript-types@workspace:packages/aap-postmottak-backend-typescript-types"
   languageName: unknown
   linkType: soft
 
