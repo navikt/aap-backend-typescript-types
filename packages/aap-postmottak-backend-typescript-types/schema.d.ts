@@ -914,12 +914,12 @@ export interface components {
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2024-12-09
+             * @example 2024-12-10
              */
             fom: string;
             /**
              * Format: date
-             * @example 2024-12-09
+             * @example 2024-12-10
              */
             tom: string;
         };
@@ -937,7 +937,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-09T10:12:56.740520584
+             * @example 2024-12-10T08:05:59.408843252
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1053,7 +1053,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.flyt.flate.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2024-12-09T10:12:56.740520584
+             * @example 2024-12-10T08:05:59.408843252
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.sakogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1070,7 +1070,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2024-12-09T10:12:56.740520584
+             * @example 2024-12-10T08:05:59.408843252
              */
             tidsstempel: string;
         };
@@ -1096,7 +1096,7 @@ export interface components {
             behandlingVersjon: number;
             /**
              * Format: date
-             * @example 2024-12-09
+             * @example 2024-12-10
              */
             frist?: string | null;
             /** @enum {string} */
@@ -1107,7 +1107,7 @@ export interface components {
             begrunnelse: string;
             /**
              * Format: date
-             * @example 2024-12-09
+             * @example 2024-12-10
              */
             frist: string;
             /** @enum {string} */
@@ -1125,6 +1125,7 @@ export interface components {
             /** @enum {string} */
             kode: "9001" | "1337" | "1338" | "1339" | "1340" | "1341";
             kreverToTrinn: boolean;
+            "l\u00F8sesAv": ("VEILEDER" | "SAKSBEHANDLER" | "BESLUTTER" | "LES" | "AVDELINGSLEDER" | "UTVIKLER")[];
             /** @enum {string} */
             "l\u00F8sesISteg": "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
             /** @enum {string} */
@@ -1143,7 +1144,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2024-12-09T10:12:56.740520584
+             * @example 2024-12-10T08:05:59.408843252
              */
             opprettet: string;
             status: string;
