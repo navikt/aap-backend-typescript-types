@@ -6,6 +6,18 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.ts",
-  "packageManager": "yarn@4.4.1"
+  "scripts": {
+    "build": "yarn run clean && tsup",
+    "clean": "rm -rf ./cjs ./esm"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "yarn@4.4.1",
+  "devDependencies": {
+    "tsup": "^8.3.5"
+  }
 }

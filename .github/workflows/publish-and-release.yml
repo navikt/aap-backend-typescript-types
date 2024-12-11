@@ -52,13 +52,16 @@ jobs:
       - name: generer schema fra json med enums
         if: ${{ inputs.with-enums == true }}
         run: |
-          yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.d.ts --enum
+          yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.ts --enum
       - name: generer schema fra json
         if: ${{ inputs.with-enums != true }}
         run: |
           yarn openapi-typescript ./packages/aap-${{ inputs.appNavn }}-typescript-types/openapi.json -o ./packages/aap-${{ inputs.appNavn }}-typescript-types/schema.d.ts
       #            -   name: TODO: sammenlign schemas og se om det må publiseres ny verson
       #                run: hei
+      - name: bygg
+        run: |
+          yarn run build
       - name: lag changeset-fil
         run: |
           echo '---' > .changeset/test.md
@@ -71,7 +74,7 @@ jobs:
           yarn changeset version
           git config user.email "team-aap@nav.no"
           git config user.name "Team Aap"
-          git add ./packages/
+          git add ./packages/aap-${{ inputs.appnavn }}-typescript-types/
           git commit -m ":label: genererte backendtyper"
           git push
         env:
