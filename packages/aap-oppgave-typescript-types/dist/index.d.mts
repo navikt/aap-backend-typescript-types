@@ -517,6 +517,41 @@ interface paths {
         patch?: never;
         trace?: never;
     };
+    "/enheter": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string[];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 type webhooks = Record<string, never>;
 interface components {
@@ -537,12 +572,12 @@ interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -571,7 +606,7 @@ interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -594,7 +629,7 @@ interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -604,7 +639,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -615,14 +650,14 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -644,7 +679,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             endretTidspunkt?: string | null;
             /** Format: int64 */
@@ -653,7 +688,7 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             opprettetTidspunkt: string;
         };
@@ -702,13 +737,13 @@ interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             hendelsesTidspunkt: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -727,7 +762,7 @@ interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-17T11:25:11.023965835
+             * @example 2024-12-17T11:31:58.178475512
              */
             tidsstempel: string;
         };
