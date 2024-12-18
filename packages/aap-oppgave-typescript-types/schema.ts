@@ -573,12 +573,12 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -607,7 +607,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -630,7 +630,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -640,7 +640,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -651,14 +651,14 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -680,7 +680,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             endretTidspunkt?: string | null;
             /** Format: int64 */
@@ -689,7 +689,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             opprettetTidspunkt: string;
         };
@@ -738,14 +738,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -765,7 +765,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:17:08.330110054
+             * @example 2024-12-18T08:20:40.612824905
              */
             tidsstempel: string;
         };
