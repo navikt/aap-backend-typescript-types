@@ -539,7 +539,7 @@ interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": string[];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetDto"][];
                     };
                 };
             };
@@ -788,12 +788,12 @@ interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -822,7 +822,7 @@ interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -843,7 +843,7 @@ interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -866,7 +866,7 @@ interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -876,7 +876,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -887,14 +887,14 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -909,6 +909,10 @@ interface components {
             /** Format: int64 */
             versjon: number;
         };
+        "no.nav.aap.oppgave.enhet.EnhetDto": {
+            enhetNr: string;
+            navn: string;
+        };
         "no.nav.aap.oppgave.filter.FilterDto": {
             avklaringsbehovKoder: string[];
             behandlingstyper: NoNavAapOppgaveFilterFilterDtoBehandlingstyper[];
@@ -916,7 +920,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             endretTidspunkt?: string | null;
             /** Format: int64 */
@@ -925,7 +929,7 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             opprettetTidspunkt: string;
         };
@@ -974,14 +978,14 @@ interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1001,7 +1005,7 @@ interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-18T09:49:07.467134939
+             * @example 2024-12-18T09:59:10.804065751
              */
             tidsstempel: string;
         };
