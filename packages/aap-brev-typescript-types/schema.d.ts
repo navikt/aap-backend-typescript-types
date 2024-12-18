@@ -462,7 +462,7 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG";
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING";
             saksnummer: string;
             /** @enum {string} */
             sprak: "EN" | "NB" | "NN";
@@ -505,15 +505,15 @@ export interface components {
             behandlingReferanse: string;
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG";
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING";
             /**
              * Format: date-time
-             * @example 2024-12-17T10:01:07.711717356
+             * @example 2024-12-18T10:20:21.125867267
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2024-12-17T10:01:07.711717356
+             * @example 2024-12-18T10:20:21.125867267
              */
             opprettet: string;
             /** Format: uuid */
@@ -544,7 +544,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2024-12-17
+             * @example 2024-12-18
              */
             dato: string;
             /** Format: uuid */
@@ -583,7 +583,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2024-12-17T10:01:07.711717356
+             * @example 2024-12-18T10:20:21.125867267
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
