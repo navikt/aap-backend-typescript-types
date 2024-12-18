@@ -552,6 +552,222 @@ interface paths {
         patch?: never;
         trace?: never;
     };
+    "/drift/api/jobb/feilende": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/drift/api/jobb/planlagte-jobber": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/drift/api/jobb/rekjor/{jobbId}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description ID */
+                    jobbId: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/drift/api/jobb/avbryt/{jobbId}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description ID */
+                    jobbId: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/drift/api/jobb/rekjorAlleFeilede": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/drift/api/jobb/sisteKj\u00F8rte": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 type webhooks = Record<string, never>;
 interface components {
@@ -572,12 +788,12 @@ interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -606,13 +822,34 @@ interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             tidsstempel: string;
             /** @enum {string|null} */
             "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer": Record<string, never>;
+        "no.nav.aap.motor.api.JobbInfoDto": {
+            /** Format: int32 */
+            "antallFeilendeFors\u00F8k": number;
+            beskrivelse: string;
+            feilmelding?: string | null;
+            /** Format: int64 */
+            id: number;
+            /** @description Key type: kotlin.String */
+            metadata: {
+                [key: string]: string;
+            };
+            navn: string;
+            /**
+             * Format: date-time
+             * @example 2024-12-18T08:28:06.685753897
+             */
+            "planlagtKj\u00F8retidspunkt": string;
+            /** @enum {string} */
+            status: NoNavAapMotorApiJobbInfoDtoStatus;
+            type: string;
+        };
         "no.nav.aap.oppgave.AvklaringsbehovReferanseDto": {
             avklaringsbehovKode: string;
             /** Format: int64 */
@@ -629,7 +866,7 @@ interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -639,7 +876,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -650,14 +887,14 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -679,7 +916,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             endretTidspunkt?: string | null;
             /** Format: int64 */
@@ -688,7 +925,7 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             opprettetTidspunkt: string;
         };
@@ -737,14 +974,14 @@ interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -764,7 +1001,7 @@ interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2024-12-18T08:20:40.612824905
+             * @example 2024-12-18T08:28:06.685753897
              */
             tidsstempel: string;
         };
@@ -874,6 +1111,13 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent {
     VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
     VENTER_P__MASKINELL_AVKLARING = "VENTER_P\u00C5_MASKINELL_AVKLARING"
 }
+declare enum NoNavAapMotorApiJobbInfoDtoStatus {
+    KLAR = "KLAR",
+    PLUKKET = "PLUKKET",
+    FERDIG = "FERDIG",
+    FEILET = "FEILET",
+    AVBRUTT = "AVBRUTT"
+}
 declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
     REVURDERING = "REVURDERING",
@@ -954,4 +1198,4 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
 }
 type operations = Record<string, never>;
 
-export { type $defs, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType, NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg, NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType, NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg, NoNavAapPostmottakKontraktHendelseDefinisjonDTOType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
+export { type $defs, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType, NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg, NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType, NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg, NoNavAapPostmottakKontraktHendelseDefinisjonDTOType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };

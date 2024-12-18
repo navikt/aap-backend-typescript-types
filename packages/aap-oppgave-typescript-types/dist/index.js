@@ -28,6 +28,7 @@ __export(aap_oppgave_typescript_types_exports, {
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType: () => NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent: () => NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus: () => NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
+  NoNavAapMotorApiJobbInfoDtoStatus: () => NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveOppgaveDtoBehandlingstype: () => NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoStatus: () => NoNavAapOppgaveOppgaveDtoStatus,
@@ -145,6 +146,14 @@ var NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent = /* @__PU
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__MASKINELL_AVKLARING"] = "VENTER_P\xC5_MASKINELL_AVKLARING";
   return NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2;
 })(NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent || {});
+var NoNavAapMotorApiJobbInfoDtoStatus = /* @__PURE__ */ ((NoNavAapMotorApiJobbInfoDtoStatus2) => {
+  NoNavAapMotorApiJobbInfoDtoStatus2["KLAR"] = "KLAR";
+  NoNavAapMotorApiJobbInfoDtoStatus2["PLUKKET"] = "PLUKKET";
+  NoNavAapMotorApiJobbInfoDtoStatus2["FERDIG"] = "FERDIG";
+  NoNavAapMotorApiJobbInfoDtoStatus2["FEILET"] = "FEILET";
+  NoNavAapMotorApiJobbInfoDtoStatus2["AVBRUTT"] = "AVBRUTT";
+  return NoNavAapMotorApiJobbInfoDtoStatus2;
+})(NoNavAapMotorApiJobbInfoDtoStatus || {});
 var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoBehandlingstype2) => {
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
@@ -244,6 +253,7 @@ var NoNavAapPostmottakKontraktHendelseEndringDTOStatus = /* @__PURE__ */ ((NoNav
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
+  NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoStatus,
