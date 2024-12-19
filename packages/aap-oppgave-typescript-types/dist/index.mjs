@@ -132,6 +132,15 @@ var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapO
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterFilterDtoBehandlingstyper2;
 })(NoNavAapOppgaveFilterFilterDtoBehandlingstyper || {});
+var NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2) => {
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["REVURDERING"] = "REVURDERING";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["TILBAKEKREVING"] = "TILBAKEKREVING";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
+  return NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2;
+})(NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper || {});
 var NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2) => {
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
@@ -209,6 +218,7 @@ export {
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
   NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoStatus,
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype,
