@@ -1,6 +1,6 @@
 {
   "name": "@navikt/aap-brev-typescript-types",
-  "version": "0.0.70",
+  "version": "0.0.71",
   "author": "NAV",
   "license": "MIT",
   "publishConfig": {
