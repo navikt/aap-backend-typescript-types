@@ -906,12 +906,12 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -933,14 +933,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-01-06
+             * @example 2025-01-07
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -961,7 +961,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -984,7 +984,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -994,7 +994,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -1005,14 +1005,14 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1041,7 +1041,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1051,7 +1051,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             opprettetTidspunkt: string;
         };
@@ -1111,14 +1111,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1131,14 +1131,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-01-06
+             * @example 2025-01-07
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-01-06T08:38:45.791934163
+             * @example 2025-01-07T09:13:03.572775531
              */
             tidsstempel: string;
         };
