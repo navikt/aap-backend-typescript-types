@@ -914,12 +914,12 @@ export interface components {
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2025-01-06
+             * @example 2025-01-07
              */
             fom: string;
             /**
              * Format: date
-             * @example 2025-01-06
+             * @example 2025-01-07
              */
             tom: string;
         };
@@ -937,7 +937,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T10:00:00.699621209
+             * @example 2025-01-07T08:15:19.064330058
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1053,7 +1053,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-01-06T10:00:00.699621209
+             * @example 2025-01-07T08:15:19.064330058
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1070,7 +1070,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-01-06T10:00:00.699621209
+             * @example 2025-01-07T08:15:19.064330058
              */
             tidsstempel: string;
         };
@@ -1101,7 +1101,7 @@ export interface components {
             behandlingVersjon: number;
             /**
              * Format: date
-             * @example 2025-01-06
+             * @example 2025-01-07
              */
             frist?: string | null;
             /** @enum {string} */
@@ -1112,7 +1112,7 @@ export interface components {
             begrunnelse: string;
             /**
              * Format: date
-             * @example 2025-01-06
+             * @example 2025-01-07
              */
             frist: string;
             /** @enum {string} */
@@ -1144,7 +1144,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-01-06T10:00:00.699621209
+             * @example 2025-01-07T08:15:19.064330058
              */
             opprettet: string;
             status: string;
