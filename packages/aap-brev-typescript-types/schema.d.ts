@@ -466,6 +466,7 @@ export interface components {
             saksnummer: string;
             /** @enum {string} */
             sprak: "EN" | "NB" | "NN";
+            unikReferanse?: string | null;
             vedlegg: components["schemas"]["no.nav.aap.brev.kontrakt.Vedlegg"][];
         };
         "no.nav.aap.brev.kontrakt.BestillBrevResponse": {
@@ -508,12 +509,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING";
             /**
              * Format: date-time
-             * @example 2025-01-07T11:57:14.995759128
+             * @example 2025-01-07T14:17:48.162351365
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-01-07T11:57:14.995759128
+             * @example 2025-01-07T14:17:48.162351365
              */
             opprettet: string;
             /** Format: uuid */
@@ -583,7 +584,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-07T11:57:14.995759128
+             * @example 2025-01-07T14:17:48.162351365
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
