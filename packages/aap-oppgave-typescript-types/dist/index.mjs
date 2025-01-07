@@ -26,6 +26,8 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus =
 var NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2) => {
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2["MANUELT_P_KREVD"] = "MANUELT_P\xC5KREVD";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2["MANUELT_FRIVILLIG"] = "MANUELT_FRIVILLIG";
+  NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2["BREV"] = "BREV";
+  NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2["BREV_VENTEPUNKT"] = "BREV_VENTEPUNKT";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2["VENTEPUNKT"] = "VENTEPUNKT";
   return NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType2;
 })(NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType || {});
@@ -49,6 +51,7 @@ var NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["VIS_GRUNNLAG"] = "VIS_GRUNNLAG";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
+  NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["EFFEKTUER_11_7"] = "EFFEKTUER_11_7";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["DU_ER_ET_ANNET_STED"] = "DU_ER_ET_ANNET_STED";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["BEREGN_TILKJENT_YTELSE"] = "BEREGN_TILKJENT_YTELSE";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg2["SIMULERING"] = "SIMULERING";
@@ -76,6 +79,7 @@ var NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType = /* @__PURE__ */ (
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5012"] = "5012";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5013"] = "5013";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5014"] = "5014";
+  NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5015"] = "5015";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5097"] = "5097";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5098"] = "5098";
   NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType2["Value5099"] = "5099";
