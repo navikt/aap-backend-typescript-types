@@ -670,6 +670,41 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/oppdater-enheter": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetsoppdateringRapport"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/drift/api/jobb/feilende": {
         parameters: {
             query?: never;
@@ -906,12 +941,12 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -940,7 +975,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -961,7 +996,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -984,7 +1019,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -994,7 +1029,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -1005,7 +1040,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -1013,7 +1048,7 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1035,6 +1070,10 @@ export interface components {
             enhetNr: string;
             navn: string;
         };
+        "no.nav.aap.oppgave.enhet.EnhetsoppdateringRapport": {
+            /** Format: int32 */
+            antallOppgaverUtenEnhet: number;
+        };
         "no.nav.aap.oppgave.filter.FilterDto": {
             avklaringsbehovKoder: string[];
             behandlingstyper: NoNavAapOppgaveFilterFilterDtoBehandlingstyper[];
@@ -1042,7 +1081,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1052,7 +1091,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             opprettetTidspunkt: string;
         };
@@ -1112,14 +1151,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1139,7 +1178,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-01-09T08:56:02.811959777
+             * @example 2025-01-09T12:24:28.315161247
              */
             tidsstempel: string;
         };
