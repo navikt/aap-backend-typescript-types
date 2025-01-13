@@ -498,6 +498,7 @@ export interface components {
             type: "TEKST" | "FAKTAGRUNNLAG";
         };
         "no.nav.aap.brev.kontrakt.Brev": {
+            journalpostTittel?: string | null;
             overskrift?: string | null;
             tekstbolker: components["schemas"]["no.nav.aap.brev.kontrakt.Tekstbolk"][];
         };
@@ -509,12 +510,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT";
             /**
              * Format: date-time
-             * @example 2025-01-13T07:26:04.965142403
+             * @example 2025-01-13T08:14:05.000211288
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-01-13T07:26:04.965142403
+             * @example 2025-01-13T08:14:05.000211288
              */
             opprettet: string;
             /** Format: uuid */
@@ -584,7 +585,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-13T07:26:04.965142403
+             * @example 2025-01-13T08:14:05.000211288
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
