@@ -937,7 +937,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-14T12:00:24.248972081
+             * @example 2025-01-14T13:54:54.276259889
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1053,7 +1053,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-01-14T12:00:24.248972081
+             * @example 2025-01-14T13:54:54.276259889
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1070,7 +1070,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-01-14T12:00:24.248972081
+             * @example 2025-01-14T13:54:54.276259889
              */
             tidsstempel: string;
         };
@@ -1118,6 +1118,7 @@ export interface components {
             grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
         "no.nav.aap.postmottak.flyt.flate.visning.Visning": {
+            readOnly: boolean;
             visVentekort: boolean;
         };
         "no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse": {
@@ -1143,7 +1144,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-01-14T12:00:24.248972081
+             * @example 2025-01-14T13:54:54.276259889
              */
             opprettet: string;
             status: string;
