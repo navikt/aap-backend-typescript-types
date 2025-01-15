@@ -66,7 +66,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.DetaljertBehandlingDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO"];
                     };
                 };
             };
@@ -104,7 +104,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.DetaljertBehandlingDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO"];
                     };
                 };
             };
@@ -135,7 +135,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.JournalpostDto"];
+                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.JournalpostDto"];
                 };
             };
             responses: {
@@ -181,7 +181,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.BehandlingFlytOgTilstandDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.BehandlingFlytOgTilstandDto"];
                     };
                 };
             };
@@ -219,7 +219,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.BehandlingResultatDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.BehandlingResultatDto"];
                     };
                 };
             };
@@ -253,7 +253,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.SettP\u00E5VentRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.SettP\u00E5VentRequest"];
                 };
             };
             responses: {
@@ -263,7 +263,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.BehandlingResultatDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.BehandlingResultatDto"];
                     };
                 };
             };
@@ -299,7 +299,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.flyt.Venteinformasjon"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.Venteinformasjon"];
                     };
                 };
             };
@@ -415,7 +415,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentInfoResponsDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentInfoResponsDTO"];
                     };
                 };
             };
@@ -567,7 +567,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.finnsak.flate.AvklarSakGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakGrunnlagDto"];
                     };
                 };
             };
@@ -914,12 +914,12 @@ export interface components {
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2025-01-14
+             * @example 2025-01-15
              */
             fom: string;
             /**
              * Format: date
-             * @example 2025-01-14
+             * @example 2025-01-15
              */
             tom: string;
         };
@@ -937,12 +937,128 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-14T14:15:50.162191877
+             * @example 2025-01-15T07:05:32.827182846
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
             status: "KLAR" | "PLUKKET" | "FERDIG" | "FEILET" | "AVBRUTT";
             type: string;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentDto": {
+            dokumentInfoId: string;
+            tittel?: string | null;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent": {
+            ident?: string | null;
+            navn?: string | null;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentInfoResponsDTO": {
+            avsender?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent"];
+            dokumenter: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentDto"][];
+            /** Format: int64 */
+            journalpostId: number;
+            "s\u00F8ker"?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent"];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakGrunnlagDto": {
+            saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.finnsak.SaksInfoDto"][];
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakVurderingDto"];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakVurderingDto": {
+            "f\u00F8rP\u00E5GenerellSak": boolean;
+            opprettNySak: boolean;
+            saksnummer?: string | null;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.finnsak.SaksInfoDto": {
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            saksnummer: string;
+        };
+        "no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO": {
+            definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
+            endringer: components["schemas"]["no.nav.aap.postmottak.api.flyt.EndringDTO"][];
+            /** @enum {string} */
+            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+        };
+        "no.nav.aap.postmottak.api.flyt.BehandlingFlytOgTilstandDto": {
+            /** @enum {string} */
+            aktivGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
+            /** @enum {string} */
+            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
+            /** Format: int64 */
+            behandlingVersjon: number;
+            flyt: components["schemas"]["no.nav.aap.postmottak.api.flyt.FlytGruppe"][];
+            prosessering: components["schemas"]["no.nav.aap.postmottak.api.flyt.Prosessering"];
+            visning: components["schemas"]["no.nav.aap.postmottak.flyt.flate.visning.Visning"];
+        };
+        "no.nav.aap.postmottak.api.flyt.BehandlingResultatDto": Record<string, never>;
+        "no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO": {
+            /** @enum {string} */
+            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
+            avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
+            /**
+             * Format: date-time
+             * @example 2025-01-15T07:05:32.827182846
+             */
+            opprettet: string;
+            referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
+            /** @enum {string} */
+            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            type: string;
+            /** Format: int64 */
+            versjon: number;
+        };
+        "no.nav.aap.postmottak.api.flyt.EndringDTO": {
+            begrunnelse?: string | null;
+            endretAv: string;
+            /** @enum {string} */
+            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            /**
+             * Format: date-time
+             * @example 2025-01-15T07:05:32.827182846
+             */
+            tidsstempel: string;
+        };
+        "no.nav.aap.postmottak.api.flyt.FlytGruppe": {
+            "erFullf\u00F8rt": boolean;
+            skalVises: boolean;
+            steg: components["schemas"]["no.nav.aap.postmottak.api.flyt.FlytSteg"][];
+            /** @enum {string} */
+            stegGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
+        };
+        "no.nav.aap.postmottak.api.flyt.FlytSteg": {
+            avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
+            /** @enum {string} */
+            stegType: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
+        };
+        "no.nav.aap.postmottak.api.flyt.JournalpostDto": {
+            /** Format: int64 */
+            referanse: number;
+        };
+        "no.nav.aap.postmottak.api.flyt.Prosessering": {
+            /** @enum {string} */
+            status: "JOBBER" | "FEILET" | "FERDIG";
+            ventendeOppgaver: components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
+        };
+        "no.nav.aap.postmottak.api.flyt.SettP\u00E5VentRequest": {
+            begrunnelse: string;
+            /** Format: int64 */
+            behandlingVersjon: number;
+            /**
+             * Format: date
+             * @example 2025-01-15
+             */
+            frist?: string | null;
+            /** @enum {string} */
+            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
+        };
+        "no.nav.aap.postmottak.api.flyt.Venteinformasjon": {
+            begrunnelse: string;
+            /**
+             * Format: date
+             * @example 2025-01-15
+             */
+            frist: string;
+            /** @enum {string} */
+            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
         "no.nav.aap.postmottak.avklaringsbehov.flate.L\u00F8sAvklaringsbehovP\u00E5Behandling": {
             /** Format: int64 */
@@ -984,34 +1100,6 @@ export interface components {
         "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.EndreTemaResponse": {
             redirectUrl: string;
         };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.finnsak.flate.AvklarSakGrunnlagDto": {
-            saksinfo: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.finnsak.flate.SaksInfoDto"][];
-            vurdering?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.finnsak.flate.AvklarSakVurderingDto"];
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.finnsak.flate.AvklarSakVurderingDto": {
-            "f\u00F8rP\u00E5GenerellSak": boolean;
-            opprettNySak: boolean;
-            saksnummer?: string | null;
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.finnsak.flate.SaksInfoDto": {
-            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
-            saksnummer: string;
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentDto": {
-            dokumentInfoId: string;
-            tittel?: string | null;
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentIdent": {
-            ident?: string | null;
-            navn?: string | null;
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentInfoResponsDTO": {
-            avsender?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentIdent"];
-            dokumenter: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentDto"][];
-            /** Format: int64 */
-            journalpostId: number;
-            "s\u00F8ker"?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.flate.DokumentIdent"];
-        };
         "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.kategorisering.flate.KategoriseringGrunnlagDto": {
             dokumenter: number[];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.kategorisering.flate.KategoriseringVurderingDto"];
@@ -1028,94 +1116,6 @@ export interface components {
         };
         "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.strukturering.flate.StruktureringVurderingDto": {
             strukturertDokumentJson: string;
-        };
-        "no.nav.aap.postmottak.flyt.AvklaringsbehovDTO": {
-            definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
-            endringer: components["schemas"]["no.nav.aap.postmottak.flyt.EndringDTO"][];
-            /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
-        };
-        "no.nav.aap.postmottak.flyt.BehandlingFlytOgTilstandDto": {
-            /** @enum {string} */
-            aktivGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
-            /** @enum {string} */
-            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
-            /** Format: int64 */
-            behandlingVersjon: number;
-            flyt: components["schemas"]["no.nav.aap.postmottak.flyt.FlytGruppe"][];
-            prosessering: components["schemas"]["no.nav.aap.postmottak.flyt.Prosessering"];
-            visning: components["schemas"]["no.nav.aap.postmottak.flyt.flate.visning.Visning"];
-        };
-        "no.nav.aap.postmottak.flyt.BehandlingResultatDto": Record<string, never>;
-        "no.nav.aap.postmottak.flyt.DetaljertBehandlingDTO": {
-            /** @enum {string} */
-            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
-            avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.flyt.AvklaringsbehovDTO"][];
-            /**
-             * Format: date-time
-             * @example 2025-01-14T14:15:50.162191877
-             */
-            opprettet: string;
-            referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
-            /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
-            type: string;
-            /** Format: int64 */
-            versjon: number;
-        };
-        "no.nav.aap.postmottak.flyt.EndringDTO": {
-            begrunnelse?: string | null;
-            endretAv: string;
-            /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
-            /**
-             * Format: date-time
-             * @example 2025-01-14T14:15:50.162191877
-             */
-            tidsstempel: string;
-        };
-        "no.nav.aap.postmottak.flyt.FlytGruppe": {
-            "erFullf\u00F8rt": boolean;
-            skalVises: boolean;
-            steg: components["schemas"]["no.nav.aap.postmottak.flyt.FlytSteg"][];
-            /** @enum {string} */
-            stegGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
-        };
-        "no.nav.aap.postmottak.flyt.FlytSteg": {
-            avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.flyt.AvklaringsbehovDTO"][];
-            /** @enum {string} */
-            stegType: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "ENDRE_TEMA" | "VIDERESEND";
-        };
-        "no.nav.aap.postmottak.flyt.JournalpostDto": {
-            /** Format: int64 */
-            referanse: number;
-        };
-        "no.nav.aap.postmottak.flyt.Prosessering": {
-            /** @enum {string} */
-            status: "JOBBER" | "FEILET" | "FERDIG";
-            ventendeOppgaver: components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
-        };
-        "no.nav.aap.postmottak.flyt.SettP\u00E5VentRequest": {
-            begrunnelse: string;
-            /** Format: int64 */
-            behandlingVersjon: number;
-            /**
-             * Format: date
-             * @example 2025-01-14
-             */
-            frist?: string | null;
-            /** @enum {string} */
-            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
-        };
-        "no.nav.aap.postmottak.flyt.Venteinformasjon": {
-            begrunnelse: string;
-            /**
-             * Format: date
-             * @example 2025-01-14
-             */
-            frist: string;
-            /** @enum {string} */
-            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
         "no.nav.aap.postmottak.flyt.flate.visning.Visning": {
             readOnly: boolean;
@@ -1144,7 +1144,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-01-14T14:15:50.162191877
+             * @example 2025-01-15T07:05:32.827182846
              */
             opprettet: string;
             status: string;
