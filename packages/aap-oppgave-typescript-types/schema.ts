@@ -851,12 +851,24 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon": {
+            /** @enum {string} */
+            kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
+            kreverToTrinn: boolean;
+            kvalitetssikres: boolean;
+            "l\u00F8sesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[];
+            /** @enum {string} */
+            "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg;
+            /** @enum {string} */
+            type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
+            name: string;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": {
             /** Format: uuid */
             referanse: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
-            definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.DefinisjonDTO"];
+            avklaringsbehovDefinisjon?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
@@ -867,12 +879,12 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -882,26 +894,18 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
             versjon: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.DefinisjonDTO": {
-            /** @enum {string} */
-            behovType: NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType;
-            /** @enum {string} */
-            "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg;
-            /** @enum {string} */
-            type: NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType;
-        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-01-16
+             * @example 2025-01-20
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -922,7 +926,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -945,7 +949,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -955,7 +959,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -966,7 +970,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -974,7 +978,7 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1003,7 +1007,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1013,7 +1017,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             opprettetTidspunkt: string;
         };
@@ -1073,14 +1077,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1093,14 +1097,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-01-16
+             * @example 2025-01-20
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-01-16T08:41:51.492869607
+             * @example 2025-01-20T13:31:14.24269341
              */
             tidsstempel: string;
         };
@@ -1116,35 +1120,41 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
-export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
-    OPPRETTET = "OPPRETTET",
-    AVSLUTTET = "AVSLUTTET",
-    TOTRINNS_VURDERT = "TOTRINNS_VURDERT",
-    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
-    KVALITETSSIKRET = "KVALITETSSIKRET",
-    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
-    AVBRUTT = "AVBRUTT"
+export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
+    Value9001 = "9001",
+    Value9002 = "9002",
+    Value9003 = "9003",
+    Value5001 = "5001",
+    Value5003 = "5003",
+    Value5004 = "5004",
+    Value5005 = "5005",
+    Value5006 = "5006",
+    Value5007 = "5007",
+    Value5008 = "5008",
+    Value5009 = "5009",
+    Value5010 = "5010",
+    Value5011 = "5011",
+    Value5012 = "5012",
+    Value5013 = "5013",
+    Value5014 = "5014",
+    Value5015 = "5015",
+    Value5016 = "5016",
+    Value5017 = "5017",
+    Value5018 = "5018",
+    Value5097 = "5097",
+    Value5098 = "5098",
+    Value5099 = "5099",
+    Value5050 = "5050"
 }
-export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage"
+export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
+    VEILEDER = "VEILEDER",
+    SAKSBEHANDLER = "SAKSBEHANDLER",
+    BESLUTTER = "BESLUTTER",
+    LES = "LES",
+    AVDELINGSLEDER = "AVDELINGSLEDER",
+    UTVIKLER = "UTVIKLER"
 }
-export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
-    OPPRETTET = "OPPRETTET",
-    UTREDES = "UTREDES",
-    IVERKSETTES = "IVERKSETTES",
-    AVSLUTTET = "AVSLUTTET"
-}
-export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOBehovType {
-    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
-    MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
-    BREV = "BREV",
-    BREV_VENTEPUNKT = "BREV_VENTEPUNKT",
-    VENTEPUNKT = "VENTEPUNKT"
-}
-export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg {
+export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     START_BEHANDLING = "START_BEHANDLING",
     VURDER_ALDER = "VURDER_ALDER",
     VURDER_LOVVALG = "VURDER_LOVVALG",
@@ -1174,30 +1184,33 @@ export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOLSesISteg {
     IVERKSETT_VEDTAK = "IVERKSETT_VEDTAK",
     UDEFINERT = "UDEFINERT"
 }
-export enum NoNavAapBehandlingsflytKontraktHendelseDefinisjonDTOType {
-    Value9001 = "9001",
-    Value9002 = "9002",
-    Value9003 = "9003",
-    Value5001 = "5001",
-    Value5003 = "5003",
-    Value5004 = "5004",
-    Value5005 = "5005",
-    Value5006 = "5006",
-    Value5007 = "5007",
-    Value5008 = "5008",
-    Value5009 = "5009",
-    Value5010 = "5010",
-    Value5011 = "5011",
-    Value5012 = "5012",
-    Value5013 = "5013",
-    Value5014 = "5014",
-    Value5015 = "5015",
-    Value5016 = "5016",
-    Value5017 = "5017",
-    Value5097 = "5097",
-    Value5098 = "5098",
-    Value5099 = "5099",
-    Value5050 = "5050"
+export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
+    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+    MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
+    BREV = "BREV",
+    BREV_VENTEPUNKT = "BREV_VENTEPUNKT",
+    VENTEPUNKT = "VENTEPUNKT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET",
+    TOTRINNS_VURDERT = "TOTRINNS_VURDERT",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    KVALITETSSIKRET = "KVALITETSSIKRET",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
+    AVBRUTT = "AVBRUTT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Revurdering = "Revurdering",
+    Tilbakekreving = "Tilbakekreving",
+    Klage = "Klage"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
+    OPPRETTET = "OPPRETTET",
+    UTREDES = "UTREDES",
+    IVERKSETTES = "IVERKSETTES",
+    AVSLUTTET = "AVSLUTTET"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
     OPPRETTET = "OPPRETTET",
