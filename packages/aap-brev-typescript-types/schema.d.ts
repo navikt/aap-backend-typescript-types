@@ -510,12 +510,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT";
             /**
              * Format: date-time
-             * @example 2025-01-20T12:19:58.193941129
+             * @example 2025-01-21T08:53:00.541447488
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-01-20T12:19:58.193941129
+             * @example 2025-01-21T08:53:00.541447488
              */
             opprettet: string;
             /** Format: uuid */
@@ -546,7 +546,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2025-01-20
+             * @example 2025-01-21
              */
             dato: string;
             /** Format: uuid */
@@ -585,7 +585,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-20T12:19:58.193941129
+             * @example 2025-01-21T08:53:00.541447488
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
