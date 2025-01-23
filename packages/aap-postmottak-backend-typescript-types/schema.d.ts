@@ -975,7 +975,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-23T06:08:27.688770351
+             * @example 2025-01-23T07:13:39.334331756
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1050,9 +1050,9 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
-            aktivGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "VIDERESEND";
+            aktivGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
             /** @enum {string} */
-            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND";
+            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
             /** Format: int64 */
             behandlingVersjon: number;
             flyt: components["schemas"]["no.nav.aap.postmottak.api.flyt.FlytGruppe"][];
@@ -1062,11 +1062,11 @@ export interface components {
         "no.nav.aap.postmottak.api.flyt.BehandlingResultatDto": Record<string, never>;
         "no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO": {
             /** @enum {string} */
-            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND";
+            aktivtSteg: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-01-23T06:08:27.688770351
+             * @example 2025-01-23T07:13:39.334331756
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1083,7 +1083,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-01-23T06:08:27.688770351
+             * @example 2025-01-23T07:13:39.334331756
              */
             tidsstempel: string;
         };
@@ -1092,12 +1092,12 @@ export interface components {
             skalVises: boolean;
             steg: components["schemas"]["no.nav.aap.postmottak.api.flyt.FlytSteg"][];
             /** @enum {string} */
-            stegGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "VIDERESEND";
+            stegGruppe: "KATEGORISER" | "DIGITALISER" | "AVKLAR_TEMA" | "START_BEHANDLING" | "UDEFINERT" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
         };
         "no.nav.aap.postmottak.api.flyt.FlytSteg": {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /** @enum {string} */
-            stegType: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND";
+            stegType: "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
         };
         "no.nav.aap.postmottak.api.flyt.JournalpostDto": {
             /** Format: int64 */
@@ -1182,7 +1182,7 @@ export interface components {
             kreverToTrinn: boolean;
             "l\u00F8sesAv": ("VEILEDER" | "SAKSBEHANDLER" | "BESLUTTER" | "LES" | "AVDELINGSLEDER" | "UTVIKLER")[];
             /** @enum {string} */
-            "l\u00F8sesISteg": "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND";
+            "l\u00F8sesISteg": "KATEGORISER_DOKUMENT" | "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
             /** @enum {string} */
             type: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "VENTEPUNKT";
             name: string;
@@ -1191,7 +1191,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-01-23T06:08:27.688770351
+             * @example 2025-01-23T07:13:39.334331756
              */
             opprettet: string;
             status: string;
