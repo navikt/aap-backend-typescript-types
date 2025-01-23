@@ -453,7 +453,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.AvklarTemaGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaGrunnlagDto"];
                     };
                 };
             };
@@ -493,7 +493,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.EndreTemaResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.tema.EndreTemaResponse"];
                     };
                 };
             };
@@ -529,7 +529,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.kategorisering.flate.KategoriseringGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.kategorisering.KategoriseringGrunnlagDto"];
                     };
                 };
             };
@@ -567,7 +567,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakGrunnlagDto"];
                     };
                 };
             };
@@ -605,7 +605,45 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.strukturering.flate.StruktureringGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringGrunnlagDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/behandling/{referanse}/grunnlag/overlevering": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.overlevering.OverleveringGrunnlagDto"];
                     };
                 };
             };
@@ -914,12 +952,12 @@ export interface components {
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2025-01-22
+             * @example 2025-01-23
              */
             fom: string;
             /**
              * Format: date
-             * @example 2025-01-22
+             * @example 2025-01-23
              */
             tom: string;
         };
@@ -937,7 +975,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-22T14:51:11.109694608
+             * @example 2025-01-23T06:08:27.688770351
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -959,17 +997,50 @@ export interface components {
             journalpostId: number;
             "s\u00F8ker"?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent"];
         };
-        "no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakGrunnlagDto": {
-            saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.finnsak.SaksInfoDto"][];
-            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakVurderingDto"];
+        "no.nav.aap.postmottak.api.faktagrunnlag.kategorisering.KategoriseringGrunnlagDto": {
+            dokumenter: number[];
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.kategorisering.KategoriseringVurderingDto"];
         };
-        "no.nav.aap.postmottak.api.faktagrunnlag.finnsak.AvklarSakVurderingDto": {
+        "no.nav.aap.postmottak.api.faktagrunnlag.kategorisering.KategoriseringVurderingDto": {
+            /** @enum {string} */
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.overlevering.OverleveringGrunnlagDto": {
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.overlevering.OverleveringVurderingDto"];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.overlevering.OverleveringVurderingDto": {
+            skalOverleveres: boolean;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakGrunnlagDto": {
+            saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto"][];
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto"];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto": {
             "f\u00F8rP\u00E5GenerellSak": boolean;
             saksnummer?: string | null;
         };
-        "no.nav.aap.postmottak.api.faktagrunnlag.finnsak.SaksInfoDto": {
+        "no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksnummer: string;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringGrunnlagDto": {
+            dokumenter: number[];
+            /** @enum {string} */
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringVurderingDto"];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringVurderingDto": {
+            strukturertDokumentJson: string;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaGrunnlagDto": {
+            dokumenter: string[];
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaVurderingDto"];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaVurderingDto": {
+            skalTilAap: boolean;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.tema.EndreTemaResponse": {
+            redirectUrl: string;
         };
         "no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO": {
             definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
@@ -995,7 +1066,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-01-22T14:51:11.109694608
+             * @example 2025-01-23T06:08:27.688770351
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1012,7 +1083,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-01-22T14:51:11.109694608
+             * @example 2025-01-23T06:08:27.688770351
              */
             tidsstempel: string;
         };
@@ -1043,7 +1114,7 @@ export interface components {
             behandlingVersjon: number;
             /**
              * Format: date
-             * @example 2025-01-22
+             * @example 2025-01-23
              */
             frist?: string | null;
             /** @enum {string} */
@@ -1053,7 +1124,7 @@ export interface components {
             begrunnelse: string;
             /**
              * Format: date
-             * @example 2025-01-22
+             * @example 2025-01-23
              */
             frist: string;
             /** @enum {string} */
@@ -1093,33 +1164,6 @@ export interface components {
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.SattP\u00E5VentL\u00F8sning": {
             behovstype: string;
         };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.AvklarTemaGrunnlagDto": {
-            dokumenter: string[];
-            vurdering?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.AvklarTemaVurderingDto"];
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.AvklarTemaVurderingDto": {
-            skalTilAap: boolean;
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.avklartema.flate.EndreTemaResponse": {
-            redirectUrl: string;
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.kategorisering.flate.KategoriseringGrunnlagDto": {
-            dokumenter: number[];
-            vurdering?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.kategorisering.flate.KategoriseringVurderingDto"];
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.kategorisering.flate.KategoriseringVurderingDto": {
-            /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.strukturering.flate.StruktureringGrunnlagDto": {
-            dokumenter: number[];
-            /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
-            vurdering?: components["schemas"]["no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.strukturering.flate.StruktureringVurderingDto"];
-        };
-        "no.nav.aap.postmottak.faktagrunnlag.saksbehandler.dokument.strukturering.flate.StruktureringVurderingDto": {
-            strukturertDokumentJson: string;
-        };
         "no.nav.aap.postmottak.flyt.flate.visning.Visning": {
             readOnly: boolean;
             visVentekort: boolean;
@@ -1147,7 +1191,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-01-22T14:51:11.109694608
+             * @example 2025-01-23T06:08:27.688770351
              */
             opprettet: string;
             status: string;
