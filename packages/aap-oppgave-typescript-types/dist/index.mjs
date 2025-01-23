@@ -190,8 +190,8 @@ var NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg = /* @__PURE__ */ (
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["OVERLEVER_TIL_FAGSYSTEM"] = "OVERLEVER_TIL_FAGSYSTEM";
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["UDEFINERT"] = "UDEFINERT";
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["AVKLAR_SAK"] = "AVKLAR_SAK";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["ENDRE_TEMA"] = "ENDRE_TEMA";
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["VIDERESEND"] = "VIDERESEND";
+  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["IVERKSETTES"] = "IVERKSETTES";
   return NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2;
 })(NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg || {});
 var NoNavAapPostmottakKontraktHendelseDefinisjonDTOType = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2) => {
