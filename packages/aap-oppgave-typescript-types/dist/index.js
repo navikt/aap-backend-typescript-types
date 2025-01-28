@@ -35,6 +35,10 @@ __export(aap_oppgave_typescript_types_exports, {
   NoNavAapOppgaveOppgaveDtoBehandlingstype: () => NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoStatus: () => NoNavAapOppgaveOppgaveDtoStatus,
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype: () => NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType,
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus: () => NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus,
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType: () => NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType,
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg: () => NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg,
@@ -75,11 +79,16 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["VEILEDER"] = "VEILEDER";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_OPPFOLGING"] = "SAKSBEHANDLER_OPPFOLGING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER"] = "SAKSBEHANDLER";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_NASJONAL"] = "SAKSBEHANDLER_NASJONAL";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["KVALITETSSIKRER"] = "KVALITETSSIKRER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["BESLUTTER"] = "BESLUTTER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["LES"] = "LES";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["AVDELINGSLEDER"] = "AVDELINGSLEDER";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["PRODUKSJONSSTYRING"] = "PRODUKSJONSSTYRING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["UTVIKLER"] = "UTVIKLER";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["DRIFT"] = "DRIFT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2) => {
@@ -213,6 +222,49 @@ var NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PU
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2;
 })(NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype || {});
+var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2) => {
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value9001"] = "9001";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value1337"] = "1337";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value1338"] = "1338";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value1339"] = "1339";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value1340"] = "1340";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value1341"] = "1341";
+  return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2;
+})(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode || {});
+var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2) => {
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["VEILEDER"] = "VEILEDER";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_OPPFOLGING"] = "SAKSBEHANDLER_OPPFOLGING";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER"] = "SAKSBEHANDLER";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_NASJONAL"] = "SAKSBEHANDLER_NASJONAL";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["KVALITETSSIKRER"] = "KVALITETSSIKRER";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["BESLUTTER"] = "BESLUTTER";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["LES"] = "LES";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["AVDELINGSLEDER"] = "AVDELINGSLEDER";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["PRODUKSJONSSTYRING"] = "PRODUKSJONSSTYRING";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["UTVIKLER"] = "UTVIKLER";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["DRIFT"] = "DRIFT";
+  return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2;
+})(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv || {});
+var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2) => {
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["KATEGORISER_DOKUMENT"] = "KATEGORISER_DOKUMENT";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["DIGITALISER_DOKUMENT"] = "DIGITALISER_DOKUMENT";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_TEMA"] = "AVKLAR_TEMA";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["SETT_FAGSAK"] = "SETT_FAGSAK";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["ENDELIG_JOURNALF_RING"] = "ENDELIG_JOURNALF\xD8RING";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["OVERLEVER_TIL_FAGSYSTEM"] = "OVERLEVER_TIL_FAGSYSTEM";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_SAK"] = "AVKLAR_SAK";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["VIDERESEND"] = "VIDERESEND";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["IVERKSETTES"] = "IVERKSETTES";
+  return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2;
+})(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg || {});
+var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType2) => {
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType2["MANUELT_P_KREVD"] = "MANUELT_P\xC5KREVD";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType2["MANUELT_FRIVILLIG"] = "MANUELT_FRIVILLIG";
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType2["VENTEPUNKT"] = "VENTEPUNKT";
+  return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType2;
+})(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType || {});
 var NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus2) => {
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
@@ -287,6 +339,10 @@ var NoNavAapPostmottakKontraktHendelseEndringDTOStatus = /* @__PURE__ */ ((NoNav
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoStatus,
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,
+  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType,
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus,
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType,
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg,
