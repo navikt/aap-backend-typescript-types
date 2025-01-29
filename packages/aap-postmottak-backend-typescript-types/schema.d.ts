@@ -542,7 +542,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/behandling/{referanse}/grunnlag/strukturering": {
+    "/api/behandling/{referanse}/grunnlag/digitalisering": {
         parameters: {
             query?: never;
             header?: never;
@@ -567,7 +567,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringGrunnlagDto"];
                     };
                 };
             };
@@ -937,7 +937,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-01-29T07:54:09.087958582
+             * @example 2025-01-29T10:31:10.949338152
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -977,13 +977,24 @@ export interface components {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksnummer: string;
         };
-        "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringGrunnlagDto": {
-            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringVurderingDto"];
+        "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringGrunnlagDto": {
+            erPapir: boolean;
+            /**
+             * Format: date
+             * @example 2025-01-29
+             */
+            registrertDato: string;
+            vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto"];
         };
-        "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.StruktureringVurderingDto": {
+        "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto": {
             /** @enum {string} */
             kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
             strukturertDokumentJson?: string | null;
+            /**
+             * Format: date
+             * @example 2025-01-29
+             */
+            "s\u00F8knadsdato"?: string | null;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaGrunnlagDto": {
             dokumenter: string[];
@@ -1019,7 +1030,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-01-29T07:54:09.087958582
+             * @example 2025-01-29T10:31:10.949338152
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1037,7 +1048,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-01-29T07:54:09.087958582
+             * @example 2025-01-29T10:31:10.949338152
              */
             tidsstempel: string;
         };
@@ -1111,6 +1122,11 @@ export interface components {
             /** @enum {string} */
             kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING";
             strukturertDokument?: string | null;
+            /**
+             * Format: date
+             * @example 2025-01-29
+             */
+            "s\u00F8knadsdato"?: string | null;
         };
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.SattP\u00E5VentL\u00F8sning": {
             behovstype: string;
@@ -1142,7 +1158,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-01-29T07:54:09.087958582
+             * @example 2025-01-29T10:31:10.949338152
              */
             opprettet: string;
             status: string;
