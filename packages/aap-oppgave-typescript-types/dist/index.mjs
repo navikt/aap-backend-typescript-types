@@ -195,7 +195,6 @@ var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ 
   return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2;
 })(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv || {});
 var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2) => {
-  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["KATEGORISER_DOKUMENT"] = "KATEGORISER_DOKUMENT";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["DIGITALISER_DOKUMENT"] = "DIGITALISER_DOKUMENT";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_TEMA"] = "AVKLAR_TEMA";
@@ -229,7 +228,6 @@ var NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType = /* @__PURE__ */ (
   return NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType2;
 })(NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType || {});
 var NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2) => {
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["KATEGORISER_DOKUMENT"] = "KATEGORISER_DOKUMENT";
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["DIGITALISER_DOKUMENT"] = "DIGITALISER_DOKUMENT";
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
   NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["AVKLAR_TEMA"] = "AVKLAR_TEMA";
