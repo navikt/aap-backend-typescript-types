@@ -122,6 +122,13 @@ var NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent = /* @__PU
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__MASKINELL_AVKLARING"] = "VENTER_P\xC5_MASKINELL_AVKLARING";
   return NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2;
 })(NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent || {});
+var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["FEIL_LOVANVENDELSE"] = "FEIL_LOVANVENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["ANNET"] = "ANNET";
+  return NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2;
+})(NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak || {});
 var NoNavAapMotorApiJobbInfoDtoStatus = /* @__PURE__ */ ((NoNavAapMotorApiJobbInfoDtoStatus2) => {
   NoNavAapMotorApiJobbInfoDtoStatus2["KLAR"] = "KLAR";
   NoNavAapMotorApiJobbInfoDtoStatus2["PLUKKET"] = "PLUKKET";
@@ -279,6 +286,7 @@ export {
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
   NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
