@@ -273,76 +273,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/mine-oppgaver": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/alle-oppgaver": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/oppgaveliste": {
         parameters: {
             query?: never;
@@ -361,7 +291,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.filter.OppgaveS\u00F8kDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteRequest"];
                 };
             };
             responses: {
@@ -371,7 +301,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteRespons"];
                     };
                 };
             };
@@ -415,6 +345,41 @@ export interface paths {
                 };
             };
         };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/mine-oppgaver": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteRespons"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -879,12 +844,12 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -898,14 +863,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-02-04
+             * @example 2025-02-05
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -931,7 +896,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -954,7 +919,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -964,7 +929,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -976,21 +941,21 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             personNavn?: string | null;
             /**
              * Format: date
-             * @example 2025-02-04
+             * @example 2025-02-05
              */
             "p\u00E5VentTil"?: string | null;
             "p\u00E5Vent\u00C5rsak"?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1019,7 +984,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1029,7 +994,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             opprettetTidspunkt: string;
         };
@@ -1037,15 +1002,22 @@ export interface components {
             /** Format: int64 */
             filterId: number;
         };
-        "no.nav.aap.oppgave.filter.OppgaveS\u00F8kDto": {
-            enheter: string[];
-            /** Format: int64 */
-            filterId: number;
-        };
         "no.nav.aap.oppgave.filter.TransientFilterDto": {
             avklaringsbehovKoder: string[];
             behandlingstyper: NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper[];
             enheter: string[];
+        };
+        "no.nav.aap.oppgave.liste.OppgavelisteRequest": {
+            enheter: string[];
+            /** Format: int64 */
+            filterId: number;
+            /** Format: int32 */
+            maxAntall: number;
+        };
+        "no.nav.aap.oppgave.liste.OppgavelisteRespons": {
+            /** Format: int32 */
+            antallTotalt: number;
+            oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
         };
         "no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto": {
             enheter: string[];
@@ -1101,14 +1073,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1121,14 +1093,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-02-04
+             * @example 2025-02-05
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-02-04T07:30:17.025137063
+             * @example 2025-02-05T14:01:53.801415493
              */
             tidsstempel: string;
         };
