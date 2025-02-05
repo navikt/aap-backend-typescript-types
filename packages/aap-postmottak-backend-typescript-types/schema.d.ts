@@ -937,7 +937,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-05T10:05:46.257288179
+             * @example 2025-02-05T15:10:23.373014334
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1030,7 +1030,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-05T10:05:46.257288179
+             * @example 2025-02-05T15:10:23.373014334
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1048,7 +1048,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-05T10:05:46.257288179
+             * @example 2025-02-05T15:10:23.373014334
              */
             tidsstempel: string;
         };
@@ -1147,7 +1147,7 @@ export interface components {
             /** @enum {string} */
             kode: "9001" | "1337" | "1338" | "1339" | "1340" | "1341";
             kreverToTrinn: boolean;
-            "l\u00F8sesAv": ("VEILEDER" | "SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER" | "LES" | "AVDELINGSLEDER" | "PRODUKSJONSSTYRING" | "UTVIKLER" | "DRIFT")[];
+            "l\u00F8sesAv": ("SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER" | "LES" | "PRODUKSJONSSTYRING" | "DRIFT")[];
             /** @enum {string} */
             "l\u00F8sesISteg": "DIGITALISER_DOKUMENT" | "START_BEHANDLING" | "AVKLAR_TEMA" | "SETT_FAGSAK" | "ENDELIG_JOURNALFØRING" | "OVERLEVER_TIL_FAGSYSTEM" | "UDEFINERT" | "AVKLAR_SAK" | "VIDERESEND" | "IVERKSETTES";
             /** @enum {string} */
@@ -1158,7 +1158,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-02-05T10:05:46.257288179
+             * @example 2025-02-05T15:10:23.373014334
              */
             opprettet: string;
             status: string;
