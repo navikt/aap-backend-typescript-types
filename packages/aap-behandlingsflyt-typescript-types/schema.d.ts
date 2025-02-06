@@ -992,7 +992,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomGrunnlagDto"];
                     };
                 };
             };
@@ -1030,7 +1030,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.YrkesskadeVurderingGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeVurderingGrunnlagDto"];
                     };
                 };
             };
@@ -1068,7 +1068,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.alder.sykdom.sykepengergrunnlag.SykepengerGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerGrunnlagDto"];
                     };
                 };
             };
@@ -1258,7 +1258,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.flate.BeregningTidspunktAvklaringDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.BeregningTidspunktAvklaringDto"];
                     };
                 };
             };
@@ -1296,7 +1296,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.flate.BeregningYrkesskadeAvklaringDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.BeregningYrkesskadeAvklaringDto"];
                     };
                 };
             };
@@ -2362,7 +2362,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             tidspunkt: string;
         };
@@ -2617,8 +2617,34 @@ export interface components {
             "f\u00F8dselsdato": string;
             "vilk\u00E5rsperioder": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.vilk\u00E5rsresultat.Vilk\u00E5rsperiode"][];
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.alder.sykdom.sykepengergrunnlag.SykepengerGrunnlagDto": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomGrunnlagDto": {
+            opplysninger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.InnhentetSykdomsOpplysninger"];
+            skalVurdereYrkesskade: boolean;
+            sykdomsvurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomsvurderingDto"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeVurderingGrunnlagDto": {
+            opplysninger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.InnhentetSykdomsOpplysninger"];
+            yrkesskadeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.YrkesskadevurderingDto"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerGrunnlagDto": {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.SykepengerVurdering"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.BeregningTidspunktAvklaringDto": {
+            skalVurdereYtterligere: boolean;
+            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningstidspunktVurdering"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.BeregningYrkesskadeAvklaringDto": {
+            skalVurderes: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.YrkesskadeTilVurdering"][];
+            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.YrkesskadeBel\u00F8pVurdering"][];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.YrkesskadeTilVurdering": {
+            "grunnbel\u00F8p": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
+            referanse: string;
+            /**
+             * Format: date
+             * @example 2025-02-06
+             */
+            skadeDato: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag": {
             brevGrunnlag: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev"][];
@@ -2632,12 +2658,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             opprettet: string;
             /** @enum {string} */
@@ -2835,7 +2861,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             opprettet: string;
             personId: string;
@@ -2885,7 +2911,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             vurderingsTidspunkt: string;
         };
@@ -2946,23 +2972,6 @@ export interface components {
             "antatt\u00C5rligInntekt": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
             begrunnelse: string;
             referanse: string;
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.flate.BeregningTidspunktAvklaringDto": {
-            skalVurdereYtterligere: boolean;
-            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningstidspunktVurdering"];
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.flate.BeregningYrkesskadeAvklaringDto": {
-            skalVurderes: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.flate.YrkesskadeTilVurdering"][];
-            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.YrkesskadeBel\u00F8pVurdering"][];
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.flate.YrkesskadeTilVurdering": {
-            "grunnbel\u00F8p": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
-            referanse: string;
-            /**
-             * Format: date
-             * @example 2025-02-06
-             */
-            skadeDato: string;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.bistand.flate.BistandGrunnlagDto": {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.bistand.flate.BistandVurderingDto"];
@@ -3069,7 +3078,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             vurderingsTidspunkt: string;
         };
@@ -3141,11 +3150,6 @@ export interface components {
              */
             skadedato: string;
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomGrunnlagDto": {
-            opplysninger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.InnhentetSykdomsOpplysninger"];
-            skalVurdereYrkesskade: boolean;
-            sykdomsvurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomsvurderingDto"];
-        };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomsvurderingDto": {
             begrunnelse: string;
             bidiagnoser?: string[] | null;
@@ -3164,10 +3168,6 @@ export interface components {
              */
             vurderingenGjelderFra?: string | null;
             yrkesskadeBegrunnelse?: string | null;
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.YrkesskadeVurderingGrunnlagDto": {
-            opplysninger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.InnhentetSykdomsOpplysninger"];
-            yrkesskadeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.YrkesskadevurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.YrkesskadevurderingDto": {
             /** Format: int32 */
@@ -3212,7 +3212,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             opprettet: string;
             /** Format: uuid */
@@ -3232,7 +3232,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             tidsstempel: string;
         };
@@ -3408,7 +3408,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -3473,7 +3473,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3486,7 +3486,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             opprettet: string;
             /** Format: uuid */
@@ -3531,7 +3531,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3542,7 +3542,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3636,7 +3636,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-06T12:43:11.423445146
+             * @example 2025-02-06T13:10:02.698798707
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
