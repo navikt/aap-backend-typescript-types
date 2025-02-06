@@ -79,16 +79,12 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["VEILEDER"] = "VEILEDER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_OPPFOLGING"] = "SAKSBEHANDLER_OPPFOLGING";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER"] = "SAKSBEHANDLER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_NASJONAL"] = "SAKSBEHANDLER_NASJONAL";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["KVALITETSSIKRER"] = "KVALITETSSIKRER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["BESLUTTER"] = "BESLUTTER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["LES"] = "LES";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["AVDELINGSLEDER"] = "AVDELINGSLEDER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["PRODUKSJONSSTYRING"] = "PRODUKSJONSSTYRING";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["UTVIKLER"] = "UTVIKLER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2["DRIFT"] = "DRIFT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv || {});
@@ -240,16 +236,12 @@ var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((
   return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2) => {
-  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["VEILEDER"] = "VEILEDER";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_OPPFOLGING"] = "SAKSBEHANDLER_OPPFOLGING";
-  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER"] = "SAKSBEHANDLER";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["SAKSBEHANDLER_NASJONAL"] = "SAKSBEHANDLER_NASJONAL";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["KVALITETSSIKRER"] = "KVALITETSSIKRER";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["BESLUTTER"] = "BESLUTTER";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["LES"] = "LES";
-  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["AVDELINGSLEDER"] = "AVDELINGSLEDER";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["PRODUKSJONSSTYRING"] = "PRODUKSJONSSTYRING";
-  NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["UTVIKLER"] = "UTVIKLER";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2["DRIFT"] = "DRIFT";
   return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv2;
 })(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv || {});
