@@ -573,6 +573,8 @@ __metadata:
 "@navikt/aap-statistikk-typescript-types@workspace:packages/aap-statistikk-typescript-types":
   version: 0.0.0-use.local
   resolution: "@navikt/aap-statistikk-typescript-types@workspace:packages/aap-statistikk-typescript-types"
+  dependencies:
+    tsup: "npm:^8.3.6"
   languageName: unknown
   linkType: soft
 

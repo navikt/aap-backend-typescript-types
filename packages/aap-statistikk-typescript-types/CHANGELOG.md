@@ -1,5 +1,11 @@
 # @navikt/aap-statistikk-typescript-types
 
+## 0.1.0
+
+### Minor Changes
+
+- tsup
+
 ## 0.0.5
 
 ### Patch Changes
