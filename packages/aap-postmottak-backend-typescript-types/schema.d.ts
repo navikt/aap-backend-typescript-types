@@ -914,12 +914,12 @@ export interface components {
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             fom: string;
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             tom: string;
         };
@@ -937,7 +937,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-07T11:39:39.014915436
+             * @example 2025-02-10T06:36:54.976605811
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -959,7 +959,7 @@ export interface components {
             journalpostId: number;
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             registrertDato?: string | null;
             "s\u00F8ker"?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent"];
@@ -992,7 +992,7 @@ export interface components {
             strukturertDokumentJson?: string | null;
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             "s\u00F8knadsdato"?: string | null;
         };
@@ -1030,7 +1030,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-07T11:39:39.014915436
+             * @example 2025-02-10T06:36:54.976605811
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1048,7 +1048,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-07T11:39:39.014915436
+             * @example 2025-02-10T06:36:54.976605811
              */
             tidsstempel: string;
         };
@@ -1079,7 +1079,7 @@ export interface components {
             behandlingVersjon: number;
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             frist?: string | null;
             /** @enum {string} */
@@ -1089,7 +1089,7 @@ export interface components {
             begrunnelse: string;
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             frist: string;
             /** @enum {string} */
@@ -1124,7 +1124,7 @@ export interface components {
             strukturertDokument?: string | null;
             /**
              * Format: date
-             * @example 2025-02-07
+             * @example 2025-02-10
              */
             "s\u00F8knadsdato"?: string | null;
         };
@@ -1158,7 +1158,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-02-07T11:39:39.014915436
+             * @example 2025-02-10T06:36:54.976605811
              */
             opprettet: string;
             status: string;
