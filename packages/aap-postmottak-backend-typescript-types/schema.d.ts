@@ -907,6 +907,42 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/journalpost/{referanse}/auditlog": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -937,7 +973,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-10T08:35:15.099649829
+             * @example 2025-02-10T10:12:03.118691958
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1030,7 +1066,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-10T08:35:15.099649829
+             * @example 2025-02-10T10:12:03.118691958
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1048,7 +1084,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-10T08:35:15.099649829
+             * @example 2025-02-10T10:12:03.118691958
              */
             tidsstempel: string;
         };
@@ -1158,7 +1194,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-02-10T08:35:15.099649829
+             * @example 2025-02-10T10:12:03.118691958
              */
             opprettet: string;
             status: string;
