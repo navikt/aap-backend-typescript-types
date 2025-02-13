@@ -75,6 +75,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5097"] = "5097";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5098"] = "5098";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5099"] = "5099";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
@@ -168,6 +169,7 @@ var NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent = /* @__PU
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__VURDERING_AV_ROL"] = "VENTER_P\xC5_VURDERING_AV_ROL";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__SVAR_FRA_BRUKER"] = "VENTER_P\xC5_SVAR_FRA_BRUKER";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__MASKINELL_AVKLARING"] = "VENTER_P\xC5_MASKINELL_AVKLARING";
+  NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING"] = "VENTER_P\xC5_UTENLANDSK_VIDEREFORING_AVKLARING";
   return NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2;
 })(NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent || {});
 var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {
