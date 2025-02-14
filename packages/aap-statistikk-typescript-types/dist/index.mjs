@@ -222,6 +222,14 @@ var NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2["YTTERLIGERE_NEDSATT"] = "YTTERLIGERE_NEDSATT";
   return NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType || {});
+var NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2) => {
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["BISTANDSBEHOV"] = "BISTANDSBEHOV";
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["SYKEPENGEERSTATNING"] = "SYKEPENGEERSTATNING";
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["STUDENT"] = "STUDENT";
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["ARBEIDSS_KER"] = "ARBEIDSS\xD8KER";
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["VURDERES_FOR_UF_RETYGD"] = "VURDERES_FOR_UF\xD8RETYGD";
+  return NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2;
+})(NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype || {});
 var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus2) => {
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus2["UTREDES"] = "UTREDES";
@@ -441,6 +449,7 @@ export {
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
   NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType,
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling,
