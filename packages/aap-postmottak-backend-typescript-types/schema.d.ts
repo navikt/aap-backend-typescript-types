@@ -869,7 +869,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/test/finnEnhetForPerson/{ident}": {
+    "/test/finnEnhetMedOppfolgingskontor/{ident}": {
         parameters: {
             query?: never;
             header?: never;
@@ -894,7 +894,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": string;
+                        "application/json": components["schemas"]["no.nav.aap.fordeler.EnhetMedOppf\u00F8lgingsKontor"];
                     };
                 };
             };
@@ -947,15 +947,19 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "no.nav.aap.fordeler.EnhetMedOppf\u00F8lgingsKontor": {
+            norgEnhet?: string | null;
+            "oppf\u00F8lgingsenhet"?: string | null;
+        };
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             fom: string;
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             tom: string;
         };
@@ -973,7 +977,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-14T16:18:57.982850059
+             * @example 2025-02-17T07:16:35.276604032
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -995,7 +999,7 @@ export interface components {
             journalpostId: number;
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             registrertDato?: string | null;
             "s\u00F8ker"?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent"];
@@ -1028,7 +1032,7 @@ export interface components {
             strukturertDokumentJson?: string | null;
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             "s\u00F8knadsdato"?: string | null;
         };
@@ -1066,7 +1070,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-14T16:18:57.982850059
+             * @example 2025-02-17T07:16:35.276604032
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1084,7 +1088,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-14T16:18:57.982850059
+             * @example 2025-02-17T07:16:35.276604032
              */
             tidsstempel: string;
         };
@@ -1115,7 +1119,7 @@ export interface components {
             behandlingVersjon: number;
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             frist?: string | null;
             /** @enum {string} */
@@ -1125,7 +1129,7 @@ export interface components {
             begrunnelse: string;
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             frist: string;
             /** @enum {string} */
@@ -1160,7 +1164,7 @@ export interface components {
             strukturertDokument?: string | null;
             /**
              * Format: date
-             * @example 2025-02-14
+             * @example 2025-02-17
              */
             "s\u00F8knadsdato"?: string | null;
         };
@@ -1194,7 +1198,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-02-14T16:18:57.982850059
+             * @example 2025-02-17T07:16:35.276604032
              */
             opprettet: string;
             status: string;
