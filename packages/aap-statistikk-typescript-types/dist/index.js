@@ -300,6 +300,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["STUDENT"] = "STUDENT";
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["ARBEIDSS_KER"] = "ARBEIDSS\xD8KER";
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["VURDERES_FOR_UF_RETYGD"] = "VURDERES_FOR_UF\xD8RETYGD";
+  NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2["VURDERES_FOR_UF_RETRYGD"] = "VURDERES_FOR_UF\xD8RETRYGD";
   return NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype2;
 })(NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype || {});
 var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus2) => {
