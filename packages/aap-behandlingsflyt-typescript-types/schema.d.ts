@@ -2385,6 +2385,84 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/datadeling/perioder": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.InternVedtakRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.Maksimum.Periode"][];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/datadeling/perioder/aktivitetsfase": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.InternVedtakRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.PeriodeMedAktFaseKode"][];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/datadeling/sakerByFnr": {
         parameters: {
             query?: never;
@@ -2517,7 +2595,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             tidspunkt: string;
         };
@@ -2788,7 +2866,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             vurderingsTidspunkt: string;
         };
@@ -2842,12 +2920,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             opprettet: string;
             /** @enum {string} */
@@ -3077,6 +3155,19 @@ export interface components {
              */
             tilOgMedDato: string;
         };
+        "no.nav.aap.behandlingsflyt.datadeling.InternVedtakRequest": {
+            /**
+             * Format: date
+             * @example 2025-02-17
+             */
+            fraOgMedDato: string;
+            personidentifikator: string;
+            /**
+             * Format: date
+             * @example 2025-02-17
+             */
+            tilOgMedDato: string;
+        };
         "no.nav.aap.behandlingsflyt.datadeling.Maksimum": {
             vedtak: components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.Maksimum.Vedtak"][];
         };
@@ -3130,12 +3221,18 @@ export interface components {
             vedtaksTypeNavn: string;
             vedtaksdato: string;
         };
+        "no.nav.aap.behandlingsflyt.datadeling.PeriodeMedAktFaseKode": {
+            aktivitetsfaseKode: string;
+            aktivitetsfaseNavn: string;
+            periode: components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.Maksimum.Periode"];
+        };
         "no.nav.aap.behandlingsflyt.datadeling.SakStatus": {
-            kilde: string;
+            /** @enum {string} */
+            kilde: "ARENA" | "KELVIN";
             periode: components["schemas"]["no.nav.aap.behandlingsflyt.datadeling.Maksimum.Periode"];
             sakId: string;
             /** @enum {string} */
-            vedtakStatusKode: "AVSLU" | "FORDE" | "GODKJ" | "INNST" | "IVERK" | "KONT" | "MOTAT" | "OPPRE" | "REGIS" | "UKJENT";
+            statusKode: "AVSLU" | "FORDE" | "GODKJ" | "INNST" | "IVERK" | "KONT" | "MOTAT" | "OPPRE" | "REGIS" | "UKJENT";
         };
         "no.nav.aap.behandlingsflyt.datadeling.SakerRequest": {
             personidentifikatorer: string[];
@@ -3173,7 +3270,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             opprettet: string;
             personId: string;
@@ -3223,7 +3320,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             vurderingsTidspunkt: string;
         };
@@ -3499,7 +3596,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             opprettet: string;
             /** Format: uuid */
@@ -3519,7 +3616,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             tidsstempel: string;
         };
@@ -3705,7 +3802,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -3770,7 +3867,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3783,7 +3880,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             opprettet: string;
             /** Format: uuid */
@@ -3828,7 +3925,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3839,7 +3936,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3933,7 +4030,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-17T08:25:53.130757079
+             * @example 2025-02-17T09:14:06.858936966
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
