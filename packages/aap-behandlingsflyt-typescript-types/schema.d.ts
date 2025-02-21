@@ -2730,43 +2730,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/lovvalgmedlemskap/overstyr": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.ManuellOverstyring"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content?: never;
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -2783,7 +2746,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             tidspunkt: string;
         };
@@ -3064,7 +3027,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             vurderingsTidspunkt: string;
         };
@@ -3118,12 +3081,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             opprettet: string;
             /** @enum {string} */
@@ -3273,14 +3236,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringGrunnlagDto": {
             historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
-        };
-        "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.ManuellOverstyring": {
-            /** Format: int64 */
-            behandlingVersjon: number;
-            /** @enum {string} */
-            overstyringType: "LOVVALG" | "MEDLEMSKAP";
-            /** Format: uuid */
-            referanse: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.grunnlag.Forutg\u00E5endeMedlemskapGrunnlagDto": {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForForutg\u00E5endeMedlemskap"];
@@ -3481,7 +3436,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             opprettet: string;
             personId: string;
@@ -3538,7 +3493,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             vurderingsTidspunkt: string;
         };
@@ -3839,7 +3794,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             opprettet: string;
             /** Format: uuid */
@@ -3859,7 +3814,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             tidsstempel: string;
         };
@@ -3940,7 +3895,7 @@ export interface components {
             /** @enum {string} */
             "l\u00F8sesISteg": "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "FASTSETT_UTTAK" | "SAMORDNING_GRADERING" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "BREV" | "IVERKSETT_VEDTAK" | "UDEFINERT";
             /** @enum {string} */
-            type: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "BREV" | "BREV_VENTEPUNKT" | "VENTEPUNKT";
+            type: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "BREV" | "BREV_VENTEPUNKT" | "VENTEPUNKT" | "OVERSTYR";
             name: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": {
@@ -4040,7 +3995,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -4105,7 +4060,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -4118,7 +4073,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             opprettet: string;
             /** Format: uuid */
@@ -4163,7 +4118,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -4174,7 +4129,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -4268,7 +4223,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-21T07:51:25.347277902
+             * @example 2025-02-21T12:29:49.169016152
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
