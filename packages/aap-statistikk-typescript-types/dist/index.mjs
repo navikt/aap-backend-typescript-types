@@ -419,27 +419,6 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Journalf_ring"] = "Journalf\xF8ring";
   return NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2;
 })(NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype || {});
-var NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe = /* @__PURE__ */ ((NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2) => {
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["START_BEHANDLING"] = "START_BEHANDLING";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["ALDER"] = "ALDER";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["LOVVALG"] = "LOVVALG";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["MEDLEMSKAP"] = "MEDLEMSKAP";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["BARNETILLEGG"] = "BARNETILLEGG";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["STUDENT"] = "STUDENT";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["SYKDOM"] = "SYKDOM";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["GRUNNLAG"] = "GRUNNLAG";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["ET_ANNET_STED"] = "ET_ANNET_STED";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["UNDERVEIS"] = "UNDERVEIS";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["TILKJENT_YTELSE"] = "TILKJENT_YTELSE";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["SIMULERING"] = "SIMULERING";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["VEDTAK"] = "VEDTAK";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["FATTE_VEDTAK"] = "FATTE_VEDTAK";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["KVALITETSSIKRING"] = "KVALITETSSIKRING";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["IVERKSETT_VEDTAK"] = "IVERKSETT_VEDTAK";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["BREV"] = "BREV";
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2["UDEFINERT"] = "UDEFINERT";
-  return NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe2;
-})(NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe || {});
 export {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
@@ -474,7 +453,6 @@ export {
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus,
   NoNavAapPostmottakKontraktHendelseEndringDTOStatus,
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype,
-  NoNavAapStatistikkProduksjonsstyringBehandlingPerSteggruppeSteggruppe,
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper,
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper,
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper,
