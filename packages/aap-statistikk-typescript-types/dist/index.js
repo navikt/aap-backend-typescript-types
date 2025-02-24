@@ -196,6 +196,8 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5097"] = "5097";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5098"] = "5098";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5099"] = "5099";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5021"] = "5021";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5022"] = "5022";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
@@ -247,6 +249,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["BREV_VENTEPUNKT"] = "BREV_VENTEPUNKT";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["VENTEPUNKT"] = "VENTEPUNKT";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["OVERSTYR"] = "OVERSTYR";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType || {});
 var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2) => {
