@@ -46,11 +46,9 @@ __export(aap_statistikk_typescript_types_exports, {
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType,
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus: () => NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus,
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType: () => NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType,
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg: () => NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg,
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType: () => NoNavAapPostmottakKontraktHendelseDefinisjonDTOType,
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType: () => NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType,
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus: () => NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus,
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent: () => NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapPostmottakKontraktHendelseEndringDTOStatus: () => NoNavAapPostmottakKontraktHendelseEndringDTOStatus,
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype: () => NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype,
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper: () => PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper,
@@ -432,34 +430,6 @@ var NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__P
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus2;
 })(NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus || {});
-var NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType2) => {
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType2["MANUELT_P_KREVD"] = "MANUELT_P\xC5KREVD";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType2["MANUELT_FRIVILLIG"] = "MANUELT_FRIVILLIG";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType2["VENTEPUNKT"] = "VENTEPUNKT";
-  return NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType2;
-})(NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType || {});
-var NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2) => {
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["DIGITALISER_DOKUMENT"] = "DIGITALISER_DOKUMENT";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["AVKLAR_TEMA"] = "AVKLAR_TEMA";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["SETT_FAGSAK"] = "SETT_FAGSAK";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["ENDELIG_JOURNALF_RING"] = "ENDELIG_JOURNALF\xD8RING";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["OVERLEVER_TIL_FAGSYSTEM"] = "OVERLEVER_TIL_FAGSYSTEM";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["UDEFINERT"] = "UDEFINERT";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["AVKLAR_SAK"] = "AVKLAR_SAK";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["VIDERESEND"] = "VIDERESEND";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2["IVERKSETTES"] = "IVERKSETTES";
-  return NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg2;
-})(NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg || {});
-var NoNavAapPostmottakKontraktHendelseDefinisjonDTOType = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2) => {
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2["Value9001"] = "9001";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2["Value1337"] = "1337";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2["Value1338"] = "1338";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2["Value1339"] = "1339";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2["Value1340"] = "1340";
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2["Value1341"] = "1341";
-  return NoNavAapPostmottakKontraktHendelseDefinisjonDTOType2;
-})(NoNavAapPostmottakKontraktHendelseDefinisjonDTOType || {});
 var NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType2) => {
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType2["DokumentH_ndtering"] = "DokumentH\xE5ndtering";
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType2["Journalf_ring"] = "Journalf\xF8ring";
@@ -480,6 +450,14 @@ var NoNavAapPostmottakKontraktHendelseEndringDTOStatus = /* @__PURE__ */ ((NoNav
   NoNavAapPostmottakKontraktHendelseEndringDTOStatus2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapPostmottakKontraktHendelseEndringDTOStatus2;
 })(NoNavAapPostmottakKontraktHendelseEndringDTOStatus || {});
+var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ */ ((NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2) => {
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__OPPLYSNINGER"] = "VENTER_P\xC5_OPPLYSNINGER";
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER"] = "VENTER_P\xC5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER";
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__MEDISINSKE_OPPLYSNINGER"] = "VENTER_P\xC5_MEDISINSKE_OPPLYSNINGER";
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__VURDERING_AV_ROL"] = "VENTER_P\xC5_VURDERING_AV_ROL";
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__SVAR_FRA_BRUKER"] = "VENTER_P\xC5_SVAR_FRA_BRUKER";
+  return NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2;
+})(NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent || {});
 var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype = /* @__PURE__ */ ((NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2) => {
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Revurdering"] = "Revurdering";
@@ -517,11 +495,9 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType,
   NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus,
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOBehovType,
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOLSesISteg,
-  NoNavAapPostmottakKontraktHendelseDefinisjonDTOType,
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType,
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus,
+  NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapPostmottakKontraktHendelseEndringDTOStatus,
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype,
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper,
