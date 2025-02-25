@@ -346,6 +346,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKDOMSVILK_RET"] = "SYKDOMSVILK\xC5RET";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["BISTANDSVILK_RET"] = "BISTANDSVILK\xC5RET";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["MEDLEMSKAP"] = "MEDLEMSKAP";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["LOVVALG"] = "LOVVALG";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["GRUNNLAGET"] = "GRUNNLAGET";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKEPENGEERSTATNING"] = "SYKEPENGEERSTATNING";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2;
