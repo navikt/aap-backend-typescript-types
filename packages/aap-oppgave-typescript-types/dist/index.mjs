@@ -24,6 +24,8 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5097"] = "5097";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5098"] = "5098";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5099"] = "5099";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5021"] = "5021";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5022"] = "5022";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
@@ -75,6 +77,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["BREV_VENTEPUNKT"] = "BREV_VENTEPUNKT";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["VENTEPUNKT"] = "VENTEPUNKT";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["OVERSTYR"] = "OVERSTYR";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType || {});
 var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2) => {
@@ -87,6 +90,13 @@ var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /*
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2;
 })(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus || {});
+var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2) => {
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_AVSLAG"] = "VEDTAK_AVSLAG";
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_INNVILGELSE"] = "VEDTAK_INNVILGELSE";
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VARSEL_OM_BESTILLING"] = "VARSEL_OM_BESTILLING";
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT"] = "FORH\xC5NDSVARSEL_BRUDD_AKTIVITETSPLIKT";
+  return NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2;
+})(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev || {});
 var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2) => {
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Revurdering"] = "Revurdering";
@@ -257,6 +267,7 @@ export {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType,
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus,
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
