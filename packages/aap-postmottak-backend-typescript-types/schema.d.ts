@@ -977,7 +977,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-27T09:56:11.217127981
+             * @example 2025-02-27T16:26:05.509013193
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1028,7 +1028,7 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto": {
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "ANNET_RELEVANT_DOKUMENT";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "ANNET_RELEVANT_DOKUMENT";
             strukturertDokumentJson?: string | null;
             /**
              * Format: date
@@ -1070,7 +1070,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-02-27T09:56:11.217127981
+             * @example 2025-02-27T16:26:05.509013193
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1088,7 +1088,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-02-27T09:56:11.217127981
+             * @example 2025-02-27T16:26:05.509013193
              */
             tidsstempel: string;
         };
@@ -1160,7 +1160,7 @@ export interface components {
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.DigitaliserDokumentL\u00F8sning": {
             behovstype: string;
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "PLIKTKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "ANNET_RELEVANT_DOKUMENT";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "ANNET_RELEVANT_DOKUMENT";
             strukturertDokument?: string | null;
             /**
              * Format: date
@@ -1198,7 +1198,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-02-27T09:56:11.217127981
+             * @example 2025-02-27T16:26:05.509013193
              */
             opprettet: string;
             status: string;
