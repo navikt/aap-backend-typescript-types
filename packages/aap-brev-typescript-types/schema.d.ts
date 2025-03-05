@@ -121,6 +121,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/bestilling/{referanse}/avbryt": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/ferdigstill": {
         parameters: {
             query?: never;
@@ -510,12 +548,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING";
             /**
              * Format: date-time
-             * @example 2025-02-28T06:45:42.978305134
+             * @example 2025-03-05T08:13:57.027249836
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-02-28T06:45:42.978305134
+             * @example 2025-03-05T08:13:57.027249836
              */
             opprettet: string;
             /** Format: uuid */
@@ -523,7 +561,7 @@ export interface components {
             /** @enum {string} */
             "spr\u00E5k": "EN" | "NB" | "NN";
             /** @enum {string} */
-            status: "REGISTRERT" | "UNDER_ARBEID" | "FERDIGSTILT";
+            status: "REGISTRERT" | "UNDER_ARBEID" | "FERDIGSTILT" | "AVBRUTT";
         };
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
@@ -546,7 +584,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2025-02-28
+             * @example 2025-03-05
              */
             dato: string;
             /** Format: uuid */
@@ -585,7 +623,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-02-28T06:45:42.978305134
+             * @example 2025-03-05T08:13:57.027249836
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
