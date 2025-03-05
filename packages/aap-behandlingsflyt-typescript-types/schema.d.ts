@@ -2551,7 +2551,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             tidspunkt: string;
         };
@@ -2837,7 +2837,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             vurderingsTidspunkt: string;
         };
@@ -2891,12 +2891,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             opprettet: string;
             /** @enum {string} */
@@ -3048,6 +3048,7 @@ export interface components {
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.grunnlag.Forutg\u00E5endeMedlemskapGrunnlagDto": {
+            historiskeManuelleVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.HistoriskManuellVurderingForForutg\u00E5endeMedlemskap"][];
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForForutg\u00E5endeMedlemskap"];
         };
         "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.grunnlag.LovvalgMedlemskapGrunnlagDto": {
@@ -3152,7 +3153,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             opprettet: string;
             personId: string;
@@ -3160,6 +3161,14 @@ export interface components {
             /** @enum {string|null} */
             status?: "BESTILT" | "SENDT" | "OK" | "AVVIST" | null;
             statusTekst?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.HistoriskManuellVurderingForForutg\u00E5endeMedlemskap": {
+            manuellVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForForutg\u00E5endeMedlemskap"];
+            /**
+             * Format: date
+             * @example 2025-03-05
+             */
+            opprettet: string;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.HistoriskManuellVurderingForLovvalgMedlemskap": {
             manuellVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForLovvalgMedlemskap"];
@@ -3228,7 +3237,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             vurderingsTidspunkt: string;
         };
@@ -3529,7 +3538,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             opprettet: string;
             /** Format: uuid */
@@ -3549,7 +3558,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             tidsstempel: string;
         };
@@ -3730,7 +3739,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -3806,7 +3815,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3819,7 +3828,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             opprettet: string;
             /** Format: uuid */
@@ -3864,7 +3873,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3875,7 +3884,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3969,7 +3978,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T08:51:29.692006196
+             * @example 2025-03-05T09:48:36.427020009
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
