@@ -121,44 +121,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/bestilling/{referanse}/avbryt": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": string;
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/api/ferdigstill": {
         parameters: {
             query?: never;
@@ -178,6 +140,45 @@ export interface paths {
             requestBody?: {
                 content: {
                     "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.FerdigstillBrevRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/avbryt": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.AvbrytBrevbestillingRequest"];
                 };
             };
             responses: {
@@ -496,6 +497,10 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "no.nav.aap.brev.kontrakt.AvbrytBrevbestillingRequest": {
+            /** Format: uuid */
+            referanse: string;
+        };
         "no.nav.aap.brev.kontrakt.BestillBrevRequest": {
             /** Format: uuid */
             behandlingReferanse: string;
@@ -548,12 +553,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-03-05T10:04:47.714310563
+             * @example 2025-03-05T11:53:23.319933557
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T10:04:47.714310563
+             * @example 2025-03-05T11:53:23.319933557
              */
             opprettet: string;
             /** Format: uuid */
@@ -623,7 +628,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-05T10:04:47.714310563
+             * @example 2025-03-05T11:53:23.319933557
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
