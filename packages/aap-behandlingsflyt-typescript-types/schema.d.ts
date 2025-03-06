@@ -2587,7 +2587,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             tidspunkt: string;
         };
@@ -2875,7 +2875,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             vurderingsTidspunkt: string;
         };
@@ -2929,12 +2929,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             opprettet: string;
             /** @enum {string} */
@@ -3175,7 +3175,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.vilk\u00E5rsresultat.Vilk\u00E5rsperiode": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | null;
+            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | null;
             begrunnelse?: string | null;
             /** @enum {string|null} */
             "innvilgelses\u00E5rsak"?: "YRKESSKADE_ÅRSAKSSAMMENHENG" | "STUDENT" | "ARBEIDSSØKER" | "VURDERES_FOR_UFØRETRYGD" | null;
@@ -3196,7 +3196,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             opprettet: string;
             personId: string;
@@ -3280,7 +3280,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             vurderingsTidspunkt: string;
         };
@@ -3581,7 +3581,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             opprettet: string;
             /** Format: uuid */
@@ -3601,7 +3601,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             tidsstempel: string;
         };
@@ -3653,7 +3653,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rsperiodeDTO": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | null;
+            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | null;
             begrunnelse?: string | null;
             /** @enum {string|null} */
             "innvilgelses\u00E5rsak"?: "YRKESSKADE_ÅRSAKSSAMMENHENG" | "STUDENT" | "ARBEIDSSØKER" | "VURDERES_FOR_UFØRETRYGD" | null;
@@ -3782,7 +3782,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -3858,7 +3858,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -3871,7 +3871,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             opprettet: string;
             /** Format: uuid */
@@ -3916,7 +3916,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -3927,7 +3927,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -4021,7 +4021,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-06T13:51:07.800247288
+             * @example 2025-03-06T13:57:26.866472167
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
