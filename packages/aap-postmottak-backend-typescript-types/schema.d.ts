@@ -954,12 +954,12 @@ export interface components {
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             fom: string;
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             tom: string;
         };
@@ -977,7 +977,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-10T15:49:05.42188739
+             * @example 2025-03-11T06:41:42.913685393
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -999,7 +999,7 @@ export interface components {
             journalpostId: number;
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             registrertDato?: string | null;
             "s\u00F8ker"?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentIdent"];
@@ -1011,6 +1011,7 @@ export interface components {
             skalOverleveres: boolean;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakGrunnlagDto": {
+            brevkode: string;
             saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto"][];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto"];
         };
@@ -1028,11 +1029,11 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto": {
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "ANNET_RELEVANT_DOKUMENT";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT";
             strukturertDokumentJson?: string | null;
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             "s\u00F8knadsdato"?: string | null;
         };
@@ -1070,7 +1071,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-03-10T15:49:05.42188739
+             * @example 2025-03-11T06:41:42.913685393
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1088,7 +1089,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-03-10T15:49:05.42188739
+             * @example 2025-03-11T06:41:42.913685393
              */
             tidsstempel: string;
         };
@@ -1119,7 +1120,7 @@ export interface components {
             behandlingVersjon: number;
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             frist?: string | null;
             /** @enum {string} */
@@ -1129,7 +1130,7 @@ export interface components {
             begrunnelse: string;
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             frist: string;
             /** @enum {string} */
@@ -1160,11 +1161,11 @@ export interface components {
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.DigitaliserDokumentL\u00F8sning": {
             behovstype: string;
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "ANNET_RELEVANT_DOKUMENT";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT";
             strukturertDokument?: string | null;
             /**
              * Format: date
-             * @example 2025-03-10
+             * @example 2025-03-11
              */
             "s\u00F8knadsdato"?: string | null;
         };
@@ -1198,7 +1199,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-03-10T15:49:05.42188739
+             * @example 2025-03-11T06:41:42.913685393
              */
             opprettet: string;
             status: string;
