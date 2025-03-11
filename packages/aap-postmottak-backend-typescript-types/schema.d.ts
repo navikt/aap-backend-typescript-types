@@ -977,7 +977,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-11T08:43:44.139823032
+             * @example 2025-03-11T09:36:48.374577676
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1071,7 +1071,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-03-11T08:43:44.139823032
+             * @example 2025-03-11T09:36:48.374577676
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1089,7 +1089,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-03-11T08:43:44.139823032
+             * @example 2025-03-11T09:36:48.374577676
              */
             tidsstempel: string;
         };
@@ -1199,7 +1199,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-03-11T08:43:44.139823032
+             * @example 2025-03-11T09:36:48.374577676
              */
             opprettet: string;
             status: string;
