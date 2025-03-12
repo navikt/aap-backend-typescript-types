@@ -77,6 +77,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5099"] = "5099";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5021"] = "5021";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5022"] = "5022";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5023"] = "5023";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
@@ -182,6 +183,7 @@ var NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent = /* @__PU
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__SVAR_FRA_BRUKER"] = "VENTER_P\xC5_SVAR_FRA_BRUKER";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__MASKINELL_AVKLARING"] = "VENTER_P\xC5_MASKINELL_AVKLARING";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING"] = "VENTER_P\xC5_UTENLANDSK_VIDEREFORING_AVKLARING";
+  NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__KLAGE_IMPLEMENTASJON"] = "VENTER_P\xC5_KLAGE_IMPLEMENTASJON";
   return NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2;
 })(NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent || {});
 var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {
