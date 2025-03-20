@@ -506,6 +506,7 @@ export interface components {
             behandlingReferanse: string;
             /** @enum {string} */
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brukerIdent?: string | null;
             saksnummer: string;
             /** @enum {string} */
             sprak: "EN" | "NB" | "NN";
@@ -553,12 +554,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-03-19T12:00:57.469163075
+             * @example 2025-03-20T09:12:33.54740159
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-19T12:00:57.469163075
+             * @example 2025-03-20T09:12:33.54740159
              */
             opprettet: string;
             /** Format: uuid */
@@ -574,6 +575,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             /** Format: uuid */
             referanse: string;
+            signaturer?: components["schemas"]["no.nav.aap.brev.kontrakt.Signatur"][] | null;
         };
         "no.nav.aap.brev.kontrakt.Innhold": {
             blokker: components["schemas"]["no.nav.aap.brev.kontrakt.Blokk"][];
@@ -589,7 +591,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2025-03-19
+             * @example 2025-03-20
              */
             dato: string;
             /** Format: uuid */
@@ -603,6 +605,11 @@ export interface components {
             dokumenter: string[];
             journalpostFerdigstilt: boolean;
             journalpostId: string;
+        };
+        "no.nav.aap.brev.kontrakt.Signatur": {
+            navIdent: string;
+            /** @enum {string} */
+            rolle: "SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER";
         };
         "no.nav.aap.brev.kontrakt.Tekstbolk": {
             /** Format: uuid */
@@ -628,7 +635,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-19T12:00:57.469163075
+             * @example 2025-03-20T09:12:33.54740159
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
