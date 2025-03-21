@@ -359,6 +359,14 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_LOVVALG"] = "REVURDER_LOVVALG";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_SAMORDNING"] = "REVURDER_SAMORDNING";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["KLAGE"] = "KLAGE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["LOVVALG_OG_MEDLEMSKAP"] = "LOVVALG_OG_MEDLEMSKAP";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["FORUTGAENDE_MEDLEMSKAP"] = "FORUTGAENDE_MEDLEMSKAP";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND"] = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["BARNETILLEGG"] = "BARNETILLEGG";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["INSTITUSJONSOPPHOLD"] = "INSTITUSJONSOPPHOLD";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["SAMORDNING_OG_AVREGNING"] = "SAMORDNING_OG_AVREGNING";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REFUSJONSKRAV"] = "REFUSJONSKRAV";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
