@@ -133,6 +133,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5022"] = "5022";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5023"] = "5023";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5025"] = "5025";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5027"] = "5027";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5026"] = "5026";
@@ -171,6 +172,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_UF_RE"] = "SAMORDNING_UF\xD8RE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ANDRE_STATLIGE_YTELSER"] = "SAMORDNING_ANDRE_STATLIGE_YTELSER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["EFFEKTUER_11_7"] = "EFFEKTUER_11_7";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["DU_ER_ET_ANNET_STED"] = "DU_ER_ET_ANNET_STED";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BEREGN_TILKJENT_YTELSE"] = "BEREGN_TILKJENT_YTELSE";
@@ -310,6 +312,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["LOVVALG"] = "LOVVALG";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["GRUNNLAGET"] = "GRUNNLAGET";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKEPENGEERSTATNING"] = "SYKEPENGEERSTATNING";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING"] = "SAMORDNING";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall2) => {
