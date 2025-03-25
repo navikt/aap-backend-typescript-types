@@ -347,6 +347,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/drift/api/jobb/{jobbId}/kjor": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description ID */
+                    jobbId: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/drift/api/jobb/rekjor/{jobbId}": {
         parameters: {
             query?: never;
@@ -554,12 +592,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-03-24T13:50:44.143148961
+             * @example 2025-03-25T07:37:07.32159723
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-24T13:50:44.143148961
+             * @example 2025-03-25T07:37:07.32159723
              */
             opprettet: string;
             /** Format: uuid */
@@ -591,7 +629,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2025-03-24
+             * @example 2025-03-25
              */
             dato: string;
             /** Format: uuid */
@@ -635,7 +673,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-24T13:50:44.143148961
+             * @example 2025-03-25T07:37:07.32159723
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
