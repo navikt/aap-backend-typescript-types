@@ -2702,7 +2702,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             tidspunkt: string;
         };
@@ -3015,7 +3015,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             vurderingsTidspunkt: string;
         };
@@ -3080,12 +3080,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             opprettet: string;
             /** @enum {string} */
@@ -3401,7 +3401,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             opprettet: string;
             personId: string;
@@ -3490,7 +3490,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             vurderingsTidspunkt: string;
         };
@@ -3827,7 +3827,7 @@ export interface components {
             /** @enum {string} */
             aktivGruppe: "START_BEHANDLING" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT";
             /** @enum {string} */
-            aktivtSteg: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
+            aktivtSteg: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
             aktivtStegDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"][];
             /** Format: int64 */
             behandlingVersjon: number;
@@ -3837,7 +3837,7 @@ export interface components {
             /** @enum {string|null} */
             vurdertGruppe?: "START_BEHANDLING" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | null;
             /** @enum {string|null} */
-            vurdertSteg?: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT" | null;
+            vurdertSteg?: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT" | null;
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingPersoninfo": {
             /** @description Key type: kotlin.String */
@@ -3850,11 +3850,11 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.flyt.DetaljertBehandlingDTO": {
             /** @enum {string} */
-            aktivtSteg: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
+            aktivtSteg: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             opprettet: string;
             /** Format: uuid */
@@ -3874,7 +3874,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             tidsstempel: string;
         };
@@ -3888,7 +3888,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.flyt.FlytSteg": {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /** @enum {string} */
-            stegType: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
+            stegType: "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
             "vilk\u00E5rDTO"?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rDTO"];
         };
         "no.nav.aap.behandlingsflyt.flyt.Prosessering": {
@@ -3965,7 +3965,7 @@ export interface components {
             kvalitetssikres: boolean;
             "l\u00F8sesAv": ("SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER" | "LES" | "PRODUKSJONSSTYRING" | "DRIFT")[];
             /** @enum {string} */
-            "l\u00F8sesISteg": "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
+            "l\u00F8sesISteg": "START_BEHANDLING" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "UDEFINERT";
             /** @enum {string} */
             type: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "BREV" | "BREV_VENTEPUNKT" | "VENTEPUNKT" | "OVERSTYR";
             name: string;
@@ -4066,7 +4066,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -4147,7 +4147,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -4160,7 +4160,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             opprettet: string;
             /** Format: uuid */
@@ -4205,7 +4205,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -4216,7 +4216,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -4308,7 +4308,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-26T12:19:28.097170946
+             * @example 2025-03-26T12:52:39.692337807
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
