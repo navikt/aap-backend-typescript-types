@@ -199,6 +199,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/forhandsvis-signaturer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.HentSignaturerRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.HentSignaturerResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/dokumentinnhenting/journalfor-behandler-bestilling": {
         parameters: {
             query?: never;
@@ -592,12 +631,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-03-27T09:51:22.481378358
+             * @example 2025-03-27T13:07:26.914409652
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-27T09:51:22.481378358
+             * @example 2025-03-27T13:07:26.914409652
              */
             opprettet: string;
             /** Format: uuid */
@@ -613,7 +652,16 @@ export interface components {
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             /** Format: uuid */
             referanse: string;
-            signaturer?: components["schemas"]["no.nav.aap.brev.kontrakt.Signatur"][] | null;
+            signaturer?: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][] | null;
+        };
+        "no.nav.aap.brev.kontrakt.HentSignaturerRequest": {
+            /** @enum {string} */
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brukerIdent: string;
+            signaturGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
+        };
+        "no.nav.aap.brev.kontrakt.HentSignaturerResponse": {
+            signaturer: components["schemas"]["no.nav.aap.brev.kontrakt.Signatur"][];
         };
         "no.nav.aap.brev.kontrakt.Innhold": {
             blokker: components["schemas"]["no.nav.aap.brev.kontrakt.Blokk"][];
@@ -646,6 +694,10 @@ export interface components {
             journalpostId: string;
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
+            enhet: string;
+            navn: string;
+        };
+        "no.nav.aap.brev.kontrakt.SignaturGrunnlag": {
             navIdent: string;
             /** @enum {string} */
             rolle: "KVALITETSSIKRER" | "SAKSBEHANDLER_OPPFOLGING" | "BESLUTTER" | "SAKSBEHANDLER_NASJONAL";
@@ -674,7 +726,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-27T09:51:22.481378358
+             * @example 2025-03-27T13:07:26.914409652
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
