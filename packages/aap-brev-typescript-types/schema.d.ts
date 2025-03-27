@@ -592,12 +592,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-03-27T09:20:02.872449539
+             * @example 2025-03-27T09:51:22.481378358
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-27T09:20:02.872449539
+             * @example 2025-03-27T09:51:22.481378358
              */
             opprettet: string;
             /** Format: uuid */
@@ -624,7 +624,7 @@ export interface components {
             overskrift?: string | null;
         };
         "no.nav.aap.brev.kontrakt.Journalf\u00F8rBehandlerBestillingRequest": {
-            bestillerNavIdent?: string | null;
+            bestillerNavIdent: string;
             brevAvsnitt: string[];
             brevkode: string;
             brukerFnr: string;
@@ -674,7 +674,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-27T09:20:02.872449539
+             * @example 2025-03-27T09:51:22.481378358
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
