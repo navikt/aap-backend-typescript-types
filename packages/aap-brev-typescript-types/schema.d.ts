@@ -592,12 +592,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-03-27T06:56:39.793708993
+             * @example 2025-03-27T09:20:02.872449539
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-03-27T06:56:39.793708993
+             * @example 2025-03-27T09:20:02.872449539
              */
             opprettet: string;
             /** Format: uuid */
@@ -648,7 +648,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.Signatur": {
             navIdent: string;
             /** @enum {string} */
-            rolle: "SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER";
+            rolle: "KVALITETSSIKRER" | "SAKSBEHANDLER_OPPFOLGING" | "BESLUTTER" | "SAKSBEHANDLER_NASJONAL";
         };
         "no.nav.aap.brev.kontrakt.Tekstbolk": {
             /** Format: uuid */
@@ -674,7 +674,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-27T06:56:39.793708993
+             * @example 2025-03-27T09:20:02.872449539
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
