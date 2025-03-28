@@ -1,6 +1,6 @@
 {
   "name": "@navikt/aap-postmottak-backend-typescript-types",
-  "version": "0.0.218",
+  "version": "0.0.219",
   "author": "NAV",
   "license": "MIT",
   "publishConfig": {
