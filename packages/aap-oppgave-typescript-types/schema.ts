@@ -882,17 +882,19 @@ export interface components {
             typeBrev?: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.BehandlingFlytStoppetHendelse": {
+            /** @enum {string|null} */
+            aktivtSteg?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg;
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
             /** @enum {string} */
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -913,7 +915,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -939,7 +941,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -962,7 +964,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -972,7 +974,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -984,7 +986,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -998,7 +1000,7 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1028,7 +1030,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1038,7 +1040,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             opprettetTidspunkt: string;
             veileder?: string | null;
@@ -1111,14 +1113,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1138,7 +1140,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-03-28T08:27:52.946306678
+             * @example 2025-03-28T09:06:08.965513243
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -1186,6 +1188,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5022 = "5022",
     Value5023 = "5023",
     Value5025 = "5025",
+    Value5027 = "5027",
     Value5019 = "5019",
     Value5050 = "5050",
     Value5026 = "5026"
@@ -1219,9 +1222,11 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     FASTSETT_BEREGNINGSTIDSPUNKT = "FASTSETT_BEREGNINGSTIDSPUNKT",
     FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
     VIS_GRUNNLAG = "VIS_GRUNNLAG",
-    FASTSETT_UTTAK = "FASTSETT_UTTAK",
     SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
     SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
+    SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
+    SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
+    FASTSETT_UTTAK = "FASTSETT_UTTAK",
     EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
     BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
@@ -1256,6 +1261,42 @@ export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTyp
     VEDTAK_ENDRING = "VEDTAK_ENDRING",
     VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
     FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg {
+    START_BEHANDLING = "START_BEHANDLING",
+    VURDER_ALDER = "VURDER_ALDER",
+    VURDER_LOVVALG = "VURDER_LOVVALG",
+    VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
+    FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
+    AVKLAR_STUDENT = "AVKLAR_STUDENT",
+    VURDER_BISTANDSBEHOV = "VURDER_BISTANDSBEHOV",
+    VURDER_SYKEPENGEERSTATNING = "VURDER_SYKEPENGEERSTATNING",
+    FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
+    VURDER_YRKESSKADE = "VURDER_YRKESSKADE",
+    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    KVALITETSSIKRING = "KVALITETSSIKRING",
+    BARNETILLEGG = "BARNETILLEGG",
+    AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
+    REFUSJON_KRAV = "REFUSJON_KRAV",
+    FASTSETT_ARBEIDSEVNE = "FASTSETT_ARBEIDSEVNE",
+    FASTSETT_BEREGNINGSTIDSPUNKT = "FASTSETT_BEREGNINGSTIDSPUNKT",
+    FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
+    VIS_GRUNNLAG = "VIS_GRUNNLAG",
+    SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
+    SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
+    SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
+    SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
+    FASTSETT_UTTAK = "FASTSETT_UTTAK",
+    EFFEKTUER_11_7 = "EFFEKTUER_11_7",
+    DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
+    BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
+    SIMULERING = "SIMULERING",
+    FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
+    FATTE_VEDTAK = "FATTE_VEDTAK",
+    IVERKSETT_VEDTAK = "IVERKSETT_VEDTAK",
+    OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
+    BREV = "BREV",
+    UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
