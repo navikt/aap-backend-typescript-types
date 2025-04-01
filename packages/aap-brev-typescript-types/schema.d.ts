@@ -671,12 +671,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-04-01T11:08:29.759482606
+             * @example 2025-04-01T11:16:53.582136822
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-04-01T11:08:29.759482606
+             * @example 2025-04-01T11:16:53.582136822
              */
             opprettet: string;
             /** Format: uuid */
@@ -743,8 +743,6 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.SignaturGrunnlag": {
             navIdent: string;
-            /** @enum {string} */
-            rolle: "KVALITETSSIKRER" | "SAKSBEHANDLER_OPPFOLGING" | "BESLUTTER" | "SAKSBEHANDLER_NASJONAL";
         };
         "no.nav.aap.brev.kontrakt.Tekstbolk": {
             /** Format: uuid */
@@ -770,7 +768,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-04-01T11:08:29.759482606
+             * @example 2025-04-01T11:16:53.582136822
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
