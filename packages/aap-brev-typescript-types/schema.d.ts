@@ -622,7 +622,7 @@ export interface components {
             behandlingReferanse: string;
             /** @enum {string} */
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
-            brukerIdent?: string | null;
+            brukerIdent: string;
             saksnummer: string;
             /** @enum {string} */
             sprak: "EN" | "NB" | "NN";
@@ -671,12 +671,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-04-02T06:40:47.088332635
+             * @example 2025-04-02T09:00:47.940774854
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-04-02T06:40:47.088332635
+             * @example 2025-04-02T09:00:47.940774854
              */
             opprettet: string;
             /** Format: uuid */
@@ -770,7 +770,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-04-02T06:40:47.088332635
+             * @example 2025-04-02T09:00:47.940774854
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
