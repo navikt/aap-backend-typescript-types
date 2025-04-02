@@ -121,6 +121,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/bestilling/{referanse}/forhandsvis": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.ForhandsvisBrevRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/ferdigstill": {
         parameters: {
             query?: never;
@@ -671,12 +713,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-04-02T09:00:47.940774854
+             * @example 2025-04-02T09:06:02.865843627
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-04-02T09:00:47.940774854
+             * @example 2025-04-02T09:06:02.865843627
              */
             opprettet: string;
             /** Format: uuid */
@@ -693,6 +735,9 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             signaturer?: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][] | null;
+        };
+        "no.nav.aap.brev.kontrakt.ForhandsvisBrevRequest": {
+            signaturer: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
         };
         "no.nav.aap.brev.kontrakt.HentSignaturDokumentinnhentingRequest": {
             bestillerNavIdent: string;
@@ -770,7 +815,7 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-04-02T09:00:47.940774854
+             * @example 2025-04-02T09:06:02.865843627
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
