@@ -24,10 +24,10 @@ interface paths {
                     /** @example {
                      *       "saksnummer": "4LFL5CW",
                      *       "sakStatus": "LØPENDE",
-                     *       "behandlingReferanse": "6c02479d-bfef-499f-a923-578301ddf179",
+                     *       "behandlingReferanse": "b523df6e-4542-4e66-b473-f121fa42f829",
                      *       "relatertBehandling": null,
-                     *       "behandlingOpprettetTidspunkt": "2025-04-10T07:26:07.922643587",
-                     *       "mottattTid": "2025-04-09T07:26:07.922660679",
+                     *       "behandlingOpprettetTidspunkt": "2025-04-10T13:15:56.019926612",
+                     *       "mottattTid": "2025-04-09T13:15:56.019941831",
                      *       "behandlingStatus": "OPPRETTET",
                      *       "behandlingType": "Førstegangsbehandling",
                      *       "soknadsFormat": "DIGITAL",
@@ -52,7 +52,7 @@ interface paths {
                      *           "endringer": [
                      *             {
                      *               "status": "OPPRETTET",
-                     *               "tidsstempel": "2025-04-10T07:16:07.921807602",
+                     *               "tidsstempel": "2025-04-10T13:05:56.018913392",
                      *               "frist": null,
                      *               "endretAv": "Kelvin",
                      *               "årsakTilSattPåVent": null,
@@ -60,7 +60,7 @@ interface paths {
                      *             },
                      *             {
                      *               "status": "AVSLUTTET",
-                     *               "tidsstempel": "2025-04-10T07:21:07.921871582",
+                     *               "tidsstempel": "2025-04-10T13:10:56.01897138",
                      *               "frist": null,
                      *               "endretAv": "Z994573",
                      *               "årsakTilSattPåVent": null,
@@ -84,7 +84,7 @@ interface paths {
                      *           "endringer": [
                      *             {
                      *               "status": "OPPRETTET",
-                     *               "tidsstempel": "2025-04-10T07:23:07.921899574",
+                     *               "tidsstempel": "2025-04-10T13:12:56.019001086",
                      *               "frist": null,
                      *               "endretAv": "Kelvin",
                      *               "årsakTilSattPåVent": null,
@@ -94,7 +94,7 @@ interface paths {
                      *           "typeBrev": null
                      *         }
                      *       ],
-                     *       "hendelsesTidspunkt": "2025-04-10T07:26:07.922844223",
+                     *       "hendelsesTidspunkt": "2025-04-10T13:15:56.020204391",
                      *       "avsluttetBehandling": null,
                      *       "identerForSak": []
                      *     } */
@@ -661,7 +661,7 @@ interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -752,7 +752,7 @@ interface components {
             avsluttetBehandling?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.AvsluttetBehandlingDTO"];
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             behandlingOpprettetTidspunkt: string;
             /** Format: uuid */
@@ -763,14 +763,14 @@ interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             hendelsesTidspunkt: string;
             ident: string;
             identerForSak: string[];
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             mottattTid: string;
             /** Format: uuid */
@@ -787,6 +787,12 @@ interface components {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO"][];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO": {
+            /** Format: int32 */
+            antallBarn: number;
+            /** Format: double */
+            barnetillegg: number;
+            /** Format: double */
+            barnetilleggSats: number;
             /** Format: double */
             dagsats: number;
             /**
@@ -796,6 +802,8 @@ interface components {
             fraDato: string;
             /** Format: double */
             gradering: number;
+            /** Format: double */
+            redusertDagsats: number;
             /**
              * Format: date
              * @example 2025-04-10
@@ -833,7 +841,7 @@ interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -843,7 +851,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -855,7 +863,7 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -869,7 +877,7 @@ interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -907,14 +915,14 @@ interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -934,7 +942,7 @@ interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-04-10T07:26:07.874170806
+             * @example 2025-04-10T13:15:55.968518802
              */
             tidsstempel: string;
             /** @enum {string|null} */
