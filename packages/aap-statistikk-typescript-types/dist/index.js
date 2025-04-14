@@ -29,6 +29,7 @@ __export(aap_statistikk_typescript_types_exports, {
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent: () => NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus: () => NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak: () => NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat: () => NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat,
   NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType: () => NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType,
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype: () => NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus: () => NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus,
@@ -204,6 +205,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5023"] = "5023";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5025"] = "5025";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5027"] = "5027";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5028"] = "5028";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5026"] = "5026";
@@ -221,6 +223,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE_
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["S_KNAD"] = "S\xD8KNAD";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_ALDER"] = "VURDER_ALDER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_LOVVALG"] = "VURDER_LOVVALG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_MEDLEMSKAP"] = "VURDER_MEDLEMSKAP";
@@ -312,6 +315,11 @@ var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["ANNET"] = "ANNET";
   return NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2;
 })(NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak || {});
+var NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2) => {
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["INNVILGET"] = "INNVILGET";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["AVSLAG"] = "AVSLAG";
+  return NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2;
+})(NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat || {});
 var NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2) => {
   NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2["STANDARD"] = "STANDARD";
   NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2["YTTERLIGERE_NEDSATT"] = "YTTERLIGERE_NEDSATT";
@@ -373,6 +381,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["SAMORDNING_OG_AVREGNING"] = "SAMORDNING_OG_AVREGNING";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REFUSJONSKRAV"] = "REFUSJONSKRAV";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["S_KNAD_TRUKKET"] = "S\xD8KNAD_TRUKKET";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
@@ -517,6 +526,7 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat,
   NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType,
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus,
