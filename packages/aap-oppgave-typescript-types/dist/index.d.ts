@@ -888,12 +888,12 @@ interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -907,14 +907,14 @@ interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-04-08
+             * @example 2025-04-14
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -940,7 +940,7 @@ interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -963,7 +963,7 @@ interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -973,7 +973,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -985,21 +985,21 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             personNavn?: string | null;
             /**
              * Format: date
-             * @example 2025-04-08
+             * @example 2025-04-14
              */
             "p\u00E5VentTil"?: string | null;
             "p\u00E5Vent\u00C5rsak"?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1029,7 +1029,7 @@ interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1039,7 +1039,7 @@ interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             opprettetTidspunkt: string;
             veileder?: string | null;
@@ -1112,14 +1112,14 @@ interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1132,14 +1132,14 @@ interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-04-08
+             * @example 2025-04-14
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-04-08T13:36:16.853870241
+             * @example 2025-04-14T06:00:57.92668054
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -1189,6 +1189,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5023 = "5023",
     Value5025 = "5025",
     Value5027 = "5027",
+    Value5028 = "5028",
     Value5019 = "5019",
     Value5050 = "5050",
     Value5026 = "5026"
@@ -1204,6 +1205,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     START_BEHANDLING = "START_BEHANDLING",
+    S_KNAD = "S\u00D8KNAD",
     VURDER_ALDER = "VURDER_ALDER",
     VURDER_LOVVALG = "VURDER_LOVVALG",
     VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
@@ -1264,6 +1266,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTy
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg {
     START_BEHANDLING = "START_BEHANDLING",
+    S_KNAD = "S\u00D8KNAD",
     VURDER_ALDER = "VURDER_ALDER",
     VURDER_LOVVALG = "VURDER_LOVVALG",
     VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
