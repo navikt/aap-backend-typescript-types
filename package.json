@@ -19,7 +19,7 @@
     "url": "https://github.com/navikt/aap-backend-typescript-types/issues"
   },
   "dependencies": {
-    "@changesets/cli": "^2.27.8"
+    "@changesets/cli": "^2.29.2"
   },
   "devDependencies": {
     "openapi-typescript": "^7.6.1",
