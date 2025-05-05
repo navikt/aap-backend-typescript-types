@@ -239,6 +239,7 @@ var NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent = /* @__PU
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING"] = "VENTER_P\xC5_UTENLANDSK_VIDEREFORING_AVKLARING";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__KLAGE_IMPLEMENTASJON"] = "VENTER_P\xC5_KLAGE_IMPLEMENTASJON";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__SVAR_P__FORH_NDSVARSEL"] = "VENTER_P\xC5_SVAR_P\xC5_FORH\xC5NDSVARSEL";
+  NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2["VENTER_P__FUNKSJONALITET"] = "VENTER_P\xC5_FUNKSJONALITET";
   return NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent2;
 })(NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent || {});
 var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {
