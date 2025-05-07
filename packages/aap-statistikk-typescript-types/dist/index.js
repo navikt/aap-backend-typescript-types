@@ -209,7 +209,9 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5028"] = "5028";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5026"] = "5026";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6000"] = "6000";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
@@ -258,6 +260,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IVERKSETT_VEDTAK"] = "IVERKSETT_VEDTAK";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["OPPRETT_REVURDERING"] = "OPPRETT_REVURDERING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BREV"] = "BREV";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FORMKRAV"] = "FORMKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
