@@ -890,12 +890,12 @@ export interface components {
             "erP\u00E5Vent": boolean;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -917,7 +917,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -943,12 +943,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -971,7 +971,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -981,7 +981,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -993,7 +993,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -1007,7 +1007,7 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -1038,7 +1038,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1048,7 +1048,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             opprettetTidspunkt: string;
             veileder?: string | null;
@@ -1069,12 +1069,19 @@ export interface components {
             filterId: number;
             /** Format: int32 */
             maxAntall: number;
+            paging?: components["schemas"]["no.nav.aap.oppgave.liste.Paging"];
             veileder: boolean;
         };
         "no.nav.aap.oppgave.liste.OppgavelisteRespons": {
             /** Format: int32 */
             antallTotalt: number;
             oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+        };
+        "no.nav.aap.oppgave.liste.Paging": {
+            /** Format: int32 */
+            antallPerSide: number;
+            /** Format: int32 */
+            side: number;
         };
         "no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto": {
             enheter: string[];
@@ -1121,14 +1128,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1148,7 +1155,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-08T09:11:33.719229202
+             * @example 2025-05-08T09:22:26.408237273
              */
             tidsstempel: string;
             /** @enum {string|null} */
