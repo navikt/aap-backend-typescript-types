@@ -93,6 +93,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5999"] = "5999";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5056"] = "5056";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6000"] = "6000";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6001"] = "6001";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
@@ -144,6 +145,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FORMKRAV"] = "FORMKRAV";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
@@ -213,6 +215,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FORMKRAV"] = "FORMKRAV";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg || {});
