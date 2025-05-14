@@ -43,6 +43,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v2/bestill": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BestillBrevV2Request"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BestillBrevResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/bestilling/{referanse}": {
         parameters: {
             query?: never;
@@ -655,6 +694,7 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "java.time.Year": Record<string, never>;
         "no.nav.aap.brev.kontrakt.AvbrytBrevbestillingRequest": {
             /** Format: uuid */
             referanse: string;
@@ -674,6 +714,20 @@ export interface components {
         "no.nav.aap.brev.kontrakt.BestillBrevResponse": {
             /** Format: uuid */
             referanse: string;
+        };
+        "no.nav.aap.brev.kontrakt.BestillBrevV2Request": {
+            /** Format: uuid */
+            behandlingReferanse: string;
+            /** @enum {string} */
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brukerIdent: string;
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag"][];
+            ferdigstillAutomatisk: boolean;
+            saksnummer: string;
+            /** @enum {string} */
+            sprak: "EN" | "NB" | "NN";
+            unikReferanse: string;
+            vedlegg: components["schemas"]["no.nav.aap.brev.kontrakt.Vedlegg"][];
         };
         "no.nav.aap.brev.kontrakt.Blokk": {
             /** Format: uuid */
@@ -713,12 +767,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-05-14T11:39:55.653182265
+             * @example 2025-05-14T12:24:52.055395742
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-05-14T11:39:55.653182265
+             * @example 2025-05-14T12:24:52.055395742
              */
             opprettet: string;
             /** Format: uuid */
@@ -730,6 +784,25 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"];
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7": {
+            /**
+             * Format: date
+             * @example 2025-05-14
+             */
+            frist: string;
+            /** @enum {string} */
+            type: "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning": {
+            "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
+            /** @enum {string} */
+            type: "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r": {
+            inntekt: number;
+            "\u00E5r": components["schemas"]["java.time.Year"];
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             /** Format: uuid */
@@ -815,12 +888,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-14T11:39:55.653182265
+             * @example 2025-05-14T12:24:52.055395742
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-14T11:39:55.653182265
+             * @example 2025-05-14T12:24:52.055395742
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
