@@ -42,6 +42,8 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5056"] = "5056";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6000"] = "6000";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6001"] = "6001";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6002"] = "6002";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6003"] = "6003";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
@@ -94,6 +96,8 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FORMKRAV"] = "FORMKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KLAGEBEHANDLING_KONTOR"] = "KLAGEBEHANDLING_KONTOR";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KLAGEBEHANDLING_NAY"] = "KLAGEBEHANDLING_NAY";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
@@ -164,6 +168,8 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FORMKRAV"] = "FORMKRAV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["KLAGEBEHANDLING_KONTOR"] = "KLAGEBEHANDLING_KONTOR";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["KLAGEBEHANDLING_NAY"] = "KLAGEBEHANDLING_NAY";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg || {});
