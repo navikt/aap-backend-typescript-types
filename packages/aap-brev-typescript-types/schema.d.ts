@@ -767,12 +767,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
             /**
              * Format: date-time
-             * @example 2025-05-14T12:24:52.055395742
+             * @example 2025-05-15T07:40:32.859075135
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-05-14T12:24:52.055395742
+             * @example 2025-05-15T07:40:32.859075135
              */
             opprettet: string;
             /** Format: uuid */
@@ -789,7 +789,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7": {
             /**
              * Format: date
-             * @example 2025-05-14
+             * @example 2025-05-15
              */
             frist: string;
             /** @enum {string} */
@@ -840,7 +840,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2025-05-14
+             * @example 2025-05-15
              */
             dato: string;
             /** Format: uuid */
@@ -888,12 +888,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-14T12:24:52.055395742
+             * @example 2025-05-15T07:40:32.859075135
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-14T12:24:52.055395742
+             * @example 2025-05-15T07:40:32.859075135
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
