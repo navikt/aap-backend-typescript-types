@@ -218,6 +218,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6001"] = "6001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6002"] = "6002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6003"] = "6003";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value7001"] = "7001";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
@@ -252,6 +253,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_BEREGNINGSTIDSPUNKT"] = "FASTSETT_BEREGNINGSTIDSPUNKT";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_GRUNNLAG"] = "FASTSETT_GRUNNLAG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VIS_GRUNNLAG"] = "VIS_GRUNNLAG";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["MANGLENDE_LIGNING"] = "MANGLENDE_LIGNING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_UF_RE"] = "SAMORDNING_UF\xD8RE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_AVSLAG"] = "SAMORDNING_AVSLAG";
