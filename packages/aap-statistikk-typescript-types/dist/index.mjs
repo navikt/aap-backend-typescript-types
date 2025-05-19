@@ -148,6 +148,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6001"] = "6001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6002"] = "6002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6003"] = "6003";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6004"] = "6004";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value7001"] = "7001";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
@@ -204,6 +205,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KLAGEBEHANDLING_KONTOR"] = "KLAGEBEHANDLING_KONTOR";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KLAGEBEHANDLING_NAY"] = "KLAGEBEHANDLING_NAY";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["OMGJ_RING"] = "OMGJ\xD8RING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
