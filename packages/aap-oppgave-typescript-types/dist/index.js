@@ -18,8 +18,8 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // index.ts
-var aap_oppgave_typescript_types_exports = {};
-__export(aap_oppgave_typescript_types_exports, {
+var index_exports = {};
+__export(index_exports, {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode: () => NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv: () => NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg: () => NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
@@ -48,7 +48,7 @@ __export(aap_oppgave_typescript_types_exports, {
   NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent: () => NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapPostmottakKontraktHendelseEndringDTOStatus: () => NoNavAapPostmottakKontraktHendelseEndringDTOStatus
 });
-module.exports = __toCommonJS(aap_oppgave_typescript_types_exports);
+module.exports = __toCommonJS(index_exports);
 
 // schema.ts
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
