@@ -703,7 +703,7 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET";
             brukerIdent: string;
             saksnummer: string;
             /** @enum {string} */
@@ -719,7 +719,7 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET";
             brukerIdent: string;
             faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag"][];
             ferdigstillAutomatisk: boolean;
@@ -755,6 +755,7 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.Brev": {
             journalpostTittel?: string | null;
+            kanOverstyreBrevtittel?: boolean | null;
             kanSendesAutomatisk?: boolean | null;
             overskrift?: string | null;
             tekstbolker: components["schemas"]["no.nav.aap.brev.kontrakt.Tekstbolk"][];
@@ -764,15 +765,15 @@ export interface components {
             behandlingReferanse: string;
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET";
             /**
              * Format: date-time
-             * @example 2025-05-16T10:07:29.06178979
+             * @example 2025-05-20T08:55:07.167526574
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-05-16T10:07:29.06178979
+             * @example 2025-05-20T08:55:07.167526574
              */
             opprettet: string;
             /** Format: uuid */
@@ -789,7 +790,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7": {
             /**
              * Format: date
-             * @example 2025-05-16
+             * @example 2025-05-20
              */
             frist: string;
             /** @enum {string} */
@@ -818,7 +819,7 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.HentSignaturerRequest": {
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING";
+            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET";
             brukerIdent: string;
             signaturGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
         };
@@ -840,7 +841,7 @@ export interface components {
             brukerFnr: string;
             /**
              * Format: date
-             * @example 2025-05-16
+             * @example 2025-05-20
              */
             dato: string;
             /** Format: uuid */
@@ -888,12 +889,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-16T10:07:29.06178979
+             * @example 2025-05-20T08:55:07.167526574
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-16T10:07:29.06178979
+             * @example 2025-05-20T08:55:07.167526574
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
