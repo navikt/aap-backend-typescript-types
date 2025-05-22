@@ -768,12 +768,12 @@ export interface components {
             brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET";
             /**
              * Format: date-time
-             * @example 2025-05-22T10:26:04.354229277
+             * @example 2025-05-22T11:30:17.2214166
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-05-22T10:26:04.354229277
+             * @example 2025-05-22T11:30:17.2214166
              */
             opprettet: string;
             /** Format: uuid */
@@ -848,6 +848,7 @@ export interface components {
             eksternReferanseId: string;
             mottakerHprnr: string;
             mottakerNavn: string;
+            overstyrInnsynsregel: boolean;
             saksnummer: string;
             tittel: string;
         };
@@ -889,12 +890,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-22T10:26:04.354229277
+             * @example 2025-05-22T11:30:17.2214166
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-22T10:26:04.354229277
+             * @example 2025-05-22T11:30:17.2214166
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
