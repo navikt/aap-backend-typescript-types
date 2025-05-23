@@ -586,7 +586,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -679,7 +679,7 @@ export interface components {
             avsluttetBehandling?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.AvsluttetBehandlingDTO"];
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             behandlingOpprettetTidspunkt: string;
             /** Format: uuid */
@@ -690,14 +690,14 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             hendelsesTidspunkt: string;
             ident: string;
             identerForSak: string[];
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             mottattTid: string;
             /** Format: uuid */
@@ -768,7 +768,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -778,7 +778,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -790,7 +790,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -804,7 +804,7 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             reservertTidspunkt?: string | null;
             saksnummer?: string | null;
@@ -844,14 +844,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -871,7 +871,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-23T05:40:42.373204191
+             * @example 2025-05-23T08:22:11.81785269
              */
             tidsstempel: string;
             /** @enum {string|null} */
