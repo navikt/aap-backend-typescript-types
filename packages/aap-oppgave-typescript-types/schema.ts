@@ -893,12 +893,12 @@ export interface components {
             "erP\u00E5Vent": boolean;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -914,14 +914,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-05-27
+             * @example 2025-05-28
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -947,12 +947,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -975,7 +975,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -985,7 +985,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -998,23 +998,25 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
             personNavn?: string | null;
             /**
              * Format: date
-             * @example 2025-05-27
+             * @example 2025-05-28
              */
             "p\u00E5VentTil"?: string | null;
             "p\u00E5Vent\u00C5rsak"?: string | null;
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             reservertTidspunkt?: string | null;
+            /** @enum {string|null} */
+            returStatus?: NoNavAapOppgaveOppgaveDtoReturStatus;
             saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapOppgaveOppgaveDtoStatus;
@@ -1044,7 +1046,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1054,7 +1056,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             opprettetTidspunkt: string;
             veileder?: string | null;
@@ -1135,14 +1137,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1155,14 +1157,14 @@ export interface components {
             endretAv: string;
             /**
              * Format: date
-             * @example 2025-05-27
+             * @example 2025-05-28
              */
             frist?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-27T10:52:43.03072942
+             * @example 2025-05-28T09:50:34.979072247
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -1406,6 +1408,10 @@ export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     KLAGE = "KLAGE",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveOppgaveDtoReturStatus {
+    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
 }
 export enum NoNavAapOppgaveOppgaveDtoStatus {
     OPPRETTET = "OPPRETTET",

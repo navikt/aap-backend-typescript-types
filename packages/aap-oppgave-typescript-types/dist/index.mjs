@@ -240,6 +240,11 @@ var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgave
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveOppgaveDtoBehandlingstype2;
 })(NoNavAapOppgaveOppgaveDtoBehandlingstype || {});
+var NoNavAapOppgaveOppgaveDtoReturStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoReturStatus2) => {
+  NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
+  NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  return NoNavAapOppgaveOppgaveDtoReturStatus2;
+})(NoNavAapOppgaveOppgaveDtoReturStatus || {});
 var NoNavAapOppgaveOppgaveDtoStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoStatus2) => {
   NoNavAapOppgaveOppgaveDtoStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapOppgaveOppgaveDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
@@ -363,6 +368,7 @@ export {
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
+  NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus,
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
