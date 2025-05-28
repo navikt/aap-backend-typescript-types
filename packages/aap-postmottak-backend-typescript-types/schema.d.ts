@@ -1015,12 +1015,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T06:26:55.018749383
+             * @example 2025-05-28T11:22:35.265506561
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T06:26:55.018749383
+             * @example 2025-05-28T11:22:35.265506561
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -1114,7 +1114,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-05-28T06:26:55.018749383
+             * @example 2025-05-28T11:22:35.265506561
              */
             opprettet: string;
             referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam"];
@@ -1132,7 +1132,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-05-28T06:26:55.018749383
+             * @example 2025-05-28T11:22:35.265506561
              */
             tidsstempel: string;
         };
@@ -1242,7 +1242,7 @@ export interface components {
             id: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T06:26:55.018749383
+             * @example 2025-05-28T11:22:35.265506561
              */
             opprettet: string;
             status: string;
