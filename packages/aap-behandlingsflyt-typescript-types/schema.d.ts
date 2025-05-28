@@ -3273,7 +3273,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             tidspunkt: string;
         };
@@ -3661,7 +3661,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             vurderingsTidspunkt: string;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
@@ -3751,12 +3751,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettet: string;
             signaturer: components["schemas"]["no.nav.aap.brev.kontrakt.Signatur"][];
@@ -4204,12 +4204,12 @@ export interface components {
             bySted?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             gyldigFraOgMed?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             gyldigTilOgMed?: string | null;
             landkode?: string | null;
@@ -4308,7 +4308,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettet: string;
             personId: string;
@@ -4378,7 +4378,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.829187121Z
+             * @example 2025-05-28T13:51:40.718449405Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4403,7 +4403,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.829187121Z
+             * @example 2025-05-28T13:51:40.718449405Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4421,7 +4421,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.p\u00E5klagetbehandling.flate.BehandlingMedVedtakDto": {
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -4432,7 +4432,7 @@ export interface components {
             typeBehandling: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage";
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             vedtakstidspunkt: string;
             /**
@@ -4516,7 +4516,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             vurderingsTidspunkt: string;
         };
@@ -4929,7 +4929,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettet: string;
             /** Format: uuid */
@@ -4954,7 +4954,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             tidsstempel: string;
         };
@@ -5122,7 +5122,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokument": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokumentV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokumentV0": {
-            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET")[];
+            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ArbeidIPeriodeV0": {
             /**
@@ -5147,7 +5147,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -5167,7 +5167,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurdering": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurderingV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurderingV0": {
             beskrivelse: string;
-            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET")[];
+            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Meldekort": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.MeldekortV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.MeldekortV0": {
@@ -5177,7 +5177,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Aktivitetskort"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokument"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Klage"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurdering"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Meldekort"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandling"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knad"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandling": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandlingV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandlingV0": {
-            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET")[];
+            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OppgitteBarn": {
             identer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ident"][];
@@ -5241,7 +5241,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -5254,7 +5254,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettet: string;
             /** Format: uuid */
@@ -5262,7 +5262,7 @@ export interface components {
             /** @enum {string} */
             status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
             type: string;
-            "\u00E5rsaker": ("MOTTATT_SØKNAD" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "G_REGULERING" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "VURDER_RETTIGHETSPERIODE")[];
+            "\u00E5rsaker": ("MOTTATT_SØKNAD" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_MANUELL_INNTEKT" | "G_REGULERING" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.FinnBehandlingForIdentDTO": {
             ident: string;
@@ -5300,7 +5300,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -5313,7 +5313,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -5412,12 +5412,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -5458,12 +5458,12 @@ export interface components {
             perioder: components["schemas"]["no.nav.aap.utbetaling.UtbetalingsperiodeDto"][];
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             utbetalingBekreftet?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-28T13:09:20.826612732
+             * @example 2025-05-28T13:51:40.718012849
              */
             utbetalingOversendt: string;
             /** @enum {string} */
