@@ -250,6 +250,18 @@ var NoNavAapOppgaveOppgaveDtoStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDt
   NoNavAapOppgaveOppgaveDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
   return NoNavAapOppgaveOppgaveDtoStatus2;
 })(NoNavAapOppgaveOppgaveDtoStatus || {});
+var NoNavAapOppgaveReturInformasjonStatus = /* @__PURE__ */ ((NoNavAapOppgaveReturInformasjonStatus2) => {
+  NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
+  NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  return NoNavAapOppgaveReturInformasjonStatus2;
+})(NoNavAapOppgaveReturInformasjonStatus || {});
+var NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ ((NoNavAapOppgaveReturInformasjonRsaker2) => {
+  NoNavAapOppgaveReturInformasjonRsaker2["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
+  NoNavAapOppgaveReturInformasjonRsaker2["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
+  NoNavAapOppgaveReturInformasjonRsaker2["FEIL_LOVANVENDELSE"] = "FEIL_LOVANVENDELSE";
+  NoNavAapOppgaveReturInformasjonRsaker2["ANNET"] = "ANNET";
+  return NoNavAapOppgaveReturInformasjonRsaker2;
+})(NoNavAapOppgaveReturInformasjonRsaker || {});
 var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveFilterFilterDtoBehandlingstyper2) => {
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["REVURDERING"] = "REVURDERING";
@@ -371,6 +383,8 @@ export {
   NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus,
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype,
+  NoNavAapOppgaveReturInformasjonRsaker,
+  NoNavAapOppgaveReturInformasjonStatus,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,

@@ -893,12 +893,12 @@ export interface components {
             "erP\u00E5Vent": boolean;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             hendelsesTidspunkt: string;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             opprettetTidspunkt: string;
             personIdent: string;
@@ -921,7 +921,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -947,12 +947,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -975,7 +975,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -985,7 +985,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -998,7 +998,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -1012,9 +1012,10 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             reservertTidspunkt?: string | null;
+            returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjon"];
             /** @enum {string|null} */
             returStatus?: NoNavAapOppgaveOppgaveDtoReturStatus;
             saksnummer?: string | null;
@@ -1032,6 +1033,13 @@ export interface components {
             /** Format: int64 */
             versjon: number;
         };
+        "no.nav.aap.oppgave.ReturInformasjon": {
+            begrunnelse: string;
+            endretAv: string;
+            /** @enum {string} */
+            status: NoNavAapOppgaveReturInformasjonStatus;
+            "\u00E5rsaker": NoNavAapOppgaveReturInformasjonRsaker[];
+        };
         "no.nav.aap.oppgave.S\u00F8kDto": {
             "s\u00F8ketekst": string;
         };
@@ -1046,7 +1054,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             endretTidspunkt?: string | null;
             enheter: string[];
@@ -1056,7 +1064,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             opprettetTidspunkt: string;
             veileder?: string | null;
@@ -1137,14 +1145,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -1164,7 +1172,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-05-30T11:47:12.278878118
+             * @example 2025-05-30T12:31:46.746040262
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -1416,6 +1424,16 @@ export enum NoNavAapOppgaveOppgaveDtoReturStatus {
 export enum NoNavAapOppgaveOppgaveDtoStatus {
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET"
+}
+export enum NoNavAapOppgaveReturInformasjonStatus {
+    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+}
+export enum NoNavAapOppgaveReturInformasjonRsaker {
+    MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
+    MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
+    FEIL_LOVANVENDELSE = "FEIL_LOVANVENDELSE",
+    ANNET = "ANNET"
 }
 export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
