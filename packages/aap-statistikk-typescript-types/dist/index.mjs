@@ -379,11 +379,28 @@ var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgave
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveOppgaveDtoBehandlingstype2;
 })(NoNavAapOppgaveOppgaveDtoBehandlingstype || {});
+var NoNavAapOppgaveOppgaveDtoReturStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoReturStatus2) => {
+  NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
+  NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  return NoNavAapOppgaveOppgaveDtoReturStatus2;
+})(NoNavAapOppgaveOppgaveDtoReturStatus || {});
 var NoNavAapOppgaveOppgaveDtoStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoStatus2) => {
   NoNavAapOppgaveOppgaveDtoStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapOppgaveOppgaveDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
   return NoNavAapOppgaveOppgaveDtoStatus2;
 })(NoNavAapOppgaveOppgaveDtoStatus || {});
+var NoNavAapOppgaveReturInformasjonStatus = /* @__PURE__ */ ((NoNavAapOppgaveReturInformasjonStatus2) => {
+  NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
+  NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  return NoNavAapOppgaveReturInformasjonStatus2;
+})(NoNavAapOppgaveReturInformasjonStatus || {});
+var NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ ((NoNavAapOppgaveReturInformasjonRsaker2) => {
+  NoNavAapOppgaveReturInformasjonRsaker2["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
+  NoNavAapOppgaveReturInformasjonRsaker2["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
+  NoNavAapOppgaveReturInformasjonRsaker2["FEIL_LOVANVENDELSE"] = "FEIL_LOVANVENDELSE";
+  NoNavAapOppgaveReturInformasjonRsaker2["ANNET"] = "ANNET";
+  return NoNavAapOppgaveReturInformasjonRsaker2;
+})(NoNavAapOppgaveReturInformasjonRsaker || {});
 var NoNavAapOppgaveStatistikkOppgaveHendelseHendelse = /* @__PURE__ */ ((NoNavAapOppgaveStatistikkOppgaveHendelseHendelse2) => {
   NoNavAapOppgaveStatistikkOppgaveHendelseHendelse2["OPPRETTET"] = "OPPRETTET";
   NoNavAapOppgaveStatistikkOppgaveHendelseHendelse2["GJEN_PNET"] = "GJEN\xC5PNET";
@@ -498,7 +515,10 @@ export {
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
+  NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus,
+  NoNavAapOppgaveReturInformasjonRsaker,
+  NoNavAapOppgaveReturInformasjonStatus,
   NoNavAapOppgaveStatistikkOppgaveHendelseHendelse,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv,
