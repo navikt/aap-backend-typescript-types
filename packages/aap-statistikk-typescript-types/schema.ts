@@ -586,7 +586,7 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             tidsstempel: string;
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
@@ -679,7 +679,7 @@ export interface components {
             avsluttetBehandling?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.AvsluttetBehandlingDTO"];
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             behandlingOpprettetTidspunkt: string;
             /** Format: uuid */
@@ -690,14 +690,14 @@ export interface components {
             behandlingType: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             hendelsesTidspunkt: string;
             ident: string;
             identerForSak: string[];
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             mottattTid: string;
             /** Format: uuid */
@@ -768,7 +768,7 @@ export interface components {
             avklaringsbehovKode: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             behandlingOpprettet: string;
             /** Format: uuid */
@@ -778,7 +778,7 @@ export interface components {
             endretAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             endretTidspunkt?: string | null;
             enhet: string;
@@ -791,7 +791,7 @@ export interface components {
             opprettetAv: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             opprettetTidspunkt: string;
             personIdent?: string | null;
@@ -805,7 +805,7 @@ export interface components {
             reservertAv?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             reservertTidspunkt?: string | null;
             returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjon"];
@@ -857,14 +857,14 @@ export interface components {
             behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             hendelsesTidspunkt: string;
             ident: string;
             journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -884,7 +884,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
             /**
              * Format: date-time
-             * @example 2025-06-04T10:51:04.798207223
+             * @example 2025-06-04T13:39:19.934154939
              */
             tidsstempel: string;
             /** @enum {string|null} */
@@ -1109,6 +1109,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6004 = "6004",
     Value6005 = "6005",
     Value6006 = "6006",
+    Value6007 = "6007",
     Value6010 = "6010",
     Value7001 = "7001"
 }
