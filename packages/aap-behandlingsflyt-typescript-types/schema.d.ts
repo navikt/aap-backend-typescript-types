@@ -3311,7 +3311,7 @@ export interface components {
             avIdent: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             tidspunkt: string;
         };
@@ -3326,169 +3326,169 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering": {
             begrunnelse?: string | null;
             /** @enum {string} */
-            definisjon: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            definisjon: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             godkjent?: boolean | null;
             grunner?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur"][] | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarBarnetilleggL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             vurderingerForBarnetillegg: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingerForBarnetillegg"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarBistandsbehovL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             bistandsVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.bistand.flate.BistandVurderingL\u00F8sningDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarForutg\u00E5endeMedlemskapL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             "manuellVurderingForForutg\u00E5endeMedlemskap": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForForutg\u00E5endeMedlemskapDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarHelseinstitusjonL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             helseinstitusjonVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.institusjon.flate.HelseinstitusjonVurderingerDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarLovvalgMedlemskapL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             manuellVurderingForLovvalgMedlemskap: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForLovvalgMedlemskapDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarManuellInntektVurderingL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             manuellVurderingForManglendeInntekt: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.ManuellInntektVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarOverstyrtForutg\u00E5endeMedlemskapL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             "manuellVurderingForForutg\u00E5endeMedlemskap": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForForutg\u00E5endeMedlemskapDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarOverstyrtLovvalgMedlemskapL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             manuellVurderingForLovvalgMedlemskap: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForLovvalgMedlemskapDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSamordningAndreStatligeYtelserL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             samordningAndreStatligeYtelserVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.andrestatligeytelservurdering.SamordningAndreStatligeYtelserVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSamordningGraderingL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             vurderingerForSamordning: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.VurderingerForSamordning"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSamordningUf\u00F8reL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             "samordningUf\u00F8reVurdering": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.uf\u00F8revurdering.SamordningUf\u00F8reVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSoningsforholdL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             soningsvurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.institusjon.flate.SoningsvurderingerDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarStudentL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             studentvurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.StudentVurderingDTO"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSykdomL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             sykdomsvurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomsvurderingL\u00F8sningDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSykepengerErstatningL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             sykepengeerstatningVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.SykepengerVurdering"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarYrkesskadeL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             yrkesskadesvurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.YrkesskadevurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklaringsbehovL\u00F8sning": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarBarnetilleggL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarBistandsbehovL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarForutg\u00E5endeMedlemskapL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarHelseinstitusjonL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarLovvalgMedlemskapL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarManuellInntektVurderingL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarOverstyrtForutg\u00E5endeMedlemskapL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarOverstyrtLovvalgMedlemskapL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSamordningAndreStatligeYtelserL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSamordningGraderingL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSamordningUf\u00F8reL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSoningsforholdL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarStudentL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSykdomL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarSykepengerErstatningL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.AvklarYrkesskadeL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.BekreftTotalvurderingKlageL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.BrevbestillingL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.Effektuer11_7L\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettArbeidsevneL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettBehandlendeEnhetL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettBeregningstidspunktL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettP\u00E5klagetBehandlingL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettYrkesskadeInntektL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FatteVedtakL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.Foresl\u00E5VedtakL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FritakMeldepliktL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.KvalitetssikringL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.Legeerkl\u00E6ringBestillingL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.RefusjonkravL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SamordningVentPaVirkningstidspunktL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SattP\u00E5VentL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivBrevL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivForh\u00E5ndsvarselBruddAktivitetspliktBrevL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivVedtaksbrevL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TjenestepensjonRefusjonskravL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TrekkKlageL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TrekkS\u00F8knadL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.UtenlandskVideref\u00F8ringL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VenteP\u00E5FristEffektuer11_7L\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderFormkravL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderKlageKontorL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderKlageNayL\u00F8sning"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderRettighetsperiodeL\u00F8sning"];
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.BekreftTotalvurderingKlageL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.BrevbestillingL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             oppdatertStatusForBestilling: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.brevbestilling.L\u00F8sBrevbestillingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.Effektuer11_7L\u00F8sning": {
             begrunnelse: string;
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettArbeidsevneL\u00F8sning": {
             arbeidsevneVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.arbeidsevne.flate.FastsettArbeidsevneDto"][];
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettBehandlendeEnhetL\u00F8sning": {
             behandlendeEnhetVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.behandlendeenhet.flate.BehandlendeEnhetL\u00F8sningDto"];
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettBeregningstidspunktL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             beregningVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningstidspunktVurdering"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettP\u00E5klagetBehandlingL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             "p\u00E5klagetBehandlingVurdering": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.p\u00E5klagetbehandling.flate.P\u00E5klagetBehandlingVurderingL\u00F8sningDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FastsettYrkesskadeInntektL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             yrkesskadeInntektVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningYrkeskaderBel\u00F8pVurdering"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FatteVedtakL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.Foresl\u00E5VedtakL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.FritakMeldepliktL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             fritaksvurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.meldeplikt.flate.FritaksvurderingDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.KvalitetssikringL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.Legeerkl\u00E6ringBestillingL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.RefusjonkravL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             refusjonkravVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.refusjonkrav.RefusjonkravVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SamordningVentPaVirkningstidspunktL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SattP\u00E5VentL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivBrevL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
@@ -3496,7 +3496,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivForh\u00E5ndsvarselBruddAktivitetspliktBrevL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
@@ -3504,7 +3504,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivVedtaksbrevL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
@@ -3512,45 +3512,45 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TjenestepensjonRefusjonskravL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             samordningRefusjonskrav: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.refusjonskrav.TjenestepensjonRefusjonskravVurdering"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TrekkKlageL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             vurdering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TrekkS\u00F8knadL\u00F8sning": {
             begrunnelse: string;
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.UtenlandskVideref\u00F8ringL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VenteP\u00E5FristEffektuer11_7L\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderFormkravL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             formkravVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.formkrav.flate.FormkravVurderingL\u00F8sningDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderKlageKontorL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             klagevurderingKontor: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.klagebehandling.kontor.flate.KlagevurderingKontorL\u00F8sningDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderKlageNayL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             klagevurderingNay: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.klagebehandling.nay.flate.KlagevurderingNayL\u00F8sningDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.VurderRettighetsperiodeL\u00F8sning": {
             /** @enum {string} */
-            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            behovstype: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             rettighetsperiodeVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.rettighetsperiode.RettighetsperiodeVurderingDTO"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur": {
@@ -3702,7 +3702,7 @@ export interface components {
             harFritak: boolean;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             vurderingsTidspunkt: string;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
@@ -3825,7 +3825,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev": {
             /** @enum {string} */
-            avklaringsbehovKode: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            avklaringsbehovKode: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
             /** Format: uuid */
             brevbestillingReferanse: string;
@@ -3834,12 +3834,12 @@ export interface components {
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             oppdatert: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettet: string;
             signaturer: components["schemas"]["no.nav.aap.brev.kontrakt.Signatur"][];
@@ -4319,12 +4319,12 @@ export interface components {
             bySted?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             gyldigFraOgMed?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             gyldigTilOgMed?: string | null;
             landkode?: string | null;
@@ -4423,7 +4423,7 @@ export interface components {
             fritekst: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettet: string;
             personId: string;
@@ -4493,7 +4493,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.560130709Z
+             * @example 2025-06-04T13:29:16.179977844Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4518,7 +4518,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.560130709Z
+             * @example 2025-06-04T13:29:16.179977844Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4536,7 +4536,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.p\u00E5klagetbehandling.flate.BehandlingMedVedtakDto": {
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettetTidspunkt: string;
             /** Format: uuid */
@@ -4547,7 +4547,7 @@ export interface components {
             typeBehandling: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage";
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             vedtakstidspunkt: string;
             /**
@@ -4631,7 +4631,7 @@ export interface components {
             fraDato: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             vurderingsTidspunkt: string;
         };
@@ -4962,7 +4962,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
-            aktivGruppe: "START_BEHANDLING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE";
+            aktivGruppe: "START_BEHANDLING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "KLAGE_AVVIST_PÅ_FORMKRAV";
             /** @enum {string} */
             aktivtSteg: "START_BEHANDLING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "EFFEKTUER_AVVIST_PÅ_FORMKRAV" | "UDEFINERT";
             aktivtStegDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"][];
@@ -4972,7 +4972,7 @@ export interface components {
             prosessering: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Prosessering"];
             visning: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.visning.Visning"];
             /** @enum {string|null} */
-            vurdertGruppe?: "START_BEHANDLING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | null;
+            vurdertGruppe?: "START_BEHANDLING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "KLAGE_AVVIST_PÅ_FORMKRAV" | null;
             /** @enum {string|null} */
             vurdertSteg?: "START_BEHANDLING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "EFFEKTUER_AVVIST_PÅ_FORMKRAV" | "UDEFINERT" | null;
         };
@@ -4991,7 +4991,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettet: string;
             /** Format: uuid */
@@ -5016,7 +5016,7 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             tidsstempel: string;
         };
@@ -5025,7 +5025,7 @@ export interface components {
             skalVises: boolean;
             steg: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.FlytSteg"][];
             /** @enum {string} */
-            stegGruppe: "START_BEHANDLING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE";
+            stegGruppe: "START_BEHANDLING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "KLAGE_AVVIST_PÅ_FORMKRAV";
         };
         "no.nav.aap.behandlingsflyt.flyt.FlytSteg": {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
@@ -5102,7 +5102,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
-            kode: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6010" | "7001";
+            kode: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5028" | "5019" | "5050" | "5051" | "5052" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6010" | "7001";
             kreverToTrinn: boolean;
             kvalitetssikres: boolean;
             "l\u00F8sesAv": ("SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER" | "LES" | "PRODUKSJONSSTYRING" | "DRIFT")[];
@@ -5209,7 +5209,7 @@ export interface components {
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             mottattTidspunkt: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
@@ -5303,7 +5303,7 @@ export interface components {
             brevkode?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             datoOpprettet: string;
             dokumentInfoId: string;
@@ -5316,7 +5316,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettet: string;
             /** Format: uuid */
@@ -5362,7 +5362,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -5375,7 +5375,7 @@ export interface components {
             ident: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -5474,12 +5474,12 @@ export interface components {
             navn: string;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             opprettetTidspunkt?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
@@ -5520,12 +5520,12 @@ export interface components {
             perioder: components["schemas"]["no.nav.aap.utbetaling.UtbetalingsperiodeDto"][];
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             utbetalingBekreftet?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-04T13:15:36.559706833
+             * @example 2025-06-04T13:29:16.179564842
              */
             utbetalingOversendt: string;
             /** @enum {string} */
