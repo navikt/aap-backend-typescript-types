@@ -2792,6 +2792,123 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/dokumenter/bruker": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.HentDokumentoversiktBrukerDTO"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.Journalpost"][];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/dokumenter/sak/{saksnummer}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.SafListDokument"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/dokumenter/{journalpostId}/{dokumentinfoId}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description Journalpost-ID */
+                    journalpostId: string;
+                    /** @description Dokumentinfo-ID */
+                    dokumentinfoId: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/pdf": string;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/hendelse/send": {
         parameters: {
             query?: never;
@@ -3300,6 +3417,9 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "java.time.Year": Record<string, never>;
+        "no.nav.aap.behandlingsflyt.HentDokumentoversiktBrukerDTO": {
+            personIdent: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.FatteVedtakGrunnlagDto": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
@@ -4521,7 +4641,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-05T14:46:46.674614419Z
+             * @example 2025-06-05T16:00:27.304484933Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4546,7 +4666,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-05T14:46:46.674614419Z
+             * @example 2025-06-05T16:00:27.304484933Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -5324,8 +5444,60 @@ export interface components {
             aktivIdent: boolean;
             identifikator: string;
         };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.AvsenderMottaker": {
+            id?: string | null;
+            navn?: string | null;
+            type?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.DokumentInfo": {
+            brevkode?: string | null;
+            dokumentInfoId: string;
+            dokumentvarianter: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.Dokumentvariant"][];
+            tittel: string;
+        };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.DokumentInfoId": {
             dokumentInfoId: string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.Dokumentvariant": {
+            saksbehandlerHarTilgang: boolean;
+            /** @enum {string} */
+            variantformat: "ARKIV" | "SLADDET" | "ORIGINAL" | "PRODUKSJON" | "FULLVERSJON";
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.Journalpost": {
+            avsenderMottaker?: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.AvsenderMottaker"];
+            behandlingstema?: string | null;
+            behandlingstemanavn?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            datoOpprettet?: string | null;
+            dokumenter: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.DokumentInfo"][];
+            journalpostId: string;
+            /** @enum {string} */
+            journalposttype: "I" | "U" | "N";
+            /** @enum {string} */
+            journalstatus: "MOTTATT" | "JOURNALFOERT" | "FERDIGSTILT" | "EKSPEDERT" | "UNDER_ARBEID" | "FEILREGISTRERT" | "UTGAAR" | "AVBRUTT" | "UKJENT_BRUKER" | "RESERVERT" | "OPPLASTING_DOKUMENT" | "UKJENT";
+            relevanteDatoer?: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.RelevantDato"][] | null;
+            sak?: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.JournalpostSak"];
+            tema?: string | null;
+            temanavn?: string | null;
+            tittel?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.JournalpostSak": {
+            fagsakId?: string | null;
+            fagsaksystem?: string | null;
+            /** @enum {string} */
+            sakstype: "FAGSAK" | "GENERELL_SAK";
+            tema?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.RelevantDato": {
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            dato: string;
+            datotype: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.adapters.SafListDokument": {
             brevkode?: string | null;
