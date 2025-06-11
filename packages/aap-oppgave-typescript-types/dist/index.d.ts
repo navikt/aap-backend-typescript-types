@@ -1059,11 +1059,6 @@ interface components {
              */
             endretTidspunkt?: string | null;
             enheter: string[];
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            fom?: string | null;
             /** Format: int64 */
             id?: number | null;
             navn: string;
@@ -1073,14 +1068,7 @@ interface components {
              * @example 2025-04-01T12:30:00
              */
             opprettetTidspunkt: string;
-            status: string[];
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            tom?: string | null;
             veileder?: string | null;
-            "\u00E5rsak": string[];
         };
         "no.nav.aap.oppgave.filter.FilterId": {
             /** Format: int64 */
@@ -1122,13 +1110,13 @@ interface components {
              * @example 2025-04-01
              */
             fom?: string | null;
-            status: string[];
+            statuser: string[];
             /**
              * Format: date
              * @example 2025-04-01
              */
             tom?: string | null;
-            "\u00E5rsak": string[];
+            "\u00E5rsaker": string[];
         };
         "no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto": {
             enheter: string[];
