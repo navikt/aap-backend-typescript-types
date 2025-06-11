@@ -35,6 +35,7 @@ __export(index_exports, {
   NoNavAapMotorApiJobbInfoDtoStatus: () => NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper: () => NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
   NoNavAapOppgaveOppgaveDtoBehandlingstype: () => NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoReturStatus: () => NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus: () => NoNavAapOppgaveOppgaveDtoStatus,
@@ -351,6 +352,15 @@ var NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = /* @__PURE__ */ ((
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2;
 })(NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper || {});
+var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2) => {
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["REVURDERING"] = "REVURDERING";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["TILBAKEKREVING"] = "TILBAKEKREVING";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
+  return NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2;
+})(NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper || {});
 var NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2) => {
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
@@ -451,6 +461,7 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus,
