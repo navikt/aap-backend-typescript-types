@@ -1027,7 +1027,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeVurderingGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeVurderingGrunnlagResponse"];
                     };
                 };
             };
@@ -3914,10 +3914,18 @@ export interface components {
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             yrkesskadeBegrunnelse?: string | null;
         };
-        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeVurderingGrunnlagDto": {
+        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeVurderingGrunnlagResponse": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
             opplysninger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.InnhentetSykdomsOpplysninger"];
-            yrkesskadeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.YrkesskadevurderingDto"];
+            yrkesskadeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadevurderingResponse"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadevurderingResponse": {
+            /** Format: int32 */
+            andelAvNedsettelsen?: number | null;
+            begrunnelse: string;
+            "er\u00C5rsakssammenheng": boolean;
+            relevanteSaker: string[];
+            vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerGrunnlagResponse": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -4642,7 +4650,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-12T06:34:54.297895506Z
+             * @example 2025-06-12T07:05:44.416237727Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4667,7 +4675,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-12T06:34:54.297895506Z
+             * @example 2025-06-12T07:05:44.416237727Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
