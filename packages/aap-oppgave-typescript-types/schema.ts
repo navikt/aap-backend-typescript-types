@@ -428,6 +428,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/sok/v2": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.S\u00F8kDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.S\u00F8kResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/filter": {
         parameters: {
             query?: never;
@@ -1044,6 +1083,10 @@ export interface components {
         };
         "no.nav.aap.oppgave.S\u00F8kDto": {
             "s\u00F8ketekst": string;
+        };
+        "no.nav.aap.oppgave.S\u00F8kResponse": {
+            harTilgang: boolean;
+            oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
         };
         "no.nav.aap.oppgave.enhet.EnhetDto": {
             enhetNr: string;
