@@ -4155,7 +4155,7 @@ export interface components {
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER";
+            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseDTO": {
             /** @enum {string} */
@@ -4168,7 +4168,7 @@ export interface components {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksRef?: string | null;
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER";
+            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingGrunnlagDTO": {
             begrunnelse?: string | null;
@@ -4650,7 +4650,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-13T12:28:44.238538539Z
+             * @example 2025-06-16T06:17:49.610635391Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4675,7 +4675,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-13T12:28:44.238538539Z
+             * @example 2025-06-16T06:17:49.610635391Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4984,7 +4984,7 @@ export interface components {
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER";
+            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.VurderingerForSamordning": {
             begrunnelse: string;
