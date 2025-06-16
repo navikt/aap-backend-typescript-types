@@ -4,45 +4,6 @@
  */
 
 export interface paths {
-    "/api/bestill": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BestillBrevRequest"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BestillBrevResponse"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/api/v2/bestill": {
         parameters: {
             query?: never;
@@ -698,18 +659,6 @@ export interface components {
         "no.nav.aap.brev.kontrakt.AvbrytBrevbestillingRequest": {
             /** Format: uuid */
             referanse: string;
-        };
-        "no.nav.aap.brev.kontrakt.BestillBrevRequest": {
-            /** Format: uuid */
-            behandlingReferanse: string;
-            /** @enum {string} */
-            brevtype: "INNVILGELSE" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV";
-            brukerIdent: string;
-            saksnummer: string;
-            /** @enum {string} */
-            sprak: "EN" | "NB" | "NN";
-            unikReferanse: string;
-            vedlegg: components["schemas"]["no.nav.aap.brev.kontrakt.Vedlegg"][];
         };
         "no.nav.aap.brev.kontrakt.BestillBrevResponse": {
             /** Format: uuid */
