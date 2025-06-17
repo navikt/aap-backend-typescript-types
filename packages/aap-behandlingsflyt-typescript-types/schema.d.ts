@@ -2387,7 +2387,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAnderinstansGrunnlagDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansGrunnlagDto"];
                     };
                 };
             };
@@ -4189,15 +4189,15 @@ export interface components {
             startDato?: string | null;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
-        "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAnderinstansGrunnlagDto": {
-            svarFraAndreinstans: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansDto"];
-        };
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansDto": {
             feilregistrertBegrunnelse?: string | null;
             /** @enum {string} */
             type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET";
             /** @enum {string|null} */
             utfall?: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "MEDHOLD_ETTER_FVL_35" | null;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansGrunnlagDto": {
+            svarFraAndreinstans: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.s\u00F8knad.TrukketS\u00F8knadGrunnlagDto": {
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.s\u00F8knad.TrukketS\u00F8knadVurderingDto"][];
@@ -4547,7 +4547,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-17T12:24:39.013541492Z
+             * @example 2025-06-17T12:34:04.452259412Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4572,7 +4572,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-17T12:24:39.013541492Z
+             * @example 2025-06-17T12:34:04.452259412Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
