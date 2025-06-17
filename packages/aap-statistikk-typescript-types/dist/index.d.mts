@@ -973,6 +973,7 @@ declare enum PathsBehandlingstidGetParametersQueryBehandlingstyper {
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -981,6 +982,7 @@ declare enum PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBe
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -989,6 +991,7 @@ declare enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlings
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -997,6 +1000,7 @@ declare enum PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1005,6 +1009,7 @@ declare enum PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper {
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1019,6 +1024,7 @@ declare enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandli
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1033,6 +1039,7 @@ declare enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBeha
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1041,6 +1048,7 @@ declare enum PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper {
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1049,6 +1057,7 @@ declare enum PathsBehandlingerPVentGetParametersQueryBehandlingstyper {
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1057,6 +1066,7 @@ declare enum PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstype
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
@@ -1109,6 +1119,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6005 = "6005",
     Value6006 = "6006",
     Value6007 = "6007",
+    Value6008 = "6008",
     Value6010 = "6010",
     Value7001 = "7001"
 }
@@ -1123,6 +1134,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     START_BEHANDLING = "START_BEHANDLING",
+    SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
     VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
     S_KNAD = "S\u00D8KNAD",
     VURDER_ALDER = "VURDER_ALDER",
@@ -1169,6 +1181,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1197,7 +1210,8 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTy
     KLAGE_AVVIST = "KLAGE_AVVIST",
     KLAGE_OPPRETTHOLDELSE = "KLAGE_OPPRETTHOLDELSE",
     KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    FORH_NDSVARSEL_KLAGE_FORMKRAV = "FORH\u00C5NDSVARSEL_KLAGE_FORMKRAV"
+    FORH_NDSVARSEL_KLAGE_FORMKRAV = "FORH\u00C5NDSVARSEL_KLAGE_FORMKRAV",
+    FORVALTNINGSMELDING = "FORVALTNINGSMELDING"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
     OPPRETTET = "OPPRETTET",
@@ -1252,7 +1266,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlin
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage"
+    Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus {
     OPPRETTET = "OPPRETTET",
@@ -1290,7 +1305,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBe
     S_KNAD_TRUKKET = "S\u00D8KNAD_TRUKKET",
     FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
     KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    REVURDER_MANUELL_INNTEKT = "REVURDER_MANUELL_INNTEKT"
+    REVURDER_MANUELL_INNTEKT = "REVURDER_MANUELL_INNTEKT",
+    MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
@@ -1312,7 +1328,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehan
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage"
+    Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans"
 }
 declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
@@ -1418,6 +1435,7 @@ declare enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerD
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }

@@ -77,6 +77,7 @@ var PathsBehandlingstidGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((Pa
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingstidGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingstidGetParametersQueryBehandlingstyper2;
@@ -86,6 +87,7 @@ var PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlings
   PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2;
@@ -95,6 +97,7 @@ var PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2;
@@ -104,6 +107,7 @@ var PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper = /* @__
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2;
@@ -113,6 +117,7 @@ var PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper = /* @__PURE_
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2;
@@ -129,6 +134,7 @@ var PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper 
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2;
@@ -145,6 +151,7 @@ var PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingsty
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2;
@@ -154,6 +161,7 @@ var PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper = /* @__PURE__ 
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2;
@@ -163,6 +171,7 @@ var PathsBehandlingerPVentGetParametersQueryBehandlingstyper = /* @__PURE__ */ (
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerPVentGetParametersQueryBehandlingstyper2;
@@ -172,6 +181,7 @@ var PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper = /* @_
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2;
@@ -225,6 +235,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6005"] = "6005";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6006"] = "6006";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6007"] = "6007";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6008"] = "6008";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6010"] = "6010";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value7001"] = "7001";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
@@ -241,6 +252,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE_
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SEND_FORVALTNINGSMELDING"] = "SEND_FORVALTNINGSMELDING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["S_KNAD"] = "S\xD8KNAD";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_ALDER"] = "VURDER_ALDER";
@@ -287,6 +299,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["TREKK_KLAGE"] = "TREKK_KLAGE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["OPPRETTHOLDELSE"] = "OPPRETTHOLDELSE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["EFFEKTUER_AVVIST_P__FORMKRAV"] = "EFFEKTUER_AVVIST_P\xC5_FORMKRAV";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
@@ -319,6 +332,7 @@ var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev = 
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_OPPRETTHOLDELSE"] = "KLAGE_OPPRETTHOLDELSE";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORH_NDSVARSEL_KLAGE_FORMKRAV"] = "FORH\xC5NDSVARSEL_KLAGE_FORMKRAV";
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORVALTNINGSMELDING"] = "FORVALTNINGSMELDING";
   return NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2;
 })(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev || {});
 var NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2) => {
@@ -382,6 +396,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType = /
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["Revurdering"] = "Revurdering";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["Tilbakekreving"] = "Tilbakekreving";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["Klage"] = "Klage";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus2) => {
@@ -423,6 +438,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_MANUELL_INNTEKT"] = "REVURDER_MANUELL_INNTEKT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["MOTTATT_KABAL_HENDELSE"] = "MOTTATT_KABAL_HENDELSE";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
@@ -448,6 +464,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling = /
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["Revurdering"] = "Revurdering";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["Tilbakekreving"] = "Tilbakekreving";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["Klage"] = "Klage";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling || {});
 var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoBehandlingstype2) => {
@@ -569,6 +586,7 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Revurdering"] = "Revurdering";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Tilbakekreving"] = "Tilbakekreving";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Klage"] = "Klage";
+  NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Journalf_ring"] = "Journalf\xF8ring";
   return NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2;
