@@ -472,6 +472,7 @@ var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgave
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["TILBAKEKREVING"] = "TILBAKEKREVING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveOppgaveDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveOppgaveDtoBehandlingstype2;
