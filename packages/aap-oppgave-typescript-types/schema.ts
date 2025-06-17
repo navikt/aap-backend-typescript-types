@@ -1301,6 +1301,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6005 = "6005",
     Value6006 = "6006",
     Value6007 = "6007",
+    Value6008 = "6008",
     Value6010 = "6010",
     Value7001 = "7001"
 }
@@ -1315,6 +1316,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     START_BEHANDLING = "START_BEHANDLING",
+    SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
     VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
     S_KNAD = "S\u00D8KNAD",
     VURDER_ALDER = "VURDER_ALDER",
@@ -1361,6 +1363,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1389,10 +1392,12 @@ export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTyp
     KLAGE_AVVIST = "KLAGE_AVVIST",
     KLAGE_OPPRETTHOLDELSE = "KLAGE_OPPRETTHOLDELSE",
     KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    FORH_NDSVARSEL_KLAGE_FORMKRAV = "FORH\u00C5NDSVARSEL_KLAGE_FORMKRAV"
+    FORH_NDSVARSEL_KLAGE_FORMKRAV = "FORH\u00C5NDSVARSEL_KLAGE_FORMKRAV",
+    FORVALTNINGSMELDING = "FORVALTNINGSMELDING"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg {
     START_BEHANDLING = "START_BEHANDLING",
+    SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
     VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
     S_KNAD = "S\u00D8KNAD",
     VURDER_ALDER = "VURDER_ALDER",
@@ -1439,13 +1444,15 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage"
+    Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
     OPPRETTET = "OPPRETTET",
@@ -1492,6 +1499,7 @@ export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     REVURDERING = "REVURDERING",
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1518,6 +1526,7 @@ export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     REVURDERING = "REVURDERING",
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1526,6 +1535,7 @@ export enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     REVURDERING = "REVURDERING",
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1534,6 +1544,7 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     REVURDERING = "REVURDERING",
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1542,6 +1553,7 @@ export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     REVURDERING = "REVURDERING",
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }

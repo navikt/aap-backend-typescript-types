@@ -48,6 +48,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6005"] = "6005";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6006"] = "6006";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6007"] = "6007";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6008"] = "6008";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6010"] = "6010";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value7001"] = "7001";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
@@ -64,6 +65,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE_
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["START_BEHANDLING"] = "START_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SEND_FORVALTNINGSMELDING"] = "SEND_FORVALTNINGSMELDING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["S_KNAD"] = "S\xD8KNAD";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_ALDER"] = "VURDER_ALDER";
@@ -110,6 +112,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["TREKK_KLAGE"] = "TREKK_KLAGE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["OPPRETTHOLDELSE"] = "OPPRETTHOLDELSE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["EFFEKTUER_AVVIST_P__FORMKRAV"] = "EFFEKTUER_AVVIST_P\xC5_FORMKRAV";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
@@ -142,10 +145,12 @@ var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev = 
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_OPPRETTHOLDELSE"] = "KLAGE_OPPRETTHOLDELSE";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORH_NDSVARSEL_KLAGE_FORMKRAV"] = "FORH\xC5NDSVARSEL_KLAGE_FORMKRAV";
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORVALTNINGSMELDING"] = "FORVALTNINGSMELDING";
   return NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2;
 })(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev || {});
 var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2) => {
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["START_BEHANDLING"] = "START_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SEND_FORVALTNINGSMELDING"] = "SEND_FORVALTNINGSMELDING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["S_KNAD"] = "S\xD8KNAD";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_ALDER"] = "VURDER_ALDER";
@@ -192,6 +197,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["TREKK_KLAGE"] = "TREKK_KLAGE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["OPPRETTHOLDELSE"] = "OPPRETTHOLDELSE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["EFFEKTUER_AVVIST_P__FORMKRAV"] = "EFFEKTUER_AVVIST_P\xC5_FORMKRAV";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg || {});
@@ -200,6 +206,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandli
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Revurdering"] = "Revurdering";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Tilbakekreving"] = "Tilbakekreving";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Klage"] = "Klage";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType || {});
 var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus2) => {
@@ -252,6 +259,7 @@ var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgave
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["TILBAKEKREVING"] = "TILBAKEKREVING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveOppgaveDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveOppgaveDtoBehandlingstype2;
@@ -283,6 +291,7 @@ var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapO
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["REVURDERING"] = "REVURDERING";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["TILBAKEKREVING"] = "TILBAKEKREVING";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterFilterDtoBehandlingstyper2;
@@ -292,6 +301,7 @@ var NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = /* @__PURE__ */ ((
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["REVURDERING"] = "REVURDERING";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["TILBAKEKREVING"] = "TILBAKEKREVING";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2;
@@ -301,6 +311,7 @@ var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["REVURDERING"] = "REVURDERING";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["TILBAKEKREVING"] = "TILBAKEKREVING";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2;
@@ -310,6 +321,7 @@ var NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PU
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["TILBAKEKREVING"] = "TILBAKEKREVING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2;
