@@ -4361,8 +4361,7 @@ export interface components {
             resultat: boolean;
             utenlandsAddresserGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandsAdresseGrunnlag"][] | null;
             vedtakImedlGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VedtakIMEDLGrunnlag"][] | null;
-            /** @enum {string} */
-            vurdertPeriode: "INNEVÆRENDE_OG_FORRIGE_MND" | "SØKNADSTIDSPUNKT" | "SISTE_5_ÅR";
+            vurdertPeriode: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandsAdresseGrunnlag": {
             adresseNavn?: string | null;
@@ -4548,7 +4547,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-17T10:34:23.486451067Z
+             * @example 2025-06-17T11:56:02.678045067Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4573,7 +4572,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-17T10:34:23.486451067Z
+             * @example 2025-06-17T11:56:02.678045067Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
