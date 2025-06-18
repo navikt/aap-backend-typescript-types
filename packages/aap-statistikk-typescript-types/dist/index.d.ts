@@ -1182,6 +1182,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
