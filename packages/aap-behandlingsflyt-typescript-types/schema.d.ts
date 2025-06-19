@@ -873,7 +873,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.flate.StudentGrunnlagResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentGrunnlagResponse"];
                     };
                 };
             };
@@ -4207,6 +4207,27 @@ export interface components {
             startDato?: string | null;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
+        "no.nav.aap.behandlingsflyt.behandling.student.StudentGrunnlagResponse": {
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            oppgittStudent?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.OppgittStudent"];
+            studentvurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse": {
+            "avbruddMerEnn6M\u00E5neder"?: boolean | null;
+            avbruttPgaSykdomEllerSkade?: boolean | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            avbruttStudieDato?: string | null;
+            begrunnelse: string;
+            "godkjentStudieAvL\u00E5nekassen"?: boolean | null;
+            harAvbruttStudie: boolean;
+            harBehovForBehandling?: boolean | null;
+            /** Format: int64 */
+            id?: number | null;
+            vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
+        };
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansDto": {
             feilregistrertBegrunnelse?: string | null;
             /** @enum {string} */
@@ -4573,7 +4594,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-19T08:55:23.934995937Z
+             * @example 2025-06-19T08:56:37.937518686Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4598,7 +4619,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-19T08:55:23.934995937Z
+             * @example 2025-06-19T08:56:37.937518686Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4958,35 +4979,6 @@ export interface components {
             harBehovForBehandling?: boolean | null;
             /** Format: int64 */
             id?: number | null;
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.StudentVurderingResponse": {
-            "avbruddMerEnn6M\u00E5neder"?: boolean | null;
-            avbruttPgaSykdomEllerSkade?: boolean | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            avbruttStudieDato?: string | null;
-            begrunnelse: string;
-            "godkjentStudieAvL\u00E5nekassen"?: boolean | null;
-            harAvbruttStudie: boolean;
-            harBehovForBehandling?: boolean | null;
-            /** Format: int64 */
-            id?: number | null;
-            vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.VurdertAvResponse"];
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.VurdertAvResponse": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            dato: string;
-            ident: string;
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.flate.StudentGrunnlagResponse": {
-            "harTilgangTil\u00C5Saksbehandle": boolean;
-            oppgittStudent?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.OppgittStudent"];
-            studentvurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.StudentVurderingResponse"];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.YrkesskadevurderingDto": {
             /** Format: int32 */
