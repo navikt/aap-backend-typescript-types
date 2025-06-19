@@ -1,6 +1,6 @@
 {
   "name": "@navikt/aap-oppgave-typescript-types",
-  "version": "0.0.244",
+  "version": "0.0.245",
   "author": "NAV",
   "license": "MIT",
   "publishConfig": {
