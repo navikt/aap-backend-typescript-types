@@ -832,6 +832,43 @@ export interface components {
             /** @enum {string} */
             hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
             oppgaveDto: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
+            oppgaveTilStatistikkDto?: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
+        };
+        "no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto": {
+            avklaringsbehovKode: string;
+            /** Format: uuid */
+            behandlingRef?: string | null;
+            /** @enum {string} */
+            behandlingstype: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype;
+            endretAv?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            endretTidspunkt?: string | null;
+            enhet: string;
+            /** Format: int64 */
+            id?: number | null;
+            /** Format: int64 */
+            journalpostId?: number | null;
+            opprettetAv: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt: string;
+            personIdent?: string | null;
+            reservertAv?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            reservertTidspunkt?: string | null;
+            saksnummer?: string | null;
+            /** @enum {string} */
+            status: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus;
+            /** Format: int64 */
+            versjon: number;
         };
         "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
@@ -1366,6 +1403,19 @@ export enum NoNavAapOppgaveStatistikkOppgaveHendelseHendelse {
     RESERVERT = "RESERVERT",
     AVRESERVERT = "AVRESERVERT",
     LUKKET = "LUKKET"
+}
+export enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype {
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    TILBAKEKREVING = "TILBAKEKREVING",
+    KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
     Value9001 = "9001",

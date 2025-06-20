@@ -831,6 +831,43 @@ interface components {
             /** @enum {string} */
             hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
             oppgaveDto: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
+            oppgaveTilStatistikkDto?: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
+        };
+        "no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto": {
+            avklaringsbehovKode: string;
+            /** Format: uuid */
+            behandlingRef?: string | null;
+            /** @enum {string} */
+            behandlingstype: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype;
+            endretAv?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            endretTidspunkt?: string | null;
+            enhet: string;
+            /** Format: int64 */
+            id?: number | null;
+            /** Format: int64 */
+            journalpostId?: number | null;
+            opprettetAv: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt: string;
+            personIdent?: string | null;
+            reservertAv?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            reservertTidspunkt?: string | null;
+            saksnummer?: string | null;
+            /** @enum {string} */
+            status: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus;
+            /** Format: int64 */
+            versjon: number;
         };
         "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
@@ -1366,6 +1403,19 @@ declare enum NoNavAapOppgaveStatistikkOppgaveHendelseHendelse {
     AVRESERVERT = "AVRESERVERT",
     LUKKET = "LUKKET"
 }
+declare enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype {
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    TILBAKEKREVING = "TILBAKEKREVING",
+    KLAGE = "KLAGE",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+declare enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET"
+}
 declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
     Value9001 = "9001",
     Value1337 = "1337",
@@ -1442,4 +1492,4 @@ declare enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerD
 }
 type operations = Record<string, never>;
 
-export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat, NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType, NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat, NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType, NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall, NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapOppgaveStatistikkOppgaveHendelseHendelse, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype, PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper, PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet, PathsBehandlingerPVentGetParametersQueryBehandlingstyper, PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper, PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper, PathsBehandlingstidGetParametersQueryBehandlingstyper, PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper, PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper, type components, type operations, type paths, type webhooks };
+export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat, NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType, NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat, NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType, NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall, NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapOppgaveStatistikkOppgaveHendelseHendelse, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype, PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper, PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet, PathsBehandlingerPVentGetParametersQueryBehandlingstyper, PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper, PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper, PathsBehandlingstidGetParametersQueryBehandlingstyper, PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper, PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper, type components, type operations, type paths, type webhooks };

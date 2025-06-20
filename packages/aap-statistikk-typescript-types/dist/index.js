@@ -46,6 +46,8 @@ __export(index_exports, {
   NoNavAapOppgaveReturInformasjonRsaker: () => NoNavAapOppgaveReturInformasjonRsaker,
   NoNavAapOppgaveReturInformasjonStatus: () => NoNavAapOppgaveReturInformasjonStatus,
   NoNavAapOppgaveStatistikkOppgaveHendelseHendelse: () => NoNavAapOppgaveStatistikkOppgaveHendelseHendelse,
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype: () => NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype,
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus: () => NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg: () => NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,
@@ -509,6 +511,21 @@ var NoNavAapOppgaveStatistikkOppgaveHendelseHendelse = /* @__PURE__ */ ((NoNavAa
   NoNavAapOppgaveStatistikkOppgaveHendelseHendelse2["LUKKET"] = "LUKKET";
   return NoNavAapOppgaveStatistikkOppgaveHendelseHendelse2;
 })(NoNavAapOppgaveStatistikkOppgaveHendelseHendelse || {});
+var NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2) => {
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["TILBAKEKREVING"] = "TILBAKEKREVING";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
+  return NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2;
+})(NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype || {});
+var NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus = /* @__PURE__ */ ((NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus2) => {
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus2["OPPRETTET"] = "OPPRETTET";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
+  return NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus2;
+})(NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus || {});
 var NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value9001"] = "9001";
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode2["Value1337"] = "1337";
@@ -621,6 +638,8 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapOppgaveReturInformasjonRsaker,
   NoNavAapOppgaveReturInformasjonStatus,
   NoNavAapOppgaveStatistikkOppgaveHendelseHendelse,
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype,
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg,
