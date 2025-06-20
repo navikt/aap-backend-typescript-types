@@ -831,8 +831,8 @@ export interface components {
         "no.nav.aap.oppgave.statistikk.OppgaveHendelse": {
             /** @enum {string} */
             hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
-            oppgaveDto: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
-            oppgaveTilStatistikkDto?: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
+            oppgaveDto?: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
+            oppgaveTilStatistikkDto: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
         };
         "no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto": {
             avklaringsbehovKode: string;
