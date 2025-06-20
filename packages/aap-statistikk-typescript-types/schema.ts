@@ -814,7 +814,6 @@ export interface components {
             saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapOppgaveOppgaveDtoStatus;
-            veileder?: string | null;
             veilederArbeid?: string | null;
             veilederSykdom?: string | null;
             venteBegrunnelse?: string | null;
