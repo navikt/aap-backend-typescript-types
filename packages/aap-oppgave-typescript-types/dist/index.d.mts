@@ -1044,6 +1044,7 @@ interface components {
             "s\u00F8ketekst": string;
         };
         "no.nav.aap.oppgave.S\u00F8kResponse": {
+            harAdressebeskyttelse: boolean;
             harTilgang: boolean;
             oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
         };
