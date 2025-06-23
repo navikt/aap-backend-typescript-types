@@ -2100,6 +2100,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/klage/{referanse}/grunnlag/fullmektig": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigGrunnlagDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/klage/{referanse}/grunnlag/formkrav": {
         parameters: {
             query?: never;
@@ -4134,6 +4172,20 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.klage.effektueravvistp\u00E5formkrav.EffektuerAvvistP\u00E5FormkravVurderingDto": {
             skalEndeligAvvises: boolean;
         };
+        "no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigGrunnlagDto": {
+            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto": {
+            fullmektigIdent?: string | null;
+            fullmektigNavnOgAdresse?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse"];
+            harFullmektig: boolean;
+            /**
+             * Format: date-time
+             * @example 2025-06-23T12:50:33.367421856Z
+             */
+            opprettet: string;
+            vurdertAv: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.klage.trekk.TrekkKlageGrunnlagDto": {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto"];
         };
@@ -4591,6 +4643,18 @@ export interface components {
             erSignert: boolean;
             likevelBehandles?: boolean | null;
         };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.Adresse": {
+            adresselinje1: string;
+            adresselinje2?: string | null;
+            adresselinje3?: string | null;
+            landkode: string;
+            postnummer: string;
+            poststed: string;
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse": {
+            adresse: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.Adresse"];
+            navn: string;
+        };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.klagebehandling.kontor.flate.KlagebehandlingKontorGrunnlagDto": {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.klagebehandling.kontor.flate.KlagevurderingKontorDto"];
         };
@@ -4601,7 +4665,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-23T12:28:40.166441620Z
+             * @example 2025-06-23T12:50:33.367421856Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
@@ -4626,7 +4690,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-23T12:28:40.166441620Z
+             * @example 2025-06-23T12:50:33.367421856Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28")[];
