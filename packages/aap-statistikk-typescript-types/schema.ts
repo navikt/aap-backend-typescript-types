@@ -1157,6 +1157,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6006 = "6006",
     Value6007 = "6007",
     Value6008 = "6008",
+    Value6009 = "6009",
     Value6010 = "6010",
     Value7001 = "7001"
 }
@@ -1209,6 +1210,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
     BREV = "BREV",
     P_KLAGET_BEHANDLING = "P\u00C5KLAGET_BEHANDLING",
+    FULLMEKTIG = "FULLMEKTIG",
     FORMKRAV = "FORMKRAV",
     BEHANDLENDE_ENHET = "BEHANDLENDE_ENHET",
     KLAGEBEHANDLING_KONTOR = "KLAGEBEHANDLING_KONTOR",
