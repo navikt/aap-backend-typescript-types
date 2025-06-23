@@ -49,6 +49,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6006"] = "6006";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6007"] = "6007";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6008"] = "6008";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6009"] = "6009";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6010"] = "6010";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value7001"] = "7001";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
@@ -103,6 +104,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["OPPRETT_REVURDERING"] = "OPPRETT_REVURDERING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FULLMEKTIG"] = "FULLMEKTIG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FORMKRAV"] = "FORMKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KLAGEBEHANDLING_KONTOR"] = "KLAGEBEHANDLING_KONTOR";
@@ -189,6 +191,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["OPPRETT_REVURDERING"] = "OPPRETT_REVURDERING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FULLMEKTIG"] = "FULLMEKTIG";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FORMKRAV"] = "FORMKRAV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["KLAGEBEHANDLING_KONTOR"] = "KLAGEBEHANDLING_KONTOR";
