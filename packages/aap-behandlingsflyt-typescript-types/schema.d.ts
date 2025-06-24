@@ -4193,7 +4193,7 @@ export interface components {
             harFullmektig: boolean;
             /**
              * Format: date-time
-             * @example 2025-06-24T10:10:42.250418245Z
+             * @example 2025-06-24T13:44:51.453898667Z
              */
             opprettet: string;
             vurdertAv: string;
@@ -4677,7 +4677,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-24T10:10:42.250418245Z
+             * @example 2025-06-24T13:44:51.453898667Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
@@ -4702,7 +4702,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-24T10:10:42.250418245Z
+             * @example 2025-06-24T13:44:51.453898667Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
@@ -5155,7 +5155,13 @@ export interface components {
             skalForberede: boolean;
             /** @enum {string} */
             status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
-            type: string;
+            /** @enum {string} */
+            type: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            vedtaksdato?: string | null;
             /** Format: int64 */
             versjon: number;
             "vilk\u00E5r": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rDTO"][];
