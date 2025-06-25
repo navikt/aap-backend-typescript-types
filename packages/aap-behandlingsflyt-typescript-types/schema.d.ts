@@ -4094,6 +4094,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningUf\u00F8reVurderingDTO": {
             begrunnelse: string;
             vurderingPerioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningUf\u00F8reVurderingPeriodeDTO"][];
+            vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningUf\u00F8reVurderingGrunnlagDTO": {
             grunnlag: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningUf\u00F8reGrunnlagDTO"][];
@@ -4195,7 +4196,7 @@ export interface components {
             harFullmektig: boolean;
             /**
              * Format: date-time
-             * @example 2025-06-25T10:19:10.016080648Z
+             * @example 2025-06-25T12:31:03.597336601Z
              */
             opprettet: string;
             vurdertAv: string;
@@ -4679,7 +4680,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-25T10:19:10.016080648Z
+             * @example 2025-06-25T12:31:03.597336601Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
@@ -4704,7 +4705,7 @@ export interface components {
             notat?: string | null;
             /**
              * Format: date-time
-             * @example 2025-06-25T10:19:10.016080648Z
+             * @example 2025-06-25T12:31:03.597336601Z
              */
             opprettet: string;
             "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
