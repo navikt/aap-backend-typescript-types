@@ -9,16 +9,6 @@ var PathsBehandlingstidGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((Pa
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingstidGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingstidGetParametersQueryBehandlingstyper || {});
-var PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2) => {
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
-  return PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper2;
-})(PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper || {});
 var PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2) => {
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
@@ -29,16 +19,6 @@ var PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2;
 })(PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper || {});
-var PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2) => {
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
-  return PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper2;
-})(PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2) => {
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
@@ -576,7 +556,6 @@ export {
   NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapPostmottakKontraktHendelseEndringDTOStatus,
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype,
-  PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper,
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper,
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper,
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet,
@@ -586,7 +565,6 @@ export {
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper,
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper,
   PathsBehandlingstidGetParametersQueryBehandlingstyper,
-  PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper,
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper
 };
 //# sourceMappingURL=index.mjs.map

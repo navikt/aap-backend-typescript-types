@@ -164,50 +164,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/behandlingstid/lukkede-siste-dager/{antallDager}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Henter alle behandlinger som er lukket i de siste n dager, og regner ut snittalderen på disse. */
-        get: {
-            parameters: {
-                query?: {
-                    /** @description For hvilke behandlingstyper. Tom liste betyr alle. */
-                    behandlingstyper?: PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper[];
-                    /** @description For hvilke enheter. Tom liste betyr alle. */
-                    enheter?: string[];
-                };
-                header?: never;
-                path: {
-                    /** @description Antall dager å regne på */
-                    antallDager: number;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": number;
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/\u00E5pne-behandlinger-per-behandlingstype": {
         parameters: {
             query?: never;
@@ -237,47 +193,6 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["no.nav.aap.statistikk.api.`ProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall\u00C5pneOgTypeOgGjennomsnittsalder`"][];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/behandling-per-avklaringsbehov": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** Antall åpne behandlinger per avklaringsbehov. */
-        get: {
-            parameters: {
-                query?: {
-                    /** @description For hvilke behandlingstyper. Tom liste betyr alle. */
-                    behandlingstyper?: PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper[];
-                    /** @description For hvilke enheter. Tom liste betyr alle. */
-                    enheter?: string[];
-                };
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.statistikk.produksjonsstyring.BehandlingPerAvklaringsbehov"][];
                     };
                 };
             };
@@ -979,12 +894,6 @@ export interface components {
             gjennomsnittligAlder: number;
             "\u00E5rsak": string;
         };
-        "no.nav.aap.statistikk.produksjonsstyring.BehandlingPerAvklaringsbehov": {
-            /** Format: int32 */
-            antall: number;
-            /** @description Avklaringsbehovkoden. */
-            behov: string;
-        };
         "no.nav.aap.statistikk.produksjonsstyring.BehandlingPerSteggruppe": {
             /** Format: int32 */
             antall: number;
@@ -1014,25 +923,7 @@ export enum PathsBehandlingstidGetParametersQueryBehandlingstyper {
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
-export enum PathsBehandlingstidLukkedeSisteDagerAntallDagerGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
-}
 export enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
-}
-export enum PathsBehandlingPerAvklaringsbehovGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
