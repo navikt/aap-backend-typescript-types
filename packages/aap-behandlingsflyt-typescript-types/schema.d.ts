@@ -1152,6 +1152,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/tilkjentV2/{referanse}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelse2Dto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/behandling/{referanse}/grunnlag/trukket-s\u00F8knad": {
         parameters: {
             query?: never;
@@ -4333,8 +4371,37 @@ export interface components {
              */
             vurdertDato: string;
         };
+        "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.Felter": {
+            /** Format: int32 */
+            arbeidGradering?: number | null;
+            barneTilleggsats: number;
+            dagsats: number;
+            /** Format: double */
+            effektivDagsats: number;
+            /** Format: int32 */
+            institusjonGradering?: number | null;
+            /** Format: int32 */
+            samordningGradering?: number | null;
+            /** Format: int32 */
+            totalReduksjon?: number | null;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelse2Dto": {
+            perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto"][];
+        };
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelseDto": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriodeDTO"][];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto": {
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            levertMeldekortDato?: string | null;
+            /** @enum {string|null} */
+            meldekortStatus?: "IKKE_LEVERT" | "LEVERT_ETTER_FRIST" | "OVERFØRT_TIL_ØKONOMI" | null;
+            meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            sisteLeverteMeldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.arbeid.Meldekort"];
+            vurdertePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriodeDTO": {
             /** Format: int32 */
@@ -4372,6 +4439,10 @@ export interface components {
              * @example 2025-04-01
              */
             utbetalingsdato: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode": {
+            felter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.Felter"];
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
         };
         "no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto": {
             begrunnelse: string;
@@ -4583,6 +4654,19 @@ export interface components {
             /** @enum {string} */
             utfall: "IKKE_VURDERT" | "IKKE_RELEVANT" | "OPPFYLT" | "IKKE_OPPFYLT";
             versjon: string;
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.arbeid.ArbeidIPeriode": {
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            timerArbeid: components["schemas"]["no.nav.aap.komponenter.verdityper.TimerArbeid"];
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.arbeid.Meldekort": {
+            journalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            mottattTidspunkt: string;
+            timerArbeidPerPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.arbeid.ArbeidIPeriode"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.dokumentinnhenting.BrevResponse": {
             konstruertBrev: string;
@@ -5703,6 +5787,9 @@ export interface components {
         "no.nav.aap.komponenter.verdityper.Dagsatser": {
             /** Format: int32 */
             antall: number;
+        };
+        "no.nav.aap.komponenter.verdityper.TimerArbeid": {
+            antallTimer: number;
         };
         "no.nav.aap.motor.api.JobbInfoDto": {
             /** Format: int32 */
