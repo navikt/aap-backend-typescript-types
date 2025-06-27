@@ -4945,30 +4945,34 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Avsl\u00E5tt": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG";
+            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
             /** @enum {string} */
             "\u00E5rsak": "IKKE_OVERHOLDT_FORMKRAV" | "IKKE_OVERHOLDT_FRIST";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.DelvisOmgj\u00F8res": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG";
+            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
             "vilk\u00E5rSomSkalOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
             "vilk\u00E5rSomSkalOpprettholdes": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.KlageResultat": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Avsl\u00E5tt"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.DelvisOmgj\u00F8res"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Omgj\u00F8res"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Opprettholdes"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Ufullstendig"];
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.KlageResultat": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Avsl\u00E5tt"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.DelvisOmgj\u00F8res"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Omgj\u00F8res"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Opprettholdes"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Trukket"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Ufullstendig"];
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Omgj\u00F8res": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG";
+            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
             "vilk\u00E5rSomSkalOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Opprettholdes": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG";
+            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
             "vilk\u00E5rSomSkalOpprettholdes": ("FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Trukket": {
+            /** @enum {string} */
+            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Ufullstendig": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG";
+            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
             /** @enum {string} */
             "\u00E5rsak": "MANGLER_VURDERING" | "INKONSISTENT_FORMKRAV_VURDERING" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
