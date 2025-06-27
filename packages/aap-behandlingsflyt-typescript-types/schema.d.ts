@@ -4175,6 +4175,7 @@ export interface components {
             "harTilgangTil\u00C5Saksbehandle": boolean;
             soningsforhold: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.etannetsted.InstitusjonsoppholdDto"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.etannetsted.SoningsforholdDto"][];
+            vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.etannetsted.SoningsforholdDto": {
             /** @enum {string} */
