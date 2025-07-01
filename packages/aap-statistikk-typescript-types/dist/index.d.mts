@@ -1173,7 +1173,12 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
 declare enum NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat {
     INNVILGET = "INNVILGET",
     AVSLAG = "AVSLAG",
-    TRUKKET = "TRUKKET"
+    TRUKKET = "TRUKKET",
+    KLAGE_OPPRETTHOLDES = "KLAGE_OPPRETTHOLDES",
+    KLAGE_OMGJ_RES = "KLAGE_OMGJ\u00D8RES",
+    KLAGE_DELVIS_OMGJ_RES = "KLAGE_DELVIS_OMGJ\u00D8RES",
+    KLAGE_AVSL_TT = "KLAGE_AVSL\u00C5TT",
+    KLAGE_TRUKKET = "KLAGE_TRUKKET"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType {
     STANDARD = "STANDARD",

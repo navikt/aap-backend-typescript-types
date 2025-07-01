@@ -352,6 +352,11 @@ var NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat = /*
   NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["INNVILGET"] = "INNVILGET";
   NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["AVSLAG"] = "AVSLAG";
   NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["TRUKKET"] = "TRUKKET";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_OPPRETTHOLDES"] = "KLAGE_OPPRETTHOLDES";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_OMGJ_RES"] = "KLAGE_OMGJ\xD8RES";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_DELVIS_OMGJ_RES"] = "KLAGE_DELVIS_OMGJ\xD8RES";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_AVSL_TT"] = "KLAGE_AVSL\xC5TT";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
   return NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2;
 })(NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat || {});
 var NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2) => {
