@@ -5772,7 +5772,7 @@ export interface components {
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string|null} */
-            resultat?: "INNVILGET" | "AVSLAG" | "TRUKKET" | null;
+            resultat?: "INNVILGET" | "AVSLAG" | "TRUKKET" | "KLAGE_OPPRETTHOLDES" | "KLAGE_OMGJØRES" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_AVSLÅTT" | "KLAGE_TRUKKET" | null;
             saksnummer: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.UtvidetSaksinfoDTO": {
