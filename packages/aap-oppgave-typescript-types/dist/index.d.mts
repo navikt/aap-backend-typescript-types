@@ -233,6 +233,43 @@ interface paths {
         patch?: never;
         trace?: never;
     };
+    "/mottatt-dokumenter-lest": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.DokumenterLestDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/hent-oppgave": {
         parameters: {
             query?: never;
@@ -997,6 +1034,10 @@ interface components {
             referanse?: string | null;
             saksnummer?: string | null;
         };
+        "no.nav.aap.oppgave.DokumenterLestDto": {
+            /** Format: uuid */
+            behandlingRef: string;
+        };
         "no.nav.aap.oppgave.FlyttOppgaveDto": {
             avklaringsbehovReferanse: components["schemas"]["no.nav.aap.oppgave.AvklaringsbehovReferanseDto"];
             flyttTilIdent: string;
@@ -1020,6 +1061,7 @@ interface components {
             endretTidspunkt?: string | null;
             enhet: string;
             harFortroligAdresse?: boolean | null;
+            harUlesteDokumenter?: boolean | null;
             /** Format: int64 */
             id?: number | null;
             /** Format: int64 */
