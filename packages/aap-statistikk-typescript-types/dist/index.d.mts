@@ -1042,7 +1042,6 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6001 = "6001",
     Value6002 = "6002",
     Value6003 = "6003",
-    Value6004 = "6004",
     Value6005 = "6005",
     Value6006 = "6006",
     Value6007 = "6007",
@@ -1109,7 +1108,6 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     OMGJ_RING = "OMGJ\u00D8RING",
     TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
-    EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     UDEFINERT = "UDEFINERT"
