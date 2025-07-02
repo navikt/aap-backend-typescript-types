@@ -3839,6 +3839,11 @@ export interface components {
              */
             "f\u00F8dselsdato": string;
             "vilk\u00E5rsperioder": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.vilk\u00E5rsresultat.Vilk\u00E5rsperiode"][];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            vurdertDato?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.fritakmeldeplikt.FritakMeldepliktGrunnlagResponse": {
             gjeldendeVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.fritakmeldeplikt.FritakMeldepliktVurderingResponse"][];
@@ -5255,7 +5260,7 @@ export interface components {
             };
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingResultatDto": {
-            "vilk\u00E5rene": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rDTO"][];
+            "vilk\u00E5rene": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO"][];
         };
         "no.nav.aap.behandlingsflyt.flyt.DetaljertBehandlingDTO": {
             /** @enum {string} */
@@ -5287,7 +5292,7 @@ export interface components {
             vedtaksdato?: string | null;
             /** Format: int64 */
             versjon: number;
-            "vilk\u00E5r": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rDTO"][];
+            "vilk\u00E5r": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO"][];
             /**
              * Format: date
              * @example 2025-04-01
@@ -5316,7 +5321,7 @@ export interface components {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /** @enum {string} */
             stegType: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "VURDER_BISTANDSBEHOV" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "UDEFINERT";
-            "vilk\u00E5rDTO"?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rDTO"];
+            "vilk\u00E5rDTO"?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO"];
         };
         "no.nav.aap.behandlingsflyt.flyt.Prosessering": {
             /** @enum {string} */
@@ -5346,12 +5351,17 @@ export interface components {
             /** @enum {string} */
             grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_FUNKSJONALITET";
         };
-        "no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rDTO": {
-            perioder: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rsperiodeDTO"][];
+        "no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO": {
+            perioder: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rsperiodeDTO"][];
             /** @enum {string} */
             "vilk\u00E5rtype": "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SYKEPENGEERSTATNING";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            vurdertDato?: string | null;
         };
-        "no.nav.aap.behandlingsflyt.flyt.flate.Vilk\u00E5rsperiodeDTO": {
+        "no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rsperiodeDTO": {
             /** @enum {string|null} */
             "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | "ANNEN_FULL_YTELSE" | null;
             begrunnelse?: string | null;
