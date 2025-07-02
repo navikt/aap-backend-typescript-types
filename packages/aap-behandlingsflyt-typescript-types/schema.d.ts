@@ -5597,6 +5597,17 @@ export interface components {
             beskrivelse: string;
             "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE")[];
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManueltOppgittBarn": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "f\u00F8dselsdato"?: string | null;
+            ident?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ident"];
+            navn?: string | null;
+            /** @enum {string|null} */
+            relasjon?: "FORELDER" | "FOSTERFORELDER" | null;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Meldekort": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.MeldekortV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.MeldekortV0": {
             harDuArbeidet: boolean;
@@ -5618,6 +5629,7 @@ export interface components {
             utfall: "MEDHOLD_ETTER_FVL_35";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OppgitteBarn": {
+            barn: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManueltOppgittBarn"][];
             identer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ident"][];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knad": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadV0"];
