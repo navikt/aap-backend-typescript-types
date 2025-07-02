@@ -883,6 +883,11 @@ interface components {
             /** @enum {string|null} */
             typeBrev?: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": {
+            asString: string;
+            /** Format: uuid */
+            value: string;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.BehandlingFlytStoppetHendelse": {
             /** @enum {string|null} */
             aktivtSteg?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg;
@@ -895,6 +900,7 @@ interface components {
              * @example 2025-04-01T12:30:00
              */
             hendelsesTidspunkt: string;
+            mottattDokumenter: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.MottattDokumentDto"][];
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -926,6 +932,31 @@ interface components {
             "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][];
             /** @enum {string|null} */
             "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId": {
+            asString: string;
+            /** Format: uuid */
+            value: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse": {
+            "asAvvistLegeerkl\u00E6ringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId"];
+            asBehandlingReferanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            asInnsendingId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId"];
+            asJournalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
+            asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"];
+            /** @enum {string} */
+            type: NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType;
+            verdi: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": {
+            asString: string;
+            /** Format: uuid */
+            value: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.MottattDokumentDto": {
+            referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
+            /** @enum {string} */
+            type: NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
             /** @enum {string} */
@@ -1204,6 +1235,9 @@ interface components {
             /** Format: int64 */
             referanse: number;
         };
+        "no.nav.aap.verdityper.dokument.JournalpostId": {
+            identifikator: string;
+        };
     };
     responses: never;
     parameters: never;
@@ -1257,7 +1291,6 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6001 = "6001",
     Value6002 = "6002",
     Value6003 = "6003",
-    Value6004 = "6004",
     Value6005 = "6005",
     Value6006 = "6006",
     Value6007 = "6007",
@@ -1324,7 +1357,6 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     OMGJ_RING = "OMGJ\u00D8RING",
     TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
-    EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     UDEFINERT = "UDEFINERT"
@@ -1407,7 +1439,6 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     OMGJ_RING = "OMGJ\u00D8RING",
     TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
-    EFFEKTUER_AVVIST_P__FORMKRAV = "EFFEKTUER_AVVIST_P\u00C5_FORMKRAV",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     UDEFINERT = "UDEFINERT"
@@ -1445,6 +1476,28 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent {
     VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_P\u00C5_KLAGE_IMPLEMENTASJON",
     VENTER_P__SVAR_P__FORH_NDSVARSEL = "VENTER_P\u00C5_SVAR_P\u00C5_FORH\u00C5NDSVARSEL",
     VENTER_P__FUNKSJONALITET = "VENTER_P\u00C5_FUNKSJONALITET"
+}
+declare enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
+    JOURNALPOST = "JOURNALPOST",
+    BRUDD_AKTIVITETSPLIKT_INNSENDING_ID = "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID",
+    AVVIST_LEGEERKL_RING_ID = "AVVIST_LEGEERKL\u00C6RING_ID",
+    REVURDERING_ID = "REVURDERING_ID",
+    BEHANDLING_REFERANSE = "BEHANDLING_REFERANSE",
+    MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
+    KABAL_HENDELSE_ID = "KABAL_HENDELSE_ID"
+}
+declare enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
+    S_KNAD = "S\u00D8KNAD",
+    AKTIVITETSKORT = "AKTIVITETSKORT",
+    MELDEKORT = "MELDEKORT",
+    LEGEERKL_RING = "LEGEERKL\u00C6RING",
+    LEGEERKL_RING_AVVIST = "LEGEERKL\u00C6RING_AVVIST",
+    DIALOGMELDING = "DIALOGMELDING",
+    KLAGE = "KLAGE",
+    ANNET_RELEVANT_DOKUMENT = "ANNET_RELEVANT_DOKUMENT",
+    MANUELL_REVURDERING = "MANUELL_REVURDERING",
+    NY__RSAK_TIL_BEHANDLING = "NY_\u00C5RSAK_TIL_BEHANDLING",
+    KABAL_HENDELSE = "KABAL_HENDELSE"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
     MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
@@ -1589,4 +1642,4 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
 }
 type operations = Record<string, never>;
 
-export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
+export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
