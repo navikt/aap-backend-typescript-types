@@ -19,6 +19,23 @@ var PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2;
 })(PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper || {});
+var PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2) => {
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
+  return PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2;
+})(PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper || {});
+var PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ ((PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2) => {
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2["IDAG"] = "IDAG";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2["IG_R"] = "IG\xC5R";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2["DENNE_UKEN"] = "DENNE_UKEN";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2["FORRIGE_UKE"] = "FORRIGE_UKE";
+  return PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2;
+})(PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode || {});
 var PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2) => {
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
@@ -83,6 +100,23 @@ var PathsBehandlingerPVentGetParametersQueryBehandlingstyper = /* @__PURE__ */ (
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerPVentGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerPVentGetParametersQueryBehandlingstyper || {});
+var PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2) => {
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
+  return PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2;
+})(PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper || {});
+var PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ ((PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2) => {
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2["IDAG"] = "IDAG";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2["IG_R"] = "IG\xC5R";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2["DENNE_UKEN"] = "DENNE_UKEN";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2["FORRIGE_UKE"] = "FORRIGE_UKE";
+  return PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2;
+})(PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode || {});
 var PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2) => {
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
@@ -566,9 +600,13 @@ export {
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper,
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet,
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper,
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper,
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode,
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper,
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper,
   PathsBehandlingstidGetParametersQueryBehandlingstyper,
-  PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper
+  PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper,
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper,
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode
 };
 //# sourceMappingURL=index.mjs.map
