@@ -262,6 +262,8 @@ export interface paths {
                     behandlingstyper?: PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper[];
                     /** @description For hvilke enheter. Tom liste betyr alle. */
                     enheter?: string[];
+                    /** @description For hvilke oppgavetyper. Tom liste betyr alle. */
+                    oppgaveTyper?: string[];
                 };
                 header?: never;
                 path?: never;
