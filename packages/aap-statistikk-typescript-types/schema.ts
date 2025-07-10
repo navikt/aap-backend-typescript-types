@@ -1029,7 +1029,7 @@ export interface components {
         };
         "no.nav.aap.statistikk.produksjonsstyring.OppgaverPerSteggruppe": {
             /** Format: int32 */
-            gamle: number;
+            lukkede: number;
             /** Format: int32 */
             nye: number;
         };
