@@ -386,6 +386,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/oppgaver-per-steggruppe-med-periode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query: {
+                    /** @description For hvilke behandlingstyper. Tom liste betyr alle. */
+                    behandlingstyper?: PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper[];
+                    /** @description For hvilke enheter. Tom liste betyr alle. */
+                    enheter?: string[];
+                    /** @description For hvilke periode som skal gjøres oppslag på */
+                    oppslagsPeriode: PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.statistikk.produksjonsstyring.OppgaverPerSteggruppe"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/behandlinger/utvikling": {
         parameters: {
             query?: never;
@@ -985,6 +1027,12 @@ export interface components {
             antall: number;
             steggruppe: string;
         };
+        "no.nav.aap.statistikk.produksjonsstyring.OppgaverPerSteggruppe": {
+            /** Format: int32 */
+            gamle: number;
+            /** Format: int32 */
+            nye: number;
+        };
         "no.nav.aap.statistikk.produksjonsstyring.Vente\u00E5rsakOgGjennomsnitt": {
             /** Format: int32 */
             antall: number;
@@ -1071,6 +1119,21 @@ export enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehan
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
+}
+export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper {
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Revurdering = "Revurdering",
+    Tilbakekreving = "Tilbakekreving",
+    Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    Journalf_ring = "Journalf\u00F8ring"
+}
+export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode {
+    IDAG = "IDAG",
+    IG_R = "IG\u00C5R",
+    DENNE_UKEN = "DENNE_UKEN",
+    FORRIGE_UKE = "FORRIGE_UKE"
 }
 export enum PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",

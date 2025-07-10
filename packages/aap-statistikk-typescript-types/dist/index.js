@@ -69,6 +69,8 @@ __export(index_exports, {
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper: () => PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper,
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper: () => PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper,
   PathsBehandlingstidGetParametersQueryBehandlingstyper: () => PathsBehandlingstidGetParametersQueryBehandlingstyper,
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper: () => PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper,
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode: () => PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode,
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper: () => PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper,
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper: () => PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper,
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode: () => PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode
@@ -157,6 +159,23 @@ var PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingsty
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   return PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper || {});
+var PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2) => {
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
+  return PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2;
+})(PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper || {});
+var PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ ((PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2) => {
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2["IDAG"] = "IDAG";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2["IG_R"] = "IG\xC5R";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2["DENNE_UKEN"] = "DENNE_UKEN";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2["FORRIGE_UKE"] = "FORRIGE_UKE";
+  return PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2;
+})(PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode || {});
 var PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2) => {
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
@@ -685,6 +704,8 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper,
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper,
   PathsBehandlingstidGetParametersQueryBehandlingstyper,
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper,
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode,
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper,
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper,
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode
