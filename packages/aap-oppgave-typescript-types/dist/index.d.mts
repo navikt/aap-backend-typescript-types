@@ -194,6 +194,45 @@ interface paths {
         patch?: never;
         trace?: never;
     };
+    "/avreserver-oppgaver": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.AvreserverOppgaveDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveId"][];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/flytt-oppgave": {
         parameters: {
             query?: never;
@@ -1033,6 +1072,9 @@ interface components {
             /** Format: uuid */
             referanse?: string | null;
             saksnummer?: string | null;
+        };
+        "no.nav.aap.oppgave.AvreserverOppgaveDto": {
+            oppgaver: number[];
         };
         "no.nav.aap.oppgave.DokumenterLestDto": {
             /** Format: uuid */
