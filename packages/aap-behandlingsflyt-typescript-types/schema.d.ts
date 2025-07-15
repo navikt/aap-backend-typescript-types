@@ -4609,6 +4609,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansGrunnlagDto": {
             gjeldendeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansVurderingDto"];
+            "harTilgangTil\u00C5Saksbehandle": boolean;
             svarFraAndreinstans: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansVurderingDto": {
