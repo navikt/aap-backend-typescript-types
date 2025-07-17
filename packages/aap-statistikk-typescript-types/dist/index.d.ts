@@ -1035,6 +1035,8 @@ interface components {
             lukkede: number;
             /** Format: int32 */
             nye: number;
+            /** Format: int32 */
+            totalt: number;
         };
         "no.nav.aap.statistikk.produksjonsstyring.Vente\u00E5rsakOgGjennomsnitt": {
             /** Format: int32 */
