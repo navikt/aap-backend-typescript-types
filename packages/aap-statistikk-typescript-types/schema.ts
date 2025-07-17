@@ -404,6 +404,8 @@ export interface paths {
                     enheter?: string[];
                     /** @description For hvilke periode som skal gjøres oppslag på */
                     oppslagsPeriode: PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode;
+                    /** @description For hvilke oppgavetyper. Tom liste betyr alle. */
+                    oppgaveTyper?: string[];
                 };
                 header?: never;
                 path?: never;
