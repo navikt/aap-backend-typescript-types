@@ -270,6 +270,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/sak/{saksnummer}/finnBehandlingerAvType": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans";
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.BehandlingAvTypeDTO"][];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/sak/{saksnummer}/personinformasjon": {
         parameters: {
             query?: never;
@@ -5314,6 +5356,14 @@ export interface components {
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.EndringDTO"][];
             /** @enum {string} */
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+        };
+        "no.nav.aap.behandlingsflyt.flyt.BehandlingAvTypeDTO": {
+            behandlingsReferanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetDato: string;
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
