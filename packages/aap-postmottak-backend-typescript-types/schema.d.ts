@@ -1054,7 +1054,10 @@ export interface components {
             skalOverleveres: boolean;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakGrunnlagDto": {
+            avsenderMottaker?: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.AvsenderMottaker"];
             brevkode: string;
+            dokumenter: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.Dokument"][];
+            journalposttittel?: string | null;
             saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto"][];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto"];
         };
@@ -1226,6 +1229,26 @@ export interface components {
         "no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam": {
             /** Format: uuid */
             referanse: string;
+        };
+        "no.nav.aap.postmottak.journalpostogbehandling.journalpost.AvsenderMottaker": {
+            id?: string | null;
+            idType?: string | null;
+            navn?: string | null;
+        };
+        "no.nav.aap.postmottak.journalpostogbehandling.journalpost.Dokument": {
+            brevkode: string;
+            dokumentInfoId: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.DokumentInfoId"];
+            tittel?: string | null;
+            varianter: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.Variant"][];
+        };
+        "no.nav.aap.postmottak.journalpostogbehandling.journalpost.DokumentInfoId": {
+            dokumentInfoId: string;
+        };
+        "no.nav.aap.postmottak.journalpostogbehandling.journalpost.Variant": {
+            /** @enum {string} */
+            filtype: "PDF" | "JPEG" | "PNG" | "TIFF" | "XLSX" | "JSON" | "XML" | "AXML" | "DXML" | "RTF";
+            /** @enum {string} */
+            variantformat: "ARKIV" | "FULLVERSJON" | "PRODUKSJON" | "PRODUKSJON_DLF" | "SLADDET" | "ORIGINAL";
         };
         "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
