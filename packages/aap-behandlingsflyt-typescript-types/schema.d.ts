@@ -5436,7 +5436,8 @@ export interface components {
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingAvTypeDTO": {
-            behandlingsReferanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            /** Format: uuid */
+            behandlingsReferanse: string;
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
