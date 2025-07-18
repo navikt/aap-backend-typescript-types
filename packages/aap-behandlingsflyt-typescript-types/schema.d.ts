@@ -4003,6 +4003,7 @@ export interface components {
             erBehovForAktivBehandling: boolean;
             "erBehovForAnnenOppf\u00F8lging"?: boolean | null;
             erBehovForArbeidsrettetTiltak: boolean;
+            erGjeldende?: boolean | null;
             overgangBegrunnelse?: string | null;
             skalVurdereAapIOvergangTilArbeid?: boolean | null;
             "skalVurdereAapIOvergangTilUf\u00F8re"?: boolean | null;
@@ -4026,6 +4027,7 @@ export interface components {
             bidiagnoser?: string[] | null;
             dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             erArbeidsevnenNedsatt?: boolean | null;
+            erGjeldende?: boolean | null;
             erNedsettelseIArbeidsevneAvEnVissVarighet?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnHalvparten?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense?: boolean | null;
