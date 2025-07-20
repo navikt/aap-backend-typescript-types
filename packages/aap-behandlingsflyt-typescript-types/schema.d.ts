@@ -301,7 +301,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.flyt.BehandlingAvTypeDTO"][];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingAvTypeDTO"][];
                     };
                 };
             };
@@ -5435,15 +5435,6 @@ export interface components {
             /** @enum {string} */
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
         };
-        "no.nav.aap.behandlingsflyt.flyt.BehandlingAvTypeDTO": {
-            /** Format: uuid */
-            behandlingsReferanse: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettetDato: string;
-        };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
             aktivGruppe: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "RETTIGHETSPERIODE" | "SØKNAD" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPPFØLGING";
@@ -5918,6 +5909,15 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.Ident": {
             aktivIdent: boolean;
             identifikator: string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingAvTypeDTO": {
+            /** Format: uuid */
+            behandlingsReferanse: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetDato: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO": {
             /**
