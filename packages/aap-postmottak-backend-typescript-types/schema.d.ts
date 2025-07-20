@@ -1071,11 +1071,12 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringGrunnlagDto": {
             erPapir: boolean;
+            klagebehandlinger: components["schemas"]["no.nav.aap.postmottak.gateway.Klagebehandling"][];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto"];
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto": {
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE";
             strukturertDokumentJson?: string | null;
             /**
              * Format: date
@@ -1207,7 +1208,7 @@ export interface components {
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.DigitaliserDokumentL\u00F8sning": {
             behovstype: string;
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE";
             strukturertDokument?: string | null;
             /**
              * Format: date
@@ -1221,6 +1222,15 @@ export interface components {
         "no.nav.aap.postmottak.flyt.flate.visning.Visning": {
             readOnly: boolean;
             visVentekort: boolean;
+        };
+        "no.nav.aap.postmottak.gateway.Klagebehandling": {
+            /** Format: uuid */
+            behandlingsreferanse: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            opprettetDato: string;
         };
         "no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse": {
             /** Format: uuid */
