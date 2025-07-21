@@ -810,75 +810,9 @@ export interface components {
             typeBehandling: NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling;
             "vilk\u00E5r": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rDTO"][];
         };
-        "no.nav.aap.oppgave.OppgaveDto": {
-            avklaringsbehovKode: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            behandlingOpprettet: string;
-            /** Format: uuid */
-            behandlingRef?: string | null;
-            /** @enum {string} */
-            behandlingstype: NoNavAapOppgaveOppgaveDtoBehandlingstype;
-            endretAv?: string | null;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            endretTidspunkt?: string | null;
-            enhet: string;
-            harFortroligAdresse?: boolean | null;
-            harUlesteDokumenter?: boolean | null;
-            /** Format: int64 */
-            id?: number | null;
-            /** Format: int64 */
-            journalpostId?: number | null;
-            "oppf\u00F8lgingsenhet"?: string | null;
-            opprettetAv: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettetTidspunkt: string;
-            personIdent?: string | null;
-            personNavn?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            "p\u00E5VentTil"?: string | null;
-            "p\u00E5Vent\u00C5rsak"?: string | null;
-            reservertAv?: string | null;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            reservertTidspunkt?: string | null;
-            returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjon"];
-            /** @enum {string|null} */
-            returStatus?: NoNavAapOppgaveOppgaveDtoReturStatus;
-            saksnummer?: string | null;
-            /** @enum {string} */
-            status: NoNavAapOppgaveOppgaveDtoStatus;
-            veilederArbeid?: string | null;
-            veilederSykdom?: string | null;
-            venteBegrunnelse?: string | null;
-            /** Format: int64 */
-            versjon: number;
-            "\u00E5rsakerTilBehandling": string[];
-        };
-        "no.nav.aap.oppgave.ReturInformasjon": {
-            begrunnelse: string;
-            endretAv: string;
-            /** @enum {string} */
-            status: NoNavAapOppgaveReturInformasjonStatus;
-            "\u00E5rsaker": NoNavAapOppgaveReturInformasjonRsaker[];
-        };
         "no.nav.aap.oppgave.statistikk.OppgaveHendelse": {
             /** @enum {string} */
             hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
-            oppgaveDto?: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
             oppgaveTilStatistikkDto: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
         };
         "no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto": {
@@ -1061,7 +995,8 @@ export enum PathsBehandlingstidGetParametersQueryBehandlingstyper {
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1070,7 +1005,8 @@ export enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingst
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1079,7 +1015,8 @@ export enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBe
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode {
     IDAG = "IDAG",
@@ -1094,7 +1031,8 @@ export enum PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper {
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet {
     DAG = "DAG",
@@ -1109,7 +1047,8 @@ export enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlin
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet {
     DAG = "DAG",
@@ -1124,7 +1063,8 @@ export enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehan
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1133,7 +1073,8 @@ export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyp
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode {
     IDAG = "IDAG",
@@ -1148,7 +1089,8 @@ export enum PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper {
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsBehandlingerPVentGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1157,7 +1099,8 @@ export enum PathsBehandlingerPVentGetParametersQueryBehandlingstyper {
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1166,7 +1109,8 @@ export enum PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper {
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode {
     IDAG = "IDAG",
@@ -1181,7 +1125,8 @@ export enum PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value9001 = "9001",
@@ -1236,7 +1181,10 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6008 = "6008",
     Value6009 = "6009",
     Value6010 = "6010",
-    Value7001 = "7001"
+    Value7001 = "7001",
+    Value8001 = "8001",
+    Value8002 = "8002",
+    Value8003 = "8003"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
     SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING",
@@ -1299,6 +1247,8 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
+    START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
+    AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1389,7 +1339,8 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandling
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans"
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus {
     OPPRETTET = "OPPRETTET",
@@ -1428,7 +1379,8 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBeh
     FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
     KLAGE_TRUKKET = "KLAGE_TRUKKET",
     REVURDER_MANUELL_INNTEKT = "REVURDER_MANUELL_INNTEKT",
-    MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE"
+    MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
+    OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
@@ -1451,38 +1403,11 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehand
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans"
-}
-export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    TILBAKEKREVING = "TILBAKEKREVING",
-    KLAGE = "KLAGE",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    JOURNALF_RING = "JOURNALF\u00D8RING"
-}
-export enum NoNavAapOppgaveOppgaveDtoReturStatus {
-    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
-}
-export enum NoNavAapOppgaveOppgaveDtoStatus {
-    OPPRETTET = "OPPRETTET",
-    AVSLUTTET = "AVSLUTTET"
-}
-export enum NoNavAapOppgaveReturInformasjonStatus {
-    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
-}
-export enum NoNavAapOppgaveReturInformasjonRsaker {
-    MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
-    MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
-    FEIL_LOVANVENDELSE = "FEIL_LOVANVENDELSE",
-    ANNET = "ANNET"
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling"
 }
 export enum NoNavAapOppgaveStatistikkOppgaveHendelseHendelse {
     OPPRETTET = "OPPRETTET",
-    GJEN_PNET = "GJEN\u00C5PNET",
     OPPDATERT = "OPPDATERT",
     RESERVERT = "RESERVERT",
     AVRESERVERT = "AVRESERVERT",
@@ -1494,6 +1419,7 @@ export enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype {
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1573,6 +1499,7 @@ export enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDa
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring"
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
 }
 export type operations = Record<string, never>;
