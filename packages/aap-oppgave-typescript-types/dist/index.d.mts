@@ -984,6 +984,7 @@ interface components {
             opprettetTidspunkt: string;
             personIdent: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            reserverTil?: string | null;
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
@@ -1383,7 +1384,10 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value6008 = "6008",
     Value6009 = "6009",
     Value6010 = "6010",
-    Value7001 = "7001"
+    Value7001 = "7001",
+    Value8001 = "8001",
+    Value8002 = "8002",
+    Value8003 = "8003"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
     SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING",
@@ -1446,6 +1450,8 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
+    START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
+    AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1529,6 +1535,8 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
+    START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
+    AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
@@ -1536,7 +1544,8 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans"
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
     OPPRETTET = "OPPRETTET",
@@ -1585,7 +1594,8 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
     ANNET_RELEVANT_DOKUMENT = "ANNET_RELEVANT_DOKUMENT",
     MANUELL_REVURDERING = "MANUELL_REVURDERING",
     NY__RSAK_TIL_BEHANDLING = "NY_\u00C5RSAK_TIL_BEHANDLING",
-    KABAL_HENDELSE = "KABAL_HENDELSE"
+    KABAL_HENDELSE = "KABAL_HENDELSE",
+    OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
     MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
@@ -1606,6 +1616,7 @@ declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1633,6 +1644,7 @@ declare enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1642,6 +1654,7 @@ declare enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1651,6 +1664,7 @@ declare enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1660,6 +1674,7 @@ declare enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     TILBAKEKREVING = "TILBAKEKREVING",
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
