@@ -1195,8 +1195,11 @@ export interface components {
             skalOverleveres: boolean;
         };
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.AvklarSaksnummerL\u00F8sning": {
+            avsenderMottaker?: components["schemas"]["no.nav.aap.postmottak.gateway.AvsenderMottakerDto"];
             behovstype: string;
+            dokumenter?: components["schemas"]["no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.ForenkletDokument"][] | null;
             "f\u00F8rP\u00E5GenerellSak": boolean;
+            journalposttittel?: string | null;
             opprettNySak: boolean;
             saksnummer?: string | null;
         };
@@ -1216,12 +1219,22 @@ export interface components {
              */
             "s\u00F8knadsdato"?: string | null;
         };
+        "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.ForenkletDokument": {
+            dokumentInfoId: string;
+            tittel: string;
+        };
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.SattP\u00E5VentL\u00F8sning": {
             behovstype: string;
         };
         "no.nav.aap.postmottak.flyt.flate.visning.Visning": {
             readOnly: boolean;
             visVentekort: boolean;
+        };
+        "no.nav.aap.postmottak.gateway.AvsenderMottakerDto": {
+            id: string;
+            /** @enum {string} */
+            idType: "AKTOERID" | "FNR" | "ORGNR";
+            navn?: string | null;
         };
         "no.nav.aap.postmottak.gateway.Klagebehandling": {
             /** Format: uuid */
