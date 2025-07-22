@@ -134,6 +134,11 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["OVERSTYR"] = "OVERSTYR";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType || {});
+var NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2) => {
+  NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2["HASTER"] = "HASTER";
+  NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+  return NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2;
+})(NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType || {});
 var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2) => {
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
@@ -293,6 +298,11 @@ var NoNavAapMotorApiJobbInfoDtoStatus = /* @__PURE__ */ ((NoNavAapMotorApiJobbIn
   NoNavAapMotorApiJobbInfoDtoStatus2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapMotorApiJobbInfoDtoStatus2;
 })(NoNavAapMotorApiJobbInfoDtoStatus || {});
+var NoNavAapOppgaveBehandlingMarkeringMarkeringType = /* @__PURE__ */ ((NoNavAapOppgaveBehandlingMarkeringMarkeringType2) => {
+  NoNavAapOppgaveBehandlingMarkeringMarkeringType2["HASTER"] = "HASTER";
+  NoNavAapOppgaveBehandlingMarkeringMarkeringType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+  return NoNavAapOppgaveBehandlingMarkeringMarkeringType2;
+})(NoNavAapOppgaveBehandlingMarkeringMarkeringType || {});
 var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoBehandlingstype2) => {
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
@@ -449,6 +459,7 @@ export {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType,
+  NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType,
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus,
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg,
@@ -460,6 +471,7 @@ export {
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
   NoNavAapMotorApiJobbInfoDtoStatus,
+  NoNavAapOppgaveBehandlingMarkeringMarkeringType,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,

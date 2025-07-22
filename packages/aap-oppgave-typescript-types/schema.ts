@@ -952,6 +952,12 @@ export interface components {
             /** Format: uuid */
             referanse: string;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.behandling.MarkeringDto": {
+            begrunnelse: string;
+            /** @enum {string} */
+            markeringType: NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType;
+            opprettetAv?: string | null;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
@@ -977,6 +983,7 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             hendelsesTidspunkt: string;
+            markeringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.MarkeringDto"][];
             mottattDokumenter: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.MottattDokumentDto"][];
             /**
              * Format: date-time
@@ -1078,6 +1085,12 @@ export interface components {
         "no.nav.aap.oppgave.AvreserverOppgaveDto": {
             oppgaver: number[];
         };
+        "no.nav.aap.oppgave.BehandlingMarkering": {
+            begrunnelse: string;
+            /** @enum {string} */
+            markeringType: NoNavAapOppgaveBehandlingMarkeringMarkeringType;
+            opprettetAv?: string | null;
+        };
         "no.nav.aap.oppgave.DokumenterLestDto": {
             /** Format: uuid */
             behandlingRef: string;
@@ -1110,6 +1123,7 @@ export interface components {
             id?: number | null;
             /** Format: int64 */
             journalpostId?: number | null;
+            markeringer: components["schemas"]["no.nav.aap.oppgave.BehandlingMarkering"][];
             "oppf\u00F8lgingsenhet"?: string | null;
             opprettetAv: string;
             /**
@@ -1463,6 +1477,10 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
     VENTEPUNKT = "VENTEPUNKT",
     OVERSTYR = "OVERSTYR"
 }
+export enum NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType {
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
 export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET",
@@ -1610,6 +1628,10 @@ export enum NoNavAapMotorApiJobbInfoDtoStatus {
     FERDIG = "FERDIG",
     FEILET = "FEILET",
     AVBRUTT = "AVBRUTT"
+}
+export enum NoNavAapOppgaveBehandlingMarkeringMarkeringType {
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
 export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
