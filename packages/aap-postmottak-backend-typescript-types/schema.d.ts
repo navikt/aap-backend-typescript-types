@@ -1286,6 +1286,7 @@ export interface components {
         };
         "no.nav.aap.postmottak.test.BehandlingsListe": {
             id: string;
+            journalpostId: string;
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
