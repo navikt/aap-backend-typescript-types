@@ -40,6 +40,8 @@ __export(index_exports, {
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper: () => NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
+  NoNavAapOppgaveMarkeringMarkeringDtoType: () => NoNavAapOppgaveMarkeringMarkeringDtoType,
+  NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType: () => NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType,
   NoNavAapOppgaveOppgaveDtoBehandlingstype: () => NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoReturStatus: () => NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus: () => NoNavAapOppgaveOppgaveDtoStatus,
@@ -429,6 +431,16 @@ var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2;
 })(NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper || {});
+var NoNavAapOppgaveMarkeringMarkeringDtoType = /* @__PURE__ */ ((NoNavAapOppgaveMarkeringMarkeringDtoType2) => {
+  NoNavAapOppgaveMarkeringMarkeringDtoType2["HASTER"] = "HASTER";
+  NoNavAapOppgaveMarkeringMarkeringDtoType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+  return NoNavAapOppgaveMarkeringMarkeringDtoType2;
+})(NoNavAapOppgaveMarkeringMarkeringDtoType || {});
+var NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType = /* @__PURE__ */ ((NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType2) => {
+  NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType2["HASTER"] = "HASTER";
+  NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+  return NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType2;
+})(NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType || {});
 var NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2) => {
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
@@ -536,6 +548,8 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
+  NoNavAapOppgaveMarkeringMarkeringDtoType,
+  NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoReturStatus,
   NoNavAapOppgaveOppgaveDtoStatus,

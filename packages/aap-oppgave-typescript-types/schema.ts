@@ -504,6 +504,128 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/{referanse}/ny-markering": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/{referanse}/hent-markeringer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringResponse"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/{referanse}/fjern-markering": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/filter": {
         parameters: {
             query?: never;
@@ -1089,7 +1211,7 @@ export interface components {
             begrunnelse: string;
             /** @enum {string} */
             markeringType: NoNavAapOppgaveBehandlingMarkeringMarkeringType;
-            opprettetAv?: string | null;
+            opprettetAv: string;
         };
         "no.nav.aap.oppgave.DokumenterLestDto": {
             /** Format: uuid */
@@ -1252,6 +1374,17 @@ export interface components {
              */
             tom?: string | null;
             "\u00E5rsaker": string[];
+        };
+        "no.nav.aap.oppgave.markering.MarkeringDto": {
+            begrunnelse: string;
+            /** @enum {string} */
+            type: NoNavAapOppgaveMarkeringMarkeringDtoType;
+        };
+        "no.nav.aap.oppgave.markering.MarkeringResponse": {
+            begrunnelse: string;
+            /** @enum {string} */
+            markeringType: NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType;
+            opprettetAv: string;
         };
         "no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto": {
             enheter: string[];
@@ -1690,6 +1823,14 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveMarkeringMarkeringDtoType {
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
+export enum NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType {
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
 export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
