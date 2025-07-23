@@ -5077,13 +5077,13 @@ export interface components {
             adresseType?: "KONTAKT_ADRESSE" | "OPPHOLDS_ADRESSE" | "BOSTEDS_ADRESSE" | null;
             bySted?: string | null;
             /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
+             * Format: date
+             * @example 2025-04-01
              */
             gyldigFraOgMed?: string | null;
             /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
+             * Format: date
+             * @example 2025-04-01
              */
             gyldigTilOgMed?: string | null;
             landkode?: string | null;
