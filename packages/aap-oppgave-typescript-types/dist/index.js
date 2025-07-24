@@ -36,7 +36,6 @@ __export(index_exports, {
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType: () => NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak: () => NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
   NoNavAapMotorApiJobbInfoDtoStatus: () => NoNavAapMotorApiJobbInfoDtoStatus,
-  NoNavAapOppgaveBehandlingMarkeringMarkeringType: () => NoNavAapOppgaveBehandlingMarkeringMarkeringType,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper: () => NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
@@ -360,11 +359,6 @@ var NoNavAapMotorApiJobbInfoDtoStatus = /* @__PURE__ */ ((NoNavAapMotorApiJobbIn
   NoNavAapMotorApiJobbInfoDtoStatus2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapMotorApiJobbInfoDtoStatus2;
 })(NoNavAapMotorApiJobbInfoDtoStatus || {});
-var NoNavAapOppgaveBehandlingMarkeringMarkeringType = /* @__PURE__ */ ((NoNavAapOppgaveBehandlingMarkeringMarkeringType2) => {
-  NoNavAapOppgaveBehandlingMarkeringMarkeringType2["HASTER"] = "HASTER";
-  NoNavAapOppgaveBehandlingMarkeringMarkeringType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
-  return NoNavAapOppgaveBehandlingMarkeringMarkeringType2;
-})(NoNavAapOppgaveBehandlingMarkeringMarkeringType || {});
 var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoBehandlingstype2) => {
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["REVURDERING"] = "REVURDERING";
@@ -544,7 +538,6 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
   NoNavAapMotorApiJobbInfoDtoStatus,
-  NoNavAapOppgaveBehandlingMarkeringMarkeringType,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,

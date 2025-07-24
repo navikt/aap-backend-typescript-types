@@ -1207,12 +1207,6 @@ export interface components {
         "no.nav.aap.oppgave.AvreserverOppgaveDto": {
             oppgaver: number[];
         };
-        "no.nav.aap.oppgave.BehandlingMarkering": {
-            begrunnelse: string;
-            /** @enum {string} */
-            markeringType: NoNavAapOppgaveBehandlingMarkeringMarkeringType;
-            opprettetAv: string;
-        };
         "no.nav.aap.oppgave.DokumenterLestDto": {
             /** Format: uuid */
             behandlingRef: string;
@@ -1245,7 +1239,7 @@ export interface components {
             id?: number | null;
             /** Format: int64 */
             journalpostId?: number | null;
-            markeringer: components["schemas"]["no.nav.aap.oppgave.BehandlingMarkering"][];
+            markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringResponse"][];
             "oppf\u00F8lgingsenhet"?: string | null;
             opprettetAv: string;
             /**
@@ -1761,10 +1755,6 @@ export enum NoNavAapMotorApiJobbInfoDtoStatus {
     FERDIG = "FERDIG",
     FEILET = "FEILET",
     AVBRUTT = "AVBRUTT"
-}
-export enum NoNavAapOppgaveBehandlingMarkeringMarkeringType {
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
 export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
