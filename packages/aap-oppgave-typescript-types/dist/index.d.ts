@@ -570,7 +570,7 @@ interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringResponse"][];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
                     };
                 };
             };
@@ -1238,7 +1238,7 @@ interface components {
             id?: number | null;
             /** Format: int64 */
             journalpostId?: number | null;
-            markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringResponse"][];
+            markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
             "oppf\u00F8lgingsenhet"?: string | null;
             opprettetAv: string;
             /**
@@ -1371,13 +1371,8 @@ interface components {
         "no.nav.aap.oppgave.markering.MarkeringDto": {
             begrunnelse: string;
             /** @enum {string} */
-            type: NoNavAapOppgaveMarkeringMarkeringDtoType;
-        };
-        "no.nav.aap.oppgave.markering.MarkeringResponse": {
-            begrunnelse: string;
-            /** @enum {string} */
-            markeringType: NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType;
-            opprettetAv: string;
+            markeringType: NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
+            opprettetAv?: string | null;
         };
         "no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto": {
             enheter: string[];
@@ -1813,11 +1808,7 @@ declare enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
-declare enum NoNavAapOppgaveMarkeringMarkeringDtoType {
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
-}
-declare enum NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType {
+declare enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
     HASTER = "HASTER",
     KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
@@ -1898,4 +1889,4 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
 }
 type operations = Record<string, never>;
 
-export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveMarkeringMarkeringDtoType, NoNavAapOppgaveMarkeringMarkeringResponseMarkeringType, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
+export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
