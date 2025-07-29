@@ -3876,18 +3876,20 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            "f\u00F8dselsdato": string;
-            ident: string;
-            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvar"][];
+            "f\u00F8dselsdato"?: string | null;
+            ident?: string | null;
+            navn?: string | null;
+            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvarDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto": {
-            forsorgerPeriode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /**
              * Format: date
              * @example 2025-04-01
              */
-            "f\u00F8dselsdato": string;
-            ident: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"];
+            fodselsDato?: string | null;
+            forsorgerPeriode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            ident?: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"];
+            navn?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.BeregningDTO": {
             /** @enum {string} */
@@ -5209,7 +5211,7 @@ export interface components {
              */
             fraDato: string;
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvar": {
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvarDto": {
             begrunnelse: string;
             /**
              * Format: date
@@ -5222,8 +5224,14 @@ export interface components {
             vurderteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurdertBarnDto"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurdertBarnDto": {
-            ident: string;
-            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvar"][];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "f\u00F8dselsdato"?: string | null;
+            ident?: string | null;
+            navn?: string | null;
+            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvarDto"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningYrkeskaderBel\u00F8pVurderingDTO": {
             /** Format: int64 */
@@ -5811,11 +5819,11 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            "f\u00F8dselsdato"?: string | null;
+            "f\u00F8dselsdato": string;
             ident?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ident"];
-            navn?: string | null;
-            /** @enum {string|null} */
-            relasjon?: "FORELDER" | "FOSTERFORELDER" | null;
+            navn: string;
+            /** @enum {string} */
+            relasjon: "FORELDER" | "FOSTERFORELDER";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Meldekort": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.MeldekortV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.MeldekortV0": {
