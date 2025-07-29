@@ -4045,7 +4045,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.bistand.BistandGrunnlagResponse": {
             gjeldendeSykdsomsvurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomsvurderingResponse"][];
             gjeldendeVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.bistand.BistandVurderingResponse"][];
-            harOppfylt11_5: boolean;
+            harOppfylt11_5?: boolean | null;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.bistand.BistandVurderingResponse"][];
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.bistand.BistandVurderingResponse"];
