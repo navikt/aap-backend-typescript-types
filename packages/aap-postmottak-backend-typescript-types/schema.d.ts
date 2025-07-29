@@ -1058,6 +1058,7 @@ export interface components {
             brevkode: string;
             dokumenter: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.Dokument"][];
             journalposttittel?: string | null;
+            kanEndreAvsenderMottaker: boolean;
             saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto"][];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto"];
         };
