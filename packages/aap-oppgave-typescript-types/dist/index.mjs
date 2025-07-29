@@ -38,6 +38,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5052"] = "5052";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5053"] = "5053";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5026"] = "5026";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5999"] = "5999";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5056"] = "5056";
@@ -83,6 +84,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_SYKDOMSVILK_RET"] = "FASTSETT_SYKDOMSVILK\xC5RET";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_YRKESSKADE"] = "VURDER_YRKESSKADE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SYKDOMSVURDERING_BREV"] = "SYKDOMSVURDERING_BREV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KVALITETSSIKRING"] = "KVALITETSSIKRING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BARNETILLEGG"] = "BARNETILLEGG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_SYKDOM"] = "AVKLAR_SYKDOM";
@@ -134,11 +136,6 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2["OVERSTYR"] = "OVERSTYR";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType || {});
-var NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2) => {
-  NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2["HASTER"] = "HASTER";
-  NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
-  return NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType2;
-})(NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType || {});
 var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2) => {
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2["AVSLUTTET"] = "AVSLUTTET";
@@ -177,6 +174,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_SYKDOMSVILK_RET"] = "FASTSETT_SYKDOMSVILK\xC5RET";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_YRKESSKADE"] = "VURDER_YRKESSKADE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SYKDOMSVURDERING_BREV"] = "SYKDOMSVURDERING_BREV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["KVALITETSSIKRING"] = "KVALITETSSIKRING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["BARNETILLEGG"] = "BARNETILLEGG";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["AVKLAR_SYKDOM"] = "AVKLAR_SYKDOM";
@@ -459,7 +457,6 @@ export {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType,
-  NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType,
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus,
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg,

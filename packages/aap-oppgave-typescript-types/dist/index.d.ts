@@ -1073,12 +1073,6 @@ interface components {
             /** Format: uuid */
             referanse: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.behandling.MarkeringDto": {
-            begrunnelse: string;
-            /** @enum {string} */
-            markeringType: NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType;
-            opprettetAv?: string | null;
-        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
@@ -1104,7 +1098,6 @@ interface components {
              * @example 2025-04-01T12:30:00
              */
             hendelsesTidspunkt: string;
-            markeringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.MarkeringDto"][];
             mottattDokumenter: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.MottattDokumentDto"][];
             /**
              * Format: date-time
@@ -1506,6 +1499,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5050 = "5050",
     Value5051 = "5051",
     Value5052 = "5052",
+    Value5053 = "5053",
     Value5026 = "5026",
     Value5999 = "5999",
     Value5056 = "5056",
@@ -1549,6 +1543,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
     VURDER_YRKESSKADE = "VURDER_YRKESSKADE",
     FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
     KVALITETSSIKRING = "KVALITETSSIKRING",
     BARNETILLEGG = "BARNETILLEGG",
     AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
@@ -1598,10 +1593,6 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
     VENTEPUNKT = "VENTEPUNKT",
     OVERSTYR = "OVERSTYR"
 }
-declare enum NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType {
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
-}
 declare enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET",
@@ -1638,6 +1629,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
     VURDER_YRKESSKADE = "VURDER_YRKESSKADE",
     FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
     KVALITETSSIKRING = "KVALITETSSIKRING",
     BARNETILLEGG = "BARNETILLEGG",
     AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
@@ -1889,4 +1881,4 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
 }
 type operations = Record<string, never>;
 
-export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktBehandlingMarkeringDtoMarkeringType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
+export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, type components, type operations, type paths, type webhooks };
