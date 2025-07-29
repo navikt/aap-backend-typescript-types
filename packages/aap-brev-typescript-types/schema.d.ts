@@ -656,6 +656,14 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "java.time.Year": Record<string, never>;
+        "no.nav.aap.brev.kontrakt.Adresse": {
+            adresselinje1: string;
+            adresselinje2?: string | null;
+            adresselinje3?: string | null;
+            landkode: string;
+            postnummer?: string | null;
+            poststed?: string | null;
+        };
         "no.nav.aap.brev.kontrakt.AvbrytBrevbestillingRequest": {
             /** Format: uuid */
             referanse: string;
@@ -755,6 +763,7 @@ export interface components {
             "\u00E5r": components["schemas"]["java.time.Year"];
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
+            mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
             /** Format: uuid */
             referanse: string;
             signaturer?: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][] | null;
@@ -805,6 +814,16 @@ export interface components {
             dokumenter: string[];
             journalpostFerdigstilt: boolean;
             journalpostId: string;
+        };
+        "no.nav.aap.brev.kontrakt.MottakerDto": {
+            ident?: string | null;
+            /** @enum {string|null} */
+            identType?: "FNR" | "HPRNR" | "ORGNR" | "UTL_ORG" | null;
+            navnOgAdresse?: components["schemas"]["no.nav.aap.brev.kontrakt.NavnOgAdresse"];
+        };
+        "no.nav.aap.brev.kontrakt.NavnOgAdresse": {
+            adresse: components["schemas"]["no.nav.aap.brev.kontrakt.Adresse"];
+            navn: string;
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
             enhet: string;
