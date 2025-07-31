@@ -3774,6 +3774,7 @@ export interface components {
             brevbestillingReferanse: string;
             /** @enum {string} */
             handling: "FERDIGSTILL" | "AVBRYT";
+            mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivForh\u00E5ndsvarselBruddAktivitetspliktBrevL\u00F8sning": {
             /** @enum {string} */
@@ -3782,6 +3783,7 @@ export interface components {
             brevbestillingReferanse: string;
             /** @enum {string} */
             handling: "FERDIGSTILL" | "AVBRYT";
+            mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivForh\u00E5ndsvarselKlageFormkravBrevL\u00F8sning": {
             /** @enum {string} */
@@ -3790,6 +3792,7 @@ export interface components {
             brevbestillingReferanse: string;
             /** @enum {string} */
             handling: "FERDIGSTILL" | "AVBRYT";
+            mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivVedtaksbrevL\u00F8sning": {
             /** @enum {string} */
@@ -3798,6 +3801,7 @@ export interface components {
             brevbestillingReferanse: string;
             /** @enum {string} */
             handling: "FERDIGSTILL" | "AVBRYT";
+            mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TjenestepensjonRefusjonskravL\u00F8sning": {
             /** @enum {string} */
@@ -5104,7 +5108,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.IdentMedType": {
             ident: string;
             /** @enum {string} */
-            type: "ORGNR" | "UTL_ORGNR" | "FNR_DNR";
+            type: "ORGNR" | "UTL_ORG" | "FNR_DNR";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse": {
             adresse: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.Adresse"];
@@ -5995,6 +5999,14 @@ export interface components {
             status: "OPPRETTET" | "UTREDES" | "LØPENDE" | "AVSLUTTET";
             "s\u00F8knadErTrukket"?: boolean | null;
         };
+        "no.nav.aap.brev.kontrakt.Adresse": {
+            adresselinje1: string;
+            adresselinje2?: string | null;
+            adresselinje3?: string | null;
+            landkode: string;
+            postnummer?: string | null;
+            poststed?: string | null;
+        };
         "no.nav.aap.brev.kontrakt.Blokk": {
             /** Format: uuid */
             id: string;
@@ -6033,6 +6045,16 @@ export interface components {
             id: string;
             kanRedigeres: boolean;
             overskrift?: string | null;
+        };
+        "no.nav.aap.brev.kontrakt.MottakerDto": {
+            ident?: string | null;
+            /** @enum {string|null} */
+            identType?: "FNR" | "HPRNR" | "ORGNR" | "UTL_ORG" | null;
+            navnOgAdresse?: components["schemas"]["no.nav.aap.brev.kontrakt.NavnOgAdresse"];
+        };
+        "no.nav.aap.brev.kontrakt.NavnOgAdresse": {
+            adresse: components["schemas"]["no.nav.aap.brev.kontrakt.Adresse"];
+            navn: string;
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
             enhet: string;
