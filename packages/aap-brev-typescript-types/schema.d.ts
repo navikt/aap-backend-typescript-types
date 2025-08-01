@@ -738,7 +738,7 @@ export interface components {
             /** @enum {string} */
             "spr\u00E5k": "EN" | "NB" | "NN";
             /** @enum {string} */
-            status: "REGISTRERT" | "UNDER_ARBEID" | "FERDIGSTILT" | "AVBRUTT";
+            status: "UNDER_ARBEID" | "FERDIGSTILT" | "AVBRUTT";
         };
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
