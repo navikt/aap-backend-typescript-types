@@ -1239,7 +1239,7 @@ export interface components {
         };
         "no.nav.aap.postmottak.gateway.Klagebehandling": {
             /** Format: uuid */
-            behandlingsreferanse: string;
+            behandlingsReferanse: string;
             /**
              * Format: date
              * @example 2025-04-01
