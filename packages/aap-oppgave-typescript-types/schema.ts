@@ -1354,7 +1354,8 @@ export interface components {
              * @example 2025-04-01
              */
             fom?: string | null;
-            statuser: string[];
+            "p\u00E5Vent"?: boolean | null;
+            returStatuser: NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser[];
             /**
              * Format: date
              * @example 2025-04-01
@@ -1800,6 +1801,10 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser {
+    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
     HASTER = "HASTER",

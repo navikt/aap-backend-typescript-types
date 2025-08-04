@@ -362,6 +362,11 @@ var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2;
 })(NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper || {});
+var NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = /* @__PURE__ */ ((NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2) => {
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  return NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2;
+})(NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser || {});
 var NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = /* @__PURE__ */ ((NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType2) => {
   NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType2["HASTER"] = "HASTER";
   NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType2["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
@@ -471,6 +476,7 @@ export {
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser,
   NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType,
   NoNavAapOppgaveOppgaveDtoBehandlingstype,
   NoNavAapOppgaveOppgaveDtoReturStatus,
