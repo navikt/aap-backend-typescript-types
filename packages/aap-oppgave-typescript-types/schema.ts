@@ -1112,6 +1112,7 @@ export interface components {
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
             versjon: string;
+            vurderingsbehov: string[];
             "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
@@ -1469,6 +1470,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value9004 = "9004",
     Value5029 = "5029",
     Value5001 = "5001",
+    Value5002 = "5002",
     Value5003 = "5003",
     Value5004 = "5004",
     Value5005 = "5005",
@@ -1561,6 +1563,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
     SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
     SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
+    IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
     FASTSETT_UTTAK = "FASTSETT_UTTAK",
     EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -1647,6 +1650,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
     SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
     SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
+    IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
     FASTSETT_UTTAK = "FASTSETT_UTTAK",
     EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -1727,6 +1731,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
     KLAGE = "KLAGE",
     ANNET_RELEVANT_DOKUMENT = "ANNET_RELEVANT_DOKUMENT",
     MANUELL_REVURDERING = "MANUELL_REVURDERING",
+    OMGJ_RING_KLAGE_REVURDERING = "OMGJ\u00D8RING_KLAGE_REVURDERING",
     NY__RSAK_TIL_BEHANDLING = "NY_\u00C5RSAK_TIL_BEHANDLING",
     KABAL_HENDELSE = "KABAL_HENDELSE",
     OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE"
