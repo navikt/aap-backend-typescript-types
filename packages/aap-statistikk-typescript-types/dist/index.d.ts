@@ -753,6 +753,7 @@ interface components {
             /** @enum {string} */
             soknadsFormat: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat;
             versjon: string;
+            vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[];
             "\u00E5rsakTilBehandling": NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelseDTO": {
@@ -1134,6 +1135,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value9004 = "9004",
     Value5029 = "5029",
     Value5001 = "5001",
+    Value5002 = "5002",
     Value5003 = "5003",
     Value5004 = "5004",
     Value5005 = "5005",
@@ -1226,6 +1228,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
     SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
     SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
+    IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
     FASTSETT_UTTAK = "FASTSETT_UTTAK",
     EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -1352,6 +1355,36 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat {
     DIGITAL = "DIGITAL",
     PAPIR = "PAPIR"
+}
+declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov {
+    S_KNAD = "S\u00D8KNAD",
+    AKTIVITETSMELDING = "AKTIVITETSMELDING",
+    MELDEKORT = "MELDEKORT",
+    LEGEERKL_RING = "LEGEERKL\u00C6RING",
+    AVVIST_LEGEERKL_RING = "AVVIST_LEGEERKL\u00C6RING",
+    DIALOGMELDING = "DIALOGMELDING",
+    G_REGULERING = "G_REGULERING",
+    REVURDER_MEDLEMSKAP = "REVURDER_MEDLEMSKAP",
+    REVURDER_YRKESSKADE = "REVURDER_YRKESSKADE",
+    REVURDER_BEREGNING = "REVURDER_BEREGNING",
+    REVURDER_LOVVALG = "REVURDER_LOVVALG",
+    REVURDER_SAMORDNING = "REVURDER_SAMORDNING",
+    KLAGE = "KLAGE",
+    LOVVALG_OG_MEDLEMSKAP = "LOVVALG_OG_MEDLEMSKAP",
+    FORUTGAENDE_MEDLEMSKAP = "FORUTGAENDE_MEDLEMSKAP",
+    SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND",
+    BARNETILLEGG = "BARNETILLEGG",
+    INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
+    SAMORDNING_OG_AVREGNING = "SAMORDNING_OG_AVREGNING",
+    REFUSJONSKRAV = "REFUSJONSKRAV",
+    UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT",
+    VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
+    S_KNAD_TRUKKET = "S\u00D8KNAD_TRUKKET",
+    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    KLAGE_TRUKKET = "KLAGE_TRUKKET",
+    REVURDER_MANUELL_INNTEKT = "REVURDER_MANUELL_INNTEKT",
+    MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
+    OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling {
     S_KNAD = "S\u00D8KNAD",
@@ -1505,4 +1538,4 @@ declare enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerD
 }
 type operations = Record<string, never>;
 
-export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat, NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType, NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat, NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType, NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall, NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling, NoNavAapOppgaveStatistikkOppgaveHendelseHendelse, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype, PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet, PathsBehandlingerPVentGetParametersQueryBehandlingstyper, PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper, PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode, PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper, PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper, PathsBehandlingstidGetParametersQueryBehandlingstyper, PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper, PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode, PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper, PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper, PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode, type components, type operations, type paths, type webhooks };
+export { type $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat, NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType, NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov, NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType, NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall, NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling, NoNavAapOppgaveStatistikkOppgaveHendelseHendelse, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype, PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper, PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet, PathsBehandlingerPVentGetParametersQueryBehandlingstyper, PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper, PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode, PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper, PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper, PathsBehandlingstidGetParametersQueryBehandlingstyper, PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper, PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode, PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper, PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper, PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode, type components, type operations, type paths, type webhooks };
