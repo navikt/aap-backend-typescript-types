@@ -5388,6 +5388,8 @@ export interface components {
              * @example 2025-04-01
              */
             skadedato: string;
+            /** Format: int32 */
+            yrkesskadeSaksnummer?: number | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomsvurderingL\u00F8sningDto": {
             begrunnelse: string;
