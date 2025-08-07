@@ -743,7 +743,16 @@ export interface components {
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
         };
-        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"];
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"];
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            dato: string;
+            /** @enum {string} */
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
+        };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7": {
             /**
              * Format: date
@@ -751,12 +760,12 @@ export interface components {
              */
             frist: string;
             /** @enum {string} */
-            type: "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning": {
             "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
             /** @enum {string} */
-            type: "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r": {
             inntekt: number;
