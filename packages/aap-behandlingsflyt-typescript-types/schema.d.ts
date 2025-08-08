@@ -4812,7 +4812,9 @@ export interface components {
             arbeidGradering?: number | null;
             /** Format: int32 */
             arbeidsgiverGradering?: number | null;
+            /** Format: double */
             barneTilleggsats: number;
+            /** Format: double */
             dagsats: number;
             /** Format: double */
             effektivDagsats: number;
@@ -4839,8 +4841,8 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto": {
             /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
+             * Format: date
+             * @example 2025-04-01
              */
             levertMeldekortDato?: string | null;
             /** @enum {string|null} */
