@@ -1112,6 +1112,7 @@ interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
             versjon: string;
             vurderingsbehov: string[];
+            "\u00E5rsakTilOpprettelse": string;
             "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
