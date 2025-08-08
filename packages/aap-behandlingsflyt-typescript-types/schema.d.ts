@@ -4774,7 +4774,7 @@ export interface components {
              */
             opprettetTidspunkt?: string | null;
             /** @enum {string} */
-            type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET";
+            type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV";
             /** @enum {string|null} */
             utfall?: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "MEDHOLD_ETTER_FVL_35" | null;
         };
@@ -5810,7 +5810,7 @@ export interface components {
             navIdent: string;
             reason: string;
             /** @enum {string} */
-            type: "KLAGE" | "ANKE" | "ANKE_I_TRYGDERETTEN" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET";
+            type: "KLAGE" | "ANKE" | "ANKE_I_TRYGDERETTEN" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET" | "OMGJOERINGSKRAV";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ident": {
             identifikator: string;
@@ -5838,7 +5838,7 @@ export interface components {
             kilde: string;
             kildeReferanse: string;
             /** @enum {string} */
-            type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET";
+            type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Klage": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KlageV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KlageV0": {
