@@ -4131,8 +4131,6 @@ export interface components {
             erSkadeSykdomEllerLyteVesentligdel?: boolean | null;
             harSkadeSykdomEllerLyte: boolean;
             hoveddiagnose?: string | null;
-            /** Format: int64 */
-            id?: number | null;
             kodeverk?: string | null;
             /**
              * Format: date
