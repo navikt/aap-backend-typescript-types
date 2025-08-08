@@ -4086,7 +4086,6 @@ export interface components {
             bidiagnoser?: string[] | null;
             dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             erArbeidsevnenNedsatt?: boolean | null;
-            erGjeldende?: boolean | null;
             erNedsettelseIArbeidsevneAvEnVissVarighet?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnHalvparten?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense?: boolean | null;
