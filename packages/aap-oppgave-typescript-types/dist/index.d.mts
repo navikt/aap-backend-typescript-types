@@ -1106,6 +1106,7 @@ interface components {
             opprettetTidspunkt: string;
             personIdent: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            "relevanteIdenterP\u00E5Behandling": string[];
             reserverTil?: string | null;
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             /** @enum {string} */
