@@ -1266,6 +1266,8 @@ interface components {
             venteBegrunnelse?: string | null;
             /** Format: int64 */
             versjon: number;
+            vurderingsbehov: string[];
+            "\u00E5rsakTilOpprettelse"?: string | null;
             "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.oppgave.OppgaveId": {
