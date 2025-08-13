@@ -2256,6 +2256,85 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/mellomlagret-vurdering": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/behandling/mellomlagret-vurdering/{referanse}/{avklaringsbehovkode}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                    /** @description avklaringsbehovkode */
+                    avklaringsbehovkode: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagredeVurderingResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/klage/{referanse}/grunnlag/p\u00E5klaget-behandling": {
         parameters: {
             query?: never;
@@ -4748,6 +4827,27 @@ export interface components {
             begrunnelse?: string | null;
             varMedlemIFolketrygd?: boolean | null;
         };
+        "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagredeVurderingResponse": {
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            mellomlagretVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto": {
+            avklaringsbehovkode: string;
+            behandlingId: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
+            data: string;
+            vurdertAv: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            vurdertDato: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingRequest": {
+            avklaringsbehovkode: string;
+            /** Format: uuid */
+            behandlingsReferanse: string;
+            data: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.oppfolgingsbehandling.AvklarOppfolgingsoppgaveGrunnlagResponse": {
             /**
              * Format: date
@@ -6025,6 +6125,10 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.Ident": {
             aktivIdent: boolean;
             identifikator: string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId": {
+            /** Format: int64 */
+            id: number;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingAvTypeDTO": {
             /** Format: uuid */
