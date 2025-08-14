@@ -5058,7 +5058,6 @@ export interface components {
             /** Format: int32 */
             gradering: number;
             "grunnbel\u00F8p": number;
-            grunnlag: number;
             grunnlagsfaktor: number;
             /** Format: int32 */
             institusjonGradering?: number | null;
