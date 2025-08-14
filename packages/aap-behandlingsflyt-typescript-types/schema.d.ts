@@ -2335,6 +2335,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/mellomlagret-vurdering/{referanse}/{avklaringsbehovkode}/slett": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                    /** @description avklaringsbehovkode */
+                    avklaringsbehovkode: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/klage/{referanse}/grunnlag/p\u00E5klaget-behandling": {
         parameters: {
             query?: never;
@@ -4832,7 +4870,8 @@ export interface components {
             mellomlagretVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto": {
-            avklaringsbehovkode: string;
+            /** @enum {string} */
+            avklaringsbehovkode: "9001" | "9002" | "9003" | "9004" | "5029" | "5001" | "5002" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5020" | "5024" | "5096" | "5097" | "5098" | "5099" | "5021" | "5022" | "5023" | "5025" | "5027" | "5030" | "5028" | "5019" | "5050" | "5051" | "5052" | "5053" | "5026" | "5999" | "5056" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6008" | "6009" | "6010" | "7001" | "8001" | "8002" | "8003";
             behandlingId: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
             data: string;
             vurdertAv: string;
