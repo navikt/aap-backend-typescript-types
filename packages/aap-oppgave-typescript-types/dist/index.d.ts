@@ -1368,7 +1368,7 @@ interface components {
             "\u00E5rsaker": string[];
         };
         "no.nav.aap.oppgave.markering.MarkeringDto": {
-            begrunnelse: string;
+            begrunnelse?: string | null;
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
             opprettetAv?: string | null;
