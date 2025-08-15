@@ -1,5 +1,11 @@
 # @navikt/aap-postmottak-backend-typescript-types
 
+## 0.0.377
+
+### Patch Changes
+
+- ny versjon av typescript typer
+
 ## 0.0.376
 
 ### Patch Changes
