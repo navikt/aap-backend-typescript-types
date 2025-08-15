@@ -5611,7 +5611,7 @@ export interface components {
             ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.VurderingerForSamordning": {
-            begrunnelse: string;
+            begrunnelse?: string | null;
             /**
              * Format: date
              * @example 2025-04-01
