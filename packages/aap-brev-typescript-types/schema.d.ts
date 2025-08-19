@@ -763,6 +763,13 @@ export interface components {
             type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning": {
+            beregningsgrunnlag?: number | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            beregningstidspunkt?: string | null;
+            dagsats?: number | null;
             "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
             /** @enum {string} */
             type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING";
