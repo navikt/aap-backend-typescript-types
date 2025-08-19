@@ -1270,44 +1270,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/behandling/tilkjent/{referanse}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelseDto"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/api/behandling/tilkjentV2/{referanse}": {
         parameters: {
             query?: never;
@@ -5027,9 +4989,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelse2Dto": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto"][];
         };
-        "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelseDto": {
-            perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriodeDTO"][];
-        };
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto": {
             /**
              * Format: date
@@ -5041,42 +5000,6 @@ export interface components {
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             sisteLeverteMeldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.MeldekortDto"];
             vurdertePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode"][];
-        };
-        "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriodeDTO": {
-            /** Format: int32 */
-            antallBarn: number;
-            /** Format: int32 */
-            arbeidGradering?: number | null;
-            barnetillegg: number;
-            barnetilleggsats: number;
-            dagsats: number;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            fraOgMed: string;
-            /** Format: int32 */
-            gradering: number;
-            "grunnbel\u00F8p": number;
-            grunnlagsfaktor: number;
-            /** Format: int32 */
-            institusjonGradering?: number | null;
-            /** Format: double */
-            redusertDagsats: number;
-            /** Format: int32 */
-            samordningGradering?: number | null;
-            /** Format: int32 */
-            "samordningUf\u00F8reGradering"?: number | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            tilOgMed: string;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            utbetalingsdato: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode": {
             felter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.Felter"];
