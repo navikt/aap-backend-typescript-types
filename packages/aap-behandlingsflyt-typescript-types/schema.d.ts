@@ -4830,7 +4830,6 @@ export interface components {
             varMedlemIFolketrygd?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagredeVurderingResponse": {
-            "harTilgangTil\u00C5Saksbehandle": boolean;
             mellomlagretVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurderingDto": {
