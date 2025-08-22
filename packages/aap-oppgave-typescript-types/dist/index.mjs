@@ -127,6 +127,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IVERKSETT_KONSEKVENS"] = "IVERKSETT_KONSEKVENS";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["START_OPPF_LGINGSBEHANDLING"] = "START_OPPF\xD8LGINGSBEHANDLING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPF\xD8LGING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_AKTIVITETSPLIKT_11_7"] = "VURDER_AKTIVITETSPLIKT_11_7";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
@@ -218,6 +219,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["IVERKSETT_KONSEKVENS"] = "IVERKSETT_KONSEKVENS";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["START_OPPF_LGINGSBEHANDLING"] = "START_OPPF\xD8LGINGSBEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPF\xD8LGING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_AKTIVITETSPLIKT_11_7"] = "VURDER_AKTIVITETSPLIKT_11_7";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg || {});
@@ -228,6 +230,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandli
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Klage"] = "Klage";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Oppf_lgingsBehandling"] = "Oppf\xF8lgingsBehandling";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2["Aktivitetsplikt"] = "Aktivitetsplikt";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType || {});
 var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus2) => {
@@ -308,6 +311,7 @@ var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgave
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["KLAGE"] = "KLAGE";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
+  NoNavAapOppgaveOppgaveDtoBehandlingstype2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveOppgaveDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveOppgaveDtoBehandlingstype2;
@@ -341,6 +345,7 @@ var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapO
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["KLAGE"] = "KLAGE";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
+  NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterFilterDtoBehandlingstyper2;
@@ -352,6 +357,7 @@ var NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = /* @__PURE__ */ ((
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["KLAGE"] = "KLAGE";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
+  NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2;
@@ -363,6 +369,7 @@ var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["KLAGE"] = "KLAGE";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2;
@@ -384,6 +391,7 @@ var NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PU
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["KLAGE"] = "KLAGE";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
+  NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype2;

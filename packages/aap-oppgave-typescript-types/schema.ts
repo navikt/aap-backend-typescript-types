@@ -1631,6 +1631,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+    VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1718,6 +1719,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+    VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
@@ -1726,7 +1728,8 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
-    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling"
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
     OPPRETTET = "OPPRETTET",
@@ -1799,6 +1802,7 @@ export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1827,6 +1831,7 @@ export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1837,6 +1842,7 @@ export enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1847,6 +1853,7 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1865,6 +1872,7 @@ export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     KLAGE = "KLAGE",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
