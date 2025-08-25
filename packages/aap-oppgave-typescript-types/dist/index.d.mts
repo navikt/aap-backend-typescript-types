@@ -1396,6 +1396,7 @@ interface components {
              * @example 2025-04-01
              */
             fom?: string | null;
+            markertHaster?: boolean | null;
             "p\u00E5Vent"?: boolean | null;
             returStatuser: NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser[];
             /**
