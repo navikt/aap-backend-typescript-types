@@ -996,7 +996,8 @@ declare enum PathsBehandlingstidGetParametersQueryBehandlingstyper {
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1006,7 +1007,8 @@ declare enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlings
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1016,7 +1018,8 @@ declare enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryB
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode {
     IDAG = "IDAG",
@@ -1032,7 +1035,8 @@ declare enum PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper {
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet {
     DAG = "DAG",
@@ -1048,7 +1052,8 @@ declare enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandli
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet {
     DAG = "DAG",
@@ -1064,7 +1069,8 @@ declare enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBeha
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1074,7 +1080,8 @@ declare enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingsty
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode {
     IDAG = "IDAG",
@@ -1090,7 +1097,8 @@ declare enum PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper {
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsBehandlingerPVentGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1100,7 +1108,8 @@ declare enum PathsBehandlingerPVentGetParametersQueryBehandlingstyper {
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
@@ -1110,7 +1119,8 @@ declare enum PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper 
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode {
     IDAG = "IDAG",
@@ -1126,7 +1136,8 @@ declare enum PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstype
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value9001 = "9001",
@@ -1254,6 +1265,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
     START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+    VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1345,7 +1357,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlin
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
-    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling"
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus {
     OPPRETTET = "OPPRETTET",
@@ -1387,7 +1400,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
     MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
     OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
     HELHETLIG_VURDERING = "HELHETLIG_VURDERING",
-    REVURDER_MELDEPLIKT_RIMELIG_GRUNN = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN"
+    REVURDER_MELDEPLIKT_RIMELIG_GRUNN = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN",
+    AKTIVITETSPLIKT_11_7 = "AKTIVITETSPLIKT_11_7"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling {
     S_KNAD = "S\u00D8KNAD",
@@ -1419,7 +1433,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBe
     MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
     OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
     HELHETLIG_VURDERING = "HELHETLIG_VURDERING",
-    REVURDER_MELDEPLIKT_RIMELIG_GRUNN = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN"
+    REVURDER_MELDEPLIKT_RIMELIG_GRUNN = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN",
+    AKTIVITETSPLIKT_11_7 = "AKTIVITETSPLIKT_11_7"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
@@ -1443,7 +1458,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehan
     Tilbakekreving = "Tilbakekreving",
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
-    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling"
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 declare enum NoNavAapOppgaveStatistikkOppgaveHendelseHendelse {
     OPPRETTET = "OPPRETTET",
@@ -1539,7 +1555,8 @@ declare enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerD
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling"
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
 }
 type operations = Record<string, never>;
 
