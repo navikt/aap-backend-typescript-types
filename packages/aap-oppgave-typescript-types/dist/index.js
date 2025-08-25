@@ -60,11 +60,7 @@ module.exports = __toCommonJS(index_exports);
 
 // schema.ts
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9001"] = "9001";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9002"] = "9002";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9003"] = "9003";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9004"] = "9004";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5029"] = "5029";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5001"] = "5001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5002"] = "5002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5003"] = "5003";
@@ -83,27 +79,28 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5016"] = "5016";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5017"] = "5017";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5018"] = "5018";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5020"] = "5020";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5024"] = "5024";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5096"] = "5096";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5097"] = "5097";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5098"] = "5098";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5099"] = "5099";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5021"] = "5021";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5022"] = "5022";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5023"] = "5023";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5024"] = "5024";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5025"] = "5025";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5026"] = "5026";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5027"] = "5027";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5030"] = "5030";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5028"] = "5028";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5019"] = "5019";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5029"] = "5029";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5030"] = "5030";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5052"] = "5052";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5053"] = "5053";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5026"] = "5026";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5999"] = "5999";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5056"] = "5056";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5096"] = "5096";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5097"] = "5097";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5098"] = "5098";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5099"] = "5099";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5999"] = "5999";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6000"] = "6000";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6001"] = "6001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value6002"] = "6002";
@@ -119,6 +116,10 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value8001"] = "8001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value8002"] = "8002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value8003"] = "8003";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9001"] = "9001";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9002"] = "9002";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9003"] = "9003";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9004"] = "9004";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
