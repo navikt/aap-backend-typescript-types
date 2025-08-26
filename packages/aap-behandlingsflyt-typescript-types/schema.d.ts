@@ -5051,6 +5051,11 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.aktivitetsplikt.Aktivitetsplikt11_7L\u00F8sningDto": {
             begrunnelse: string;
             erOppfylt: boolean;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            gjelderFra: string;
             /** @enum {string|null} */
             utfall?: "STANS" | "OPPHØR" | null;
         };
