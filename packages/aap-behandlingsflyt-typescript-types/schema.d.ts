@@ -4312,7 +4312,10 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.YrkesskadeTilVurderingResponse": {
             "grunnbel\u00F8p": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
+            kilde: string;
             referanse: string;
+            /** Format: int32 */
+            saksnummer?: number | null;
             /**
              * Format: date
              * @example 2025-04-01
@@ -5540,13 +5543,13 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.RegistrertYrkesskade": {
             kilde: string;
             ref: string;
+            /** Format: int32 */
+            saksnummer?: number | null;
             /**
              * Format: date
              * @example 2025-04-01
              */
             skadedato: string;
-            /** Format: int32 */
-            yrkesskadeSaksnummer?: number | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.SykdomsvurderingL\u00F8sningDto": {
             begrunnelse: string;
