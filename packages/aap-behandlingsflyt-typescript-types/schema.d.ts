@@ -4552,18 +4552,21 @@ export interface components {
             /** @enum {string} */
             ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
-        "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingGrunnlagDTO": {
+        "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingDTO": {
             begrunnelse?: string | null;
             /**
              * Format: date
              * @example 2025-04-01
              */
             fristNyRevurdering?: string | null;
-            "harTilgangTil\u00C5Saksbehandle": boolean;
             maksDatoEndelig?: boolean | null;
-            tpYtelser?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.tjenestepensjon.TjenestePensjonForhold"][] | null;
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningVurderingDTO"][];
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingGrunnlagDTO": {
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            tpYtelser?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.tjenestepensjon.TjenestePensjonForhold"][] | null;
+            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingDTO"];
             ytelser: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseDTO"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.TjenestepensjonGrunnlagDTO": {
