@@ -4067,6 +4067,8 @@ export interface components {
             forsorgerPeriode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             ident?: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"];
             navn?: string | null;
+            /** @enum {string|null} */
+            oppgittForeldreRelasjon?: "FORELDER" | "FOSTERFORELDER" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.BeregningDTO": {
             /** @enum {string} */
@@ -5388,6 +5390,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvarDto": {
             begrunnelse: string;
+            erFosterForelder?: boolean | null;
             /**
              * Format: date
              * @example 2025-04-01
