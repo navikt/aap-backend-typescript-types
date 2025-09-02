@@ -779,8 +779,14 @@ export interface components {
             "\u00E5r": components["schemas"]["java.time.Year"];
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse": {
+            /** Format: int32 */
+            antallBarn?: number | null;
+            barnetillegg?: number | null;
             barnetilleggSats?: number | null;
             dagsats?: number | null;
+            gradertBarnetillegg?: number | null;
+            gradertDagsats?: number | null;
+            gradertDagsatsInkludertBarnetillegg?: number | null;
             /** @enum {string} */
             type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE";
         };
