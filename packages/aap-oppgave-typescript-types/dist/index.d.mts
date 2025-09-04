@@ -1289,6 +1289,7 @@ interface components {
             "p\u00E5VentTil"?: string | null;
             "p\u00E5Vent\u00C5rsak"?: string | null;
             reservertAv?: string | null;
+            reservertAvNavn?: string | null;
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -1633,6 +1634,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
+    IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1721,6 +1723,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
+    IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
