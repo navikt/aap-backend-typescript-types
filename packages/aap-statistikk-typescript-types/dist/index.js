@@ -62,6 +62,7 @@ __export(index_exports, {
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper: () => PathsBehandlingerPVentGetParametersQueryBehandlingstyper,
   PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper: () => PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper,
   PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode: () => PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode,
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper: () => PathsBehandlingerReturGetParametersQueryBehandlingstyper,
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper: () => PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper,
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper: () => PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper,
   PathsBehandlingstidGetParametersQueryBehandlingstyper: () => PathsBehandlingstidGetParametersQueryBehandlingstyper,
@@ -241,6 +242,18 @@ var PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper = /* @_
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
   return PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper || {});
+var PathsBehandlingerReturGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerReturGetParametersQueryBehandlingstyper2) => {
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["F_rstegangsbehandling"] = "F\xF8rstegangsbehandling";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Revurdering"] = "Revurdering";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Tilbakekreving"] = "Tilbakekreving";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Klage"] = "Klage";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Dokumenth_ndtering"] = "Dokumenth\xE5ndtering";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  return PathsBehandlingerReturGetParametersQueryBehandlingstyper2;
+})(PathsBehandlingerReturGetParametersQueryBehandlingstyper || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5001"] = "5001";
@@ -743,6 +756,7 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper,
   PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper,
   PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode,
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper,
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper,
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper,
   PathsBehandlingstidGetParametersQueryBehandlingstyper,

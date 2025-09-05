@@ -596,6 +596,47 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/behandlinger/retur": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Hvor mange saker som blir returnert fra kvalitetssikrer og beslutter og hvor lenge disse sakene har ligget etter retur. */
+        get: {
+            parameters: {
+                query?: {
+                    /** @description For hvilke behandlingstyper. Tom liste betyr alle. */
+                    behandlingstyper?: PathsBehandlingerReturGetParametersQueryBehandlingstyper[];
+                    /** @description For hvilke enheter. Tom liste betyr alle. */
+                    enheter?: string[];
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovRetur"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -961,6 +1002,17 @@ export interface components {
             gjennomsnittligAlder: number;
             "\u00E5rsak": string;
         };
+        "no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovRetur": {
+            /** Format: int32 */
+            antallPerAvklaringsbehov: number;
+            /** Format: int32 */
+            "antall\u00C5pneBehandlinger": number;
+            avklaringsbehov: string;
+            /** Format: double */
+            gjennomsnittTidFraRetur?: number | null;
+            returFra?: string | null;
+            "retur\u00C5rsak"?: string | null;
+        };
         "no.nav.aap.statistikk.produksjonsstyring.BehandlingPerSteggruppe": {
             /** Format: int32 */
             antall: number;
@@ -1130,6 +1182,17 @@ export enum PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode {
     FORRIGE_UKE = "FORRIGE_UKE"
 }
 export enum PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper {
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Revurdering = "Revurdering",
+    Tilbakekreving = "Tilbakekreving",
+    Klage = "Klage",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    Journalf_ring = "Journalf\u00F8ring",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Aktivitetsplikt = "Aktivitetsplikt"
+}
+export enum PathsBehandlingerReturGetParametersQueryBehandlingstyper {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
     Revurdering = "Revurdering",
     Tilbakekreving = "Tilbakekreving",
