@@ -75,7 +75,7 @@ jobs:
           git config user.email "team-aap@nav.no"
           git config user.name "Team Aap"
           git add ./packages/aap-${{ inputs.appnavn }}-typescript-types/
-          git commit -m ":label: genererte backendtyper"
+          git commit -m ":label: genererte backendtyper for ${{ inputs.appnavn }}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
