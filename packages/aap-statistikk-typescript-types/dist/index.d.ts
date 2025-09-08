@@ -1008,9 +1008,9 @@ interface components {
             "antall\u00C5pneBehandlinger": number;
             avklaringsbehov: string;
             /** Format: double */
-            gjennomsnittTidFraRetur?: number | null;
-            returFra?: string | null;
-            "retur\u00C5rsak"?: string | null;
+            gjennomsnittTidFraRetur: number;
+            returFra: string;
+            "retur\u00C5rsak": string;
         };
         "no.nav.aap.statistikk.produksjonsstyring.BehandlingPerSteggruppe": {
             /** Format: int32 */
