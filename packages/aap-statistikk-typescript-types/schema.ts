@@ -624,7 +624,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovRetur"][];
+                        "application/json": components["schemas"]["no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovReturDTO"][];
                     };
                 };
             };
@@ -1004,14 +1004,17 @@ export interface components {
         };
         "no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovRetur": {
             /** Format: int32 */
-            antallPerAvklaringsbehov: number;
-            /** Format: int32 */
             "antall\u00C5pneBehandlinger": number;
             avklaringsbehov: string;
             /** Format: double */
             gjennomsnittTidFraRetur: number;
             returFra: string;
             "retur\u00C5rsak": string;
+        };
+        "no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovReturDTO": {
+            returerPerAvklaringsbehov: components["schemas"]["no.nav.aap.statistikk.produksjonsstyring.BehandlingAvklaringsbehovRetur"][];
+            /** Format: int32 */
+            totalt: number;
         };
         "no.nav.aap.statistikk.produksjonsstyring.BehandlingPerSteggruppe": {
             /** Format: int32 */
