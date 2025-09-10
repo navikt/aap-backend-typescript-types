@@ -5221,7 +5221,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "IKKE_GRUNNLEGGENDE_RETT" | "MELDEPLIKT_FRIST_IKKE_PASSERT" | "IKKE_OVERHOLDT_MELDEPLIKT_SANKSJON" | "ARBEIDER_MER_ENN_GRENSEVERDI" | "SONER_STRAFF" | "BRUDD_PÅ_AKTIVITETSPLIKT" | "FRAVÆR_FASTSATT_AKTIVITET" | "VARIGHETSKVOTE_BRUKT_OPP" | null;
+            "avslags\u00E5rsak"?: "IKKE_GRUNNLEGGENDE_RETT" | "MELDEPLIKT_FRIST_IKKE_PASSERT" | "IKKE_OVERHOLDT_MELDEPLIKT_SANKSJON" | "ARBEIDER_MER_ENN_GRENSEVERDI" | "SONER_STRAFF" | "VARIGHETSKVOTE_BRUKT_OPP" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_STANS" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_OPPHØR" | null;
             brukerAvKvoter: ("ORDINÆR" | "STUDENT" | "ETABLERINGSFASE" | "UTVIKLINGSFASE" | "SYKEPENGEERSTATNING")[];
             gradering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.underveis.GraderingDto"];
             meldePeriode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
