@@ -308,6 +308,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/sak/sok": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.S\u00F8kDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.S\u00F8kP\u00E5SakDTO"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/sak/{saksnummer}/finnBehandlingerAvType": {
         parameters: {
             query?: never;
@@ -6405,6 +6444,20 @@ export interface components {
             /** @enum {string|null} */
             resultat?: "INNVILGET" | "AVSLAG" | "TRUKKET" | "KLAGE_OPPRETTHOLDES" | "KLAGE_OMGJØRES" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_AVSLÅTT" | "KLAGE_TRUKKET" | null;
             saksnummer: string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.S\u00F8kDto": {
+            "s\u00F8ketekst": string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.S\u00F8kP\u00E5SakDTO": {
+            harTilgang: boolean;
+            ident: string;
+            navn: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            opprettetTidspunkt: string;
+            saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.UtvidetSaksinfoDTO": {
             behandlinger: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO"][];
