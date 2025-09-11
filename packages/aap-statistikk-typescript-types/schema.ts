@@ -1361,7 +1361,6 @@ export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoSta
 export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev {
     VEDTAK_AVSLAG = "VEDTAK_AVSLAG",
     VEDTAK_INNVILGELSE = "VEDTAK_INNVILGELSE",
-    VEDTAK_11_18 = "VEDTAK_11_18",
     VEDTAK_ENDRING = "VEDTAK_ENDRING",
     VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
     FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT",
