@@ -798,6 +798,43 @@ interface paths {
         patch?: never;
         trace?: never;
     };
+    "/synkroniser-enhet-paa-oppgave": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetSynkroniseringOppgave"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/drift/api/jobb/feilende": {
         parameters: {
             query?: never;
@@ -1295,6 +1332,10 @@ interface components {
         "no.nav.aap.oppgave.enhet.EnhetDto": {
             enhetNr: string;
             navn: string;
+        };
+        "no.nav.aap.oppgave.enhet.EnhetSynkroniseringOppgave": {
+            /** Format: int64 */
+            oppgaveId: number;
         };
         "no.nav.aap.oppgave.filter.FilterDto": {
             avklaringsbehovKoder: string[];
