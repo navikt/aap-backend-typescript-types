@@ -5202,7 +5202,7 @@ export interface components {
             /** @enum {string} */
             type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV";
             /** @enum {string|null} */
-            utfall?: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "MEDHOLD_ETTER_FVL_35" | null;
+            utfall?: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "MEDHOLD_ETTER_FVL_35" | "HENLAGT" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansGrunnlagDto": {
             gjeldendeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansVurderingDto"];
@@ -6195,7 +6195,7 @@ export interface components {
              */
             sendtTilTrygderetten: string;
             /** @enum {string|null} */
-            utfall?: "TRUKKET" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | null;
+            utfall?: "TRUKKET" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "HENLAGT" | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnkebehandlingAvsluttetDetaljer": {
             /**
@@ -6205,7 +6205,7 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET";
+            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "HENLAGT";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnkebehandlingOpprettetDetaljer": {
             /**
@@ -6249,7 +6249,7 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST";
+            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HENLAGT";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.BehandlingFeilregistrertDetaljer": {
             /**
@@ -6309,7 +6309,7 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST";
+            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HENLAGT";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurdering": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurderingV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurderingV0": {
