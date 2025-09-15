@@ -85,6 +85,7 @@ var PathsBehandlingstidGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((Pa
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingstidGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingstidGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingstidGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingstidGetParametersQueryBehandlingstyper || {});
 var PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2) => {
@@ -97,6 +98,7 @@ var PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper2;
 })(PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper || {});
 var PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2) => {
@@ -109,6 +111,7 @@ var PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandling
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper2;
 })(PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper || {});
 var PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ ((PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode2) => {
@@ -128,6 +131,7 @@ var PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper = /* @__PURE_
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet = /* @__PURE__ */ ((PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet2) => {
@@ -147,6 +151,7 @@ var PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper 
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet = /* @__PURE__ */ ((PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet2) => {
@@ -166,6 +171,7 @@ var PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingsty
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper || {});
 var PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2) => {
@@ -178,6 +184,7 @@ var PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper = /* 
   PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper2;
 })(PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper || {});
 var PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ ((PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode2) => {
@@ -197,6 +204,7 @@ var PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper = /* @__PURE__ 
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingerPVentGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerPVentGetParametersQueryBehandlingstyper2) => {
@@ -209,6 +217,7 @@ var PathsBehandlingerPVentGetParametersQueryBehandlingstyper = /* @__PURE__ */ (
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerPVentGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerPVentGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerPVentGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2) => {
@@ -221,6 +230,7 @@ var PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper = /* @__P
   PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ ((PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode2) => {
@@ -240,6 +250,7 @@ var PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper = /* @_
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper || {});
 var PathsBehandlingerReturGetParametersQueryBehandlingstyper = /* @__PURE__ */ ((PathsBehandlingerReturGetParametersQueryBehandlingstyper2) => {
@@ -252,10 +263,12 @@ var PathsBehandlingerReturGetParametersQueryBehandlingstyper = /* @__PURE__ */ (
   PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Journalf_ring"] = "Journalf\xF8ring";
   PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  PathsBehandlingerReturGetParametersQueryBehandlingstyper2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return PathsBehandlingerReturGetParametersQueryBehandlingstyper2;
 })(PathsBehandlingerReturGetParametersQueryBehandlingstyper || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4102"] = "4102";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5001"] = "5001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5002"] = "5002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5003"] = "5003";
@@ -391,6 +404,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPF\xD8LGING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_AKTIVITETSPLIKT_11_7"] = "VURDER_AKTIVITETSPLIKT_11_7";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IVERKSETT_BRUDD"] = "IVERKSETT_BRUDD";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_AKTIVITETSPLIKT_11_9"] = "VURDER_AKTIVITETSPLIKT_11_9";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["UDEFINERT"] = "UDEFINERT";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg || {});
@@ -417,6 +431,7 @@ var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev = 
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_AVSLAG"] = "VEDTAK_AVSLAG";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_INNVILGELSE"] = "VEDTAK_INNVILGELSE";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_11_18"] = "VEDTAK_11_18";
+  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_11_7"] = "VEDTAK_11_7";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_ENDRING"] = "VEDTAK_ENDRING";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VARSEL_OM_BESTILLING"] = "VARSEL_OM_BESTILLING";
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT"] = "FORH\xC5NDSVARSEL_BRUDD_AKTIVITETSPLIKT";
@@ -497,6 +512,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType = /
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["Oppf_lgingsBehandling"] = "Oppf\xF8lgingsBehandling";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus2) => {
@@ -544,6 +560,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["HELHETLIG_VURDERING"] = "HELHETLIG_VURDERING";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_MELDEPLIKT_RIMELIG_GRUNN"] = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["AKTIVITETSPLIKT_11_7"] = "AKTIVITETSPLIKT_11_7";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OVERGANG_UFORE"] = "OVERGANG_UFORE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OVERGANG_ARBEID"] = "OVERGANG_ARBEID";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
@@ -582,6 +599,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["HELHETLIG_VURDERING"] = "HELHETLIG_VURDERING";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_MELDEPLIKT_RIMELIG_GRUNN"] = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["AKTIVITETSPLIKT_11_7"] = "AKTIVITETSPLIKT_11_7";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["OVERGANG_UFORE"] = "OVERGANG_UFORE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["OVERGANG_ARBEID"] = "OVERGANG_ARBEID";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
@@ -615,6 +633,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling = /
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["SvarFraAndreinstans"] = "SvarFraAndreinstans";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["Oppf_lgingsBehandling"] = "Oppf\xF8lgingsBehandling";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling || {});
 var NoNavAapOppgaveStatistikkOppgaveHendelseHendelse = /* @__PURE__ */ ((NoNavAapOppgaveStatistikkOppgaveHendelseHendelse2) => {
@@ -726,6 +745,7 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Journalf_ring"] = "Journalf\xF8ring";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Oppf_lgingsbehandling"] = "Oppf\xF8lgingsbehandling";
   NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Aktivitetsplikt"] = "Aktivitetsplikt";
+  NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
   return NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype2;
 })(NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype || {});
 // Annotate the CommonJS export names for ESM import in node:
