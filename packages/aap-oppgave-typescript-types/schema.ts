@@ -1511,6 +1511,7 @@ export interface components {
 export type $defs = Record<string, never>;
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
+    Value4102 = "4102",
     Value5001 = "5001",
     Value5002 = "5002",
     Value5003 = "5003",
@@ -1644,6 +1645,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
+    VURDER_AKTIVITETSPLIKT_11_9 = "VURDER_AKTIVITETSPLIKT_11_9",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1667,6 +1669,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTyp
     VEDTAK_AVSLAG = "VEDTAK_AVSLAG",
     VEDTAK_INNVILGELSE = "VEDTAK_INNVILGELSE",
     VEDTAK_11_18 = "VEDTAK_11_18",
+    VEDTAK_11_7 = "VEDTAK_11_7",
     VEDTAK_ENDRING = "VEDTAK_ENDRING",
     VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
     FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT",
@@ -1737,6 +1740,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
+    VURDER_AKTIVITETSPLIKT_11_9 = "VURDER_AKTIVITETSPLIKT_11_9",
     UDEFINERT = "UDEFINERT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
@@ -1746,7 +1750,8 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
-    Aktivitetsplikt = "Aktivitetsplikt"
+    Aktivitetsplikt = "Aktivitetsplikt",
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
     OPPRETTET = "OPPRETTET",
@@ -1820,6 +1825,7 @@ export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1849,6 +1855,7 @@ export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1860,6 +1867,7 @@ export enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1871,6 +1879,7 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1890,6 +1899,7 @@ export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }

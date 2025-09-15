@@ -1510,6 +1510,7 @@ interface components {
 type $defs = Record<string, never>;
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
+    Value4102 = "4102",
     Value5001 = "5001",
     Value5002 = "5002",
     Value5003 = "5003",
@@ -1643,6 +1644,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
+    VURDER_AKTIVITETSPLIKT_11_9 = "VURDER_AKTIVITETSPLIKT_11_9",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
@@ -1666,6 +1668,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTy
     VEDTAK_AVSLAG = "VEDTAK_AVSLAG",
     VEDTAK_INNVILGELSE = "VEDTAK_INNVILGELSE",
     VEDTAK_11_18 = "VEDTAK_11_18",
+    VEDTAK_11_7 = "VEDTAK_11_7",
     VEDTAK_ENDRING = "VEDTAK_ENDRING",
     VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
     FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT",
@@ -1736,6 +1739,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
     IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
+    VURDER_AKTIVITETSPLIKT_11_9 = "VURDER_AKTIVITETSPLIKT_11_9",
     UDEFINERT = "UDEFINERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
@@ -1745,7 +1749,8 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     Klage = "Klage",
     SvarFraAndreinstans = "SvarFraAndreinstans",
     Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
-    Aktivitetsplikt = "Aktivitetsplikt"
+    Aktivitetsplikt = "Aktivitetsplikt",
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus {
     OPPRETTET = "OPPRETTET",
@@ -1819,6 +1824,7 @@ declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1848,6 +1854,7 @@ declare enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1859,6 +1866,7 @@ declare enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1870,6 +1878,7 @@ declare enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
@@ -1889,6 +1898,7 @@ declare enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
 }
