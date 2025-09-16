@@ -3841,6 +3841,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7GrunnlagDto": {
+            "harSendtForh\u00E5ndsvarsel": boolean;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7VurderingDto"][];
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7VurderingDto"];
@@ -3853,6 +3854,7 @@ export interface components {
              * @example 2025-04-01
              */
             gjelderFra: string;
+            skalIgnorereVarselFrist: boolean;
             /** @enum {string|null} */
             utfall?: "STANS" | "OPPHØR" | null;
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
