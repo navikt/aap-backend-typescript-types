@@ -576,6 +576,7 @@ var NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype = /* @__PURE
   NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
   NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
   NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+  NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
   NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
   NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype2;
