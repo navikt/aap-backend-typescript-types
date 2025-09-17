@@ -310,7 +310,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FATTE_VEDTAK"] = "FATTE_VEDTAK";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IVERKSETT_VEDTAK"] = "IVERKSETT_VEDTAK";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["OPPRETT_REVURDERING"] = "OPPRETT_REVURDERING";
-  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["KANSELLER_REVURDERING"] = "KANSELLER_REVURDERING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["AVBRYT_REVURDERING"] = "AVBRYT_REVURDERING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["BREV"] = "BREV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["P_KLAGET_BEHANDLING"] = "P\xC5KLAGET_BEHANDLING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FULLMEKTIG"] = "FULLMEKTIG";
@@ -406,7 +406,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat = /*
   NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_DELVIS_OMGJ_RES"] = "KLAGE_DELVIS_OMGJ\xD8RES";
   NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_AVSL_TT"] = "KLAGE_AVSL\xC5TT";
   NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
-  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["KANSELLERT"] = "KANSELLERT";
+  NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2;
 })(NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat || {});
 var NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType2) => {
@@ -476,7 +476,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["S_KNAD_TRUKKET"] = "S\xD8KNAD_TRUKKET";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDERING_KANSELLERT"] = "REVURDERING_KANSELLERT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDERING_AVBRUTT"] = "REVURDERING_AVBRUTT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_MANUELL_INNTEKT"] = "REVURDER_MANUELL_INNTEKT";
