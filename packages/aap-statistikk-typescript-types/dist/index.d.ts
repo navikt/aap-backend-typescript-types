@@ -795,7 +795,7 @@ interface components {
             soknadsFormat: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat;
             versjon: string;
             vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[];
-            "\u00E5rsakTilBehandling": NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling[];
+            "\u00E5rsakTilBehandling"?: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling[] | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelseDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO"][];
@@ -1378,6 +1378,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTy
     VEDTAK_INNVILGELSE = "VEDTAK_INNVILGELSE",
     VEDTAK_11_18 = "VEDTAK_11_18",
     VEDTAK_11_7 = "VEDTAK_11_7",
+    VEDTAK_11_9 = "VEDTAK_11_9",
     VEDTAK_ENDRING = "VEDTAK_ENDRING",
     VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
     FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT",
