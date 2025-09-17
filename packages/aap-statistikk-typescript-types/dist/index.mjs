@@ -491,45 +491,6 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});
-var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2) => {
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["S_KNAD"] = "S\xD8KNAD";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["AKTIVITETSMELDING"] = "AKTIVITETSMELDING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["MELDEKORT"] = "MELDEKORT";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["LEGEERKL_RING"] = "LEGEERKL\xC6RING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["AVVIST_LEGEERKL_RING"] = "AVVIST_LEGEERKL\xC6RING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["DIALOGMELDING"] = "DIALOGMELDING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["G_REGULERING"] = "G_REGULERING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_MEDLEMSKAP"] = "REVURDER_MEDLEMSKAP";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_YRKESSKADE"] = "REVURDER_YRKESSKADE";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_BEREGNING"] = "REVURDER_BEREGNING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_LOVVALG"] = "REVURDER_LOVVALG";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_SAMORDNING"] = "REVURDER_SAMORDNING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["KLAGE"] = "KLAGE";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["LOVVALG_OG_MEDLEMSKAP"] = "LOVVALG_OG_MEDLEMSKAP";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["FORUTGAENDE_MEDLEMSKAP"] = "FORUTGAENDE_MEDLEMSKAP";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND"] = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["BARNETILLEGG"] = "BARNETILLEGG";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["INSTITUSJONSOPPHOLD"] = "INSTITUSJONSOPPHOLD";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["SAMORDNING_OG_AVREGNING"] = "SAMORDNING_OG_AVREGNING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REFUSJONSKRAV"] = "REFUSJONSKRAV";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["S_KNAD_TRUKKET"] = "S\xD8KNAD_TRUKKET";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDERING_KANSELLERT"] = "REVURDERING_KANSELLERT";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_MANUELL_INNTEKT"] = "REVURDER_MANUELL_INNTEKT";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["MOTTATT_KABAL_HENDELSE"] = "MOTTATT_KABAL_HENDELSE";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["HELHETLIG_VURDERING"] = "HELHETLIG_VURDERING";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["REVURDER_MELDEPLIKT_RIMELIG_GRUNN"] = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["AKTIVITETSPLIKT_11_7"] = "AKTIVITETSPLIKT_11_7";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["OVERGANG_UFORE"] = "OVERGANG_UFORE";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["OVERGANG_ARBEID"] = "OVERGANG_ARBEID";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
-  return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling2;
-})(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["ALDERSVILK_RET"] = "ALDERSVILK\xC5RET";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKDOMSVILK_RET"] = "SYKDOMSVILK\xC5RET";
@@ -689,7 +650,6 @@ export {
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType,
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilBehandling,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov,
