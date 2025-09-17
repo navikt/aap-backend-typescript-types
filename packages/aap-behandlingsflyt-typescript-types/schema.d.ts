@@ -5375,8 +5375,8 @@ export interface components {
              * @example 2025-04-01
              */
             opphoerstidspunkt?: string | null;
-            /** @enum {string} */
-            status: "bosatt" | "utflyttet" | "forsvunnet" | "doed" | "opphort" | "foedselsregistrert" | "ikkeBosatt" | "midlertidig" | "inaktiv";
+            /** @enum {string|null} */
+            status?: "bosatt" | "utflyttet" | "forsvunnet" | "doed" | "opphort" | "foedselsregistrert" | "ikkeBosatt" | "midlertidig" | "inaktiv" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.KanBehandlesAutomatiskVurdering": {
             kanBehandlesAutomatisk: boolean;
