@@ -4295,6 +4295,8 @@ export interface components {
             "f\u00F8dselsdato"?: string | null;
             ident?: string | null;
             navn?: string | null;
+            /** @enum {string|null} */
+            oppgittForeldreRelasjon?: "FORELDER" | "FOSTERFORELDER" | null;
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvarDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto": {
@@ -5741,6 +5743,8 @@ export interface components {
             "f\u00F8dselsdato"?: string | null;
             ident?: string | null;
             navn?: string | null;
+            /** @enum {string|null} */
+            oppgittForeldreRelasjon?: "FORELDER" | "FOSTERFORELDER" | null;
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingAvForeldreAnsvarDto"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningYrkeskaderBel\u00F8pVurderingDTO": {
