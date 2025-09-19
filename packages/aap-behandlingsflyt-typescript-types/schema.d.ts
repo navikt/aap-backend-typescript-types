@@ -4528,11 +4528,6 @@ export interface components {
              * @example 2025-04-01
              */
             virkningsdato?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            vurderingenGjelderFra?: string | null;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomGrunnlagResponse": {
