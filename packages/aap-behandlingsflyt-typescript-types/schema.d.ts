@@ -6178,12 +6178,11 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse": {
             "asAvvistLegeerkl\u00E6ringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId"];
-            asBehandlingReferanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
             asInnsendingId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId"];
             asJournalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
             asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"];
             /** @enum {string} */
-            type: "JOURNALPOST" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "AVVIST_LEGEERKLÆRING_ID" | "REVURDERING_ID" | "BEHANDLING_REFERANSE" | "MANUELL_OPPRETTELSE" | "KABAL_HENDELSE_ID";
+            type: "JOURNALPOST" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "AVVIST_LEGEERKLÆRING_ID" | "REVURDERING_ID" | "BEHANDLING_REFERANSE" | "SAKSBEHANDLER_KELVIN_REFERANSE" | "MANUELL_OPPRETTELSE" | "KABAL_HENDELSE_ID";
             verdi: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": {
@@ -6351,6 +6350,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Aktivitetskort"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokument"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KabalHendelse"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Klage"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurdering"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Meldekort"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandling"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Omgj\u00F8ringKlageRevurdering"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Oppf\u00F8lgingsoppgave"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knad"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandling": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandlingV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandlingV0": {
+            behandlingReferanse: string;
             "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "HELHETLIG_VURDERING" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "EFFEKTUER_AKTIVITETSPLIKT")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OmgjoeringskravbehandlingAvsluttetDetaljer": {
