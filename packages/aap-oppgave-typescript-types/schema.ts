@@ -1179,7 +1179,6 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse": {
             "asAvvistLegeerkl\u00E6ringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId"];
-            asBehandlingReferanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
             asInnsendingId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId"];
             asJournalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
             asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"];
@@ -1512,6 +1511,7 @@ export type $defs = Record<string, never>;
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
     Value4102 = "4102",
+    Value4201 = "4201",
     Value5001 = "5001",
     Value5002 = "5002",
     Value5003 = "5003",
@@ -1787,6 +1787,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
     AVVIST_LEGEERKL_RING_ID = "AVVIST_LEGEERKL\u00C6RING_ID",
     REVURDERING_ID = "REVURDERING_ID",
     BEHANDLING_REFERANSE = "BEHANDLING_REFERANSE",
+    SAKSBEHANDLER_KELVIN_REFERANSE = "SAKSBEHANDLER_KELVIN_REFERANSE",
     MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
     KABAL_HENDELSE_ID = "KABAL_HENDELSE_ID"
 }

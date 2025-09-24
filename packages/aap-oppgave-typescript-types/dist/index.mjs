@@ -2,6 +2,7 @@
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4102"] = "4102";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4201"] = "4201";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5001"] = "5001";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5002"] = "5002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5003"] = "5003";
@@ -288,6 +289,7 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["AVVIST_LEGEERKL_RING_ID"] = "AVVIST_LEGEERKL\xC6RING_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["REVURDERING_ID"] = "REVURDERING_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["BEHANDLING_REFERANSE"] = "BEHANDLING_REFERANSE";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SAKSBEHANDLER_KELVIN_REFERANSE"] = "SAKSBEHANDLER_KELVIN_REFERANSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["KABAL_HENDELSE_ID"] = "KABAL_HENDELSE_ID";
   return NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2;
