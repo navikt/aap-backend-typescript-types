@@ -396,6 +396,9 @@ var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["FEIL_LOVANVENDELSE"] = "FEIL_LOVANVENDELSE";
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["ANNET"] = "ANNET";
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["SKRIVEFEIL"] = "SKRIVEFEIL";
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["FOR_DETALJERT"] = "FOR_DETALJERT";
+  NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["IKKE_INDIVIDUELL_OG_KONKRET"] = "IKKE_INDIVIDUELL_OG_KONKRET";
   return NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2;
 })(NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak || {});
 var NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat2) => {
