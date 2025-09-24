@@ -1259,6 +1259,7 @@ export enum PathsBehandlingerReturGetParametersQueryBehandlingstyper {
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
     Value4102 = "4102",
+    Value4201 = "4201",
     Value5001 = "5001",
     Value5002 = "5002",
     Value5003 = "5003",
@@ -1538,7 +1539,9 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderings
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     OVERGANG_UFORE = "OVERGANG_UFORE",
     OVERGANG_ARBEID = "OVERGANG_ARBEID",
-    EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT"
+    EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
+    D_DSFALL_BRUKER = "D\u00D8DSFALL_BRUKER",
+    D_DSFALL_BARN = "D\u00D8DSFALL_BARN"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
