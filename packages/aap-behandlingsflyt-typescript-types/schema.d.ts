@@ -6355,6 +6355,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandling": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandlingV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ny\u00C5rsakTilBehandlingV0": {
             behandlingReferanse: string;
+            reserverTilBruker?: string | null;
             "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "HELHETLIG_VURDERING" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "EFFEKTUER_AKTIVITETSPLIKT" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OmgjoeringskravbehandlingAvsluttetDetaljer": {
