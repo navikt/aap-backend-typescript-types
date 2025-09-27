@@ -1115,8 +1115,6 @@ export interface components {
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
-            /** @enum {string|null} */
-            typeBrev?: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": {
             asString: string;
@@ -1664,21 +1662,6 @@ export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoSta
     KVALITETSSIKRET = "KVALITETSSIKRET",
     SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
     AVBRUTT = "AVBRUTT"
-}
-export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev {
-    VEDTAK_AVSLAG = "VEDTAK_AVSLAG",
-    VEDTAK_INNVILGELSE = "VEDTAK_INNVILGELSE",
-    VEDTAK_11_18 = "VEDTAK_11_18",
-    VEDTAK_11_7 = "VEDTAK_11_7",
-    VEDTAK_11_9 = "VEDTAK_11_9",
-    VEDTAK_ENDRING = "VEDTAK_ENDRING",
-    VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
-    FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT",
-    KLAGE_AVVIST = "KLAGE_AVVIST",
-    KLAGE_OPPRETTHOLDELSE = "KLAGE_OPPRETTHOLDELSE",
-    KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    FORH_NDSVARSEL_KLAGE_FORMKRAV = "FORH\u00C5NDSVARSEL_KLAGE_FORMKRAV",
-    FORVALTNINGSMELDING = "FORVALTNINGSMELDING"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg {
     START_BEHANDLING = "START_BEHANDLING",
