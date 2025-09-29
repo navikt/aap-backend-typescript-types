@@ -345,6 +345,9 @@ var NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ ((NoNavAapOppgaveRet
   NoNavAapOppgaveReturInformasjonRsaker2["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
   NoNavAapOppgaveReturInformasjonRsaker2["FEIL_LOVANVENDELSE"] = "FEIL_LOVANVENDELSE";
   NoNavAapOppgaveReturInformasjonRsaker2["ANNET"] = "ANNET";
+  NoNavAapOppgaveReturInformasjonRsaker2["SKRIVEFEIL"] = "SKRIVEFEIL";
+  NoNavAapOppgaveReturInformasjonRsaker2["FOR_DETALJERT"] = "FOR_DETALJERT";
+  NoNavAapOppgaveReturInformasjonRsaker2["IKKE_INDIVIDUELL_OG_KONKRET"] = "IKKE_INDIVIDUELL_OG_KONKRET";
   return NoNavAapOppgaveReturInformasjonRsaker2;
 })(NoNavAapOppgaveReturInformasjonRsaker || {});
 var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveFilterFilterDtoBehandlingstyper2) => {
