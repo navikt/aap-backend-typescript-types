@@ -1514,7 +1514,7 @@ interface components {
         };
         "no.nav.aap.oppgave.tildel.SaksbehandlerDto": {
             navIdent: string;
-            navn: string;
+            navn?: string | null;
         };
         "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest": {
             /** Format: int64 */
