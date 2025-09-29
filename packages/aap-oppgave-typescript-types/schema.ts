@@ -310,6 +310,84 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/saksbehandler-sok": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/tildel-oppgaver": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.TildelOppgaveRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.TildelOppgaveResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/{referanse}/hent-oppgave": {
         parameters: {
             query?: never;
@@ -1434,6 +1512,26 @@ export interface components {
         "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
             /** @enum {string|null} */
             behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
+        };
+        "no.nav.aap.oppgave.tildel.SaksbehandlerDto": {
+            navIdent: string;
+            navn: string;
+        };
+        "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest": {
+            /** Format: int64 */
+            oppgaveId: number;
+            "s\u00F8ketekst": string;
+        };
+        "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kResponse": {
+            saksbehandlere: components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerDto"][];
+        };
+        "no.nav.aap.oppgave.tildel.TildelOppgaveRequest": {
+            oppgaver: number[];
+            saksbehandlerIdent: string;
+        };
+        "no.nav.aap.oppgave.tildel.TildelOppgaveResponse": {
+            oppgaver: number[];
+            tildeltTilSaksbehandler: string;
         };
         "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
