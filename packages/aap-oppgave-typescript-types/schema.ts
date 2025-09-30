@@ -1518,8 +1518,7 @@ export interface components {
             navn?: string | null;
         };
         "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest": {
-            /** Format: int64 */
-            oppgaveId: number;
+            oppgaver: number[];
             "s\u00F8ketekst": string;
         };
         "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kResponse": {
