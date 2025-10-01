@@ -1,6 +1,6 @@
 {
   "name": "@navikt/aap-statistikk-typescript-types",
-  "version": "0.1.380",
+  "version": "0.1.381",
   "author": "NAV",
   "license": "MIT",
   "publishConfig": {
