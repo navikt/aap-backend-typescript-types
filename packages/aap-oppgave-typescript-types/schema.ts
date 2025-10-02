@@ -1572,6 +1572,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO": {
+            begrunnelse?: string | null;
             endretAv: string;
             /**
              * Format: date
