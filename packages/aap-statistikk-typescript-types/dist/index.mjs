@@ -227,6 +227,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5031"] = "5031";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5032"] = "5032";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5033"] = "5033";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5035"] = "5035";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5052"] = "5052";
@@ -276,6 +277,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_ALDER"] = "VURDER_ALDER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_LOVVALG"] = "VURDER_LOVVALG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_MEDLEMSKAP"] = "VURDER_MEDLEMSKAP";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_OPPHOLDSKRAV"] = "VURDER_OPPHOLDSKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_MELDEPERIODER"] = "FASTSETT_MELDEPERIODER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_BISTANDSBEHOV"] = "VURDER_BISTANDSBEHOV";
@@ -352,22 +354,6 @@ var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /*
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2["AVBRUTT"] = "AVBRUTT";
   return NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus2;
 })(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus || {});
-var NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2) => {
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_AVSLAG"] = "VEDTAK_AVSLAG";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_INNVILGELSE"] = "VEDTAK_INNVILGELSE";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_11_18"] = "VEDTAK_11_18";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_11_7"] = "VEDTAK_11_7";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_11_9"] = "VEDTAK_11_9";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VEDTAK_ENDRING"] = "VEDTAK_ENDRING";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["VARSEL_OM_BESTILLING"] = "VARSEL_OM_BESTILLING";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT"] = "FORH\xC5NDSVARSEL_BRUDD_AKTIVITETSPLIKT";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_AVVIST"] = "KLAGE_AVVIST";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_OPPRETTHOLDELSE"] = "KLAGE_OPPRETTHOLDELSE";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["KLAGE_TRUKKET"] = "KLAGE_TRUKKET";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORH_NDSVARSEL_KLAGE_FORMKRAV"] = "FORH\xC5NDSVARSEL_KLAGE_FORMKRAV";
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2["FORVALTNINGSMELDING"] = "FORVALTNINGSMELDING";
-  return NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev2;
-})(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev || {});
 var NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2) => {
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2["OPPRETTET"] = "OPPRETTET";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2["AVSLUTTET"] = "AVSLUTTET";
@@ -469,6 +455,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_BEREGNING"] = "REVURDER_BEREGNING";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_LOVVALG"] = "REVURDER_LOVVALG";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_SAMORDNING"] = "REVURDER_SAMORDNING";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_STUDENT"] = "REVURDER_STUDENT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["KLAGE"] = "KLAGE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["LOVVALG_OG_MEDLEMSKAP"] = "LOVVALG_OG_MEDLEMSKAP";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["FORUTGAENDE_MEDLEMSKAP"] = "FORUTGAENDE_MEDLEMSKAP";
@@ -492,9 +479,12 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OVERGANG_UFORE"] = "OVERGANG_UFORE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OVERGANG_ARBEID"] = "OVERGANG_ARBEID";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["MOTTATT_PDL_HENDELSE"] = "MOTTATT_PDL_HENDELSE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["D_DSFALL_BRUKER"] = "D\xD8DSFALL_BRUKER";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["D_DSFALL_BARN"] = "D\xD8DSFALL_BARN";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OPPHOLDSKRAV"] = "OPPHOLDSKRAV";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT_11_9"] = "EFFEKTUER_AKTIVITETSPLIKT_11_9";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
@@ -647,7 +637,6 @@ export {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType,
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus,
-  NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,

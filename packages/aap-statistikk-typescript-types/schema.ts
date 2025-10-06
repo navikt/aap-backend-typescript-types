@@ -697,8 +697,6 @@ export interface components {
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
-            /** @enum {string|null} */
-            typeBrev?: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
             begrunnelse?: string | null;
@@ -1293,6 +1291,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5031 = "5031",
     Value5032 = "5032",
     Value5033 = "5033",
+    Value5035 = "5035",
     Value5050 = "5050",
     Value5051 = "5051",
     Value5052 = "5052",
@@ -1340,6 +1339,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     VURDER_ALDER = "VURDER_ALDER",
     VURDER_LOVVALG = "VURDER_LOVVALG",
     VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
+    VURDER_OPPHOLDSKRAV = "VURDER_OPPHOLDSKRAV",
     FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
     AVKLAR_STUDENT = "AVKLAR_STUDENT",
     VURDER_BISTANDSBEHOV = "VURDER_BISTANDSBEHOV",
@@ -1412,21 +1412,6 @@ export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoSta
     KVALITETSSIKRET = "KVALITETSSIKRET",
     SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
     AVBRUTT = "AVBRUTT"
-}
-export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoTypeBrev {
-    VEDTAK_AVSLAG = "VEDTAK_AVSLAG",
-    VEDTAK_INNVILGELSE = "VEDTAK_INNVILGELSE",
-    VEDTAK_11_18 = "VEDTAK_11_18",
-    VEDTAK_11_7 = "VEDTAK_11_7",
-    VEDTAK_11_9 = "VEDTAK_11_9",
-    VEDTAK_ENDRING = "VEDTAK_ENDRING",
-    VARSEL_OM_BESTILLING = "VARSEL_OM_BESTILLING",
-    FORH_NDSVARSEL_BRUDD_AKTIVITETSPLIKT = "FORH\u00C5NDSVARSEL_BRUDD_AKTIVITETSPLIKT",
-    KLAGE_AVVIST = "KLAGE_AVVIST",
-    KLAGE_OPPRETTHOLDELSE = "KLAGE_OPPRETTHOLDELSE",
-    KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    FORH_NDSVARSEL_KLAGE_FORMKRAV = "FORH\u00C5NDSVARSEL_KLAGE_FORMKRAV",
-    FORVALTNINGSMELDING = "FORVALTNINGSMELDING"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
     OPPRETTET = "OPPRETTET",
@@ -1519,6 +1504,7 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderings
     REVURDER_BEREGNING = "REVURDER_BEREGNING",
     REVURDER_LOVVALG = "REVURDER_LOVVALG",
     REVURDER_SAMORDNING = "REVURDER_SAMORDNING",
+    REVURDER_STUDENT = "REVURDER_STUDENT",
     KLAGE = "KLAGE",
     LOVVALG_OG_MEDLEMSKAP = "LOVVALG_OG_MEDLEMSKAP",
     FORUTGAENDE_MEDLEMSKAP = "FORUTGAENDE_MEDLEMSKAP",
@@ -1542,9 +1528,12 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderings
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     OVERGANG_UFORE = "OVERGANG_UFORE",
     OVERGANG_ARBEID = "OVERGANG_ARBEID",
-    EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
+    MOTTATT_PDL_HENDELSE = "MOTTATT_PDL_HENDELSE",
     D_DSFALL_BRUKER = "D\u00D8DSFALL_BRUKER",
-    D_DSFALL_BARN = "D\u00D8DSFALL_BARN"
+    D_DSFALL_BARN = "D\u00D8DSFALL_BARN",
+    OPPHOLDSKRAV = "OPPHOLDSKRAV",
+    EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
+    EFFEKTUER_AKTIVITETSPLIKT_11_9 = "EFFEKTUER_AKTIVITETSPLIKT_11_9"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
