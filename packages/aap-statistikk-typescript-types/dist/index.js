@@ -553,7 +553,6 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OVERGANG_UFORE"] = "OVERGANG_UFORE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OVERGANG_ARBEID"] = "OVERGANG_ARBEID";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["MOTTATT_PDL_HENDELSE"] = "MOTTATT_PDL_HENDELSE";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["D_DSFALL_BRUKER"] = "D\xD8DSFALL_BRUKER";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["D_DSFALL_BARN"] = "D\xD8DSFALL_BARN";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OPPHOLDSKRAV"] = "OPPHOLDSKRAV";
