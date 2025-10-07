@@ -36,6 +36,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5031"] = "5031";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5032"] = "5032";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5033"] = "5033";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5035"] = "5035";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5052"] = "5052";
@@ -85,6 +86,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_ALDER"] = "VURDER_ALDER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_LOVVALG"] = "VURDER_LOVVALG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_MEDLEMSKAP"] = "VURDER_MEDLEMSKAP";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_OPPHOLDSKRAV"] = "VURDER_OPPHOLDSKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_MELDEPERIODER"] = "FASTSETT_MELDEPERIODER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_BISTANDSBEHOV"] = "VURDER_BISTANDSBEHOV";
@@ -169,6 +171,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_ALDER"] = "VURDER_ALDER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_LOVVALG"] = "VURDER_LOVVALG";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_MEDLEMSKAP"] = "VURDER_MEDLEMSKAP";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_OPPHOLDSKRAV"] = "VURDER_OPPHOLDSKRAV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_MELDEPERIODER"] = "FASTSETT_MELDEPERIODER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_BISTANDSBEHOV"] = "VURDER_BISTANDSBEHOV";
@@ -276,6 +279,7 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SAKSBEHANDLER_KELVIN_REFERANSE"] = "SAKSBEHANDLER_KELVIN_REFERANSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["KABAL_HENDELSE_ID"] = "KABAL_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["PDL_HENDELSE_ID"] = "PDL_HENDELSE_ID";
   return NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2;
 })(NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType || {});
 var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2) => {
@@ -291,6 +295,8 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OMGJ_RING_KLAGE_REVURDERING"] = "OMGJ\xD8RING_KLAGE_REVURDERING";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["NY__RSAK_TIL_BEHANDLING"] = "NY_\xC5RSAK_TIL_BEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["KABAL_HENDELSE"] = "KABAL_HENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BRUKER"] = "PDL_HENDELSE_DODSFALL_BRUKER";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BARN"] = "PDL_HENDELSE_DODSFALL_BARN";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
   return NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2;
 })(NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType || {});
