@@ -1923,7 +1923,9 @@ export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
 }
 export enum NoNavAapOppgaveOppgaveDtoReturStatus {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER"
 }
 export enum NoNavAapOppgaveOppgaveDtoStatus {
     OPPRETTET = "OPPRETTET",
@@ -1931,7 +1933,9 @@ export enum NoNavAapOppgaveOppgaveDtoStatus {
 }
 export enum NoNavAapOppgaveReturInformasjonStatus {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER"
 }
 export enum NoNavAapOppgaveReturInformasjonRsaker {
     MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
@@ -1980,7 +1984,9 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
 }
 export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
     HASTER = "HASTER",

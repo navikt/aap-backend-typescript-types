@@ -334,6 +334,8 @@ var NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ ((NoNavAapOppgave
 var NoNavAapOppgaveOppgaveDtoReturStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoReturStatus2) => {
   NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
   NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_VEILEDER"] = "RETUR_FRA_VEILEDER";
+  NoNavAapOppgaveOppgaveDtoReturStatus2["RETUR_FRA_SAKSBEHANDLER"] = "RETUR_FRA_SAKSBEHANDLER";
   return NoNavAapOppgaveOppgaveDtoReturStatus2;
 })(NoNavAapOppgaveOppgaveDtoReturStatus || {});
 var NoNavAapOppgaveOppgaveDtoStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDtoStatus2) => {
@@ -344,6 +346,8 @@ var NoNavAapOppgaveOppgaveDtoStatus = /* @__PURE__ */ ((NoNavAapOppgaveOppgaveDt
 var NoNavAapOppgaveReturInformasjonStatus = /* @__PURE__ */ ((NoNavAapOppgaveReturInformasjonStatus2) => {
   NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
   NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_VEILEDER"] = "RETUR_FRA_VEILEDER";
+  NoNavAapOppgaveReturInformasjonStatus2["RETUR_FRA_SAKSBEHANDLER"] = "RETUR_FRA_SAKSBEHANDLER";
   return NoNavAapOppgaveReturInformasjonStatus2;
 })(NoNavAapOppgaveReturInformasjonStatus || {});
 var NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ ((NoNavAapOppgaveReturInformasjonRsaker2) => {
@@ -398,6 +402,8 @@ var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__
 var NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = /* @__PURE__ */ ((NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2) => {
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2["RETUR_FRA_VEILEDER"] = "RETUR_FRA_VEILEDER";
+  NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2["RETUR_FRA_SAKSBEHANDLER"] = "RETUR_FRA_SAKSBEHANDLER";
   return NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser2;
 })(NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser || {});
 var NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = /* @__PURE__ */ ((NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType2) => {

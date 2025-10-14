@@ -1922,7 +1922,9 @@ declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
 }
 declare enum NoNavAapOppgaveOppgaveDtoReturStatus {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER"
 }
 declare enum NoNavAapOppgaveOppgaveDtoStatus {
     OPPRETTET = "OPPRETTET",
@@ -1930,7 +1932,9 @@ declare enum NoNavAapOppgaveOppgaveDtoStatus {
 }
 declare enum NoNavAapOppgaveReturInformasjonStatus {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER"
 }
 declare enum NoNavAapOppgaveReturInformasjonRsaker {
     MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
@@ -1979,7 +1983,9 @@ declare enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
 }
 declare enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER"
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER"
 }
 declare enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
     HASTER = "HASTER",
