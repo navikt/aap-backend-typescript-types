@@ -1232,9 +1232,9 @@ export interface components {
             visVentekort: boolean;
         };
         "no.nav.aap.postmottak.gateway.AvsenderMottakerDto": {
-            id: string;
-            /** @enum {string} */
-            idType: "AKTOERID" | "FNR" | "ORGNR";
+            id?: string | null;
+            /** @enum {string|null} */
+            idType?: "FNR" | "ORGNR" | "HPRNR" | "UTL_ORG" | null;
             navn?: string | null;
         };
         "no.nav.aap.postmottak.gateway.Klagebehandling": {
