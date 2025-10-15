@@ -22,7 +22,7 @@
     "@changesets/cli": "^2.29.7"
   },
   "devDependencies": {
-    "openapi-typescript": "^7.9.1",
+    "openapi-typescript": "^7.10.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
