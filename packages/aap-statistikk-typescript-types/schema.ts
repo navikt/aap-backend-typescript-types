@@ -336,9 +336,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Returnerer en liste over fordelingen på åpne behandlinger. Bøtte nr 1 teller antall
+        /**
+         * @description Returnerer en liste over fordelingen på åpne behandlinger. Bøtte nr 1 teller antall
          *     behandlinger som er enhet * bøtteStørrelse gammel . Bøtte nr antallBøtter + 1 teller
-         *     antall behandlinger eldre enn bøttestørrelsen. */
+         *     antall behandlinger eldre enn bøttestørrelsen.
+         */
         get: {
             parameters: {
                 query: {
@@ -385,9 +387,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Returnerer en liste over behandlingstiden på lukkede behandlinger. Bøtte nr 1 teller antall
+        /**
+         * @description Returnerer en liste over behandlingstiden på lukkede behandlinger. Bøtte nr 1 teller antall
          *     behandlinger som er enhet * bøtteStørrelse gammel . Bøtte nr antallBøtter + 1 teller
-         *     antall behandlinger eldre enn bøttestørrelsen. */
+         *     antall behandlinger eldre enn bøttestørrelsen.
+         */
         get: {
             parameters: {
                 query: {
