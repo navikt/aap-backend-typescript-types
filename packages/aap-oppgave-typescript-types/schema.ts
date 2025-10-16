@@ -895,7 +895,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetSynkroniseringOppgave"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetSynkroniseringRequest"];
                 };
             };
             responses: {
@@ -904,7 +904,9 @@ export interface paths {
                     headers: {
                         [name: string]: unknown;
                     };
-                    content?: never;
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetSynkroniseringRespons"];
+                    };
                 };
             };
         };
@@ -1409,9 +1411,13 @@ export interface components {
             enhetNr: string;
             navn: string;
         };
-        "no.nav.aap.oppgave.enhet.EnhetSynkroniseringOppgave": {
+        "no.nav.aap.oppgave.enhet.EnhetSynkroniseringRequest": {
             /** Format: int64 */
             oppgaveId: number;
+        };
+        "no.nav.aap.oppgave.enhet.EnhetSynkroniseringRespons": {
+            gammelEnhet: string;
+            nyEnhet: string;
         };
         "no.nav.aap.oppgave.filter.FilterDto": {
             avklaringsbehovKoder: string[];
