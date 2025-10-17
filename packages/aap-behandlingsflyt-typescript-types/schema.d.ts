@@ -4634,7 +4634,7 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            "f\u00F8dselsdato": string;
+            "f\u00F8dselsdato"?: string | null;
             "vilk\u00E5rsperioder": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.vilk\u00E5rsresultat.Vilk\u00E5rsperiode"][];
             /**
              * Format: date
