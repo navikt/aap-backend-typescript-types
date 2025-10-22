@@ -1099,7 +1099,7 @@ export interface components {
             definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.postmottak.api.flyt.EndringDTO"][];
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "AVBRUTT";
         };
         "no.nav.aap.postmottak.api.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
@@ -1134,7 +1134,7 @@ export interface components {
             begrunnelse?: string | null;
             endretAv: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: "OPPRETTET" | "AVSLUTTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "AVBRUTT";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
