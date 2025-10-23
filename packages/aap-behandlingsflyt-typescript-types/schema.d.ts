@@ -4513,6 +4513,7 @@ export interface components {
             "s\u00F8knadstidspunkt": string;
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             vurderteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"][];
+            vurderteFolkeregisterBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto": {
             /**
@@ -5530,6 +5531,8 @@ export interface components {
             arbeidsgiverGradering?: number | null;
             /** Format: double */
             barneTilleggsats: number;
+            /** Format: double */
+            barnetillegg: number;
             /** Format: double */
             dagsats: number;
             /** Format: double */
