@@ -5114,7 +5114,7 @@ export interface components {
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
+            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE" | "FERIE_I_SYKEPENGEPERIODE";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseDTO": {
             /** @enum {string} */
@@ -5127,7 +5127,7 @@ export interface components {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksRef?: string | null;
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
+            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE" | "FERIE_I_SYKEPENGEPERIODE";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingDTO": {
             begrunnelse?: string | null;
@@ -6182,7 +6182,7 @@ export interface components {
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
+            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE" | "FERIE_I_SYKEPENGEPERIODE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.VurderingerForSamordning": {
             begrunnelse?: string | null;
