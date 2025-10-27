@@ -909,6 +909,7 @@ interface components {
              */
             endretTidspunkt?: string | null;
             enhet: string;
+            harHasteMarkering?: boolean | null;
             /** Format: int64 */
             id?: number | null;
             /** Format: int64 */
