@@ -1172,7 +1172,7 @@ export interface components {
              */
             frist?: string | null;
             /** @enum {string} */
-            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
+            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_BEHANDLING_I_GOSYS" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
         "no.nav.aap.postmottak.api.flyt.Venteinformasjon": {
             begrunnelse: string;
@@ -1182,7 +1182,7 @@ export interface components {
              */
             frist: string;
             /** @enum {string} */
-            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
+            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_BEHANDLING_I_GOSYS" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
         "no.nav.aap.postmottak.avklaringsbehov.flate.L\u00F8sAvklaringsbehovP\u00E5Behandling": {
             /** Format: int64 */
@@ -1276,7 +1276,7 @@ export interface components {
         };
         "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
-            kode: "9001" | "1337" | "1338" | "1339" | "1340" | "1341";
+            kode: "9001" | "1337" | "1338" | "1339" | "1340" | "1341" | "1342";
             kreverToTrinn: boolean;
             "l\u00F8sesAv": ("SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER" | "LES" | "PRODUKSJONSSTYRING" | "DRIFT")[];
             /** @enum {string} */
