@@ -827,6 +827,7 @@ interface components {
              * @example 2025-04-01T12:30:00
              */
             mottattTid: string;
+            opprettetAv?: string | null;
             /** Format: uuid */
             relatertBehandling?: string | null;
             /** @enum {string} */
