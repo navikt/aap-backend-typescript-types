@@ -1231,6 +1231,8 @@ export interface components {
         };
         "no.nav.aap.postmottak.flyt.flate.visning.Visning": {
             readOnly: boolean;
+            /** @enum {string} */
+            typeBehandling: "DokumentHåndtering" | "Journalføring";
             visVentekort: boolean;
         };
         "no.nav.aap.postmottak.gateway.AvsenderMottakerDto": {
