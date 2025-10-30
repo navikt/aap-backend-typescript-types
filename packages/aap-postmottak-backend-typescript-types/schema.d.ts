@@ -1109,6 +1109,8 @@ export interface components {
             /** Format: int64 */
             behandlingVersjon: number;
             flyt: components["schemas"]["no.nav.aap.postmottak.api.flyt.FlytGruppe"][];
+            /** Format: uuid */
+            nesteBehandlingId?: string | null;
             prosessering: components["schemas"]["no.nav.aap.postmottak.api.flyt.Prosessering"];
             visning: components["schemas"]["no.nav.aap.postmottak.flyt.flate.visning.Visning"];
         };
