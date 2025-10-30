@@ -1,5 +1,11 @@
 # @navikt/aap-statistikk-typescript-types
 
+## 0.1.460
+
+### Patch Changes
+
+- ny versjon av typescript typer
+
 ## 0.1.459
 
 ### Patch Changes
