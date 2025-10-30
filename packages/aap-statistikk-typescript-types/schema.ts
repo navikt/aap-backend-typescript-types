@@ -190,7 +190,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.statistikk.api.`ProduksjonsstyringApiKt$hentBehandlingstidPerDag$BehandlingstidPerDagDTO`"][];
+                        "application/json": components["schemas"]["no.nav.aap.statistikk.api.BehandlingstidPerDagDTO"][];
                     };
                 };
             };
@@ -996,6 +996,15 @@ export interface components {
             /** Format: int64 */
             referanse: number;
         };
+        "no.nav.aap.statistikk.api.BehandlingstidPerDagDTO": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            dag: string;
+            /** Format: double */
+            snitt: number;
+        };
         "no.nav.aap.statistikk.api.FordelingLukkedeBehandlinger": {
             /** Format: int32 */
             antall: number;
@@ -1028,15 +1037,6 @@ export interface components {
             nye: number;
             /** Format: int32 */
             totalt: number;
-        };
-        "no.nav.aap.statistikk.api.`ProduksjonsstyringApiKt$hentBehandlingstidPerDag$BehandlingstidPerDagDTO`": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            dag: string;
-            /** Format: double */
-            snitt: number;
         };
         "no.nav.aap.statistikk.produksjonsstyring.BehandlingAarsakAntallGjennomsnitt": {
             /** Format: int32 */
