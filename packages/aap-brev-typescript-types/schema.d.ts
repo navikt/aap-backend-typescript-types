@@ -43,6 +43,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v3/bestill": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BestillBrevV2Request"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BestillBrevResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/bestilling/{referanse}": {
         parameters: {
             query?: never;
@@ -102,6 +141,46 @@ export interface paths {
             requestBody?: {
                 content: {
                     "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/bestilling/{referanse}/v3/oppdater": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest"];
                 };
             };
             responses: {
@@ -895,6 +974,37 @@ export interface components {
         "no.nav.aap.brev.kontrakt.NavnOgAdresse": {
             adresse: components["schemas"]["no.nav.aap.brev.kontrakt.Adresse"];
             navn: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest": {
+            betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.BetingetTekst"][];
+            delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Delmal"][];
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FaktagrunnlagMedVerdi"][];
+            fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FritekstMedKey"][];
+            periodetekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Periodetekst"][];
+            valg: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Valg"][];
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.BetingetTekst": {
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Delmal": {
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FaktagrunnlagMedVerdi": {
+            tekniskNavn: string;
+            verdi: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FritekstMedKey": {
+            fritekstJson: string;
+            key: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Periodetekst": {
+            faktagrunnlagMedVerdi: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FaktagrunnlagMedVerdi"][];
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Valg": {
+            fritekstJson?: string | null;
+            id: string;
+            valgt: string;
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
             enhet: string;
