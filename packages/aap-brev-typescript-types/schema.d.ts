@@ -794,7 +794,7 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV";
+            brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
             brukerIdent: string;
             faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag"][];
             ferdigstillAutomatisk: boolean;
@@ -840,7 +840,7 @@ export interface components {
             behandlingReferanse: string;
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV";
+            brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -922,7 +922,7 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.HentSignaturerRequest": {
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV";
+            brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
             brukerIdent: string;
             signaturGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
         };
