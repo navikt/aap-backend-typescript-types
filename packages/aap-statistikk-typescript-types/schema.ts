@@ -696,6 +696,19 @@ export interface components {
             type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
             name: string;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.datadeling.ArbeidIPeriodeDTO": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            periodeFom: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            periodeTom: string;
+            timerArbeidet: number;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
@@ -788,6 +801,10 @@ export interface components {
             yrkesskadeTidspunkt: number;
             yrkesskadeinntektIG: number;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.statistikk.MeldekortDTO": {
+            arbeidIPeriodeDTO: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.datadeling.ArbeidIPeriodeDTO"][];
+            journalpostId: string;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode": {
             /**
              * Format: date
@@ -828,6 +845,7 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             mottattTid: string;
+            nyeMeldekort: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.MeldekortDTO"][];
             opprettetAv?: string | null;
             /** Format: uuid */
             relatertBehandling?: string | null;
@@ -836,6 +854,7 @@ export interface components {
             saksnummer: string;
             /** @enum {string} */
             soknadsFormat: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat;
+            "s\u00F8knadIder": components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             versjon: string;
             vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[];
         };
@@ -1078,6 +1097,9 @@ export interface components {
             /** Format: double */
             gjennomsnittligAlder: number;
             "\u00E5rsak": string;
+        };
+        "no.nav.aap.verdityper.dokument.JournalpostId": {
+            identifikator: string;
         };
     };
     responses: never;
