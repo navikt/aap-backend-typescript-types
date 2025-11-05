@@ -960,10 +960,16 @@ export interface components {
             journalpostFerdigstilt: boolean;
             journalpostId: string;
         };
-        "no.nav.aap.brev.kontrakt.KanDistribuereBrevReponse": Record<string, never>;
+        "no.nav.aap.brev.kontrakt.KanDistribuereBrevReponse": {
+            mottakereDistStatus: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDistStatus"][];
+        };
         "no.nav.aap.brev.kontrakt.KanDistribuereBrevRequest": {
             brukerIdent: string;
             mottakerIdentListe: string[];
+        };
+        "no.nav.aap.brev.kontrakt.MottakerDistStatus": {
+            kanDistribuere: boolean;
+            mottakerIdent: string;
         };
         "no.nav.aap.brev.kontrakt.MottakerDto": {
             ident?: string | null;
