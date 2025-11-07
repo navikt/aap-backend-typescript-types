@@ -966,6 +966,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.KanDistribuereBrevRequest": {
             brukerIdent: string;
             mottakerIdentListe: string[];
+            saksnummer: string;
         };
         "no.nav.aap.brev.kontrakt.MottakerDistStatus": {
             kanDistribuere: boolean;
