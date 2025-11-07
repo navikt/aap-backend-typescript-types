@@ -1008,6 +1008,7 @@ export interface components {
             status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO": {
+            begrunnelse?: string | null;
             endretAv: string;
             /**
              * Format: date
@@ -1638,7 +1639,8 @@ export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
     Value1338 = "1338",
     Value1339 = "1339",
     Value1340 = "1340",
-    Value1341 = "1341"
+    Value1341 = "1341",
+    Value1342 = "1342"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv {
     SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING",
@@ -1670,7 +1672,6 @@ export enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus {
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET",
     SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
-    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
     AVBRUTT = "AVBRUTT"
 }
 export enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
@@ -1687,7 +1688,6 @@ export enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET",
     SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
-    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
     AVBRUTT = "AVBRUTT"
 }
 export enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
@@ -1695,7 +1695,8 @@ export enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
     VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
     VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
     VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL",
-    VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER"
+    VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
+    VENTER_P__BEHANDLING_I_GOSYS = "VENTER_P\u00C5_BEHANDLING_I_GOSYS"
 }
 export enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
