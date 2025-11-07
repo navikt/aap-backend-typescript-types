@@ -737,6 +737,19 @@ interface components {
             /** @enum {string} */
             "\u00E5rsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.statistikk.ArbeidIPeriode": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            periodeFom: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            periodeTom: string;
+            timerArbeidet: number;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.AvsluttetBehandlingDTO": {
             beregningsGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO"];
             diagnoser?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Diagnoser"];
@@ -801,6 +814,7 @@ interface components {
             yrkesskadeinntektIG: number;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.MeldekortDTO": {
+            arbeidIPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.ArbeidIPeriode"][];
             arbeidIPeriodeDTO: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.datadeling.ArbeidIPeriodeDTO"][];
             journalpostId: string;
         };
@@ -993,7 +1007,6 @@ interface components {
             status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
         };
         "no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO": {
-            begrunnelse?: string | null;
             endretAv: string;
             /**
              * Format: date
@@ -1624,8 +1637,7 @@ declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
     Value1338 = "1338",
     Value1339 = "1339",
     Value1340 = "1340",
-    Value1341 = "1341",
-    Value1342 = "1342"
+    Value1341 = "1341"
 }
 declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv {
     SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING",
@@ -1657,6 +1669,7 @@ declare enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus 
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET",
     SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
     AVBRUTT = "AVBRUTT"
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
@@ -1673,6 +1686,7 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
     OPPRETTET = "OPPRETTET",
     AVSLUTTET = "AVSLUTTET",
     SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
+    SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
     AVBRUTT = "AVBRUTT"
 }
 declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
@@ -1680,8 +1694,7 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
     VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
     VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
     VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL",
-    VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-    VENTER_P__BEHANDLING_I_GOSYS = "VENTER_P\u00C5_BEHANDLING_I_GOSYS"
+    VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER"
 }
 declare enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype {
     F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
