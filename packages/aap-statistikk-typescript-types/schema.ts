@@ -696,19 +696,6 @@ export interface components {
             type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
             name: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.datadeling.ArbeidIPeriodeDTO": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            periodeFom: string;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            periodeTom: string;
-            timerArbeidet: number;
-        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
@@ -816,7 +803,6 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.MeldekortDTO": {
             arbeidIPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.ArbeidIPeriode"][];
-            arbeidIPeriodeDTO: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.datadeling.ArbeidIPeriodeDTO"][];
             journalpostId: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode": {
