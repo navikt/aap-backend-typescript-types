@@ -6084,7 +6084,7 @@ export interface components {
             /** @enum {string} */
             "\u00E5rsak": "MANGLER_VURDERING" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgVedS\u00F8knadsTidspunktDto": {
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgDto": {
             begrunnelse: string;
             /** @enum {string|null} */
             "lovvalgsE\u00D8SLandEllerLandMedAvtale"?: "BEL" | "BGR" | "DNK" | "EST" | "FIN" | "FRA" | "GRC" | "IRL" | "ISL" | "ITA" | "HRV" | "CYP" | "LVA" | "LIE" | "LTU" | "LUX" | "MLT" | "NLD" | "NOR" | "POL" | "PRT" | "ROU" | "SVK" | "SVN" | "ESP" | "CHE" | "SWE" | "CZE" | "DEU" | "HUN" | "AUT" | "GBR" | "AUS" | null;
@@ -6096,10 +6096,10 @@ export interface components {
             varMedlemMedNedsattArbeidsevne?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.ManuellVurderingForLovvalgMedlemskapDto": {
-            "lovvalgVedS\u00F8knadsTidspunkt": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgVedS\u00F8knadsTidspunktDto"];
-            "medlemskapVedS\u00F8knadsTidspunkt"?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapVedS\u00F8knadsTidspunktDto"];
+            "lovvalgVedS\u00F8knadsTidspunkt": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgDto"];
+            "medlemskapVedS\u00F8knadsTidspunkt"?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapDto"];
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapVedS\u00F8knadsTidspunktDto": {
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapDto": {
             begrunnelse?: string | null;
             varMedlemIFolketrygd?: boolean | null;
         };
@@ -6110,8 +6110,8 @@ export interface components {
              * @example 2025-04-01
              */
             fom: string;
-            lovvalg: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgVedS\u00F8knadsTidspunktDto"];
-            medlemskap?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapVedS\u00F8knadsTidspunktDto"];
+            lovvalg: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgDto"];
+            medlemskap?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapDto"];
             /**
              * Format: date
              * @example 2025-04-01
