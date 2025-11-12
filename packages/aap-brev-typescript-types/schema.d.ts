@@ -985,8 +985,8 @@ export interface components {
         "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest": {
             betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.BetingetTekst"][];
             delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Delmal"][];
-            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FaktagrunnlagMedVerdi"][];
-            fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FritekstMedKey"][];
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Faktagrunnlag"][];
+            fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Fritekst"][];
             periodetekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Periodetekst"][];
             valg: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Valg"][];
         };
@@ -996,22 +996,22 @@ export interface components {
         "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Delmal": {
             id: string;
         };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FaktagrunnlagMedVerdi": {
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Faktagrunnlag": {
             tekniskNavn: string;
             verdi: string;
         };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FritekstMedKey": {
-            fritekstJson: string;
+        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Fritekst": {
+            fritekst: string;
             key: string;
+            parentId: string;
         };
         "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Periodetekst": {
-            faktagrunnlagMedVerdi: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.FaktagrunnlagMedVerdi"][];
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Faktagrunnlag"][];
             id: string;
         };
         "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Valg": {
-            fritekstJson?: string | null;
             id: string;
-            valgt: string;
+            key: string;
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
             enhet: string;
