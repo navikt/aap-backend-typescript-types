@@ -4757,7 +4757,6 @@ export interface components {
             erGjeldende?: boolean | null;
             overgangBegrunnelse?: string | null;
             skalVurdereAapIOvergangTilArbeid?: boolean | null;
-            "skalVurdereAapIOvergangTilUf\u00F8re"?: boolean | null;
             /**
              * Format: date
              * @example 2025-04-01
@@ -6139,7 +6138,6 @@ export interface components {
             erBehovForArbeidsrettetTiltak: boolean;
             overgangBegrunnelse?: string | null;
             skalVurdereAapIOvergangTilArbeid?: boolean | null;
-            "skalVurdereAapIOvergangTilUf\u00F8re"?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.institusjon.flate.HelseinstitusjonVurderingDto": {
             begrunnelse: string;
