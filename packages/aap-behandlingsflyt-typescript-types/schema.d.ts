@@ -4548,6 +4548,7 @@ export interface components {
             barnSomTrengerVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto"][];
             folkeregisterbarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto"][];
             "harTilgangTil\u00C5Saksbehandle": boolean;
+            saksbehandlerOppgitteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto"][];
             /**
              * Format: date
              * @example 2025-04-01
@@ -4556,6 +4557,7 @@ export interface components {
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             vurderteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"][];
             vurderteFolkeregisterBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"][];
+            vurderteSaksbehandlerOppgitteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.SlettbarVurdertBarnDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto": {
             /**
@@ -4580,6 +4582,10 @@ export interface components {
             navn?: string | null;
             /** @enum {string|null} */
             oppgittForeldreRelasjon?: "FORELDER" | "FOSTERFORELDER" | null;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.barnetillegg.SlettbarVurdertBarnDto": {
+            erSlettbar: boolean;
+            vurdertBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.BeregningDTO": {
             /** @enum {string} */
@@ -6083,6 +6089,7 @@ export interface components {
             harForeldreAnsvar: boolean;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurderingerForBarnetillegg": {
+            saksbehandlerOppgitteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurdertBarnDto"][];
             vurderteBarn: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurdertBarnDto"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barn.VurdertBarnDto": {
