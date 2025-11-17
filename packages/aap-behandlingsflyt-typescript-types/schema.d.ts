@@ -6759,8 +6759,10 @@ export interface components {
             utenlandsOpphold?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.UtenlandsPeriodeDto"][] | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadStudentDto": {
-            erStudent: string;
-            kommeTilbake?: string | null;
+            /** @enum {string} */
+            erStudent: "Ja" | "Avbrutt" | "Nei";
+            /** @enum {string|null} */
+            kommeTilbake?: "Ja" | "Nei" | "VetIkke" | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadV0": {
             medlemskap?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadMedlemskapDto"];
