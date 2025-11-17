@@ -3214,7 +3214,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/distribusjon/kan-distribuere-brev": {
+    "/api/{brevbestillingReferanse}/kan-distribuere-brev": {
         parameters: {
             query?: never;
             header?: never;
@@ -3227,7 +3227,10 @@ export interface paths {
             parameters: {
                 query?: never;
                 header?: never;
-                path?: never;
+                path: {
+                    /** @description brevbestillingReferanse */
+                    brevbestillingReferanse: string;
+                };
                 cookie?: never;
             };
             requestBody?: {
