@@ -1303,6 +1303,7 @@ interface components {
             endretTidspunkt?: string | null;
             enhet: string;
             "enhetForK\u00F8": string;
+            "erP\u00E5Vent": boolean;
             harFortroligAdresse?: boolean | null;
             harUlesteDokumenter?: boolean | null;
             /** Format: int64 */
