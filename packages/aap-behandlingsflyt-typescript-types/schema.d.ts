@@ -7098,7 +7098,6 @@ export interface components {
             mottakereDistStatus: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDistStatus"][];
         };
         "no.nav.aap.brev.kontrakt.KanDistribuereBrevRequest": {
-            behandlingsReferanse: string;
             brukerIdent: string;
             mottakerIdentListe: string[];
         };
