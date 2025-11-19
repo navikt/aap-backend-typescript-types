@@ -180,7 +180,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
                 };
             };
             responses: {
@@ -476,7 +476,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/distribusjon/kan-distribuere-brev": {
+    "/api/{brevbestillingReferanse}/kan-distribuere-brev": {
         parameters: {
             query?: never;
             header?: never;
@@ -839,6 +839,8 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
+            brevdata?: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
+            brevmal?: string | null;
             /** @enum {string} */
             brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
             /**
@@ -857,6 +859,37 @@ export interface components {
             "spr\u00E5k": "EN" | "NB" | "NN";
             /** @enum {string} */
             status: "UNDER_ARBEID" | "FERDIGSTILT" | "AVBRUTT";
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto": {
+            betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst"][];
+            delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Delmal"][];
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
+            fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst"][];
+            periodetekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Periodetekst"][];
+            valg: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Valg"][];
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst": {
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Delmal": {
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag": {
+            tekniskNavn: string;
+            verdi: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst": {
+            fritekst: string;
+            key: string;
+            parentId: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Periodetekst": {
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Valg": {
+            id: string;
+            key: string;
         };
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
@@ -983,37 +1016,6 @@ export interface components {
         "no.nav.aap.brev.kontrakt.NavnOgAdresse": {
             adresse: components["schemas"]["no.nav.aap.brev.kontrakt.Adresse"];
             navn: string;
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest": {
-            betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.BetingetTekst"][];
-            delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Delmal"][];
-            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Faktagrunnlag"][];
-            fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Fritekst"][];
-            periodetekster: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Periodetekst"][];
-            valg: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Valg"][];
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.BetingetTekst": {
-            id: string;
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Delmal": {
-            id: string;
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Faktagrunnlag": {
-            tekniskNavn: string;
-            verdi: string;
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Fritekst": {
-            fritekst: string;
-            key: string;
-            parentId: string;
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Periodetekst": {
-            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Faktagrunnlag"][];
-            id: string;
-        };
-        "no.nav.aap.brev.kontrakt.OppdaterBrevdataRequest.Valg": {
-            id: string;
-            key: string;
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
             enhet: string;
