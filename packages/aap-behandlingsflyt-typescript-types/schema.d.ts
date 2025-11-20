@@ -5256,12 +5256,6 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingDTO": {
             begrunnelse?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            fristNyRevurdering?: string | null;
-            maksDatoEndelig?: boolean | null;
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningVurderingDTO"][];
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
