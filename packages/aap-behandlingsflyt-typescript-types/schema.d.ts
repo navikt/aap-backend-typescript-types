@@ -6226,6 +6226,11 @@ export interface components {
             erBehovForAktivBehandling: boolean;
             "erBehovForAnnenOppf\u00F8lging"?: boolean | null;
             erBehovForArbeidsrettetTiltak: boolean;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fom?: string | null;
             overgangBegrunnelse?: string | null;
             skalVurdereAapIOvergangTilArbeid?: boolean | null;
         };
