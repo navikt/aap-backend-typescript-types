@@ -6469,7 +6469,7 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            gjelderFra?: string | null;
+            gjelderFra: string;
             /** @enum {string|null} */
             grunn?: "ANNEN_SYKDOM_INNEN_SEKS_MND" | "SAMME_SYKDOM_INNEN_ETT_AAR" | "SYKEPENGER_IGJEN_ARBEIDSUFOR" | "SYKEPENGER_FORTSATT_ARBEIDSUFOR" | "FORELDREPENGER_INNEN_SEKS_MND" | null;
             "harRettP\u00E5": boolean;
