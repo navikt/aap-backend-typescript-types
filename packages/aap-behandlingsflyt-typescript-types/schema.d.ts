@@ -3214,6 +3214,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/brev/{brevbestillingReferanse}/oppdater-brevdata": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description brevbestillingReferanse */
+                    brevbestillingReferanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/brev/{brevbestillingReferanse}/forhandsvis": {
         parameters: {
             query?: never;
@@ -5031,6 +5073,8 @@ export interface components {
             brev?: components["schemas"]["no.nav.aap.brev.kontrakt.Brev"];
             /** Format: uuid */
             brevbestillingReferanse: string;
+            brevdata?: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
+            brevmal?: string | null;
             /** @enum {string} */
             brevtype: "INNVILGELSE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_11_23_SJETTE_LEDD" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
             "harTilgangTil\u00C5SendeBrev": boolean;
@@ -7130,6 +7174,37 @@ export interface components {
             kanSendesAutomatisk?: boolean | null;
             overskrift?: string | null;
             tekstbolker: components["schemas"]["no.nav.aap.brev.kontrakt.Tekstbolk"][];
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto": {
+            betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst"][];
+            delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Delmal"][];
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
+            fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst"][];
+            periodetekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Periodetekst"][];
+            valg: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Valg"][];
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst": {
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Delmal": {
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag": {
+            tekniskNavn: string;
+            verdi: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst": {
+            fritekst: string;
+            key: string;
+            parentId: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Periodetekst": {
+            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
+            id: string;
+        };
+        "no.nav.aap.brev.kontrakt.BrevdataDto.Valg": {
+            id: string;
+            key: string;
         };
         "no.nav.aap.brev.kontrakt.Innhold": {
             blokker: components["schemas"]["no.nav.aap.brev.kontrakt.Blokk"][];
