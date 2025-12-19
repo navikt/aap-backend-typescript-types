@@ -981,6 +981,42 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/drift/behandling/{referanse}/prosesser": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -1077,7 +1113,7 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringvurderingDto": {
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "TILBAKEKREVING_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE";
             strukturertDokumentJson?: string | null;
             /**
              * Format: date
@@ -1214,7 +1250,7 @@ export interface components {
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.DigitaliserDokumentL\u00F8sning": {
             behovstype: string;
             /** @enum {string} */
-            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE";
+            kategori: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "TILBAKEKREVING_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE";
             strukturertDokument?: string | null;
             /**
              * Format: date
