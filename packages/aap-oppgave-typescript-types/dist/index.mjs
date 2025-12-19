@@ -37,6 +37,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5032"] = "5032";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5033"] = "5033";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5035"] = "5035";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5040"] = "5040";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5052"] = "5052";
@@ -108,6 +109,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_GRUNNLAG"] = "FASTSETT_GRUNNLAG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VIS_GRUNNLAG"] = "VIS_GRUNNLAG";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["MANGLENDE_LIGNING"] = "MANGLENDE_LIGNING";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["VURDER_INNTEKTSBORTFALL"] = "VURDER_INNTEKTSBORTFALL";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_UF_RE"] = "SAMORDNING_UF\xD8RE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_AVSLAG"] = "SAMORDNING_AVSLAG";
@@ -194,6 +196,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_GRUNNLAG"] = "FASTSETT_GRUNNLAG";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VIS_GRUNNLAG"] = "VIS_GRUNNLAG";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["MANGLENDE_LIGNING"] = "MANGLENDE_LIGNING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["VURDER_INNTEKTSBORTFALL"] = "VURDER_INNTEKTSBORTFALL";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_UF_RE"] = "SAMORDNING_UF\xD8RE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_AVSLAG"] = "SAMORDNING_AVSLAG";
@@ -282,6 +285,7 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SAKSBEHANDLER_KELVIN_REFERANSE"] = "SAKSBEHANDLER_KELVIN_REFERANSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["KABAL_HENDELSE_ID"] = "KABAL_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["TILBAKEKREING_HENDELSE_ID"] = "TILBAKEKREING_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["PDL_HENDELSE_ID"] = "PDL_HENDELSE_ID";
   return NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2;
 })(NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType || {});
@@ -298,11 +302,18 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OMGJ_RING_KLAGE_REVURDERING"] = "OMGJ\xD8RING_KLAGE_REVURDERING";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["NY__RSAK_TIL_BEHANDLING"] = "NY_\xC5RSAK_TIL_BEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["KABAL_HENDELSE"] = "KABAL_HENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BRUKER"] = "PDL_HENDELSE_DODSFALL_BRUKER";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BARN"] = "PDL_HENDELSE_DODSFALL_BARN";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
   return NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2;
 })(NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType || {});
+var NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2) => {
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["OPPRETTET"] = "OPPRETTET";
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["TIL_BEHANDLING"] = "TIL_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["AVSLUTTET"] = "AVSLUTTET";
+  return NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2;
+})(NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus || {});
 var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
@@ -515,6 +526,7 @@ export {
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType,
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType,
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus,
   NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,

@@ -78,6 +78,43 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/oppdater-tilbakekreving-oppgaver": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.TilbakekrevingsbehandlingOppdatertHendelse"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/neste-oppgave": {
         parameters: {
             query?: never;
@@ -1235,6 +1272,19 @@ export interface components {
             /** @enum {string} */
             type: NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.TilbakekrevingsbehandlingOppdatertHendelse": {
+            avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
+            /** @enum {string} */
+            behandlingStatus: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
+            behandlingref: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            personIdent: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            sakOpprettet: string;
+            saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
             /** @enum {string} */
             "\u00E5rsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
@@ -1305,6 +1355,7 @@ export interface components {
             enhet: string;
             "enhetForK\u00F8": string;
             "erP\u00E5Vent": boolean;
+            erSkjermet?: boolean | null;
             harFortroligAdresse?: boolean | null;
             harUlesteDokumenter?: boolean | null;
             /** Format: int64 */
@@ -1340,6 +1391,11 @@ export interface components {
             saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapOppgaveOppgaveDtoStatus;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "utl\u00F8ptVentefrist"?: string | null;
             veilederArbeid?: string | null;
             veilederSykdom?: string | null;
             venteBegrunnelse?: string | null;
@@ -1611,6 +1667,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5032 = "5032",
     Value5033 = "5033",
     Value5035 = "5035",
+    Value5040 = "5040",
     Value5050 = "5050",
     Value5051 = "5051",
     Value5052 = "5052",
@@ -1680,6 +1737,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
     VIS_GRUNNLAG = "VIS_GRUNNLAG",
     MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
+    VURDER_INNTEKTSBORTFALL = "VURDER_INNTEKTSBORTFALL",
     SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
     SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
     SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
@@ -1763,6 +1821,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
     VIS_GRUNNLAG = "VIS_GRUNNLAG",
     MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
+    VURDER_INNTEKTSBORTFALL = "VURDER_INNTEKTSBORTFALL",
     SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
     SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
     SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
@@ -1846,6 +1905,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
     SAKSBEHANDLER_KELVIN_REFERANSE = "SAKSBEHANDLER_KELVIN_REFERANSE",
     MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
     KABAL_HENDELSE_ID = "KABAL_HENDELSE_ID",
+    TILBAKEKREING_HENDELSE_ID = "TILBAKEKREING_HENDELSE_ID",
     PDL_HENDELSE_ID = "PDL_HENDELSE_ID"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
@@ -1861,9 +1921,15 @@ export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
     OMGJ_RING_KLAGE_REVURDERING = "OMGJ\u00D8RING_KLAGE_REVURDERING",
     NY__RSAK_TIL_BEHANDLING = "NY_\u00C5RSAK_TIL_BEHANDLING",
     KABAL_HENDELSE = "KABAL_HENDELSE",
+    TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
     PDL_HENDELSE_DODSFALL_BRUKER = "PDL_HENDELSE_DODSFALL_BRUKER",
     PDL_HENDELSE_DODSFALL_BARN = "PDL_HENDELSE_DODSFALL_BARN",
     OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus {
+    OPPRETTET = "OPPRETTET",
+    TIL_BEHANDLING = "TIL_BEHANDLING",
+    AVSLUTTET = "AVSLUTTET"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
     MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",

@@ -1,5 +1,11 @@
 # @navikt/aap-oppgave-typescript-types
 
+## 0.0.545
+
+### Patch Changes
+
+- ny versjon av typescript typer
+
 ## 0.0.544
 
 ### Patch Changes
