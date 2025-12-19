@@ -41,6 +41,7 @@ jobs:
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{ secrets.READER_TOKEN }}" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
+          -w "%{http_code}\n" \
           -o artifact.zip \
           https://api.github.com/repos/navikt/aap-${{ inputs.appNavn }}/actions/artifacts/${{ inputs.artifactId }}/zip
       - name: Unzip artifact
