@@ -744,6 +744,11 @@ interface components {
             resultat?: NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat;
             rettighetstypePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode"][];
             tilkjentYtelse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelseDTO"];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            vedtakstidspunkt?: string | null;
             "vilk\u00E5rsResultat": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rsResultatDTO"];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO": {
@@ -780,6 +785,7 @@ interface components {
             "uf\u00F8reYtterligereNedsattArbeidsevne\u00C5r": number;
             /** Format: int32 */
             "uf\u00F8regrad": number;
+            "uf\u00F8regrader": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uf\u00F8re"][];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagYrkesskadeDTO": {
             andelSomIkkeSkyldesYrkesskade: number;
@@ -854,6 +860,11 @@ interface components {
             /** @enum {string} */
             soknadsFormat: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat;
             "s\u00F8knadIder": components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            tidspunktSisteEndring?: string | null;
             versjon: string;
             vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[];
         };
@@ -883,6 +894,20 @@ interface components {
              * @example 2025-04-01
              */
             tilDato: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            utbetalingsdato: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uf\u00F8re": {
+            /** Format: int32 */
+            grad: number;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            virkningstidspunkt: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rsPeriodeDTO"][];
@@ -1320,6 +1345,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5032 = "5032",
     Value5033 = "5033",
     Value5035 = "5035",
+    Value5040 = "5040",
     Value5050 = "5050",
     Value5051 = "5051",
     Value5052 = "5052",
@@ -1389,6 +1415,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
     VIS_GRUNNLAG = "VIS_GRUNNLAG",
     MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
+    VURDER_INNTEKTSBORTFALL = "VURDER_INNTEKTSBORTFALL",
     SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
     SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
     SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
@@ -1529,6 +1556,7 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
     AVVIST_LEGEERKL_RING = "AVVIST_LEGEERKL\u00C6RING",
     DIALOGMELDING = "DIALOGMELDING",
     G_REGULERING = "G_REGULERING",
+    BARNETILLEGG_SATS_REGULERING = "BARNETILLEGG_SATS_REGULERING",
     REVURDER_MEDLEMSKAP = "REVURDER_MEDLEMSKAP",
     REVURDER_YRKESSKADE = "REVURDER_YRKESSKADE",
     REVURDER_BEREGNING = "REVURDER_BEREGNING",
@@ -1539,6 +1567,7 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
     LOVVALG_OG_MEDLEMSKAP = "LOVVALG_OG_MEDLEMSKAP",
     FORUTGAENDE_MEDLEMSKAP = "FORUTGAENDE_MEDLEMSKAP",
     SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND",
+    REVURDER_SYKEPENGEERSTATNING = "REVURDER_SYKEPENGEERSTATNING",
     BARNETILLEGG = "BARNETILLEGG",
     INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
     SAMORDNING_OG_AVREGNING = "SAMORDNING_OG_AVREGNING",
@@ -1567,7 +1596,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
     D_DSFALL_BARN = "D\u00D8DSFALL_BARN",
     OPPHOLDSKRAV = "OPPHOLDSKRAV",
     EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
-    EFFEKTUER_AKTIVITETSPLIKT_11_9 = "EFFEKTUER_AKTIVITETSPLIKT_11_9"
+    EFFEKTUER_AKTIVITETSPLIKT_11_9 = "EFFEKTUER_AKTIVITETSPLIKT_11_9",
+    AUTOMATISK_OPPDATER_VILK_R = "AUTOMATISK_OPPDATER_VILK\u00C5R"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
@@ -1578,6 +1608,9 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     GRUNNLAGET = "GRUNNLAGET",
     OVERGANGARBEIDVILK_RET = "OVERGANGARBEIDVILK\u00C5RET",
     OVERGANGUF_REVILK_RET = "OVERGANGUF\u00D8REVILK\u00C5RET",
+    STRAFFEGJENNOMF_RING = "STRAFFEGJENNOMF\u00D8RING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    OPPHOLDSKRAV = "OPPHOLDSKRAV",
     SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
     SAMORDNING = "SAMORDNING"
 }
