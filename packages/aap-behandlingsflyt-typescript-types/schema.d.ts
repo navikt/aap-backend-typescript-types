@@ -5778,6 +5778,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.rettighetsperiode.RettighetsperiodeVurderingResponse": {
             begrunnelse: string;
             "harKravP\u00E5Renter"?: boolean | null;
+            /** @enum {string} */
+            harRett: "Ja" | "Nei" | "HarRettIkkeIStandTilÅSøkeTidligere" | "HarRettMisvisendeOpplysninger";
             "harRettUtoverS\u00F8knadsdato": boolean;
             /**
              * Format: date
@@ -6608,7 +6610,9 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.rettighetsperiode.RettighetsperiodeVurderingDTO": {
             begrunnelse: string;
             "harKravP\u00E5Renter"?: boolean | null;
-            "harRettUtoverS\u00F8knadsdato": boolean;
+            /** @enum {string|null} */
+            harRett?: "Ja" | "Nei" | "HarRettIkkeIStandTilÅSøkeTidligere" | "HarRettMisvisendeOpplysninger" | null;
+            "harRettUtoverS\u00F8knadsdato"?: boolean | null;
             /**
              * Format: date
              * @example 2025-04-01
