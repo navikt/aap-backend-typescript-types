@@ -1615,7 +1615,8 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     OPPHOLDSKRAV = "OPPHOLDSKRAV",
     SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
-    SAMORDNING = "SAMORDNING"
+    SAMORDNING = "SAMORDNING",
+    INNTEKTSBORTFALL = "INNTEKTSBORTFALL"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall {
     IKKE_VURDERT = "IKKE_VURDERT",

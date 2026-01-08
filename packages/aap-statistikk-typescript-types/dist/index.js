@@ -588,6 +588,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["OPPHOLDSKRAV"] = "OPPHOLDSKRAV";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKEPENGEERSTATNING"] = "SYKEPENGEERSTATNING";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING"] = "SAMORDNING";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["INNTEKTSBORTFALL"] = "INNTEKTSBORTFALL";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall2) => {
