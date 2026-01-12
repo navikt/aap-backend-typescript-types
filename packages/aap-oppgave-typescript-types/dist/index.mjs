@@ -288,7 +288,8 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SAKSBEHANDLER_KELVIN_REFERANSE"] = "SAKSBEHANDLER_KELVIN_REFERANSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["KABAL_HENDELSE_ID"] = "KABAL_HENDELSE_ID";
-  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["TILBAKEKREING_HENDELSE_ID"] = "TILBAKEKREING_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["TILBAKEKREVING_HENDELSE_ID"] = "TILBAKEKREVING_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["FAGSYSTEMINFO_BEHOV_HENDELSE_ID"] = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["PDL_HENDELSE_ID"] = "PDL_HENDELSE_ID";
   return NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2;
 })(NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType || {});
@@ -306,6 +307,7 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["NY__RSAK_TIL_BEHANDLING"] = "NY_\xC5RSAK_TIL_BEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["KABAL_HENDELSE"] = "KABAL_HENDELSE";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["FAGSYSTEMINFO_BEHOV_HENDELSE"] = "FAGSYSTEMINFO_BEHOV_HENDELSE";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BRUKER"] = "PDL_HENDELSE_DODSFALL_BRUKER";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BARN"] = "PDL_HENDELSE_DODSFALL_BARN";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";

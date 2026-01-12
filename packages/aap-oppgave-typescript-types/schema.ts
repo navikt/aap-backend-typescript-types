@@ -875,6 +875,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/enhet/nay/person": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetForPersonRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetNrDto"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/synkroniser-enhet-paa-oppgave": {
         parameters: {
             query?: never;
@@ -1430,6 +1469,13 @@ export interface components {
             enhetNr: string;
             navn: string;
         };
+        "no.nav.aap.oppgave.enhet.EnhetForPersonRequest": {
+            personIdent: string;
+            relevanteIdenter: string[];
+        };
+        "no.nav.aap.oppgave.enhet.EnhetNrDto": {
+            enhetNr: string;
+        };
         "no.nav.aap.oppgave.enhet.EnhetSynkroniseringRequest": {
             /** Format: int64 */
             oppgaveId: number;
@@ -1908,7 +1954,8 @@ export enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
     SAKSBEHANDLER_KELVIN_REFERANSE = "SAKSBEHANDLER_KELVIN_REFERANSE",
     MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
     KABAL_HENDELSE_ID = "KABAL_HENDELSE_ID",
-    TILBAKEKREING_HENDELSE_ID = "TILBAKEKREING_HENDELSE_ID",
+    TILBAKEKREVING_HENDELSE_ID = "TILBAKEKREVING_HENDELSE_ID",
+    FAGSYSTEMINFO_BEHOV_HENDELSE_ID = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID",
     PDL_HENDELSE_ID = "PDL_HENDELSE_ID"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
@@ -1925,6 +1972,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
     NY__RSAK_TIL_BEHANDLING = "NY_\u00C5RSAK_TIL_BEHANDLING",
     KABAL_HENDELSE = "KABAL_HENDELSE",
     TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
+    FAGSYSTEMINFO_BEHOV_HENDELSE = "FAGSYSTEMINFO_BEHOV_HENDELSE",
     PDL_HENDELSE_DODSFALL_BRUKER = "PDL_HENDELSE_DODSFALL_BRUKER",
     PDL_HENDELSE_DODSFALL_BARN = "PDL_HENDELSE_DODSFALL_BARN",
     OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE"
