@@ -5505,7 +5505,7 @@ export interface components {
              */
             ytelseIverksattTom?: string | null;
         };
-        "no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.GjennomsnittInntektSiste3\u00C5rOver3GDto": {
+        "no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.InntektSiste3\u00C5rOver3GDto": {
             gverdi: number;
             resultat: boolean;
         };
@@ -5519,7 +5519,7 @@ export interface components {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.InntektsbortfallVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.InntektsbortfallKanBehandlesAutomatiskDto": {
-            "gjennomsnittInntektSiste3\u00C5rOver3G": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.GjennomsnittInntektSiste3\u00C5rOver3GDto"];
+            "inntektSiste3\u00C5rOver3G": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.InntektSiste3\u00C5rOver3GDto"];
             "inntektSiste\u00C5rOver1G": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.InntektSiste\u00C5rOver1GDto"];
             kanBehandlesAutomatisk: boolean;
             "under62\u00C5rVedS\u00F8knadstidspunkt": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.inntektsbortfall.Under62\u00C5rVedS\u00F8knadstidspunktDto"];
