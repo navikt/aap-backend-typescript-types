@@ -1542,6 +1542,7 @@ interface components {
              * @example 2025-04-01
              */
             tom?: string | null;
+            "ventefristUtl\u00F8pt"?: boolean | null;
             "\u00E5rsaker": string[];
         };
         "no.nav.aap.oppgave.markering.MarkeringDto": {
