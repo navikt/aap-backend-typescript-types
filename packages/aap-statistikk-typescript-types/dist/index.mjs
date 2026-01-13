@@ -515,6 +515,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKEPENGEERSTATNING"] = "SYKEPENGEERSTATNING";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING"] = "SAMORDNING";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["INNTEKTSBORTFALL"] = "INNTEKTSBORTFALL";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING_ANNEN_LOVGIVNING"] = "SAMORDNING_ANNEN_LOVGIVNING";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall2) => {
