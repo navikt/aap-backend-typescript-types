@@ -867,6 +867,7 @@ interface components {
             tidspunktSisteEndring?: string | null;
             versjon: string;
             vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[];
+            "\u00E5rsakTilOpprettelse": string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelseDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO"][];
@@ -1035,10 +1036,8 @@ interface components {
             /** @enum {string|null} */
             "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
         };
-        "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": {
-            /** Format: int64 */
-            referanse: number;
-        };
+        /** Format: int64 */
+        "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": number;
         "no.nav.aap.statistikk.api.BehandlingstidPerDagDTO": {
             /**
              * Format: date
