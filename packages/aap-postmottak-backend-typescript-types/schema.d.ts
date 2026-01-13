@@ -1286,10 +1286,8 @@ export interface components {
              */
             opprettetDato: string;
         };
-        "no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse": {
-            /** Format: uuid */
-            referanse: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse": string;
         "no.nav.aap.postmottak.journalpostogbehandling.behandling.BehandlingsreferansePathParam": {
             /** Format: uuid */
             referanse: string;
