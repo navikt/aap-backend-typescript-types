@@ -1223,21 +1223,16 @@ export interface components {
             type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
             name: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": {
-            /** Format: uuid */
-            referanse: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": string;
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": {
-            asString: string;
-            /** Format: uuid */
-            value: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": string;
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.BehandlingFlytStoppetHendelse": {
             /** @enum {string|null} */
             aktivtSteg?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg;
@@ -1287,11 +1282,8 @@ export interface components {
             /** @enum {string|null} */
             "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId": {
-            asString: string;
-            /** Format: uuid */
-            value: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId": string;
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse": {
             "asAvvistLegeerkl\u00E6ringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId"];
             asInnsendingId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId"];
@@ -1301,11 +1293,8 @@ export interface components {
             type: NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType;
             verdi: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": {
-            asString: string;
-            /** Format: uuid */
-            value: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": string;
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.MottattDokumentDto": {
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
             /** @enum {string} */
@@ -1660,10 +1649,8 @@ export interface components {
             /** @enum {string|null} */
             "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
         };
-        "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": {
-            /** Format: int64 */
-            referanse: number;
-        };
+        /** Format: int64 */
+        "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": number;
         "no.nav.aap.verdityper.dokument.JournalpostId": {
             identifikator: string;
         };
