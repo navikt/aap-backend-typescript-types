@@ -7057,20 +7057,12 @@ export interface components {
             type: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "BREV" | "BREV_VENTEPUNKT" | "VENTEPUNKT" | "OVERSTYR";
             name: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": {
-            /** Format: uuid */
-            referanse: string;
-        };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": {
-            asString: string;
-            /** Format: uuid */
-            value: string;
-        };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId": {
-            asString: string;
-            /** Format: uuid */
-            value: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": string;
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": string;
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId": string;
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse": {
             "asAvvistLegeerkl\u00E6ringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId"];
             asInnsendingId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId"];
@@ -7080,11 +7072,8 @@ export interface components {
             type: "JOURNALPOST" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "AVVIST_LEGEERKLÆRING_ID" | "REVURDERING_ID" | "BEHANDLING_REFERANSE" | "SAKSBEHANDLER_KELVIN_REFERANSE" | "MANUELL_OPPRETTELSE" | "KABAL_HENDELSE_ID" | "TILBAKEKREVING_HENDELSE_ID" | "FAGSYSTEMINFO_BEHOV_HENDELSE_ID" | "PDL_HENDELSE_ID";
             verdi: string;
         };
-        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": {
-            asString: string;
-            /** Format: uuid */
-            value: string;
-        };
+        /** Format: uuid */
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": string;
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AfpDto": {
             hvemBetaler?: string | null;
         };
