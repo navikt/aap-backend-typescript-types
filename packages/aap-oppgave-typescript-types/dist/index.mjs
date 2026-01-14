@@ -311,6 +311,7 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BRUKER"] = "PDL_HENDELSE_DODSFALL_BRUKER";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BARN"] = "PDL_HENDELSE_DODSFALL_BARN";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["INSTITUSJONSOPPHOLD"] = "INSTITUSJONSOPPHOLD";
   return NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2;
 })(NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType || {});
 var NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2) => {
