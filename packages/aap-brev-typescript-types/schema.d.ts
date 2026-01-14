@@ -1017,6 +1017,11 @@ export interface components {
             gradertDagsatsInkludertBarnetillegg?: number | null;
             "minste\u00C5rligYtelse"?: number | null;
             "minste\u00C5rligYtelseUnder25"?: number | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            sisteDagMedYtelse?: string | null;
             "\u00E5rligYtelse"?: number | null;
             /** @enum {string} */
             type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE";
