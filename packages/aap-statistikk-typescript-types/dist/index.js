@@ -384,6 +384,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IKKE_OPPFYLT_MELDEPLIKT"] = "IKKE_OPPFYLT_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_VEDTAKSLENGDE"] = "FASTSETT_VEDTAKSLENGDE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["EFFEKTUER_11_7"] = "EFFEKTUER_11_7";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["DU_ER_ET_ANNET_STED"] = "DU_ER_ET_ANNET_STED";
@@ -571,7 +572,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["OPPHOLDSKRAV"] = "OPPHOLDSKRAV";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT_11_9"] = "EFFEKTUER_AKTIVITETSPLIKT_11_9";
-  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["AUTOMATISK_OPPDATER_VILK_R"] = "AUTOMATISK_OPPDATER_VILK\xC5R";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
