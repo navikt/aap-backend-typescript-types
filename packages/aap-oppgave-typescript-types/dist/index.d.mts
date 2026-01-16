@@ -1227,6 +1227,8 @@ interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
             avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
+            /** Format: int64 */
+            id?: number | null;
             /** @enum {string} */
             status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
         };
@@ -1780,6 +1782,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
     SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
     IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
+    FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
     FASTSETT_UTTAK = "FASTSETT_UTTAK",
     EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -1865,6 +1868,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
     SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
     SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
     IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
+    FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
     FASTSETT_UTTAK = "FASTSETT_UTTAK",
     EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",

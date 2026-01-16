@@ -179,6 +179,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IKKE_OPPFYLT_MELDEPLIKT"] = "IKKE_OPPFYLT_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_VEDTAKSLENGDE"] = "FASTSETT_VEDTAKSLENGDE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["EFFEKTUER_11_7"] = "EFFEKTUER_11_7";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["DU_ER_ET_ANNET_STED"] = "DU_ER_ET_ANNET_STED";
@@ -267,6 +268,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["IKKE_OPPFYLT_MELDEPLIKT"] = "IKKE_OPPFYLT_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_VEDTAKSLENGDE"] = "FASTSETT_VEDTAKSLENGDE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["EFFEKTUER_11_7"] = "EFFEKTUER_11_7";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["DU_ER_ET_ANNET_STED"] = "DU_ER_ET_ANNET_STED";
