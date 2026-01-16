@@ -7190,7 +7190,7 @@ export interface components {
             eksternFagsakId: number;
             /** Format: int64 */
             hendelsesid: number;
-            institusjonsOpphold: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Inst2KafkaDto"];
+            institusjonsOpphold?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Inst2KafkaDto"];
             norskIdent: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KabalHendelse": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KabalHendelseV0"];
