@@ -857,6 +857,7 @@ export interface components {
             opprettetAv?: string | null;
             /** Format: uuid */
             relatertBehandling?: string | null;
+            relatertFagsystem?: string | null;
             /** @enum {string} */
             sakStatus: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus;
             saksnummer: string;
