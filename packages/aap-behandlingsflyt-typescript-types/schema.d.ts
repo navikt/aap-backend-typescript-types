@@ -7348,8 +7348,8 @@ export interface components {
             saksbehandlingURL: string;
             "totaltFeilutbetaltBel\u00F8p": number;
             /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
+             * Format: date
+             * @example 2025-04-01
              */
             varselSendt?: string | null;
         };
