@@ -972,7 +972,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
         };
-        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse"];
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse"];
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato": {
             /**
              * Format: date
@@ -980,7 +980,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE";
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7": {
             /**
@@ -989,7 +989,7 @@ export interface components {
              */
             frist: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE";
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning": {
             beregningsgrunnlag?: number | null;
@@ -1000,11 +1000,16 @@ export interface components {
             beregningstidspunkt?: string | null;
             "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE";
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r": {
             inntekt: number;
             "\u00E5r": components["schemas"]["java.time.Year"];
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering": {
+            begrunnelse: string;
+            /** @enum {string} */
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse": {
             /** Format: int32 */
@@ -1024,7 +1029,7 @@ export interface components {
             sisteDagMedYtelse?: string | null;
             "\u00E5rligYtelse"?: number | null;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE";
+            type: "AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
