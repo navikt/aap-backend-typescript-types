@@ -743,6 +743,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.AvsluttetBehandlingDTO": {
             beregningsGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO"];
             diagnoser?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Diagnoser"];
+            fritaksvurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering"][] | null;
             /** @enum {string|null} */
             resultat?: NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat;
             rettighetstypePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode"][];
@@ -763,6 +764,19 @@ export interface components {
             bidiagnoser: string[];
             diagnosekode: string;
             kodeverk: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fraDato: string;
+            harFritak: boolean;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tilDato?: string | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Grunnlag11_19DTO": {
             er6GBegrenset: boolean;
