@@ -1020,6 +1020,11 @@ export interface components {
             gradertBarnetillegg?: number | null;
             gradertDagsats?: number | null;
             gradertDagsatsInkludertBarnetillegg?: number | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "kravdatoUf\u00F8retrygd"?: string | null;
             "minste\u00C5rligYtelse"?: number | null;
             "minste\u00C5rligYtelseUnder25"?: number | null;
             /**
