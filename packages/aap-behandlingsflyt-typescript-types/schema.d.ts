@@ -7043,7 +7043,8 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto": {
             afp?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AfpDto"];
-            "l\u00F8nn"?: string | null;
+            /** @enum {string|null} */
+            "l\u00F8nn"?: "Ja" | "Nei" | null;
             "st\u00F8nad"?: ("ØKONOMISK_SOSIALHJELP" | "OMSORGSSTØNAD" | "INTRODUKSJONSSTØNAD" | "KVALIFISERINGSSTØNAD" | "VERV" | "UTLAND" | "AFP" | "STIPEND" | "LÅN" | "NEI")[] | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnkeITrygderettenbehandlingOpprettetDetaljer": {
