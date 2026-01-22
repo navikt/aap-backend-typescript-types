@@ -499,6 +499,8 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["EFFEKTUER_AKTIVITETSPLIKT_11_9"] = "EFFEKTUER_AKTIVITETSPLIKT_11_9";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["MIGRER_RETTIGHETSPERIODE"] = "MIGRER_RETTIGHETSPERIODE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_SYKESTIPEND"] = "REVURDER_SYKESTIPEND";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
@@ -517,6 +519,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING"] = "SAMORDNING";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["INNTEKTSBORTFALL"] = "INNTEKTSBORTFALL";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING_ANNEN_LOVGIVNING"] = "SAMORDNING_ANNEN_LOVGIVNING";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["STUDENT"] = "STUDENT";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall2) => {
