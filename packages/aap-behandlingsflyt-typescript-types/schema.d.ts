@@ -7193,39 +7193,16 @@ export interface components {
             type: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE" | "INSTITUSJONSOPPHOLD";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Inst2KafkaDto": {
-            avdelingsnavn?: string | null;
-            endretAv?: string | null;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            endringstidspunkt?: string | null;
             /**
              * Format: date
              * @example 2025-04-01
              */
-            faktiskSluttdato?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            forventetSluttdato?: string | null;
-            institusjonsnavn?: string | null;
-            institusjonstype?: string | null;
-            kategori?: string | null;
-            kilde?: string | null;
-            /** Format: int64 */
-            oppholdId: number;
-            organisasjonsnummer?: string | null;
-            overfoert?: boolean | null;
-            registrertAv?: string | null;
+            sluttdato?: string | null;
             /**
              * Format: date
              * @example 2025-04-01
              */
             startdato: string;
-            tssEksternId: string;
-            varighet?: string | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.InstitusjonsOppholdHendelse": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.InstitusjonsOppholdHendelseV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.InstitusjonsOppholdHendelseV0": {
