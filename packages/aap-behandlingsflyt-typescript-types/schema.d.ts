@@ -6221,8 +6221,19 @@ export interface components {
             ident: string;
         };
         "no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfoDTO": {
-            avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
+            avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov"][];
             behandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO"];
+        };
+        "no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov": {
+            definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
+            endretAv: string;
+            /** @enum {string} */
+            status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            tidsstempel: string;
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$KjorFraSteg`": {
             /** @enum {string} */
