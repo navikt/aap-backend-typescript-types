@@ -744,6 +744,7 @@ export interface components {
             beregningsGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO"];
             diagnoser?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Diagnoser"];
             fritaksvurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering"][] | null;
+            perioderMedArbeidsopptrapping?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][] | null;
             /** @enum {string|null} */
             resultat?: NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat;
             rettighetstypePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode"][];
@@ -826,6 +827,18 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.MeldekortDTO": {
             arbeidIPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.ArbeidIPeriode"][];
             journalpostId: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fom: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tom: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode": {
             /**
