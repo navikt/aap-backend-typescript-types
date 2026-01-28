@@ -4900,8 +4900,6 @@ export interface components {
             "justertForUf\u00F8reGrad": number;
             "justertForUf\u00F8reGradiG": number;
             justertTilMaks6G: number;
-            /** Format: int32 */
-            "uf\u00F8reGrad": number;
             "\u00E5r": string;
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.Uf\u00F8reInntektPeriodisertDTO": {
