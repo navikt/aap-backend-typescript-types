@@ -4070,7 +4070,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/drift/behandling/{referanse}/info": {
+    "/api/drift/sak/{saksnummer}/info": {
         parameters: {
             query?: never;
             header?: never;
@@ -4084,8 +4084,8 @@ export interface paths {
                 query?: never;
                 header?: never;
                 path: {
-                    /** @description referanse */
-                    referanse: string;
+                    /** @description saksnummer */
+                    saksnummer: string;
                 };
                 cookie?: never;
             };
@@ -4097,7 +4097,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfoDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.SakDriftsinfoDTO"];
                     };
                 };
             };
@@ -6220,9 +6220,21 @@ export interface components {
             enhetsnavn?: string | null;
             ident: string;
         };
-        "no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfoDTO": {
+        "no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfo": {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov"][];
-            behandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlinginfoDTO"];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettet: string;
+            /** Format: uuid */
+            referanse: string;
+            /** @enum {string} */
+            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            type: string;
+            vurderingsbehov: ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND")[];
+            /** @enum {string|null} */
+            "\u00E5rsakTilOpprettelse"?: "SØKNAD" | "MANUELL_OPPRETTELSE" | "HELSEOPPLYSNINGER" | "ANNET_RELEVANT_DOKUMENT" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "ENDRING_I_REGISTERDATA" | "BARNETILLEGG_SATSENDRING" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "MELDEKORT" | "AKTIVITETSMELDING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "KLAGE" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | null;
         };
         "no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov": {
             definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
@@ -6234,6 +6246,18 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             tidsstempel: string;
+        };
+        "no.nav.aap.behandlingsflyt.drift.SakDriftsinfoDTO": {
+            behandlinger: components["schemas"]["no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfo"][];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt: string;
+            rettighetsperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            saksnummer: string;
+            /** @enum {string} */
+            status: "OPPRETTET" | "UTREDES" | "LØPENDE" | "AVSLUTTET";
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$KjorFraSteg`": {
             /** @enum {string} */
