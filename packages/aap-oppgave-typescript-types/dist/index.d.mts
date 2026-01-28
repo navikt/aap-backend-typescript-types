@@ -114,45 +114,6 @@ interface paths {
         patch?: never;
         trace?: never;
     };
-    "/neste-oppgave": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.NesteOppgaveDto"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/plukk-oppgave": {
         parameters: {
             query?: never;
@@ -1306,14 +1267,6 @@ interface components {
             status: NoNavAapMotorApiJobbInfoDtoStatus;
             type: string;
         };
-        "no.nav.aap.oppgave.AvklaringsbehovReferanseDto": {
-            avklaringsbehovKode: string;
-            /** Format: int64 */
-            journalpostId?: number | null;
-            /** Format: uuid */
-            referanse?: string | null;
-            saksnummer?: string | null;
-        };
         "no.nav.aap.oppgave.AvreserverOppgaveDto": {
             oppgaver: number[];
         };
@@ -1509,18 +1462,6 @@ interface components {
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
             opprettetAv?: string | null;
-        };
-        "no.nav.aap.oppgave.plukk.FinnNesteOppgaveDto": {
-            enheter: string[];
-            /** Format: int64 */
-            filterId: number;
-        };
-        "no.nav.aap.oppgave.plukk.NesteOppgaveDto": {
-            avklaringsbehovReferanse: components["schemas"]["no.nav.aap.oppgave.AvklaringsbehovReferanseDto"];
-            /** Format: int64 */
-            oppgaveId: number;
-            /** Format: int64 */
-            oppgaveVersjon: number;
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
             /** Format: int64 */
