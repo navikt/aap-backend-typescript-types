@@ -2557,6 +2557,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/sak/{saksnummer}/rettighet": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.rettighet.RettighetDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/klage/{referanse}/grunnlag/p\u00E5klaget-behandling": {
         parameters: {
             query?: never;
@@ -5880,6 +5918,33 @@ export interface components {
              */
             tom?: string | null;
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.rettighet.RettighetDto": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            avslagDato?: string | null;
+            /** @enum {string|null} */
+            "avslag\u00C5rsak"?: "STANS" | "OPPHØR" | "KUN_INNGANGSVILKÅR" | "UKJENT" | null;
+            /** Format: int32 */
+            bruktKvote?: number | null;
+            /** Format: int32 */
+            "gjenv\u00E6rendeKvote"?: number | null;
+            /** Format: int32 */
+            kvote?: number | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            maksDato?: string | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            startDato?: string | null;
+            /** @enum {string} */
+            type: "BISTANDSBEHOV" | "SYKEPENGEERSTATNING" | "STUDENT" | "ARBEIDSSØKER" | "VURDERES_FOR_UFØRETRYGD";
         };
         "no.nav.aap.behandlingsflyt.behandling.rettighetsperiode.RettighetsperiodeGrunnlagResponse": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
