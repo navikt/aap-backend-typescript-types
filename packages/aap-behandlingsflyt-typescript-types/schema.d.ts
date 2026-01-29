@@ -4108,7 +4108,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/drift/brev/{referanse}/avbryt": {
+    "/api/drift/brev/{brevbestillingReferanse}/avbryt": {
         parameters: {
             query?: never;
             header?: never;
