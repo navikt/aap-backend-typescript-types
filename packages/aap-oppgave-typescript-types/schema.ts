@@ -436,6 +436,10 @@ export interface paths {
                 query?: {
                     /** @description Vis kun på vent-oppgaver. */
                     kunPaaVent?: boolean;
+                    /** @description Sorter oppgaveliste */
+                    sortby?: PathsMineOppgaverGetParametersQuerySortby;
+                    /** @description Sorteringsrekkefølge */
+                    sortorder?: PathsMineOppgaverGetParametersQuerySortorder;
                 };
                 header?: never;
                 path?: never;
@@ -1417,12 +1421,19 @@ export interface components {
             enheter: string[];
             veileder?: string | null;
         };
+        "no.nav.aap.oppgave.liste.OppgaveSortering": {
+            /** @enum {string|null} */
+            sortBy?: NoNavAapOppgaveListeOppgaveSorteringSortBy;
+            /** @enum {string|null} */
+            sortOrder?: NoNavAapOppgaveListeOppgaveSorteringSortOrder;
+        };
         "no.nav.aap.oppgave.liste.OppgavelisteRequest": {
             enheter: string[];
             /** Format: int64 */
             filterId: number;
             kunLedigeOppgaver?: boolean | null;
             paging: components["schemas"]["no.nav.aap.oppgave.liste.Paging"];
+            sortering?: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveSortering"];
             utvidetFilter?: components["schemas"]["no.nav.aap.oppgave.liste.UtvidetOppgavelisteFilter"];
             veileder: boolean;
         };
@@ -1563,6 +1574,19 @@ export interface components {
     pathItems: never;
 }
 export type $defs = Record<string, never>;
+export enum PathsMineOppgaverGetParametersQuerySortby {
+    PERSONIDENT = "PERSONIDENT",
+    SAKSNUMMER = "SAKSNUMMER",
+    BEHANDLINGSTYPE = "BEHANDLINGSTYPE",
+    BEHANDLING_OPPRETTET = "BEHANDLING_OPPRETTET",
+    _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE",
+    AVKLARINGSBEHOV_KODE = "AVKLARINGSBEHOV_KODE",
+    OPPRETTET_TIDSPUNKT = "OPPRETTET_TIDSPUNKT"
+}
+export enum PathsMineOppgaverGetParametersQuerySortorder {
+    ASC = "ASC",
+    DESC = "DESC"
+}
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
     Value4102 = "4102",
@@ -1949,6 +1973,19 @@ export enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
     JOURNALF_RING = "JOURNALF\u00D8RING"
+}
+export enum NoNavAapOppgaveListeOppgaveSorteringSortBy {
+    PERSONIDENT = "PERSONIDENT",
+    SAKSNUMMER = "SAKSNUMMER",
+    BEHANDLINGSTYPE = "BEHANDLINGSTYPE",
+    BEHANDLING_OPPRETTET = "BEHANDLING_OPPRETTET",
+    _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE",
+    AVKLARINGSBEHOV_KODE = "AVKLARINGSBEHOV_KODE",
+    OPPRETTET_TIDSPUNKT = "OPPRETTET_TIDSPUNKT"
+}
+export enum NoNavAapOppgaveListeOppgaveSorteringSortOrder {
+    ASC = "ASC",
+    DESC = "DESC"
 }
 export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",

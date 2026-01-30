@@ -37,6 +37,8 @@ __export(index_exports, {
   NoNavAapMotorApiJobbInfoDtoStatus: () => NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
+  NoNavAapOppgaveListeOppgaveSorteringSortBy: () => NoNavAapOppgaveListeOppgaveSorteringSortBy,
+  NoNavAapOppgaveListeOppgaveSorteringSortOrder: () => NoNavAapOppgaveListeOppgaveSorteringSortOrder,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper: () => NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser: () => NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser,
   NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType: () => NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType,
@@ -54,11 +56,28 @@ __export(index_exports, {
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType: () => NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType,
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus: () => NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus,
   NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent: () => NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent,
-  NoNavAapPostmottakKontraktHendelseEndringDTOStatus: () => NoNavAapPostmottakKontraktHendelseEndringDTOStatus
+  NoNavAapPostmottakKontraktHendelseEndringDTOStatus: () => NoNavAapPostmottakKontraktHendelseEndringDTOStatus,
+  PathsMineOppgaverGetParametersQuerySortby: () => PathsMineOppgaverGetParametersQuerySortby,
+  PathsMineOppgaverGetParametersQuerySortorder: () => PathsMineOppgaverGetParametersQuerySortorder
 });
 module.exports = __toCommonJS(index_exports);
 
 // schema.ts
+var PathsMineOppgaverGetParametersQuerySortby = /* @__PURE__ */ ((PathsMineOppgaverGetParametersQuerySortby2) => {
+  PathsMineOppgaverGetParametersQuerySortby2["PERSONIDENT"] = "PERSONIDENT";
+  PathsMineOppgaverGetParametersQuerySortby2["SAKSNUMMER"] = "SAKSNUMMER";
+  PathsMineOppgaverGetParametersQuerySortby2["BEHANDLINGSTYPE"] = "BEHANDLINGSTYPE";
+  PathsMineOppgaverGetParametersQuerySortby2["BEHANDLING_OPPRETTET"] = "BEHANDLING_OPPRETTET";
+  PathsMineOppgaverGetParametersQuerySortby2["_RSAK_TIL_OPPRETTELSE"] = "\xC5RSAK_TIL_OPPRETTELSE";
+  PathsMineOppgaverGetParametersQuerySortby2["AVKLARINGSBEHOV_KODE"] = "AVKLARINGSBEHOV_KODE";
+  PathsMineOppgaverGetParametersQuerySortby2["OPPRETTET_TIDSPUNKT"] = "OPPRETTET_TIDSPUNKT";
+  return PathsMineOppgaverGetParametersQuerySortby2;
+})(PathsMineOppgaverGetParametersQuerySortby || {});
+var PathsMineOppgaverGetParametersQuerySortorder = /* @__PURE__ */ ((PathsMineOppgaverGetParametersQuerySortorder2) => {
+  PathsMineOppgaverGetParametersQuerySortorder2["ASC"] = "ASC";
+  PathsMineOppgaverGetParametersQuerySortorder2["DESC"] = "DESC";
+  return PathsMineOppgaverGetParametersQuerySortorder2;
+})(PathsMineOppgaverGetParametersQuerySortorder || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4102"] = "4102";
@@ -468,6 +487,21 @@ var NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = /* @__PURE__ */ ((
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
   return NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper2;
 })(NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper || {});
+var NoNavAapOppgaveListeOppgaveSorteringSortBy = /* @__PURE__ */ ((NoNavAapOppgaveListeOppgaveSorteringSortBy2) => {
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["PERSONIDENT"] = "PERSONIDENT";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["SAKSNUMMER"] = "SAKSNUMMER";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["BEHANDLINGSTYPE"] = "BEHANDLINGSTYPE";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["BEHANDLING_OPPRETTET"] = "BEHANDLING_OPPRETTET";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["_RSAK_TIL_OPPRETTELSE"] = "\xC5RSAK_TIL_OPPRETTELSE";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["AVKLARINGSBEHOV_KODE"] = "AVKLARINGSBEHOV_KODE";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["OPPRETTET_TIDSPUNKT"] = "OPPRETTET_TIDSPUNKT";
+  return NoNavAapOppgaveListeOppgaveSorteringSortBy2;
+})(NoNavAapOppgaveListeOppgaveSorteringSortBy || {});
+var NoNavAapOppgaveListeOppgaveSorteringSortOrder = /* @__PURE__ */ ((NoNavAapOppgaveListeOppgaveSorteringSortOrder2) => {
+  NoNavAapOppgaveListeOppgaveSorteringSortOrder2["ASC"] = "ASC";
+  NoNavAapOppgaveListeOppgaveSorteringSortOrder2["DESC"] = "DESC";
+  return NoNavAapOppgaveListeOppgaveSorteringSortOrder2;
+})(NoNavAapOppgaveListeOppgaveSorteringSortOrder || {});
 var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2) => {
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["REVURDERING"] = "REVURDERING";
@@ -599,6 +633,8 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
+  NoNavAapOppgaveListeOppgaveSorteringSortBy,
+  NoNavAapOppgaveListeOppgaveSorteringSortOrder,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser,
   NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType,
@@ -616,6 +652,8 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType,
   NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus,
   NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent,
-  NoNavAapPostmottakKontraktHendelseEndringDTOStatus
+  NoNavAapPostmottakKontraktHendelseEndringDTOStatus,
+  PathsMineOppgaverGetParametersQuerySortby,
+  PathsMineOppgaverGetParametersQuerySortorder
 });
 //# sourceMappingURL=index.js.map
