@@ -4127,7 +4127,11 @@ export interface paths {
                 };
                 cookie?: never;
             };
-            requestBody?: never;
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$AvbrytBrevBody`"];
+                };
+            };
             responses: {
                 /** @description OK */
                 200: {
@@ -4764,6 +4768,7 @@ export interface components {
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivVedtaksbrevL\u00F8sning": {
+            begrunnelse?: string | null;
             /** @enum {string} */
             behovstype: "4101" | "4102" | "4201" | "5001" | "5002" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5019" | "5020" | "5021" | "5022" | "5023" | "5024" | "5025" | "5026" | "5027" | "5028" | "5029" | "5030" | "5031" | "5032" | "5033" | "5034" | "5035" | "5040" | "5050" | "5051" | "5052" | "5053" | "5056" | "5057" | "5096" | "5097" | "5098" | "5099" | "5999" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6008" | "6009" | "6010" | "7001" | "8001" | "8002" | "8003" | "9001" | "9002" | "9003" | "9004";
             /** Format: uuid */
@@ -6361,6 +6366,9 @@ export interface components {
             saksnummer: string;
             /** @enum {string} */
             status: "OPPRETTET" | "UTREDES" | "LØPENDE" | "AVSLUTTET";
+        };
+        "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$AvbrytBrevBody`": {
+            begrunnelse: string;
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$KjorFraSteg`": {
             /** @enum {string} */
