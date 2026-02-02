@@ -7325,6 +7325,7 @@ export interface components {
             identifikator: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Innsending": {
+            digitalisertAvPostmottak?: boolean | null;
             /** @enum {string} */
             kanal: "DIGITAL" | "PAPIR";
             melding?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Melding"];
