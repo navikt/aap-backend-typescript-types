@@ -1918,6 +1918,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/grunnlag/andrestatligeytelser/{referanse}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.andrestatligeytelser.AndreStatligeYtelserGrunnlagDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/barnetillegg/grunnlag/{referanse}": {
         parameters: {
             query?: never;
@@ -4387,6 +4425,25 @@ export interface components {
             grunn: "IKKE_RIMELIG_GRUNN" | "RIMELIG_GRUNN";
             registrertTrekk?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_9.AktivitetspliktTrekkDto"];
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.andrestatligeytelser.AndreStatligeYtelserGrunnlagDto": {
+            dagpengerPerioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.andrestatligeytelser.DagpengerPeriodeDto"][];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.andrestatligeytelser.DagpengerPeriodeDto": {
+            /** @enum {string} */
+            dagpengerYtelseType: "DAGPENGER_ARBEIDSSOKER_ORDINAER" | "DAGPENGER_PERMITTERING_ORDINAER" | "DAGPENGER_PERMITTERING_FISKEINDUSTRI";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fom: string;
+            /** @enum {string} */
+            kilde: "ARENA" | "DP_SAK";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tom: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.arbeidsevne.ArbeidsevneGrunnlagDto": {
             "beh\u00F8verVurderinger": components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
