@@ -6128,6 +6128,7 @@ export interface components {
             gjeldendeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.sykestipend.SykestipendvurderingResponse"];
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.sykestipend.SykestipendvurderingResponse"][];
+            "sykeStipendSvarFraS\u00F8knad"?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.student.sykestipend.SykestipendvurderingResponse": {
             begrunnelse: string;
