@@ -6476,7 +6476,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.drift.Vilk\u00E5rDriftsinfoDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.drift.ForenkletVilk\u00E5rsperiode"][];
             /** @enum {string} */
-            type: "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "SYKEPENGEERSTATNING" | "STUDENT" | "STRAFFEGJENNOMFØRING" | "AKTIVITETSPLIKT" | "OPPHOLDSKRAV" | "INNTEKTSBORTFALL";
+            type: "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "SYKEPENGEERSTATNING" | "STUDENT" | "STRAFFEGJENNOMFØRING" | "AKTIVITETSPLIKT" | "OPPHOLDSKRAV" | "INNTEKTSBORTFALL" | "ORDINÆR_KVOTE";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -7267,7 +7267,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rsperiodeDTO"][];
             /** @enum {string} */
-            "vilk\u00E5rtype": "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "SYKEPENGEERSTATNING" | "STUDENT" | "STRAFFEGJENNOMFØRING" | "AKTIVITETSPLIKT" | "OPPHOLDSKRAV" | "INNTEKTSBORTFALL";
+            "vilk\u00E5rtype": "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "SYKEPENGEERSTATNING" | "STUDENT" | "STRAFFEGJENNOMFØRING" | "AKTIVITETSPLIKT" | "OPPHOLDSKRAV" | "INNTEKTSBORTFALL" | "ORDINÆR_KVOTE";
             /**
              * Format: date
              * @example 2025-04-01
