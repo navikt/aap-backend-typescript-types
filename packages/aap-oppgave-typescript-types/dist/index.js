@@ -20,6 +20,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // index.ts
 var index_exports = {};
 __export(index_exports, {
+  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus: () => NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode: () => NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv: () => NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg: () => NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
@@ -78,6 +79,11 @@ var PathsMineOppgaverGetParametersQuerySortorder = /* @__PURE__ */ ((PathsMineOp
   PathsMineOppgaverGetParametersQuerySortorder2["DESC"] = "DESC";
   return PathsMineOppgaverGetParametersQuerySortorder2;
 })(PathsMineOppgaverGetParametersQuerySortorder || {});
+var NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2) => {
+  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2["OPPRETTET"] = "OPPRETTET";
+  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2["AVSLUTTET"] = "AVSLUTTET";
+  return NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2;
+})(NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4102"] = "4102";
@@ -616,6 +622,7 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
 })(NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent || {});
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,

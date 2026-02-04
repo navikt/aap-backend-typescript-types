@@ -1133,10 +1133,71 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/drift/oppgave/behandling/{referanse}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.OppgaveDriftsinfoDTO"][];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "no.nav.aap.behandlingsflyt.drift.OppgaveDriftsinfoDTO": {
+            /** Format: uuid */
+            behandlingRef: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            endretTidspunkt?: string | null;
+            enhet: string;
+            "oppf\u00F8lgingsenhet"?: string | null;
+            /** Format: int64 */
+            oppgaveId: number;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt: string;
+            reservertAv?: string | null;
+            /** @enum {string} */
+            status: NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus;
+            veilederArbeid?: string | null;
+            veilederSykdom?: string | null;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
             kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
@@ -1586,6 +1647,10 @@ export enum PathsMineOppgaverGetParametersQuerySortby {
 export enum PathsMineOppgaverGetParametersQuerySortorder {
     ASC = "ASC",
     DESC = "DESC"
+}
+export enum NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
