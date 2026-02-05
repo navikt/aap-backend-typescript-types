@@ -595,6 +595,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SAMORDNING_ANNEN_LOVGIVNING"] = "SAMORDNING_ANNEN_LOVGIVNING";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["STUDENT"] = "STUDENT";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["ORDIN_R_KVOTE"] = "ORDIN\xC6R_KVOTE";
+  NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKEPENGEERSTATNING_KVOTE"] = "SYKEPENGEERSTATNING_KVOTE";
   return NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2;
 })(NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall2) => {
