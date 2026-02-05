@@ -7145,8 +7145,14 @@ export interface components {
         "no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO": {
             definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.EndringDTO"][];
+            perioder?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovPeriodeDTO"][] | null;
             /** @enum {string} */
             status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+        };
+        "no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovPeriodeDTO": {
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            /** @enum {string} */
+            relevans: "RELEVANT" | "IKKE_RELEVANT";
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
