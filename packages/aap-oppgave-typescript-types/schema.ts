@@ -1160,7 +1160,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.OppgaveDriftsinfoDTO"][];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.drift.OppgaveDriftsinfoDTO"][];
                     };
                 };
             };
@@ -1175,29 +1175,6 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "no.nav.aap.behandlingsflyt.drift.OppgaveDriftsinfoDTO": {
-            /** Format: uuid */
-            behandlingRef: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            endretTidspunkt?: string | null;
-            enhet: string;
-            "oppf\u00F8lgingsenhet"?: string | null;
-            /** Format: int64 */
-            oppgaveId: number;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettetTidspunkt: string;
-            reservertAv?: string | null;
-            /** @enum {string} */
-            status: NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus;
-            veilederArbeid?: string | null;
-            veilederSykdom?: string | null;
-        };
         "no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
             kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
@@ -1431,6 +1408,30 @@ export interface components {
             harTilgang: boolean;
             oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
         };
+        "no.nav.aap.oppgave.drift.OppgaveDriftsinfoDTO": {
+            avklaringsbehovKode: string;
+            /** Format: uuid */
+            behandlingRef: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            endretTidspunkt?: string | null;
+            enhet: string;
+            "oppf\u00F8lgingsenhet"?: string | null;
+            /** Format: int64 */
+            oppgaveId: number;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt: string;
+            reservertAv?: string | null;
+            /** @enum {string} */
+            status: NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
+            veilederArbeid?: string | null;
+            veilederSykdom?: string | null;
+        };
         "no.nav.aap.oppgave.enhet.EnhetDto": {
             enhetNr: string;
             navn: string;
@@ -1647,10 +1648,6 @@ export enum PathsMineOppgaverGetParametersQuerySortby {
 export enum PathsMineOppgaverGetParametersQuerySortorder {
     ASC = "ASC",
     DESC = "DESC"
-}
-export enum NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus {
-    OPPRETTET = "OPPRETTET",
-    AVSLUTTET = "AVSLUTTET"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
@@ -2014,6 +2011,10 @@ export enum NoNavAapOppgaveReturInformasjonRsaker {
     SKRIVEFEIL = "SKRIVEFEIL",
     FOR_DETALJERT = "FOR_DETALJERT",
     IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET"
+}
+export enum NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus {
+    OPPRETTET = "OPPRETTET",
+    AVSLUTTET = "AVSLUTTET"
 }
 export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",

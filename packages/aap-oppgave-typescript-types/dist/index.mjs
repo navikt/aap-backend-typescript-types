@@ -14,11 +14,6 @@ var PathsMineOppgaverGetParametersQuerySortorder = /* @__PURE__ */ ((PathsMineOp
   PathsMineOppgaverGetParametersQuerySortorder2["DESC"] = "DESC";
   return PathsMineOppgaverGetParametersQuerySortorder2;
 })(PathsMineOppgaverGetParametersQuerySortorder || {});
-var NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2) => {
-  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2["OPPRETTET"] = "OPPRETTET";
-  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2["AVSLUTTET"] = "AVSLUTTET";
-  return NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus2;
-})(NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2) => {
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4101"] = "4101";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value4102"] = "4102";
@@ -402,6 +397,11 @@ var NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ ((NoNavAapOppgaveRet
   NoNavAapOppgaveReturInformasjonRsaker2["IKKE_INDIVIDUELL_OG_KONKRET"] = "IKKE_INDIVIDUELL_OG_KONKRET";
   return NoNavAapOppgaveReturInformasjonRsaker2;
 })(NoNavAapOppgaveReturInformasjonRsaker || {});
+var NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ ((NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus2) => {
+  NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus2["OPPRETTET"] = "OPPRETTET";
+  NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus2["AVSLUTTET"] = "AVSLUTTET";
+  return NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus2;
+})(NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus || {});
 var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveFilterFilterDtoBehandlingstyper2) => {
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["REVURDERING"] = "REVURDERING";
@@ -556,7 +556,6 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   return NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent2;
 })(NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent || {});
 export {
-  NoNavAapBehandlingsflytDriftOppgaveDriftsinfoDTOStatus,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv,
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg,
@@ -572,6 +571,7 @@ export {
   NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak,
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus,
   NoNavAapMotorApiJobbInfoDtoStatus,
+  NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeOppgaveSorteringSortBy,
