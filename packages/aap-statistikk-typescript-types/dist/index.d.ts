@@ -1649,7 +1649,8 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     SAMORDNING = "SAMORDNING",
     INNTEKTSBORTFALL = "INNTEKTSBORTFALL",
     SAMORDNING_ANNEN_LOVGIVNING = "SAMORDNING_ANNEN_LOVGIVNING",
-    STUDENT = "STUDENT"
+    STUDENT = "STUDENT",
+    ORDIN_R_KVOTE = "ORDIN\u00C6R_KVOTE"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall {
     IKKE_VURDERT = "IKKE_VURDERT",
