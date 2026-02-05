@@ -972,6 +972,11 @@ export interface components {
             /** @enum {string} */
             hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
             oppgaveTilStatistikkDto: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            sendtTidspunkt: string;
         };
         "no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto": {
             avklaringsbehovKode: string;
