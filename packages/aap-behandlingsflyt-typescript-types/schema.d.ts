@@ -5578,7 +5578,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningAndreStatligeYtelserVurderingPeriodeDTO": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelse: "SYKEPENGER" | "TILTAKSPENGER" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "DAGPENGER" | "BARNEPENSJON" | "GJENLEVENDEPENSJON";
+            ytelse: "SYKEPENGER" | "FORELDREPENGER" | "TILTAKSPENGER" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "DAGPENGER" | "BARNEPENSJON" | "GJENLEVENDEPENSJON";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningArbeidsgiverGrunnlagDTO": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -6522,7 +6522,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.andrestatligeytelservurdering.SamordningAndreStatligeYtelserVurderingPeriodeDto": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelse: "SYKEPENGER" | "TILTAKSPENGER" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "DAGPENGER" | "BARNEPENSJON" | "GJENLEVENDEPENSJON";
+            ytelse: "SYKEPENGER" | "FORELDREPENGER" | "TILTAKSPENGER" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "DAGPENGER" | "BARNEPENSJON" | "GJENLEVENDEPENSJON";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.arbeidsgiver.SamordningArbeidsgiverVurderingerDTO": {
             begrunnelse: string;
