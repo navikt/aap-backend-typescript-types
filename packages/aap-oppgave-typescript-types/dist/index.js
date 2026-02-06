@@ -198,6 +198,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ANDRE_STATLIGE_YTELSER"] = "SAMORDNING_ANDRE_STATLIGE_YTELSER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_RETTIGHETSTYPE"] = "FASTSETT_RETTIGHETSTYPE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["IKKE_OPPFYLT_MELDEPLIKT"] = "IKKE_OPPFYLT_MELDEPLIKT";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_VEDTAKSLENGDE"] = "FASTSETT_VEDTAKSLENGDE";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
@@ -287,6 +288,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_ANDRE_STATLIGE_YTELSER"] = "SAMORDNING_ANDRE_STATLIGE_YTELSER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_RETTIGHETSTYPE"] = "FASTSETT_RETTIGHETSTYPE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["IKKE_OPPFYLT_MELDEPLIKT"] = "IKKE_OPPFYLT_MELDEPLIKT";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_VEDTAKSLENGDE"] = "FASTSETT_VEDTAKSLENGDE";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["FASTSETT_UTTAK"] = "FASTSETT_UTTAK";
