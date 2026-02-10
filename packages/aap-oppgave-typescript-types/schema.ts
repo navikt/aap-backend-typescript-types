@@ -1277,7 +1277,9 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             sakOpprettet: string;
+            saksbehandlingURL: string;
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
+            "totaltFeilutbetaltBel\u00F8p": number;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
             /** @enum {string} */
@@ -1373,6 +1375,7 @@ export interface components {
             saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapOppgaveOppgaveDtoStatus;
+            tilbakekrevingsVarsDto?: components["schemas"]["no.nav.aap.oppgave.TilbakekrevingsVarsDto"];
             /**
              * Format: date
              * @example 2025-04-01
@@ -1407,6 +1410,10 @@ export interface components {
             harAdressebeskyttelse: boolean;
             harTilgang: boolean;
             oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+        };
+        "no.nav.aap.oppgave.TilbakekrevingsVarsDto": {
+            tilbakekrevings_URL: string;
+            "tilbakekrevings_bel\u00F8p": number;
         };
         "no.nav.aap.oppgave.drift.OppgaveDriftsinfoDTO": {
             avklaringsbehovKode: string;
@@ -1515,6 +1522,8 @@ export interface components {
         "no.nav.aap.oppgave.liste.UtvidetOppgavelisteFilter": {
             avklaringsbehovKoder: string[];
             behandlingstyper: NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper[];
+            "bel\u00F8pMerEnn"?: number | null;
+            "bel\u00F8pMindreEnn"?: number | null;
             /**
              * Format: date
              * @example 2025-04-01
