@@ -6076,6 +6076,7 @@ export interface components {
              * @example 2025-04-01
              */
             maksDato?: string | null;
+            periodeKvoter: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.underveis.PeriodeKvote"][];
             /**
              * Format: date
              * @example 2025-04-01
@@ -6571,6 +6572,13 @@ export interface components {
              * @example 2025-04-01
              */
             virkningstidspunkt: string;
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.underveis.PeriodeKvote": {
+            /** Format: int32 */
+            bruktKvote: number;
+            /** Format: int32 */
+            "gjenv\u00E6rendeKvote"?: number | null;
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.vilk\u00E5rsresultat.Vilk\u00E5rsperiode": {
             /** @enum {string|null} */
