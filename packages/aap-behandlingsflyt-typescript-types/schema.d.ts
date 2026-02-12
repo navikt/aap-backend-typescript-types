@@ -1502,6 +1502,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/{referanse}/grunnlag/institusjon/helseny": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseinstitusjonGrunnlagDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/behandling/l\u00F8s-behov": {
         parameters: {
             query?: never;
@@ -5701,6 +5739,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseinstitusjonGrunnlagDto": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
             opphold: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.InstitusjonsoppholdDto"][];
+            vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseoppholdDto"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseoppholdDto"][];
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
@@ -5709,9 +5748,12 @@ export interface components {
             faarFriKostOgLosji: boolean;
             forsoergerEktefelle?: boolean | null;
             harFasteUtgifter?: boolean | null;
+            oppholdId?: string | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseoppholdDto": {
+            oppholdId?: string | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
             status: "AVSLÅTT" | "GODKJENT" | "UAVKLART";
@@ -5730,6 +5772,7 @@ export interface components {
              * @example 2025-04-01
              */
             oppholdFra: string;
+            oppholdId?: string | null;
             oppholdstype: string;
             status: string;
         };
