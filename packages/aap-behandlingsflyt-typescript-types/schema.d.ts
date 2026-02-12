@@ -5176,7 +5176,6 @@ export interface components {
             navn: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.refusjon.RefusjonkravGrunnlagResponse": {
-            gjeldendeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.refusjon.RefusjonkravVurderingResponse"];
             gjeldendeVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.refusjon.RefusjonkravVurderingResponse"][] | null;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.refusjon.RefusjonkravVurderingResponse"][] | null;
