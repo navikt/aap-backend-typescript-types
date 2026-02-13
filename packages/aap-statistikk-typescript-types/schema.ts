@@ -919,6 +919,8 @@ export interface components {
             fraDato: string;
             /** Format: double */
             gradering: number;
+            /** @enum {string} */
+            minsteSats: NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats;
             /** Format: double */
             redusertDagsats: number;
             /**
@@ -1639,6 +1641,11 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderings
     UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE",
     MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
     REVURDER_SYKESTIPEND = "REVURDER_SYKESTIPEND"
+}
+export enum NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats {
+    IKKE_MINSTESATS = "IKKE_MINSTESATS",
+    MINSTESATS_OVER_25 = "MINSTESATS_OVER_25",
+    MINSTESATS_UNDER_25 = "MINSTESATS_UNDER_25"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",

@@ -36,6 +36,7 @@ __export(index_exports, {
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus: () => NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat: () => NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov: () => NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov,
+  NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats: () => NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType: () => NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall: () => NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling: () => NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling,
@@ -578,6 +579,12 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["REVURDER_SYKESTIPEND"] = "REVURDER_SYKESTIPEND";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});
+var NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2) => {
+  NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2["IKKE_MINSTESATS"] = "IKKE_MINSTESATS";
+  NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2["MINSTESATS_OVER_25"] = "MINSTESATS_OVER_25";
+  NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2["MINSTESATS_UNDER_25"] = "MINSTESATS_UNDER_25";
+  return NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2;
+})(NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats || {});
 var NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2) => {
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["ALDERSVILK_RET"] = "ALDERSVILK\xC5RET";
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType2["SYKDOMSVILK_RET"] = "SYKDOMSVILK\xC5RET";
@@ -748,6 +755,7 @@ var NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$Antall
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov,
+  NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall,
   NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling,
