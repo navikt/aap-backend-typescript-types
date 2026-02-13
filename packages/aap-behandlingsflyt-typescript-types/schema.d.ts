@@ -5757,7 +5757,7 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            avsluttetDato?: string | null;
+            avsluttetDato: string;
             institusjonstype: string;
             kildeinstitusjon: string;
             /**
