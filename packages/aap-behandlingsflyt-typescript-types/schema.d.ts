@@ -5376,12 +5376,12 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerGrunnlagResponse": {
             "beh\u00F8verVurderinger": components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             "harTilgangTil\u00C5Saksbehandle": boolean;
+            ikkeRelevantePerioder: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             kanVurderes: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             nyeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
             sisteVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
-            ikkeRelevantePerioder: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse": {
             begrunnelse: string;
