@@ -428,6 +428,41 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/dokumenter/finn-ubehandlede": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.joarkavstemmer.UavstemtJournalpost"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/behandling/{referanse}/grunnlag/avklarTemaVurdering": {
         parameters: {
             query?: never;
@@ -1285,6 +1320,18 @@ export interface components {
              * @example 2025-04-01
              */
             opprettetDato: string;
+        };
+        "no.nav.aap.postmottak.joarkavstemmer.UavstemtJournalpost": {
+            /** Format: uuid */
+            behandlingReferanse?: string | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            datoOpprettet: string;
+            /** Format: int64 */
+            journalpostId: number;
+            mottaksKanal?: string | null;
         };
         /** Format: uuid */
         "no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse": string;
