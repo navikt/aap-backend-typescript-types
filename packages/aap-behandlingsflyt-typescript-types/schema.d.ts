@@ -7012,18 +7012,8 @@ export interface components {
             tom?: string | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.refusjonkrav.RefusjonkravVurderingDto": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            fom?: string | null;
             harKrav: boolean;
             navKontor?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            tom?: string | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.rettighetsperiode.RettighetsperiodeVurderingDTO": {
             begrunnelse: string;
