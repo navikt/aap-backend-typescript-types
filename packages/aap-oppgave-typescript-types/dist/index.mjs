@@ -309,6 +309,7 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["KABAL_HENDELSE_ID"] = "KABAL_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["TILBAKEKREVING_HENDELSE_ID"] = "TILBAKEKREVING_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SYKEPENGEVEDTAK_HENDELSE_ID"] = "SYKEPENGEVEDTAK_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["FAGSYSTEMINFO_BEHOV_HENDELSE_ID"] = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["PDL_HENDELSE_ID"] = "PDL_HENDELSE_ID";
   return NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2;
@@ -332,6 +333,7 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["PDL_HENDELSE_DODSFALL_BARN"] = "PDL_HENDELSE_DODSFALL_BARN";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["INSTITUSJONSOPPHOLD"] = "INSTITUSJONSOPPHOLD";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["SYKEPENGE_VEDTAK_HENDELSE"] = "SYKEPENGE_VEDTAK_HENDELSE";
   return NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2;
 })(NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType || {});
 var NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2) => {
