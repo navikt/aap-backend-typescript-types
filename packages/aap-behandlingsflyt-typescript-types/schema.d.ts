@@ -375,7 +375,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans" | "OppfølgingsBehandling" | "Aktivitetsplikt" | "Aktivitetsplikt11_9";
+                    "application/json": "Aktivitetsplikt" | "Aktivitetsplikt11_9" | "Førstegangsbehandling" | "Klage" | "OppfølgingsBehandling" | "Revurdering" | "SvarFraAndreinstans" | "Tilbakekreving";
                 };
             };
             responses: {
@@ -4450,7 +4450,7 @@ export interface components {
             gjelderFra: string;
             skalIgnorereVarselFrist: boolean;
             /** @enum {string|null} */
-            utfall?: "STANS" | "OPPHØR" | null;
+            utfall?: "OPPHØR" | "STANS" | null;
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_9.Aktivitetsplikt11_9GrunnlagDto": {
@@ -4461,7 +4461,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_9.Aktivitetsplikt11_9VurderingDto": {
             begrunnelse: string;
             /** @enum {string} */
-            brudd: "IKKE_MØTT_TIL_TILTAK" | "IKKE_MØTT_TIL_BEHANDLING" | "IKKE_MØTT_TIL_MØTE" | "IKKE_SENDT_DOKUMENTASJON";
+            brudd: "IKKE_MØTT_TIL_BEHANDLING" | "IKKE_MØTT_TIL_MØTE" | "IKKE_MØTT_TIL_TILTAK" | "IKKE_SENDT_DOKUMENTASJON";
             /**
              * Format: date
              * @example 2025-04-01
@@ -4491,7 +4491,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_9.AktivitetspliktVurderingMedTrekkDto": {
             begrunnelse: string;
             /** @enum {string} */
-            brudd: "IKKE_MØTT_TIL_TILTAK" | "IKKE_MØTT_TIL_BEHANDLING" | "IKKE_MØTT_TIL_MØTE" | "IKKE_SENDT_DOKUMENTASJON";
+            brudd: "IKKE_MØTT_TIL_BEHANDLING" | "IKKE_MØTT_TIL_MØTE" | "IKKE_MØTT_TIL_TILTAK" | "IKKE_SENDT_DOKUMENTASJON";
             /**
              * Format: date
              * @example 2025-04-01
@@ -4507,7 +4507,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.andrestatligeytelser.DagpengerPeriodeDto": {
             /** @enum {string} */
-            dagpengerYtelseType: "DAGPENGER_ARBEIDSSOKER_ORDINAER" | "DAGPENGER_PERMITTERING_ORDINAER" | "DAGPENGER_PERMITTERING_FISKEINDUSTRI";
+            dagpengerYtelseType: "DAGPENGER_ARBEIDSSOKER_ORDINAER" | "DAGPENGER_PERMITTERING_FISKEINDUSTRI" | "DAGPENGER_PERMITTERING_ORDINAER";
             /**
              * Format: date
              * @example 2025-04-01
@@ -4578,7 +4578,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.avbrytrevurdering.flate.AvbrytRevurderingVurderingDto": {
             begrunnelse: string;
             /** @enum {string|null} */
-            "\u00E5rsak"?: "REVURDERINGEN_BLE_OPPRETTET_VED_EN_FEIL" | "DET_HAR_OPPSTAATT_EN_FEIL_OG_BEHANDLINGEN_MAA_STARTES_PAA_NYTT" | null;
+            "\u00E5rsak"?: "DET_HAR_OPPSTAATT_EN_FEIL_OG_BEHANDLINGEN_MAA_STARTES_PAA_NYTT" | "REVURDERINGEN_BLE_OPPRETTET_VED_EN_FEIL" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.BeslutterDto": {
             ident: string;
@@ -4598,7 +4598,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk": {
             /** @enum {string} */
-            aksjon: "SENDT_TIL_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER" | "RETURNERT_FRA_KVALITETSSIKRER" | "KVALITETSSIKRET" | "RETURNERT_FRA_BESLUTTER" | "FATTET_VEDTAK";
+            aksjon: "FATTET_VEDTAK" | "KVALITETSSIKRET" | "RETURNERT_FRA_BESLUTTER" | "RETURNERT_FRA_KVALITETSSIKRER" | "SENDT_TIL_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER";
             avIdent: string;
             /**
              * Format: date-time
@@ -4818,8 +4818,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.H\u00E5ndterSvarFraAndreinstansL\u00F8sningDto": {
             begrunnelse: string;
             /** @enum {string} */
-            konsekvens: "OMGJØRING" | "BEHANDLE_PÅ_NYTT" | "INGENTING";
-            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            konsekvens: "BEHANDLE_PÅ_NYTT" | "INGENTING" | "OMGJØRING";
+            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.KvalitetssikringL\u00F8sning": {
             /** @enum {string} */
@@ -4870,7 +4870,7 @@ export interface components {
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
-            handling: "FERDIGSTILL" | "AVBRYT";
+            handling: "AVBRYT" | "FERDIGSTILL";
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivForh\u00E5ndsvarselBruddAktivitetspliktBrevL\u00F8sning": {
@@ -4879,7 +4879,7 @@ export interface components {
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
-            handling: "FERDIGSTILL" | "AVBRYT";
+            handling: "AVBRYT" | "FERDIGSTILL";
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivForh\u00E5ndsvarselKlageFormkravBrevL\u00F8sning": {
@@ -4888,7 +4888,7 @@ export interface components {
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
-            handling: "FERDIGSTILL" | "AVBRYT";
+            handling: "AVBRYT" | "FERDIGSTILL";
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SkrivVedtaksbrevL\u00F8sning": {
@@ -4898,7 +4898,7 @@ export interface components {
             /** Format: uuid */
             brevbestillingReferanse: string;
             /** @enum {string} */
-            handling: "FERDIGSTILL" | "AVBRYT";
+            handling: "AVBRYT" | "FERDIGSTILL";
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.SykdomsvurderingForBrevL\u00F8sning": {
@@ -4995,7 +4995,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur": {
             /** @enum {string} */
-            "\u00E5rsak": "MANGELFULL_BEGRUNNELSE" | "MANGLENDE_UTREDNING" | "FEIL_LOVANVENDELSE" | "ANNET" | "SKRIVEFEIL" | "FOR_DETALJERT" | "IKKE_INDIVIDUELL_OG_KONKRET";
+            "\u00E5rsak": "ANNET" | "FEIL_LOVANVENDELSE" | "FOR_DETALJERT" | "IKKE_INDIVIDUELL_OG_KONKRET" | "MANGELFULL_BEGRUNNELSE" | "MANGLENDE_UTREDNING" | "SKRIVEFEIL";
             "\u00E5rsakFritekst"?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.BarnetilleggDto": {
@@ -5287,7 +5287,7 @@ export interface components {
             begrunnelse: string;
             besluttetAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             /** @enum {string|null} */
-            "brukerHarF\u00E5ttVedtakOmUf\u00F8retrygd"?: "JA_AVSLAG" | "JA_INNVILGET_GRADERT" | "JA_INNVILGET_FULL" | "NEI" | null;
+            "brukerHarF\u00E5ttVedtakOmUf\u00F8retrygd"?: "JA_AVSLAG" | "JA_INNVILGET_FULL" | "JA_INNVILGET_GRADERT" | "NEI" | null;
             "brukerHarS\u00F8ktUf\u00F8retrygd": boolean;
             "brukerRettP\u00E5AAP"?: boolean | null;
             /**
@@ -5403,7 +5403,7 @@ export interface components {
              */
             gjelderTom?: string | null;
             /** @enum {string|null} */
-            grunn?: "ANNEN_SYKDOM_INNEN_SEKS_MND" | "SAMME_SYKDOM_INNEN_ETT_AAR" | "SYKEPENGER_IGJEN_ARBEIDSUFOR" | "SYKEPENGER_FORTSATT_ARBEIDSUFOR" | "FORELDREPENGER_INNEN_SEKS_MND" | null;
+            grunn?: "ANNEN_SYKDOM_INNEN_SEKS_MND" | "FORELDREPENGER_INNEN_SEKS_MND" | "SAMME_SYKDOM_INNEN_ETT_AAR" | "SYKEPENGER_FORTSATT_ARBEIDSUFOR" | "SYKEPENGER_IGJEN_ARBEIDSUFOR" | null;
             "harRettP\u00E5": boolean;
             kvalitetssikretAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             /**
@@ -5508,7 +5508,7 @@ export interface components {
             brevdata?: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
             brevmal?: string | null;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_UTVID_VEDTAKSLENGDE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_11_23_SJETTE_LEDD" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "BARNETILLEGG_SATS_REGULERING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "KLAGE_MOTTATT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             "harTilgangTil\u00C5SendeBrev": boolean;
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
@@ -5525,7 +5525,7 @@ export interface components {
             /** @enum {string} */
             "spr\u00E5k": "EN" | "NB" | "NN";
             /** @enum {string} */
-            status: "SENDT" | "FORHÅNDSVISNING_KLAR" | "FULLFØRT" | "AVBRUTT";
+            status: "AVBRUTT" | "FORHÅNDSVISNING_KLAR" | "FULLFØRT" | "SENDT";
         };
         "no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker": {
             ident: string;
@@ -5554,13 +5554,13 @@ export interface components {
             /** Format: uuid */
             behandlingsReferanse: string;
             /** @enum {string} */
-            dokumentasjonType: "L40" | "L8" | "L120" | "MELDING_FRA_NAV" | "RETUR_LEGEERKLÆRING" | "PURRING";
+            dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
             fritekst: string;
             saksnummer: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.Forh\u00E5ndsvisBrevRequest": {
             /** @enum {string} */
-            dokumentasjonType: "L40" | "L8" | "L120" | "MELDING_FRA_NAV" | "RETUR_LEGEERKLÆRING" | "PURRING";
+            dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
             fritekst: string;
             saksnummer: string;
         };
@@ -5572,16 +5572,16 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Avslags\u00E5rsakDto": {
             /** @enum {string|null} */
-            underveisavslag?: "IKKE_GRUNNLEGGENDE_RETT" | "MELDEPLIKT_FRIST_IKKE_PASSERT" | "VARIGHETSKVOTE_BRUKT_OPP" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_STANS" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_OPPHØR" | "SONER_STRAFF" | "IKKE_OVERHOLDT_MELDEPLIKT_SANKSJON" | "ARBEIDER_MER_ENN_GRENSEVERDI" | null;
+            underveisavslag?: "ARBEIDER_MER_ENN_GRENSEVERDI" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_STANS" | "IKKE_GRUNNLEGGENDE_RETT" | "IKKE_OVERHOLDT_MELDEPLIKT_SANKSJON" | "MELDEPLIKT_FRIST_IKKE_PASSERT" | "SONER_STRAFF" | "VARIGHETSKVOTE_BRUKT_OPP" | null;
             "vilk\u00E5rsavslag": string[];
         };
         "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakDto": {
             "avslags\u00E5rsak": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Avslags\u00E5rsakDto"];
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string|null} */
-            rettighetsType?: "BISTANDSBEHOV" | "SYKEPENGEERSTATNING" | "STUDENT" | "ARBEIDSSØKER" | "VURDERES_FOR_UFØRETRYGD" | null;
+            rettighetsType?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
             /** @enum {string} */
-            utfall: "IKKE_VURDERT" | "IKKE_RELEVANT" | "OPPFYLT" | "IKKE_OPPFYLT";
+            utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
         };
         "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakResponse": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakDto"][];
@@ -5602,7 +5602,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningAndreStatligeYtelserVurderingPeriodeDTO": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelse: "SYKEPENGER" | "FORELDREPENGER" | "TILTAKSPENGER" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "DAGPENGER" | "BARNEPENSJON" | "GJENLEVENDEPENSJON";
+            ytelse: "BARNEPENSJON" | "DAGPENGER" | "FORELDREPENGER" | "GJENLEVENDEPENSJON" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "SYKEPENGER" | "TILTAKSPENGER";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningArbeidsgiverGrunnlagDTO": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -5616,7 +5616,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningUf\u00F8reGrunnlagDTO": {
             /** @enum {string} */
-            endringStatus: "NY" | "UENDRET" | "SLETTET";
+            endringStatus: "NY" | "SLETTET" | "UENDRET";
             kilde: string;
             /** Format: int32 */
             "uf\u00F8regrad": number;
@@ -5653,11 +5653,11 @@ export interface components {
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE" | "FERIE_I_SYKEPENGEPERIODE";
+            ytelseType: "FERIE_I_SYKEPENGEPERIODE" | "FORELDREPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "SYKEPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseDTO": {
             /** @enum {string} */
-            endringStatus: "NY" | "UENDRET" | "SLETTET";
+            endringStatus: "NY" | "SLETTET" | "UENDRET";
             /** Format: int32 */
             gradering?: number | null;
             kilde: string;
@@ -5666,7 +5666,7 @@ export interface components {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksRef?: string | null;
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE" | "FERIE_I_SYKEPENGEPERIODE";
+            ytelseType: "FERIE_I_SYKEPENGEPERIODE" | "FORELDREPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "SYKEPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningYtelseVurderingDTO": {
             begrunnelse?: string | null;
@@ -5688,7 +5688,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.TjenestepensjonYtelseDTO": {
             ordning: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.tjenestepensjon.TjenestePensjonOrdning"];
             /** @enum {string} */
-            ytelse: "ALDER" | "UFORE" | "GJENLEVENDE" | "BARN" | "AFP" | "UKJENT" | "OPPSATT_BTO_PEN" | "SAERALDER" | "PAASLAGSPENSJON" | "OVERGANGSTILLEGG" | "BETINGET_TP" | "LIVSVARIG_AFP";
+            ytelse: "AFP" | "ALDER" | "BARN" | "BETINGET_TP" | "GJENLEVENDE" | "LIVSVARIG_AFP" | "OPPSATT_BTO_PEN" | "OVERGANGSTILLEGG" | "PAASLAGSPENSJON" | "SAERALDER" | "UFORE" | "UKJENT";
             /**
              * Format: date
              * @example 2025-04-01
@@ -5861,20 +5861,20 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.klage.klagebehandling.KlagevurderingKontorDto": {
             begrunnelse: string;
             /** @enum {string} */
-            innstilling: "OPPRETTHOLD" | "OMGJØR" | "DELVIS_OMGJØR";
+            innstilling: "DELVIS_OMGJØR" | "OMGJØR" | "OPPRETTHOLD";
             kvalitetssikretAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             notat?: string | null;
-            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
-            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
+            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.klagebehandling.KlagevurderingNayDto": {
             begrunnelse: string;
             /** @enum {string} */
-            innstilling: "OPPRETTHOLD" | "OMGJØR" | "DELVIS_OMGJØR";
+            innstilling: "DELVIS_OMGJØR" | "OMGJØR" | "OPPRETTHOLD";
             notat?: string | null;
-            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
-            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
+            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
             vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.p\u00E5klagetbehandling.BehandlingMedVedtakDto": {
@@ -5887,9 +5887,9 @@ export interface components {
             referanse: string;
             saksnummer: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
             /** @enum {string} */
-            typeBehandling: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans" | "OppfølgingsBehandling" | "Aktivitetsplikt" | "Aktivitetsplikt11_9";
+            typeBehandling: "Aktivitetsplikt" | "Aktivitetsplikt11_9" | "Førstegangsbehandling" | "Klage" | "OppfølgingsBehandling" | "Revurdering" | "SvarFraAndreinstans" | "Tilbakekreving";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -5900,9 +5900,9 @@ export interface components {
              * @example 2025-04-01
              */
             virkningstidspunkt?: string | null;
-            vurderingsbehov: ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND")[];
+            vurderingsbehov: ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
             /** @enum {string|null} */
-            "\u00E5rsakTilOpprettelse"?: "SØKNAD" | "MANUELL_OPPRETTELSE" | "HELSEOPPLYSNINGER" | "ANNET_RELEVANT_DOKUMENT" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "ENDRING_I_REGISTERDATA" | "BARNETILLEGG_SATSENDRING" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "MELDEKORT" | "AKTIVITETSMELDING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "KLAGE" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | null;
+            "\u00E5rsakTilOpprettelse"?: "AKTIVITETSMELDING" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "ANNET_RELEVANT_DOKUMENT" | "BARNETILLEGG_SATSENDRING" | "ENDRING_I_REGISTERDATA" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "HELSEOPPLYSNINGER" | "KLAGE" | "MANUELL_OPPRETTELSE" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UTVID_VEDTAKSLENGDE" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.p\u00E5klagetbehandling.P\u00E5klagetBehandlingGrunnlagDto": {
             behandlinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.klage.p\u00E5klagetbehandling.BehandlingMedVedtakDto"][];
@@ -5914,7 +5914,7 @@ export interface components {
             /** Format: uuid */
             "p\u00E5klagetBehandling"?: string | null;
             /** @enum {string} */
-            "p\u00E5klagetVedtakType": "KELVIN_BEHANDLING" | "ARENA_VEDTAK";
+            "p\u00E5klagetVedtakType": "ARENA_VEDTAK" | "KELVIN_BEHANDLING";
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.resultat.KabalKlageResultat": {
             svarFraAndreinstans: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansDto"][];
@@ -5933,7 +5933,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.grunnlag.LovvalgResponse": {
             begrunnelse: string;
             /** @enum {string} */
-            "lovvalgsE\u00D8SLandEllerLandMedAvtale": "BEL" | "BGR" | "DNK" | "EST" | "FIN" | "FRA" | "GRC" | "IRL" | "ISL" | "ITA" | "HRV" | "CYP" | "LVA" | "LIE" | "LTU" | "LUX" | "MLT" | "NLD" | "NOR" | "POL" | "PRT" | "ROU" | "SVK" | "SVN" | "ESP" | "CHE" | "SWE" | "CZE" | "DEU" | "HUN" | "AUT" | "GBR" | "AUS";
+            "lovvalgsE\u00D8SLandEllerLandMedAvtale": "AUS" | "AUT" | "BEL" | "BGR" | "CHE" | "CYP" | "CZE" | "DEU" | "DNK" | "ESP" | "EST" | "FIN" | "FRA" | "GBR" | "GRC" | "HRV" | "HUN" | "IRL" | "ISL" | "ITA" | "LIE" | "LTU" | "LUX" | "LVA" | "MLT" | "NLD" | "NOR" | "POL" | "PRT" | "ROU" | "SVK" | "SVN" | "SWE";
         };
         "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.grunnlag.MedlemskapResponse": {
             begrunnelse: string;
@@ -6025,12 +6025,12 @@ export interface components {
             grunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.oppfolgingsbehandling.Oppf\u00F8lgingsoppgaveGrunnlagResponse"];
             "hvaSkalF\u00F8lgesOpp": string;
             /** @enum {string} */
-            "hvemSkalF\u00F8lgeOpp": "NasjonalEnhet" | "Lokalkontor";
+            "hvemSkalF\u00F8lgeOpp": "Lokalkontor" | "NasjonalEnhet";
         };
         "no.nav.aap.behandlingsflyt.behandling.oppfolgingsbehandling.Oppf\u00F8lgingsoppgaveGrunnlagResponse": {
             /** @enum {string} */
             "konsekvensAvOppf\u00F8lging": "INGEN" | "OPPRETT_VURDERINGSBEHOV";
-            opplysningerTilRevurdering: ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND")[];
+            opplysningerTilRevurdering: ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
             vurdertAv: string;
             "\u00E5rsak"?: string | null;
         };
@@ -6044,7 +6044,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.oppf\u00F8lgingsbehandling.Oppf\u00F8lgingsoppgaveGrunnlagDto": {
             /** @enum {string} */
             "konsekvensAvOppf\u00F8lging": "INGEN" | "OPPRETT_VURDERINGSBEHOV";
-            opplysningerTilRevurdering?: ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND")[] | null;
+            opplysningerTilRevurdering?: ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[] | null;
             "\u00E5rsak"?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.oppholdskrav.AvklarOppholdkravL\u00F8sningForPeriodeDto": {
@@ -6095,7 +6095,7 @@ export interface components {
              */
             avslagDato?: string | null;
             /** @enum {string|null} */
-            "avslag\u00C5rsak"?: "STANS" | "OPPHØR" | "KUN_INNGANGSVILKÅR" | "UKJENT" | null;
+            "avslag\u00C5rsak"?: "KUN_INNGANGSVILKÅR" | "OPPHØR" | "STANS" | "UKJENT" | null;
             /** Format: int32 */
             bruktKvote?: number | null;
             /** Format: int32 */
@@ -6114,7 +6114,7 @@ export interface components {
              */
             startDato?: string | null;
             /** @enum {string} */
-            type: "BISTANDSBEHOV" | "SYKEPENGEERSTATNING" | "STUDENT" | "ARBEIDSSØKER" | "VURDERES_FOR_UFØRETRYGD";
+            type: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD";
         };
         "no.nav.aap.behandlingsflyt.behandling.rettighetsperiode.RettighetsperiodeGrunnlagResponse": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -6128,7 +6128,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.rettighetsperiode.RettighetsperiodeVurderingResponse": {
             begrunnelse: string;
             /** @enum {string} */
-            harRett: "Ja" | "Nei" | "HarRettIkkeIStandTilÅSøkeTidligere" | "HarRettMisvisendeOpplysninger";
+            harRett: "HarRettIkkeIStandTilÅSøkeTidligere" | "HarRettMisvisendeOpplysninger" | "Ja" | "Nei";
             /**
              * Format: date
              * @example 2025-04-01
@@ -6199,9 +6199,9 @@ export interface components {
              */
             opprettetTidspunkt?: string | null;
             /** @enum {string} */
-            type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV";
+            type: "ANKEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "BEHANDLING_FEILREGISTRERT" | "KLAGEBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET";
             /** @enum {string|null} */
-            utfall?: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "MEDHOLD_ETTER_FVL_35" | "HENLAGT" | null;
+            utfall?: "AVVIST" | "DELVIS_MEDHOLD" | "HENLAGT" | "HEVET" | "INNSTILLING_AVVIST" | "INNSTILLING_STADFESTELSE" | "MEDHOLD" | "MEDHOLD_ETTER_FVL_35" | "OPPHEVET" | "RETUR" | "STADFESTELSE" | "TRUKKET" | "UGUNST" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansGrunnlagDto": {
             gjeldendeVurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansVurderingDto"];
@@ -6211,8 +6211,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.svarfraandreinstans.svarfraandreinstans.SvarFraAndreinstansVurderingDto": {
             begrunnelse: string;
             /** @enum {string} */
-            konsekvens: "OMGJØRING" | "BEHANDLE_PÅ_NYTT" | "INGENTING";
-            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            konsekvens: "BEHANDLE_PÅ_NYTT" | "INGENTING" | "OMGJØRING";
+            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
             vurdertAv: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.s\u00F8knad.TrukketS\u00F8knadGrunnlagDto": {
@@ -6283,7 +6283,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto": {
             begrunnelse: string;
             /** @enum {string|null} */
-            hvorforTrekkes?: "TRUKKET_AV_BRUKER" | "FEILREGISTRERING" | null;
+            hvorforTrekkes?: "FEILREGISTRERING" | "TRUKKET_AV_BRUKER" | null;
             skalTrekkes: boolean;
         };
         "no.nav.aap.behandlingsflyt.behandling.underveis.GraderingDto": {
@@ -6322,7 +6322,7 @@ export interface components {
              */
             fraDato: string;
             /** @enum {string} */
-            meldepliktOverstyringStatus: "RIMELIG_GRUNN" | "IKKE_MELDT_SEG" | "HAR_MELDT_SEG";
+            meldepliktOverstyringStatus: "HAR_MELDT_SEG" | "IKKE_MELDT_SEG" | "RIMELIG_GRUNN";
             /**
              * Format: date
              * @example 2025-04-01
@@ -6339,11 +6339,11 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.underveis.RettighetsTypeDto": {
             hjemmel: string;
             /** @enum {string} */
-            rettighetsType: "BISTANDSBEHOV" | "SYKEPENGEERSTATNING" | "STUDENT" | "ARBEIDSSØKER" | "VURDERES_FOR_UFØRETRYGD";
+            rettighetsType: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD";
         };
         "no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "IKKE_GRUNNLEGGENDE_RETT" | "MELDEPLIKT_FRIST_IKKE_PASSERT" | "VARIGHETSKVOTE_BRUKT_OPP" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_STANS" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_OPPHØR" | "SONER_STRAFF" | "IKKE_OVERHOLDT_MELDEPLIKT_SANKSJON" | "ARBEIDER_MER_ENN_GRENSEVERDI" | null;
+            "avslags\u00E5rsak"?: "ARBEIDER_MER_ENN_GRENSEVERDI" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_11_7_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_11_3_STANS" | "IKKE_GRUNNLEGGENDE_RETT" | "IKKE_OVERHOLDT_MELDEPLIKT_SANKSJON" | "MELDEPLIKT_FRIST_IKKE_PASSERT" | "SONER_STRAFF" | "VARIGHETSKVOTE_BRUKT_OPP" | null;
             brukerAvKvoter: ("ORDINÆR" | "SYKEPENGEERSTATNING")[];
             gradering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.underveis.GraderingDto"];
             meldePeriode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
@@ -6351,7 +6351,7 @@ export interface components {
             rettighetsType?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.underveis.RettighetsTypeDto"];
             trekk: components["schemas"]["no.nav.aap.komponenter.verdityper.Dagsatser"];
             /** @enum {string} */
-            utfall: "IKKE_VURDERT" | "IKKE_RELEVANT" | "OPPFYLT" | "IKKE_OPPFYLT";
+            utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.ArbeidInntektINorgeGrunnlag": {
             /** Format: double */
@@ -6372,7 +6372,7 @@ export interface components {
              */
             opphoerstidspunkt?: string | null;
             /** @enum {string|null} */
-            status?: "bosatt" | "utflyttet" | "forsvunnet" | "doed" | "opphort" | "foedselsregistrert" | "ikkeBosatt" | "midlertidig" | "inaktiv" | null;
+            status?: "bosatt" | "doed" | "foedselsregistrert" | "forsvunnet" | "ikkeBosatt" | "inaktiv" | "midlertidig" | "opphort" | "utflyttet" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.KanBehandlesAutomatiskVurdering": {
             kanBehandlesAutomatisk: boolean;
@@ -6426,7 +6426,7 @@ export interface components {
             arbeidInntektINorgeGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.ArbeidInntektINorgeGrunnlag"][] | null;
             /** @enum {string} */
             indikasjon: "I_NORGE" | "UTENFOR_NORGE";
-            kilde: ("SØKNAD" | "PDL" | "MEDL" | "AA_REGISTERET" | "A_INNTEKT" | "EREG")[];
+            kilde: ("AA_REGISTERET" | "A_INNTEKT" | "EREG" | "MEDL" | "PDL" | "SØKNAD")[];
             manglerStatsborgerskapGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.ManglerStatsborgerskapGrunnlag"][] | null;
             mottarSykepengerGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.MottarSykepengerGrunnlag"][] | null;
             oppgittJobbetIUtlandGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.OppgittJobbetIUtlandGrunnlag"][] | null;
@@ -6444,7 +6444,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandskAdresseDto": {
             adresseNavn?: string | null;
             /** @enum {string|null} */
-            adresseType?: "KONTAKT_ADRESSE" | "OPPHOLDS_ADRESSE" | "BOSTEDS_ADRESSE" | null;
+            adresseType?: "BOSTEDS_ADRESSE" | "KONTAKT_ADRESSE" | "OPPHOLDS_ADRESSE" | null;
             bySted?: string | null;
             /**
              * Format: date
@@ -6485,17 +6485,17 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
             type: string;
-            vurderingsbehov: ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND")[];
+            vurderingsbehov: ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
             /** @enum {string|null} */
-            "\u00E5rsakTilOpprettelse"?: "SØKNAD" | "MANUELL_OPPRETTELSE" | "HELSEOPPLYSNINGER" | "ANNET_RELEVANT_DOKUMENT" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "ENDRING_I_REGISTERDATA" | "BARNETILLEGG_SATSENDRING" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "MELDEKORT" | "AKTIVITETSMELDING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "KLAGE" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | null;
+            "\u00E5rsakTilOpprettelse"?: "AKTIVITETSMELDING" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "ANNET_RELEVANT_DOKUMENT" | "BARNETILLEGG_SATSENDRING" | "ENDRING_I_REGISTERDATA" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "HELSEOPPLYSNINGER" | "KLAGE" | "MANUELL_OPPRETTELSE" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UTVID_VEDTAKSLENGDE" | null;
         };
         "no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov": {
             definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endretAv: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: "AVBRUTT" | "AVSLUTTET" | "KVALITETSSIKRET" | "OPPRETTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "TOTRINNS_VURDERT";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -6504,13 +6504,13 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.drift.ForenkletVilk\u00E5rsperiode": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_PA_STUDENT" | "VARIGHET_OVERSKREDET_STUDENT" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | "ANNEN_FULL_YTELSE" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | null;
+            "avslags\u00E5rsak"?: "ANNEN_FULL_YTELSE" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUKER_OVER_67" | "BRUKER_UNDER_18" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "IKKE_RETT_PA_STUDENT" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "MANGLENDE_DOKUMENTASJON" | "NORGE_IKKE_KOMPETENT_STAT" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_STUDENT" | null;
             /** @enum {string|null} */
-            "innvilgelses\u00E5rsak"?: "YRKESSKADE_ÅRSAKSSAMMENHENG" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | "STUDENT" | null;
+            "innvilgelses\u00E5rsak"?: "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | "YRKESSKADE_ÅRSAKSSAMMENHENG" | null;
             manuellVurdering: boolean;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            utfall: "IKKE_VURDERT" | "IKKE_RELEVANT" | "OPPFYLT" | "IKKE_OPPFYLT";
+            utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
         };
         "no.nav.aap.behandlingsflyt.drift.SakDriftsinfoDTO": {
             behandlinger: components["schemas"]["no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfo"][];
@@ -6522,12 +6522,12 @@ export interface components {
             rettighetsperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksnummer: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "LØPENDE" | "AVSLUTTET";
+            status: "AVSLUTTET" | "LØPENDE" | "OPPRETTET" | "UTREDES";
         };
         "no.nav.aap.behandlingsflyt.drift.Vilk\u00E5rDriftsinfoDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.drift.ForenkletVilk\u00E5rsperiode"][];
             /** @enum {string} */
-            type: "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "SYKEPENGEERSTATNING" | "STUDENT" | "STRAFFEGJENNOMFØRING" | "AKTIVITETSPLIKT" | "OPPHOLDSKRAV" | "INNTEKTSBORTFALL" | "ORDINÆR_KVOTE" | "SYKEPENGEERSTATNING_KVOTE";
+            type: "AKTIVITETSPLIKT" | "ALDERSVILKÅRET" | "BISTANDSVILKÅRET" | "GRUNNLAGET" | "INNTEKTSBORTFALL" | "LOVVALG" | "MEDLEMSKAP" | "OPPHOLDSKRAV" | "ORDINÆR_KVOTE" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "STRAFFEGJENNOMFØRING" | "STUDENT" | "SYKDOMSVILKÅRET" | "SYKEPENGEERSTATNING" | "SYKEPENGEERSTATNING_KVOTE";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -6539,7 +6539,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$KjorFraSteg`": {
             /** @enum {string} */
-            steg: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "SAMORDNING_SYKESTIPEND" | "VURDER_BISTANDSBEHOV" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "SYKDOMSVURDERING_BREV" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "ARBEIDSOPPTRAPPING" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "VURDER_INNTEKTSBORTFALL" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_RETTIGHETSTYPE" | "IKKE_OPPFYLT_MELDEPLIKT" | "FASTSETT_VEDTAKSLENGDE" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "AVBRYT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPFØLGING" | "VURDER_AKTIVITETSPLIKT_11_7" | "IVERKSETT_BRUDD" | "VURDER_AKTIVITETSPLIKT_11_9" | "UDEFINERT";
+            steg: "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.aktivitetsplikt.Aktivitetsplikt11_7L\u00F8sningDto": {
             begrunnelse: string;
@@ -6551,12 +6551,12 @@ export interface components {
             gjelderFra: string;
             skalIgnorereVarselFrist: boolean;
             /** @enum {string|null} */
-            utfall?: "STANS" | "OPPHØR" | null;
+            utfall?: "OPPHØR" | "STANS" | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.aktivitetsplikt.Aktivitetsplikt11_9L\u00F8sningDto": {
             begrunnelse: string;
             /** @enum {string} */
-            brudd: "IKKE_MØTT_TIL_TILTAK" | "IKKE_MØTT_TIL_BEHANDLING" | "IKKE_MØTT_TIL_MØTE" | "IKKE_SENDT_DOKUMENTASJON";
+            brudd: "IKKE_MØTT_TIL_BEHANDLING" | "IKKE_MØTT_TIL_MØTE" | "IKKE_MØTT_TIL_TILTAK" | "IKKE_SENDT_DOKUMENTASJON";
             /**
              * Format: date
              * @example 2025-04-01
@@ -6572,7 +6572,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.andrestatligeytelservurdering.SamordningAndreStatligeYtelserVurderingPeriodeDto": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelse: "SYKEPENGER" | "FORELDREPENGER" | "TILTAKSPENGER" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "DAGPENGER" | "BARNEPENSJON" | "GJENLEVENDEPENSJON";
+            ytelse: "BARNEPENSJON" | "DAGPENGER" | "FORELDREPENGER" | "GJENLEVENDEPENSJON" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "SYKEPENGER" | "TILTAKSPENGER";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.arbeidsgiver.SamordningArbeidsgiverVurderingerDTO": {
             begrunnelse: string;
@@ -6606,7 +6606,7 @@ export interface components {
              */
             ytelseIverksattTom?: string | null;
             /** @enum {string} */
-            ytelseType: "ALDER" | "UFORE" | "GJENLEVENDE" | "BARN" | "AFP" | "UKJENT" | "OPPSATT_BTO_PEN" | "SAERALDER" | "PAASLAGSPENSJON" | "OVERGANGSTILLEGG" | "BETINGET_TP" | "LIVSVARIG_AFP";
+            ytelseType: "AFP" | "ALDER" | "BARN" | "BETINGET_TP" | "GJENLEVENDE" | "LIVSVARIG_AFP" | "OPPSATT_BTO_PEN" | "OVERGANGSTILLEGG" | "PAASLAGSPENSJON" | "SAERALDER" | "UFORE" | "UKJENT";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.uf\u00F8revurdering.SamordningUf\u00F8reVurderingDto": {
             begrunnelse: string;
@@ -6630,14 +6630,14 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.vilk\u00E5rsresultat.Vilk\u00E5rsperiode": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_PA_STUDENT" | "VARIGHET_OVERSKREDET_STUDENT" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | "ANNEN_FULL_YTELSE" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | null;
+            "avslags\u00E5rsak"?: "ANNEN_FULL_YTELSE" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUKER_OVER_67" | "BRUKER_UNDER_18" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "IKKE_RETT_PA_STUDENT" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "MANGLENDE_DOKUMENTASJON" | "NORGE_IKKE_KOMPETENT_STAT" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_STUDENT" | null;
             begrunnelse?: string | null;
             /** @enum {string|null} */
-            "innvilgelses\u00E5rsak"?: "YRKESSKADE_ÅRSAKSSAMMENHENG" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | "STUDENT" | null;
+            "innvilgelses\u00E5rsak"?: "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | "YRKESSKADE_ÅRSAKSSAMMENHENG" | null;
             manuellVurdering: boolean;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            utfall: "IKKE_VURDERT" | "IKKE_RELEVANT" | "OPPFYLT" | "IKKE_OPPFYLT";
+            utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
             versjon: string;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.dokumentinnhenting.BrevResponse": {
@@ -6657,7 +6657,7 @@ export interface components {
             personId: string;
             saksnummer: string;
             /** @enum {string|null} */
-            status?: "BESTILT" | "SENDT" | "OK" | "AVVIST" | null;
+            status?: "AVVIST" | "BESTILT" | "OK" | "SENDT" | null;
             statusTekst?: string | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.behandlendeenhet.BehandlendeEnhetL\u00F8sningDto": {
@@ -6683,7 +6683,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.IdentMedType": {
             ident: string;
             /** @enum {string} */
-            type: "ORGNR" | "UTL_ORG" | "FNR_DNR";
+            type: "FNR_DNR" | "ORGNR" | "UTL_ORG";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse": {
             adresse: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.Adresse"];
@@ -6692,62 +6692,62 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.klagebehandling.kontor.KlagevurderingKontorL\u00F8sningDto": {
             begrunnelse: string;
             /** @enum {string} */
-            innstilling: "OPPRETTHOLD" | "OMGJØR" | "DELVIS_OMGJØR";
+            innstilling: "DELVIS_OMGJØR" | "OMGJØR" | "OPPRETTHOLD";
             notat?: string | null;
-            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
-            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
+            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.klagebehandling.nay.KlagevurderingNayL\u00F8sningDto": {
             begrunnelse: string;
             /** @enum {string} */
-            innstilling: "OPPRETTHOLD" | "OMGJØR" | "DELVIS_OMGJØR";
+            innstilling: "DELVIS_OMGJØR" | "OMGJØR" | "OPPRETTHOLD";
             notat?: string | null;
-            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
-            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            "vilk\u00E5rSomOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
+            "vilk\u00E5rSomOpprettholdes": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.p\u00E5klagetbehandling.P\u00E5klagetBehandlingVurderingL\u00F8sningDto": {
             /** Format: uuid */
             "p\u00E5klagetBehandling"?: string | null;
             /** @enum {string} */
-            "p\u00E5klagetVedtakType": "KELVIN_BEHANDLING" | "ARENA_VEDTAK";
+            "p\u00E5klagetVedtakType": "ARENA_VEDTAK" | "KELVIN_BEHANDLING";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Avsl\u00E5tt": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
+            type: "AVSLÅTT" | "DELVIS_OMGJØRES" | "OMGJØRES" | "OPPRETTHOLDES" | "TRUKKET" | "UFULLSTENDIG";
             /** @enum {string} */
             "\u00E5rsak": "IKKE_OVERHOLDT_FORMKRAV" | "IKKE_OVERHOLDT_FRIST";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.DelvisOmgj\u00F8res": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
-            "vilk\u00E5rSomSkalOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
-            "vilk\u00E5rSomSkalOpprettholdes": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            type: "AVSLÅTT" | "DELVIS_OMGJØRES" | "OMGJØRES" | "OPPRETTHOLDES" | "TRUKKET" | "UFULLSTENDIG";
+            "vilk\u00E5rSomSkalOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
+            "vilk\u00E5rSomSkalOpprettholdes": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.KlageResultat": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Avsl\u00E5tt"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.DelvisOmgj\u00F8res"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Omgj\u00F8res"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Opprettholdes"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Trukket"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Ufullstendig"];
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Omgj\u00F8res": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
-            "vilk\u00E5rSomSkalOmgj\u00F8res": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            type: "AVSLÅTT" | "DELVIS_OMGJØRES" | "OMGJØRES" | "OPPRETTHOLDES" | "TRUKKET" | "UFULLSTENDIG";
+            "vilk\u00E5rSomSkalOmgj\u00F8res": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Opprettholdes": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
-            "vilk\u00E5rSomSkalOpprettholdes": ("FOLKETRYGDLOVEN_KAPITTEL_2" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17")[];
+            type: "AVSLÅTT" | "DELVIS_OMGJØRES" | "OMGJØRES" | "OPPRETTHOLDES" | "TRUKKET" | "UFULLSTENDIG";
+            "vilk\u00E5rSomSkalOpprettholdes": ("FOLKETRYGDLOVEN_11_10_FRITAK" | "FOLKETRYGDLOVEN_11_10_MELDEPLIKT" | "FOLKETRYGDLOVEN_11_12" | "FOLKETRYGDLOVEN_11_13" | "FOLKETRYGDLOVEN_11_14" | "FOLKETRYGDLOVEN_11_15" | "FOLKETRYGDLOVEN_11_17" | "FOLKETRYGDLOVEN_11_18" | "FOLKETRYGDLOVEN_11_19" | "FOLKETRYGDLOVEN_11_2" | "FOLKETRYGDLOVEN_11_20" | "FOLKETRYGDLOVEN_11_22" | "FOLKETRYGDLOVEN_11_23_OVERGNG_ARB" | "FOLKETRYGDLOVEN_11_23_UUTNYTTET_ARB_EVNE" | "FOLKETRYGDLOVEN_11_24" | "FOLKETRYGDLOVEN_11_25" | "FOLKETRYGDLOVEN_11_26" | "FOLKETRYGDLOVEN_11_27" | "FOLKETRYGDLOVEN_11_28" | "FOLKETRYGDLOVEN_11_29" | "FOLKETRYGDLOVEN_11_3" | "FOLKETRYGDLOVEN_11_31" | "FOLKETRYGDLOVEN_11_4" | "FOLKETRYGDLOVEN_11_5" | "FOLKETRYGDLOVEN_11_6" | "FOLKETRYGDLOVEN_11_7" | "FOLKETRYGDLOVEN_11_8" | "FOLKETRYGDLOVEN_11_9" | "FOLKETRYGDLOVEN_21_3" | "FOLKETRYGDLOVEN_21_7" | "FOLKETRYGDLOVEN_22_13" | "FOLKETRYGDLOVEN_22_15" | "FOLKETRYGDLOVEN_22_17" | "FOLKETRYGDLOVEN_KAPITTEL_2")[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Trukket": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
+            type: "AVSLÅTT" | "DELVIS_OMGJØRES" | "OMGJØRES" | "OPPRETTHOLDES" | "TRUKKET" | "UFULLSTENDIG";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.resultat.Ufullstendig": {
             /** @enum {string} */
-            type: "OPPRETTHOLDES" | "OMGJØRES" | "DELVIS_OMGJØRES" | "AVSLÅTT" | "UFULLSTENDIG" | "TRUKKET";
+            type: "AVSLÅTT" | "DELVIS_OMGJØRES" | "OMGJØRES" | "OPPRETTHOLDES" | "TRUKKET" | "UFULLSTENDIG";
             /** @enum {string} */
             "\u00E5rsak": "MANGLER_VURDERING" | "VENTER_PÅ_SVAR_FRA_BRUKER";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.LovvalgDto": {
             begrunnelse: string;
             /** @enum {string} */
-            "lovvalgsE\u00D8SLandEllerLandMedAvtale": "BEL" | "BGR" | "DNK" | "EST" | "FIN" | "FRA" | "GRC" | "IRL" | "ISL" | "ITA" | "HRV" | "CYP" | "LVA" | "LIE" | "LTU" | "LUX" | "MLT" | "NLD" | "NOR" | "POL" | "PRT" | "ROU" | "SVK" | "SVN" | "ESP" | "CHE" | "SWE" | "CZE" | "DEU" | "HUN" | "AUT" | "GBR" | "AUS";
+            "lovvalgsE\u00D8SLandEllerLandMedAvtale": "AUS" | "AUT" | "BEL" | "BGR" | "CHE" | "CYP" | "CZE" | "DEU" | "DNK" | "ESP" | "EST" | "FIN" | "FRA" | "GBR" | "GRC" | "HRV" | "HUN" | "IRL" | "ISL" | "ITA" | "LIE" | "LTU" | "LUX" | "LVA" | "MLT" | "NLD" | "NOR" | "POL" | "PRT" | "ROU" | "SVK" | "SVN" | "SWE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.MedlemskapDto": {
             begrunnelse: string;
@@ -6787,7 +6787,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.KildesystemMedl": {
             kildeNavn: string;
             /** @enum {string} */
-            kildesystemKode: "APPBRK" | "AVGSYS" | "E500" | "INFOTR" | "LAANEKASSEN" | "MEDL" | "PP01" | "srvgosys" | "srvmelosys" | "TP" | "TPS";
+            kildesystemKode: "APPBRK" | "AVGSYS" | "E500" | "INFOTR" | "LAANEKASSEN" | "MEDL" | "PP01" | "TP" | "TPS" | "srvgosys" | "srvmelosys";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.MedlemskapUnntakGrunnlag": {
             unntak: components["schemas"]["no.nav.aap.komponenter.tidslinje.Segment<no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.Unntak>"][];
@@ -6946,7 +6946,7 @@ export interface components {
              */
             fom: string;
             /** @enum {string} */
-            meldepliktOverstyringStatus: "RIMELIG_GRUNN" | "IKKE_MELDT_SEG" | "HAR_MELDT_SEG";
+            meldepliktOverstyringStatus: "HAR_MELDT_SEG" | "IKKE_MELDT_SEG" | "RIMELIG_GRUNN";
             /**
              * Format: date
              * @example 2025-04-01
@@ -6996,7 +6996,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.overgangufore.flate.OvergangUf\u00F8reL\u00F8sningDto": {
             begrunnelse: string;
             /** @enum {string|null} */
-            "brukerHarF\u00E5ttVedtakOmUf\u00F8retrygd"?: "JA_AVSLAG" | "JA_INNVILGET_GRADERT" | "JA_INNVILGET_FULL" | "NEI" | null;
+            "brukerHarF\u00E5ttVedtakOmUf\u00F8retrygd"?: "JA_AVSLAG" | "JA_INNVILGET_FULL" | "JA_INNVILGET_GRADERT" | "NEI" | null;
             "brukerHarS\u00F8ktOmUf\u00F8retrygd": boolean;
             "brukerRettP\u00E5AAP"?: boolean | null;
             /**
@@ -7018,7 +7018,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.rettighetsperiode.RettighetsperiodeVurderingDTO": {
             begrunnelse: string;
             /** @enum {string} */
-            harRett: "Ja" | "Nei" | "HarRettIkkeIStandTilÅSøkeTidligere" | "HarRettMisvisendeOpplysninger";
+            harRett: "HarRettIkkeIStandTilÅSøkeTidligere" | "HarRettMisvisendeOpplysninger" | "Ja" | "Nei";
             /**
              * Format: date
              * @example 2025-04-01
@@ -7032,7 +7032,7 @@ export interface components {
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            ytelseType: "SYKEPENGER" | "FORELDREPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE" | "FERIE_I_SYKEPENGEPERIODE";
+            ytelseType: "FERIE_I_SYKEPENGEPERIODE" | "FORELDREPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "SYKEPENGER" | "UKJENT_SLUTTDATO_PÅ_YTELSE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.VurderingerForSamordning": {
             begrunnelse?: string | null;
@@ -7065,11 +7065,11 @@ export interface components {
              */
             avbruttDato?: string | null;
             /** @enum {string} */
-            erStudentStatus: "JA" | "NEI" | "AVBRUTT";
+            erStudentStatus: "AVBRUTT" | "JA" | "NEI";
             /** Format: int64 */
             id?: number | null;
             /** @enum {string|null} */
-            skalGjenopptaStudieStatus?: "JA" | "NEI" | "VET_IKKE" | "IKKE_OPPGITT" | null;
+            skalGjenopptaStudieStatus?: "IKKE_OPPGITT" | "JA" | "NEI" | "VET_IKKE" | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.PeriodisertStudentDto": {
             "avbruddMerEnn6M\u00E5neder"?: boolean | null;
@@ -7134,7 +7134,7 @@ export interface components {
              */
             fom: string;
             /** @enum {string|null} */
-            grunn?: "ANNEN_SYKDOM_INNEN_SEKS_MND" | "SAMME_SYKDOM_INNEN_ETT_AAR" | "SYKEPENGER_IGJEN_ARBEIDSUFOR" | "SYKEPENGER_FORTSATT_ARBEIDSUFOR" | "FORELDREPENGER_INNEN_SEKS_MND" | null;
+            grunn?: "ANNEN_SYKDOM_INNEN_SEKS_MND" | "FORELDREPENGER_INNEN_SEKS_MND" | "SAMME_SYKDOM_INNEN_ETT_AAR" | "SYKEPENGER_FORTSATT_ARBEIDSUFOR" | "SYKEPENGER_IGJEN_ARBEIDSUFOR" | null;
             "harRettP\u00E5": boolean;
             /**
              * Format: date
@@ -7185,18 +7185,18 @@ export interface components {
             endringer: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.EndringDTO"][];
             perioder?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovPeriodeDTO"][] | null;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: "AVBRUTT" | "AVSLUTTET" | "KVALITETSSIKRET" | "OPPRETTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "TOTRINNS_VURDERT";
         };
         "no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovPeriodeDTO": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            relevans: "RELEVANT" | "IKKE_RELEVANT";
+            relevans: "IKKE_RELEVANT" | "RELEVANT";
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingFlytOgTilstandDto": {
             /** @enum {string} */
-            aktivGruppe: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "RETTIGHETSPERIODE" | "SØKNAD" | "AVBRYT_REVURDERING" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "OPPHOLDSKRAV" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPPFØLGING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9";
+            aktivGruppe: "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "ALDER" | "AVBRYT_REVURDERING" | "AVKLAR_OPPPFØLGING" | "BARNETILLEGG" | "BREV" | "ET_ANNET_STED" | "FATTE_VEDTAK" | "FORMKRAV" | "GRUNNLAG" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KVALITETSSIKRING" | "LOVVALG" | "MEDLEMSKAP" | "OMGJØRING" | "OPPHOLDSKRAV" | "OPPRETTHOLDELSE" | "RETTIGHETSPERIODE" | "SAMORDNING" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "STUDENT" | "SVAR_FRA_ANDREINSTANS" | "SYKDOM" | "SØKNAD" | "TILKJENT_YTELSE" | "TREKK_KLAGE" | "UDEFINERT" | "UNDERVEIS" | "VEDTAK";
             /** @enum {string} */
-            aktivtSteg: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "SAMORDNING_SYKESTIPEND" | "VURDER_BISTANDSBEHOV" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "SYKDOMSVURDERING_BREV" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "ARBEIDSOPPTRAPPING" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "VURDER_INNTEKTSBORTFALL" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_RETTIGHETSTYPE" | "IKKE_OPPFYLT_MELDEPLIKT" | "FASTSETT_VEDTAKSLENGDE" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "AVBRYT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPFØLGING" | "VURDER_AKTIVITETSPLIKT_11_7" | "IVERKSETT_BRUDD" | "VURDER_AKTIVITETSPLIKT_11_9" | "UDEFINERT";
+            aktivtSteg: "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE";
             aktivtStegDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"][];
             /** Format: int64 */
             behandlingVersjon: number;
@@ -7204,9 +7204,9 @@ export interface components {
             prosessering: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Prosessering"];
             visning: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.flate.visning.Visning"];
             /** @enum {string|null} */
-            vurdertGruppe?: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "RETTIGHETSPERIODE" | "SØKNAD" | "AVBRYT_REVURDERING" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "OPPHOLDSKRAV" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPPFØLGING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | null;
+            vurdertGruppe?: "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "ALDER" | "AVBRYT_REVURDERING" | "AVKLAR_OPPPFØLGING" | "BARNETILLEGG" | "BREV" | "ET_ANNET_STED" | "FATTE_VEDTAK" | "FORMKRAV" | "GRUNNLAG" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KVALITETSSIKRING" | "LOVVALG" | "MEDLEMSKAP" | "OMGJØRING" | "OPPHOLDSKRAV" | "OPPRETTHOLDELSE" | "RETTIGHETSPERIODE" | "SAMORDNING" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "STUDENT" | "SVAR_FRA_ANDREINSTANS" | "SYKDOM" | "SØKNAD" | "TILKJENT_YTELSE" | "TREKK_KLAGE" | "UDEFINERT" | "UNDERVEIS" | "VEDTAK" | null;
             /** @enum {string|null} */
-            vurdertSteg?: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "SAMORDNING_SYKESTIPEND" | "VURDER_BISTANDSBEHOV" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "SYKDOMSVURDERING_BREV" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "ARBEIDSOPPTRAPPING" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "VURDER_INNTEKTSBORTFALL" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_RETTIGHETSTYPE" | "IKKE_OPPFYLT_MELDEPLIKT" | "FASTSETT_VEDTAKSLENGDE" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "AVBRYT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPFØLGING" | "VURDER_AKTIVITETSPLIKT_11_7" | "IVERKSETT_BRUDD" | "VURDER_AKTIVITETSPLIKT_11_9" | "UDEFINERT" | null;
+            vurdertSteg?: "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE" | null;
         };
         "no.nav.aap.behandlingsflyt.flyt.BehandlingPersoninfo": {
             /** @description Key type: kotlin.String */
@@ -7219,7 +7219,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.flyt.DetaljertBehandlingDTO": {
             /** @enum {string} */
-            aktivtSteg: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "SAMORDNING_SYKESTIPEND" | "VURDER_BISTANDSBEHOV" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "SYKDOMSVURDERING_BREV" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "ARBEIDSOPPTRAPPING" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "VURDER_INNTEKTSBORTFALL" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_RETTIGHETSTYPE" | "IKKE_OPPFYLT_MELDEPLIKT" | "FASTSETT_VEDTAKSLENGDE" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "AVBRYT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPFØLGING" | "VURDER_AKTIVITETSPLIKT_11_7" | "IVERKSETT_BRUDD" | "VURDER_AKTIVITETSPLIKT_11_9" | "UDEFINERT";
+            aktivtSteg: "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE";
             arenaStatus?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.ArenaStatusDTO"];
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /**
@@ -7236,11 +7236,11 @@ export interface components {
             referanse: string;
             skalForberede: boolean;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
             /** Format: uuid */
             "tilh\u00F8rendeKlagebehandling"?: string | null;
             /** @enum {string} */
-            type: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans" | "OppfølgingsBehandling" | "Aktivitetsplikt" | "Aktivitetsplikt11_9";
+            type: "Aktivitetsplikt" | "Aktivitetsplikt11_9" | "Førstegangsbehandling" | "Klage" | "OppfølgingsBehandling" | "Revurdering" | "SvarFraAndreinstans" | "Tilbakekreving";
             /**
              * Format: date
              * @example 2025-04-01
@@ -7260,7 +7260,7 @@ export interface components {
             begrunnelse?: string | null;
             endretAv: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "AVSLUTTET" | "TOTRINNS_VURDERT" | "SENDT_TILBAKE_FRA_BESLUTTER" | "KVALITETSSIKRET" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "AVBRUTT";
+            status: "AVBRUTT" | "AVSLUTTET" | "KVALITETSSIKRET" | "OPPRETTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "TOTRINNS_VURDERT";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -7272,17 +7272,17 @@ export interface components {
             skalVises: boolean;
             steg: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.FlytSteg"][];
             /** @enum {string} */
-            stegGruppe: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "RETTIGHETSPERIODE" | "SØKNAD" | "AVBRYT_REVURDERING" | "ALDER" | "LOVVALG" | "MEDLEMSKAP" | "OPPHOLDSKRAV" | "BARNETILLEGG" | "STUDENT" | "SYKDOM" | "GRUNNLAG" | "ET_ANNET_STED" | "SAMORDNING" | "UNDERVEIS" | "TILKJENT_YTELSE" | "SIMULERING" | "VEDTAK" | "FATTE_VEDTAK" | "KVALITETSSIKRING" | "IVERKSETT_VEDTAK" | "BREV" | "UDEFINERT" | "FORMKRAV" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPPFØLGING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9";
+            stegGruppe: "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "ALDER" | "AVBRYT_REVURDERING" | "AVKLAR_OPPPFØLGING" | "BARNETILLEGG" | "BREV" | "ET_ANNET_STED" | "FATTE_VEDTAK" | "FORMKRAV" | "GRUNNLAG" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KVALITETSSIKRING" | "LOVVALG" | "MEDLEMSKAP" | "OMGJØRING" | "OPPHOLDSKRAV" | "OPPRETTHOLDELSE" | "RETTIGHETSPERIODE" | "SAMORDNING" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "STUDENT" | "SVAR_FRA_ANDREINSTANS" | "SYKDOM" | "SØKNAD" | "TILKJENT_YTELSE" | "TREKK_KLAGE" | "UDEFINERT" | "UNDERVEIS" | "VEDTAK";
         };
         "no.nav.aap.behandlingsflyt.flyt.FlytSteg": {
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.AvklaringsbehovDTO"][];
             /** @enum {string} */
-            stegType: "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "SAMORDNING_SYKESTIPEND" | "VURDER_BISTANDSBEHOV" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "SYKDOMSVURDERING_BREV" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "ARBEIDSOPPTRAPPING" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "VURDER_INNTEKTSBORTFALL" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_RETTIGHETSTYPE" | "IKKE_OPPFYLT_MELDEPLIKT" | "FASTSETT_VEDTAKSLENGDE" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "AVBRYT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPFØLGING" | "VURDER_AKTIVITETSPLIKT_11_7" | "IVERKSETT_BRUDD" | "VURDER_AKTIVITETSPLIKT_11_9" | "UDEFINERT";
+            stegType: "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE";
             "vilk\u00E5rDTO"?: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO"];
         };
         "no.nav.aap.behandlingsflyt.flyt.Prosessering": {
             /** @enum {string} */
-            status: "JOBBER" | "FEILET" | "FERDIG";
+            status: "FEILET" | "FERDIG" | "JOBBER";
             ventendeOppgaver: components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
         };
         "no.nav.aap.behandlingsflyt.flyt.SettP\u00E5VentRequest": {
@@ -7295,7 +7295,7 @@ export interface components {
              */
             frist?: string | null;
             /** @enum {string} */
-            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_FUNKSJONALITET";
+            grunn: "VENTER_PÅ_FUNKSJONALITET" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_VURDERING_AV_ROL";
         };
         "no.nav.aap.behandlingsflyt.flyt.Venteinformasjon": {
             begrunnelse: string;
@@ -7306,12 +7306,12 @@ export interface components {
              */
             frist: string;
             /** @enum {string} */
-            grunn: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_FUNKSJONALITET";
+            grunn: "VENTER_PÅ_FUNKSJONALITET" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_VURDERING_AV_ROL";
         };
         "no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rDTO": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rsperiodeDTO"][];
             /** @enum {string} */
-            "vilk\u00E5rtype": "ALDERSVILKÅRET" | "LOVVALG" | "SYKDOMSVILKÅRET" | "BISTANDSVILKÅRET" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "MEDLEMSKAP" | "GRUNNLAGET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "SYKEPENGEERSTATNING" | "STUDENT" | "STRAFFEGJENNOMFØRING" | "AKTIVITETSPLIKT" | "OPPHOLDSKRAV" | "INNTEKTSBORTFALL" | "ORDINÆR_KVOTE" | "SYKEPENGEERSTATNING_KVOTE";
+            "vilk\u00E5rtype": "AKTIVITETSPLIKT" | "ALDERSVILKÅRET" | "BISTANDSVILKÅRET" | "GRUNNLAGET" | "INNTEKTSBORTFALL" | "LOVVALG" | "MEDLEMSKAP" | "OPPHOLDSKRAV" | "ORDINÆR_KVOTE" | "OVERGANGARBEIDVILKÅRET" | "OVERGANGUFØREVILKÅRET" | "SAMORDNING" | "SAMORDNING_ANNEN_LOVGIVNING" | "STRAFFEGJENNOMFØRING" | "STUDENT" | "SYKDOMSVILKÅRET" | "SYKEPENGEERSTATNING" | "SYKEPENGEERSTATNING_KVOTE";
             /**
              * Format: date
              * @example 2025-04-01
@@ -7320,14 +7320,14 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.flyt.Vilk\u00E5rsperiodeDTO": {
             /** @enum {string|null} */
-            "avslags\u00E5rsak"?: "BRUKER_UNDER_18" | "BRUKER_OVER_67" | "MANGLENDE_DOKUMENTASJON" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_PA_STUDENT" | "VARIGHET_OVERSKREDET_STUDENT" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_MEDLEM" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "NORGE_IKKE_KOMPETENT_STAT" | "ANNEN_FULL_YTELSE" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | null;
+            "avslags\u00E5rsak"?: "ANNEN_FULL_YTELSE" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUKER_OVER_67" | "BRUKER_UNDER_18" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "IKKE_RETT_PA_STUDENT" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "MANGLENDE_DOKUMENTASJON" | "NORGE_IKKE_KOMPETENT_STAT" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_STUDENT" | null;
             begrunnelse?: string | null;
             /** @enum {string|null} */
-            "innvilgelses\u00E5rsak"?: "YRKESSKADE_ÅRSAKSSAMMENHENG" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | "STUDENT" | null;
+            "innvilgelses\u00E5rsak"?: "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | "YRKESSKADE_ÅRSAKSSAMMENHENG" | null;
             manuellVurdering: boolean;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            utfall: "IKKE_VURDERT" | "IKKE_RELEVANT" | "OPPFYLT" | "IKKE_OPPFYLT";
+            utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
         };
         "no.nav.aap.behandlingsflyt.flyt.flate.visning.Visning": {
             beslutterReadOnly: boolean;
@@ -7335,10 +7335,10 @@ export interface components {
             brukerHarKvalitetssikret: boolean;
             kvalitetssikringReadOnly: boolean;
             /** @enum {string|null} */
-            resultatKode?: "INNVILGET" | "AVSLAG" | "TRUKKET" | "KLAGE_OPPRETTHOLDES" | "KLAGE_OMGJØRES" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_AVSLÅTT" | "KLAGE_TRUKKET" | "AVBRUTT" | null;
+            resultatKode?: "AVBRUTT" | "AVSLAG" | "INNVILGET" | "KLAGE_AVSLÅTT" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_OMGJØRES" | "KLAGE_OPPRETTHOLDES" | "KLAGE_TRUKKET" | "TRUKKET" | null;
             saksbehandlerReadOnly: boolean;
             /** @enum {string} */
-            typeBehandling: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans" | "OppfølgingsBehandling" | "Aktivitetsplikt" | "Aktivitetsplikt11_9";
+            typeBehandling: "Aktivitetsplikt" | "Aktivitetsplikt11_9" | "Førstegangsbehandling" | "Klage" | "OppfølgingsBehandling" | "Revurdering" | "SvarFraAndreinstans" | "Tilbakekreving";
             visBeslutterKort: boolean;
             visBrevkort: boolean;
             visKvalitetssikringKort: boolean;
@@ -7349,11 +7349,11 @@ export interface components {
             kode: "4101" | "4102" | "4201" | "5001" | "5002" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5019" | "5020" | "5021" | "5022" | "5023" | "5024" | "5025" | "5026" | "5027" | "5028" | "5029" | "5030" | "5031" | "5032" | "5033" | "5034" | "5035" | "5040" | "5050" | "5051" | "5052" | "5053" | "5056" | "5057" | "5096" | "5097" | "5098" | "5099" | "5999" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6008" | "6009" | "6010" | "7001" | "8001" | "8002" | "8003" | "9001" | "9002" | "9003" | "9004";
             kreverToTrinn: boolean;
             kvalitetssikres: boolean;
-            "l\u00F8sesAv": ("SAKSBEHANDLER_OPPFOLGING" | "SAKSBEHANDLER_NASJONAL" | "KVALITETSSIKRER" | "BESLUTTER" | "LES" | "PRODUKSJONSSTYRING" | "DRIFT")[];
+            "l\u00F8sesAv": ("BESLUTTER" | "DRIFT" | "KVALITETSSIKRER" | "LES" | "PRODUKSJONSSTYRING" | "SAKSBEHANDLER_NASJONAL" | "SAKSBEHANDLER_OPPFOLGING")[];
             /** @enum {string} */
-            "l\u00F8sesISteg": "START_BEHANDLING" | "SEND_FORVALTNINGSMELDING" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD" | "VURDER_ALDER" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "FASTSETT_MELDEPERIODER" | "AVKLAR_STUDENT" | "SAMORDNING_SYKESTIPEND" | "VURDER_BISTANDSBEHOV" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "VURDER_SYKEPENGEERSTATNING" | "FASTSETT_SYKDOMSVILKÅRET" | "VURDER_YRKESSKADE" | "FRITAK_MELDEPLIKT" | "SYKDOMSVURDERING_BREV" | "KVALITETSSIKRING" | "BARNETILLEGG" | "AVKLAR_SYKDOM" | "ARBEIDSOPPTRAPPING" | "REFUSJON_KRAV" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "VIS_GRUNNLAG" | "MANGLENDE_LIGNING" | "VURDER_INNTEKTSBORTFALL" | "SAMORDNING_UFØRE" | "SAMORDNING_GRADERING" | "SAMORDNING_AVSLAG" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "FASTSETT_RETTIGHETSTYPE" | "IKKE_OPPFYLT_MELDEPLIKT" | "FASTSETT_VEDTAKSLENGDE" | "FASTSETT_UTTAK" | "EFFEKTUER_11_7" | "DU_ER_ET_ANNET_STED" | "BEREGN_TILKJENT_YTELSE" | "SIMULERING" | "FORESLÅ_VEDTAK" | "FATTE_VEDTAK" | "IVERKSETT_VEDTAK" | "OPPRETT_REVURDERING" | "AVBRYT_REVURDERING" | "BREV" | "PÅKLAGET_BEHANDLING" | "FULLMEKTIG" | "FORMKRAV" | "BEHANDLENDE_ENHET" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "OMGJØRING" | "TREKK_KLAGE" | "OPPRETTHOLDELSE" | "SVAR_FRA_ANDREINSTANS" | "IVERKSETT_KONSEKVENS" | "START_OPPFØLGINGSBEHANDLING" | "AVKLAR_OPPFØLGING" | "VURDER_AKTIVITETSPLIKT_11_7" | "IVERKSETT_BRUDD" | "VURDER_AKTIVITETSPLIKT_11_9" | "UDEFINERT";
+            "l\u00F8sesISteg": "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE";
             /** @enum {string} */
-            type: "MANUELT_PÅKREVD" | "MANUELT_FRIVILLIG" | "BREV" | "BREV_VENTEPUNKT" | "VENTEPUNKT" | "OVERSTYR";
+            type: "BREV" | "BREV_VENTEPUNKT" | "MANUELT_FRIVILLIG" | "MANUELT_PÅKREVD" | "OVERSTYR" | "VENTEPUNKT";
             name: string;
         };
         /** Format: uuid */
@@ -7368,7 +7368,7 @@ export interface components {
             asJournalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
             asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"];
             /** @enum {string} */
-            type: "JOURNALPOST" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "AVVIST_LEGEERKLÆRING_ID" | "REVURDERING_ID" | "BEHANDLING_REFERANSE" | "SAKSBEHANDLER_KELVIN_REFERANSE" | "MANUELL_OPPRETTELSE" | "KABAL_HENDELSE_ID" | "TILBAKEKREVING_HENDELSE_ID" | "SYKEPENGEVEDTAK_HENDELSE_ID" | "FAGSYSTEMINFO_BEHOV_HENDELSE_ID" | "PDL_HENDELSE_ID";
+            type: "AVVIST_LEGEERKLÆRING_ID" | "BEHANDLING_REFERANSE" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "FAGSYSTEMINFO_BEHOV_HENDELSE_ID" | "JOURNALPOST" | "KABAL_HENDELSE_ID" | "MANUELL_OPPRETTELSE" | "PDL_HENDELSE_ID" | "REVURDERING_ID" | "SAKSBEHANDLER_KELVIN_REFERANSE" | "SYKEPENGEVEDTAK_HENDELSE_ID" | "TILBAKEKREVING_HENDELSE_ID";
             verdi: string;
         };
         /** Format: uuid */
@@ -7393,7 +7393,7 @@ export interface components {
             afp?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AfpDto"];
             /** @enum {string|null} */
             "l\u00F8nn"?: "Ja" | "Nei" | null;
-            "st\u00F8nad"?: ("ØKONOMISK_SOSIALHJELP" | "OMSORGSSTØNAD" | "INTRODUKSJONSSTØNAD" | "KVALIFISERINGSSTØNAD" | "VERV" | "UTLAND" | "AFP" | "STIPEND" | "LÅN" | "NEI")[] | null;
+            "st\u00F8nad"?: ("AFP" | "INTRODUKSJONSSTØNAD" | "KVALIFISERINGSSTØNAD" | "LÅN" | "NEI" | "OMSORGSSTØNAD" | "STIPEND" | "UTLAND" | "VERV" | "ØKONOMISK_SOSIALHJELP")[] | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnkeITrygderettenbehandlingOpprettetDetaljer": {
             /**
@@ -7402,7 +7402,7 @@ export interface components {
              */
             sendtTilTrygderetten: string;
             /** @enum {string|null} */
-            utfall?: "TRUKKET" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "INNSTILLING_STADFESTELSE" | "INNSTILLING_AVVIST" | "HENLAGT" | null;
+            utfall?: "DELVIS_MEDHOLD" | "HENLAGT" | "INNSTILLING_AVVIST" | "INNSTILLING_STADFESTELSE" | "MEDHOLD" | "OPPHEVET" | "TRUKKET" | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnkebehandlingAvsluttetDetaljer": {
             /**
@@ -7412,7 +7412,7 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HEVET" | "HENLAGT";
+            utfall: "AVVIST" | "DELVIS_MEDHOLD" | "HENLAGT" | "HEVET" | "MEDHOLD" | "OPPHEVET" | "RETUR" | "STADFESTELSE" | "TRUKKET" | "UGUNST";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnkebehandlingOpprettetDetaljer": {
             /**
@@ -7423,7 +7423,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokument": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokumentV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokumentV0": {
-            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "REVURDER_STUDENT" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "HELHETLIG_VURDERING" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "OPPHOLDSKRAV" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "REVURDER_SYKESTIPEND")[];
+            "\u00E5rsakerTilBehandling": ("AKTIVITETSMELDING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "AVVIST_LEGEERKLÆRING" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DIALOGMELDING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE" | "KLAGE_TRUKKET" | "LEGEERKLÆRING" | "LOVVALG_OG_MEDLEMSKAP" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ArbeidIPeriodeV0": {
             /**
@@ -7456,7 +7456,7 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HENLAGT";
+            utfall: "AVVIST" | "DELVIS_MEDHOLD" | "HENLAGT" | "MEDHOLD" | "OPPHEVET" | "RETUR" | "STADFESTELSE" | "TRUKKET" | "UGUNST";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.BehandlingFeilregistrertDetaljer": {
             /**
@@ -7467,7 +7467,7 @@ export interface components {
             navIdent: string;
             reason: string;
             /** @enum {string} */
-            type: "KLAGE" | "ANKE" | "ANKE_I_TRYGDERETTEN" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET" | "OMGJOERINGSKRAV";
+            type: "ANKE" | "ANKE_I_TRYGDERETTEN" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET" | "KLAGE" | "OMGJOERINGSKRAV";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.FagsysteminfoBehovV0": {
             eksternFagsakId: string;
@@ -7497,7 +7497,7 @@ export interface components {
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             /** @enum {string} */
-            type: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE" | "INSTITUSJONSOPPHOLD" | "SYKEPENGE_VEDTAK_HENDELSE";
+            type: "AKTIVITETSKORT" | "ANNET_RELEVANT_DOKUMENT" | "DIALOGMELDING" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "INSTITUSJONSOPPHOLD" | "KABAL_HENDELSE" | "KLAGE" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "MANUELL_REVURDERING" | "MELDEKORT" | "NY_ÅRSAK_TIL_BEHANDLING" | "OMGJØRING_KLAGE_REVURDERING" | "OPPFØLGINGSOPPGAVE" | "PDL_HENDELSE_DODSFALL_BARN" | "PDL_HENDELSE_DODSFALL_BRUKER" | "SYKEPENGE_VEDTAK_HENDELSE" | "SØKNAD" | "TILBAKEKREVING_HENDELSE";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Inst2KafkaDto": {
             /**
@@ -7529,7 +7529,7 @@ export interface components {
             kilde: string;
             kildeReferanse: string;
             /** @enum {string} */
-            type: "KLAGEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKEBEHANDLING_AVSLUTTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_FEILREGISTRERT" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV";
+            type: "ANKEBEHANDLING_AVSLUTTET" | "ANKEBEHANDLING_OPPRETTET" | "ANKE_I_TRYGDERETTENBEHANDLING_OPPRETTET" | "BEHANDLING_ETTER_TRYGDERETTEN_OPPHEVET_AVSLUTTET" | "BEHANDLING_FEILREGISTRERT" | "KLAGEBEHANDLING_AVSLUTTET" | "OMGJOERINGSKRAV" | "OMGJOERINGSKRAVBEHANDLING_AVSLUTTET";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Klage": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KlageV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KlageV0": {
@@ -7550,13 +7550,13 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "TRUKKET" | "RETUR" | "OPPHEVET" | "MEDHOLD" | "DELVIS_MEDHOLD" | "STADFESTELSE" | "UGUNST" | "AVVIST" | "HENLAGT";
+            utfall: "AVVIST" | "DELVIS_MEDHOLD" | "HENLAGT" | "MEDHOLD" | "OPPHEVET" | "RETUR" | "STADFESTELSE" | "TRUKKET" | "UGUNST";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurdering": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurderingV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManuellRevurderingV0": {
             beskrivelse: string;
             opprettetAv?: string | null;
-            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "REVURDER_STUDENT" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "HELHETLIG_VURDERING" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "OPPHOLDSKRAV" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "REVURDER_SYKESTIPEND")[];
+            "\u00E5rsakerTilBehandling": ("AKTIVITETSMELDING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "AVVIST_LEGEERKLÆRING" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DIALOGMELDING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE" | "KLAGE_TRUKKET" | "LEGEERKLÆRING" | "LOVVALG_OG_MEDLEMSKAP" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManueltOppgittBarn": {
             /**
@@ -7580,7 +7580,7 @@ export interface components {
             behandlingReferanse: string;
             beskrivelse?: string | null;
             reserverTilBruker?: string | null;
-            "\u00E5rsakerTilBehandling": ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "REVURDER_STUDENT" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "HELHETLIG_VURDERING" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "OPPHOLDSKRAV" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "REVURDER_SYKESTIPEND")[];
+            "\u00E5rsakerTilBehandling": ("AKTIVITETSMELDING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "AVVIST_LEGEERKLÆRING" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DIALOGMELDING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE" | "KLAGE_TRUKKET" | "LEGEERKLÆRING" | "LOVVALG_OG_MEDLEMSKAP" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OmgjoeringskravbehandlingAvsluttetDetaljer": {
             /**
@@ -7596,8 +7596,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Omgj\u00F8ringKlageRevurderingV0": {
             beskrivelse: string;
             /** @enum {string} */
-            kilde: "KLAGEINSTANS" | "KELVIN";
-            vurderingsbehov: ("SØKNAD" | "AKTIVITETSMELDING" | "MELDEKORT" | "LEGEERKLÆRING" | "AVVIST_LEGEERKLÆRING" | "DIALOGMELDING" | "G_REGULERING" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_MEDLEMSKAP" | "REVURDER_YRKESSKADE" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_SAMORDNING" | "REVURDER_STUDENT" | "KLAGE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "VURDER_RETTIGHETSPERIODE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "FRITAK_MELDEPLIKT" | "KLAGE_TRUKKET" | "REVURDER_MANUELL_INNTEKT" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "HELHETLIG_VURDERING" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "OPPHOLDSKRAV" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "REVURDER_SYKESTIPEND")[];
+            kilde: "KELVIN" | "KLAGEINSTANS";
+            vurderingsbehov: ("AKTIVITETSMELDING" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "AVVIST_LEGEERKLÆRING" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DIALOGMELDING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE" | "KLAGE_TRUKKET" | "LEGEERKLÆRING" | "LOVVALG_OG_MEDLEMSKAP" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Oppf\u00F8lgingsoppgave": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Oppf\u00F8lgingsoppgaveV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Oppf\u00F8lgingsoppgaveV0": {
@@ -7608,7 +7608,7 @@ export interface components {
             "datoForOppf\u00F8lging": string;
             "hvaSkalF\u00F8lgesOpp": string;
             /** @enum {string} */
-            "hvemSkalF\u00F8lgeOpp": "NasjonalEnhet" | "Lokalkontor";
+            "hvemSkalF\u00F8lgeOpp": "Lokalkontor" | "NasjonalEnhet";
             opprinnelse?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Opprinnelse"];
             reserverTilBruker?: string | null;
         };
@@ -7624,7 +7624,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.PdlHendelseV0": {
             beskrivelse?: string | null;
             /** @enum {string} */
-            innsendingstype: "SØKNAD" | "AKTIVITETSKORT" | "MELDEKORT" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "DIALOGMELDING" | "KLAGE" | "ANNET_RELEVANT_DOKUMENT" | "MANUELL_REVURDERING" | "OMGJØRING_KLAGE_REVURDERING" | "NY_ÅRSAK_TIL_BEHANDLING" | "KABAL_HENDELSE" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_DODSFALL_BARN" | "OPPFØLGINGSOPPGAVE" | "INSTITUSJONSOPPHOLD" | "SYKEPENGE_VEDTAK_HENDELSE";
+            innsendingstype: "AKTIVITETSKORT" | "ANNET_RELEVANT_DOKUMENT" | "DIALOGMELDING" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "INSTITUSJONSOPPHOLD" | "KABAL_HENDELSE" | "KLAGE" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "MANUELL_REVURDERING" | "MELDEKORT" | "NY_ÅRSAK_TIL_BEHANDLING" | "OMGJØRING_KLAGE_REVURDERING" | "OPPFØLGINGSOPPGAVE" | "PDL_HENDELSE_DODSFALL_BARN" | "PDL_HENDELSE_DODSFALL_BRUKER" | "SYKEPENGE_VEDTAK_HENDELSE" | "SØKNAD" | "TILBAKEKREVING_HENDELSE";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.SykepengeSpleisVedtak": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.SykepengevedtakV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.SykepengevedtakV0": {
@@ -7647,7 +7647,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadStudentDto": {
             /** @enum {string} */
-            erStudent: "Ja" | "Avbrutt" | "Nei";
+            erStudent: "Avbrutt" | "Ja" | "Nei";
             /** @enum {string|null} */
             kommeTilbake?: "Ja" | "Nei" | "VetIkke" | null;
         };
@@ -7676,7 +7676,7 @@ export interface components {
             /** Format: uuid */
             behandlingId: string;
             /** @enum {string} */
-            behandlingsstatus: "OPPRETTET" | "TIL_BEHANDLING" | "AVSLUTTET";
+            behandlingsstatus: "AVSLUTTET" | "OPPRETTET" | "TIL_BEHANDLING";
             fullstendigPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingPeriode"];
             /**
              * Format: date-time
@@ -7749,7 +7749,7 @@ export interface components {
             oppdatertTid: string;
             periode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
-            type: "MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND";
+            type: "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE";
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.behandling.VurderingsbehovOg\u00C5rsak": {
             beskrivelse?: string | null;
@@ -7760,7 +7760,7 @@ export interface components {
             opprettet: string;
             vurderingsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.VurderingsbehovMedPeriode"][];
             /** @enum {string} */
-            "\u00E5rsak": "SØKNAD" | "MANUELL_OPPRETTELSE" | "HELSEOPPLYSNINGER" | "ANNET_RELEVANT_DOKUMENT" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "ENDRING_I_REGISTERDATA" | "BARNETILLEGG_SATSENDRING" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "MELDEKORT" | "AKTIVITETSMELDING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "KLAGE" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE";
+            "\u00E5rsak": "AKTIVITETSMELDING" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "ANNET_RELEVANT_DOKUMENT" | "BARNETILLEGG_SATSENDRING" | "ENDRING_I_REGISTERDATA" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "HELSEOPPLYSNINGER" | "KLAGE" | "MANUELL_OPPRETTELSE" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UTVID_VEDTAKSLENGDE";
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingAvTypeDTO": {
             /** Format: uuid */
@@ -7774,7 +7774,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingHendelseDTO": {
             begrunnelse?: string | null;
             /** @enum {string} */
-            hendelse: "SATT_PÅ_VENT" | "TATT_AV_VENT" | "VEDTAK_FATTET" | "BREV_SENDT" | "SENDT_TIL_BESLUTTER" | "RETUR_FRA_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER" | "RETUR_FRA_KVALITETSSIKRER" | "REVURDERING_OPPRETTET" | "FØRSTEGANGSBEHANDLING_OPPRETTET" | "KLAGE_OPPRETTET" | "MOTTATT_DIALOGMELDING" | "BESTILT_LEGEERKLÆRING";
+            hendelse: "BESTILT_LEGEERKLÆRING" | "BREV_SENDT" | "FØRSTEGANGSBEHANDLING_OPPRETTET" | "KLAGE_OPPRETTET" | "MOTTATT_DIALOGMELDING" | "RETUR_FRA_BESLUTTER" | "RETUR_FRA_KVALITETSSIKRER" | "REVURDERING_OPPRETTET" | "SATT_PÅ_VENT" | "SENDT_TIL_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER" | "TATT_AV_VENT" | "VEDTAK_FATTET";
             resultat?: string | null;
             /**
              * Format: date-time
@@ -7783,8 +7783,8 @@ export interface components {
             tidspunkt: string;
             "utf\u00F8rtAv"?: string | null;
             /** @enum {string|null} */
-            "\u00E5rsakTilSattP\u00E5Vent"?: "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_VURDERING_AV_ROL" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_FUNKSJONALITET" | null;
-            "\u00E5rsakerTilOpprettelse": ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND" | null)[];
+            "\u00E5rsakTilSattP\u00E5Vent"?: "VENTER_PÅ_FUNKSJONALITET" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_VURDERING_AV_ROL" | null;
+            "\u00E5rsakerTilOpprettelse": ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE" | null)[];
             "\u00E5rsakerTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur"][];
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingHistorikkDTO": {
@@ -7800,12 +7800,12 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "IVERKSETTES" | "AVSLUTTET";
+            status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
             /** @enum {string} */
-            typeBehandling: "Førstegangsbehandling" | "Revurdering" | "Tilbakekreving" | "Klage" | "SvarFraAndreinstans" | "OppfølgingsBehandling" | "Aktivitetsplikt" | "Aktivitetsplikt11_9";
-            vurderingsbehov: ("MOTTATT_SØKNAD" | "HELHETLIG_VURDERING" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_MELDEKORT" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTATT_KLAGE" | "SØKNAD_TRUKKET" | "REVURDERING_AVBRUTT" | "KLAGE_TRUKKET" | "REVURDER_MEDLEMSKAP" | "REVURDER_SAMORDNING" | "REVURDER_LOVVALG" | "REVURDER_BEREGNING" | "REVURDER_YRKESSKADE" | "REVURDER_STUDENT" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "G_REGULERING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "LOVVALG_OG_MEDLEMSKAP" | "FORUTGAENDE_MEDLEMSKAP" | "OPPHOLDSKRAV" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "REVURDER_SYKEPENGEERSTATNING" | "BARNETILLEGG" | "INSTITUSJONSOPPHOLD" | "SAMORDNING_OG_AVREGNING" | "REFUSJONSKRAV" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "VURDER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "OVERGANG_UFORE" | "OVERGANG_ARBEID" | "DØDSFALL_BRUKER" | "DØDSFALL_BARN" | "BARNETILLEGG_SATS_REGULERING" | "REVURDER_SYKESTIPEND")[];
+            typeBehandling: "Aktivitetsplikt" | "Aktivitetsplikt11_9" | "Førstegangsbehandling" | "Klage" | "OppfølgingsBehandling" | "Revurdering" | "SvarFraAndreinstans" | "Tilbakekreving";
+            vurderingsbehov: ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VURDER_RETTIGHETSPERIODE")[];
             /** @enum {string|null} */
-            "\u00E5rsakTilOpprettelse"?: "SØKNAD" | "MANUELL_OPPRETTELSE" | "HELSEOPPLYSNINGER" | "ANNET_RELEVANT_DOKUMENT" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "ENDRING_I_REGISTERDATA" | "BARNETILLEGG_SATSENDRING" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "MELDEKORT" | "AKTIVITETSMELDING" | "UTVID_VEDTAKSLENGDE" | "MIGRER_RETTIGHETSPERIODE" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "KLAGE" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "TILBAKEKREVING_HENDELSE" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | null;
+            "\u00E5rsakTilOpprettelse"?: "AKTIVITETSMELDING" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "ANNET_RELEVANT_DOKUMENT" | "BARNETILLEGG_SATSENDRING" | "ENDRING_I_REGISTERDATA" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "HELSEOPPLYSNINGER" | "KLAGE" | "MANUELL_OPPRETTELSE" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UTVID_VEDTAKSLENGDE" | null;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.FinnBehandlingForIdentDTO": {
             ident: string;
@@ -7862,7 +7862,7 @@ export interface components {
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string|null} */
-            resultat?: "INNVILGET" | "AVSLAG" | "TRUKKET" | "KLAGE_OPPRETTHOLDES" | "KLAGE_OMGJØRES" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_AVSLÅTT" | "KLAGE_TRUKKET" | "AVBRUTT" | null;
+            resultat?: "AVBRUTT" | "AVSLAG" | "INNVILGET" | "KLAGE_AVSLÅTT" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_OMGJØRES" | "KLAGE_OPPRETTHOLDES" | "KLAGE_TRUKKET" | "TRUKKET" | null;
             saksnummer: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.S\u00F8kDto": {
@@ -7890,7 +7890,7 @@ export interface components {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksnummer: string;
             /** @enum {string} */
-            status: "OPPRETTET" | "UTREDES" | "LØPENDE" | "AVSLUTTET";
+            status: "AVSLUTTET" | "LØPENDE" | "OPPRETTET" | "UTREDES";
             "s\u00F8knadErTrukket"?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.test.OpprettDummySakDto": {
@@ -7922,15 +7922,15 @@ export interface components {
             tekniskNavn: string;
             visningsnavn: string;
             /** @enum {string} */
-            type: "TEKST" | "FAKTAGRUNNLAG";
+            type: "FAKTAGRUNNLAG" | "TEKST";
         };
         "no.nav.aap.brev.kontrakt.BlokkInnhold.FormattertTekst": {
-            formattering: ("UNDERSTREK" | "KURSIV" | "FET")[];
+            formattering: ("FET" | "KURSIV" | "UNDERSTREK")[];
             /** Format: uuid */
             id: string;
             tekst: string;
             /** @enum {string} */
-            type: "TEKST" | "FAKTAGRUNNLAG";
+            type: "FAKTAGRUNNLAG" | "TEKST";
         };
         "no.nav.aap.brev.kontrakt.Brev": {
             journalpostTittel?: string | null;
@@ -8059,7 +8059,7 @@ export interface components {
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
-            status: "KLAR" | "PLUKKET" | "FERDIG" | "FEILET" | "AVBRUTT";
+            status: "AVBRUTT" | "FEILET" | "FERDIG" | "KLAR" | "PLUKKET";
             type: string;
         };
         "no.nav.aap.utbetal.simulering.SimuleringDto": {
@@ -8105,7 +8105,7 @@ export interface components {
              */
             utbetalingOversendt: string;
             /** @enum {string} */
-            utbetalingStatus: "OPPRETTET" | "SENDT" | "BEKREFTET" | "FEILET" | "INGEN_PERIODER";
+            utbetalingStatus: "BEKREFTET" | "FEILET" | "INGEN_PERIODER" | "OPPRETTET" | "SENDT";
         };
         "no.nav.aap.utbetaling.UtbetalingsperiodeDto": {
             /** Format: int32 */
@@ -8128,7 +8128,7 @@ export interface components {
              */
             utbetalingsdato: string;
             /** @enum {string} */
-            utbetalingsperiodeType: "NY" | "ENDRET" | "UENDRET";
+            utbetalingsperiodeType: "ENDRET" | "NY" | "UENDRET";
         };
         "no.nav.aap.verdityper.dokument.JournalpostId": {
             identifikator: string;
