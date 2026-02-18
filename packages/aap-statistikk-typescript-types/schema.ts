@@ -1171,178 +1171,178 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export enum PathsBehandlingstidGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode {
-    IDAG = "IDAG",
-    IG_R = "IG\u00C5R",
     DENNE_UKEN = "DENNE_UKEN",
-    FORRIGE_UKE = "FORRIGE_UKE"
+    FORRIGE_UKE = "FORRIGE_UKE",
+    IDAG = "IDAG",
+    IG_R = "IG\u00C5R"
 }
 export enum PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet {
     DAG = "DAG",
-    UKE = "UKE",
     M_NED = "M\u00C5NED",
+    UKE = "UKE",
     _R = "\u00C5R"
 }
 export enum PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet {
     DAG = "DAG",
-    UKE = "UKE",
     M_NED = "M\u00C5NED",
+    UKE = "UKE",
     _R = "\u00C5R"
 }
 export enum PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode {
-    IDAG = "IDAG",
-    IG_R = "IG\u00C5R",
     DENNE_UKEN = "DENNE_UKEN",
-    FORRIGE_UKE = "FORRIGE_UKE"
+    FORRIGE_UKE = "FORRIGE_UKE",
+    IDAG = "IDAG",
+    IG_R = "IG\u00C5R"
 }
 export enum PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsBehandlingerPVentGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode {
-    IDAG = "IDAG",
-    IG_R = "IG\u00C5R",
     DENNE_UKEN = "DENNE_UKEN",
-    FORRIGE_UKE = "FORRIGE_UKE"
+    FORRIGE_UKE = "FORRIGE_UKE",
+    IDAG = "IDAG",
+    IG_R = "IG\u00C5R"
 }
 export enum PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum PathsBehandlingerReturGetParametersQueryBehandlingstyper {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value4101 = "4101",
@@ -1416,232 +1416,232 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value9004 = "9004"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
-    SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING",
-    SAKSBEHANDLER_NASJONAL = "SAKSBEHANDLER_NASJONAL",
-    KVALITETSSIKRER = "KVALITETSSIKRER",
     BESLUTTER = "BESLUTTER",
+    DRIFT = "DRIFT",
+    KVALITETSSIKRER = "KVALITETSSIKRER",
     LES = "LES",
     PRODUKSJONSSTYRING = "PRODUKSJONSSTYRING",
-    DRIFT = "DRIFT"
+    SAKSBEHANDLER_NASJONAL = "SAKSBEHANDLER_NASJONAL",
+    SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
-    START_BEHANDLING = "START_BEHANDLING",
-    SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
-    VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
-    S_KNAD = "S\u00D8KNAD",
-    VURDER_ALDER = "VURDER_ALDER",
-    VURDER_LOVVALG = "VURDER_LOVVALG",
-    VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
-    VURDER_OPPHOLDSKRAV = "VURDER_OPPHOLDSKRAV",
-    FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
-    AVKLAR_STUDENT = "AVKLAR_STUDENT",
-    SAMORDNING_SYKESTIPEND = "SAMORDNING_SYKESTIPEND",
-    VURDER_BISTANDSBEHOV = "VURDER_BISTANDSBEHOV",
-    OVERGANG_UFORE = "OVERGANG_UFORE",
-    OVERGANG_ARBEID = "OVERGANG_ARBEID",
-    VURDER_SYKEPENGEERSTATNING = "VURDER_SYKEPENGEERSTATNING",
-    FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
-    VURDER_YRKESSKADE = "VURDER_YRKESSKADE",
-    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
-    SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
-    KVALITETSSIKRING = "KVALITETSSIKRING",
-    BARNETILLEGG = "BARNETILLEGG",
-    AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
     ARBEIDSOPPTRAPPING = "ARBEIDSOPPTRAPPING",
-    REFUSJON_KRAV = "REFUSJON_KRAV",
+    AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
+    AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+    AVKLAR_STUDENT = "AVKLAR_STUDENT",
+    AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
+    BARNETILLEGG = "BARNETILLEGG",
+    BEHANDLENDE_ENHET = "BEHANDLENDE_ENHET",
+    BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
+    BREV = "BREV",
+    DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
+    EFFEKTUER_11_7 = "EFFEKTUER_11_7",
     FASTSETT_ARBEIDSEVNE = "FASTSETT_ARBEIDSEVNE",
     FASTSETT_BEREGNINGSTIDSPUNKT = "FASTSETT_BEREGNINGSTIDSPUNKT",
     FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
-    VIS_GRUNNLAG = "VIS_GRUNNLAG",
-    MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
-    VURDER_INNTEKTSBORTFALL = "VURDER_INNTEKTSBORTFALL",
-    SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
-    SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
-    SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
-    SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
-    SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
-    SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
+    FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
     FASTSETT_RETTIGHETSTYPE = "FASTSETT_RETTIGHETSTYPE",
-    IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
-    FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
+    FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
     FASTSETT_UTTAK = "FASTSETT_UTTAK",
-    EFFEKTUER_11_7 = "EFFEKTUER_11_7",
-    DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
-    BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
-    SIMULERING = "SIMULERING",
-    FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
+    FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
     FATTE_VEDTAK = "FATTE_VEDTAK",
-    IVERKSETT_VEDTAK = "IVERKSETT_VEDTAK",
-    OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
-    AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
-    BREV = "BREV",
-    P_KLAGET_BEHANDLING = "P\u00C5KLAGET_BEHANDLING",
-    FULLMEKTIG = "FULLMEKTIG",
+    FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
     FORMKRAV = "FORMKRAV",
-    BEHANDLENDE_ENHET = "BEHANDLENDE_ENHET",
+    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    FULLMEKTIG = "FULLMEKTIG",
+    IKKE_OPPFYLT_MELDEPLIKT = "IKKE_OPPFYLT_MELDEPLIKT",
+    IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
+    IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
+    IVERKSETT_VEDTAK = "IVERKSETT_VEDTAK",
     KLAGEBEHANDLING_KONTOR = "KLAGEBEHANDLING_KONTOR",
     KLAGEBEHANDLING_NAY = "KLAGEBEHANDLING_NAY",
     KLAGEBEHANDLING_OPPSUMMERING = "KLAGEBEHANDLING_OPPSUMMERING",
+    KVALITETSSIKRING = "KVALITETSSIKRING",
+    MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
     OMGJ_RING = "OMGJ\u00D8RING",
-    TREKK_KLAGE = "TREKK_KLAGE",
     OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    IVERKSETT_KONSEKVENS = "IVERKSETT_KONSEKVENS",
+    OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
+    OVERGANG_ARBEID = "OVERGANG_ARBEID",
+    OVERGANG_UFORE = "OVERGANG_UFORE",
+    P_KLAGET_BEHANDLING = "P\u00C5KLAGET_BEHANDLING",
+    REFUSJON_KRAV = "REFUSJON_KRAV",
+    SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
+    SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
+    SAMORDNING_AVSLAG = "SAMORDNING_AVSLAG",
+    SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
+    SAMORDNING_SYKESTIPEND = "SAMORDNING_SYKESTIPEND",
+    SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
+    SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
+    SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
+    SIMULERING = "SIMULERING",
+    START_BEHANDLING = "START_BEHANDLING",
     START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
-    AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
+    S_KNAD = "S\u00D8KNAD",
+    TREKK_KLAGE = "TREKK_KLAGE",
+    UDEFINERT = "UDEFINERT",
+    VIS_GRUNNLAG = "VIS_GRUNNLAG",
     VURDER_AKTIVITETSPLIKT_11_7 = "VURDER_AKTIVITETSPLIKT_11_7",
-    IVERKSETT_BRUDD = "IVERKSETT_BRUDD",
     VURDER_AKTIVITETSPLIKT_11_9 = "VURDER_AKTIVITETSPLIKT_11_9",
-    UDEFINERT = "UDEFINERT"
+    VURDER_ALDER = "VURDER_ALDER",
+    VURDER_BISTANDSBEHOV = "VURDER_BISTANDSBEHOV",
+    VURDER_INNTEKTSBORTFALL = "VURDER_INNTEKTSBORTFALL",
+    VURDER_LOVVALG = "VURDER_LOVVALG",
+    VURDER_MEDLEMSKAP = "VURDER_MEDLEMSKAP",
+    VURDER_OPPHOLDSKRAV = "VURDER_OPPHOLDSKRAV",
+    VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
+    VURDER_SYKEPENGEERSTATNING = "VURDER_SYKEPENGEERSTATNING",
+    VURDER_YRKESSKADE = "VURDER_YRKESSKADE"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
-    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
-    MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
     BREV = "BREV",
     BREV_VENTEPUNKT = "BREV_VENTEPUNKT",
-    VENTEPUNKT = "VENTEPUNKT",
-    OVERSTYR = "OVERSTYR"
+    MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
+    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+    OVERSTYR = "OVERSTYR",
+    VENTEPUNKT = "VENTEPUNKT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
-    OPPRETTET = "OPPRETTET",
+    AVBRUTT = "AVBRUTT",
     AVSLUTTET = "AVSLUTTET",
-    TOTRINNS_VURDERT = "TOTRINNS_VURDERT",
-    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
     KVALITETSSIKRET = "KVALITETSSIKRET",
+    OPPRETTET = "OPPRETTET",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
     SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
-    AVBRUTT = "AVBRUTT"
+    TOTRINNS_VURDERT = "TOTRINNS_VURDERT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
-    OPPRETTET = "OPPRETTET",
+    AVBRUTT = "AVBRUTT",
     AVSLUTTET = "AVSLUTTET",
-    TOTRINNS_VURDERT = "TOTRINNS_VURDERT",
-    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
     KVALITETSSIKRET = "KVALITETSSIKRET",
+    OPPRETTET = "OPPRETTET",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
     SENDT_TILBAKE_FRA_KVALITETSSIKRER = "SENDT_TILBAKE_FRA_KVALITETSSIKRER",
-    AVBRUTT = "AVBRUTT"
+    TOTRINNS_VURDERT = "TOTRINNS_VURDERT"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent {
+    VENTER_P__FUNKSJONALITET = "VENTER_P\u00C5_FUNKSJONALITET",
+    VENTER_P__FUNKSJONALITET_AVSLAG_11_27 = "VENTER_P\u00C5_FUNKSJONALITET_AVSLAG_11_27",
+    VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_P\u00C5_KLAGE_IMPLEMENTASJON",
+    VENTER_P__MASKINELL_AVKLARING = "VENTER_P\u00C5_MASKINELL_AVKLARING",
+    VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
     VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
     VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
-    VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
-    VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL",
     VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-    VENTER_P__MASKINELL_AVKLARING = "VENTER_P\u00C5_MASKINELL_AVKLARING",
-    VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING = "VENTER_P\u00C5_UTENLANDSK_VIDEREFORING_AVKLARING",
-    VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_P\u00C5_KLAGE_IMPLEMENTASJON",
     VENTER_P__SVAR_P__FORH_NDSVARSEL = "VENTER_P\u00C5_SVAR_P\u00C5_FORH\u00C5NDSVARSEL",
-    VENTER_P__FUNKSJONALITET_AVSLAG_11_27 = "VENTER_P\u00C5_FUNKSJONALITET_AVSLAG_11_27",
-    VENTER_P__FUNKSJONALITET = "VENTER_P\u00C5_FUNKSJONALITET"
+    VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING = "VENTER_P\u00C5_UTENLANDSK_VIDEREFORING_AVKLARING",
+    VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
+    ANNET = "ANNET",
+    FEIL_LOVANVENDELSE = "FEIL_LOVANVENDELSE",
+    FOR_DETALJERT = "FOR_DETALJERT",
+    IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET",
     MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
     MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
-    FEIL_LOVANVENDELSE = "FEIL_LOVANVENDELSE",
-    ANNET = "ANNET",
-    SKRIVEFEIL = "SKRIVEFEIL",
-    FOR_DETALJERT = "FOR_DETALJERT",
-    IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET"
+    SKRIVEFEIL = "SKRIVEFEIL"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat {
-    INNVILGET = "INNVILGET",
+    AVBRUTT = "AVBRUTT",
     AVSLAG = "AVSLAG",
-    TRUKKET = "TRUKKET",
-    KLAGE_OPPRETTHOLDES = "KLAGE_OPPRETTHOLDES",
-    KLAGE_OMGJ_RES = "KLAGE_OMGJ\u00D8RES",
-    KLAGE_DELVIS_OMGJ_RES = "KLAGE_DELVIS_OMGJ\u00D8RES",
+    INNVILGET = "INNVILGET",
     KLAGE_AVSL_TT = "KLAGE_AVSL\u00C5TT",
+    KLAGE_DELVIS_OMGJ_RES = "KLAGE_DELVIS_OMGJ\u00D8RES",
+    KLAGE_OMGJ_RES = "KLAGE_OMGJ\u00D8RES",
+    KLAGE_OPPRETTHOLDES = "KLAGE_OPPRETTHOLDES",
     KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    AVBRUTT = "AVBRUTT"
+    TRUKKET = "TRUKKET"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType {
     STANDARD = "STANDARD",
     YTTERLIGERE_NEDSATT = "YTTERLIGERE_NEDSATT"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype {
-    BISTANDSBEHOV = "BISTANDSBEHOV",
-    SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
-    STUDENT = "STUDENT",
     ARBEIDSS_KER = "ARBEIDSS\u00D8KER",
+    BISTANDSBEHOV = "BISTANDSBEHOV",
+    STUDENT = "STUDENT",
+    SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
     VURDERES_FOR_UF_RETRYGD = "VURDERES_FOR_UF\u00D8RETRYGD"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus {
-    OPPRETTET = "OPPRETTET",
-    UTREDES = "UTREDES",
+    AVSLUTTET = "AVSLUTTET",
     IVERKSETTES = "IVERKSETTES",
-    AVSLUTTET = "AVSLUTTET"
+    OPPRETTET = "OPPRETTET",
+    UTREDES = "UTREDES"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Klage = "Klage",
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus {
-    OPPRETTET = "OPPRETTET",
-    UTREDES = "UTREDES",
+    AVSLUTTET = "AVSLUTTET",
     L_PENDE = "L\u00D8PENDE",
-    AVSLUTTET = "AVSLUTTET"
+    OPPRETTET = "OPPRETTET",
+    UTREDES = "UTREDES"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat {
     DIGITAL = "DIGITAL",
     PAPIR = "PAPIR"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov {
-    S_KNAD = "S\u00D8KNAD",
     AKTIVITETSMELDING = "AKTIVITETSMELDING",
-    MELDEKORT = "MELDEKORT",
-    LEGEERKL_RING = "LEGEERKL\u00C6RING",
+    AKTIVITETSPLIKT_11_7 = "AKTIVITETSPLIKT_11_7",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     AVVIST_LEGEERKL_RING = "AVVIST_LEGEERKL\u00C6RING",
-    DIALOGMELDING = "DIALOGMELDING",
-    G_REGULERING = "G_REGULERING",
+    BARNETILLEGG = "BARNETILLEGG",
     BARNETILLEGG_SATS_REGULERING = "BARNETILLEGG_SATS_REGULERING",
-    REVURDER_MEDLEMSKAP = "REVURDER_MEDLEMSKAP",
-    REVURDER_YRKESSKADE = "REVURDER_YRKESSKADE",
+    DIALOGMELDING = "DIALOGMELDING",
+    D_DSFALL_BARN = "D\u00D8DSFALL_BARN",
+    D_DSFALL_BRUKER = "D\u00D8DSFALL_BRUKER",
+    EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
+    EFFEKTUER_AKTIVITETSPLIKT_11_9 = "EFFEKTUER_AKTIVITETSPLIKT_11_9",
+    FORUTGAENDE_MEDLEMSKAP = "FORUTGAENDE_MEDLEMSKAP",
+    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    G_REGULERING = "G_REGULERING",
+    HELHETLIG_VURDERING = "HELHETLIG_VURDERING",
+    INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
+    KLAGE = "KLAGE",
+    KLAGE_TRUKKET = "KLAGE_TRUKKET",
+    LEGEERKL_RING = "LEGEERKL\u00C6RING",
+    LOVVALG_OG_MEDLEMSKAP = "LOVVALG_OG_MEDLEMSKAP",
+    MELDEKORT = "MELDEKORT",
+    MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
+    MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
+    OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
+    OPPHOLDSKRAV = "OPPHOLDSKRAV",
+    OVERGANG_ARBEID = "OVERGANG_ARBEID",
+    OVERGANG_UFORE = "OVERGANG_UFORE",
+    REFUSJONSKRAV = "REFUSJONSKRAV",
+    REVURDERING_AVBRUTT = "REVURDERING_AVBRUTT",
     REVURDER_BEREGNING = "REVURDER_BEREGNING",
     REVURDER_LOVVALG = "REVURDER_LOVVALG",
+    REVURDER_MANUELL_INNTEKT = "REVURDER_MANUELL_INNTEKT",
+    REVURDER_MEDLEMSKAP = "REVURDER_MEDLEMSKAP",
+    REVURDER_MELDEPLIKT_RIMELIG_GRUNN = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN",
     REVURDER_SAMORDNING = "REVURDER_SAMORDNING",
-    REVURDER_STUDENT = "REVURDER_STUDENT",
-    KLAGE = "KLAGE",
-    LOVVALG_OG_MEDLEMSKAP = "LOVVALG_OG_MEDLEMSKAP",
-    FORUTGAENDE_MEDLEMSKAP = "FORUTGAENDE_MEDLEMSKAP",
-    SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND",
-    REVURDER_SYKEPENGEERSTATNING = "REVURDER_SYKEPENGEERSTATNING",
-    BARNETILLEGG = "BARNETILLEGG",
-    INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
-    SAMORDNING_OG_AVREGNING = "SAMORDNING_OG_AVREGNING",
     REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER = "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER",
-    REVURDER_SAMORDNING_UF_RE = "REVURDER_SAMORDNING_UF\u00D8RE",
     REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER = "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER",
     REVURDER_SAMORDNING_ARBEIDSGIVER = "REVURDER_SAMORDNING_ARBEIDSGIVER",
     REVURDER_SAMORDNING_TJENESTEPENSJON = "REVURDER_SAMORDNING_TJENESTEPENSJON",
-    REFUSJONSKRAV = "REFUSJONSKRAV",
-    UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT",
-    VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
+    REVURDER_SAMORDNING_UF_RE = "REVURDER_SAMORDNING_UF\u00D8RE",
+    REVURDER_STUDENT = "REVURDER_STUDENT",
+    REVURDER_SYKEPENGEERSTATNING = "REVURDER_SYKEPENGEERSTATNING",
+    REVURDER_SYKESTIPEND = "REVURDER_SYKESTIPEND",
+    REVURDER_YRKESSKADE = "REVURDER_YRKESSKADE",
+    SAMORDNING_OG_AVREGNING = "SAMORDNING_OG_AVREGNING",
+    SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND",
+    S_KNAD = "S\u00D8KNAD",
     S_KNAD_TRUKKET = "S\u00D8KNAD_TRUKKET",
-    REVURDERING_AVBRUTT = "REVURDERING_AVBRUTT",
-    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
-    KLAGE_TRUKKET = "KLAGE_TRUKKET",
-    REVURDER_MANUELL_INNTEKT = "REVURDER_MANUELL_INNTEKT",
-    MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
-    OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
-    HELHETLIG_VURDERING = "HELHETLIG_VURDERING",
-    REVURDER_MELDEPLIKT_RIMELIG_GRUNN = "REVURDER_MELDEPLIKT_RIMELIG_GRUNN",
-    AKTIVITETSPLIKT_11_7 = "AKTIVITETSPLIKT_11_7",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    OVERGANG_UFORE = "OVERGANG_UFORE",
-    OVERGANG_ARBEID = "OVERGANG_ARBEID",
-    D_DSFALL_BRUKER = "D\u00D8DSFALL_BRUKER",
-    D_DSFALL_BARN = "D\u00D8DSFALL_BARN",
-    OPPHOLDSKRAV = "OPPHOLDSKRAV",
-    EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
-    EFFEKTUER_AKTIVITETSPLIKT_11_9 = "EFFEKTUER_AKTIVITETSPLIKT_11_9",
+    UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT",
     UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE",
-    MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
-    REVURDER_SYKESTIPEND = "REVURDER_SYKESTIPEND"
+    VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats {
     IKKE_MINSTESATS = "IKKE_MINSTESATS",
@@ -1649,139 +1649,139 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMin
     MINSTESATS_UNDER_25 = "MINSTESATS_UNDER_25"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
-    SYKDOMSVILK_RET = "SYKDOMSVILK\u00C5RET",
     BISTANDSVILK_RET = "BISTANDSVILK\u00C5RET",
-    MEDLEMSKAP = "MEDLEMSKAP",
-    LOVVALG = "LOVVALG",
     GRUNNLAGET = "GRUNNLAGET",
+    INNTEKTSBORTFALL = "INNTEKTSBORTFALL",
+    LOVVALG = "LOVVALG",
+    MEDLEMSKAP = "MEDLEMSKAP",
+    OPPHOLDSKRAV = "OPPHOLDSKRAV",
+    ORDIN_R_KVOTE = "ORDIN\u00C6R_KVOTE",
     OVERGANGARBEIDVILK_RET = "OVERGANGARBEIDVILK\u00C5RET",
     OVERGANGUF_REVILK_RET = "OVERGANGUF\u00D8REVILK\u00C5RET",
-    STRAFFEGJENNOMF_RING = "STRAFFEGJENNOMF\u00D8RING",
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    OPPHOLDSKRAV = "OPPHOLDSKRAV",
-    SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
     SAMORDNING = "SAMORDNING",
-    INNTEKTSBORTFALL = "INNTEKTSBORTFALL",
     SAMORDNING_ANNEN_LOVGIVNING = "SAMORDNING_ANNEN_LOVGIVNING",
+    STRAFFEGJENNOMF_RING = "STRAFFEGJENNOMF\u00D8RING",
     STUDENT = "STUDENT",
-    ORDIN_R_KVOTE = "ORDIN\u00C6R_KVOTE",
+    SYKDOMSVILK_RET = "SYKDOMSVILK\u00C5RET",
+    SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
     SYKEPENGEERSTATNING_KVOTE = "SYKEPENGEERSTATNING_KVOTE"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall {
-    IKKE_VURDERT = "IKKE_VURDERT",
+    IKKE_OPPFYLT = "IKKE_OPPFYLT",
     IKKE_RELEVANT = "IKKE_RELEVANT",
-    OPPFYLT = "OPPFYLT",
-    IKKE_OPPFYLT = "IKKE_OPPFYLT"
+    IKKE_VURDERT = "IKKE_VURDERT",
+    OPPFYLT = "OPPFYLT"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Klage = "Klage",
+    Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export enum NoNavAapOppgaveStatistikkOppgaveHendelseHendelse {
-    OPPRETTET = "OPPRETTET",
-    OPPDATERT = "OPPDATERT",
-    RESERVERT = "RESERVERT",
     AVRESERVERT = "AVRESERVERT",
-    LUKKET = "LUKKET"
+    LUKKET = "LUKKET",
+    OPPDATERT = "OPPDATERT",
+    OPPRETTET = "OPPRETTET",
+    RESERVERT = "RESERVERT"
 }
 export enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype {
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    TILBAKEKREVING = "TILBAKEKREVING",
-    KLAGE = "KLAGE",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    JOURNALF_RING = "JOURNALF\u00D8RING"
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    JOURNALF_RING = "JOURNALF\u00D8RING",
+    KLAGE = "KLAGE",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    TILBAKEKREVING = "TILBAKEKREVING"
 }
 export enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus {
-    OPPRETTET = "OPPRETTET",
-    AVSLUTTET = "AVSLUTTET"
+    AVSLUTTET = "AVSLUTTET",
+    OPPRETTET = "OPPRETTET"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
-    Value9001 = "9001",
     Value1337 = "1337",
     Value1338 = "1338",
     Value1339 = "1339",
     Value1340 = "1340",
     Value1341 = "1341",
-    Value1342 = "1342"
+    Value1342 = "1342",
+    Value9001 = "9001"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv {
-    SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING",
-    SAKSBEHANDLER_NASJONAL = "SAKSBEHANDLER_NASJONAL",
-    KVALITETSSIKRER = "KVALITETSSIKRER",
     BESLUTTER = "BESLUTTER",
+    DRIFT = "DRIFT",
+    KVALITETSSIKRER = "KVALITETSSIKRER",
     LES = "LES",
     PRODUKSJONSSTYRING = "PRODUKSJONSSTYRING",
-    DRIFT = "DRIFT"
+    SAKSBEHANDLER_NASJONAL = "SAKSBEHANDLER_NASJONAL",
+    SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg {
-    DIGITALISER_DOKUMENT = "DIGITALISER_DOKUMENT",
-    START_BEHANDLING = "START_BEHANDLING",
-    AVKLAR_TEMA = "AVKLAR_TEMA",
-    SETT_FAGSAK = "SETT_FAGSAK",
-    ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALF\u00D8RING",
-    OVERLEVER_TIL_FAGSYSTEM = "OVERLEVER_TIL_FAGSYSTEM",
-    UDEFINERT = "UDEFINERT",
     AVKLAR_SAK = "AVKLAR_SAK",
-    VIDERESEND = "VIDERESEND",
-    IVERKSETTES = "IVERKSETTES"
+    AVKLAR_TEMA = "AVKLAR_TEMA",
+    DIGITALISER_DOKUMENT = "DIGITALISER_DOKUMENT",
+    ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALF\u00D8RING",
+    IVERKSETTES = "IVERKSETTES",
+    OVERLEVER_TIL_FAGSYSTEM = "OVERLEVER_TIL_FAGSYSTEM",
+    SETT_FAGSAK = "SETT_FAGSAK",
+    START_BEHANDLING = "START_BEHANDLING",
+    UDEFINERT = "UDEFINERT",
+    VIDERESEND = "VIDERESEND"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType {
-    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
     MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
+    MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
     VENTEPUNKT = "VENTEPUNKT"
 }
 export enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus {
-    OPPRETTET = "OPPRETTET",
+    AVBRUTT = "AVBRUTT",
     AVSLUTTET = "AVSLUTTET",
-    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
-    AVBRUTT = "AVBRUTT"
+    OPPRETTET = "OPPRETTET",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER"
 }
 export enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
     DokumentH_ndtering = "DokumentH\u00E5ndtering",
     Journalf_ring = "Journalf\u00F8ring"
 }
 export enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus {
-    OPPRETTET = "OPPRETTET",
-    UTREDES = "UTREDES",
+    AVSLUTTET = "AVSLUTTET",
     IVERKSETTES = "IVERKSETTES",
-    AVSLUTTET = "AVSLUTTET"
+    OPPRETTET = "OPPRETTET",
+    UTREDES = "UTREDES"
 }
 export enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
-    OPPRETTET = "OPPRETTET",
+    AVBRUTT = "AVBRUTT",
     AVSLUTTET = "AVSLUTTET",
-    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER",
-    AVBRUTT = "AVBRUTT"
+    OPPRETTET = "OPPRETTET",
+    SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER"
 }
 export enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
+    VENTER_P__BEHANDLING_I_GOSYS = "VENTER_P\u00C5_BEHANDLING_I_GOSYS",
+    VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
     VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
     VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
-    VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
-    VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL",
     VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-    VENTER_P__BEHANDLING_I_GOSYS = "VENTER_P\u00C5_BEHANDLING_I_GOSYS"
+    VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL"
 }
 export enum NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype {
-    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
-    Revurdering = "Revurdering",
-    Tilbakekreving = "Tilbakekreving",
-    Klage = "Klage",
-    SvarFraAndreinstans = "SvarFraAndreinstans",
-    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
-    Journalf_ring = "Journalf\u00F8ring",
-    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
     Aktivitetsplikt = "Aktivitetsplikt",
-    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9"
+    Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
+    Dokumenth_ndtering = "Dokumenth\u00E5ndtering",
+    F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+    Journalf_ring = "Journalf\u00F8ring",
+    Klage = "Klage",
+    Oppf_lgingsbehandling = "Oppf\u00F8lgingsbehandling",
+    Revurdering = "Revurdering",
+    SvarFraAndreinstans = "SvarFraAndreinstans",
+    Tilbakekreving = "Tilbakekreving"
 }
 export type operations = Record<string, never>;
