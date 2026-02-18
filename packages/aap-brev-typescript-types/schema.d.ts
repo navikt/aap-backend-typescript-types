@@ -872,7 +872,7 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_UTVID_VEDTAKSLENGDE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_11_23_SJETTE_LEDD" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "BARNETILLEGG_SATS_REGULERING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "KLAGE_MOTTATT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             brukerIdent: string;
             faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag"][];
             ferdigstillAutomatisk: boolean;
@@ -896,15 +896,15 @@ export interface components {
             tekniskNavn: string;
             visningsnavn: string;
             /** @enum {string} */
-            type: "TEKST" | "FAKTAGRUNNLAG";
+            type: "FAKTAGRUNNLAG" | "TEKST";
         };
         "no.nav.aap.brev.kontrakt.BlokkInnhold.FormattertTekst": {
-            formattering: ("UNDERSTREK" | "KURSIV" | "FET")[];
+            formattering: ("FET" | "KURSIV" | "UNDERSTREK")[];
             /** Format: uuid */
             id: string;
             tekst: string;
             /** @enum {string} */
-            type: "TEKST" | "FAKTAGRUNNLAG";
+            type: "FAKTAGRUNNLAG" | "TEKST";
         };
         "no.nav.aap.brev.kontrakt.Brev": {
             journalpostTittel?: string | null;
@@ -920,7 +920,7 @@ export interface components {
             brevdata?: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
             brevmal?: string | null;
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_UTVID_VEDTAKSLENGDE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_11_23_SJETTE_LEDD" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "BARNETILLEGG_SATS_REGULERING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "KLAGE_MOTTATT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -936,7 +936,7 @@ export interface components {
             /** @enum {string} */
             "spr\u00E5k": "EN" | "NB" | "NN";
             /** @enum {string} */
-            status: "UNDER_ARBEID" | "FERDIGSTILT" | "AVBRUTT";
+            status: "AVBRUTT" | "FERDIGSTILT" | "UNDER_ARBEID";
         };
         "no.nav.aap.brev.kontrakt.BrevdataDto": {
             betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst"][];
@@ -980,7 +980,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.DatoAvklartForJobbs\u00F8k": {
             /**
@@ -989,7 +989,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7": {
             /**
@@ -998,7 +998,7 @@ export interface components {
              */
             frist: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning": {
             beregningsgrunnlag?: number | null;
@@ -1009,7 +1009,7 @@ export interface components {
             beregningstidspunkt?: string | null;
             "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r": {
             inntekt: number;
@@ -1022,7 +1022,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse": {
             /**
@@ -1031,12 +1031,12 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering": {
             begrunnelse: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse": {
             /** Format: int32 */
@@ -1051,7 +1051,7 @@ export interface components {
             "minste\u00C5rligYtelseUnder25"?: number | null;
             "\u00E5rligYtelse"?: number | null;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.UtvidetAapFomDato": {
             /**
@@ -1060,7 +1060,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "DATO_AVKLART_FOR_JOBBSOK" | "UTVIDET_AAP_FOM_DATO" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "TILKJENT_YTELSE" | "SYKDOMSVURDERING";
+            type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO";
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
@@ -1081,7 +1081,7 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.HentSignaturerRequest": {
             /** @enum {string} */
-            brevtype: "INNVILGELSE" | "VEDTAK_UTVID_VEDTAKSLENGDE" | "VEDTAK_11_17" | "VEDTAK_11_18" | "AVSLAG" | "VARSEL_OM_BESTILLING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_11_23_SJETTE_LEDD" | "FORVALTNINGSMELDING" | "VEDTAK_ENDRING" | "BARNETILLEGG_SATS_REGULERING" | "KLAGE_AVVIST" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "KLAGE_MOTTATT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "OMGJØRING_VEDTAK_11_9";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             brukerIdent: string;
             signaturGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
         };
@@ -1151,7 +1151,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.SignaturGrunnlag": {
             navIdent: string;
             /** @enum {string|null} */
-            rolle?: "KVALITETSSIKRER" | "SAKSBEHANDLER_OPPFOLGING" | "BESLUTTER" | "SAKSBEHANDLER_NASJONAL" | null;
+            rolle?: "BESLUTTER" | "KVALITETSSIKRER" | "SAKSBEHANDLER_NASJONAL" | "SAKSBEHANDLER_OPPFOLGING" | null;
         };
         "no.nav.aap.brev.kontrakt.Tekstbolk": {
             /** Format: uuid */
@@ -1186,7 +1186,7 @@ export interface components {
              */
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
-            status: "KLAR" | "PLUKKET" | "FERDIG" | "FEILET" | "AVBRUTT";
+            status: "AVBRUTT" | "FEILET" | "FERDIG" | "KLAR" | "PLUKKET";
             type: string;
         };
     };
