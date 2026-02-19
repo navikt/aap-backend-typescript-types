@@ -7459,7 +7459,7 @@ export interface components {
             asJournalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
             asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"];
             /** @enum {string} */
-            type: "AVVIST_LEGEERKLÆRING_ID" | "BEHANDLING_REFERANSE" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "FAGSYSTEMINFO_BEHOV_HENDELSE_ID" | "JOURNALPOST" | "KABAL_HENDELSE_ID" | "MANUELL_OPPRETTELSE" | "PDL_HENDELSE_ID" | "REVURDERING_ID" | "SAKSBEHANDLER_KELVIN_REFERANSE" | "SYKEPENGEVEDTAK_HENDELSE_ID" | "TILBAKEKREVING_HENDELSE_ID";
+            type: "AVVIST_LEGEERKLÆRING_ID" | "BEHANDLING_REFERANSE" | "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID" | "FAGSYSTEMINFO_BEHOV_HENDELSE_ID" | "INSTITUSJONSOPPHOLD_HENDELSE_ID" | "JOURNALPOST" | "KABAL_HENDELSE_ID" | "MANUELL_OPPRETTELSE" | "PDL_HENDELSE_ID" | "REVURDERING_ID" | "SAKSBEHANDLER_KELVIN_REFERANSE" | "SYKEPENGEVEDTAK_HENDELSE_ID" | "TILBAKEKREVING_HENDELSE_ID";
             verdi: string;
         };
         /** Format: uuid */
