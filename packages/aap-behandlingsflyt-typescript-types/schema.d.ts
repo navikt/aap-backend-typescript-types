@@ -4648,7 +4648,6 @@ export interface components {
             /** Format: int64 */
             behandlingVersjon: number;
             behov: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.EnkeltAvklaringsbehovL\u00F8sning"];
-            ingenEndringIGruppe?: boolean | null;
             /** Format: uuid */
             referanse: string;
         };
@@ -4656,7 +4655,6 @@ export interface components {
             /** Format: int64 */
             behandlingVersjon: number;
             behov: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.PeriodisertAvklaringsbehovL\u00F8sning<*>"];
-            ingenEndringIGruppe?: boolean | null;
             /** Format: uuid */
             referanse: string;
         };
