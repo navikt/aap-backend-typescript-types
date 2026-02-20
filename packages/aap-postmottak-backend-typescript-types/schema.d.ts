@@ -577,7 +577,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/behandling/behandlinger": {
+    "/api/alle-behandliger": {
         parameters: {
             query?: never;
             header?: never;
