@@ -330,7 +330,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.postmottak.avklaringsbehov.flate.L\u00F8sAvklaringsbehovP\u00E5Behandling"];
+                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.L\u00F8sAvklaringsbehovP\u00E5Behandling"];
                 };
             };
             responses: {
@@ -339,7 +339,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.avklaringsbehov.flate.L\u00F8sAvklaringsbehovP\u00E5Behandling"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.L\u00F8sAvklaringsbehovP\u00E5Behandling"];
                     };
                 };
             };
@@ -929,7 +929,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.test.BehandlingsListe"][];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.test.BehandlingsListe"][];
                     };
                 };
             };
@@ -1230,6 +1230,13 @@ export interface components {
             /** Format: int64 */
             referanse: number;
         };
+        "no.nav.aap.postmottak.api.flyt.L\u00F8sAvklaringsbehovP\u00E5Behandling": {
+            /** Format: int64 */
+            behandlingVersjon: number;
+            behov: components["schemas"]["no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.AvklaringsbehovL\u00F8sning"];
+            ingenEndringIGruppe?: boolean | null;
+            referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse"];
+        };
         "no.nav.aap.postmottak.api.flyt.Prosessering": {
             /** @enum {string} */
             status: "FEILET" | "FERDIG" | "JOBBER";
@@ -1257,12 +1264,16 @@ export interface components {
             /** @enum {string} */
             grunn: "VENTER_PÅ_BEHANDLING_I_GOSYS" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_VURDERING_AV_ROL";
         };
-        "no.nav.aap.postmottak.avklaringsbehov.flate.L\u00F8sAvklaringsbehovP\u00E5Behandling": {
-            /** Format: int64 */
-            behandlingVersjon: number;
-            behov: components["schemas"]["no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.AvklaringsbehovL\u00F8sning"];
-            ingenEndringIGruppe?: boolean | null;
-            referanse: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.behandling.Behandlingsreferanse"];
+        "no.nav.aap.postmottak.api.test.BehandlingsListe": {
+            id: string;
+            journalpostId: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettet: string;
+            status: string;
+            steg: string;
         };
         "no.nav.aap.postmottak.avklaringsbehov.l\u00F8sning.AvklarOverleveringL\u00F8sning": {
             behovstype: string;
@@ -1369,17 +1380,6 @@ export interface components {
             /** @enum {string} */
             type: "MANUELT_FRIVILLIG" | "MANUELT_PÅKREVD" | "VENTEPUNKT";
             name: string;
-        };
-        "no.nav.aap.postmottak.test.BehandlingsListe": {
-            id: string;
-            journalpostId: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettet: string;
-            status: string;
-            steg: string;
         };
     };
     responses: never;
