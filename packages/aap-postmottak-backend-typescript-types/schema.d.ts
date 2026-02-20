@@ -577,6 +577,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/{ident}/behandlinger": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    ident: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.FinnBehandlingerResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/behandling/{referanse}/grunnlag/digitalisering": {
         parameters: {
             query?: never;
@@ -1136,6 +1174,23 @@ export interface components {
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto": {
             "f\u00F8rP\u00E5GenerellSak": boolean;
             saksnummer?: string | null;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.sak.BehandlinginfoDTO": {
+            journalPostId: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettet: string;
+            /** Format: uuid */
+            referanse: string;
+            /** @enum {string} */
+            status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
+            /** @enum {string} */
+            typeBehandling: "DokumentHåndtering" | "Journalføring";
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.sak.FinnBehandlingerResponse": {
+            behandlinger: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.BehandlinginfoDTO"][];
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
