@@ -7938,10 +7938,7 @@ export interface components {
             vurderingsbehov: "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9";
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SakOgBehandlingDTO": {
-            personIdent: string;
             saksnummer: string;
-            sisteBehandlingStatus: string;
-            status: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SakPersoninfoDTO": {
             /**
