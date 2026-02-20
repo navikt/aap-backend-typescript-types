@@ -1986,6 +1986,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
     BEHANDLING_REFERANSE = "BEHANDLING_REFERANSE",
     BRUDD_AKTIVITETSPLIKT_INNSENDING_ID = "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID",
     FAGSYSTEMINFO_BEHOV_HENDELSE_ID = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID",
+    INSTITUSJONSOPPHOLD_HENDELSE_ID = "INSTITUSJONSOPPHOLD_HENDELSE_ID",
     JOURNALPOST = "JOURNALPOST",
     KABAL_HENDELSE_ID = "KABAL_HENDELSE_ID",
     MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
@@ -2019,7 +2020,9 @@ export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
 export enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus {
     AVSLUTTET = "AVSLUTTET",
     OPPRETTET = "OPPRETTET",
-    TIL_BEHANDLING = "TIL_BEHANDLING"
+    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
+    TIL_BEHANDLING = "TIL_BEHANDLING",
+    TIL_BESLUTTER = "TIL_BESLUTTER"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
     ANNET = "ANNET",

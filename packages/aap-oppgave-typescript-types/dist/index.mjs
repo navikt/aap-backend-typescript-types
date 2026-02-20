@@ -307,6 +307,7 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["BEHANDLING_REFERANSE"] = "BEHANDLING_REFERANSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["BRUDD_AKTIVITETSPLIKT_INNSENDING_ID"] = "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["FAGSYSTEMINFO_BEHOV_HENDELSE_ID"] = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["INSTITUSJONSOPPHOLD_HENDELSE_ID"] = "INSTITUSJONSOPPHOLD_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["JOURNALPOST"] = "JOURNALPOST";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["KABAL_HENDELSE_ID"] = "KABAL_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
@@ -342,7 +343,9 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
 var NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2) => {
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["AVSLUTTET"] = "AVSLUTTET";
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["OPPRETTET"] = "OPPRETTET";
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["TIL_BEHANDLING"] = "TIL_BEHANDLING";
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["TIL_BESLUTTER"] = "TIL_BESLUTTER";
   return NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2;
 })(NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus || {});
 var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {
