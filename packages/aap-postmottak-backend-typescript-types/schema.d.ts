@@ -577,24 +577,27 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/behandling/{ident}/behandlinger": {
+    "/api/behandling/behandlinger": {
         parameters: {
             query?: never;
             header?: never;
             path?: never;
             cookie?: never;
         };
-        get: {
+        get?: never;
+        put?: never;
+        post: {
             parameters: {
                 query?: never;
                 header?: never;
-                path: {
-                    /** @description referanse */
-                    ident: string;
-                };
+                path?: never;
                 cookie?: never;
             };
-            requestBody?: never;
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.IdentRequest"];
+                };
+            };
             responses: {
                 /** @description OK */
                 200: {
@@ -607,8 +610,6 @@ export interface paths {
                 };
             };
         };
-        put?: never;
-        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -1191,6 +1192,9 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.FinnBehandlingerResponse": {
             behandlinger: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.BehandlinginfoDTO"][];
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.sak.IdentRequest": {
+            ident: string;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
