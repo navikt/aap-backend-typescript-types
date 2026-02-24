@@ -1112,7 +1112,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
+                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.RedigitaliserRequest"];
                 };
             };
             responses: {
@@ -1341,6 +1341,10 @@ export interface components {
             status: "FEILET" | "FERDIG" | "JOBBER";
             ventendeOppgaver: components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
         };
+        "no.nav.aap.postmottak.api.flyt.RedigitaliserRequest": {
+            /** Format: int64 */
+            journalpostId: number;
+        };
         "no.nav.aap.postmottak.api.flyt.SettP\u00E5VentRequest": {
             begrunnelse: string;
             /** Format: int64 */
@@ -1480,8 +1484,6 @@ export interface components {
             type: "MANUELT_FRIVILLIG" | "MANUELT_PÅKREVD" | "VENTEPUNKT";
             name: string;
         };
-        /** Format: int64 */
-        "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": number;
     };
     responses: never;
     parameters: never;
