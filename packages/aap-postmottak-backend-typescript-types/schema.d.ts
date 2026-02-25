@@ -1091,7 +1091,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/redigitalisering/{referanse}": {
+    "/api/redigitalisering": {
         parameters: {
             query?: never;
             header?: never;
@@ -1104,10 +1104,7 @@ export interface paths {
             parameters: {
                 query?: never;
                 header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
+                path?: never;
                 cookie?: never;
             };
             requestBody?: {
@@ -1344,6 +1341,7 @@ export interface components {
         "no.nav.aap.postmottak.api.flyt.RedigitaliserRequest": {
             /** Format: int64 */
             journalpostId: number;
+            saksnummer: string;
         };
         "no.nav.aap.postmottak.api.flyt.SettP\u00E5VentRequest": {
             begrunnelse: string;
