@@ -508,6 +508,32 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});
+var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2) => {
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["AKTIVITETSMELDING"] = "AKTIVITETSMELDING";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["ANNET_RELEVANT_DOKUMENT"] = "ANNET_RELEVANT_DOKUMENT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["BARNETILLEGG_SATSENDRING"] = "BARNETILLEGG_SATSENDRING";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["ENDRING_I_REGISTERDATA"] = "ENDRING_I_REGISTERDATA";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["FAGSYSTEMINFO_BEHOV_HENDELSE"] = "FAGSYSTEMINFO_BEHOV_HENDELSE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["FASTSATT_PERIODE_PASSERT"] = "FASTSATT_PERIODE_PASSERT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["HELSEOPPLYSNINGER"] = "HELSEOPPLYSNINGER";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["KLAGE"] = "KLAGE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["MELDEKORT"] = "MELDEKORT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["MIGRER_RETTIGHETSPERIODE"] = "MIGRER_RETTIGHETSPERIODE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["OMGJ_RING_ETTER_KLAGE"] = "OMGJ\xD8RING_ETTER_KLAGE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS"] = "OMGJ\xD8RING_ETTER_SVAR_FRA_KLAGEINSTANS";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING"] = "OPPF\xD8LGINGSOPPGAVE_SAMORDNING_GRADERING";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["SVAR_FRA_KLAGEINSTANS"] = "SVAR_FRA_KLAGEINSTANS";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["S_KNAD"] = "S\xD8KNAD";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["UDEFINERT"] = "UDEFINERT";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
+  return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse2;
+})(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse || {});
 var NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2) => {
   NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2["IKKE_MINSTESATS"] = "IKKE_MINSTESATS";
   NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats2["MINSTESATS_OVER_25"] = "MINSTESATS_OVER_25";
@@ -680,6 +706,7 @@ export {
   NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType,
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat,
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov,
