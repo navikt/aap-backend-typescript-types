@@ -6342,7 +6342,7 @@ export interface components {
             /** @enum {string|null} */
             rettighetstype?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
             /** @enum {string} */
-            utfall: "IKKE_BEHANDLINGSGRUNNLAG" | "POTENSIELT_OPPFYLT" | "UUNGÅELIG_AVSLAG";
+            utfall: "IKKE_BEHANDLINGSGRUNNLAG" | "POTENSIELT_OPPFYLT" | "UUNNGÅELIG_AVSLAG";
         };
         "no.nav.aap.behandlingsflyt.behandling.tidligerevurderinger.TidligereVurderingerDto": {
             tidligereVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tidligerevurderinger.TidligereVurderingDto"][];
