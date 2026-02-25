@@ -1264,7 +1264,8 @@ export interface components {
             status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
             versjon: string;
             vurderingsbehov: string[];
-            "\u00E5rsakTilOpprettelse": string;
+            /** @enum {string} */
+            "\u00E5rsakTilOpprettelse": NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse;
             "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
@@ -1958,6 +1959,31 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     IVERKSETTES = "IVERKSETTES",
     OPPRETTET = "OPPRETTET",
     UTREDES = "UTREDES"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse {
+    AKTIVITETSMELDING = "AKTIVITETSMELDING",
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
+    ANNET_RELEVANT_DOKUMENT = "ANNET_RELEVANT_DOKUMENT",
+    BARNETILLEGG_SATSENDRING = "BARNETILLEGG_SATSENDRING",
+    ENDRING_I_REGISTERDATA = "ENDRING_I_REGISTERDATA",
+    FAGSYSTEMINFO_BEHOV_HENDELSE = "FAGSYSTEMINFO_BEHOV_HENDELSE",
+    FASTSATT_PERIODE_PASSERT = "FASTSATT_PERIODE_PASSERT",
+    FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+    HELSEOPPLYSNINGER = "HELSEOPPLYSNINGER",
+    KLAGE = "KLAGE",
+    MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
+    MELDEKORT = "MELDEKORT",
+    MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
+    OMGJ_RING_ETTER_KLAGE = "OMGJ\u00D8RING_ETTER_KLAGE",
+    OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS = "OMGJ\u00D8RING_ETTER_SVAR_FRA_KLAGEINSTANS",
+    OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
+    OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING = "OPPF\u00D8LGINGSOPPGAVE_SAMORDNING_GRADERING",
+    SVAR_FRA_KLAGEINSTANS = "SVAR_FRA_KLAGEINSTANS",
+    S_KNAD = "S\u00D8KNAD",
+    TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
+    UDEFINERT = "UDEFINERT",
+    UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
     AVBRUTT = "AVBRUTT",

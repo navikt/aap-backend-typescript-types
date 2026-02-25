@@ -27,6 +27,7 @@ __export(index_exports, {
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus: () => NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg: () => NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType: () => NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType,
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse: () => NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus: () => NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent: () => NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus: () => NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
@@ -343,6 +344,32 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus =
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus2["UTREDES"] = "UTREDES";
   return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus2;
 })(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus || {});
+var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2) => {
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["AKTIVITETSMELDING"] = "AKTIVITETSMELDING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["ANNET_RELEVANT_DOKUMENT"] = "ANNET_RELEVANT_DOKUMENT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["BARNETILLEGG_SATSENDRING"] = "BARNETILLEGG_SATSENDRING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["ENDRING_I_REGISTERDATA"] = "ENDRING_I_REGISTERDATA";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["FAGSYSTEMINFO_BEHOV_HENDELSE"] = "FAGSYSTEMINFO_BEHOV_HENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["FASTSATT_PERIODE_PASSERT"] = "FASTSATT_PERIODE_PASSERT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["HELSEOPPLYSNINGER"] = "HELSEOPPLYSNINGER";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["KLAGE"] = "KLAGE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["MELDEKORT"] = "MELDEKORT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["MIGRER_RETTIGHETSPERIODE"] = "MIGRER_RETTIGHETSPERIODE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["OMGJ_RING_ETTER_KLAGE"] = "OMGJ\xD8RING_ETTER_KLAGE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS"] = "OMGJ\xD8RING_ETTER_SVAR_FRA_KLAGEINSTANS";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["OPPF_LGINGSOPPGAVE"] = "OPPF\xD8LGINGSOPPGAVE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING"] = "OPPF\xD8LGINGSOPPGAVE_SAMORDNING_GRADERING";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["SVAR_FRA_KLAGEINSTANS"] = "SVAR_FRA_KLAGEINSTANS";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["S_KNAD"] = "S\xD8KNAD";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["UDEFINERT"] = "UDEFINERT";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
+  return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse2;
+})(NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse || {});
 var NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2) => {
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2["AVBRUTT"] = "AVBRUTT";
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus2["AVSLUTTET"] = "AVSLUTTET";
@@ -640,6 +667,7 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType,
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse,
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent,
   NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus,
