@@ -5735,6 +5735,22 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakResponse": {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakDto"][];
+            "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rDto"][];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rDto": {
+            historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rVurderingDto"][];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "stansOpph\u00F8rFraOgMed": string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rVurderingDto": {
+            /** Format: uuid */
+            behandlingReferanse: string;
+            /** @enum {string} */
+            type: "OPPHEVET" | "OPPHØR" | "STANS";
+            "\u00E5rsaker": ("ANNEN_FULL_YTELSE" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUKER_OVER_67" | "BRUKER_UNDER_18" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "IKKE_RETT_PA_STUDENT" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "MANGLENDE_DOKUMENTASJON" | "NORGE_IKKE_KOMPETENT_STAT" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_STUDENT")[];
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.medlemskap.MedlemskapGrunnlagDto": {
             medlemskap: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.MedlemskapUnntakGrunnlag"];
