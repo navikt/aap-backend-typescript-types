@@ -5683,6 +5683,10 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.etableringegenvirksomhet.EtableringEgenVirksomhetGrunnlagResponse": {
             "beh\u00F8verVurderinger": components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
+            /** Format: int32 */
+            bruktOppstartsdager?: number | null;
+            /** Format: int32 */
+            bruktUtviklingsDager?: number | null;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             ikkeRelevantePerioder: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             kanVurderes: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
