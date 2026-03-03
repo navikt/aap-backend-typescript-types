@@ -7942,7 +7942,7 @@ export interface components {
             avslag12_5: boolean;
             /** @enum {string} */
             kilde: "PENSJON";
-            personId: string;
+            personid: string;
             /** @enum {string} */
             resultat: "AVSL" | "ENDR" | "INNV" | "OPPH";
             /**
