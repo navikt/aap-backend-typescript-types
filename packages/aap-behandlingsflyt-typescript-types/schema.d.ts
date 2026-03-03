@@ -6328,6 +6328,7 @@ export interface components {
             avbruttStudieDato?: string | null;
             begrunnelse: string;
             besluttetAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
+            bidiagnoser?: string[] | null;
             /**
              * Format: date
              * @example 2025-04-01
@@ -6336,6 +6337,8 @@ export interface components {
             "godkjentStudieAvL\u00E5nekassen"?: boolean | null;
             harAvbruttStudie: boolean;
             harBehovForBehandling?: boolean | null;
+            hoveddiagnose?: string | null;
+            kodeverk?: string | null;
             kvalitetssikretAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             /**
              * Format: date
@@ -7942,7 +7945,7 @@ export interface components {
             avslag12_5: boolean;
             /** @enum {string} */
             kilde: "PENSJON";
-            personid: string;
+            personId: string;
             /** @enum {string} */
             resultat: "AVSL" | "ENDR" | "INNV" | "OPPH";
             /**
