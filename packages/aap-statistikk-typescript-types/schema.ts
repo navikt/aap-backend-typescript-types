@@ -1416,7 +1416,9 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value9001 = "9001",
     Value9002 = "9002",
     Value9003 = "9003",
-    Value9004 = "9004"
+    Value9004 = "9004",
+    Value9082 = "9082",
+    Value9083 = "9083"
 }
 export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
     BESLUTTER = "BESLUTTER",
