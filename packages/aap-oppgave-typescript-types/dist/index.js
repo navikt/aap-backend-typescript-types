@@ -119,6 +119,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5033"] = "5033";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5034"] = "5034";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5035"] = "5035";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5036"] = "5036";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5040"] = "5040";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5050"] = "5050";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5051"] = "5051";
@@ -152,6 +153,8 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9002"] = "9002";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9003"] = "9003";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9004"] = "9004";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9082"] = "9082";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value9083"] = "9083";
   return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2;
 })(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode || {});
 var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv2) => {
@@ -210,6 +213,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ANDRE_STATLIGE_YTELSER"] = "SAMORDNING_ANDRE_STATLIGE_YTELSER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_AVSLAG"] = "SAMORDNING_AVSLAG";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_BARNEPENSJON"] = "SAMORDNING_BARNEPENSJON";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_SYKESTIPEND"] = "SAMORDNING_SYKESTIPEND";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
@@ -302,6 +306,7 @@ var NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_ANDRE_STATLIGE_YTELSER"] = "SAMORDNING_ANDRE_STATLIGE_YTELSER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_ARBEIDSGIVER"] = "SAMORDNING_ARBEIDSGIVER";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_AVSLAG"] = "SAMORDNING_AVSLAG";
+  NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_BARNEPENSJON"] = "SAMORDNING_BARNEPENSJON";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_GRADERING"] = "SAMORDNING_GRADERING";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_SYKESTIPEND"] = "SAMORDNING_SYKESTIPEND";
   NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg2["SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV"] = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV";
@@ -411,6 +416,7 @@ var NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType = /* @__PURE_
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SAKSBEHANDLER_KELVIN_REFERANSE"] = "SAKSBEHANDLER_KELVIN_REFERANSE";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["SYKEPENGEVEDTAK_HENDELSE_ID"] = "SYKEPENGEVEDTAK_HENDELSE_ID";
   NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["TILBAKEKREVING_HENDELSE_ID"] = "TILBAKEKREVING_HENDELSE_ID";
+  NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2["UF_REVEDTAK_HENDELSE_ID"] = "UF\xD8REVEDTAK_HENDELSE_ID";
   return NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType2;
 })(NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType || {});
 var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2) => {
@@ -433,6 +439,7 @@ var NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = /* @__PURE__
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["SYKEPENGE_VEDTAK_HENDELSE"] = "SYKEPENGE_VEDTAK_HENDELSE";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["S_KNAD"] = "S\xD8KNAD";
   NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
+  NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2["UF_RE_VEDTAK_HENDELSE"] = "UF\xD8RE_VEDTAK_HENDELSE";
   return NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType2;
 })(NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType || {});
 var NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2) => {
