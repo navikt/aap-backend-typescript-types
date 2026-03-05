@@ -5831,6 +5831,7 @@ export interface components {
             ytelse: "BARNEPENSJON" | "DAGPENGER" | "FORELDREPENGER" | "GJENLEVENDEPENSJON" | "OMSTILLINGSSTØNAD" | "OVERGANGSSTØNAD" | "SYKEPENGER" | "TILTAKSPENGER";
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningArbeidsgiverGrunnlagDTO": {
+            "harF\u00E5ttEkstrautbetalingFraArbeidsgiver"?: boolean | null;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningArbeidsgiverVurderingDTO"][] | null;
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningArbeidsgiverVurderingDTO"];
