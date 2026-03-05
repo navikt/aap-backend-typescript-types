@@ -1184,6 +1184,7 @@ export interface components {
             navn: string;
         };
         "no.nav.aap.brev.kontrakt.SignaturGrunnlag": {
+            enhet?: string | null;
             navIdent: string;
             /** @enum {string|null} */
             rolle?: "BESLUTTER" | "KVALITETSSIKRER" | "SAKSBEHANDLER_NASJONAL" | "SAKSBEHANDLER_OPPFOLGING" | null;
