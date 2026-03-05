@@ -2749,6 +2749,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/{referanse}/grunnlag/barnepensjon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonGrunnlagDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/klage/{referanse}/grunnlag/p\u00E5klaget-behandling": {
         parameters: {
             query?: never;
@@ -4537,6 +4575,7 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "java.time.YearMonth": Record<string, never>;
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7GrunnlagDto": {
             "harSendtForh\u00E5ndsvarsel": boolean;
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -5115,6 +5154,19 @@ export interface components {
             /** @enum {string} */
             "\u00E5rsak": "ANNET" | "FEIL_LOVANVENDELSE" | "FOR_DETALJERT" | "IKKE_INDIVIDUELL_OG_KONKRET" | "MANGELFULL_BEGRUNNELSE" | "MANGLENDE_UTREDNING" | "SKRIVEFEIL";
             "\u00E5rsakFritekst"?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonGrunnlagDto": {
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingDto"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingDto": {
+            begrunnelse: string;
+            perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingPeriodeDto"][];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingPeriodeDto": {
+            fom: components["schemas"]["java.time.YearMonth"];
+            "m\u00E5nedsbel\u00F8p": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
+            tom: components["schemas"]["java.time.YearMonth"];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.BarnetilleggDto": {
             barnSomTrengerVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto"][];
