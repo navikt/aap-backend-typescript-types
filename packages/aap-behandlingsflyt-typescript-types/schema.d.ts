@@ -6733,6 +6733,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov": {
             definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endretAv: string;
+            perioderKreverVurdering?: components["schemas"]["no.nav.aap.komponenter.type.Periode"][] | null;
+            perioderUgyldigVurdering?: components["schemas"]["no.nav.aap.komponenter.type.Periode"][] | null;
             /** @enum {string} */
             status: "AVBRUTT" | "AVSLUTTET" | "KVALITETSSIKRET" | "OPPRETTET" | "SENDT_TILBAKE_FRA_BESLUTTER" | "SENDT_TILBAKE_FRA_KVALITETSSIKRER" | "TOTRINNS_VURDERT";
             /**
@@ -6740,6 +6742,8 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             tidsstempel: string;
+            /** @enum {string|null} */
+            "\u00E5rsakTilSettP\u00E5Vent"?: "VENTER_PÅ_FUNKSJONALITET" | "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27" | "VENTER_PÅ_KLAGE_IMPLEMENTASJON" | "VENTER_PÅ_MASKINELL_AVKLARING" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL" | "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING" | "VENTER_PÅ_VURDERING_AV_ROL" | null;
         };
         "no.nav.aap.behandlingsflyt.drift.ForenkletVilk\u00E5rsperiode": {
             /** @enum {string|null} */
