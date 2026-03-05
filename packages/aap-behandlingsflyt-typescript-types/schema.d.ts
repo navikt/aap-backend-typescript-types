@@ -5626,7 +5626,7 @@ export interface components {
             brevdata?: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
             brevmal?: string | null;
             /** @enum {string} */
-            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_UTVID_VEDTAKSLENGDE";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             "harTilgangTil\u00C5SendeBrev": boolean;
             mottaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.brev.BrevGrunnlag.Brev.Mottaker"];
             /**
