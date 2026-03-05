@@ -1613,6 +1613,7 @@ export interface components {
             markertHaster?: boolean | null;
             "p\u00E5Vent"?: boolean | null;
             returStatuser: NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser[];
+            saksbehandlere: string[];
             /**
              * Format: date
              * @example 2025-04-01
@@ -1732,6 +1733,7 @@ export enum PathsMineOppgaverGetParametersQuerySortby {
     BEHANDLING_OPPRETTET = "BEHANDLING_OPPRETTET",
     OPPRETTET_TIDSPUNKT = "OPPRETTET_TIDSPUNKT",
     PERSONIDENT = "PERSONIDENT",
+    RESERVERT_AV = "RESERVERT_AV",
     SAKSNUMMER = "SAKSNUMMER",
     _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
 }
@@ -2182,6 +2184,7 @@ export enum NoNavAapOppgaveListeOppgaveSorteringSortBy {
     BEHANDLING_OPPRETTET = "BEHANDLING_OPPRETTET",
     OPPRETTET_TIDSPUNKT = "OPPRETTET_TIDSPUNKT",
     PERSONIDENT = "PERSONIDENT",
+    RESERVERT_AV = "RESERVERT_AV",
     SAKSNUMMER = "SAKSNUMMER",
     _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
 }

@@ -5,6 +5,7 @@ var PathsMineOppgaverGetParametersQuerySortby = /* @__PURE__ */ ((PathsMineOppga
   PathsMineOppgaverGetParametersQuerySortby2["BEHANDLING_OPPRETTET"] = "BEHANDLING_OPPRETTET";
   PathsMineOppgaverGetParametersQuerySortby2["OPPRETTET_TIDSPUNKT"] = "OPPRETTET_TIDSPUNKT";
   PathsMineOppgaverGetParametersQuerySortby2["PERSONIDENT"] = "PERSONIDENT";
+  PathsMineOppgaverGetParametersQuerySortby2["RESERVERT_AV"] = "RESERVERT_AV";
   PathsMineOppgaverGetParametersQuerySortby2["SAKSNUMMER"] = "SAKSNUMMER";
   PathsMineOppgaverGetParametersQuerySortby2["_RSAK_TIL_OPPRETTELSE"] = "\xC5RSAK_TIL_OPPRETTELSE";
   return PathsMineOppgaverGetParametersQuerySortby2;
@@ -481,6 +482,7 @@ var NoNavAapOppgaveListeOppgaveSorteringSortBy = /* @__PURE__ */ ((NoNavAapOppga
   NoNavAapOppgaveListeOppgaveSorteringSortBy2["BEHANDLING_OPPRETTET"] = "BEHANDLING_OPPRETTET";
   NoNavAapOppgaveListeOppgaveSorteringSortBy2["OPPRETTET_TIDSPUNKT"] = "OPPRETTET_TIDSPUNKT";
   NoNavAapOppgaveListeOppgaveSorteringSortBy2["PERSONIDENT"] = "PERSONIDENT";
+  NoNavAapOppgaveListeOppgaveSorteringSortBy2["RESERVERT_AV"] = "RESERVERT_AV";
   NoNavAapOppgaveListeOppgaveSorteringSortBy2["SAKSNUMMER"] = "SAKSNUMMER";
   NoNavAapOppgaveListeOppgaveSorteringSortBy2["_RSAK_TIL_OPPRETTELSE"] = "\xC5RSAK_TIL_OPPRETTELSE";
   return NoNavAapOppgaveListeOppgaveSorteringSortBy2;
