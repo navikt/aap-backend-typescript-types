@@ -804,6 +804,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/enhet/status/person": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.PersonRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.enhet.EnhetOgOversendelse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/enheter": {
         parameters: {
             query?: never;
@@ -1401,7 +1440,7 @@ export interface components {
              */
             behandlingOpprettet: string;
             /** Format: uuid */
-            behandlingRef?: string | null;
+            behandlingRef: string;
             /** @enum {string} */
             behandlingstype: NoNavAapOppgaveOppgaveDtoBehandlingstype;
             endretAv?: string | null;
@@ -1414,6 +1453,7 @@ export interface components {
             "enhetForK\u00F8": string;
             "erP\u00E5Vent": boolean;
             erSkjermet?: boolean | null;
+            "er\u00C5pen": boolean;
             harFortroligAdresse?: boolean | null;
             harUlesteDokumenter?: boolean | null;
             /** Format: int64 */
@@ -1524,6 +1564,9 @@ export interface components {
         "no.nav.aap.oppgave.enhet.EnhetNrDto": {
             enhetNr: string;
         };
+        "no.nav.aap.oppgave.enhet.EnhetOgOversendelse": {
+            tilstand?: components["schemas"]["no.nav.aap.oppgave.enhet.N\u00E5v\u00E6rendeEnhet"];
+        };
         "no.nav.aap.oppgave.enhet.EnhetSynkroniseringRequest": {
             /** Format: int64 */
             oppgaveId: number;
@@ -1532,12 +1575,30 @@ export interface components {
             gammelEnhet: string;
             nyEnhet: string;
         };
+        "no.nav.aap.oppgave.enhet.N\u00E5v\u00E6rendeEnhet": {
+            enhet: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "l\u00F8stDato"?: string | null;
+            /** @enum {string} */
+            oppgaveKategori: NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            oversendtDato: string;
+        };
         "no.nav.aap.oppgave.enhet.OppgaveEnhetDto": {
             avklaringsbehovKode: string;
             enhet: string;
         };
         "no.nav.aap.oppgave.enhet.OppgaveEnhetResponse": {
             oppgaver: components["schemas"]["no.nav.aap.oppgave.enhet.OppgaveEnhetDto"][];
+        };
+        "no.nav.aap.oppgave.enhet.PersonRequest": {
+            ident: string;
         };
         "no.nav.aap.oppgave.filter.FilterDto": {
             avklaringsbehovKoder: string[];
@@ -2153,6 +2214,13 @@ export enum NoNavAapOppgaveReturInformasjonRsaker {
 export enum NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus {
     AVSLUTTET = "AVSLUTTET",
     OPPRETTET = "OPPRETTET"
+}
+export enum NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori {
+    BESLUTTER = "BESLUTTER",
+    KVALITETSSIKRING = "KVALITETSSIKRING",
+    LOKALKONTOR = "LOKALKONTOR",
+    MEDLEMSKAP = "MEDLEMSKAP",
+    NAY = "NAY"
 }
 export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",

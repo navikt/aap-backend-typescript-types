@@ -37,6 +37,7 @@ __export(index_exports, {
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus: () => NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus,
   NoNavAapMotorApiJobbInfoDtoStatus: () => NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus: () => NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus,
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori: () => NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper: () => NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeOppgaveSorteringSortBy: () => NoNavAapOppgaveListeOppgaveSorteringSortBy,
@@ -516,6 +517,14 @@ var NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ ((NoNavAapO
   NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus2["OPPRETTET"] = "OPPRETTET";
   return NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus2;
 })(NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus || {});
+var NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = /* @__PURE__ */ ((NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2) => {
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2["BESLUTTER"] = "BESLUTTER";
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2["KVALITETSSIKRING"] = "KVALITETSSIKRING";
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2["LOKALKONTOR"] = "LOKALKONTOR";
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2["MEDLEMSKAP"] = "MEDLEMSKAP";
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2["NAY"] = "NAY";
+  return NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori2;
+})(NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori || {});
 var NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveFilterFilterDtoBehandlingstyper2) => {
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
@@ -689,6 +698,7 @@ var NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus,
   NoNavAapMotorApiJobbInfoDtoStatus,
   NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus,
+  NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori,
   NoNavAapOppgaveFilterFilterDtoBehandlingstyper,
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeOppgaveSorteringSortBy,
