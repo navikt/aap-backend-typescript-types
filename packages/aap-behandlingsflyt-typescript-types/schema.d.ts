@@ -5974,7 +5974,6 @@ export interface components {
             opphold: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.InstitusjonsoppholdDto"][];
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseoppholdDto"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseoppholdDto"][];
-            vurdertAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseinstitusjonVurderingDto": {
             begrunnelse: string;
