@@ -500,6 +500,19 @@ var NoNavAapOppgaveListeOppgaveSorteringSortOrder = /* @__PURE__ */ ((NoNavAapOp
   NoNavAapOppgaveListeOppgaveSorteringSortOrder2["DESC"] = "DESC";
   return NoNavAapOppgaveListeOppgaveSorteringSortOrder2;
 })(NoNavAapOppgaveListeOppgaveSorteringSortOrder || {});
+var NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2) => {
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["DOKUMENT_H_NDTERING"] = "DOKUMENT_H\xC5NDTERING";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["F_RSTEGANGSBEHANDLING"] = "F\xD8RSTEGANGSBEHANDLING";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["JOURNALF_RING"] = "JOURNALF\xD8RING";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["KLAGE"] = "KLAGE";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["OPPF_LGINGSBEHANDLING"] = "OPPF\xD8LGINGSBEHANDLING";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["REVURDERING"] = "REVURDERING";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2["TILBAKEKREVING"] = "TILBAKEKREVING";
+  return NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper2;
+})(NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper || {});
 var NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__ */ ((NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2) => {
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper2["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
@@ -635,6 +648,7 @@ export {
   NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper,
   NoNavAapOppgaveListeOppgaveSorteringSortBy,
   NoNavAapOppgaveListeOppgaveSorteringSortOrder,
+  NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper,
   NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser,
   NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType,

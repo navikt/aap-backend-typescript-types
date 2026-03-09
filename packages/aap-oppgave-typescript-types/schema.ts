@@ -1655,6 +1655,7 @@ export interface components {
             /** Format: int32 */
             antallTotalt: number;
             oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+            sattFilterBehandlingstyper?: NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper[] | null;
         };
         "no.nav.aap.oppgave.liste.Paging": {
             /** Format: int32 */
@@ -2260,6 +2261,18 @@ export enum NoNavAapOppgaveListeOppgaveSorteringSortBy {
 export enum NoNavAapOppgaveListeOppgaveSorteringSortOrder {
     ASC = "ASC",
     DESC = "DESC"
+}
+export enum NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper {
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    JOURNALF_RING = "JOURNALF\u00D8RING",
+    KLAGE = "KLAGE",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    TILBAKEKREVING = "TILBAKEKREVING"
 }
 export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
