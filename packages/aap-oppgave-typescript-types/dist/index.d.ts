@@ -1588,6 +1588,7 @@ interface components {
              * @example 2025-04-01
              */
             oversendtDato: string;
+            saksnummer: string;
         };
         "no.nav.aap.oppgave.enhet.OppgaveEnhetDto": {
             avklaringsbehovKode: string;
