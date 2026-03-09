@@ -7889,7 +7889,7 @@ export interface components {
             avsluttet: string;
             journalpostReferanser: string[];
             /** @enum {string} */
-            utfall: "MEDHOLD_ETTER_FVL_35";
+            utfall: "MEDHOLD_ETTER_FVL_35" | "UGUNST";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Omgj\u00F8ringKlageRevurdering": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Omgj\u00F8ringKlageRevurderingV0"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Omgj\u00F8ringKlageRevurderingV1"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Omgj\u00F8ringKlageRevurderingV0": {
