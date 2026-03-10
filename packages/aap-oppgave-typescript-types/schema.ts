@@ -1705,6 +1705,7 @@ export interface components {
             navn?: string | null;
         };
         "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest": {
+            enheter?: string[] | null;
             oppgaver: number[];
             "s\u00F8ketekst": string;
         };
