@@ -239,6 +239,7 @@ var NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5056"] = "5056";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5057"] = "5057";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5058"] = "5058";
+  NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5059"] = "5059";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5096"] = "5096";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5097"] = "5097";
   NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode2["Value5098"] = "5098";
@@ -512,6 +513,7 @@ var NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["S_KNAD_TRUKKET"] = "S\xD8KNAD_TRUKKET";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
+  NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["VEDTAKSLENGDE_MANUELT"] = "VEDTAKSLENGDE_MANUELT";
   NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
   return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov2;
 })(NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov || {});

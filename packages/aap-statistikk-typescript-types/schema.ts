@@ -908,6 +908,8 @@ export interface components {
             /** Format: int32 */
             antallBarn: number;
             /** Format: double */
+            barnepensjonDagsats: number;
+            /** Format: double */
             barnetillegg: number;
             /** Format: double */
             barnetilleggSats: number;
@@ -1394,6 +1396,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5056 = "5056",
     Value5057 = "5057",
     Value5058 = "5058",
+    Value5059 = "5059",
     Value5096 = "5096",
     Value5097 = "5097",
     Value5098 = "5098",
@@ -1652,6 +1655,7 @@ export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderings
     S_KNAD_TRUKKET = "S\u00D8KNAD_TRUKKET",
     UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT",
     UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE",
+    VEDTAKSLENGDE_MANUELT = "VEDTAKSLENGDE_MANUELT",
     VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE"
 }
 export enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse {
