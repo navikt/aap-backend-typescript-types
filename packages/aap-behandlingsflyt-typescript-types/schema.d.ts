@@ -4575,7 +4575,6 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "java.time.YearMonth": Record<string, never>;
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7GrunnlagDto": {
             "harSendtForh\u00E5ndsvarsel": boolean;
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -5163,16 +5162,18 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonGrunnlagDto": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
+            historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingDto"][];
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingDto": {
             begrunnelse: string;
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingPeriodeDto"][];
+            vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonVurderingPeriodeDto": {
-            fom: components["schemas"]["java.time.YearMonth"];
+            fom: string;
             "m\u00E5nedsbel\u00F8p": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
-            tom: components["schemas"]["java.time.YearMonth"];
+            tom?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.barnetillegg.BarnetilleggDto": {
             barnSomTrengerVurdering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.IdentifiserteBarnDto"][];
@@ -7142,9 +7143,9 @@ export interface components {
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barnepensjon.BarnepensjonL\u00F8sningPeriodeDto"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.barnepensjon.BarnepensjonL\u00F8sningPeriodeDto": {
-            fom: components["schemas"]["java.time.YearMonth"];
+            fom: string;
             "m\u00E5nedsbel\u00F8p": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
-            tom?: components["schemas"]["java.time.YearMonth"];
+            tom?: string | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.BeregningYrkeskaderBel\u00F8pVurderingDTO": {
             /** Format: int64 */
