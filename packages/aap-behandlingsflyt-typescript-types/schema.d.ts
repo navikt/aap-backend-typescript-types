@@ -6556,6 +6556,8 @@ export interface components {
             /** Format: double */
             barneTilleggsats: number;
             /** Format: double */
+            barnepensjonDagsats: number;
+            /** Format: double */
             barnetillegg: number;
             /** Format: double */
             dagsats: number;
