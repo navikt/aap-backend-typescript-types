@@ -452,6 +452,7 @@ var NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHen
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["TIL_BEHANDLING"] = "TIL_BEHANDLING";
   NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["TIL_BESLUTTER"] = "TIL_BESLUTTER";
+  NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2["TIL_GODKJENNING"] = "TIL_GODKJENNING";
   return NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus2;
 })(NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus || {});
 var NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ ((NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak2) => {

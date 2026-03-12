@@ -2159,7 +2159,8 @@ export enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppd
     OPPRETTET = "OPPRETTET",
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
     TIL_BEHANDLING = "TIL_BEHANDLING",
-    TIL_BESLUTTER = "TIL_BESLUTTER"
+    TIL_BESLUTTER = "TIL_BESLUTTER",
+    TIL_GODKJENNING = "TIL_GODKJENNING"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
     ANNET = "ANNET",
