@@ -8069,7 +8069,7 @@ export interface components {
             /** Format: uuid */
             behandlingId: string;
             /** @enum {string} */
-            behandlingsstatus: "AVSLUTTET" | "OPPRETTET" | "RETUR_FRA_BESLUTTER" | "TIL_BEHANDLING" | "TIL_GODKJENNING";
+            behandlingsstatus: "AVSLUTTET" | "OPPRETTET" | "RETUR_FRA_BESLUTTER" | "TIL_BEHANDLING" | "TIL_BESLUTTER" | "TIL_GODKJENNING";
             fullstendigPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingPeriode"];
             /**
              * Format: date-time
