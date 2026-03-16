@@ -308,6 +308,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/{referanse}/tildelt-status": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.TildeltStatusDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/{referanse}/hent-oppgave": {
         parameters: {
             query?: never;
@@ -1719,6 +1757,11 @@ export interface components {
         "no.nav.aap.oppgave.tildel.TildelOppgaveResponse": {
             oppgaver: number[];
             tildeltTilSaksbehandler: string;
+        };
+        "no.nav.aap.oppgave.tildel.TildeltStatusDto": {
+            erTildeltInnloggetBruker: boolean;
+            tildeltSaksbehandlerIdent?: string | null;
+            tildeltSaksbehandlerNavn?: string | null;
         };
         "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
             /** @enum {string} */
