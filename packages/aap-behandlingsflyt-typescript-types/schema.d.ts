@@ -6115,6 +6115,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.HelseinstitusjonVurderingDto": {
             begrunnelse: string;
+            besluttetAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             faarFriKostOgLosji: boolean;
             forsoergerEktefelle?: boolean | null;
             harFasteUtgifter?: boolean | null;
