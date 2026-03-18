@@ -6145,6 +6145,11 @@ export interface components {
             oppholdId?: string | null;
             oppholdstype: string;
             status: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tidligsteReduksjonsdato?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.institusjonsopphold.SoningsGrunnlagDto": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
