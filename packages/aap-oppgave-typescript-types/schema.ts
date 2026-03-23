@@ -1488,7 +1488,7 @@ export interface components {
             endretTidspunkt?: string | null;
             enhet: string;
             "enhetForK\u00F8": string;
-            enhetForrigeOppgave?: components["schemas"]["no.nav.aap.oppgave.enhet.EnhetDto"][] | null;
+            enhetForrigeOppgave?: components["schemas"]["no.nav.aap.oppgave.enhet.EnhetDto"];
             "erP\u00E5Vent": boolean;
             erSkjermet?: boolean | null;
             "er\u00C5pen": boolean;
