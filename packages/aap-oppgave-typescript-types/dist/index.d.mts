@@ -1491,6 +1491,8 @@ interface components {
             "erP\u00E5Vent": boolean;
             erSkjermet?: boolean | null;
             "er\u00C5pen": boolean;
+            "forrigeP\u00E5Vent\u00C5rsak"?: string | null;
+            forrigeVenteBegrunnelse?: string | null;
             harFortroligAdresse?: boolean | null;
             harUlesteDokumenter?: boolean | null;
             /** Format: int64 */
