@@ -446,7 +446,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@navikt/aap-oppgave-typescript-types@workspace:packages/aap-oppgave-typescript-types"
   dependencies:
-    tsdown: "npm:^0.21.7"
+    tsdown: "npm:0.21.7"
   languageName: unknown
   linkType: soft
 
@@ -460,7 +460,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@navikt/aap-statistikk-typescript-types@workspace:packages/aap-statistikk-typescript-types"
   dependencies:
-    tsdown: "npm:^0.21.7"
+    tsdown: "npm:0.21.7"
   languageName: unknown
   linkType: soft
 
@@ -1858,7 +1858,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsdown@npm:^0.21.7":
+"tsdown@npm:0.21.7":
   version: 0.21.7
   resolution: "tsdown@npm:0.21.7"
   dependencies:
