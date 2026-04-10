@@ -682,4 +682,4 @@ exports.NoNavAapPostmottakKontraktHendelseEndringDTOStatus = NoNavAapPostmottakK
 exports.PathsMineOppgaverGetParametersQuerySortby = PathsMineOppgaverGetParametersQuerySortby;
 exports.PathsMineOppgaverGetParametersQuerySortorder = PathsMineOppgaverGetParametersQuerySortorder;
 
-//# sourceMappingURL=index.cjs.map
+//# sourceMappingURL=index.js.map
