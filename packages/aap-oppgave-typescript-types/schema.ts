@@ -1213,6 +1213,41 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/drift/api/jobb/avbrytAlleFeilede": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/drift/api/jobb/rekjorAlleFeilede": {
         parameters: {
             query?: never;
@@ -1661,6 +1696,8 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             opprettetTidspunkt: string;
+            /** @enum {string} */
+            type: NoNavAapOppgaveFilterFilterDtoType;
             veileder?: string | null;
         };
         "no.nav.aap.oppgave.filter.FilterId": {
@@ -2167,6 +2204,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
     BEHANDLING_REFERANSE = "BEHANDLING_REFERANSE",
     BRUDD_AKTIVITETSPLIKT_INNSENDING_ID = "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID",
     FAGSYSTEMINFO_BEHOV_HENDELSE_ID = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID",
+    FORELDREPENGEVEDTAK_HENDELSE_ID = "FORELDREPENGEVEDTAK_HENDELSE_ID",
     INSTITUSJONSOPPHOLD_HENDELSE_ID = "INSTITUSJONSOPPHOLD_HENDELSE_ID",
     JOURNALPOST = "JOURNALPOST",
     KABAL_HENDELSE_ID = "KABAL_HENDELSE_ID",
@@ -2183,6 +2221,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
     ANNET_RELEVANT_DOKUMENT = "ANNET_RELEVANT_DOKUMENT",
     DIALOGMELDING = "DIALOGMELDING",
     FAGSYSTEMINFO_BEHOV_HENDELSE = "FAGSYSTEMINFO_BEHOV_HENDELSE",
+    FORELDREPENGE_VEDTAK_HENDELSE = "FORELDREPENGE_VEDTAK_HENDELSE",
     INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
     KABAL_HENDELSE = "KABAL_HENDELSE",
     KLAGE = "KLAGE",
@@ -2283,6 +2322,11 @@ export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     REVURDERING = "REVURDERING",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     TILBAKEKREVING = "TILBAKEKREVING"
+}
+export enum NoNavAapOppgaveFilterFilterDtoType {
+    ALLE_OPPGAVER = "ALLE_OPPGAVER",
+    GENERELL = "GENERELL",
+    KVALITETSSIKRING = "KVALITETSSIKRING"
 }
 export enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
