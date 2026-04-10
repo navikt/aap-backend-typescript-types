@@ -5487,6 +5487,11 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
+            dodsDato?: string | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
             fodselsDato?: string | null;
             forsorgerPeriode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             ident?: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.Ident"];
