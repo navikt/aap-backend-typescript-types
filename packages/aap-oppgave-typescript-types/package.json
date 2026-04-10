@@ -7,7 +7,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn run clean && tsup",
+    "build": "yarn run clean && tsdown",
     "clean": "rm -rf ./cjs ./esm"
   },
   "main": "./dist/index.js",
@@ -18,6 +18,6 @@
   ],
   "packageManager": "yarn@4.4.1",
   "devDependencies": {
-    "tsup": "^8.5.1"
+    "tsdown": "0.21.7"
   }
 }

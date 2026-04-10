@@ -14,10 +14,10 @@
   ],
   "packageManager": "yarn@4.4.1",
   "scripts": {
-    "build": "yarn run clean && tsup",
+    "build": "yarn run clean && tsdown",
     "clean": "rm -rf ./cjs ./esm"
   },
   "devDependencies": {
-    "tsup": "^8.5.1"
+    "tsdown": "0.21.7"
   }
 }
