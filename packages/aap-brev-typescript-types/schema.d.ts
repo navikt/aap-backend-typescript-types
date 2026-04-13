@@ -812,6 +812,41 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/drift/api/jobb/avbrytAlleFeilede": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/drift/api/jobb/rekjorAlleFeilede": {
         parameters: {
             query?: never;
@@ -978,7 +1013,6 @@ export interface components {
             delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Delmal"][];
             faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
             fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst"][];
-            periodetekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Periodetekst"][];
             valg: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Valg"][];
         };
         "no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst": {
@@ -995,10 +1029,6 @@ export interface components {
             fritekst: string;
             key: string;
             parentId: string;
-        };
-        "no.nav.aap.brev.kontrakt.BrevdataDto.Periodetekst": {
-            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
-            id: string;
         };
         "no.nav.aap.brev.kontrakt.BrevdataDto.Valg": {
             id: string;
