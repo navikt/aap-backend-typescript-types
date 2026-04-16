@@ -884,6 +884,7 @@ interface components {
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO": {
       /** Format: int32 */antallBarn: number; /** Format: double */
+      arbeidGradering: number; /** Format: double */
       barnepensjonDagsats: number; /** Format: double */
       barnetillegg: number; /** Format: double */
       barnetilleggSats: number; /** Format: double */
@@ -893,9 +894,14 @@ interface components {
        * @example 2025-04-01
        */
       fraDato: string; /** Format: double */
-      gradering: number; /** @enum {string} */
+      gradering: number; /** Format: double */
+      institusjonGradering: number; /** Format: double */
+      meldepliktGradering: number; /** @enum {string} */
       minsteSats: NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats; /** Format: double */
-      redusertDagsats: number;
+      redusertDagsats: number; /** Format: double */
+      samordningArbeidsgiverGradering: number; /** Format: double */
+      samordningGradering: number; /** Format: double */
+      "samordningUf\u00F8regradering": number;
       /**
        * Format: date
        * @example 2025-04-01
