@@ -1324,6 +1324,7 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaGrunnlagDto": {
             dokumenter: string[];
+            journalpostMetadata: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.tema.JournalpostMetadata"];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaVurderingDto"];
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaVurderingDto": {
@@ -1331,6 +1332,10 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.tema.EndreTemaResponse": {
             redirectUrl: string;
+        };
+        "no.nav.aap.postmottak.api.faktagrunnlag.tema.JournalpostMetadata": {
+            brevkode?: string | null;
+            journalfoerendeEnhet?: string | null;
         };
         "no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO": {
             definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
