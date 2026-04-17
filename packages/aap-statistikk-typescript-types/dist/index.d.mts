@@ -747,6 +747,16 @@ interface components {
       grunnlag11_19dto?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Grunnlag11_19DTO"];
       "grunnlagUf\u00F8re"?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagUf\u00F8reDTO"];
       grunnlagYrkesskade?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagYrkesskadeDTO"];
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      nedsattArbeidsevneEllerStudieevneDato: string;
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      ytterligereNedsattArbeidsevneDato?: string | null;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Diagnoser": {
       bidiagnoser: string[];
