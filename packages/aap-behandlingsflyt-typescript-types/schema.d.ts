@@ -7032,6 +7032,7 @@ export interface components {
             resultat: boolean;
             utenlandsAddresserGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandsAdresserGrunnlag"];
             vedtakImedlGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VedtakIMEDLGrunnlag"][] | null;
+            visuellTidslinje?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeArbeidInntektINorge"][] | null;
             vurdertPeriode: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandsAdresserGrunnlag": {
@@ -7061,6 +7062,13 @@ export interface components {
             kilde?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.KildesystemMedl"];
             lovvalgsland?: string | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeArbeidInntektINorge": {
+            /** Format: double */
+            beloep: number;
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            virksomhetId?: string | null;
+            virksomhetNavn?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse": {
             ansattnavn?: string | null;
