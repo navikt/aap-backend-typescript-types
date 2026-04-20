@@ -7067,6 +7067,7 @@ export interface components {
             /** Format: double */
             beloep: number;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            periodeMangler: boolean;
             virksomhetId?: string | null;
             virksomhetNavn?: string | null;
         };
