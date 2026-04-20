@@ -7032,7 +7032,7 @@ export interface components {
             resultat: boolean;
             utenlandsAddresserGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandsAdresserGrunnlag"];
             vedtakImedlGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VedtakIMEDLGrunnlag"][] | null;
-            visuellTidslinje?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeArbeidInntektINorge"][] | null;
+            visuellTidslinje: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeArbeidInntektINorge"][];
             vurdertPeriode: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.UtenlandsAdresserGrunnlag": {
