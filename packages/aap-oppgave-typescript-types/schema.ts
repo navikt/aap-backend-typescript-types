@@ -1767,6 +1767,12 @@ export interface components {
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
             opprettetAv?: string | null;
+            opprettetAvNavn?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt?: string | null;
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
             /** Format: int64 */
