@@ -7066,8 +7066,15 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeArbeidInntektINorge": {
             /** Format: double */
             beloep: number;
+            inntekter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeInntektDetalj"][];
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             periodeMangler: boolean;
+            virksomhetId?: string | null;
+            virksomhetNavn?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.VisuellTidslinjeInntektDetalj": {
+            /** Format: double */
+            beloep: number;
             virksomhetId?: string | null;
             virksomhetNavn?: string | null;
         };
