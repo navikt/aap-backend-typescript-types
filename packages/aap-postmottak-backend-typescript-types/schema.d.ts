@@ -1161,6 +1161,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/drift/journalpost/{referanse}/info": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.drift.JournalpostDriftsinfoDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/redigitalisering": {
         parameters: {
             query?: never;
@@ -1206,6 +1244,15 @@ export interface components {
             norgEnhet?: string | null;
             "oppf\u00F8lgingsenhet"?: string | null;
         };
+        "no.nav.aap.fordeler.Regelresultat": {
+            /** Format: int64 */
+            forJournalpost: number;
+            /** @description Key type: kotlin.String */
+            regelMap: {
+                [key: string]: boolean;
+            };
+            systemNavn?: string | null;
+        };
         "no.nav.aap.komponenter.type.Periode": {
             /**
              * Format: date
@@ -1243,6 +1290,51 @@ export interface components {
             /** @enum {string} */
             status: "AVBRUTT" | "FEILET" | "FERDIG" | "KLAR" | "PLUKKET";
             type: string;
+        };
+        "no.nav.aap.postmottak.api.drift.BehandlingDriftsinfo": {
+            aktivtSteg: string;
+            avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.drift.ForenkletAvklaringsbehov"][];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettet: string;
+            /** Format: uuid */
+            referanse: string;
+            /** @enum {string} */
+            status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
+            type: string;
+        };
+        "no.nav.aap.postmottak.api.drift.ForenkletAvklaringsbehov": {
+            definisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
+            endretAv: string;
+            /** @enum {string} */
+            status: "AVBRUTT" | "AVSLUTTET" | "OPPRETTET" | "SENDT_TILBAKE_FRA_BESLUTTER";
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            tidsstempel: string;
+            /** @enum {string|null} */
+            "\u00E5rsakTilSettP\u00E5Vent"?: "VENTER_PÅ_BEHANDLING_I_GOSYS" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_VURDERING_AV_ROL" | null;
+        };
+        "no.nav.aap.postmottak.api.drift.JournalpostDriftsinfoDto": {
+            behandlinger: components["schemas"]["no.nav.aap.postmottak.api.drift.BehandlingDriftsinfo"][];
+            brevkode?: string | null;
+            fordelingsresultat?: components["schemas"]["no.nav.aap.fordeler.Regelresultat"];
+            /** @enum {string|null} */
+            innkommendeStatus?: "EVALUERT" | "GOSYS_FDR" | "GOSYS_JFR" | "IGNORERT" | "VIDERESENDT_TIL_ARENA" | "VIDERSENDT_TIL_KELVIN" | null;
+            /** @enum {string|null} */
+            journalstatus?: "AVBRUTT" | "EKSPEDERT" | "FEILREGISTRERT" | "FERDIGSTILT" | "JOURNALFOERT" | "MOTTATT" | "OPPLASTING_DOKUMENT" | "RESERVERT" | "UKJENT" | "UKJENT_BRUKER" | "UNDER_ARBEID" | "UTGAAR" | null;
+            /** @enum {string|null} */
+            kanal?: "ALTINN" | "ALTINN_INNBOKS" | "DPVT" | "EESSI" | "EIA" | "EKST_OPPS" | "E_POST" | "HELSENETTET" | "INGEN_DISTRIBUSJON" | "INNSENDT_NAV_ANSATT" | "LOKAL_UTSKRIFT" | "NAV_NO" | "NAV_NO_CHAT" | "NAV_NO_UINNLOGGET" | "SDP" | "SENTRAL_UTSKRIFT" | "SKAN_IM" | "SKAN_NETS" | "SKAN_PEN" | "TRYGDERETTEN" | "UKJENT" | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            mottattDato?: string | null;
+            saksnummer?: string | null;
+            tema?: string | null;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentDto": {
             dokumentInfoId: string;
