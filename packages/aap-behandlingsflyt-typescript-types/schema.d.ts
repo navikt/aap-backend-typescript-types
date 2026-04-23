@@ -8499,7 +8499,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BehandlingHendelseDTO": {
             begrunnelse?: string | null;
             /** @enum {string} */
-            hendelse: "BESTILT_LEGEERKLÆRING" | "BREV_SENDT" | "FØRSTEGANGSBEHANDLING_OPPRETTET" | "KLAGE_OPPRETTET" | "MOTTATT_DIALOGMELDING" | "RETUR_FRA_BESLUTTER" | "RETUR_FRA_KVALITETSSIKRER" | "REVURDERING_OPPRETTET" | "SATT_PÅ_VENT" | "SENDT_TIL_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER" | "TATT_AV_VENT" | "VEDTAK_FATTET";
+            hendelse: "BESTILT_LEGEERKLÆRING" | "BREV_SENDT" | "FØRSTEGANGSBEHANDLING_OPPRETTET" | "KLAGE_OPPRETTET" | "KVALITETSSIKRET" | "MOTTATT_DIALOGMELDING" | "RETUR_FRA_BESLUTTER" | "RETUR_FRA_KVALITETSSIKRER" | "REVURDERING_OPPRETTET" | "SATT_PÅ_VENT" | "SENDT_TIL_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER" | "TATT_AV_VENT" | "VEDTAK_FATTET";
             resultat?: string | null;
             /**
              * Format: date-time
