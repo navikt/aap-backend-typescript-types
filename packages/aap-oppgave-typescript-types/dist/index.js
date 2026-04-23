@@ -482,19 +482,6 @@ let NoNavAapOppgaveFilterFilterDtoType = /* @__PURE__ */ function(NoNavAapOppgav
 	NoNavAapOppgaveFilterFilterDtoType["KVALITETSSIKRING"] = "KVALITETSSIKRING";
 	return NoNavAapOppgaveFilterFilterDtoType;
 }({});
-let NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = /* @__PURE__ */ function(NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper) {
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["JOURNALF_RING"] = "JOURNALFØRING";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["KLAGE"] = "KLAGE";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["OPPF_LGINGSBEHANDLING"] = "OPPFØLGINGSBEHANDLING";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["REVURDERING"] = "REVURDERING";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
-	NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper["TILBAKEKREVING"] = "TILBAKEKREVING";
-	return NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper;
-}({});
 let NoNavAapOppgaveListeOppgaveSorteringSortBy = /* @__PURE__ */ function(NoNavAapOppgaveListeOppgaveSorteringSortBy) {
 	NoNavAapOppgaveListeOppgaveSorteringSortBy["AVKLARINGSBEHOV_KODE"] = "AVKLARINGSBEHOV_KODE";
 	NoNavAapOppgaveListeOppgaveSorteringSortBy["BEHANDLINGSTYPE"] = "BEHANDLINGSTYPE";
@@ -657,7 +644,6 @@ exports.NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = NoNavAapOppgaveDriftOpp
 exports.NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
 exports.NoNavAapOppgaveFilterFilterDtoBehandlingstyper = NoNavAapOppgaveFilterFilterDtoBehandlingstyper;
 exports.NoNavAapOppgaveFilterFilterDtoType = NoNavAapOppgaveFilterFilterDtoType;
-exports.NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper = NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortBy = NoNavAapOppgaveListeOppgaveSorteringSortBy;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortOrder = NoNavAapOppgaveListeOppgaveSorteringSortOrder;
 exports.NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper = NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper;

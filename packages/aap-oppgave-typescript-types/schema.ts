@@ -461,45 +461,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/oppgavesok": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.filter.TransientFilterDto"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/mine-oppgaver": {
         parameters: {
             query?: never;
@@ -1704,12 +1665,6 @@ export interface components {
             /** Format: int64 */
             filterId: number;
         };
-        "no.nav.aap.oppgave.filter.TransientFilterDto": {
-            avklaringsbehovKoder: string[];
-            behandlingstyper: NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper[];
-            enheter: string[];
-            veileder?: string | null;
-        };
         "no.nav.aap.oppgave.liste.OppgaveSortering": {
             /** @enum {string|null} */
             sortBy?: NoNavAapOppgaveListeOppgaveSorteringSortBy;
@@ -2333,18 +2288,6 @@ export enum NoNavAapOppgaveFilterFilterDtoType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
     GENERELL = "GENERELL",
     KVALITETSSIKRING = "KVALITETSSIKRING"
-}
-export enum NoNavAapOppgaveFilterTransientFilterDtoBehandlingstyper {
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    JOURNALF_RING = "JOURNALF\u00D8RING",
-    KLAGE = "KLAGE",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    TILBAKEKREVING = "TILBAKEKREVING"
 }
 export enum NoNavAapOppgaveListeOppgaveSorteringSortBy {
     AVKLARINGSBEHOV_KODE = "AVKLARINGSBEHOV_KODE",
