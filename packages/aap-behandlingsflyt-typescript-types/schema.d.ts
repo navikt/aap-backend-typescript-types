@@ -5436,6 +5436,10 @@ export interface components {
             andelAvNedsettelsen?: number | null;
             begrunnelse: string;
             "er\u00C5rsakssammenheng": boolean;
+            /**
+             * @deprecated
+             * @description Bruk relevanteYrkesskadeSaker
+             */
             relevanteSaker: string[];
             relevanteYrkesskadeSaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.YrkesskadeSakDto"][];
         };
@@ -5712,6 +5716,8 @@ export interface components {
             tom?: string | null;
             /**
              * Format: date
+             * @deprecated
+             * @description Bruk fom
              * @example 2025-04-01
              */
             vurderingenGjelderFra?: string | null;
@@ -5746,6 +5752,10 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reGrunnlagResponse": {
             "beh\u00F8verVurderinger": components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             gjeldendeSykdsomsvurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomsvurderingResponse"][];
+            /**
+             * @deprecated
+             * @description Erstattes av sisteVedtatteVurderinger
+             */
             gjeldendeVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse"][];
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse"][];
@@ -5778,6 +5788,8 @@ export interface components {
             tom?: string | null;
             /**
              * Format: date
+             * @deprecated
+             * @description Bruk fom
              * @example 2025-04-01
              */
             virkningsdato: string;
@@ -5805,6 +5817,10 @@ export interface components {
             begrunnelse: string;
             besluttetAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             bidiagnoser?: string[] | null;
+            /**
+             * @deprecated
+             * @description Bruk fom
+             */
             dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             erArbeidsevnenNedsatt?: boolean | null;
             erNedsettelseIArbeidsevneAvEnVissVarighet?: boolean | null;
@@ -5851,6 +5867,10 @@ export interface components {
             andelAvNedsettelsen?: number | null;
             begrunnelse: string;
             "er\u00C5rsakssammenheng": boolean;
+            /**
+             * @deprecated
+             * @description Bruk relevanteYrkesskadeSaker
+             */
             relevanteSaker: string[];
             relevanteYrkesskadeSaker: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.YrkesskadeSakResponse"][];
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
@@ -5862,7 +5882,15 @@ export interface components {
             kanVurderes: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             nyeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
             sisteVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
+            /**
+             * @deprecated
+             * @description Bruk sisteVedtatteVurderinger
+             */
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
+            /**
+             * @deprecated
+             * @description Bruk nyeVurderinger
+             */
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse": {
@@ -5876,11 +5904,15 @@ export interface components {
             fom: string;
             /**
              * Format: date
+             * @deprecated
+             * @description Bruk fom
              * @example 2025-04-01
              */
             gjelderFra: string;
             /**
              * Format: date
+             * @deprecated
+             * @description Bruk tom
              * @example 2025-04-01
              */
             gjelderTom?: string | null;
@@ -5902,11 +5934,23 @@ export interface components {
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagResponse": {
-            /** Format: int32 */
+            /**
+             * Format: int32
+             * @deprecated
+             * @description Erstattes av vurderinger
+             */
             ar: number;
+            /**
+             * @deprecated
+             * @description Erstattes av vurderinger
+             */
             gverdi: number;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeManuelleVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering"][] | null;
+            /**
+             * @deprecated
+             * @description Erstattes av vurderinger
+             */
             historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektVurderingGrunnlagResponse"][];
             manuelleVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering"];
             registrerteInntekterSisteRelevanteAr: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
@@ -5919,6 +5963,10 @@ export interface components {
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
             "\u00E5rsVurderinger": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
         };
+        /**
+         * @deprecated
+         * @description Erstattes av vurderinger
+         */
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektVurderingGrunnlagResponse": {
             /** Format: int32 */
             ar: number;
@@ -6415,6 +6463,10 @@ export interface components {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto": {
+            /**
+             * @deprecated
+             * @description Bruk fullmektigIdentMedType
+             */
             fullmektigIdent?: string | null;
             fullmektigIdentMedType?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.IdentMedType"];
             fullmektigNavnOgAdresse?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse"];
@@ -7571,6 +7623,10 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.ManuellInntektVurderingDto": {
             begrunnelse: string;
+            /**
+             * @deprecated
+             * @description Ikke bruk, skal over til flere vurderinger
+             */
             belop?: number | null;
             vurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.\u00C5rsVurdering"][] | null;
         };
@@ -7748,9 +7804,15 @@ export interface components {
             begrunnelse?: string | null;
             /**
              * Format: date
+             * @deprecated
+             * @description Ikke lenger i bruk
              * @example 2025-04-01
              */
             fristNyRevurdering?: string | null;
+            /**
+             * @deprecated
+             * @description Ikke lenger i bruk
+             */
             maksDatoEndelig?: boolean | null;
             vurderteSamordningerData: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.SamordningVurderingData"][];
         };
@@ -8295,6 +8357,10 @@ export interface components {
              * @example 2025-04-01
              */
             kravMottatt: string;
+            /**
+             * @deprecated
+             * @description Skal bestemmes automatisk av systemet
+             */
             skalOppretteNyBehandling?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.KlagebehandlingAvsluttetDetaljer": {
@@ -8379,6 +8445,10 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OppgitteBarn": {
             barn: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ManueltOppgittBarn"][];
+            /**
+             * @deprecated
+             * @description Erstattes av 'barn' siden ident i en rekke tilfeller vil kunne mangle
+             */
             identer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Ident"][];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Opprinnelse": {
