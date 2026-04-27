@@ -5714,13 +5714,6 @@ export interface components {
              * @example 2025-04-01
              */
             tom?: string | null;
-            /**
-             * Format: date
-             * @deprecated
-             * @description Bruk fom
-             * @example 2025-04-01
-             */
-            vurderingenGjelderFra?: string | null;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangarbeid.OvergangArbeidGrunnlagResponse": {
@@ -5752,11 +5745,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reGrunnlagResponse": {
             "beh\u00F8verVurderinger": components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             gjeldendeSykdsomsvurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomsvurderingResponse"][];
-            /**
-             * @deprecated
-             * @description Erstattes av sisteVedtatteVurderinger
-             */
-            gjeldendeVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse"][];
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse"][];
             ikkeRelevantePerioder: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
@@ -5766,7 +5754,6 @@ export interface components {
             perioderSomIkkeErTilstrekkeligVurdert: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             sisteVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse"][];
             "uf\u00F8reS\u00F8knadOpplysninger"?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.Uf\u00F8reS\u00F8knadOpplysninger"];
-            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.OvergangUf\u00F8reVurderingResponse": {
             begrunnelse: string;
@@ -5786,13 +5773,6 @@ export interface components {
              * @example 2025-04-01
              */
             tom?: string | null;
-            /**
-             * Format: date
-             * @deprecated
-             * @description Bruk fom
-             * @example 2025-04-01
-             */
-            virkningsdato: string;
             vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.overgangufore.Uf\u00F8reS\u00F8knadOpplysninger": {
