@@ -5026,6 +5026,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.FatteVedtakGrunnlagDto": {
             besluttetAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.BeslutterDto"];
+            "harGjortVilk\u00E5rsvurderingerP\u00E5Behandling": boolean;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
@@ -6530,6 +6531,7 @@ export interface components {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringGrunnlagDto": {
+            "harGjortVilk\u00E5rsvurderingerP\u00E5Behandling": boolean;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
