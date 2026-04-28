@@ -1526,11 +1526,7 @@ interface components {
     };
     "no.nav.aap.oppgave.enhet.N\u00E5v\u00E6rendeEnhet": {
       enhet: string;
-      /**
-       * Format: date
-       * @example 2025-04-01
-       */
-      "l\u00F8stDato"?: string | null; /** @enum {string} */
+      markertSomHasteSak: boolean; /** @enum {string} */
       oppgaveKategori: NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
       /**
        * Format: date
