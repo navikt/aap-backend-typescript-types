@@ -5936,6 +5936,10 @@ export interface components {
             registrerteInntekterSisteRelevanteAr: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
             /** Format: int32 */
             "sisteRelevante\u00C5r": number;
+            /**
+             * @deprecated
+             * @description Erstattes av vurderinger
+             */
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektVurderingGrunnlagResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering": {
@@ -6782,6 +6786,10 @@ export interface components {
             nyeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"][];
             oppgittStudent?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.OppgittStudent"];
             sisteVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"][];
+            /**
+             * @deprecated
+             * @description Bruk nyeVurderinger
+             */
             studentvurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse": {
