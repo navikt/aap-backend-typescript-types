@@ -1374,6 +1374,10 @@ export interface components {
             vurderingsbehov: string[];
             /** @enum {string} */
             "\u00E5rsakTilOpprettelse": NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse;
+            /**
+             * @deprecated
+             * @description Kan fjernes når oppgave har byttet til å bruke vurderingsbehov
+             */
             "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
@@ -1520,7 +1524,11 @@ export interface components {
              */
             reservertTidspunkt?: string | null;
             returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjon"];
-            /** @enum {string|null} */
+            /**
+             * @deprecated
+             * @description Bruk returInformasjon
+             * @enum {string|null}
+             */
             returStatus?: NoNavAapOppgaveOppgaveDtoReturStatus;
             saksnummer?: string | null;
             /** @enum {string} */
@@ -1538,6 +1546,10 @@ export interface components {
             versjon: number;
             vurderingsbehov: string[];
             "\u00E5rsakTilOpprettelse"?: string | null;
+            /**
+             * @deprecated
+             * @description Bytt til vurderingsbehov når frontend er oppdatert
+             */
             "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.oppgave.OppgaveId": {
@@ -1795,6 +1807,10 @@ export interface components {
             opprettetTidspunkt: string;
             /** Format: uuid */
             referanse: string;
+            /**
+             * @deprecated
+             * @description Dette må oppgave utlede selv i framtiden.
+             */
             saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
