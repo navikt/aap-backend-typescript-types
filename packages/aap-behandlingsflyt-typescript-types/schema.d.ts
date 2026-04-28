@@ -6640,6 +6640,7 @@ export interface components {
             timerArbeidet: number;
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto": {
+            begrunnelse?: string | null;
             dager: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.DagDto"][];
             id: string;
             /**
@@ -6647,6 +6648,7 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             mottattTidspunkt: string;
+            oppdatertAv?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto": {
             meldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"];
