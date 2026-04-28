@@ -868,7 +868,11 @@ export interface components {
             };
             /** Format: int32 */
             "uf\u00F8reYtterligereNedsattArbeidsevne\u00C5r": number;
-            /** Format: int32 */
+            /**
+             * Format: int32
+             * @deprecated
+             * @description Bruk uføregrader.
+             */
             "uf\u00F8regrad": number;
             "uf\u00F8regrader": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uf\u00F8re"][];
         };
@@ -1144,6 +1148,10 @@ export interface components {
             opprettetTidspunkt: string;
             /** Format: uuid */
             referanse: string;
+            /**
+             * @deprecated
+             * @description Dette må oppgave utlede selv i framtiden.
+             */
             saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;

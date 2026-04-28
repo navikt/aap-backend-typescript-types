@@ -792,7 +792,12 @@ interface components {
       "uf\u00F8reInntekterFraForeg\u00E5ende\u00C5r": {
         [key: string]: number;
       }; /** Format: int32 */
-      "uf\u00F8reYtterligereNedsattArbeidsevne\u00C5r": number; /** Format: int32 */
+      "uf\u00F8reYtterligereNedsattArbeidsevne\u00C5r": number;
+      /**
+       * Format: int32
+       * @deprecated
+       * @description Bruk uføregrader.
+       */
       "uf\u00F8regrad": number;
       "uf\u00F8regrader": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uf\u00F8re"][];
     };
@@ -1024,6 +1029,10 @@ interface components {
        */
       opprettetTidspunkt: string; /** Format: uuid */
       referanse: string;
+      /**
+       * @deprecated
+       * @description Dette må oppgave utlede selv i framtiden.
+       */
       saksnummer?: string | null; /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
     };
