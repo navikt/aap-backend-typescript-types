@@ -466,6 +466,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker = /* @__PURE_
 	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["IKKE_RETT_PA_SYKEPENGEERSTATNING"] = "IKKE_RETT_PA_SYKEPENGEERSTATNING";
 	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["IKKE_RETT_UNDER_STRAFFEGJENNOMF_RING"] = "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING";
 	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["IKKE_SYKDOM_AV_VISS_VARIGHET"] = "IKKE_SYKDOM_AV_VISS_VARIGHET";
+	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["IKKE_SYKDOM_SKADE_LYTE"] = "IKKE_SYKDOM_SKADE_LYTE";
 	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL"] = "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL";
 	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING"] = "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING";
 	NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker["MANGLENDE_DOKUMENTASJON"] = "MANGLENDE_DOKUMENTASJON";
