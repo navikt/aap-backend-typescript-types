@@ -6671,6 +6671,8 @@ export interface components {
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperioderMedMeldekortResponse": {
+            /** @enum {string} */
+            meldekortProsesseringStatus: "KLAR" | "PROSESSERER_MELDEKORT";
             meldeperioderMedMeldekort: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.OppdaterMeldekortRequest": {
