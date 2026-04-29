@@ -800,6 +800,7 @@ export interface components {
             beregningsGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO"];
             diagnoser?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Diagnoser"];
             fritaksvurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering"][] | null;
+            institusjonsopphold: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][];
             perioderMedArbeidsopptrapping: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][];
             /** @enum {string|null} */
             resultat?: NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat;
