@@ -5830,9 +5830,25 @@ export interface components {
              */
             dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             erArbeidsevnenNedsatt?: boolean | null;
+            /**
+             * @deprecated
+             * @description Bruk erNedsettelseMinstHalvparten/erNedsettelseMerEnnYrkesskadegrense
+             */
             erNedsettelseIArbeidsevneAvEnVissVarighet?: boolean | null;
+            /**
+             * @deprecated
+             * @description Bruk erNedsettelseMinstHalvparten
+             */
             erNedsettelseIArbeidsevneMerEnnHalvparten?: boolean | null;
+            /**
+             * @deprecated
+             * @description Bruk erNedsettelseMerEnnYrkesskadegrense
+             */
             erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense?: boolean | null;
+            /** @enum {string|null} */
+            erNedsettelseMerEnnYrkesskadegrense?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
+            /** @enum {string|null} */
+            erNedsettelseMinstHalvparten?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
             erSkadeSykdomEllerLyteVesentligdel?: boolean | null;
             /**
              * Format: date
