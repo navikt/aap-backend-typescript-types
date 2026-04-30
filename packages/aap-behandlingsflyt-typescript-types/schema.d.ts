@@ -4896,6 +4896,84 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/test/opprettOgFullforBehandling": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRespons"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/test/behandlingStatus": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.test.BehandlingStatusRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.test.BehandlingStatusRespons"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -8782,12 +8860,37 @@ export interface components {
             status: "AVSLUTTET" | "LØPENDE" | "OPPRETTET" | "UTREDES";
             "s\u00F8knadErTrukket"?: boolean | null;
         };
+        "no.nav.aap.behandlingsflyt.test.BehandlingStatusRequest": {
+            saksnummer: string;
+        };
+        "no.nav.aap.behandlingsflyt.test.BehandlingStatusRespons": {
+            behandlingStatus?: string | null;
+            ferdig: boolean;
+            saksnummer: string;
+            "s\u00F8knad"?: components["schemas"]["no.nav.aap.behandlingsflyt.test.S\u00F8knadDetaljer"];
+        };
         "no.nav.aap.behandlingsflyt.test.OpprettDummySakDto": {
             andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
             erStudent: boolean;
             harMedlemskap: boolean;
             harYrkesskade: boolean;
             ident: string;
+        };
+        "no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRequest": {
+            andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
+            erStudent: boolean;
+            harMedlemskap: boolean;
+            harYrkesskade: boolean;
+            ident: string;
+        };
+        "no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRespons": {
+            saksnummer: string;
+        };
+        "no.nav.aap.behandlingsflyt.test.S\u00F8knadDetaljer": {
+            andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
+            erStudent: boolean;
+            harMedlemskap: boolean;
+            harYrkesskade: boolean;
         };
         "no.nav.aap.brev.kontrakt.Adresse": {
             adresselinje1: string;
