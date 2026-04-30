@@ -8934,7 +8934,6 @@ export interface components {
         "no.nav.aap.brev.kontrakt.BrevdataDto": {
             betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst"][];
             delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Delmal"][];
-            faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag"][];
             fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst"][];
             valg: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Valg"][];
         };
@@ -8943,10 +8942,6 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.BrevdataDto.Delmal": {
             id: string;
-        };
-        "no.nav.aap.brev.kontrakt.BrevdataDto.Faktagrunnlag": {
-            tekniskNavn: string;
-            verdi: string;
         };
         "no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst": {
             fritekst: string;
