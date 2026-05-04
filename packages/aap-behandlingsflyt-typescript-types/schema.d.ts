@@ -3771,6 +3771,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/brev/{brevbestillingReferanse}/forhandsvis-html": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description brevbestillingReferanse */
+                    brevbestillingReferanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BrevResponsDTO"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/{brevbestillingReferanse}/kan-distribuere-brev": {
         parameters: {
             query?: never;
@@ -8782,6 +8820,9 @@ export interface components {
             vurderingsbehov: ("AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "ETABLERING_EGEN_VIRKSOMHET" | "FASTSATT_PERIODE_PASSERT" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE_TRUKKET" | "LOVVALG_OG_MEDLEMSKAP" | "MIGRER_RETTIGHETSPERIODE" | "MOTATT_KLAGE" | "MOTTATT_AKTIVITETSMELDING" | "MOTTATT_AVVIST_LEGEERKLÆRING" | "MOTTATT_DIALOGMELDING" | "MOTTATT_KABAL_HENDELSE" | "MOTTATT_LEGEERKLÆRING" | "MOTTATT_MELDEKORT" | "MOTTATT_SØKNAD" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_BARNEPENSJON" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VEDTAKSLENGDE_MANUELT" | "VURDER_RETTIGHETSPERIODE")[];
             /** @enum {string|null} */
             "\u00E5rsakTilOpprettelse"?: "AKTIVITETSMELDING" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "ANNET_RELEVANT_DOKUMENT" | "BARNETILLEGG_SATSENDRING" | "ENDRING_I_REGISTERDATA" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "HELSEOPPLYSNINGER" | "KLAGE" | "MANUELL_OPPRETTELSE" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UTVID_VEDTAKSLENGDE" | null;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BrevResponsDTO": {
+            html: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.FinnBehandlingForIdentDTO": {
             ident: string;
