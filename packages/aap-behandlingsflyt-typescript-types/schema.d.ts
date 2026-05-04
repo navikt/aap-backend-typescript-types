@@ -6736,7 +6736,12 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto": {
             begrunnelse?: string | null;
             dager: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.DagDto"][];
+            /**
+             * @deprecated
+             * @description Bruk journalpostId i stedet for id, da det er mer beskrivende
+             */
             id: string;
+            journalpostId: string;
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -6747,6 +6752,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto": {
             meldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"];
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            tidligereMeldekort: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperioderMedMeldekortResponse": {
             /** @enum {string} */
