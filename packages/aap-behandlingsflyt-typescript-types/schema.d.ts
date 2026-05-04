@@ -4934,7 +4934,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/test/opprettOgFullforBehandling": {
+    "/api/test/opprettOgFullfoerBehandling": {
         parameters: {
             query?: never;
             header?: never;
@@ -8907,14 +8907,26 @@ export interface components {
             status: "AVSLUTTET" | "LØPENDE" | "OPPRETTET" | "UTREDES";
             "s\u00F8knadErTrukket"?: boolean | null;
         };
+        "no.nav.aap.behandlingsflyt.test.AndreUtbetalingerApiDto": {
+            afp?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AfpDto"];
+            /** @enum {string|null} */
+            loenn?: "Ja" | "Nei" | null;
+            stoenad?: ("AFP" | "INTRODUKSJONSSTOENAD" | "KVALIFISERINGSSTOENAD" | "LAN" | "NEI" | "OEKONOMISK_SOSIALHJELP" | "OMSORGSSTOENAD" | "STIPEND" | "UTLAND" | "VERV")[] | null;
+        };
         "no.nav.aap.behandlingsflyt.test.BehandlingStatusRequest": {
-            saksnummer: string;
+            ident: string;
         };
         "no.nav.aap.behandlingsflyt.test.BehandlingStatusRespons": {
-            behandlingStatus?: string | null;
+            /**
+             * @description Sier om behandlingen er ferdigbehandlet. Om denne ikke er AVSLUTTET innen 1 min, er det antakelig en feil.
+             * @enum {string|null}
+             */
+            behandlingStatus?: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES" | null;
+            /** @description Om behandlingen er ferdigbehandlet. */
             ferdig: boolean;
+            /** @description Det opprettede saksnummeret. */
             saksnummer: string;
-            "s\u00F8knad"?: components["schemas"]["no.nav.aap.behandlingsflyt.test.S\u00F8knadDetaljer"];
+            soeknad?: components["schemas"]["no.nav.aap.behandlingsflyt.test.SoeknadDetaljer"];
         };
         "no.nav.aap.behandlingsflyt.test.OpprettDummySakDto": {
             andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
@@ -8924,17 +8936,22 @@ export interface components {
             ident: string;
         };
         "no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRequest": {
-            andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
+            /** @description Om søker svarte at hen mottar andre utbetalinger i søknaden. */
+            andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.test.AndreUtbetalingerApiDto"];
+            /** @description Om personen svarer at han/hun er student i søknaden. */
             erStudent: boolean;
+            /** @description Om personen svarer at han/hun har bodd/jobbet i Norge i siste 5 år. */
             harMedlemskap: boolean;
+            /** @description Om personen svarer at han/hun har yrkesskade i søknaden. Urelatert til om det finnes yrkesskade i yrkesskaderegisteret. */
             harYrkesskade: boolean;
+            /** @description Dolly-ident for test-personen. */
             ident: string;
         };
         "no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRespons": {
             saksnummer: string;
         };
-        "no.nav.aap.behandlingsflyt.test.S\u00F8knadDetaljer": {
-            andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
+        "no.nav.aap.behandlingsflyt.test.SoeknadDetaljer": {
+            andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.test.AndreUtbetalingerApiDto"];
             erStudent: boolean;
             harMedlemskap: boolean;
             harYrkesskade: boolean;
