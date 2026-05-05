@@ -41,6 +41,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/person/ident": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.PersonIdentRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.PersonIdentResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/sak/ekstern/finn": {
         parameters: {
             query?: never;
@@ -5016,6 +5055,13 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        "no.nav.aap.behandlingsflyt.PersonIdentRequest": {
+            /** Format: uuid */
+            personReferanse: string;
+        };
+        "no.nav.aap.behandlingsflyt.PersonIdentResponse": {
+            ident: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7GrunnlagDto": {
             "harSendtForh\u00E5ndsvarsel": boolean;
             "harTilgangTil\u00C5Saksbehandle": boolean;
@@ -8866,6 +8912,8 @@ export interface components {
              */
             "f\u00F8dselsdato"?: string | null;
             navn: string;
+            /** Format: uuid */
+            personReferanse: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SaksinfoDTO": {
             ident: string;
