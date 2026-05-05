@@ -1368,6 +1368,7 @@ export interface components {
             dokumenter: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.Dokument"][];
             journalposttittel?: string | null;
             kanEndreAvsenderMottaker: boolean;
+            person: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.Person"];
             saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto"][];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto"];
         };
@@ -1631,6 +1632,12 @@ export interface components {
         };
         "no.nav.aap.postmottak.journalpostogbehandling.journalpost.DokumentInfoId": {
             dokumentInfoId: string;
+        };
+        "no.nav.aap.postmottak.journalpostogbehandling.journalpost.Person": {
+            /** Format: int64 */
+            id: number;
+            /** Format: uuid */
+            identifikator: string;
         };
         "no.nav.aap.postmottak.journalpostogbehandling.journalpost.Variant": {
             /** @enum {string} */
