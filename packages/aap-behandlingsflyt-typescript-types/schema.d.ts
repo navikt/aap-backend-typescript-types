@@ -8958,8 +8958,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.test.AndreUtbetalingerApiDto": {
             afp?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AfpDto"];
             /** @enum {string|null} */
-            loenn?: "Ja" | "Nei" | null;
-            stoenad?: ("AFP" | "INTRODUKSJONSSTOENAD" | "KVALIFISERINGSSTOENAD" | "LAN" | "NEI" | "OEKONOMISK_SOSIALHJELP" | "OMSORGSSTOENAD" | "STIPEND" | "UTLAND" | "VERV")[] | null;
+            loenn?: "JA" | "NEI" | null;
+            stoenad?: ("AFP" | "INTRODUKSJONSSTOENAD" | "KVALIFISERINGSSTOENAD" | "LAAN" | "NEI" | "OEKONOMISK_SOSIALHJELP" | "OMSORGSSTOENAD" | "STIPEND" | "UTLAND" | "VERV")[] | null;
         };
         "no.nav.aap.behandlingsflyt.test.BehandlingStatusRequest": {
             ident: string;
