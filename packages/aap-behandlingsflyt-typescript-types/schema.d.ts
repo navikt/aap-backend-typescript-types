@@ -1792,7 +1792,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.VedtakslengdeVedtakResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5vedtakVedtakslengdeRespons"];
                     };
                 };
             };
@@ -6342,7 +6342,13 @@ export interface components {
             utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
         };
         "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakResponse": {
+            "harTilgangTil\u00C5Saksbehandle": boolean;
             perioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5VedtakDto"][];
+            "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rDto"][];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.Foresl\u00E5vedtakVedtakslengdeRespons": {
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            perioder?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.VedtakslengdeVedtakDto"][] | null;
             "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rDto": {
@@ -6366,10 +6372,6 @@ export interface components {
             rettighetsType?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
             /** @enum {string} */
             utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
-        };
-        "no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.VedtakslengdeVedtakResponse": {
-            perioder?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.VedtakslengdeVedtakDto"][] | null;
-            "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.foresl\u00E5vedtak.StansOpph\u00F8rDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.medlemskap.MedlemskapGrunnlagDto": {
             medlemskap: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.register.medlemskap.MedlemskapUnntakGrunnlag"];
