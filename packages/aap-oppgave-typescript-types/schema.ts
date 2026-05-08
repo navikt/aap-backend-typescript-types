@@ -2288,7 +2288,8 @@ export enum NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori {
     KVALITETSSIKRING = "KVALITETSSIKRING",
     LOKALKONTOR = "LOKALKONTOR",
     MEDLEMSKAP = "MEDLEMSKAP",
-    NAY = "NAY"
+    NAY = "NAY",
+    STUDENT = "STUDENT"
 }
 export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",

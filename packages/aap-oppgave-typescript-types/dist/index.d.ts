@@ -2176,7 +2176,8 @@ declare enum NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori {
   KVALITETSSIKRING = "KVALITETSSIKRING",
   LOKALKONTOR = "LOKALKONTOR",
   MEDLEMSKAP = "MEDLEMSKAP",
-  NAY = "NAY"
+  NAY = "NAY",
+  STUDENT = "STUDENT"
 }
 declare enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",

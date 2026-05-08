@@ -464,6 +464,7 @@ let NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = /* @__PURE__ */ function(N
 	NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori["LOKALKONTOR"] = "LOKALKONTOR";
 	NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori["MEDLEMSKAP"] = "MEDLEMSKAP";
 	NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori["NAY"] = "NAY";
+	NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori["STUDENT"] = "STUDENT";
 	return NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
 }({});
 let NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoBehandlingstyper) {
