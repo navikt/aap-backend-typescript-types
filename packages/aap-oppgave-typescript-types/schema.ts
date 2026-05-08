@@ -477,6 +477,8 @@ export interface paths {
                     sortby?: PathsMineOppgaverGetParametersQuerySortby;
                     /** @description Sorteringsrekkefølge */
                     sortorder?: PathsMineOppgaverGetParametersQuerySortorder;
+                    /** @description Vis alltid oppgaver med hastemarkering øverst. */
+                    "hastemarkeringF\u00F8rst"?: boolean;
                 };
                 header?: never;
                 path?: never;
@@ -1683,6 +1685,7 @@ export interface components {
             enheter: string[];
             /** Format: int64 */
             filterId: number;
+            "hastemarkeringerF\u00F8rst"?: boolean | null;
             kunLedigeOppgaver?: boolean | null;
             paging: components["schemas"]["no.nav.aap.oppgave.liste.Paging"];
             sortering?: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveSortering"];
