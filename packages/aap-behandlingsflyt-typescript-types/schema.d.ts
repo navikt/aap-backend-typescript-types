@@ -8128,7 +8128,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.InnhentetSykdomsOpplysninger": {
             innhentedeYrkesskader: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.RegistrertYrkesskade"][];
-            "oppgittYrkesskadeIS\u00F8knad": boolean;
+            "oppgittYrkesskadeIS\u00F8knad"?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.sykdom.flate.PeriodisertSykepengerVurderingDto": {
             begrunnelse: string;
