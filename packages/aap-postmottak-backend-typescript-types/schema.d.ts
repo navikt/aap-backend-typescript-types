@@ -66,7 +66,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDto"];
                     };
                 };
             };
@@ -104,7 +104,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO"];
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDto"];
                     };
                 };
             };
@@ -1449,7 +1449,7 @@ export interface components {
             visning: components["schemas"]["no.nav.aap.postmottak.flyt.flate.visning.Visning"];
         };
         "no.nav.aap.postmottak.api.flyt.BehandlingResultatDto": Record<string, never>;
-        "no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDTO": {
+        "no.nav.aap.postmottak.api.flyt.DetaljertBehandlingDto": {
             /** @enum {string} */
             aktivtSteg: "AVKLAR_SAK" | "AVKLAR_TEMA" | "DIGITALISER_DOKUMENT" | "ENDELIG_JOURNALFØRING" | "IVERKSETTES" | "OVERLEVER_TIL_FAGSYSTEM" | "SETT_FAGSAK" | "START_BEHANDLING" | "UDEFINERT" | "VIDERESEND";
             avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.api.flyt.AvklaringsbehovDTO"][];
