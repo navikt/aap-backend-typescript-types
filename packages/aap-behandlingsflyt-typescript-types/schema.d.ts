@@ -7297,6 +7297,7 @@ export interface components {
              */
             tom?: string | null;
             virksomhetId: string;
+            virksomhetNavn?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.FolkeregisterStatusDto": {
             /**
