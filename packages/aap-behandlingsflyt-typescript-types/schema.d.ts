@@ -7316,6 +7316,19 @@ export interface components {
             gyldigTilOgMed?: string | null;
             land: string;
         };
+        "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.MaritimtArbeidINorgeGrunnlag": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fom: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tom?: string | null;
+            virksomhetId: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.MottarSykepengerGrunnlag": {
             identifikator: string;
             inntektType?: string | null;
@@ -7353,6 +7366,7 @@ export interface components {
             indikasjon: "I_NORGE" | "UTENFOR_NORGE";
             kilde: ("AA_REGISTERET" | "A_INNTEKT" | "EREG" | "MEDL" | "PDL" | "SØKNAD")[];
             manglerStatsborgerskapGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.ManglerStatsborgerskapGrunnlag"][] | null;
+            maritimtArbeidINorge?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.MaritimtArbeidINorgeGrunnlag"][] | null;
             mottarSykepengerGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.MottarSykepengerGrunnlag"][] | null;
             oppgittJobbetIUtlandGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.OppgittJobbetIUtlandGrunnlag"][] | null;
             oppgittUtenlandsOppholdGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.OppgittUtenlandsOppholdGrunnlag"][] | null;
