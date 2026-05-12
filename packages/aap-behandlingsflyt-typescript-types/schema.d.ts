@@ -7525,6 +7525,16 @@ export interface components {
             rettighetstypeGrunnlag?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
             /** @enum {string|null} */
             rettighetstypeUnderveis?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
+            "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$StansOpph\u00F8rDTO`"][];
+        };
+        "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$StansOpph\u00F8rDTO`": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fom: string;
+            "stansOpph\u00F8r": string;
+            "\u00E5rsaker": string[];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.aktivitetsplikt.Aktivitetsplikt11_7L\u00F8sningDto": {
             begrunnelse: string;
