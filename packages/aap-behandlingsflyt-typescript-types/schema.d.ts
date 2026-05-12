@@ -7515,6 +7515,7 @@ export interface components {
              * @example 2025-04-01
              */
             sisteDagMedRett?: string | null;
+            "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$StansOpph\u00F8rDTO`"][];
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$KjorFraSteg`": {
             /** @enum {string} */
@@ -7526,7 +7527,6 @@ export interface components {
             rettighetstypeGrunnlag?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
             /** @enum {string|null} */
             rettighetstypeUnderveis?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
-            "stansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$StansOpph\u00F8rDTO`"][];
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$StansOpph\u00F8rDTO`": {
             /**
