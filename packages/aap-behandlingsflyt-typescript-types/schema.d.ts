@@ -4731,7 +4731,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.rettighet.RettighetsinfoDto"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$DriftRettighetsinfoDto`"];
                     };
                 };
             };
@@ -7507,9 +7507,24 @@ export interface components {
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$AvbrytBrevBody`": {
             begrunnelse: string;
         };
+        "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$DriftRettighetsinfoDto`": {
+            rettighetsperioder: components["schemas"]["no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$RettighetstypePeriodeDto`"][];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            sisteDagMedRett?: string | null;
+        };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$KjorFraSteg`": {
             /** @enum {string} */
             steg: "ARBEIDSOPPTRAPPING" | "AVBRYT_REVURDERING" | "AVKLAR_OPPFØLGING" | "AVKLAR_STUDENT" | "AVKLAR_SYKDOM" | "BARNETILLEGG" | "BEHANDLENDE_ENHET" | "BEKREFT_VURDERINGER_OPPFØLGING" | "BEREGN_TILKJENT_YTELSE" | "BREV" | "DU_ER_ET_ANNET_STED" | "EFFEKTUER_11_7" | "ETABLERING_EGEN_VIRKSOMHET" | "FASTSETT_ARBEIDSEVNE" | "FASTSETT_BEREGNINGSTIDSPUNKT" | "FASTSETT_GRUNNLAG" | "FASTSETT_MELDEPERIODER" | "FASTSETT_RETTIGHETSTYPE" | "FASTSETT_SYKDOMSVILKÅRET" | "FASTSETT_UTTAK" | "FASTSETT_VEDTAKSLENGDE" | "FATTE_VEDTAK" | "FORESLÅ_VEDTAK" | "FORESLÅ_VEDTAK_VEDTAKSLENGDE" | "FORMKRAV" | "FRITAK_MELDEPLIKT" | "FULLMEKTIG" | "IKKE_OPPFYLT_MELDEPLIKT" | "IVERKSETT_BRUDD" | "IVERKSETT_KONSEKVENS" | "IVERKSETT_VEDTAK" | "KLAGEBEHANDLING_KONTOR" | "KLAGEBEHANDLING_NAY" | "KLAGEBEHANDLING_OPPSUMMERING" | "KVALITETSSIKRING" | "MANGLENDE_LIGNING" | "OMGJØRING" | "OPPRETTHOLDELSE" | "OPPRETT_REVURDERING" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "PÅKLAGET_BEHANDLING" | "REFUSJON_KRAV" | "SAMORDNING_ANDRE_STATLIGE_YTELSER" | "SAMORDNING_ARBEIDSGIVER" | "SAMORDNING_AVSLAG" | "SAMORDNING_BARNEPENSJON" | "SAMORDNING_GRADERING" | "SAMORDNING_SYKESTIPEND" | "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV" | "SAMORDNING_UFØRE" | "SEND_FORVALTNINGSMELDING" | "SIMULERING" | "START_BEHANDLING" | "START_OPPFØLGINGSBEHANDLING" | "SVAR_FRA_ANDREINSTANS" | "SYKDOMSVURDERING_BREV" | "SØKNAD" | "TREKK_KLAGE" | "UDEFINERT" | "VIS_GRUNNLAG" | "VURDER_AKTIVITETSPLIKT_11_7" | "VURDER_AKTIVITETSPLIKT_11_9" | "VURDER_ALDER" | "VURDER_BISTANDSBEHOV" | "VURDER_INNTEKTSBORTFALL" | "VURDER_LOVVALG" | "VURDER_MEDLEMSKAP" | "VURDER_OPPHOLDSKRAV" | "VURDER_RETTIGHETSPERIODE" | "VURDER_SYKEPENGEERSTATNING" | "VURDER_YRKESSKADE";
+        };
+        "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$RettighetstypePeriodeDto`": {
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            /** @enum {string|null} */
+            rettighetstypeGrunnlag?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
+            /** @enum {string|null} */
+            rettighetstypeUnderveis?: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD" | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.aktivitetsplikt.Aktivitetsplikt11_7L\u00F8sningDto": {
             begrunnelse: string;
