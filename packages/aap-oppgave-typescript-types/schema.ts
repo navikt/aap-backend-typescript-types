@@ -477,8 +477,6 @@ export interface paths {
                     sortby?: PathsMineOppgaverGetParametersQuerySortby;
                     /** @description Sorteringsrekkefølge */
                     sortorder?: PathsMineOppgaverGetParametersQuerySortorder;
-                    /** @description Vis alltid oppgaver med hastemarkering øverst. */
-                    "hastemarkeringF\u00F8rst"?: boolean;
                 };
                 header?: never;
                 path?: never;

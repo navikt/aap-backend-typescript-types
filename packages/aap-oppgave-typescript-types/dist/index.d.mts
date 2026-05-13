@@ -458,8 +458,7 @@ interface paths {
         query?: {
           /** @description Vis kun på vent-oppgaver. */kunPaaVent?: boolean; /** @description Sorter oppgaveliste */
           sortby?: PathsMineOppgaverGetParametersQuerySortby; /** @description Sorteringsrekkefølge */
-          sortorder?: PathsMineOppgaverGetParametersQuerySortorder; /** @description Vis alltid oppgaver med hastemarkering øverst. */
-          "hastemarkeringF\u00F8rst"?: boolean;
+          sortorder?: PathsMineOppgaverGetParametersQuerySortorder;
         };
         header?: never;
         path?: never;
