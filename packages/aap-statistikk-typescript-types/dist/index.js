@@ -576,6 +576,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["FAGSYSTEMINFO_BEHOV_HENDELSE"] = "FAGSYSTEMINFO_BEHOV_HENDELSE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["FASTSATT_PERIODE_PASSERT"] = "FASTSATT_PERIODE_PASSERT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["G_REGULERING"] = "G_REGULERING";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["HELSEOPPLYSNINGER"] = "HELSEOPPLYSNINGER";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["KLAGE"] = "KLAGE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
