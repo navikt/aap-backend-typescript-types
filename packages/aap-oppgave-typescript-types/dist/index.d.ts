@@ -1547,6 +1547,7 @@ interface components {
        */
       oversendtDato: string;
       saksnummer: string;
+      "vente\u00C5rsak"?: string | null;
     };
     "no.nav.aap.oppgave.enhet.OppgaveEnhetDto": {
       avklaringsbehovKode: string;
@@ -2028,6 +2029,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   FAGSYSTEMINFO_BEHOV_HENDELSE = "FAGSYSTEMINFO_BEHOV_HENDELSE",
   FASTSATT_PERIODE_PASSERT = "FASTSATT_PERIODE_PASSERT",
   FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
+  G_REGULERING = "G_REGULERING",
   HELSEOPPLYSNINGER = "HELSEOPPLYSNINGER",
   KLAGE = "KLAGE",
   MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",

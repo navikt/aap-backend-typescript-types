@@ -302,6 +302,7 @@ let NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilO
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["FAGSYSTEMINFO_BEHOV_HENDELSE"] = "FAGSYSTEMINFO_BEHOV_HENDELSE";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["FASTSATT_PERIODE_PASSERT"] = "FASTSATT_PERIODE_PASSERT";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
+	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["G_REGULERING"] = "G_REGULERING";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["HELSEOPPLYSNINGER"] = "HELSEOPPLYSNINGER";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["KLAGE"] = "KLAGE";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
