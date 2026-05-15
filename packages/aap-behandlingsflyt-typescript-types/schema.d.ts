@@ -6961,26 +6961,11 @@ export interface components {
             vurderingerMeta: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurderingerMetaResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.rettighet.RettighetsinfoDto": {
-            perioderMedRett: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.rettighet.RettighetsperiodeDto"][];
             /**
              * Format: date
              * @example 2025-04-01
              */
             sisteDagMedRett?: string | null;
-        };
-        "no.nav.aap.behandlingsflyt.behandling.rettighet.RettighetsperiodeDto": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            fom: string;
-            /** @enum {string} */
-            rettighetstype: "ARBEIDSSØKER" | "BISTANDSBEHOV" | "STUDENT" | "SYKEPENGEERSTATNING" | "VURDERES_FOR_UFØRETRYGD";
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            tom: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.rettighetsperiode.RettighetsperiodeGrunnlagResponse": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
