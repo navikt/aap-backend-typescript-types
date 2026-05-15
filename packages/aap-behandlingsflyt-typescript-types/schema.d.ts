@@ -6737,6 +6737,22 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringTilgangDto": {
             "harTilgangTil\u00C5Kvalitetssikre": boolean;
         };
+        "no.nav.aap.behandlingsflyt.behandling.lovvalg.Fartsomraade": {
+            beskrivelse?: string | null;
+            kode: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.lovvalg.Skipsregister": {
+            beskrivelse?: string | null;
+            kode: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.lovvalg.Skipstype": {
+            beskrivelse?: string | null;
+            kode: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.lovvalg.Yrke": {
+            beskrivelse?: string | null;
+            kode: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.lovvalgmedlemskap.grunnlag.LovvalgResponse": {
             begrunnelse: string;
             /** @enum {string} */
@@ -7253,11 +7269,14 @@ export interface components {
             virksomhetNavn?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.BestemtArbeidsgruppeINorgeGrunnlag": {
+            fartsomraade?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.lovvalg.Fartsomraade"];
             /**
              * Format: date
              * @example 2025-04-01
              */
             fom: string;
+            skipsregister?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.lovvalg.Skipsregister"];
+            skipstype?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.lovvalg.Skipstype"];
             /**
              * Format: date
              * @example 2025-04-01
@@ -7265,6 +7284,7 @@ export interface components {
             tom?: string | null;
             virksomhetId: string;
             virksomhetNavn?: string | null;
+            yrke?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.lovvalg.Yrke"];
         };
         "no.nav.aap.behandlingsflyt.behandling.vilk\u00E5r.medlemskap.FolkeregisterStatusDto": {
             /**
