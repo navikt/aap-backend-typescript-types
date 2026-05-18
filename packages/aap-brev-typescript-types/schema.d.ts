@@ -1270,7 +1270,9 @@ export interface components {
             type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning.Yrkesskade": {
-            arbeidsinntektPaaSkadetidspunktet: number;
+            arbeidsinntektPaaSkadetidspunktet?: number | null;
+            diagnose?: string | null;
+            relevantForArbeidsevne: boolean;
             /**
              * Format: date
              * @example 2025-04-01
