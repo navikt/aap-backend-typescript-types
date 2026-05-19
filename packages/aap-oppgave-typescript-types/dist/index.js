@@ -454,6 +454,25 @@ let NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ function(NoNavAapOpp
 	NoNavAapOppgaveReturInformasjonRsaker["SKRIVEFEIL"] = "SKRIVEFEIL";
 	return NoNavAapOppgaveReturInformasjonRsaker;
 }({});
+let NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper) {
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["JOURNALF_RING"] = "JOURNALFØRING";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["KLAGE"] = "KLAGE";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["OPPF_LGINGSBEHANDLING"] = "OPPFØLGINGSBEHANDLING";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["REVURDERING"] = "REVURDERING";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper["TILBAKEKREVING"] = "TILBAKEKREVING";
+	return NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper;
+}({});
+let NoNavAapOppgaveDriftFilterDriftsinfoDTOType = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftsinfoDTOType) {
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOType["ALLE_OPPGAVER"] = "ALLE_OPPGAVER";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOType["GENERELL"] = "GENERELL";
+	NoNavAapOppgaveDriftFilterDriftsinfoDTOType["KVALITETSSIKRING"] = "KVALITETSSIKRING";
+	return NoNavAapOppgaveDriftFilterDriftsinfoDTOType;
+}({});
 let NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ function(NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus) {
 	NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus["AVSLUTTET"] = "AVSLUTTET";
 	NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus["OPPRETTET"] = "OPPRETTET";
@@ -645,6 +664,8 @@ exports.NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType = NoNavAap
 exports.NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
 exports.NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
 exports.NoNavAapMotorApiJobbInfoDtoStatus = NoNavAapMotorApiJobbInfoDtoStatus;
+exports.NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper = NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper;
+exports.NoNavAapOppgaveDriftFilterDriftsinfoDTOType = NoNavAapOppgaveDriftFilterDriftsinfoDTOType;
 exports.NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
 exports.NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
 exports.NoNavAapOppgaveFilterFilterDtoBehandlingstyper = NoNavAapOppgaveFilterFilterDtoBehandlingstyper;
