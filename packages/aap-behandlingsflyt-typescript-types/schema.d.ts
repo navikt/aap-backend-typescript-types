@@ -41,7 +41,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/person/ident": {
+    "/api/person/personinformasjon": {
         parameters: {
             query?: never;
             header?: never;
@@ -59,7 +59,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.PersonIdentRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.PersoninfoRequest"];
                 };
             };
             responses: {
@@ -69,7 +69,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.PersonIdentResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.PersoninfoDTO"];
                     };
                 };
             };
@@ -5055,12 +5055,23 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "no.nav.aap.behandlingsflyt.PersonIdentRequest": {
+        "no.nav.aap.behandlingsflyt.PersoninfoDTO": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "d\u00F8dsdato"?: string | null;
+            fnr: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "f\u00F8dselsdato"?: string | null;
+            navn: string;
+        };
+        "no.nav.aap.behandlingsflyt.PersoninfoRequest": {
             /** Format: uuid */
             personReferanse: string;
-        };
-        "no.nav.aap.behandlingsflyt.PersonIdentResponse": {
-            ident: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.aktivitetsplikt.brudd_11_7.Aktivitetsplikt11_7GrunnlagDto": {
             "harSendtForh\u00E5ndsvarsel": boolean;
