@@ -269,6 +269,7 @@ interface components {
       perioderMedArbeidsopptrapping: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][]; /** @enum {string|null} */
       resultat?: NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat;
       rettighetstypePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode"][];
+      samordning: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO"];
       tilkjentYtelse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelseDTO"];
       /**
        * Format: date-time
@@ -379,6 +380,64 @@ interface components {
        * @example 2025-04-01
        */
       tilDato: string;
+    };
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO": {
+      arbeidsgiver: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Arbeidsgiver"][];
+      avregningAndreYtelser: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.AvregningAndreYtelser"][];
+      statligeYtelser: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.StatligeYtelser"][];
+      "uf\u00F8re": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Uf\u00F8rePerioder"][];
+    };
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Arbeidsgiver": {
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      fom: string;
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      tom: string;
+    };
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.AvregningAndreYtelser": {
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      fom: string;
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      tom: string; /** @enum {string} */
+      ytelse: NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOAvregningAndreYtelserYtelse;
+    };
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.StatligeYtelser": {
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      fom: string; /** Format: int32 */
+      prosent: number;
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      tom: string; /** @enum {string} */
+      ytelse: NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOStatligeYtelserYtelse;
+    };
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Uf\u00F8rePerioder": {
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      fom: string; /** Format: int32 */
+      grad: number;
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      tom: string;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.StansEllerOpph\u00F8r": {
       /**
@@ -603,6 +662,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
   Value4101 = "4101",
   Value4102 = "4102",
   Value4201 = "4201",
+  Value4301 = "4301",
   Value5001 = "5001",
   Value5002 = "5002",
   Value5003 = "5003",
@@ -688,6 +748,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv {
 }
 declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   ARBEIDSOPPTRAPPING = "ARBEIDSOPPTRAPPING",
+  AVBRYT_AKTIVITETSPLIKTBEHANDLING = "AVBRYT_AKTIVITETSPLIKTBEHANDLING",
   AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
   AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
   AVKLAR_STUDENT = "AVKLAR_STUDENT",
@@ -838,6 +899,25 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRetti
   SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
   VURDERES_FOR_UF_RETRYGD = "VURDERES_FOR_UF\u00D8RETRYGD"
 }
+declare enum NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOAvregningAndreYtelserYtelse {
+  BARNEPENSJON = "BARNEPENSJON",
+  DAGPENGER = "DAGPENGER",
+  FORELDREPENGER = "FORELDREPENGER",
+  GJENLEVENDEPENSJON = "GJENLEVENDEPENSJON",
+  OMSTILLINGSST_NAD = "OMSTILLINGSST\u00D8NAD",
+  OVERGANGSST_NAD = "OVERGANGSST\u00D8NAD",
+  SYKEPENGER = "SYKEPENGER",
+  TILTAKSPENGER = "TILTAKSPENGER"
+}
+declare enum NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOStatligeYtelserYtelse {
+  FERIE_I_SYKEPENGEPERIODE = "FERIE_I_SYKEPENGEPERIODE",
+  FORELDREPENGER = "FORELDREPENGER",
+  OMSORGSPENGER = "OMSORGSPENGER",
+  OPPL_RINGSPENGER = "OPPL\u00C6RINGSPENGER",
+  PLEIEPENGER = "PLEIEPENGER",
+  SVANGERSKAPSPENGER = "SVANGERSKAPSPENGER",
+  SYKEPENGER = "SYKEPENGER"
+}
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRType {
   OPPH_R = "OPPH\u00D8R",
   STANS = "STANS"
@@ -901,6 +981,7 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFo
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov {
   AKTIVITETSMELDING = "AKTIVITETSMELDING",
+  AKTIVITETSPLIKTBEHANDLING_AVBRUTT = "AKTIVITETSPLIKTBEHANDLING_AVBRUTT",
   AKTIVITETSPLIKT_11_7 = "AKTIVITETSPLIKT_11_7",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
   AVVIST_LEGEERKL_RING = "AVVIST_LEGEERKL\u00C6RING",
@@ -1112,5 +1193,5 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
 }
 type operations = Record<string, never>;
 //#endregion
-export { $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat, NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType, NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype, NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker, NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov, NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats, NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType, NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall, NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling, NoNavAapOppgaveStatistikkOppgaveHendelseHendelse, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, components, operations, paths, webhooks };
+export { $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat, NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType, NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype, NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOAvregningAndreYtelserYtelse, NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOStatligeYtelserYtelse, NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker, NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat, NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov, NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats, NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType, NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall, NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling, NoNavAapOppgaveStatistikkOppgaveHendelseHendelse, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype, NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, components, operations, paths, webhooks };
 //# sourceMappingURL=index.d.ts.map
