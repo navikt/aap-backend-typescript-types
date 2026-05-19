@@ -1289,7 +1289,7 @@ interface paths {
             [name: string]: unknown;
           };
           content: {
-            "application/json": components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftsinfoDTO"][];
+            "application/json": components["schemas"]["no.nav.aap.oppgave.drift.DriftFilterResponsDTO"];
           };
         };
       };
@@ -1532,6 +1532,10 @@ interface components {
     "no.nav.aap.oppgave.drift.AvklaringsbehovDto": {
       kode: string;
       navn: string;
+    };
+    "no.nav.aap.oppgave.drift.DriftFilterResponsDTO": {
+      avklaringsbehovUtenFilter: components["schemas"]["no.nav.aap.oppgave.drift.AvklaringsbehovDto"][];
+      filtre: components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftsinfoDTO"][];
     };
     "no.nav.aap.oppgave.drift.FilterDriftsinfoDTO": {
       avklaringsbehov: components["schemas"]["no.nav.aap.oppgave.drift.AvklaringsbehovDto"][];
