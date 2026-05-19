@@ -1529,8 +1529,12 @@ interface components {
       tilbakekrevings_URL: string;
       "tilbakekrevings_bel\u00F8p": number;
     };
+    "no.nav.aap.oppgave.drift.AvklaringsbehovDto": {
+      kode: string;
+      navn: string;
+    };
     "no.nav.aap.oppgave.drift.FilterDriftsinfoDTO": {
-      avklaringsbehovKoder: string[];
+      avklaringsbehov: components["schemas"]["no.nav.aap.oppgave.drift.AvklaringsbehovDto"][];
       behandlingstyper: NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper[];
       beskrivelse: string;
       ekskluderteEnheter: string[];
