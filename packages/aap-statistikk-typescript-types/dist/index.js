@@ -1,196 +1,5 @@
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 //#region schema.ts
-let PathsBehandlingstidGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingstidGetParametersQueryBehandlingstyper) {
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingstidGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingstidGetParametersQueryBehandlingstyper;
-}({});
-let PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper) {
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper;
-}({});
-let PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper) {
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper;
-}({});
-let PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ function(PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode) {
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode["DENNE_UKEN"] = "DENNE_UKEN";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode["FORRIGE_UKE"] = "FORRIGE_UKE";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode["IDAG"] = "IDAG";
-	PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode["IG_R"] = "IGÅR";
-	return PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode;
-}({});
-let PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper) {
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper;
-}({});
-let PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet = /* @__PURE__ */ function(PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet) {
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet["DAG"] = "DAG";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet["M_NED"] = "MÅNED";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet["UKE"] = "UKE";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet["_R"] = "ÅR";
-	return PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet;
-}({});
-let PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper;
-}({});
-let PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet = /* @__PURE__ */ function(PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet) {
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet["DAG"] = "DAG";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet["M_NED"] = "MÅNED";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet["UKE"] = "UKE";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet["_R"] = "ÅR";
-	return PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet;
-}({});
-let PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper;
-}({});
-let PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper) {
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper;
-}({});
-let PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ function(PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode) {
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode["DENNE_UKEN"] = "DENNE_UKEN";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode["FORRIGE_UKE"] = "FORRIGE_UKE";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode["IDAG"] = "IDAG";
-	PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode["IG_R"] = "IGÅR";
-	return PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode;
-}({});
-let PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper;
-}({});
-let PathsBehandlingerPVentGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerPVentGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerPVentGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerPVentGetParametersQueryBehandlingstyper;
-}({});
-let PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper;
-}({});
-let PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode = /* @__PURE__ */ function(PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode) {
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode["DENNE_UKEN"] = "DENNE_UKEN";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode["FORRIGE_UKE"] = "FORRIGE_UKE";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode["IDAG"] = "IDAG";
-	PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode["IG_R"] = "IGÅR";
-	return PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode;
-}({});
-let PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper;
-}({});
-let PathsBehandlingerReturGetParametersQueryBehandlingstyper = /* @__PURE__ */ function(PathsBehandlingerReturGetParametersQueryBehandlingstyper) {
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Aktivitetsplikt"] = "Aktivitetsplikt";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Journalf_ring"] = "Journalføring";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Klage"] = "Klage";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Revurdering"] = "Revurdering";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	PathsBehandlingerReturGetParametersQueryBehandlingstyper["Tilbakekreving"] = "Tilbakekreving";
-	return PathsBehandlingerReturGetParametersQueryBehandlingstyper;
-}({});
 let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ function(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode) {
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value4101"] = "4101";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value4102"] = "4102";
@@ -738,19 +547,6 @@ let NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = /* @__PURE__ 
 	NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent["VENTER_P__VURDERING_AV_ROL"] = "VENTER_PÅ_VURDERING_AV_ROL";
 	return NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
 }({});
-let NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype = /* @__PURE__ */ function(NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype) {
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Aktivitetsplikt"] = "Aktivitetsplikt";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Aktivitetsplikt11_9"] = "Aktivitetsplikt11_9";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Dokumenth_ndtering"] = "Dokumenthåndtering";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["F_rstegangsbehandling"] = "Førstegangsbehandling";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Journalf_ring"] = "Journalføring";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Klage"] = "Klage";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Oppf_lgingsbehandling"] = "Oppfølgingsbehandling";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Revurdering"] = "Revurdering";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["SvarFraAndreinstans"] = "SvarFraAndreinstans";
-	NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype["Tilbakekreving"] = "Tilbakekreving";
-	return NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype;
-}({});
 //#endregion
 exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
 exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv;
@@ -788,23 +584,5 @@ exports.NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingT
 exports.NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus = NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
 exports.NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
 exports.NoNavAapPostmottakKontraktHendelseEndringDTOStatus = NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
-exports.NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype = NoNavAapStatistikkApiProduksjonsstyringApiKt$hentBehandlingstidPerDag$AntallPneOgTypeOgGjennomsnittsalderBehandlingstype;
-exports.PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper = PathsBehandlingPerSteggruppeGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper = PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet = PathsBehandlingerFordelingLukkedeBehandlingerGetParametersQueryEnhet;
-exports.PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper = PathsBehandlingerFordelingPneBehandlingerGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet = PathsBehandlingerFordelingPneBehandlingerGetParametersQueryEnhet;
-exports.PathsBehandlingerPVentGetParametersQueryBehandlingstyper = PathsBehandlingerPVentGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper = PathsBehandlingerPVentMedPeriodeGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode = PathsBehandlingerPVentMedPeriodeGetParametersQueryOppslagsPeriode;
-exports.PathsBehandlingerReturGetParametersQueryBehandlingstyper = PathsBehandlingerReturGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper = PathsBehandlingerRsakTilBehandlingGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper = PathsBehandlingerUtviklingGetParametersQueryBehandlingstyper;
-exports.PathsBehandlingstidGetParametersQueryBehandlingstyper = PathsBehandlingstidGetParametersQueryBehandlingstyper;
-exports.PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper = PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryBehandlingstyper;
-exports.PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode = PathsOppgaverPerSteggruppeMedPeriodeGetParametersQueryOppslagsPeriode;
-exports.PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper = PathsPneBehandlingerPerBehandlingstypeGetParametersQueryBehandlingstyper;
-exports.PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper = PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryBehandlingstyper;
-exports.PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode = PathsPneBehandlingerPerBehandlingstypeMedPeriodeGetParametersQueryOppslagsPeriode;
 
 //# sourceMappingURL=index.js.map
