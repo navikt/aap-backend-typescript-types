@@ -1226,7 +1226,9 @@ export interface paths {
                     headers: {
                         [name: string]: unknown;
                     };
-                    content?: never;
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.RedigitaliserResponse"];
+                    };
                 };
             };
         };
@@ -1509,6 +1511,9 @@ export interface components {
             /** Format: int64 */
             journalpostId: number;
             saksnummer: string;
+        };
+        "no.nav.aap.postmottak.api.flyt.RedigitaliserResponse": {
+            message: string;
         };
         "no.nav.aap.postmottak.api.flyt.SettP\u00E5VentRequest": {
             begrunnelse: string;
