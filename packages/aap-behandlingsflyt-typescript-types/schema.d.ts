@@ -6870,11 +6870,16 @@ export interface components {
             id: string;
             journalpostId: string;
             /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
+             * Format: date
+             * @example 2025-04-01
              */
-            mottattTidspunkt: string;
+            meldeDato: string;
             oppdatertAv?: string | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            oppdatertTidspunkt?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortProsesseringResponse": {
             /** @enum {string} */
@@ -6891,10 +6896,20 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.meldekort.OppdaterMeldekortRequest": {
             begrunnelse: string;
             dager: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.DagDto"][];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            meldeDato: string;
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.OppdaterMeldekortResponse": {
             journalpostId: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            oppdatertTidspunkt: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurdering": {
             /** @enum {string} */
