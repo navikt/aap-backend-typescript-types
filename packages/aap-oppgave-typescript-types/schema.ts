@@ -1345,7 +1345,30 @@ export interface paths {
             };
         };
         put?: never;
-        post?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftResponse"];
+                    };
+                };
+            };
+        };
         delete?: never;
         options?: never;
         head?: never;
@@ -1618,11 +1641,27 @@ export interface components {
         };
         "no.nav.aap.oppgave.drift.DriftFilterResponsDTO": {
             avklaringsbehovUtenFilter: components["schemas"]["no.nav.aap.oppgave.drift.AvklaringsbehovDto"][];
-            filtre: components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftsinfoDTO"][];
+            filtre: components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftResponse"][];
         };
-        "no.nav.aap.oppgave.drift.FilterDriftsinfoDTO": {
+        "no.nav.aap.oppgave.drift.EnhetDriftRequest": {
+            enhet: string;
+            /** @enum {string} */
+            filtermodus: NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus;
+        };
+        "no.nav.aap.oppgave.drift.FilterDriftRequest": {
+            avklaringsbehovKoder: string[];
+            behandlingstyper: NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper[];
+            beskrivelse: string;
+            enheter: components["schemas"]["no.nav.aap.oppgave.drift.EnhetDriftRequest"][];
+            /** Format: int64 */
+            id?: number | null;
+            navn: string;
+            /** @enum {string} */
+            type: NoNavAapOppgaveDriftFilterDriftRequestType;
+        };
+        "no.nav.aap.oppgave.drift.FilterDriftResponse": {
             avklaringsbehov: components["schemas"]["no.nav.aap.oppgave.drift.AvklaringsbehovDto"][];
-            behandlingstyper: NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper[];
+            behandlingstyper: NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper[];
             beskrivelse: string;
             ekskluderteEnheter: string[];
             endretAv?: string | null;
@@ -1642,7 +1681,7 @@ export interface components {
              */
             opprettetTidspunkt: string;
             /** @enum {string} */
-            type: NoNavAapOppgaveDriftFilterDriftsinfoDTOType;
+            type: NoNavAapOppgaveDriftFilterDriftResponseType;
         };
         "no.nav.aap.oppgave.drift.OppgaveDriftsinfoDTO": {
             avklaringsbehovKode: string;
@@ -2346,7 +2385,11 @@ export enum NoNavAapOppgaveReturInformasjonRsaker {
     MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
     SKRIVEFEIL = "SKRIVEFEIL"
 }
-export enum NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper {
+export enum NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus {
+    EKSKLUDER = "EKSKLUDER",
+    INKLUDER = "INKLUDER"
+}
+export enum NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
@@ -2358,7 +2401,24 @@ export enum NoNavAapOppgaveDriftFilterDriftsinfoDTOBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     TILBAKEKREVING = "TILBAKEKREVING"
 }
-export enum NoNavAapOppgaveDriftFilterDriftsinfoDTOType {
+export enum NoNavAapOppgaveDriftFilterDriftRequestType {
+    ALLE_OPPGAVER = "ALLE_OPPGAVER",
+    GENERELL = "GENERELL",
+    KVALITETSSIKRING = "KVALITETSSIKRING"
+}
+export enum NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper {
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    JOURNALF_RING = "JOURNALF\u00D8RING",
+    KLAGE = "KLAGE",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    TILBAKEKREVING = "TILBAKEKREVING"
+}
+export enum NoNavAapOppgaveDriftFilterDriftResponseType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
     GENERELL = "GENERELL",
     KVALITETSSIKRING = "KVALITETSSIKRING"
