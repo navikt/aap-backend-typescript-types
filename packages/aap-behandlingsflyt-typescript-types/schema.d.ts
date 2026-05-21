@@ -9153,9 +9153,15 @@ export interface components {
              */
             opprettetTidspunkt: string;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
-            /** @enum {string|null} */
+            /**
+             * @deprecated
+             * @description Bruk tilstand i stedet for å utlede sakens tilstand
+             * @enum {string|null}
+             */
             resultat?: "AVBRUTT" | "AVSLAG" | "INNVILGET" | "KLAGE_AVSLÅTT" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_OMGJØRES" | "KLAGE_OPPRETTHOLDES" | "KLAGE_TRUKKET" | "TRUKKET" | null;
             saksnummer: string;
+            /** @enum {string|null} */
+            tilstand?: "TRUKKET" | "ÅPEN" | null;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.S\u00F8kDto": {
             "s\u00F8ketekst": string;
