@@ -8933,11 +8933,11 @@ export interface components {
             /** Format: uuid */
             behandlingId: string;
             /** @enum {string} */
-            behandlingsstatus: "AVSLUTTET" | "OPPRETTET" | "RETUR_FRA_BESLUTTER" | "TIL_BEHANDLING" | "TIL_BESLUTTER" | "TIL_GODKJENNING";
+            behandlingsstatus: "AVSLUTTET" | "OPPRETTET" | "RETUR_FRA_BESLUTTER" | "TIL_BEHANDLING" | "TIL_BESLUTTER" | "TIL_FORHÅNDSVARSEL" | "TIL_GODKJENNING";
             fullstendigPeriode: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingPeriode"];
             /**
              * Format: date-time
-             * @example 2025-04-01T12:30:00
+             * @example 2025-04-01T14:30:00+02:00
              */
             sakOpprettet: string;
             saksbehandlingURL: string;
@@ -8947,6 +8947,7 @@ export interface components {
              * @example 2025-04-01
              */
             varselSendt?: string | null;
+            venter?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingVenterKafkaDto"];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingPeriode": {
             /**
@@ -8959,6 +8960,15 @@ export interface components {
              * @example 2025-04-01
              */
             tom: string;
+        };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingVenterKafkaDto": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            gjenopptas: string;
+            /** @enum {string} */
+            grunn: "AVVENTER_BRUKERUTTALELSE";
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Uf\u00F8revedtak": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Uf\u00F8revedtakV0"];
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Uf\u00F8revedtakV0": {
