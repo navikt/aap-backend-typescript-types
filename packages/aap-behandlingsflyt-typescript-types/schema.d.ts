@@ -8966,17 +8966,7 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            gjennoptas?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            gjenopptas?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            gjenoptas?: string | null;
+            gjenopptas: string;
             /** @enum {string} */
             grunn: "AVVENTER_BRUKERUTTALELSE";
         };
