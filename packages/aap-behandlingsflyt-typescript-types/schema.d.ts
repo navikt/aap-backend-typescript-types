@@ -3924,6 +3924,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/brev/{brevbestillingReferanse}/brevmal-preview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description brevbestillingReferanse */
+                    brevbestillingReferanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BrevmalPreviewResponsDTO"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/{brevbestillingReferanse}/kan-distribuere-brev": {
         parameters: {
             query?: never;
@@ -9089,6 +9127,9 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BrevResponsDTO": {
             html: string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.BrevmalPreviewResponsDTO": {
+            json: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.FinnBehandlingForIdentDTO": {
             ident: string;
