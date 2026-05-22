@@ -2051,6 +2051,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value5035 = "5035",
     Value5036 = "5036",
     Value5040 = "5040",
+    Value5041 = "5041",
     Value5050 = "5050",
     Value5051 = "5051",
     Value5052 = "5052",
