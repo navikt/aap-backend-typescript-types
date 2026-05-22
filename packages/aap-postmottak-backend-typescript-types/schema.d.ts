@@ -1370,6 +1370,7 @@ export interface components {
             dokumenter: components["schemas"]["no.nav.aap.postmottak.journalpostogbehandling.journalpost.Dokument"][];
             journalposttittel?: string | null;
             kanEndreAvsenderMottaker: boolean;
+            kanOppretteNySak: boolean;
             saksinfo: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto"][];
             vurdering?: components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.sak.AvklarSakVurderingDto"];
         };
@@ -1399,6 +1400,8 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.sak.SaksInfoDto": {
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            /** @enum {string|null} */
+            resultat?: "AVBRUTT" | "AVSLAG" | "INNVILGET" | "KLAGE_AVSLÅTT" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_OMGJØRES" | "KLAGE_OPPRETTHOLDES" | "KLAGE_TRUKKET" | "TRUKKET" | null;
             saksnummer: string;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.strukturering.DigitaliseringGrunnlagDto": {
