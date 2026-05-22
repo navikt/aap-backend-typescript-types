@@ -284,6 +284,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/bestilling/{referanse}/brevbygger-preview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.ForhandsvisBrevRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": string;
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/ferdigstill": {
         parameters: {
             query?: never;
@@ -1207,6 +1249,8 @@ export interface components {
              * @example 2025-04-01
              */
             beregningstidspunkt?: string | null;
+            /** @enum {string|null} */
+            beregningsutfallKategori?: "GJENNOMSNITT" | "INNTEKT_OVER_6G" | "MINSTESATS_OVER_25" | "MINSTESATS_UNDER_25" | "SISTE_AAR" | null;
             "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
             /** @enum {string} */
             type: "AAP_FOM_DATO" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING";
