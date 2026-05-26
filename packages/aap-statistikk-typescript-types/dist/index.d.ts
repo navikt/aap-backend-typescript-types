@@ -264,6 +264,7 @@ interface components {
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.AvsluttetBehandlingDTO": {
       beregningsGrunnlag?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO"];
       diagnoser?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Diagnoser"];
+      diagnoserPeriodisert: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.DiagnoserMedPeriode"][];
       fritaksvurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering"][] | null;
       institusjonsopphold: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][];
       perioderMedArbeidsopptrapping: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][]; /** @enum {string|null} */
@@ -298,6 +299,12 @@ interface components {
       bidiagnoser: string[];
       diagnosekode: string;
       kodeverk: string;
+    };
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.DiagnoserMedPeriode": {
+      bidiagnoser: string[];
+      diagnosekode: string;
+      kodeverk: string;
+      periodeDTO: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering": {
       /**
@@ -700,6 +707,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
   Value5035 = "5035",
   Value5036 = "5036",
   Value5040 = "5040",
+  Value5041 = "5041",
   Value5050 = "5050",
   Value5051 = "5051",
   Value5052 = "5052",
