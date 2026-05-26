@@ -7657,6 +7657,7 @@ export interface components {
             type: "AKTIVITETSKORT" | "ANNET_RELEVANT_DOKUMENT" | "DIALOGMELDING" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FORELDREPENGE_VEDTAK_HENDELSE" | "INSTITUSJONSOPPHOLD" | "KABAL_HENDELSE" | "KLAGE" | "LEGEERKLÆRING" | "LEGEERKLÆRING_AVVIST" | "MANUELL_REVURDERING" | "MELDEKORT" | "NY_ÅRSAK_TIL_BEHANDLING" | "OMGJØRING_KLAGE_REVURDERING" | "OPPFØLGINGSOPPGAVE" | "PDL_HENDELSE_DODSFALL_BARN" | "PDL_HENDELSE_DODSFALL_BRUKER" | "PDL_HENDELSE_FOLKEREGISTERIDENT" | "SYKEPENGE_VEDTAK_HENDELSE" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UFØRE_VEDTAK_HENDELSE";
         };
         "no.nav.aap.behandlingsflyt.drift.SakDriftsinfoDTO": {
+            "andreSakerP\u00E5Bruker": string[];
             behandlinger: components["schemas"]["no.nav.aap.behandlingsflyt.drift.BehandlingDriftsinfo"][];
             /**
              * Format: date-time
