@@ -5417,6 +5417,7 @@ export interface components {
             definisjon: "4101" | "4102" | "4201" | "4301" | "5001" | "5002" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5019" | "5020" | "5021" | "5022" | "5023" | "5024" | "5025" | "5026" | "5027" | "5028" | "5029" | "5030" | "5031" | "5032" | "5033" | "5034" | "5035" | "5036" | "5040" | "5041" | "5050" | "5051" | "5052" | "5053" | "5054" | "5056" | "5057" | "5058" | "5059" | "5060" | "5096" | "5097" | "5098" | "5099" | "5999" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6008" | "6009" | "6010" | "7001" | "8001" | "8002" | "8003" | "9001" | "9002" | "9003" | "9004" | "9082" | "9083";
             godkjent?: boolean | null;
             grunner?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur"][] | null;
+            markeringer?: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][] | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.ArbeidsopptrappingL\u00F8sning": {
             /** @enum {string} */
@@ -7319,7 +7320,7 @@ export interface components {
              */
             levertMeldekortDato?: string | null;
             /** @enum {string|null} */
-            meldekortStatus?: "IKKE_LEVERT" | "LEVERT_ETTER_FRIST" | "OVERFØRT_TIL_ØKONOMI" | null;
+            meldekortStatus?: "IKKE_AVKLART" | "LEVERT_FOR_SENT" | "LEVERT_OK" | null;
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             sisteLeverteMeldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.MeldekortDto"];
             vurdertePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode"][];
@@ -9472,6 +9473,18 @@ export interface components {
             /** @enum {string} */
             status: "AVBRUTT" | "FEILET" | "FERDIG" | "KLAR" | "PLUKKET";
             type: string;
+        };
+        "no.nav.aap.oppgave.markering.MarkeringDto": {
+            begrunnelse?: string | null;
+            /** @enum {string} */
+            markeringType: "HASTER" | "KREVER_SPESIALKOMPETANSE";
+            opprettetAv?: string | null;
+            opprettetAvNavn?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt?: string | null;
         };
         "no.nav.aap.utbetal.simulering.SimuleringDto": {
             perioder: components["schemas"]["no.nav.aap.utbetal.simulering.SimuleringsperiodeDto"][];
