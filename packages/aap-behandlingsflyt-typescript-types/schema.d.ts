@@ -7320,7 +7320,7 @@ export interface components {
              */
             levertMeldekortDato?: string | null;
             /** @enum {string|null} */
-            meldekortStatus?: "IKKE_AVKLART" | "LEVERT_FOR_SENT" | "LEVERT_OK" | null;
+            meldekortStatus?: "IKKE_LEVERT" | "LEVERT_ETTER_FRIST" | "OVERFØRT_TIL_ØKONOMI" | null;
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             sisteLeverteMeldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.MeldekortDto"];
             vurdertePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode"][];
