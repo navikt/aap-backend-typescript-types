@@ -3993,7 +3993,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.dokumentinnhenting.Legeerkl\u00E6ringStatusResponse"][];
+                        "application/json": components["schemas"]["no.nav.aap.dokumentinnhenting.kontrakt.DialogmeldingStatusTilBehandslingsflytDto"][];
                     };
                 };
             };
@@ -4034,7 +4034,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.dokumentinnhenting.BrevResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.dokumentinnhenting.kontrakt.DialogmeldingForh\u00E5ndsvisningDto"];
                     };
                 };
             };
@@ -7708,26 +7708,6 @@ export interface components {
             utfall: "IKKE_OPPFYLT" | "IKKE_RELEVANT" | "IKKE_VURDERT" | "OPPFYLT";
             versjon: string;
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.dokumentinnhenting.BrevResponse": {
-            konstruertBrev: string;
-        };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.dokument.dokumentinnhenting.Legeerkl\u00E6ringStatusResponse": {
-            behandlerNavn: string;
-            behandlerRef: string;
-            /** Format: uuid */
-            dialogmeldingUuid: string;
-            fritekst: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettet: string;
-            personId: string;
-            saksnummer: string;
-            /** @enum {string|null} */
-            status?: "AVVIST" | "BESTILT" | "OK" | "SENDT" | null;
-            statusTekst?: string | null;
-        };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.klage.behandlendeenhet.BehandlendeEnhetL\u00F8sningDto": {
             skalBehandlesAvKontor: boolean;
             skalBehandlesAvNay: boolean;
@@ -9304,6 +9284,28 @@ export interface components {
         "no.nav.aap.brev.kontrakt.Vedlegg": {
             dokumentInfoId: string;
             journalpostId: string;
+        };
+        "no.nav.aap.dokumentinnhenting.kontrakt.DialogmeldingForh\u00E5ndsvisningDto": {
+            konstruertBrev: string;
+        };
+        "no.nav.aap.dokumentinnhenting.kontrakt.DialogmeldingStatusTilBehandslingsflytDto": {
+            behandlerNavn: string;
+            behandlerRef: string;
+            /** Format: uuid */
+            behandlingsReferanse: string;
+            /** Format: uuid */
+            dialogmeldingUuid: string;
+            fritekst: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettet: string;
+            personId: string;
+            saksnummer: string;
+            /** @enum {string|null} */
+            status?: "AVVIST" | "BESTILT" | "MOTTATT" | "OK" | "SENDT" | null;
+            statusTekst?: string | null;
         };
         "no.nav.aap.komponenter.type.Periode": {
             /**
