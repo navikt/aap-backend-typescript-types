@@ -3947,7 +3947,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.BestillLegeerkl\u00E6ringDto"];
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.BestillLegeerkl\u00E6ringDto"];
                 };
             };
             responses: {
@@ -4024,7 +4024,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.Forh\u00E5ndsvisBrevRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.Forh\u00E5ndsvisBrevRequest"];
                 };
             };
             responses: {
@@ -4063,7 +4063,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.PurringLegeerkl\u00E6ringRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.PurringLegeerkl\u00E6ringRequest"];
                 };
             };
             responses: {
@@ -5776,6 +5776,29 @@ export interface components {
             erSlettbar: boolean;
             vurdertBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"];
         };
+        "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.BestillLegeerkl\u00E6ringDto": {
+            behandlerHprNr: string;
+            behandlerNavn: string;
+            behandlerRef: string;
+            /** Format: uuid */
+            behandlingsReferanse: string;
+            /** @enum {string} */
+            dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
+            fritekst: string;
+            saksnummer: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.Forh\u00E5ndsvisBrevRequest": {
+            /** @enum {string} */
+            dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
+            fritekst: string;
+            saksnummer: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.PurringLegeerkl\u00E6ringRequest": {
+            /** Format: uuid */
+            behandlingsReferanse: string;
+            /** Format: uuid */
+            dialogmeldingPurringUUID: string;
+        };
         "no.nav.aap.behandlingsflyt.behandling.bekreftvurderingeroppf\u00F8lging.BekreftVurderingerOppf\u00F8lgingDto": {
             mellomlagredeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurdering"][];
         };
@@ -6316,29 +6339,6 @@ export interface components {
             /** Format: uuid */
             dialogmeldingUuid: string;
             vedlegg: components["schemas"]["no.nav.aap.brev.kontrakt.Vedlegg"];
-        };
-        "no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.BestillLegeerkl\u00E6ringDto": {
-            behandlerHprNr: string;
-            behandlerNavn: string;
-            behandlerRef: string;
-            /** Format: uuid */
-            behandlingsReferanse: string;
-            /** @enum {string} */
-            dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
-            fritekst: string;
-            saksnummer: string;
-        };
-        "no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.Forh\u00E5ndsvisBrevRequest": {
-            /** @enum {string} */
-            dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
-            fritekst: string;
-            saksnummer: string;
-        };
-        "no.nav.aap.behandlingsflyt.behandling.dokumentinnhenting.PurringLegeerkl\u00E6ringRequest": {
-            /** Format: uuid */
-            behandlingsReferanse: string;
-            /** Format: uuid */
-            dialogmeldingPurringUUID: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.etableringegenvirksomhet.EtableringEgenVirksomhetGrunnlagResponse": {
             "beh\u00F8verVurderinger": components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
