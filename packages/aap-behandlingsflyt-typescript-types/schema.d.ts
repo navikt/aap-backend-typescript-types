@@ -6053,30 +6053,8 @@ export interface components {
              * @description Bruk fom
              */
             dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
-            /**
-             * @deprecated
-             * @description Bruk harArbeidsevneNedsatt
-             */
-            erArbeidsevnenNedsatt?: boolean | null;
-            /**
-             * @deprecated
-             * @description Bruk harNedsattArbeidsevne
-             */
-            erNedsettelseIArbeidsevneAvEnVissVarighet?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnHalvparten?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense?: boolean | null;
-            /**
-             * @deprecated
-             * @description Bruk erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense
-             * @enum {string|null}
-             */
-            erNedsettelseMerEnnYrkesskadegrense?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
-            /**
-             * @deprecated
-             * @description Bruk erNedsettelseIArbeidsevneMerEnnHalvparten
-             * @enum {string|null}
-             */
-            erNedsettelseMinstHalvparten?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
             erSkadeSykdomEllerLyteVesentligdel?: boolean | null;
             /**
              * Format: date
@@ -8257,30 +8235,8 @@ export interface components {
             begrunnelse: string;
             bidiagnoser?: string[] | null;
             dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
-            /**
-             * @deprecated
-             * @description Erstattes av harNedsattArbeidsevne
-             */
-            erArbeidsevnenNedsatt?: boolean | null;
-            /**
-             * @deprecated
-             * @description Bakes inn i harNedsattArbeidsevne
-             */
-            erNedsettelseIArbeidsevneAvEnVissVarighet?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnHalvparten?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense?: boolean | null;
-            /**
-             * @deprecated
-             * @description Bruk erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense
-             * @enum {string|null}
-             */
-            erNedsettelseMerEnnYrkesskadegrense?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
-            /**
-             * @deprecated
-             * @description Bruk erNedsettelseIArbeidsevneMerEnnHalvparten
-             * @enum {string|null}
-             */
-            erNedsettelseMinstHalvparten?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
             erSkadeSykdomEllerLyteVesentligdel?: boolean | null;
             /**
              * Format: date
