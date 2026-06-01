@@ -1162,45 +1162,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/redigitalisering": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.RedigitaliserRequest"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.flyt.RedigitaliserResponse"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -1472,14 +1433,6 @@ export interface components {
             /** @enum {string} */
             status: "FEILET" | "FERDIG" | "JOBBER";
             ventendeOppgaver: components["schemas"]["no.nav.aap.motor.api.JobbInfoDto"][];
-        };
-        "no.nav.aap.postmottak.api.flyt.RedigitaliserRequest": {
-            /** Format: int64 */
-            journalpostId: number;
-            saksnummer: string;
-        };
-        "no.nav.aap.postmottak.api.flyt.RedigitaliserResponse": {
-            message: string;
         };
         "no.nav.aap.postmottak.api.flyt.SettP\u00E5VentRequest": {
             begrunnelse: string;
