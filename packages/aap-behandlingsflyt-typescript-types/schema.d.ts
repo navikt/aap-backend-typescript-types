@@ -5744,7 +5744,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur": {
             /** @enum {string} */
-            "\u00E5rsak": "ANNET" | "FEIL_LOVANVENDELSE" | "FOR_DETALJERT" | "IKKE_INDIVIDUELL_OG_KONKRET" | "MANGELFULL_BEGRUNNELSE" | "MANGLENDE_UTREDNING" | "SKRIVEFEIL";
+            "\u00E5rsak": "ANNET" | "FEIL_LOVANVENDELSE" | "FOR_DETALJERT" | "IKKE_INDIVIDUELL_OG_KONKRET" | "MANGELFULL_BEGRUNNELSE" | "MANGLENDE_JOURNALFØRING" | "MANGLENDE_KILDEHENVISNING" | "MANGLENDE_UTREDNING" | "SKRIVEFEIL";
             "\u00E5rsakFritekst"?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.barnepensjon.BarnepensjonGrunnlagDto": {
