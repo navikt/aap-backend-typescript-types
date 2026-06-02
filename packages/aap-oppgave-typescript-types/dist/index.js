@@ -456,6 +456,8 @@ let NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ function(NoNavAapOpp
 	NoNavAapOppgaveReturInformasjonRsaker["FOR_DETALJERT"] = "FOR_DETALJERT";
 	NoNavAapOppgaveReturInformasjonRsaker["IKKE_INDIVIDUELL_OG_KONKRET"] = "IKKE_INDIVIDUELL_OG_KONKRET";
 	NoNavAapOppgaveReturInformasjonRsaker["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
+	NoNavAapOppgaveReturInformasjonRsaker["MANGLENDE_JOURNALF_RING"] = "MANGLENDE_JOURNALFØRING";
+	NoNavAapOppgaveReturInformasjonRsaker["MANGLENDE_KILDEHENVISNING"] = "MANGLENDE_KILDEHENVISNING";
 	NoNavAapOppgaveReturInformasjonRsaker["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
 	NoNavAapOppgaveReturInformasjonRsaker["SKRIVEFEIL"] = "SKRIVEFEIL";
 	return NoNavAapOppgaveReturInformasjonRsaker;
