@@ -6225,7 +6225,6 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykepengergrunnlag.SykepengerVurderingResponse": {
             begrunnelse: string;
-            dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             /**
              * Format: date
              * @example 2025-04-01
