@@ -6148,11 +6148,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.beregning.grunnlag.sykdom.sykdom.SykdomsvurderingResponse": {
             begrunnelse: string;
             bidiagnoser?: string[] | null;
-            /**
-             * @deprecated
-             * @description Bruk fom
-             */
-            dokumenterBruktIVurdering: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
             erNedsettelseIArbeidsevneMerEnnHalvparten?: boolean | null;
             erNedsettelseIArbeidsevneMerEnnYrkesskadeGrense?: boolean | null;
             erSkadeSykdomEllerLyteVesentligdel?: boolean | null;
@@ -6161,7 +6156,11 @@ export interface components {
              * @example 2025-04-01
              */
             fom: string;
-            /** @enum {string|null} */
+            /**
+             * @deprecated
+             * @description Bruk fom
+             * @enum {string|null}
+             */
             harNedsattArbeidsevne?: "JA" | "JA_FORBIGÅENDE_PROBLEMER" | "NEI" | null;
             harSkadeSykdomEllerLyte: boolean;
             hoveddiagnose?: string | null;
