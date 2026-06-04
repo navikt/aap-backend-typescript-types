@@ -6964,6 +6964,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto": {
             meldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"];
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            perioder: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
             tidligereMeldekort: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperioderMedMeldekortResponse": {
