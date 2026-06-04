@@ -225,6 +225,8 @@ let NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = /* @__PURE__ */ fu
 	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["FOR_DETALJERT"] = "FOR_DETALJERT";
 	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["IKKE_INDIVIDUELL_OG_KONKRET"] = "IKKE_INDIVIDUELL_OG_KONKRET";
 	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
+	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["MANGLENDE_JOURNALF_RING"] = "MANGLENDE_JOURNALFØRING";
+	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["MANGLENDE_KILDEHENVISNING"] = "MANGLENDE_KILDEHENVISNING";
 	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
 	NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak["SKRIVEFEIL"] = "SKRIVEFEIL";
 	return NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
