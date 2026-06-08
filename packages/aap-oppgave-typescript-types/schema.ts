@@ -1692,6 +1692,7 @@ export interface components {
             enheter: components["schemas"]["no.nav.aap.oppgave.drift.EnhetDriftRequest"][];
             /** Format: int64 */
             id?: number | null;
+            markeringer: components["schemas"]["no.nav.aap.oppgave.drift.MarkeringDriftRequest"][];
             navn: string;
             /** @enum {string} */
             type: NoNavAapOppgaveDriftFilterDriftRequestType;
@@ -1701,6 +1702,7 @@ export interface components {
             behandlingstyper: NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper[];
             beskrivelse: string;
             ekskluderteEnheter: string[];
+            ekskluderteMarkeringer: NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer[];
             endretAv?: string | null;
             /**
              * Format: date-time
@@ -1710,6 +1712,7 @@ export interface components {
             /** Format: int64 */
             id: number;
             inkluderteEnheter: string[];
+            inkluderteMarkeringer: NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer[];
             navn: string;
             opprettetAv: string;
             /**
@@ -1719,6 +1722,12 @@ export interface components {
             opprettetTidspunkt: string;
             /** @enum {string} */
             type: NoNavAapOppgaveDriftFilterDriftResponseType;
+        };
+        "no.nav.aap.oppgave.drift.MarkeringDriftRequest": {
+            /** @enum {string} */
+            filtermodus: NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus;
+            /** @enum {string} */
+            type: NoNavAapOppgaveDriftMarkeringDriftRequestType;
         };
         "no.nav.aap.oppgave.drift.OppgaveDriftsinfoDTO": {
             avklaringsbehovKode: string;
@@ -1797,6 +1806,7 @@ export interface components {
             avklaringsbehovKoder: string[];
             behandlingstyper: NoNavAapOppgaveFilterFilterDtoBehandlingstyper[];
             beskrivelse: string;
+            ekskluderteMarkeringer: NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer[];
             endretAv?: string | null;
             /**
              * Format: date-time
@@ -1806,6 +1816,7 @@ export interface components {
             enheter: string[];
             /** Format: int64 */
             id?: number | null;
+            inkluderteMarkeringer: NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer[];
             navn: string;
             opprettetAv: string;
             /**
@@ -2469,10 +2480,29 @@ export enum NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper {
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     TILBAKEKREVING = "TILBAKEKREVING"
 }
+export enum NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
+export enum NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
 export enum NoNavAapOppgaveDriftFilterDriftResponseType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
     GENERELL = "GENERELL",
     KVALITETSSIKRING = "KVALITETSSIKRING"
+}
+export enum NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus {
+    EKSKLUDER = "EKSKLUDER",
+    INKLUDER = "INKLUDER"
+}
+export enum NoNavAapOppgaveDriftMarkeringDriftRequestType {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
 export enum NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus {
     AVSLUTTET = "AVSLUTTET",
@@ -2497,6 +2527,16 @@ export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
     REVURDERING = "REVURDERING",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     TILBAKEKREVING = "TILBAKEKREVING"
+}
+export enum NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
+export enum NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
 export enum NoNavAapOppgaveFilterFilterDtoType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
@@ -2548,6 +2588,7 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser {
     RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
+    AVSLAG_11_5 = "AVSLAG_11_5",
     HASTER = "HASTER",
     KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }

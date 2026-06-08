@@ -501,11 +501,34 @@ let NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper = /* @__PURE__ */ fu
 	NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper["TILBAKEKREVING"] = "TILBAKEKREVING";
 	return NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper;
 }({});
+let NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer) {
+	NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
+	NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer["HASTER"] = "HASTER";
+	NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+	return NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer;
+}({});
+let NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer) {
+	NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
+	NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer["HASTER"] = "HASTER";
+	NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+	return NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer;
+}({});
 let NoNavAapOppgaveDriftFilterDriftResponseType = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftResponseType) {
 	NoNavAapOppgaveDriftFilterDriftResponseType["ALLE_OPPGAVER"] = "ALLE_OPPGAVER";
 	NoNavAapOppgaveDriftFilterDriftResponseType["GENERELL"] = "GENERELL";
 	NoNavAapOppgaveDriftFilterDriftResponseType["KVALITETSSIKRING"] = "KVALITETSSIKRING";
 	return NoNavAapOppgaveDriftFilterDriftResponseType;
+}({});
+let NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus = /* @__PURE__ */ function(NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus) {
+	NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus["EKSKLUDER"] = "EKSKLUDER";
+	NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus["INKLUDER"] = "INKLUDER";
+	return NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus;
+}({});
+let NoNavAapOppgaveDriftMarkeringDriftRequestType = /* @__PURE__ */ function(NoNavAapOppgaveDriftMarkeringDriftRequestType) {
+	NoNavAapOppgaveDriftMarkeringDriftRequestType["AVSLAG_11_5"] = "AVSLAG_11_5";
+	NoNavAapOppgaveDriftMarkeringDriftRequestType["HASTER"] = "HASTER";
+	NoNavAapOppgaveDriftMarkeringDriftRequestType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+	return NoNavAapOppgaveDriftMarkeringDriftRequestType;
 }({});
 let NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ function(NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus) {
 	NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus["AVSLUTTET"] = "AVSLUTTET";
@@ -533,6 +556,18 @@ let NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ function(No
 	NoNavAapOppgaveFilterFilterDtoBehandlingstyper["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
 	NoNavAapOppgaveFilterFilterDtoBehandlingstyper["TILBAKEKREVING"] = "TILBAKEKREVING";
 	return NoNavAapOppgaveFilterFilterDtoBehandlingstyper;
+}({});
+let NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer) {
+	NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
+	NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer["HASTER"] = "HASTER";
+	NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+	return NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer;
+}({});
+let NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer) {
+	NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
+	NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer["HASTER"] = "HASTER";
+	NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+	return NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer;
 }({});
 let NoNavAapOppgaveFilterFilterDtoType = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoType) {
 	NoNavAapOppgaveFilterFilterDtoType["ALLE_OPPGAVER"] = "ALLE_OPPGAVER";
@@ -590,6 +625,7 @@ let NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = /* @__PURE__ */
 	return NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser;
 }({});
 let NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType) {
+	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["HASTER"] = "HASTER";
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
@@ -702,10 +738,16 @@ exports.NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus = NoNavAapOppgaveDriftE
 exports.NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper = NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper;
 exports.NoNavAapOppgaveDriftFilterDriftRequestType = NoNavAapOppgaveDriftFilterDriftRequestType;
 exports.NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper = NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper;
+exports.NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer = NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer;
+exports.NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer = NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer;
 exports.NoNavAapOppgaveDriftFilterDriftResponseType = NoNavAapOppgaveDriftFilterDriftResponseType;
+exports.NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus = NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus;
+exports.NoNavAapOppgaveDriftMarkeringDriftRequestType = NoNavAapOppgaveDriftMarkeringDriftRequestType;
 exports.NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
 exports.NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
 exports.NoNavAapOppgaveFilterFilterDtoBehandlingstyper = NoNavAapOppgaveFilterFilterDtoBehandlingstyper;
+exports.NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer = NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer;
+exports.NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer = NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer;
 exports.NoNavAapOppgaveFilterFilterDtoType = NoNavAapOppgaveFilterFilterDtoType;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortBy = NoNavAapOppgaveListeOppgaveSorteringSortBy;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortOrder = NoNavAapOppgaveListeOppgaveSorteringSortOrder;
