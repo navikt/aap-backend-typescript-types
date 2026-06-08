@@ -1444,6 +1444,8 @@ export interface components {
             /** @enum {string|null} */
             aktivtSteg?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg;
             avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
+            /** @enum {string|null} */
+            behandlingMetadata?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata;
             /** @enum {string} */
             behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
             "erP\u00E5Vent": boolean;
@@ -2275,6 +2277,9 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE",
     VURDER_SYKEPENGEERSTATNING = "VURDER_SYKEPENGEERSTATNING",
     VURDER_YRKESSKADE = "VURDER_YRKESSKADE"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata {
+    AVSLAG_11_5_F_RSTEGANGSBEHANDLING = "AVSLAG_11_5_F\u00D8RSTEGANGSBEHANDLING"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
     Aktivitetsplikt = "Aktivitetsplikt",
