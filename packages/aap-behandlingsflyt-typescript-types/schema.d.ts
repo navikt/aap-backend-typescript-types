@@ -7007,6 +7007,7 @@ export interface components {
              */
             meldeDato: string;
             oppdatertAv?: string | null;
+            oppdatertAvSaksbehandler: boolean;
             /**
              * Format: date
              * @example 2025-04-01
