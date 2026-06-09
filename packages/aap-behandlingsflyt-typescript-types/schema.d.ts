@@ -9229,7 +9229,7 @@ export interface components {
              * @description Søknadsdato. Brukes som rettighetsperiode.fom og mottattTidspunkt. Defaulter til dagens dato.
              * @example 2025-04-01
              */
-            "s\u00F8knadsdato"?: string | null;
+            soeknadsdato?: string | null;
         };
         "no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRespons": {
             saksnummer: string;
