@@ -3967,6 +3967,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/dokumentinnhenting/syfo/fastlege/{saksnummer}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.FastlegeResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/dokumentinnhenting/syfo/bestill": {
         parameters: {
             query?: never;
@@ -5847,6 +5885,16 @@ export interface components {
             erSlettbar: boolean;
             vurdertBarn: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.barnetillegg.ExtendedVurdertBarnDto"];
         };
+        "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.BehandlerDto": {
+            adresse?: string | null;
+            behandlerRef: string;
+            hprId?: string | null;
+            kontor?: string | null;
+            navn: string;
+            postnummer?: string | null;
+            poststed?: string | null;
+            telefon?: string | null;
+        };
         "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.BestillLegeerkl\u00E6ringDto": {
             behandlerHprNr: string;
             behandlerNavn: string;
@@ -5858,11 +5906,25 @@ export interface components {
             fritekst: string;
             saksnummer: string;
         };
+        "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.FastlegeResponse": {
+            "andreBehandlereFraS\u00F8knad": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.ManueltOppgittBehandlerDto"][];
+            "erFastlegeEndretSidenS\u00F8knadstidspunkt": boolean;
+            fastlege?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.BehandlerDto"];
+            "varFastlegeRiktigP\u00E5S\u00F8knadstidspunkt": boolean;
+        };
         "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.Forh\u00E5ndsvisBrevRequest": {
             /** @enum {string} */
             dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
             fritekst: string;
             saksnummer: string;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.ManueltOppgittBehandlerDto": {
+            adresse?: string | null;
+            legekontor?: string | null;
+            navn?: string | null;
+            postnummer?: string | null;
+            poststed?: string | null;
+            telefon?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.PurringLegeerkl\u00E6ringRequest": {
             /** Format: uuid */
