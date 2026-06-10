@@ -524,6 +524,8 @@ let NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv = /* @__PURE__ */ 
 	return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv;
 }({});
 let NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PURE__ */ function(NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg) {
+	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_FORDELING"] = "AVKLAR_FORDELING";
+	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_FORDELING_VIDERESEND"] = "AVKLAR_FORDELING_VIDERESEND";
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_SAK"] = "AVKLAR_SAK";
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_TEMA"] = "AVKLAR_TEMA";
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg["DIGITALISER_DOKUMENT"] = "DIGITALISER_DOKUMENT";
@@ -551,6 +553,7 @@ let NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__P
 }({});
 let NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType = /* @__PURE__ */ function(NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType) {
 	NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType["DokumentH_ndtering"] = "DokumentHåndtering";
+	NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType["Fordeling"] = "Fordeling";
 	NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType["Journalf_ring"] = "Journalføring";
 	return NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
 }({});

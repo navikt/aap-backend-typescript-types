@@ -1158,6 +1158,8 @@ declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv {
   SAKSBEHANDLER_OPPFOLGING = "SAKSBEHANDLER_OPPFOLGING"
 }
 declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg {
+  AVKLAR_FORDELING = "AVKLAR_FORDELING",
+  AVKLAR_FORDELING_VIDERESEND = "AVKLAR_FORDELING_VIDERESEND",
   AVKLAR_SAK = "AVKLAR_SAK",
   AVKLAR_TEMA = "AVKLAR_TEMA",
   DIGITALISER_DOKUMENT = "DIGITALISER_DOKUMENT",
@@ -1182,6 +1184,7 @@ declare enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus 
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
   DokumentH_ndtering = "DokumentH\u00E5ndtering",
+  Fordeling = "Fordeling",
   Journalf_ring = "Journalf\u00F8ring"
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus {
