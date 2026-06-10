@@ -9247,6 +9247,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.test.SoeknadDetaljer": {
             andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.test.AndreUtbetalingerApiDto"];
+            automatiskMeldekort: boolean;
             erStudent: boolean;
             harMedlemskap: boolean;
             harYrkesskade: boolean;
