@@ -375,6 +375,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["OPPHOLDSKRAV"] = "OPPHOLDSKRAV";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["OVERGANG_ARBEID"] = "OVERGANG_ARBEID";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["OVERGANG_UFORE"] = "OVERGANG_UFORE";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["OVERGANG_UFORE_AUTOMATISK_STANS"] = "OVERGANG_UFORE_AUTOMATISK_STANS";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REFUSJONSKRAV"] = "REFUSJONSKRAV";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDERING_AVBRUTT"] = "REVURDERING_AVBRUTT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDER_BEREGNING"] = "REVURDER_BEREGNING";
@@ -427,6 +428,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["S_KNAD"] = "SØKNAD";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["UDEFINERT"] = "UDEFINERT";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["UF_RE_VEDTAK_HENDELSE"] = "UFØRE_VEDTAK_HENDELSE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
 	return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse;
 }({});
