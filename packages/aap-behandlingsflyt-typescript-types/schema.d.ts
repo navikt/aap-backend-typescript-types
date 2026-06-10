@@ -9216,6 +9216,8 @@ export interface components {
         "no.nav.aap.behandlingsflyt.test.OpprettOgFullforBehandlingRequest": {
             /** @description Om søker svarte at hen mottar andre utbetalinger i søknaden. */
             andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.test.AndreUtbetalingerApiDto"];
+            /** @description Om det skal sendes automatisk meldekort ukentlig, så lenge saken har aktiv rettighetsperiode. */
+            automatiskMeldekort: boolean;
             /** @description Om personen svarer at han/hun er student i søknaden. */
             erStudent: boolean;
             /** @description Om personen svarer at han/hun har bodd/jobbet i Norge i siste 5 år. */
@@ -9239,6 +9241,11 @@ export interface components {
             erStudent: boolean;
             harMedlemskap: boolean;
             harYrkesskade: boolean;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            soeknadsdato?: string | null;
         };
         "no.nav.aap.behandlingsflyt.utils.diff.DiffDto<no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto>": components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.Endret<no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto>"] | components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.Fjernet<no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto>"] | components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.LagtTil<no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto>"] | components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.Uendret<no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.TilkjentYtelsePeriode2Dto>"];
         "no.nav.aap.behandlingsflyt.utils.diff.DiffDto<no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto>": components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.Endret<no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto>"] | components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.Fjernet<no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto>"] | components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.LagtTil<no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto>"] | components["schemas"]["no.nav.aap.behandlingsflyt.utils.diff.Uendret<no.nav.aap.behandlingsflyt.behandling.underveis.UnderveisperiodeDto>"];
