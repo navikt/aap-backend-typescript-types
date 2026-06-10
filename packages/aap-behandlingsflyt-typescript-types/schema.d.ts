@@ -7003,6 +7003,8 @@ export interface components {
             journalpostId: string;
             /**
              * Format: date
+             * @deprecated
+             * @description Bruk heller meldeDato fra MeldeperiodeMedMeldekortDto
              * @example 2025-04-01
              */
             meldeDato: string;
@@ -7019,6 +7021,11 @@ export interface components {
             meldekortProsesseringStatus: "KLAR" | "PROSESSERER_MELDEKORT";
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            meldeDato?: string | null;
             meldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"];
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             periode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
