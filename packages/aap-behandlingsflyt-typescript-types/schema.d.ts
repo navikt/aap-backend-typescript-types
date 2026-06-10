@@ -7095,6 +7095,7 @@ export interface components {
             "hvaSkalF\u00F8lgesOpp": string;
             /** @enum {string} */
             "hvemSkalF\u00F8lgeOpp": "Lokalkontor" | "NasjonalEnhet";
+            opprettetAv?: string | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.oppfolgingsbehandling.Oppf\u00F8lgingsoppgaveGrunnlagResponse": {
             /** @enum {string} */
@@ -8874,6 +8875,7 @@ export interface components {
             "hvaSkalF\u00F8lgesOpp": string;
             /** @enum {string} */
             "hvemSkalF\u00F8lgeOpp": "Lokalkontor" | "NasjonalEnhet";
+            opprettetAv?: string | null;
             opprinnelse?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.Opprinnelse"];
             reserverTilBruker?: string | null;
         };
