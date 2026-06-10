@@ -2321,6 +2321,7 @@ export enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelse
     S_KNAD = "S\u00D8KNAD",
     TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
     UDEFINERT = "UDEFINERT",
+    UF_RE_VEDTAK_HENDELSE = "UF\u00D8RE_VEDTAK_HENDELSE",
     UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {

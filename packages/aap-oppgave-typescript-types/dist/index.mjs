@@ -323,6 +323,7 @@ let NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilO
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["S_KNAD"] = "SØKNAD";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["TILBAKEKREVING_HENDELSE"] = "TILBAKEKREVING_HENDELSE";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["UDEFINERT"] = "UDEFINERT";
+	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["UF_RE_VEDTAK_HENDELSE"] = "UFØRE_VEDTAK_HENDELSE";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
 	return NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse;
 }({});
