@@ -1253,6 +1253,11 @@ export interface components {
             type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag": {
+            fritakframeldpliktGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag.FritakMeldeplikt"];
+            /** @enum {string} */
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag.FritakMeldeplikt": {
             /**
              * Format: date
              * @example 2025-04-01
@@ -1264,8 +1269,6 @@ export interface components {
              * @example 2025-04-01
              */
             tilDato?: string | null;
-            /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning": {
             beregningsgrunnlag?: number | null;
