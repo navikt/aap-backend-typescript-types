@@ -488,6 +488,7 @@ let NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype = /* @__PURE
 	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
 	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
 	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
+	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["FORDELING"] = "FORDELING";
 	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
 	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["JOURNALF_RING"] = "JOURNALFØRING";
 	NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype["KLAGE"] = "KLAGE";
