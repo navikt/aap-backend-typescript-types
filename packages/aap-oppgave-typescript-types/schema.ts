@@ -2016,6 +2016,7 @@ export enum PathsMineOppgaverGetParametersQuerySortby {
     PERSONIDENT = "PERSONIDENT",
     RESERVERT_AV = "RESERVERT_AV",
     SAKSNUMMER = "SAKSNUMMER",
+    TILBAKEKREVINGS_BELOP = "TILBAKEKREVINGS_BELOP",
     _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
 }
 export enum PathsMineOppgaverGetParametersQuerySortorder {
@@ -2566,6 +2567,7 @@ export enum NoNavAapOppgaveListeOppgaveSorteringSortBy {
     PERSONIDENT = "PERSONIDENT",
     RESERVERT_AV = "RESERVERT_AV",
     SAKSNUMMER = "SAKSNUMMER",
+    TILBAKEKREVINGS_BELOP = "TILBAKEKREVINGS_BELOP",
     _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
 }
 export enum NoNavAapOppgaveListeOppgaveSorteringSortOrder {

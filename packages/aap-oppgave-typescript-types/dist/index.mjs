@@ -7,6 +7,7 @@ let PathsMineOppgaverGetParametersQuerySortby = /* @__PURE__ */ function(PathsMi
 	PathsMineOppgaverGetParametersQuerySortby["PERSONIDENT"] = "PERSONIDENT";
 	PathsMineOppgaverGetParametersQuerySortby["RESERVERT_AV"] = "RESERVERT_AV";
 	PathsMineOppgaverGetParametersQuerySortby["SAKSNUMMER"] = "SAKSNUMMER";
+	PathsMineOppgaverGetParametersQuerySortby["TILBAKEKREVINGS_BELOP"] = "TILBAKEKREVINGS_BELOP";
 	PathsMineOppgaverGetParametersQuerySortby["_RSAK_TIL_OPPRETTELSE"] = "ÅRSAK_TIL_OPPRETTELSE";
 	return PathsMineOppgaverGetParametersQuerySortby;
 }({});
@@ -596,6 +597,7 @@ let NoNavAapOppgaveListeOppgaveSorteringSortBy = /* @__PURE__ */ function(NoNavA
 	NoNavAapOppgaveListeOppgaveSorteringSortBy["PERSONIDENT"] = "PERSONIDENT";
 	NoNavAapOppgaveListeOppgaveSorteringSortBy["RESERVERT_AV"] = "RESERVERT_AV";
 	NoNavAapOppgaveListeOppgaveSorteringSortBy["SAKSNUMMER"] = "SAKSNUMMER";
+	NoNavAapOppgaveListeOppgaveSorteringSortBy["TILBAKEKREVINGS_BELOP"] = "TILBAKEKREVINGS_BELOP";
 	NoNavAapOppgaveListeOppgaveSorteringSortBy["_RSAK_TIL_OPPRETTELSE"] = "ÅRSAK_TIL_OPPRETTELSE";
 	return NoNavAapOppgaveListeOppgaveSorteringSortBy;
 }({});
