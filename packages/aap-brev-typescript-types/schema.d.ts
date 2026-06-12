@@ -1026,7 +1026,7 @@ export interface components {
             /** Format: uuid */
             behandlingReferanse: string;
             /** @enum {string} */
-            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_18_OPPHØR_DELVIS_UFØR" | "VEDTAK_11_18_OPPHØR_FULL_UFØR" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             brukerIdent: string;
             faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag"][];
             ferdigstillAutomatisk: boolean;
@@ -1074,7 +1074,7 @@ export interface components {
             brevdata?: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto"];
             brevmal?: string | null;
             /** @enum {string} */
-            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_18_OPPHØR_DELVIS_UFØR" | "VEDTAK_11_18_OPPHØR_FULL_UFØR" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -1116,7 +1116,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
         };
-        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.DatoAvklartForJobbs\u00F8k"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.KravdatoUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.UtvidetAapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeIS\u00F8knadIkkeIRegister"];
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.DatoAvklartForJobbs\u00F8k"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.InnvilgetUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.KravdatoUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.UtvidetAapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeIS\u00F8knadIkkeIRegister"];
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato": {
             /**
              * Format: date
@@ -1124,12 +1124,12 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg": {
             barn: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg.Barn"][];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg.Barn": {
             begrunnelse: string;
@@ -1143,7 +1143,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser": {
             fradragAndreYtelser: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.FradragYtelse"][];
@@ -1154,7 +1154,7 @@ export interface components {
             "samordningUf\u00F8re": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.SamordningUf\u00F8re"][];
             sykestipend: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.Sykestipend"][];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.FradragYtelse": {
             /**
@@ -1250,12 +1250,12 @@ export interface components {
              */
             frist: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag": {
             fritakframeldpliktGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag.FritakMeldeplikt"];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag.FritakMeldeplikt": {
             /**
@@ -1281,11 +1281,20 @@ export interface components {
             beregningsutfallKategori?: "GJENNOMSNITT" | "INNTEKT_OVER_6G" | "MINSTESATS_OVER_25" | "MINSTESATS_UNDER_25" | "SISTE_AAR" | null;
             "inntekterPer\u00C5r": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r"][];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning.InntektPer\u00C5r": {
             inntekt: number;
             "\u00E5r": components["schemas"]["java.time.Year"];
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.InnvilgetUf\u00F8retrygd": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            virkningsTidspunkt: string;
+            /** @enum {string} */
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.KravdatoUf\u00F8retrygd": {
             /**
@@ -1294,7 +1303,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse": {
             /**
@@ -1303,12 +1312,12 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering": {
             begrunnelse: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse": {
             /** Format: int32 */
@@ -1323,7 +1332,7 @@ export interface components {
             "minste\u00C5rligYtelseUnder25"?: number | null;
             "\u00E5rligYtelse"?: number | null;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.UtvidetAapFomDato": {
             /**
@@ -1332,14 +1341,14 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning": {
             /** Format: int32 */
             andelAvNedsettelseSomSkyldesYrkesskade?: number | null;
             yrkesskader: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning.Yrkesskade"][];
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning.Yrkesskade": {
             arbeidsinntektPaaSkadetidspunktet?: number | null;
@@ -1354,7 +1363,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeIS\u00F8knadIkkeIRegister": {
             verdi: boolean;
             /** @enum {string} */
-            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
+            type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
@@ -1375,7 +1384,7 @@ export interface components {
         };
         "no.nav.aap.brev.kontrakt.HentSignaturerRequest": {
             /** @enum {string} */
-            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
+            brevtype: "AVSLAG" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_18_OPPHØR_DELVIS_UFØR" | "VEDTAK_11_18_OPPHØR_FULL_UFØR" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
             brukerIdent: string;
             signaturGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
         };
