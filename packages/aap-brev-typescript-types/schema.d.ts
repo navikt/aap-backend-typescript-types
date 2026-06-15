@@ -1253,7 +1253,7 @@ export interface components {
             type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag": {
-            fritakframeldepliktGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag.FritakMeldeplikt"];
+            fritakMeldepliktGrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag.FritakMeldeplikt"];
             /** @enum {string} */
             type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
