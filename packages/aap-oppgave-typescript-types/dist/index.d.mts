@@ -1489,6 +1489,10 @@ interface components {
     "no.nav.aap.oppgave.DokumenterLestDto": {
       /** Format: uuid */behandlingRef: string;
     };
+    "no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo": {
+      forrigeKvalitetssikrerIdent: string;
+      forrigeKvalitetssikrerNavn?: string | null;
+    };
     "no.nav.aap.oppgave.OppgaveDto": {
       avklaringsbehovKode: string;
       /**
@@ -1510,6 +1514,7 @@ interface components {
       "erP\u00E5Vent": boolean;
       erSkjermet?: boolean | null;
       "er\u00C5pen": boolean;
+      forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo"];
       "forrigeP\u00E5Vent\u00C5rsak"?: string | null;
       forrigeVenteBegrunnelse?: string | null;
       harFortroligAdresse?: boolean | null;
