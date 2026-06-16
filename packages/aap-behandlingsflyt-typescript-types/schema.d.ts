@@ -7014,6 +7014,8 @@ export interface components {
              */
             opprettet: string;
             overstyrMuligRettFra?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.OverstyrMuligRettFra"];
+            /** Format: uuid */
+            referanse: string;
             "s\u00F8knadsdato": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato"];
             /** @enum {string} */
             type: "GJENOPPTAK" | "KLAGE" | "NYTT_KRAV_AAP" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
@@ -7028,6 +7030,8 @@ export interface components {
              * @example 2025-04-01T12:30:00Z
              */
             opprettet: string;
+            /** Format: uuid */
+            referanse: string;
             /** @enum {string} */
             type: "GJENOPPTAK" | "KLAGE" | "NYTT_KRAV_AAP" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
@@ -7036,6 +7040,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.krav.KravGrunnlagDto": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
             nyeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto"][];
+            "s\u00F8knaderUtenKravvurdering": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.S\u00F8knadUtenKravDto"][];
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.GjenopptakDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KlageDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.NyttKravDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.TilleggsopplysningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.TrukketS\u00F8knadDto"];
@@ -7053,11 +7058,21 @@ export interface components {
              */
             opprettet: string;
             overstyrMuligRettFra?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.OverstyrMuligRettFra"];
+            /** Format: uuid */
+            referanse: string;
             "s\u00F8knadsdato": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato"];
             /** @enum {string} */
             type: "GJENOPPTAK" | "KLAGE" | "NYTT_KRAV_AAP" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.krav.S\u00F8knadUtenKravDto": {
+            journalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            mottattTidspunkt: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.krav.TilleggsopplysningDto": {
             begrunnelse: string;
@@ -7067,6 +7082,8 @@ export interface components {
              * @example 2025-04-01T12:30:00Z
              */
             opprettet: string;
+            /** Format: uuid */
+            referanse: string;
             /** @enum {string} */
             type: "GJENOPPTAK" | "KLAGE" | "NYTT_KRAV_AAP" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
@@ -7080,6 +7097,8 @@ export interface components {
              * @example 2025-04-01T12:30:00Z
              */
             opprettet: string;
+            /** Format: uuid */
+            referanse: string;
             /** @enum {string} */
             type: "GJENOPPTAK" | "KLAGE" | "NYTT_KRAV_AAP" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
