@@ -58,6 +58,7 @@ let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5035"] = "5035";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5036"] = "5036";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5037"] = "5037";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5038"] = "5038";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5040"] = "5040";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5041"] = "5041";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5050"] = "5050";

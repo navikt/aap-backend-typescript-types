@@ -1947,6 +1947,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
   Value5035 = "5035",
   Value5036 = "5036",
   Value5037 = "5037",
+  Value5038 = "5038",
   Value5040 = "5040",
   Value5041 = "5041",
   Value5050 = "5050",
