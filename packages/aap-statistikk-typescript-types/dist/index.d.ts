@@ -707,6 +707,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
   Value5035 = "5035",
   Value5036 = "5036",
   Value5037 = "5037",
+  Value5038 = "5038",
   Value5040 = "5040",
   Value5041 = "5041",
   Value5050 = "5050",
@@ -1049,6 +1050,7 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
   UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT",
   UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE",
   VEDTAKSLENGDE_MANUELT = "VEDTAKSLENGDE_MANUELT",
+  VURDER_KRAV = "VURDER_KRAV",
   VURDER_RETTIGHETSPERIODE = "VURDER_RETTIGHETSPERIODE"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse {

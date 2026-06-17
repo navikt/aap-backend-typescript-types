@@ -41,6 +41,7 @@ let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ 
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5035"] = "5035";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5036"] = "5036";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5037"] = "5037";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5038"] = "5038";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5040"] = "5040";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5041"] = "5041";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value5050"] = "5050";
@@ -403,6 +404,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VEDTAKSLENGDE_MANUELT"] = "VEDTAKSLENGDE_MANUELT";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_KRAV"] = "VURDER_KRAV";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
 	return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov;
 }({});
