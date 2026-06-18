@@ -7190,42 +7190,25 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto": {
             begrunnelse?: string | null;
             dager: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.DagDto"][];
-            /**
-             * @deprecated
-             * @description Bruk journalpostId i stedet for id, da det er mer beskrivende
-             */
-            id: string;
             journalpostId: string;
             /**
              * Format: date
-             * @deprecated
-             * @description Bruk heller meldeDato fra MeldeperiodeMedMeldekortDto
              * @example 2025-04-01
              */
-            meldeDato: string;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            mottattTidspunkt?: string | null;
+            mottattTidspunkt: string;
             oppdatertAv?: string | null;
             oppdatertAvSaksbehandler: boolean;
             /**
              * Format: date
              * @example 2025-04-01
              */
-            oppdatertTidspunkt?: string | null;
+            oppdatertTidspunkt: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortProsesseringResponse": {
             /** @enum {string} */
             meldekortProsesseringStatus: "KLAR" | "PROSESSERER_MELDEKORT";
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            meldeDato?: string | null;
             meldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"];
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             meldepliktStatus: ("FREMTIDIG_IKKE_OPPFYLT" | "FREMTIDIG_OPPFYLT" | "FRITAK" | "FØRSTE_MELDEPERIODE_MED_RETT" | "FØR_VEDTAK" | "IKKE_MELDT_SEG" | "MELDT_SEG" | "RIMELIG_GRUNN" | "UTEN_RETT")[];
@@ -7247,11 +7230,6 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.OppdaterMeldekortResponse": {
             journalpostId: string;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            oppdatertTidspunkt: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.mellomlagring.MellomlagretVurdering": {
             /** @enum {string} */
