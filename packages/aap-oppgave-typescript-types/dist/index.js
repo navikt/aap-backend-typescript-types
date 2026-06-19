@@ -550,6 +550,11 @@ let NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ function(No
 	NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus["OPPRETTET"] = "OPPRETTET";
 	return NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
 }({});
+let NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus = /* @__PURE__ */ function(NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus) {
+	NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus["AVSLUTTET"] = "AVSLUTTET";
+	NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus["OPPRETTET"] = "OPPRETTET";
+	return NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus;
+}({});
 let NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = /* @__PURE__ */ function(NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori) {
 	NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori["BESLUTTER"] = "BESLUTTER";
 	NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori["KVALITETSSIKRING"] = "KVALITETSSIKRING";
@@ -768,6 +773,7 @@ exports.NoNavAapOppgaveDriftFilterDriftResponseType = NoNavAapOppgaveDriftFilter
 exports.NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus = NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus;
 exports.NoNavAapOppgaveDriftMarkeringDriftRequestType = NoNavAapOppgaveDriftMarkeringDriftRequestType;
 exports.NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
+exports.NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus = NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus;
 exports.NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori = NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
 exports.NoNavAapOppgaveFilterFilterDtoBehandlingstyper = NoNavAapOppgaveFilterFilterDtoBehandlingstyper;
 exports.NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer = NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer;

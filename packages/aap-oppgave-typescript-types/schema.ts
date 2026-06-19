@@ -1746,6 +1746,7 @@ export interface components {
              */
             endretTidspunkt?: string | null;
             enhet: string;
+            historikk: components["schemas"]["no.nav.aap.oppgave.drift.OppgaveHistorikkDto"][];
             "oppf\u00F8lgingsenhet"?: string | null;
             /** Format: int64 */
             oppgaveId: number;
@@ -1759,6 +1760,24 @@ export interface components {
             status: NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
             veilederArbeid?: string | null;
             veilederSykdom?: string | null;
+        };
+        "no.nav.aap.oppgave.drift.OppgaveHistorikkDto": {
+            endretAv?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            endretTidspunkt?: string | null;
+            enhet: string;
+            "oppf\u00F8lgingsenhet"?: string | null;
+            reservertAv?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            reservertTidspunkt?: string | null;
+            /** @enum {string} */
+            status: NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus;
         };
         "no.nav.aap.oppgave.drift.SlettFilterRequest": {
             /** Format: int64 */
@@ -2526,6 +2545,10 @@ export enum NoNavAapOppgaveDriftMarkeringDriftRequestType {
     KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
 }
 export enum NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus {
+    AVSLUTTET = "AVSLUTTET",
+    OPPRETTET = "OPPRETTET"
+}
+export enum NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus {
     AVSLUTTET = "AVSLUTTET",
     OPPRETTET = "OPPRETTET"
 }
