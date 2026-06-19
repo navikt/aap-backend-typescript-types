@@ -7209,6 +7209,11 @@ export interface components {
             meldekortProsesseringStatus: "KLAR" | "PROSESSERER_MELDEKORT";
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldeperiodeMedMeldekortDto": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            meldefrist: string;
             meldekort?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto"];
             meldeperiode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             meldepliktStatus: ("FREMTIDIG_IKKE_OPPFYLT" | "FREMTIDIG_OPPFYLT" | "FRITAK" | "FØRSTE_MELDEPERIODE_MED_RETT" | "FØR_VEDTAK" | "IKKE_MELDT_SEG" | "MELDT_SEG" | "RIMELIG_GRUNN" | "UTEN_RETT")[];
