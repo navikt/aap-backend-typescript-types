@@ -1518,6 +1518,11 @@ export interface components {
             /** @enum {string} */
             behandlingStatus: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
             behandlingref: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            gjenopptas?: string | null;
             personIdent: string;
             /**
              * Format: date-time
@@ -1527,6 +1532,8 @@ export interface components {
             saksbehandlingURL: string;
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             "totaltFeilutbetaltBel\u00F8p": number;
+            /** @enum {string|null} */
+            venteGrunn?: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
             /** @enum {string} */
@@ -2426,6 +2433,9 @@ export enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppd
     TIL_BESLUTTER = "TIL_BESLUTTER",
     TIL_FORH_NDSVARSEL = "TIL_FORH\u00C5NDSVARSEL",
     TIL_GODKJENNING = "TIL_GODKJENNING"
+}
+export enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn {
+    AVVENTER_BRUKERUTTALELSE = "AVVENTER_BRUKERUTTALELSE"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
     ANNET = "ANNET",
