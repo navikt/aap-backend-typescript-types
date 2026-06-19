@@ -642,6 +642,7 @@ export interface components {
              */
             endretTidspunkt?: string | null;
             enhet: string;
+            harAvslagSykdomMarkering?: boolean | null;
             harHasteMarkering?: boolean | null;
             /** Format: int64 */
             id?: number | null;
