@@ -584,7 +584,125 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/{referanse}/ny-hendelse": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/{referanse}/hent-markeringer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/{referanse}/hent-markeringer-og-historikk": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/{referanse}/hent-siste-aktive-hastemarkering": {
         parameters: {
             query?: never;
             header?: never;
@@ -1920,6 +2038,8 @@ export interface components {
         };
         "no.nav.aap.oppgave.markering.MarkeringDto": {
             begrunnelse?: string | null;
+            /** @enum {string|null} */
+            hendelseType?: NoNavAapOppgaveMarkeringMarkeringDtoHendelseType;
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
             opprettetAv?: string | null;
@@ -2644,6 +2764,10 @@ export enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser {
     RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
     RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER",
     RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER"
+}
+export enum NoNavAapOppgaveMarkeringMarkeringDtoHendelseType {
+    FJERNET = "FJERNET",
+    OPPRETTET = "OPPRETTET"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",

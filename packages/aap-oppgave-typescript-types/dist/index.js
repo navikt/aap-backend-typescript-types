@@ -652,6 +652,11 @@ let NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = /* @__PURE__ */
 	NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser["RETUR_FRA_VEILEDER"] = "RETUR_FRA_VEILEDER";
 	return NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser;
 }({});
+let NoNavAapOppgaveMarkeringMarkeringDtoHendelseType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringDtoHendelseType) {
+	NoNavAapOppgaveMarkeringMarkeringDtoHendelseType["FJERNET"] = "FJERNET";
+	NoNavAapOppgaveMarkeringMarkeringDtoHendelseType["OPPRETTET"] = "OPPRETTET";
+	return NoNavAapOppgaveMarkeringMarkeringDtoHendelseType;
+}({});
 let NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType) {
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["HASTER"] = "HASTER";
@@ -789,6 +794,7 @@ exports.NoNavAapOppgaveListeOppgaveSorteringSortOrder = NoNavAapOppgaveListeOppg
 exports.NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper = NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper;
 exports.NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper;
 exports.NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser;
+exports.NoNavAapOppgaveMarkeringMarkeringDtoHendelseType = NoNavAapOppgaveMarkeringMarkeringDtoHendelseType;
 exports.NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
 exports.NoNavAapOppgaveOppgaveDtoBehandlingstype = NoNavAapOppgaveOppgaveDtoBehandlingstype;
 exports.NoNavAapOppgaveOppgaveDtoReturStatus = NoNavAapOppgaveOppgaveDtoReturStatus;
