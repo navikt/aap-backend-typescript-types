@@ -1929,7 +1929,7 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      opprettetTidspunkt?: string | null;
+      opprettetTidspunkt: string;
     };
     "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
       /** Format: int64 */oppgaveId: number; /** Format: int64 */
