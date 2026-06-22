@@ -9709,6 +9709,8 @@ export interface components {
         };
         "no.nav.aap.oppgave.markering.MarkeringDto": {
             begrunnelse?: string | null;
+            /** @enum {string|null} */
+            hendelseType?: "FJERNET" | "OPPRETTET" | null;
             /** @enum {string} */
             markeringType: "AVSLAG_11_5" | "HASTER" | "KREVER_SPESIALKOMPETANSE";
             opprettetAv?: string | null;
