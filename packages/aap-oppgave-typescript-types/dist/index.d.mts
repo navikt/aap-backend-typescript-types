@@ -1935,7 +1935,6 @@ interface components {
       begrunnelse?: string | null; /** @enum {string|null} */
       hendelseType?: NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType; /** @enum {string} */
       markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
-      opprettetAvNavn?: string | null;
     };
     "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
       /** Format: int64 */oppgaveId: number; /** Format: int64 */

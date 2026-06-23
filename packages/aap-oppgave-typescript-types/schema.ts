@@ -2056,7 +2056,6 @@ export interface components {
             hendelseType?: NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType;
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
-            opprettetAvNavn?: string | null;
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
             /** Format: int64 */
