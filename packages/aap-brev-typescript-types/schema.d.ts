@@ -1358,7 +1358,7 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            yrkesskadedato: string;
+            yrkesskadedato?: string | null;
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeIS\u00F8knadIkkeIRegister": {
             verdi: boolean;
