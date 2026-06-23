@@ -563,7 +563,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.OpprettMarkeringDto"];
                 };
             };
             responses: {
@@ -605,7 +605,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.OpprettMarkeringDto"];
                 };
             };
             responses: {
@@ -2048,7 +2048,15 @@ export interface components {
              * Format: date-time
              * @example 2025-04-01T12:30:00
              */
-            opprettetTidspunkt: string;
+            opprettetTidspunkt?: string | null;
+        };
+        "no.nav.aap.oppgave.markering.OpprettMarkeringDto": {
+            begrunnelse?: string | null;
+            /** @enum {string|null} */
+            hendelseType?: NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType;
+            /** @enum {string} */
+            markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
+            opprettetAvNavn?: string | null;
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
             /** Format: int64 */
@@ -2770,6 +2778,15 @@ export enum NoNavAapOppgaveMarkeringMarkeringDtoHendelseType {
     OPPRETTET = "OPPRETTET"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
+export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType {
+    FJERNET = "FJERNET",
+    OPPRETTET = "OPPRETTET"
+}
+export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
     HASTER = "HASTER",
     KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
