@@ -387,6 +387,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REFUSJONSKRAV"] = "REFUSJONSKRAV";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDERING_AVBRUTT"] = "REVURDERING_AVBRUTT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDER_BEREGNING"] = "REVURDER_BEREGNING";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDER_INNTEKTSBORTFALL"] = "REVURDER_INNTEKTSBORTFALL";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDER_LOVVALG"] = "REVURDER_LOVVALG";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDER_MANUELL_INNTEKT"] = "REVURDER_MANUELL_INNTEKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["REVURDER_MEDLEMSKAP"] = "REVURDER_MEDLEMSKAP";
