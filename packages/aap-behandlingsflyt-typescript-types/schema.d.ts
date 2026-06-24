@@ -8371,7 +8371,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.GjenopptakKravL\u00F8sningDto": {
             begrunnelse: string;
             journalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
-            muligRettFra?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.OverstyrMuligRettFra"];
+            overstyrMuligRettFra?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.OverstyrMuligRettFra"];
             /** Format: uuid */
             referanse?: string | null;
             "s\u00F8knadsdato": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato"];
