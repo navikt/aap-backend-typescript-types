@@ -9332,6 +9332,7 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             opprettet: string;
+            opprettetAv?: string | null;
             vurderingsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.VurderingsbehovMedPeriode"][];
             /** @enum {string} */
             "\u00E5rsak": "AKTIVITETSMELDING" | "AKTIVITETSPLIKT" | "AKTIVITETSPLIKT_11_9" | "ANNET_RELEVANT_DOKUMENT" | "BARNETILLEGG_SATSENDRING" | "ENDRING_I_REGISTERDATA" | "FAGSYSTEMINFO_BEHOV_HENDELSE" | "FASTSATT_PERIODE_PASSERT" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELSEOPPLYSNINGER" | "KLAGE" | "MANUELL_OPPRETTELSE" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "OMGJØRING_ETTER_KLAGE" | "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS" | "OPPFØLGINGSOPPGAVE" | "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING" | "SVAR_FRA_KLAGEINSTANS" | "SØKNAD" | "TILBAKEKREVING_HENDELSE" | "UFØRE_VEDTAK_HENDELSE" | "UTVID_VEDTAKSLENGDE";
