@@ -6454,49 +6454,17 @@ export interface components {
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagResponse": {
-            /**
-             * Format: int32
-             * @deprecated
-             * @description Erstattes av vurderinger
-             */
-            ar: number;
-            /**
-             * @deprecated
-             * @description Erstattes av vurderinger
-             */
-            gverdi: number;
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeManuelleVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering"][] | null;
-            /**
-             * @deprecated
-             * @description Erstattes av vurderinger
-             */
-            historiskeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektVurderingGrunnlagResponse"][];
             manuelleVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering"];
             registrerteInntekterSisteRelevanteAr: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
             /** Format: int32 */
             "sisteRelevante\u00C5r": number;
-            /**
-             * @deprecated
-             * @description Erstattes av vurderinger
-             */
-            vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektVurderingGrunnlagResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering": {
             begrunnelse: string;
             vurderingerMeta: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurderingerMetaResponse"];
             "\u00E5rsVurderinger": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
-        };
-        /**
-         * @deprecated
-         * @description Erstattes av vurderinger
-         */
-        "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektVurderingGrunnlagResponse": {
-            /** Format: int32 */
-            ar: number;
-            begrunnelse: string;
-            belop: number;
-            vurdertAv: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurdertAvResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData": {
             "bel\u00F8p"?: number | null;
