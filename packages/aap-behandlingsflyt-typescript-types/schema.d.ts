@@ -6043,7 +6043,6 @@ export interface components {
             /** @enum {string} */
             dokumentasjonType: "L120" | "L40" | "L8" | "MELDING_FRA_NAV" | "PURRING" | "RETUR_LEGEERKLÆRING";
             fritekst: string;
-            saksnummer: string;
         };
         "no.nav.aap.behandlingsflyt.behandling.behandlerdialog.FastlegeResponse": {
             "andreBehandlereFraS\u00F8knad": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.behandlerdialog.ManueltOppgittBehandlerDto"][];
