@@ -2256,6 +2256,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode {
     Value8001 = "8001",
     Value8002 = "8002",
     Value8003 = "8003",
+    Value8004 = "8004",
     Value9001 = "9001",
     Value9002 = "9002",
     Value9003 = "9003",
