@@ -1,5 +1,11 @@
 # @navikt/aap-brev-typescript-types
 
+## 0.0.539
+
+### Patch Changes
+
+- ny versjon av typescript typer
+
 ## 0.0.538
 
 ### Patch Changes
