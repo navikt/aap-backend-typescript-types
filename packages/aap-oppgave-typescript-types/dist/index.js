@@ -664,6 +664,17 @@ let NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = /* @__PURE__ */ function
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
 }({});
+let NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType) {
+	NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType["FJERNET"] = "FJERNET";
+	NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType["OPPRETTET"] = "OPPRETTET";
+	return NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType;
+}({});
+let NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType) {
+	NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType["AVSLAG_11_5"] = "AVSLAG_11_5";
+	NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType["HASTER"] = "HASTER";
+	NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
+	return NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType;
+}({});
 let NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType) {
 	NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType["FJERNET"] = "FJERNET";
 	NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType["OPPRETTET"] = "OPPRETTET";
@@ -808,6 +819,8 @@ exports.NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = NoNavAap
 exports.NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser;
 exports.NoNavAapOppgaveMarkeringMarkeringDtoHendelseType = NoNavAapOppgaveMarkeringMarkeringDtoHendelseType;
 exports.NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
+exports.NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType = NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType;
+exports.NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType = NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType;
 exports.NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType = NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType;
 exports.NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType = NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
 exports.NoNavAapOppgaveOppgaveDtoBehandlingstype = NoNavAapOppgaveOppgaveDtoBehandlingstype;

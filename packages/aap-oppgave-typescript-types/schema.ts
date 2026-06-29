@@ -542,7 +542,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/{referanse}/ny-markering": {
+    "/{referanse}/opprett-markering-hendelse": {
         parameters: {
             query?: never;
             header?: never;
@@ -584,30 +584,24 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/{referanse}/ny-hendelse": {
+    "/{saksnummer}/hent-markeringer-og-historikk": {
         parameters: {
             query?: never;
             header?: never;
             path?: never;
             cookie?: never;
         };
-        get?: never;
-        put?: never;
-        post: {
+        get: {
             parameters: {
                 query?: never;
                 header?: never;
                 path: {
-                    /** @description referanse */
-                    referanse: string;
+                    /** @description saksnummer */
+                    saksnummer: string;
                 };
                 cookie?: never;
             };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.OpprettMarkeringDto"];
-                };
-            };
+            requestBody?: never;
             responses: {
                 /** @description OK */
                 200: {
@@ -615,18 +609,20 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringOgHistorikk"][];
                     };
                 };
             };
         };
+        put?: never;
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
     };
-    "/{referanse}/hent-markeringer": {
+    "/{referanse}/hent-gjeldende-markeringer-for-behandling": {
         parameters: {
             query?: never;
             header?: never;
@@ -658,124 +654,6 @@ export interface paths {
         };
         put?: never;
         post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/{referanse}/hent-markeringer-og-historikk": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/{referanse}/hent-siste-aktive-hastemarkering": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/{referanse}/fjern-markering": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
-                    };
-                };
-            };
-        };
         delete?: never;
         options?: never;
         head?: never;
@@ -2050,6 +1928,21 @@ export interface components {
              */
             opprettetTidspunkt?: string | null;
         };
+        "no.nav.aap.oppgave.markering.MarkeringOgHistorikk": {
+            begrunnelse?: string | null;
+            behandlingRef: string;
+            /** @enum {string|null} */
+            hendelseType?: NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType;
+            /** @enum {string} */
+            markeringType: NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType;
+            opprettetAv: string;
+            opprettetAvNavn?: string | null;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettetTidspunkt: string;
+        };
         "no.nav.aap.oppgave.markering.OpprettMarkeringDto": {
             begrunnelse?: string | null;
             /** @enum {string|null} */
@@ -2778,6 +2671,15 @@ export enum NoNavAapOppgaveMarkeringMarkeringDtoHendelseType {
     OPPRETTET = "OPPRETTET"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER",
+    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+}
+export enum NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType {
+    FJERNET = "FJERNET",
+    OPPRETTET = "OPPRETTET"
+}
+export enum NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
     HASTER = "HASTER",
     KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
