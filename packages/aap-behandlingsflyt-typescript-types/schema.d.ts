@@ -6457,6 +6457,7 @@ export interface components {
             "alleRelevante\u00C5r": number[];
             "harTilgangTil\u00C5Saksbehandle": boolean;
             historiskeManuelleVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering"][] | null;
+            "manglendeM\u00E5nedsInntekter": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.M\u00E5nedsperiodeData"][];
             "manglerInntektFor\u00C5r": number[];
             manuelleVurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.ManuellInntektGrunnlagVurdering"];
             registrerteInntekterSisteRelevanteAr: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
@@ -6472,10 +6473,16 @@ export interface components {
             vurderingerMeta: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurderingerMetaResponse"];
             "\u00E5rsVurderinger": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData"][];
         };
+        "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.M\u00E5nedsperiodeData": {
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            /** Format: int32 */
+            "uf\u00F8regrad": number;
+        };
         "no.nav.aap.behandlingsflyt.behandling.beregning.manuellinntekt.\u00C5rData": {
             "bel\u00F8p"?: number | null;
             "e\u00F8sBel\u00F8p"?: number | null;
             ferdigLignetPGI?: number | null;
+            periode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** Format: int32 */
             "\u00E5r": number;
         };
@@ -8291,6 +8298,7 @@ export interface components {
             "bel\u00F8p"?: number | null;
             "e\u00F8sBel\u00F8p"?: number | null;
             ferdigLignetPGI?: number | null;
+            periode?: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** Format: int32 */
             "\u00E5r": number;
         };
