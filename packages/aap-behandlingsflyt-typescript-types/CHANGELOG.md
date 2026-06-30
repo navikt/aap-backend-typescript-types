@@ -1,5 +1,11 @@
 # @navikt/aap-behandlingsflyt-typescript-types
 
+## 0.0.4131
+
+### Patch Changes
+
+- ny versjon av typescript typer
+
 ## 0.0.4130
 
 ### Patch Changes
