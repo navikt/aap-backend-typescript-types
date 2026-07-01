@@ -782,6 +782,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/behandling/{referanse}/grunnlag/fatte-vedtak/v2": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.FatteVedtakGrunnlagResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/behandling/{referanse}/grunnlag/kvalitetssikring": {
         parameters: {
             query?: never;
@@ -808,6 +846,44 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringGrunnlagDto"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/behandling/{referanse}/grunnlag/kvalitetssikring/v2": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringGrunnlagResponse"];
                     };
                 };
             };
@@ -5548,6 +5624,13 @@ export interface components {
             historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
         };
+        "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.FatteVedtakGrunnlagResponse": {
+            besluttetAv?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.BeslutterDto"];
+            "harGjortVilk\u00E5rsvurderingerP\u00E5Behandling": boolean;
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
+            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.totrinnsvurdering.TotrinnsVurderingResponse"][];
+        };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk": {
             /** @enum {string} */
             aksjon: "FATTET_VEDTAK" | "KVALITETSSIKRET" | "RETURNERT_FRA_BESLUTTER" | "RETURNERT_FRA_KVALITETSSIKRER" | "SENDT_TIL_BESLUTTER" | "SENDT_TIL_KVALITETSSIKRER";
@@ -7176,6 +7259,12 @@ export interface components {
             historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8ser.vedtak.TotrinnsVurdering"][];
         };
+        "no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringGrunnlagResponse": {
+            "harGjortVilk\u00E5rsvurderingerP\u00E5Behandling": boolean;
+            "harTilgangTil\u00C5Saksbehandle": boolean;
+            historikk: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.flate.Historikk"][];
+            vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.totrinnsvurdering.TotrinnsVurderingResponse"][];
+        };
         "no.nav.aap.behandlingsflyt.behandling.kvalitetssikring.KvalitetssikringTilgangDto": {
             "harTilgangTil\u00C5Kvalitetssikre": boolean;
         };
@@ -7593,6 +7682,14 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.VurdertPeriode": {
             felter: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.tilkjentytelse.Felter"];
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+        };
+        "no.nav.aap.behandlingsflyt.behandling.totrinnsvurdering.TotrinnsVurderingResponse": {
+            begrunnelse?: string | null;
+            /** @enum {string} */
+            definisjon: "4101" | "4102" | "4201" | "4301" | "5001" | "5002" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5019" | "5020" | "5021" | "5022" | "5023" | "5024" | "5025" | "5026" | "5027" | "5028" | "5029" | "5030" | "5031" | "5032" | "5033" | "5034" | "5035" | "5036" | "5037" | "5038" | "5040" | "5041" | "5050" | "5051" | "5052" | "5053" | "5054" | "5056" | "5057" | "5058" | "5059" | "5060" | "5096" | "5097" | "5098" | "5099" | "5999" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6008" | "6009" | "6010" | "7001" | "8001" | "8002" | "8003" | "8004" | "9001" | "9002" | "9003" | "9004" | "9082" | "9083";
+            endretSidenSist?: boolean | null;
+            godkjent?: boolean | null;
+            grunner?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.\u00C5rsakTilRetur"][] | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto": {
             begrunnelse: string;
