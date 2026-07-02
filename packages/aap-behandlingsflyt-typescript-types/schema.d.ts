@@ -3688,6 +3688,49 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/meldekort/{saksnummer}/har-registrert-timer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query: {
+                    /** @description Meldeperiodens fra-og-med-dato */
+                    meldeperiodeFom: string;
+                    /** @description Meldeperiodens til-og-med-dato */
+                    meldeperiodeTom: string;
+                };
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.meldekort.HarRegistrertTimerResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/meldekort/{saksnummer}/prosessering": {
         parameters: {
             query?: never;
@@ -7380,6 +7423,9 @@ export interface components {
             dato: string;
             /** Format: double */
             timerArbeidet: number;
+        };
+        "no.nav.aap.behandlingsflyt.behandling.meldekort.HarRegistrertTimerResponse": {
+            harRegistrertTimerForMeldeperioden: boolean;
         };
         "no.nav.aap.behandlingsflyt.behandling.meldekort.MeldekortDto": {
             begrunnelse?: string | null;
