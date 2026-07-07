@@ -1001,11 +1001,109 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/drift/bestillinger/sak/{saksnummer}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.brev.api.BrevbestillingDriftsinfoDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/drift/bestillinger/behandling/{referanse}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.brev.api.BrevbestillingDriftsinfoDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "java.time.Year": Record<string, never>;
+        "no.nav.aap.brev.api.BrevbestillingDriftsinfoDto": {
+            behandlingReferanse: string;
+            bestillingReferanse: string;
+            brevtype: string;
+            /** Format: int64 */
+            id: number;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            oppdatert: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            opprettet: string;
+            /** @enum {string|null} */
+            prosesseringStatus?: "AVBRUTT" | "BREVBESTILLING_LØST" | "BREV_FERDIGSTILT" | "DISTRIBUERT" | "FERDIG" | "JOURNALFORT" | "JOURNALPOST_FERDIGSTILT" | "JOURNALPOST_VEDLEGG_TILKNYTTET" | "STARTET" | null;
+            "spr\u00E5k": string;
+            /** @enum {string|null} */
+            status?: "AVBRUTT" | "FERDIGSTILT" | "UNDER_ARBEID" | null;
+        };
         "no.nav.aap.brev.kontrakt.Adresse": {
             adresselinje1: string;
             adresselinje2?: string | null;
