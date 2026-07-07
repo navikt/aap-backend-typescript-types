@@ -224,6 +224,42 @@ interface paths {
     patch?: never;
     trace?: never;
   };
+  "/fjern-helseopplysning-ikon": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get?: never;
+    put?: never;
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: {
+        content: {
+          "application/json": components["schemas"]["no.nav.aap.oppgave.DokumenterLestDto"];
+        };
+      };
+      responses: {
+        /** @description OK */200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content?: never;
+        };
+      };
+    };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   "/saksbehandler-sok": {
     parameters: {
       query?: never;
