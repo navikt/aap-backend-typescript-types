@@ -527,13 +527,11 @@ let NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper = /* @__PURE__ */ fu
 let NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer) {
 	NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer["HASTER"] = "HASTER";
-	NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer;
 }({});
 let NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer) {
 	NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer["HASTER"] = "HASTER";
-	NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer;
 }({});
 let NoNavAapOppgaveDriftFilterDriftResponseType = /* @__PURE__ */ function(NoNavAapOppgaveDriftFilterDriftResponseType) {
@@ -550,7 +548,6 @@ let NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus = /* @__PURE__ */ funct
 let NoNavAapOppgaveDriftMarkeringDriftRequestType = /* @__PURE__ */ function(NoNavAapOppgaveDriftMarkeringDriftRequestType) {
 	NoNavAapOppgaveDriftMarkeringDriftRequestType["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveDriftMarkeringDriftRequestType["HASTER"] = "HASTER";
-	NoNavAapOppgaveDriftMarkeringDriftRequestType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveDriftMarkeringDriftRequestType;
 }({});
 let NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus = /* @__PURE__ */ function(NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus) {
@@ -589,13 +586,11 @@ let NoNavAapOppgaveFilterFilterDtoBehandlingstyper = /* @__PURE__ */ function(No
 let NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer) {
 	NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer["HASTER"] = "HASTER";
-	NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer;
 }({});
 let NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer) {
 	NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer["HASTER"] = "HASTER";
-	NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer;
 }({});
 let NoNavAapOppgaveFilterFilterDtoType = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterDtoType) {
@@ -664,7 +659,6 @@ let NoNavAapOppgaveMarkeringMarkeringDtoHendelseType = /* @__PURE__ */ function(
 let NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType) {
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["HASTER"] = "HASTER";
-	NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
 }({});
 let NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType) {
@@ -675,7 +669,6 @@ let NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType = /* @__PURE__ */ f
 let NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType) {
 	NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType["HASTER"] = "HASTER";
-	NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType;
 }({});
 let NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType) {
@@ -686,7 +679,6 @@ let NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType = /* @__PURE__ */ fu
 let NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType = /* @__PURE__ */ function(NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType) {
 	NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType["AVSLAG_11_5"] = "AVSLAG_11_5";
 	NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType["HASTER"] = "HASTER";
-	NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType["KREVER_SPESIALKOMPETANSE"] = "KREVER_SPESIALKOMPETANSE";
 	return NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
 }({});
 let NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PURE__ */ function(NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype) {

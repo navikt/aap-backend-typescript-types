@@ -2556,13 +2556,11 @@ export enum NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper {
 }
 export enum NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveDriftFilterDriftResponseType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
@@ -2575,8 +2573,7 @@ export enum NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus {
 }
 export enum NoNavAapOppgaveDriftMarkeringDriftRequestType {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus {
     AVSLUTTET = "AVSLUTTET",
@@ -2609,13 +2606,11 @@ export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
 }
 export enum NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveFilterFilterDtoType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
@@ -2675,8 +2670,7 @@ export enum NoNavAapOppgaveMarkeringMarkeringDtoHendelseType {
 }
 export enum NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType {
     FJERNET = "FJERNET",
@@ -2684,8 +2678,7 @@ export enum NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType {
 }
 export enum NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType {
     FJERNET = "FJERNET",
@@ -2693,8 +2686,7 @@ export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType {
 }
 export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER",
-    KREVER_SPESIALKOMPETANSE = "KREVER_SPESIALKOMPETANSE"
+    HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
