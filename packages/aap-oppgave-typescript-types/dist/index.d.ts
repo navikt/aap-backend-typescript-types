@@ -697,6 +697,41 @@ interface paths {
     patch?: never;
     trace?: never;
   };
+  "/mine-siste-oppgaver": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: never;
+      responses: {
+        /** @description OK */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content: {
+            "application/json": components["schemas"]["no.nav.aap.oppgave.SakOgAvklaringsbehov"][];
+          };
+        };
+      };
+    };
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   "/filter": {
     parameters: {
       query?: never;
@@ -1704,6 +1739,10 @@ interface components {
       /** @enum {string} */
       status: NoNavAapOppgaveReturInformasjonStatus;
       "årsaker": NoNavAapOppgaveReturInformasjonRsaker[];
+    };
+    "no.nav.aap.oppgave.SakOgAvklaringsbehov": {
+      avklaringsbehovKode: string;
+      saksnummer: string;
     };
     "no.nav.aap.oppgave.SøkDto": {
       "søketekst": string;
