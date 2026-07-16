@@ -1457,6 +1457,7 @@ export interface components {
             "l\u00F8sesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[];
             /** @enum {string} */
             "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg;
+            "m\u00E5RevurderesEtterOpph\u00F8r": boolean;
             /** @enum {string} */
             type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
             name: string;
@@ -1628,18 +1629,15 @@ export interface components {
              */
             endretTidspunkt?: string | null;
             enhet: string;
-            "enhetForK\u00F8": string;
             enhetForrigeOppgave?: components["schemas"]["no.nav.aap.oppgave.enhet.EnhetDto"];
-            "erP\u00E5Vent": boolean;
             erSkjermet?: boolean | null;
-            "er\u00C5pen": boolean;
             forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo"];
             "forrigeP\u00E5Vent\u00C5rsak"?: string | null;
             forrigeVenteBegrunnelse?: string | null;
             harFortroligAdresse?: boolean | null;
             harUlesteDokumenter?: boolean | null;
             /** Format: int64 */
-            id?: number | null;
+            id: number;
             /** Format: int64 */
             journalpostId?: number | null;
             markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
@@ -1650,7 +1648,7 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             opprettetTidspunkt: string;
-            personIdent?: string | null;
+            personIdent: string;
             personNavn?: string | null;
             /**
              * Format: date

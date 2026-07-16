@@ -26,7 +26,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -62,7 +63,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -98,7 +100,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -134,7 +137,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -172,7 +176,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -210,7 +215,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -246,7 +252,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -278,16 +285,17 @@ interface paths {
       };
       requestBody?: {
         content: {
-          "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest"];
+          "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerSøkRequest"];
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
           content: {
-            "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kResponse"];
+            "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerSøkResponse"];
           };
         };
       };
@@ -320,7 +328,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -348,13 +357,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description referanse */referanse: string;
+          /** @description referanse */
+          referanse: string;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -384,13 +395,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description referanse */referanse: string;
+          /** @description referanse */
+          referanse: string;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -430,7 +443,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -458,13 +472,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description referanse */referanse: string;
+          /** @description referanse */
+          referanse: string;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -492,8 +508,11 @@ interface paths {
     get: {
       parameters: {
         query?: {
-          /** @description Vis kun på vent-oppgaver. */kunPaaVent?: boolean; /** @description Sorter oppgaveliste */
-          sortby?: PathsMineOppgaverGetParametersQuerySortby; /** @description Sorteringsrekkefølge */
+          /** @description Vis kun på vent-oppgaver. */
+          kunPaaVent?: boolean;
+          /** @description Sorter oppgaveliste */
+          sortby?: PathsMineOppgaverGetParametersQuerySortby;
+          /** @description Sorteringsrekkefølge */
           sortorder?: PathsMineOppgaverGetParametersQuerySortorder;
         };
         header?: never;
@@ -502,7 +521,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -538,16 +558,17 @@ interface paths {
       };
       requestBody?: {
         content: {
-          "application/json": components["schemas"]["no.nav.aap.oppgave.S\u00F8kDto"];
+          "application/json": components["schemas"]["no.nav.aap.oppgave.SøkDto"];
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
           content: {
-            "application/json": components["schemas"]["no.nav.aap.oppgave.S\u00F8kResponse"];
+            "application/json": components["schemas"]["no.nav.aap.oppgave.SøkResponse"];
           };
         };
       };
@@ -572,7 +593,8 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description referanse */referanse: string;
+          /** @description referanse */
+          referanse: string;
         };
         cookie?: never;
       };
@@ -582,7 +604,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -610,13 +633,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description saksnummer */saksnummer: string;
+          /** @description saksnummer */
+          saksnummer: string;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -646,13 +671,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description referanse */referanse: string;
+          /** @description referanse */
+          referanse: string;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -680,7 +707,8 @@ interface paths {
     get: {
       parameters: {
         query?: {
-          /** @description Enhetsfilter */enheter?: string[];
+          /** @description Enhetsfilter */
+          enheter?: string[];
         };
         header?: never;
         path?: never;
@@ -688,7 +716,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -712,7 +741,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -750,7 +780,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -786,7 +817,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -826,7 +858,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -858,7 +891,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -898,7 +932,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -936,7 +971,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -968,7 +1004,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1002,7 +1039,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1036,7 +1074,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1068,13 +1107,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description ID */jobbId: number;
+          /** @description ID */
+          jobbId: number;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1102,13 +1143,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description ID */jobbId: number;
+          /** @description ID */
+          jobbId: number;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1138,13 +1181,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description ID */jobbId: number;
+          /** @description ID */
+          jobbId: number;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1178,7 +1223,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1212,7 +1258,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1230,7 +1277,7 @@ interface paths {
     patch?: never;
     trace?: never;
   };
-  "/drift/api/jobb/sisteKj\u00F8rte": {
+  "/drift/api/jobb/sisteKjørte": {
     parameters: {
       query?: never;
       header?: never;
@@ -1246,7 +1293,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1278,13 +1326,15 @@ interface paths {
         query?: never;
         header?: never;
         path: {
-          /** @description referanse */referanse: string;
+          /** @description referanse */
+          referanse: string;
         };
         cookie?: never;
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1316,7 +1366,8 @@ interface paths {
       };
       requestBody?: never;
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1340,7 +1391,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1378,7 +1430,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description OK */200: {
+        /** @description OK */
+        200: {
           headers: {
             [name: string]: unknown;
           };
@@ -1397,28 +1450,39 @@ type webhooks = Record<string, never>;
 interface components {
   schemas: {
     "no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon": {
-      /** @enum {string} */kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
+      /** @enum {string} */
+      kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
       kreverToTrinn: boolean;
       kvalitetssikres: boolean;
-      "l\u00F8sesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[]; /** @enum {string} */
-      "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg; /** @enum {string} */
+      "løsesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[];
+      /** @enum {string} */
+      "løsesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg;
+      "måRevurderesEtterOpphør": boolean;
+      /** @enum {string} */
       type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
       name: string;
-    }; /** Format: uuid */
+    };
+    /** Format: uuid */
     "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": string;
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
       avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
-      endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][]; /** Format: int64 */
-      id?: number | null; /** @enum {string} */
+      endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
+      /** Format: int64 */
+      id?: number | null;
+      /** @enum {string} */
       status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
-    }; /** Format: uuid */
-    "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": string;
+    };
+    /** Format: uuid */
+    "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerklæringId": string;
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.BehandlingFlytStoppetHendelse": {
-      /** @enum {string|null} */aktivtSteg?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg;
-      avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][]; /** @enum {string|null} */
-      behandlingMetadata?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata; /** @enum {string} */
+      /** @enum {string|null} */
+      aktivtSteg?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg;
+      avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
+      /** @enum {string|null} */
+      behandlingMetadata?: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata;
+      /** @enum {string} */
       behandlingType: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType;
-      "erP\u00E5Vent": boolean;
+      "erPåVent": boolean;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
@@ -1432,18 +1496,20 @@ interface components {
       opprettetTidspunkt: string;
       personIdent: string;
       referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
-      "relevanteIdenterP\u00E5Behandling"?: string[] | null;
+      "relevanteIdenterPåBehandling"?: string[] | null;
       reserverTil?: string | null;
-      saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"]; /** @enum {string} */
+      saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
+      /** @enum {string} */
       status: NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus;
       versjon: string;
-      vurderingsbehov: string[]; /** @enum {string} */
-      "\u00E5rsakTilOpprettelse": NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse;
+      vurderingsbehov: string[];
+      /** @enum {string} */
+      "årsakTilOpprettelse": NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse;
       /**
        * @deprecated
        * @description Kan fjernes når oppgave har byttet til å bruke vurderingsbehov
        */
-      "\u00E5rsakerTilBehandling": string[];
+      "årsakerTilBehandling": string[];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
       begrunnelse?: string | null;
@@ -1452,32 +1518,39 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      frist?: string | null; /** @enum {string} */
+      frist?: string | null;
+      /** @enum {string} */
       status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
       tidsstempel: string;
-      "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][]; /** @enum {string|null} */
-      "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
-    }; /** Format: uuid */
+      "årsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.ÅrsakTilRetur"][];
+      /** @enum {string|null} */
+      "årsakTilSattPåVent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
+    };
+    /** Format: uuid */
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId": string;
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse": {
-      "asAvvistLegeerkl\u00E6ringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId"];
+      "asAvvistLegeerklæringId": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerklæringId"];
       asInnsendingId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingId"];
       asJournalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
-      asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"]; /** @enum {string} */
+      asKabalHendelseId: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId"];
+      /** @enum {string} */
       type: NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType;
       verdi: string;
-    }; /** Format: uuid */
+    };
+    /** Format: uuid */
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.KabalHendelseId": string;
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.MottattDokumentDto": {
-      referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"]; /** @enum {string} */
+      referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.InnsendingReferanse"];
+      /** @enum {string} */
       type: NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.TilbakekrevingsbehandlingOppdatertHendelse": {
-      /** @enum {string} */behandlingStatus: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
+      /** @enum {string} */
+      behandlingStatus: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
       behandlingref: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
       /**
        * Format: date
@@ -1492,18 +1565,23 @@ interface components {
       sakOpprettet: string;
       saksbehandlingURL: string;
       saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
-      "totaltFeilutbetaltBel\u00F8p": number; /** @enum {string|null} */
+      "totaltFeilutbetaltBeløp": number;
+      /** @enum {string|null} */
       venteGrunn?: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
-      /** @enum {string} */"\u00E5rsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
+    "no.nav.aap.behandlingsflyt.kontrakt.hendelse.ÅrsakTilRetur": {
+      /** @enum {string} */
+      "årsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer": Record<string, never>;
     "no.nav.aap.motor.api.JobbInfoDto": {
-      /** Format: int32 */"antallFeilendeFors\u00F8k": number;
+      /** Format: int32 */
+      "antallFeilendeForsøk": number;
       beskrivelse: string;
-      feilmelding?: string | null; /** Format: int64 */
-      id: number; /** @description Key type: kotlin.String */
+      feilmelding?: string | null;
+      /** Format: int64 */
+      id: number;
+      /** @description Key type: kotlin.String */
       metadata: {
         [key: string]: string;
       };
@@ -1517,7 +1595,8 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      "planlagtKj\u00F8retidspunkt": string; /** @enum {string} */
+      "planlagtKjøretidspunkt": string;
+      /** @enum {string} */
       status: NoNavAapMotorApiJobbInfoDtoStatus;
       type: string;
     };
@@ -1525,7 +1604,8 @@ interface components {
       oppgaver: number[];
     };
     "no.nav.aap.oppgave.DokumenterLestDto": {
-      /** Format: uuid */behandlingRef: string;
+      /** Format: uuid */
+      behandlingRef: string;
     };
     "no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo": {
       forrigeKvalitetssikrerIdent: string;
@@ -1537,8 +1617,10 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      behandlingOpprettet: string; /** Format: uuid */
-      behandlingRef: string; /** @enum {string} */
+      behandlingOpprettet: string;
+      /** Format: uuid */
+      behandlingRef: string;
+      /** @enum {string} */
       behandlingstype: NoNavAapOppgaveOppgaveDtoBehandlingstype;
       endretAv?: string | null;
       /**
@@ -1547,34 +1629,33 @@ interface components {
        */
       endretTidspunkt?: string | null;
       enhet: string;
-      "enhetForK\u00F8": string;
       enhetForrigeOppgave?: components["schemas"]["no.nav.aap.oppgave.enhet.EnhetDto"];
-      "erP\u00E5Vent": boolean;
       erSkjermet?: boolean | null;
-      "er\u00C5pen": boolean;
       forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo"];
-      "forrigeP\u00E5Vent\u00C5rsak"?: string | null;
+      "forrigePåVentÅrsak"?: string | null;
       forrigeVenteBegrunnelse?: string | null;
       harFortroligAdresse?: boolean | null;
-      harUlesteDokumenter?: boolean | null; /** Format: int64 */
-      id?: number | null; /** Format: int64 */
+      harUlesteDokumenter?: boolean | null;
+      /** Format: int64 */
+      id: number;
+      /** Format: int64 */
       journalpostId?: number | null;
       markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
-      "oppf\u00F8lgingsenhet"?: string | null;
+      "oppfølgingsenhet"?: string | null;
       opprettetAv: string;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
       opprettetTidspunkt: string;
-      personIdent?: string | null;
+      personIdent: string;
       personNavn?: string | null;
       /**
        * Format: date
        * @example 2025-04-01
        */
-      "p\u00E5VentTil"?: string | null;
-      "p\u00E5Vent\u00C5rsak"?: string | null;
+      "påVentTil"?: string | null;
+      "påVentÅrsak"?: string | null;
       reservertAv?: string | null;
       reservertAvNavn?: string | null;
       /**
@@ -1589,47 +1670,52 @@ interface components {
        * @enum {string|null}
        */
       returStatus?: NoNavAapOppgaveOppgaveDtoReturStatus;
-      saksnummer?: string | null; /** @enum {string} */
+      saksnummer?: string | null;
+      /** @enum {string} */
       status: NoNavAapOppgaveOppgaveDtoStatus;
       tilbakekrevingsVarsDto?: components["schemas"]["no.nav.aap.oppgave.TilbakekrevingsVarsDto"];
       /**
        * Format: date
        * @example 2025-04-01
        */
-      "utl\u00F8ptVentefrist"?: string | null;
+      "utløptVentefrist"?: string | null;
       veilederArbeid?: string | null;
       veilederSykdom?: string | null;
-      venteBegrunnelse?: string | null; /** Format: int64 */
+      venteBegrunnelse?: string | null;
+      /** Format: int64 */
       versjon: number;
       vurderingsbehov: string[];
-      "\u00E5rsakTilOpprettelse"?: string | null;
+      "årsakTilOpprettelse"?: string | null;
       /**
        * @deprecated
        * @description Bytt til vurderingsbehov når frontend er oppdatert
        */
-      "\u00E5rsakerTilBehandling": string[];
+      "årsakerTilBehandling": string[];
     };
     "no.nav.aap.oppgave.OppgaveId": {
-      /** Format: int64 */id: number; /** Format: int64 */
+      /** Format: int64 */
+      id: number;
+      /** Format: int64 */
       versjon: number;
     };
     "no.nav.aap.oppgave.ReturInformasjon": {
       begrunnelse: string;
-      endretAv: string; /** @enum {string} */
+      endretAv: string;
+      /** @enum {string} */
       status: NoNavAapOppgaveReturInformasjonStatus;
-      "\u00E5rsaker": NoNavAapOppgaveReturInformasjonRsaker[];
+      "årsaker": NoNavAapOppgaveReturInformasjonRsaker[];
     };
-    "no.nav.aap.oppgave.S\u00F8kDto": {
-      "s\u00F8ketekst": string;
+    "no.nav.aap.oppgave.SøkDto": {
+      "søketekst": string;
     };
-    "no.nav.aap.oppgave.S\u00F8kResponse": {
+    "no.nav.aap.oppgave.SøkResponse": {
       harAdressebeskyttelse: boolean;
       harTilgang: boolean;
       oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
     };
     "no.nav.aap.oppgave.TilbakekrevingsVarsDto": {
       tilbakekrevings_URL: string;
-      "tilbakekrevings_bel\u00F8p": number;
+      "tilbakekrevings_beløp": number;
     };
     "no.nav.aap.oppgave.drift.AvklaringsbehovDto": {
       kode: string;
@@ -1640,17 +1726,20 @@ interface components {
       filtre: components["schemas"]["no.nav.aap.oppgave.drift.FilterDriftResponse"][];
     };
     "no.nav.aap.oppgave.drift.EnhetDriftRequest": {
-      enhet: string; /** @enum {string} */
+      enhet: string;
+      /** @enum {string} */
       filtermodus: NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus;
     };
     "no.nav.aap.oppgave.drift.FilterDriftRequest": {
       avklaringsbehovKoder: string[];
       behandlingstyper: NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper[];
       beskrivelse: string;
-      enheter: components["schemas"]["no.nav.aap.oppgave.drift.EnhetDriftRequest"][]; /** Format: int64 */
+      enheter: components["schemas"]["no.nav.aap.oppgave.drift.EnhetDriftRequest"][];
+      /** Format: int64 */
       id?: number | null;
       markeringer: components["schemas"]["no.nav.aap.oppgave.drift.MarkeringDriftRequest"][];
-      navn: string; /** @enum {string} */
+      navn: string;
+      /** @enum {string} */
       type: NoNavAapOppgaveDriftFilterDriftRequestType;
     };
     "no.nav.aap.oppgave.drift.FilterDriftResponse": {
@@ -1664,7 +1753,8 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      endretTidspunkt?: string | null; /** Format: int64 */
+      endretTidspunkt?: string | null;
+      /** Format: int64 */
       id: number;
       inkluderteEnheter: string[];
       inkluderteMarkeringer: NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer[];
@@ -1674,15 +1764,19 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      opprettetTidspunkt: string; /** @enum {string} */
+      opprettetTidspunkt: string;
+      /** @enum {string} */
       type: NoNavAapOppgaveDriftFilterDriftResponseType;
     };
     "no.nav.aap.oppgave.drift.MarkeringDriftRequest": {
-      /** @enum {string} */filtermodus: NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus; /** @enum {string} */
+      /** @enum {string} */
+      filtermodus: NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus;
+      /** @enum {string} */
       type: NoNavAapOppgaveDriftMarkeringDriftRequestType;
     };
     "no.nav.aap.oppgave.drift.OppgaveDriftsinfoDTO": {
-      avklaringsbehovKode: string; /** Format: uuid */
+      avklaringsbehovKode: string;
+      /** Format: uuid */
       behandlingRef: string;
       /**
        * Format: date-time
@@ -1691,14 +1785,16 @@ interface components {
       endretTidspunkt?: string | null;
       enhet: string;
       historikk: components["schemas"]["no.nav.aap.oppgave.drift.OppgaveHistorikkDto"][];
-      "oppf\u00F8lgingsenhet"?: string | null; /** Format: int64 */
+      "oppfølgingsenhet"?: string | null;
+      /** Format: int64 */
       oppgaveId: number;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
       opprettetTidspunkt: string;
-      reservertAv?: string | null; /** @enum {string} */
+      reservertAv?: string | null;
+      /** @enum {string} */
       status: NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus;
       veilederArbeid?: string | null;
       veilederSykdom?: string | null;
@@ -1711,17 +1807,19 @@ interface components {
        */
       endretTidspunkt?: string | null;
       enhet: string;
-      "oppf\u00F8lgingsenhet"?: string | null;
+      "oppfølgingsenhet"?: string | null;
       reservertAv?: string | null;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      reservertTidspunkt?: string | null; /** @enum {string} */
+      reservertTidspunkt?: string | null;
+      /** @enum {string} */
       status: NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus;
     };
     "no.nav.aap.oppgave.drift.SlettFilterRequest": {
-      /** Format: int64 */id: number;
+      /** Format: int64 */
+      id: number;
     };
     "no.nav.aap.oppgave.enhet.EnhetDto": {
       enhetNr: string;
@@ -1735,18 +1833,20 @@ interface components {
       enhetNr: string;
     };
     "no.nav.aap.oppgave.enhet.EnhetOgOversendelse": {
-      tilstand?: components["schemas"]["no.nav.aap.oppgave.enhet.N\u00E5v\u00E6rendeEnhet"];
+      tilstand?: components["schemas"]["no.nav.aap.oppgave.enhet.NåværendeEnhet"];
     };
     "no.nav.aap.oppgave.enhet.EnhetSynkroniseringRequest": {
-      /** Format: int64 */oppgaveId: number;
+      /** Format: int64 */
+      oppgaveId: number;
     };
     "no.nav.aap.oppgave.enhet.EnhetSynkroniseringRespons": {
       gammelEnhet: string;
       nyEnhet: string;
     };
-    "no.nav.aap.oppgave.enhet.N\u00E5v\u00E6rendeEnhet": {
+    "no.nav.aap.oppgave.enhet.NåværendeEnhet": {
       enhet: string;
-      markertSomHasteSak: boolean; /** @enum {string} */
+      markertSomHasteSak: boolean;
+      /** @enum {string} */
       oppgaveKategori: NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori;
       /**
        * Format: date
@@ -1754,7 +1854,7 @@ interface components {
        */
       oversendtDato: string;
       saksnummer: string;
-      "vente\u00C5rsak"?: string | null;
+      "venteÅrsak"?: string | null;
     };
     "no.nav.aap.oppgave.enhet.OppgaveEnhetDto": {
       avklaringsbehovKode: string;
@@ -1777,7 +1877,8 @@ interface components {
        * @example 2025-04-01T12:30:00
        */
       endretTidspunkt?: string | null;
-      enheter: string[]; /** Format: int64 */
+      enheter: string[];
+      /** Format: int64 */
       id?: number | null;
       inkluderteMarkeringer: NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer[];
       navn: string;
@@ -1786,21 +1887,26 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      opprettetTidspunkt: string; /** @enum {string} */
+      opprettetTidspunkt: string;
+      /** @enum {string} */
       type: NoNavAapOppgaveFilterFilterDtoType;
       veileder?: string | null;
     };
     "no.nav.aap.oppgave.filter.FilterId": {
-      /** Format: int64 */filterId: number;
+      /** Format: int64 */
+      filterId: number;
     };
     "no.nav.aap.oppgave.liste.OppgaveSortering": {
-      /** @enum {string|null} */sortBy?: NoNavAapOppgaveListeOppgaveSorteringSortBy; /** @enum {string|null} */
+      /** @enum {string|null} */
+      sortBy?: NoNavAapOppgaveListeOppgaveSorteringSortBy;
+      /** @enum {string|null} */
       sortOrder?: NoNavAapOppgaveListeOppgaveSorteringSortOrder;
     };
     "no.nav.aap.oppgave.liste.OppgavelisteRequest": {
-      enheter: string[]; /** Format: int64 */
+      enheter: string[];
+      /** Format: int64 */
       filterId: number;
-      "hastemarkeringerF\u00F8rst"?: boolean | null;
+      "hastemarkeringerFørst"?: boolean | null;
       kunLedigeOppgaver?: boolean | null;
       paging: components["schemas"]["no.nav.aap.oppgave.liste.Paging"];
       sortering?: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveSortering"];
@@ -1808,27 +1914,31 @@ interface components {
       veileder: boolean;
     };
     "no.nav.aap.oppgave.liste.OppgavelisteRespons": {
-      /** Format: int32 */antallGjenstaaende?: number | null; /** Format: int32 */
+      /** Format: int32 */
+      antallGjenstaaende?: number | null;
+      /** Format: int32 */
       antallTotalt: number;
       oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
       sattFilterBehandlingstyper?: NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper[] | null;
     };
     "no.nav.aap.oppgave.liste.Paging": {
-      /** Format: int32 */antallPerSide: number; /** Format: int32 */
+      /** Format: int32 */
+      antallPerSide: number;
+      /** Format: int32 */
       side: number;
     };
     "no.nav.aap.oppgave.liste.UtvidetOppgavelisteFilter": {
       avklaringsbehovKoder: string[];
       behandlingstyper: NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper[];
-      "bel\u00F8pMerEnn"?: number | null;
-      "bel\u00F8pMindreEnn"?: number | null;
+      "beløpMerEnn"?: number | null;
+      "beløpMindreEnn"?: number | null;
       /**
        * Format: date
        * @example 2025-04-01
        */
       fom?: string | null;
       markertHaster?: boolean | null;
-      "p\u00E5Vent"?: boolean | null;
+      "påVent"?: boolean | null;
       returStatuser: NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser[];
       saksbehandlere: string[];
       /**
@@ -1836,12 +1946,14 @@ interface components {
        * @example 2025-04-01
        */
       tom?: string | null;
-      "ventefristUtl\u00F8pt"?: boolean | null;
-      "\u00E5rsaker": string[];
+      "ventefristUtløpt"?: boolean | null;
+      "årsaker": string[];
     };
     "no.nav.aap.oppgave.markering.MarkeringDto": {
-      begrunnelse?: string | null; /** @enum {string|null} */
-      hendelseType?: NoNavAapOppgaveMarkeringMarkeringDtoHendelseType; /** @enum {string} */
+      begrunnelse?: string | null;
+      /** @enum {string|null} */
+      hendelseType?: NoNavAapOppgaveMarkeringMarkeringDtoHendelseType;
+      /** @enum {string} */
       markeringType: NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType;
       opprettetAv?: string | null;
       opprettetAvNavn?: string | null;
@@ -1853,8 +1965,10 @@ interface components {
     };
     "no.nav.aap.oppgave.markering.MarkeringOgHistorikk": {
       begrunnelse?: string | null;
-      behandlingRef: string; /** @enum {string|null} */
-      hendelseType?: NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType; /** @enum {string} */
+      behandlingRef: string;
+      /** @enum {string|null} */
+      hendelseType?: NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType;
+      /** @enum {string} */
       markeringType: NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType;
       opprettetAv: string;
       opprettetAvNavn?: string | null;
@@ -1865,27 +1979,32 @@ interface components {
       opprettetTidspunkt: string;
     };
     "no.nav.aap.oppgave.markering.OpprettMarkeringDto": {
-      begrunnelse?: string | null; /** @enum {string|null} */
-      hendelseType?: NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType; /** @enum {string} */
+      begrunnelse?: string | null;
+      /** @enum {string|null} */
+      hendelseType?: NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType;
+      /** @enum {string} */
       markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
     };
     "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
-      /** Format: int64 */oppgaveId: number; /** Format: int64 */
+      /** Format: int64 */
+      oppgaveId: number;
+      /** Format: int64 */
       versjon: number;
     };
     "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
-      /** @enum {string|null} */behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
+      /** @enum {string|null} */
+      behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
     };
     "no.nav.aap.oppgave.tildel.SaksbehandlerDto": {
       navIdent: string;
       navn?: string | null;
     };
-    "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kRequest": {
+    "no.nav.aap.oppgave.tildel.SaksbehandlerSøkRequest": {
       enheter?: string[] | null;
       oppgaver: number[];
-      "s\u00F8ketekst": string;
+      "søketekst": string;
     };
-    "no.nav.aap.oppgave.tildel.SaksbehandlerS\u00F8kResponse": {
+    "no.nav.aap.oppgave.tildel.SaksbehandlerSøkResponse": {
       saksbehandlere: components["schemas"]["no.nav.aap.oppgave.tildel.SaksbehandlerDto"][];
     };
     "no.nav.aap.oppgave.tildel.TildelOppgaveRequest": {
@@ -1902,20 +2021,25 @@ interface components {
       tildeltSaksbehandlerNavn?: string | null;
     };
     "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
-      /** @enum {string} */kode: NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode;
+      /** @enum {string} */
+      kode: NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode;
       kreverToTrinn: boolean;
-      "l\u00F8sesAv": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv[]; /** @enum {string} */
-      "l\u00F8sesISteg": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg; /** @enum {string} */
+      "løsesAv": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv[];
+      /** @enum {string} */
+      "løsesISteg": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg;
+      /** @enum {string} */
       type: NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType;
       name: string;
     };
     "no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
       avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
-      endringer: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO"][]; /** @enum {string} */
+      endringer: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO"][];
+      /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus;
     };
     "no.nav.aap.postmottak.kontrakt.hendelse.DokumentflytStoppetHendelse": {
-      avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto"][]; /** @enum {string} */
+      avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
+      /** @enum {string} */
       behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
       /**
        * Format: date-time
@@ -1928,13 +2052,15 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      opprettetTidspunkt: string; /** Format: uuid */
+      opprettetTidspunkt: string;
+      /** Format: uuid */
       referanse: string;
       /**
        * @deprecated
        * @description Dette må oppgave utlede selv i framtiden.
        */
-      saksnummer?: string | null; /** @enum {string} */
+      saksnummer?: string | null;
+      /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
     };
     "no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO": {
@@ -1944,15 +2070,18 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      frist?: string | null; /** @enum {string} */
+      frist?: string | null;
+      /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      tidsstempel: string; /** @enum {string|null} */
-      "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
-    }; /** Format: int64 */
+      tidsstempel: string;
+      /** @enum {string|null} */
+      "årsakTilSattPåVent"?: NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
+    };
+    /** Format: int64 */
     "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": number;
     "no.nav.aap.verdityper.dokument.JournalpostId": {
       identifikator: string;
@@ -1974,7 +2103,7 @@ declare enum PathsMineOppgaverGetParametersQuerySortby {
   RESERVERT_AV = "RESERVERT_AV",
   SAKSNUMMER = "SAKSNUMMER",
   TILBAKEKREVINGS_BELOP = "TILBAKEKREVINGS_BELOP",
-  _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
+  _RSAK_TIL_OPPRETTELSE = "ÅRSAK_TIL_OPPRETTELSE"
 }
 declare enum PathsMineOppgaverGetParametersQuerySortorder {
   ASC = "ASC",
@@ -2077,13 +2206,13 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   ARBEIDSOPPTRAPPING = "ARBEIDSOPPTRAPPING",
   AVBRYT_AKTIVITETSPLIKTBEHANDLING = "AVBRYT_AKTIVITETSPLIKTBEHANDLING",
   AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
-  AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+  AVKLAR_OPPF_LGING = "AVKLAR_OPPFØLGING",
   AVKLAR_STUDENT = "AVKLAR_STUDENT",
   AVKLAR_STUDENT_V2 = "AVKLAR_STUDENT_V2",
   AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
   BARNETILLEGG = "BARNETILLEGG",
   BEHANDLENDE_ENHET = "BEHANDLENDE_ENHET",
-  BEKREFT_VURDERINGER_OPPF_LGING = "BEKREFT_VURDERINGER_OPPF\u00D8LGING",
+  BEKREFT_VURDERINGER_OPPF_LGING = "BEKREFT_VURDERINGER_OPPFØLGING",
   BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
   BREV = "BREV",
   DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -2094,12 +2223,12 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
   FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
   FASTSETT_RETTIGHETSTYPE = "FASTSETT_RETTIGHETSTYPE",
-  FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
+  FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILKÅRET",
   FASTSETT_UTTAK = "FASTSETT_UTTAK",
   FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
   FATTE_VEDTAK = "FATTE_VEDTAK",
-  FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
-  FORESL__VEDTAK_VEDTAKSLENGDE = "FORESL\u00C5_VEDTAK_VEDTAKSLENGDE",
+  FORESL__VEDTAK = "FORESLÅ_VEDTAK",
+  FORESL__VEDTAK_VEDTAKSLENGDE = "FORESLÅ_VEDTAK_VEDTAKSLENGDE",
   FORMKRAV = "FORMKRAV",
   FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
   FULLMEKTIG = "FULLMEKTIG",
@@ -2113,12 +2242,12 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   KRAV = "KRAV",
   KVALITETSSIKRING = "KVALITETSSIKRING",
   MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
-  OMGJ_RING = "OMGJ\u00D8RING",
+  OMGJ_RING = "OMGJØRING",
   OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
   OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
   OVERGANG_ARBEID = "OVERGANG_ARBEID",
   OVERGANG_UFORE = "OVERGANG_UFORE",
-  P_KLAGET_BEHANDLING = "P\u00C5KLAGET_BEHANDLING",
+  P_KLAGET_BEHANDLING = "PÅKLAGET_BEHANDLING",
   REFUSJON_KRAV = "REFUSJON_KRAV",
   SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
   SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
@@ -2127,14 +2256,14 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
   SAMORDNING_SYKESTIPEND = "SAMORDNING_SYKESTIPEND",
   SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
-  SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
+  SAMORDNING_UF_RE = "SAMORDNING_UFØRE",
   SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
   SIMULERING = "SIMULERING",
   START_BEHANDLING = "START_BEHANDLING",
-  START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
+  START_OPPF_LGINGSBEHANDLING = "START_OPPFØLGINGSBEHANDLING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
-  S_KNAD = "S\u00D8KNAD",
+  S_KNAD = "SØKNAD",
   TREKK_KLAGE = "TREKK_KLAGE",
   UDEFINERT = "UDEFINERT",
   VIS_GRUNNLAG = "VIS_GRUNNLAG",
@@ -2155,7 +2284,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
   BREV = "BREV",
   BREV_VENTEPUNKT = "BREV_VENTEPUNKT",
   MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
-  MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+  MANUELT_P_KREVD = "MANUELT_PÅKREVD",
   OVERSTYR = "OVERSTYR",
   VENTEPUNKT = "VENTEPUNKT"
 }
@@ -2172,13 +2301,13 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   ARBEIDSOPPTRAPPING = "ARBEIDSOPPTRAPPING",
   AVBRYT_AKTIVITETSPLIKTBEHANDLING = "AVBRYT_AKTIVITETSPLIKTBEHANDLING",
   AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
-  AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+  AVKLAR_OPPF_LGING = "AVKLAR_OPPFØLGING",
   AVKLAR_STUDENT = "AVKLAR_STUDENT",
   AVKLAR_STUDENT_V2 = "AVKLAR_STUDENT_V2",
   AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
   BARNETILLEGG = "BARNETILLEGG",
   BEHANDLENDE_ENHET = "BEHANDLENDE_ENHET",
-  BEKREFT_VURDERINGER_OPPF_LGING = "BEKREFT_VURDERINGER_OPPF\u00D8LGING",
+  BEKREFT_VURDERINGER_OPPF_LGING = "BEKREFT_VURDERINGER_OPPFØLGING",
   BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
   BREV = "BREV",
   DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -2189,12 +2318,12 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
   FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
   FASTSETT_RETTIGHETSTYPE = "FASTSETT_RETTIGHETSTYPE",
-  FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
+  FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILKÅRET",
   FASTSETT_UTTAK = "FASTSETT_UTTAK",
   FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
   FATTE_VEDTAK = "FATTE_VEDTAK",
-  FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
-  FORESL__VEDTAK_VEDTAKSLENGDE = "FORESL\u00C5_VEDTAK_VEDTAKSLENGDE",
+  FORESL__VEDTAK = "FORESLÅ_VEDTAK",
+  FORESL__VEDTAK_VEDTAKSLENGDE = "FORESLÅ_VEDTAK_VEDTAKSLENGDE",
   FORMKRAV = "FORMKRAV",
   FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
   FULLMEKTIG = "FULLMEKTIG",
@@ -2208,12 +2337,12 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   KRAV = "KRAV",
   KVALITETSSIKRING = "KVALITETSSIKRING",
   MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
-  OMGJ_RING = "OMGJ\u00D8RING",
+  OMGJ_RING = "OMGJØRING",
   OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
   OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
   OVERGANG_ARBEID = "OVERGANG_ARBEID",
   OVERGANG_UFORE = "OVERGANG_UFORE",
-  P_KLAGET_BEHANDLING = "P\u00C5KLAGET_BEHANDLING",
+  P_KLAGET_BEHANDLING = "PÅKLAGET_BEHANDLING",
   REFUSJON_KRAV = "REFUSJON_KRAV",
   SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
   SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
@@ -2222,14 +2351,14 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
   SAMORDNING_SYKESTIPEND = "SAMORDNING_SYKESTIPEND",
   SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
-  SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
+  SAMORDNING_UF_RE = "SAMORDNING_UFØRE",
   SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
   SIMULERING = "SIMULERING",
   START_BEHANDLING = "START_BEHANDLING",
-  START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
+  START_OPPF_LGINGSBEHANDLING = "START_OPPFØLGINGSBEHANDLING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
-  S_KNAD = "S\u00D8KNAD",
+  S_KNAD = "SØKNAD",
   TREKK_KLAGE = "TREKK_KLAGE",
   UDEFINERT = "UDEFINERT",
   VIS_GRUNNLAG = "VIS_GRUNNLAG",
@@ -2247,14 +2376,14 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   VURDER_YRKESSKADE = "VURDER_YRKESSKADE"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata {
-  AVSLAG_11_5_F_RSTEGANGSBEHANDLING = "AVSLAG_11_5_F\u00D8RSTEGANGSBEHANDLING"
+  AVSLAG_11_5_F_RSTEGANGSBEHANDLING = "AVSLAG_11_5_FØRSTEGANGSBEHANDLING"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType {
   Aktivitetsplikt = "Aktivitetsplikt",
   Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
-  F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+  F_rstegangsbehandling = "Førstegangsbehandling",
   Klage = "Klage",
-  Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+  Oppf_lgingsBehandling = "OppfølgingsBehandling",
   Revurdering = "Revurdering",
   SvarFraAndreinstans = "SvarFraAndreinstans",
   Tilbakekreving = "Tilbakekreving"
@@ -2281,15 +2410,15 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendels
   MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
   MELDEKORT = "MELDEKORT",
   MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
-  OMGJ_RING_ETTER_KLAGE = "OMGJ\u00D8RING_ETTER_KLAGE",
-  OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS = "OMGJ\u00D8RING_ETTER_SVAR_FRA_KLAGEINSTANS",
-  OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
-  OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING = "OPPF\u00D8LGINGSOPPGAVE_SAMORDNING_GRADERING",
+  OMGJ_RING_ETTER_KLAGE = "OMGJØRING_ETTER_KLAGE",
+  OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS = "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS",
+  OPPF_LGINGSOPPGAVE = "OPPFØLGINGSOPPGAVE",
+  OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING = "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING",
   SVAR_FRA_KLAGEINSTANS = "SVAR_FRA_KLAGEINSTANS",
-  S_KNAD = "S\u00D8KNAD",
+  S_KNAD = "SØKNAD",
   TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
   UDEFINERT = "UDEFINERT",
-  UF_RE_VEDTAK_HENDELSE = "UF\u00D8RE_VEDTAK_HENDELSE",
+  UF_RE_VEDTAK_HENDELSE = "UFØRE_VEDTAK_HENDELSE",
   UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
@@ -2302,20 +2431,20 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
   TOTRINNS_VURDERT = "TOTRINNS_VURDERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent {
-  VENTER_P__FUNKSJONALITET = "VENTER_P\u00C5_FUNKSJONALITET",
-  VENTER_P__FUNKSJONALITET_AVSLAG_11_27 = "VENTER_P\u00C5_FUNKSJONALITET_AVSLAG_11_27",
-  VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_P\u00C5_KLAGE_IMPLEMENTASJON",
-  VENTER_P__MASKINELL_AVKLARING = "VENTER_P\u00C5_MASKINELL_AVKLARING",
-  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
-  VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-  VENTER_P__SVAR_P__FORH_NDSVARSEL = "VENTER_P\u00C5_SVAR_P\u00C5_FORH\u00C5NDSVARSEL",
-  VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING = "VENTER_P\u00C5_UTENLANDSK_VIDEREFORING_AVKLARING",
-  VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL"
+  VENTER_P__FUNKSJONALITET = "VENTER_PÅ_FUNKSJONALITET",
+  VENTER_P__FUNKSJONALITET_AVSLAG_11_27 = "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27",
+  VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_PÅ_KLAGE_IMPLEMENTASJON",
+  VENTER_P__MASKINELL_AVKLARING = "VENTER_PÅ_MASKINELL_AVKLARING",
+  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER = "VENTER_PÅ_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
+  VENTER_P__SVAR_FRA_BRUKER = "VENTER_PÅ_SVAR_FRA_BRUKER",
+  VENTER_P__SVAR_P__FORH_NDSVARSEL = "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL",
+  VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING = "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING",
+  VENTER_P__VURDERING_AV_ROL = "VENTER_PÅ_VURDERING_AV_ROL"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
-  AVVIST_LEGEERKL_RING_ID = "AVVIST_LEGEERKL\u00C6RING_ID",
+  AVVIST_LEGEERKL_RING_ID = "AVVIST_LEGEERKLÆRING_ID",
   BEHANDLING_REFERANSE = "BEHANDLING_REFERANSE",
   BRUDD_AKTIVITETSPLIKT_INNSENDING_ID = "BRUDD_AKTIVITETSPLIKT_INNSENDING_ID",
   FAGSYSTEMINFO_BEHOV_HENDELSE_ID = "FAGSYSTEMINFO_BEHOV_HENDELSE_ID",
@@ -2329,7 +2458,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType {
   SAKSBEHANDLER_KELVIN_REFERANSE = "SAKSBEHANDLER_KELVIN_REFERANSE",
   SYKEPENGEVEDTAK_HENDELSE_ID = "SYKEPENGEVEDTAK_HENDELSE_ID",
   TILBAKEKREVING_HENDELSE_ID = "TILBAKEKREVING_HENDELSE_ID",
-  UF_REVEDTAK_HENDELSE_ID = "UF\u00D8REVEDTAK_HENDELSE_ID"
+  UF_REVEDTAK_HENDELSE_ID = "UFØREVEDTAK_HENDELSE_ID"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
   AKTIVITETSKORT = "AKTIVITETSKORT",
@@ -2340,20 +2469,20 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType {
   INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
   KABAL_HENDELSE = "KABAL_HENDELSE",
   KLAGE = "KLAGE",
-  LEGEERKL_RING = "LEGEERKL\u00C6RING",
-  LEGEERKL_RING_AVVIST = "LEGEERKL\u00C6RING_AVVIST",
+  LEGEERKL_RING = "LEGEERKLÆRING",
+  LEGEERKL_RING_AVVIST = "LEGEERKLÆRING_AVVIST",
   MANUELL_REVURDERING = "MANUELL_REVURDERING",
   MELDEKORT = "MELDEKORT",
-  NY__RSAK_TIL_BEHANDLING = "NY_\u00C5RSAK_TIL_BEHANDLING",
-  OMGJ_RING_KLAGE_REVURDERING = "OMGJ\u00D8RING_KLAGE_REVURDERING",
-  OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
+  NY__RSAK_TIL_BEHANDLING = "NY_ÅRSAK_TIL_BEHANDLING",
+  OMGJ_RING_KLAGE_REVURDERING = "OMGJØRING_KLAGE_REVURDERING",
+  OPPF_LGINGSOPPGAVE = "OPPFØLGINGSOPPGAVE",
   PDL_HENDELSE_DODSFALL_BARN = "PDL_HENDELSE_DODSFALL_BARN",
   PDL_HENDELSE_DODSFALL_BRUKER = "PDL_HENDELSE_DODSFALL_BRUKER",
   PDL_HENDELSE_FOLKEREGISTERIDENT = "PDL_HENDELSE_FOLKEREGISTERIDENT",
   SYKEPENGE_VEDTAK_HENDELSE = "SYKEPENGE_VEDTAK_HENDELSE",
-  S_KNAD = "S\u00D8KNAD",
+  S_KNAD = "SØKNAD",
   TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
-  UF_RE_VEDTAK_HENDELSE = "UF\u00D8RE_VEDTAK_HENDELSE"
+  UF_RE_VEDTAK_HENDELSE = "UFØRE_VEDTAK_HENDELSE"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus {
   AVSLUTTET = "AVSLUTTET",
@@ -2361,7 +2490,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOpp
   RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
   TIL_BEHANDLING = "TIL_BEHANDLING",
   TIL_BESLUTTER = "TIL_BESLUTTER",
-  TIL_FORH_NDSVARSEL = "TIL_FORH\u00C5NDSVARSEL",
+  TIL_FORH_NDSVARSEL = "TIL_FORHÅNDSVARSEL",
   TIL_GODKJENNING = "TIL_GODKJENNING"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn {
@@ -2373,7 +2502,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
   FOR_DETALJERT = "FOR_DETALJERT",
   IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET",
   MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
-  MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALF\u00D8RING",
+  MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALFØRING",
   MANGLENDE_KILDEHENVISNING = "MANGLENDE_KILDEHENVISNING",
   MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
   SKRIVEFEIL = "SKRIVEFEIL"
@@ -2388,12 +2517,12 @@ declare enum NoNavAapMotorApiJobbInfoDtoStatus {
 declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2420,7 +2549,7 @@ declare enum NoNavAapOppgaveReturInformasjonRsaker {
   FOR_DETALJERT = "FOR_DETALJERT",
   IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET",
   MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
-  MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALF\u00D8RING",
+  MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALFØRING",
   MANGLENDE_KILDEHENVISNING = "MANGLENDE_KILDEHENVISNING",
   MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
   SKRIVEFEIL = "SKRIVEFEIL"
@@ -2432,12 +2561,12 @@ declare enum NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus {
 declare enum NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2450,12 +2579,12 @@ declare enum NoNavAapOppgaveDriftFilterDriftRequestType {
 declare enum NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2500,12 +2629,12 @@ declare enum NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori {
 declare enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2532,7 +2661,7 @@ declare enum NoNavAapOppgaveListeOppgaveSorteringSortBy {
   RESERVERT_AV = "RESERVERT_AV",
   SAKSNUMMER = "SAKSNUMMER",
   TILBAKEKREVINGS_BELOP = "TILBAKEKREVINGS_BELOP",
-  _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
+  _RSAK_TIL_OPPRETTELSE = "ÅRSAK_TIL_OPPRETTELSE"
 }
 declare enum NoNavAapOppgaveListeOppgaveSorteringSortOrder {
   ASC = "ASC",
@@ -2541,12 +2670,12 @@ declare enum NoNavAapOppgaveListeOppgaveSorteringSortOrder {
 declare enum NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2554,12 +2683,12 @@ declare enum NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper {
 declare enum NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2597,12 +2726,12 @@ declare enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
 declare enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -2631,7 +2760,7 @@ declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg {
   AVKLAR_SAK = "AVKLAR_SAK",
   AVKLAR_TEMA = "AVKLAR_TEMA",
   DIGITALISER_DOKUMENT = "DIGITALISER_DOKUMENT",
-  ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALF\u00D8RING",
+  ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALFØRING",
   IVERKSETTES = "IVERKSETTES",
   OVERLEVER_TIL_FAGSYSTEM = "OVERLEVER_TIL_FAGSYSTEM",
   SETT_FAGSAK = "SETT_FAGSAK",
@@ -2641,7 +2770,7 @@ declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg {
 }
 declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType {
   MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
-  MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+  MANUELT_P_KREVD = "MANUELT_PÅKREVD",
   VENTEPUNKT = "VENTEPUNKT"
 }
 declare enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus {
@@ -2651,9 +2780,9 @@ declare enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus 
   SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER"
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
-  DokumentH_ndtering = "DokumentH\u00E5ndtering",
+  DokumentH_ndtering = "DokumentHåndtering",
   Fordeling = "Fordeling",
-  Journalf_ring = "Journalf\u00F8ring"
+  Journalf_ring = "Journalføring"
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus {
   AVSLUTTET = "AVSLUTTET",
@@ -2668,12 +2797,12 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
   SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER"
 }
 declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
-  VENTER_P__BEHANDLING_I_GOSYS = "VENTER_P\u00C5_BEHANDLING_I_GOSYS",
-  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
-  VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-  VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL"
+  VENTER_P__BEHANDLING_I_GOSYS = "VENTER_PÅ_BEHANDLING_I_GOSYS",
+  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER = "VENTER_PÅ_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
+  VENTER_P__SVAR_FRA_BRUKER = "VENTER_PÅ_SVAR_FRA_BRUKER",
+  VENTER_P__VURDERING_AV_ROL = "VENTER_PÅ_VURDERING_AV_ROL"
 }
 type operations = Record<string, never>;
 //#endregion
