@@ -5132,6 +5132,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/drift/behandling/{referanse}/yrkesskade": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.drift.YrkesskadeDriftsinfoDto"][];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/drift/behandling/{referanse}/rettighetsinfo": {
         parameters: {
             query?: never;
@@ -7342,6 +7380,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.krav.KravGrunnlagDto": {
             "harTilgangTil\u00C5Saksbehandle": boolean;
             nyeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto"][];
+            "s\u00F8knader": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.S\u00F8knadUtenKravDto"][];
             "s\u00F8knaderUtenKravvurdering": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.S\u00F8knadUtenKravDto"][];
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto"][];
         };
@@ -8136,6 +8175,11 @@ export interface components {
         "no.nav.aap.behandlingsflyt.drift.ForenkletAvklaringsbehov": {
             definisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
             endretAv: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "fristSettP\u00E5Vent"?: string | null;
             perioderKreverVurdering?: components["schemas"]["no.nav.aap.komponenter.type.Periode"][] | null;
             perioderUgyldigVurdering?: components["schemas"]["no.nav.aap.komponenter.type.Periode"][] | null;
             /** @enum {string} */
@@ -8211,6 +8255,22 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             vurdertTidspunkt?: string | null;
+        };
+        "no.nav.aap.behandlingsflyt.drift.YrkesskadeDriftsinfoDto": {
+            kildesystem: string;
+            ref: string;
+            /** Format: int32 */
+            saksnummer?: number | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            skadedato?: string | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            vedtaksdato?: string | null;
         };
         "no.nav.aap.behandlingsflyt.drift.`DriftApiKt$driftApi$1$AvbrytBrevBody`": {
             begrunnelse: string;
@@ -9238,13 +9298,13 @@ export interface components {
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokumentV0": {
             begrunnelse?: string | null;
             /** @enum {string|null} */
-            underkategori?: "ARBEIDSUTPROVING" | "BARNETILLEGG" | "ETABLERING" | "ETTERSENDELSE_TIL_FEILUTBETALING" | "ETTERSENDELSE_TIL_KLAGE" | "FENGSEL_VARETEKT" | "HELSEOPPLYSNINGER" | "INSTITUSJONSOPPHOLD" | "KARAKTERUTSKRIFTER_OG_CV" | "KLAGE" | "LAERLING" | "MEDLEMSKAP" | "MELDEKORT" | "PARTSINNSYN" | "REFUSJONSKRAV" | "SLUTTAVTALE" | "STUDENTBESTEMMELSEN" | "TILTAKSRAPPORT" | "YRKESSKADE" | null;
+            underkategori?: "ARBEIDSUTPROVING" | "BARNETILLEGG" | "BEHOLDE_AAP_I_UTLANDET" | "DOKUMENTASJON_TREKK_SOKNAD" | "ETABLERING" | "ETTERSENDELSE_TIL_FEILUTBETALING" | "ETTERSENDELSE_TIL_KLAGE" | "FENGSEL_VARETEKT" | "HELSEOPPLYSNINGER" | "INSTITUSJONSOPPHOLD" | "KARAKTERUTSKRIFTER_OG_CV" | "KLAGE" | "LAERLING" | "MEDLEMSKAP" | "MELDEKORT" | "PARTSINNSYN" | "REFUSJONSKRAV" | "SLUTTAVTALE" | "STUDENTBESTEMMELSEN" | "TILTAKSRAPPORT" | "YRKESSKADE" | null;
             "\u00E5rsakerTilBehandling": ("AKTIVITETSMELDING" | "AKTIVITETSPLIKTBEHANDLING_AVBRUTT" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "AVVIST_LEGEERKLÆRING" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DIALOGMELDING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "ETABLERING_EGEN_VIRKSOMHET" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE" | "KLAGE_TRUKKET" | "LEGEERKLÆRING" | "LOVVALG_OG_MEDLEMSKAP" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "OVERGANG_UFORE_AUTOMATISK_STANS" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_INNTEKTSBORTFALL" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_BARNEPENSJON" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VEDTAKSLENGDE_MANUELT" | "VURDER_AVSLAG_11_27" | "VURDER_KRAV" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AnnetRelevantDokumentV1": {
             begrunnelse: string;
             /** @enum {string|null} */
-            underkategori?: "ARBEIDSUTPROVING" | "BARNETILLEGG" | "ETABLERING" | "ETTERSENDELSE_TIL_FEILUTBETALING" | "ETTERSENDELSE_TIL_KLAGE" | "FENGSEL_VARETEKT" | "HELSEOPPLYSNINGER" | "INSTITUSJONSOPPHOLD" | "KARAKTERUTSKRIFTER_OG_CV" | "KLAGE" | "LAERLING" | "MEDLEMSKAP" | "MELDEKORT" | "PARTSINNSYN" | "REFUSJONSKRAV" | "SLUTTAVTALE" | "STUDENTBESTEMMELSEN" | "TILTAKSRAPPORT" | "YRKESSKADE" | null;
+            underkategori?: "ARBEIDSUTPROVING" | "BARNETILLEGG" | "BEHOLDE_AAP_I_UTLANDET" | "DOKUMENTASJON_TREKK_SOKNAD" | "ETABLERING" | "ETTERSENDELSE_TIL_FEILUTBETALING" | "ETTERSENDELSE_TIL_KLAGE" | "FENGSEL_VARETEKT" | "HELSEOPPLYSNINGER" | "INSTITUSJONSOPPHOLD" | "KARAKTERUTSKRIFTER_OG_CV" | "KLAGE" | "LAERLING" | "MEDLEMSKAP" | "MELDEKORT" | "PARTSINNSYN" | "REFUSJONSKRAV" | "SLUTTAVTALE" | "STUDENTBESTEMMELSEN" | "TILTAKSRAPPORT" | "YRKESSKADE" | null;
             "\u00E5rsakerTilBehandling": ("AKTIVITETSMELDING" | "AKTIVITETSPLIKTBEHANDLING_AVBRUTT" | "AKTIVITETSPLIKT_11_7" | "AKTIVITETSPLIKT_11_9" | "AVVIST_LEGEERKLÆRING" | "BARNETILLEGG" | "BARNETILLEGG_SATS_REGULERING" | "DIALOGMELDING" | "DØDSFALL_BARN" | "DØDSFALL_BRUKER" | "EFFEKTUER_AKTIVITETSPLIKT" | "EFFEKTUER_AKTIVITETSPLIKT_11_9" | "ETABLERING_EGEN_VIRKSOMHET" | "FORUTGAENDE_MEDLEMSKAP" | "FRITAK_MELDEPLIKT" | "G_REGULERING" | "HELHETLIG_VURDERING" | "INSTITUSJONSOPPHOLD" | "KLAGE" | "KLAGE_TRUKKET" | "LEGEERKLÆRING" | "LOVVALG_OG_MEDLEMSKAP" | "MELDEKORT" | "MIGRER_RETTIGHETSPERIODE" | "MOTTATT_KABAL_HENDELSE" | "OPPFØLGINGSOPPGAVE" | "OPPHOLDSKRAV" | "OVERGANG_ARBEID" | "OVERGANG_UFORE" | "OVERGANG_UFORE_AUTOMATISK_STANS" | "REFUSJONSKRAV" | "REVURDERING_AVBRUTT" | "REVURDER_BEREGNING" | "REVURDER_INNTEKTSBORTFALL" | "REVURDER_LOVVALG" | "REVURDER_MANUELL_INNTEKT" | "REVURDER_MEDLEMSKAP" | "REVURDER_MELDEPLIKT_RIMELIG_GRUNN" | "REVURDER_SAMORDNING" | "REVURDER_SAMORDNING_ANDRE_FOLKETRYGDYTELSER" | "REVURDER_SAMORDNING_ANDRE_STATLIGE_YTELSER" | "REVURDER_SAMORDNING_ARBEIDSGIVER" | "REVURDER_SAMORDNING_BARNEPENSJON" | "REVURDER_SAMORDNING_TJENESTEPENSJON" | "REVURDER_SAMORDNING_UFØRE" | "REVURDER_STUDENT" | "REVURDER_SYKEPENGEERSTATNING" | "REVURDER_SYKESTIPEND" | "REVURDER_YRKESSKADE" | "SAMORDNING_OG_AVREGNING" | "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND" | "SØKNAD" | "SØKNAD_TRUKKET" | "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT" | "UTVID_VEDTAKSLENGDE" | "VEDTAKSLENGDE_MANUELT" | "VURDER_AVSLAG_11_27" | "VURDER_KRAV" | "VURDER_RETTIGHETSPERIODE")[];
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.ArbeidIPeriodeV0": {
