@@ -26,7 +26,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description Accepted */202: {
+        /** @description Accepted */
+        202: {
           headers: {
             [name: string]: unknown;
           };
@@ -64,7 +65,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description Accepted */202: {
+        /** @description Accepted */
+        202: {
           headers: {
             [name: string]: unknown;
           };
@@ -88,7 +90,8 @@ interface paths {
       cookie?: never;
     };
     get?: never;
-    put?: never; /** OppgaveHendelse */
+    put?: never;
+    /** OppgaveHendelse */
     post: {
       parameters: {
         query?: never;
@@ -102,7 +105,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description Accepted */202: {
+        /** @description Accepted */
+        202: {
           headers: {
             [name: string]: unknown;
           };
@@ -126,7 +130,8 @@ interface paths {
       cookie?: never;
     };
     get?: never;
-    put?: never; /** DokumentflytStoppetHendelse */
+    put?: never;
+    /** DokumentflytStoppetHendelse */
     post: {
       parameters: {
         query?: never;
@@ -140,7 +145,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description Accepted */202: {
+        /** @description Accepted */
+        202: {
           headers: {
             [name: string]: unknown;
           };
@@ -178,7 +184,8 @@ interface paths {
         };
       };
       responses: {
-        /** @description Accepted */202: {
+        /** @description Accepted */
+        202: {
           headers: {
             [name: string]: unknown;
           };
@@ -199,19 +206,26 @@ type webhooks = Record<string, never>;
 interface components {
   schemas: {
     "no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon": {
-      /** @enum {string} */kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
+      /** @enum {string} */
+      kode: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode;
       kreverToTrinn: boolean;
       kvalitetssikres: boolean;
-      "l\u00F8sesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[]; /** @enum {string} */
-      "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg; /** @enum {string} */
+      "løsesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[];
+      /** @enum {string} */
+      "løsesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg;
+      "måRevurderesEtterOpphør": boolean;
+      /** @enum {string} */
       type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
       name: string;
-    }; /** Format: uuid */
+    };
+    /** Format: uuid */
     "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": string;
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
       avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.avklaringsbehov.Definisjon"];
-      endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][]; /** Format: int64 */
-      id?: number | null; /** @enum {string} */
+      endringer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO"][];
+      /** Format: int64 */
+      id?: number | null;
+      /** @enum {string} */
       status: NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.EndringDTO": {
@@ -221,18 +235,21 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      frist?: string | null; /** @enum {string} */
+      frist?: string | null;
+      /** @enum {string} */
       status: NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
       tidsstempel: string;
-      "\u00E5rsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur"][]; /** @enum {string|null} */
-      "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
+      "årsakTilRetur": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.ÅrsakTilRetur"][];
+      /** @enum {string|null} */
+      "årsakTilSattPåVent"?: NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.hendelse.TilbakekrevingsbehandlingOppdatertHendelse": {
-      /** @enum {string} */behandlingStatus: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
+      /** @enum {string} */
+      behandlingStatus: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
       behandlingref: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
       /**
        * Format: date
@@ -247,11 +264,13 @@ interface components {
       sakOpprettet: string;
       saksbehandlingURL: string;
       saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
-      "totaltFeilutbetaltBel\u00F8p": number; /** @enum {string|null} */
+      "totaltFeilutbetaltBeløp": number;
+      /** @enum {string|null} */
       venteGrunn?: NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
-      /** @enum {string} */"\u00E5rsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
+    "no.nav.aap.behandlingsflyt.kontrakt.hendelse.ÅrsakTilRetur": {
+      /** @enum {string} */
+      "årsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer": Record<string, never>;
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.ArbeidIPeriode": {
@@ -273,7 +292,8 @@ interface components {
       diagnoserPeriodisert: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.DiagnoserMedPeriode"][];
       fritaksvurderinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Fritakvurdering"][] | null;
       institusjonsopphold: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][];
-      perioderMedArbeidsopptrapping: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][]; /** @enum {string|null} */
+      perioderMedArbeidsopptrapping: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.PeriodeDTO"][];
+      /** @enum {string|null} */
       resultat?: NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResultat;
       rettighetstypePerioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.RettighetstypePeriode"][];
       samordning: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO"];
@@ -283,12 +303,12 @@ interface components {
        * @example 2025-04-01T12:30:00
        */
       vedtakstidspunkt?: string | null;
-      "vedtattStansOpph\u00F8r": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.StansEllerOpph\u00F8r"][];
-      "vilk\u00E5rsResultat": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rsResultatDTO"];
+      "vedtattStansOpphør": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.StansEllerOpphør"][];
+      "vilkårsResultat": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.VilkårsResultatDTO"];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO": {
       grunnlag11_19dto?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Grunnlag11_19DTO"];
-      "grunnlagUf\u00F8re"?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagUf\u00F8reDTO"];
+      "grunnlagUføre"?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagUføreDTO"];
       grunnlagYrkesskade?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagYrkesskadeDTO"];
       /**
        * Format: date
@@ -327,41 +347,50 @@ interface components {
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Grunnlag11_19DTO": {
       er6GBegrenset: boolean;
-      erGjennomsnitt: boolean; /** Format: double */
-      grunnlaget: number; /** @description Key type: kotlin.String */
+      erGjennomsnitt: boolean;
+      /** Format: double */
+      grunnlaget: number;
+      /** @description Key type: kotlin.String */
       inntekter: {
         [key: string]: number;
       };
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagUf\u00F8reDTO": {
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagUføreDTO": {
       grunnlag: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Grunnlag11_19DTO"];
       grunnlagYtterligereNedsatt: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Grunnlag11_19DTO"];
-      grunnlaget: number; /** @enum {string} */
-      type: NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType; /** @description Key type: kotlin.String */
-      "uf\u00F8reInntekterFraForeg\u00E5ende\u00C5r": {
+      grunnlaget: number;
+      /** @enum {string} */
+      type: NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType;
+      /** @description Key type: kotlin.String */
+      "uføreInntekterFraForegåendeÅr": {
         [key: string]: number;
-      }; /** Format: int32 */
-      "uf\u00F8reYtterligereNedsattArbeidsevne\u00C5r": number;
+      };
+      /** Format: int32 */
+      "uføreYtterligereNedsattArbeidsevneÅr": number;
       /**
        * Format: int32
        * @deprecated
        * @description Bruk uføregrader.
        */
-      "uf\u00F8regrad": number;
-      "uf\u00F8regrader": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uf\u00F8re"][];
+      "uføregrad": number;
+      "uføregrader": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uføre"][];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.GrunnlagYrkesskadeDTO": {
       andelSomIkkeSkyldesYrkesskade: number;
-      andelSomSkyldesYrkesskade: number; /** Format: int32 */
+      andelSomSkyldesYrkesskade: number;
+      /** Format: int32 */
       andelYrkesskade: number;
-      "antatt\u00C5rligInntektYrkesskadeTidspunktet": number; /** Format: int32 */
+      "antattÅrligInntektYrkesskadeTidspunktet": number;
+      /** Format: int32 */
       benyttetAndelForYrkesskade: number;
       beregningsgrunnlag: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.BeregningsgrunnlagDTO"];
       grunnlagEtterYrkesskadeFordel: number;
       grunnlagForBeregningAvYrkesskadeandel: number;
       grunnlaget: number;
-      "inkludererUf\u00F8re": boolean; /** Format: int32 */
-      terskelverdiForYrkesskade: number; /** Format: int32 */
+      "inkludererUføre": boolean;
+      /** Format: int32 */
+      terskelverdiForYrkesskade: number;
+      /** Format: int32 */
       yrkesskadeTidspunkt: number;
       yrkesskadeinntektIG: number;
     };
@@ -386,7 +415,8 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      fraDato: string; /** @enum {string} */
+      fraDato: string;
+      /** @enum {string} */
       rettighetstype: NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype;
       /**
        * Format: date
@@ -398,7 +428,7 @@ interface components {
       arbeidsgiver: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Arbeidsgiver"][];
       avregningAndreYtelser: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.AvregningAndreYtelser"][];
       statligeYtelser: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.StatligeYtelser"][];
-      "uf\u00F8re": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Uf\u00F8rePerioder"][];
+      "uføre": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.UførePerioder"][];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Arbeidsgiver": {
       /**
@@ -422,7 +452,8 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      tom: string; /** @enum {string} */
+      tom: string;
+      /** @enum {string} */
       ytelse: NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOAvregningAndreYtelserYtelse;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.StatligeYtelser": {
@@ -430,21 +461,24 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      fom: string; /** Format: int32 */
+      fom: string;
+      /** Format: int32 */
       prosent: number;
       /**
        * Format: date
        * @example 2025-04-01
        */
-      tom: string; /** @enum {string} */
+      tom: string;
+      /** @enum {string} */
       ytelse: NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOStatligeYtelserYtelse;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.Uf\u00F8rePerioder": {
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.SamordningDTO.UførePerioder": {
       /**
        * Format: date
        * @example 2025-04-01
        */
-      fom: string; /** Format: int32 */
+      fom: string;
+      /** Format: int32 */
       grad: number;
       /**
        * Format: date
@@ -452,14 +486,15 @@ interface components {
        */
       tom: string;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.StansEllerOpph\u00F8r": {
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.StansEllerOpphør": {
       /**
        * Format: date
        * @example 2025-04-01
        */
-      fom: string; /** @enum {string} */
+      fom: string;
+      /** @enum {string} */
       type: NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRType;
-      "\u00E5rsaker": NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker[];
+      "årsaker": NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker[];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.StoppetBehandling": {
       avklaringsbehov: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
@@ -468,9 +503,12 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      behandlingOpprettetTidspunkt: string; /** Format: uuid */
-      behandlingReferanse: string; /** @enum {string} */
-      behandlingStatus: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus; /** @enum {string} */
+      behandlingOpprettetTidspunkt: string;
+      /** Format: uuid */
+      behandlingReferanse: string;
+      /** @enum {string} */
+      behandlingStatus: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingStatus;
+      /** @enum {string} */
       behandlingType: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType;
       /**
        * Format: date-time
@@ -485,45 +523,63 @@ interface components {
        */
       mottattTid: string;
       nyeMeldekort: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.MeldekortDTO"][];
-      opprettetAv?: string | null; /** Format: uuid */
+      opprettetAv?: string | null;
+      /** Format: uuid */
       relatertBehandling?: string | null;
-      relatertFagsystem?: string | null; /** @enum {string} */
+      relatertFagsystem?: string | null;
+      /** @enum {string} */
       sakStatus: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus;
-      saksnummer: string; /** @enum {string} */
+      saksnummer: string;
+      /** @enum {string} */
       soknadsFormat: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSoknadsFormat;
-      "s\u00F8knadIder": components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
+      "søknadIder": components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"][];
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
       tidspunktSisteEndring?: string | null;
       versjon: string;
-      vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[]; /** @enum {string} */
-      "\u00E5rsakTilOpprettelse": NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse;
+      vurderingsbehov: NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov[];
+      /** @enum {string} */
+      "årsakTilOpprettelse": NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse;
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelseDTO": {
       perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO"][];
     };
     "no.nav.aap.behandlingsflyt.kontrakt.statistikk.TilkjentYtelsePeriodeDTO": {
-      /** Format: int32 */antallBarn: number; /** Format: double */
-      arbeidGradering: number; /** Format: double */
-      barnepensjonDagsats: number; /** Format: double */
-      barnetillegg: number; /** Format: double */
-      barnetilleggSats: number; /** Format: double */
+      /** Format: int32 */
+      antallBarn: number;
+      /** Format: double */
+      arbeidGradering: number;
+      /** Format: double */
+      barnepensjonDagsats: number;
+      /** Format: double */
+      barnetillegg: number;
+      /** Format: double */
+      barnetilleggSats: number;
+      /** Format: double */
       dagsats: number;
       /**
        * Format: date
        * @example 2025-04-01
        */
-      fraDato: string; /** Format: double */
-      gradering: number; /** Format: double */
-      institusjonGradering: number; /** Format: double */
-      meldepliktGradering: number; /** @enum {string} */
-      minsteSats: NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats; /** Format: double */
-      redusertDagsats: number; /** Format: double */
-      samordningArbeidsgiverGradering: number; /** Format: double */
-      samordningGradering: number; /** Format: double */
-      "samordningUf\u00F8regradering": number;
+      fraDato: string;
+      /** Format: double */
+      gradering: number;
+      /** Format: double */
+      institusjonGradering: number;
+      /** Format: double */
+      meldepliktGradering: number;
+      /** @enum {string} */
+      minsteSats: NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats;
+      /** Format: double */
+      redusertDagsats: number;
+      /** Format: double */
+      samordningArbeidsgiverGradering: number;
+      /** Format: double */
+      samordningGradering: number;
+      /** Format: double */
+      "samordningUføregradering": number;
       /**
        * Format: date
        * @example 2025-04-01
@@ -535,40 +591,45 @@ interface components {
        */
       utbetalingsdato: string;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uf\u00F8re": {
-      /** Format: int32 */grad: number;
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Uføre": {
+      /** Format: int32 */
+      grad: number;
       /**
        * Format: date
        * @example 2025-04-01
        */
       virkningstidspunkt: string;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rDTO": {
-      perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rsPeriodeDTO"][]; /** @enum {string} */
-      "vilk\u00E5rType": NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType;
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.VilkårDTO": {
+      perioder: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.VilkårsPeriodeDTO"][];
+      /** @enum {string} */
+      "vilkårType": NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rsPeriodeDTO": {
-      "avslags\u00E5rsak"?: string | null;
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.VilkårsPeriodeDTO": {
+      "avslagsårsak"?: string | null;
       /**
        * Format: date
        * @example 2025-04-01
        */
       fraDato: string;
-      "innvilgelses\u00E5rsak"?: string | null;
+      "innvilgelsesårsak"?: string | null;
       manuellVurdering: boolean;
       /**
        * Format: date
        * @example 2025-04-01
        */
-      tilDato: string; /** @enum {string} */
+      tilDato: string;
+      /** @enum {string} */
       utfall: NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall;
     };
-    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rsResultatDTO": {
-      /** @enum {string} */typeBehandling: NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling;
-      "vilk\u00E5r": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.Vilk\u00E5rDTO"][];
+    "no.nav.aap.behandlingsflyt.kontrakt.statistikk.VilkårsResultatDTO": {
+      /** @enum {string} */
+      typeBehandling: NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling;
+      "vilkår": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.statistikk.VilkårDTO"][];
     };
     "no.nav.aap.oppgave.statistikk.OppgaveHendelse": {
-      /** @enum {string} */hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
+      /** @enum {string} */
+      hendelse: NoNavAapOppgaveStatistikkOppgaveHendelseHendelse;
       oppgaveTilStatistikkDto: components["schemas"]["no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto"];
       /**
        * Format: date-time
@@ -577,8 +638,10 @@ interface components {
       sendtTidspunkt: string;
     };
     "no.nav.aap.oppgave.statistikk.OppgaveTilStatistikkDto": {
-      avklaringsbehovKode: string; /** Format: uuid */
-      behandlingRef?: string | null; /** @enum {string} */
+      avklaringsbehovKode: string;
+      /** Format: uuid */
+      behandlingRef?: string | null;
+      /** @enum {string} */
       behandlingstype: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype;
       endretAv?: string | null;
       /**
@@ -588,8 +651,10 @@ interface components {
       endretTidspunkt?: string | null;
       enhet: string;
       harAvslagSykdomMarkering?: boolean | null;
-      harHasteMarkering?: boolean | null; /** Format: int64 */
-      id?: number | null; /** Format: int64 */
+      harHasteMarkering?: boolean | null;
+      /** Format: int64 */
+      id?: number | null;
+      /** Format: int64 */
       journalpostId?: number | null;
       opprettetAv: string;
       /**
@@ -604,25 +669,32 @@ interface components {
        * @example 2025-04-01T12:30:00
        */
       reservertTidspunkt?: string | null;
-      saksnummer?: string | null; /** @enum {string} */
-      status: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus; /** Format: int64 */
+      saksnummer?: string | null;
+      /** @enum {string} */
+      status: NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoStatus;
+      /** Format: int64 */
       versjon: number;
     };
     "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
-      /** @enum {string} */kode: NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode;
+      /** @enum {string} */
+      kode: NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode;
       kreverToTrinn: boolean;
-      "l\u00F8sesAv": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv[]; /** @enum {string} */
-      "l\u00F8sesISteg": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg; /** @enum {string} */
+      "løsesAv": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv[];
+      /** @enum {string} */
+      "løsesISteg": NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg;
+      /** @enum {string} */
       type: NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType;
       name: string;
     };
     "no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto": {
       avklaringsbehovDefinisjon: components["schemas"]["no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon"];
-      endringer: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO"][]; /** @enum {string} */
+      endringer: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO"][];
+      /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus;
     };
     "no.nav.aap.postmottak.kontrakt.hendelse.DokumentflytStoppetHendelse": {
-      avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto"][]; /** @enum {string} */
+      avklaringsbehov: components["schemas"]["no.nav.aap.postmottak.kontrakt.hendelse.AvklaringsbehovHendelseDto"][];
+      /** @enum {string} */
       behandlingType: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType;
       /**
        * Format: date-time
@@ -635,13 +707,15 @@ interface components {
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      opprettetTidspunkt: string; /** Format: uuid */
+      opprettetTidspunkt: string;
+      /** Format: uuid */
       referanse: string;
       /**
        * @deprecated
        * @description Dette må oppgave utlede selv i framtiden.
        */
-      saksnummer?: string | null; /** @enum {string} */
+      saksnummer?: string | null;
+      /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
     };
     "no.nav.aap.postmottak.kontrakt.hendelse.EndringDTO": {
@@ -651,15 +725,18 @@ interface components {
        * Format: date
        * @example 2025-04-01
        */
-      frist?: string | null; /** @enum {string} */
+      frist?: string | null;
+      /** @enum {string} */
       status: NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
       /**
        * Format: date-time
        * @example 2025-04-01T12:30:00
        */
-      tidsstempel: string; /** @enum {string|null} */
-      "\u00E5rsakTilSattP\u00E5Vent"?: NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
-    }; /** Format: int64 */
+      tidsstempel: string;
+      /** @enum {string|null} */
+      "årsakTilSattPåVent"?: NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent;
+    };
+    /** Format: int64 */
     "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": number;
     "no.nav.aap.verdityper.dokument.JournalpostId": {
       identifikator: string;
@@ -769,13 +846,13 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   ARBEIDSOPPTRAPPING = "ARBEIDSOPPTRAPPING",
   AVBRYT_AKTIVITETSPLIKTBEHANDLING = "AVBRYT_AKTIVITETSPLIKTBEHANDLING",
   AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
-  AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
+  AVKLAR_OPPF_LGING = "AVKLAR_OPPFØLGING",
   AVKLAR_STUDENT = "AVKLAR_STUDENT",
   AVKLAR_STUDENT_V2 = "AVKLAR_STUDENT_V2",
   AVKLAR_SYKDOM = "AVKLAR_SYKDOM",
   BARNETILLEGG = "BARNETILLEGG",
   BEHANDLENDE_ENHET = "BEHANDLENDE_ENHET",
-  BEKREFT_VURDERINGER_OPPF_LGING = "BEKREFT_VURDERINGER_OPPF\u00D8LGING",
+  BEKREFT_VURDERINGER_OPPF_LGING = "BEKREFT_VURDERINGER_OPPFØLGING",
   BEREGN_TILKJENT_YTELSE = "BEREGN_TILKJENT_YTELSE",
   BREV = "BREV",
   DU_ER_ET_ANNET_STED = "DU_ER_ET_ANNET_STED",
@@ -786,12 +863,12 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   FASTSETT_GRUNNLAG = "FASTSETT_GRUNNLAG",
   FASTSETT_MELDEPERIODER = "FASTSETT_MELDEPERIODER",
   FASTSETT_RETTIGHETSTYPE = "FASTSETT_RETTIGHETSTYPE",
-  FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILK\u00C5RET",
+  FASTSETT_SYKDOMSVILK_RET = "FASTSETT_SYKDOMSVILKÅRET",
   FASTSETT_UTTAK = "FASTSETT_UTTAK",
   FASTSETT_VEDTAKSLENGDE = "FASTSETT_VEDTAKSLENGDE",
   FATTE_VEDTAK = "FATTE_VEDTAK",
-  FORESL__VEDTAK = "FORESL\u00C5_VEDTAK",
-  FORESL__VEDTAK_VEDTAKSLENGDE = "FORESL\u00C5_VEDTAK_VEDTAKSLENGDE",
+  FORESL__VEDTAK = "FORESLÅ_VEDTAK",
+  FORESL__VEDTAK_VEDTAKSLENGDE = "FORESLÅ_VEDTAK_VEDTAKSLENGDE",
   FORMKRAV = "FORMKRAV",
   FRITAK_MELDEPLIKT = "FRITAK_MELDEPLIKT",
   FULLMEKTIG = "FULLMEKTIG",
@@ -805,12 +882,12 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   KRAV = "KRAV",
   KVALITETSSIKRING = "KVALITETSSIKRING",
   MANGLENDE_LIGNING = "MANGLENDE_LIGNING",
-  OMGJ_RING = "OMGJ\u00D8RING",
+  OMGJ_RING = "OMGJØRING",
   OPPRETTHOLDELSE = "OPPRETTHOLDELSE",
   OPPRETT_REVURDERING = "OPPRETT_REVURDERING",
   OVERGANG_ARBEID = "OVERGANG_ARBEID",
   OVERGANG_UFORE = "OVERGANG_UFORE",
-  P_KLAGET_BEHANDLING = "P\u00C5KLAGET_BEHANDLING",
+  P_KLAGET_BEHANDLING = "PÅKLAGET_BEHANDLING",
   REFUSJON_KRAV = "REFUSJON_KRAV",
   SAMORDNING_ANDRE_STATLIGE_YTELSER = "SAMORDNING_ANDRE_STATLIGE_YTELSER",
   SAMORDNING_ARBEIDSGIVER = "SAMORDNING_ARBEIDSGIVER",
@@ -819,14 +896,14 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
   SAMORDNING_GRADERING = "SAMORDNING_GRADERING",
   SAMORDNING_SYKESTIPEND = "SAMORDNING_SYKESTIPEND",
   SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV = "SAMORDNING_TJENESTEPENSJON_REFUSJONSKRAV",
-  SAMORDNING_UF_RE = "SAMORDNING_UF\u00D8RE",
+  SAMORDNING_UF_RE = "SAMORDNING_UFØRE",
   SEND_FORVALTNINGSMELDING = "SEND_FORVALTNINGSMELDING",
   SIMULERING = "SIMULERING",
   START_BEHANDLING = "START_BEHANDLING",
-  START_OPPF_LGINGSBEHANDLING = "START_OPPF\u00D8LGINGSBEHANDLING",
+  START_OPPF_LGINGSBEHANDLING = "START_OPPFØLGINGSBEHANDLING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   SYKDOMSVURDERING_BREV = "SYKDOMSVURDERING_BREV",
-  S_KNAD = "S\u00D8KNAD",
+  S_KNAD = "SØKNAD",
   TREKK_KLAGE = "TREKK_KLAGE",
   UDEFINERT = "UDEFINERT",
   VIS_GRUNNLAG = "VIS_GRUNNLAG",
@@ -847,7 +924,7 @@ declare enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
   BREV = "BREV",
   BREV_VENTEPUNKT = "BREV_VENTEPUNKT",
   MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
-  MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+  MANUELT_P_KREVD = "MANUELT_PÅKREVD",
   OVERSTYR = "OVERSTYR",
   VENTEPUNKT = "VENTEPUNKT"
 }
@@ -870,17 +947,17 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus {
   TOTRINNS_VURDERT = "TOTRINNS_VURDERT"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent {
-  VENTER_P__FUNKSJONALITET = "VENTER_P\u00C5_FUNKSJONALITET",
-  VENTER_P__FUNKSJONALITET_AVSLAG_11_27 = "VENTER_P\u00C5_FUNKSJONALITET_AVSLAG_11_27",
-  VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_P\u00C5_KLAGE_IMPLEMENTASJON",
-  VENTER_P__MASKINELL_AVKLARING = "VENTER_P\u00C5_MASKINELL_AVKLARING",
-  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
-  VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-  VENTER_P__SVAR_P__FORH_NDSVARSEL = "VENTER_P\u00C5_SVAR_P\u00C5_FORH\u00C5NDSVARSEL",
-  VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING = "VENTER_P\u00C5_UTENLANDSK_VIDEREFORING_AVKLARING",
-  VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL"
+  VENTER_P__FUNKSJONALITET = "VENTER_PÅ_FUNKSJONALITET",
+  VENTER_P__FUNKSJONALITET_AVSLAG_11_27 = "VENTER_PÅ_FUNKSJONALITET_AVSLAG_11_27",
+  VENTER_P__KLAGE_IMPLEMENTASJON = "VENTER_PÅ_KLAGE_IMPLEMENTASJON",
+  VENTER_P__MASKINELL_AVKLARING = "VENTER_PÅ_MASKINELL_AVKLARING",
+  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER = "VENTER_PÅ_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
+  VENTER_P__SVAR_FRA_BRUKER = "VENTER_PÅ_SVAR_FRA_BRUKER",
+  VENTER_P__SVAR_P__FORH_NDSVARSEL = "VENTER_PÅ_SVAR_PÅ_FORHÅNDSVARSEL",
+  VENTER_P__UTENLANDSK_VIDEREFORING_AVKLARING = "VENTER_PÅ_UTENLANDSK_VIDEREFORING_AVKLARING",
+  VENTER_P__VURDERING_AV_ROL = "VENTER_PÅ_VURDERING_AV_ROL"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus {
   AVSLUTTET = "AVSLUTTET",
@@ -888,7 +965,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOpp
   RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
   TIL_BEHANDLING = "TIL_BEHANDLING",
   TIL_BESLUTTER = "TIL_BESLUTTER",
-  TIL_FORH_NDSVARSEL = "TIL_FORH\u00C5NDSVARSEL",
+  TIL_FORH_NDSVARSEL = "TIL_FORHÅNDSVARSEL",
   TIL_GODKJENNING = "TIL_GODKJENNING"
 }
 declare enum NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn {
@@ -900,7 +977,7 @@ declare enum NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak {
   FOR_DETALJERT = "FOR_DETALJERT",
   IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET",
   MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
-  MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALF\u00D8RING",
+  MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALFØRING",
   MANGLENDE_KILDEHENVISNING = "MANGLENDE_KILDEHENVISNING",
   MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
   SKRIVEFEIL = "SKRIVEFEIL"
@@ -909,9 +986,9 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkAvsluttetBehandlingDTOResu
   AVBRUTT = "AVBRUTT",
   AVSLAG = "AVSLAG",
   INNVILGET = "INNVILGET",
-  KLAGE_AVSL_TT = "KLAGE_AVSL\u00C5TT",
-  KLAGE_DELVIS_OMGJ_RES = "KLAGE_DELVIS_OMGJ\u00D8RES",
-  KLAGE_OMGJ_RES = "KLAGE_OMGJ\u00D8RES",
+  KLAGE_AVSL_TT = "KLAGE_AVSLÅTT",
+  KLAGE_DELVIS_OMGJ_RES = "KLAGE_DELVIS_OMGJØRES",
+  KLAGE_OMGJ_RES = "KLAGE_OMGJØRES",
   KLAGE_OPPRETTHOLDES = "KLAGE_OPPRETTHOLDES",
   KLAGE_TRUKKET = "KLAGE_TRUKKET",
   TRUKKET = "TRUKKET"
@@ -921,19 +998,19 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkGrunnlagUfReDTOType {
   YTTERLIGERE_NEDSATT = "YTTERLIGERE_NEDSATT"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkRettighetstypePeriodeRettighetstype {
-  ARBEIDSS_KER = "ARBEIDSS\u00D8KER",
+  ARBEIDSS_KER = "ARBEIDSSØKER",
   BISTANDSBEHOV = "BISTANDSBEHOV",
   STUDENT = "STUDENT",
   SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
-  VURDERES_FOR_UF_RETRYGD = "VURDERES_FOR_UF\u00D8RETRYGD"
+  VURDERES_FOR_UF_RETRYGD = "VURDERES_FOR_UFØRETRYGD"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOAvregningAndreYtelserYtelse {
   BARNEPENSJON = "BARNEPENSJON",
   DAGPENGER = "DAGPENGER",
   FORELDREPENGER = "FORELDREPENGER",
   GJENLEVENDEPENSJON = "GJENLEVENDEPENSJON",
-  OMSTILLINGSST_NAD = "OMSTILLINGSST\u00D8NAD",
-  OVERGANGSST_NAD = "OVERGANGSST\u00D8NAD",
+  OMSTILLINGSST_NAD = "OMSTILLINGSSTØNAD",
+  OVERGANGSST_NAD = "OVERGANGSSTØNAD",
   SYKEPENGER = "SYKEPENGER",
   TILTAKSPENGER = "TILTAKSPENGER"
 }
@@ -941,44 +1018,44 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkSamordningDTOStatligeYtels
   FERIE_I_SYKEPENGEPERIODE = "FERIE_I_SYKEPENGEPERIODE",
   FORELDREPENGER = "FORELDREPENGER",
   OMSORGSPENGER = "OMSORGSPENGER",
-  OPPL_RINGSPENGER = "OPPL\u00C6RINGSPENGER",
+  OPPL_RINGSPENGER = "OPPLÆRINGSPENGER",
   PLEIEPENGER = "PLEIEPENGER",
   SVANGERSKAPSPENGER = "SVANGERSKAPSPENGER",
   SYKEPENGER = "SYKEPENGER"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRType {
-  OPPH_R = "OPPH\u00D8R",
+  OPPH_R = "OPPHØR",
   STANS = "STANS"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStansEllerOpphRRsaker {
   ANNEN_FULL_YTELSE = "ANNEN_FULL_YTELSE",
   ANNEN_FULL_YTELSE_AVSLAG = "ANNEN_FULL_YTELSE_AVSLAG",
-  BRUDD_P__AKTIVITETSPLIKT_OPPH_R = "BRUDD_P\u00C5_AKTIVITETSPLIKT_OPPH\u00D8R",
-  BRUDD_P__AKTIVITETSPLIKT_STANS = "BRUDD_P\u00C5_AKTIVITETSPLIKT_STANS",
-  BRUDD_P__OPPHOLDSKRAV_OPPH_R = "BRUDD_P\u00C5_OPPHOLDSKRAV_OPPH\u00D8R",
-  BRUDD_P__OPPHOLDSKRAV_STANS = "BRUDD_P\u00C5_OPPHOLDSKRAV_STANS",
+  BRUDD_P__AKTIVITETSPLIKT_OPPH_R = "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR",
+  BRUDD_P__AKTIVITETSPLIKT_STANS = "BRUDD_PÅ_AKTIVITETSPLIKT_STANS",
+  BRUDD_P__OPPHOLDSKRAV_OPPH_R = "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR",
+  BRUDD_P__OPPHOLDSKRAV_STANS = "BRUDD_PÅ_OPPHOLDSKRAV_STANS",
   BRUKER_OVER_67 = "BRUKER_OVER_67",
   BRUKER_UNDER_18 = "BRUKER_UNDER_18",
   HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON = "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON",
   IKKE_BEHOV_FOR_OPPFOLGING = "IKKE_BEHOV_FOR_OPPFOLGING",
   IKKE_MEDLEM = "IKKE_MEDLEM",
-  IKKE_MEDLEM_FORUTG_ENDE = "IKKE_MEDLEM_FORUTG\u00C5ENDE",
+  IKKE_MEDLEM_FORUTG_ENDE = "IKKE_MEDLEM_FORUTGÅENDE",
   IKKE_NOK_REDUSERT_ARBEIDSEVNE = "IKKE_NOK_REDUSERT_ARBEIDSEVNE",
-  IKKE_OPPFYLT_OPPHOLDSKRAV_E_S = "IKKE_OPPFYLT_OPPHOLDSKRAV_E\u00D8S",
+  IKKE_OPPFYLT_OPPHOLDSKRAV_E_S = "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS",
   IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER = "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER",
   IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE = "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE",
   IKKE_RETT_PA_STUDENT = "IKKE_RETT_PA_STUDENT",
   IKKE_RETT_PA_SYKEPENGEERSTATNING = "IKKE_RETT_PA_SYKEPENGEERSTATNING",
-  IKKE_RETT_UNDER_STRAFFEGJENNOMF_RING = "IKKE_RETT_UNDER_STRAFFEGJENNOMF\u00D8RING",
+  IKKE_RETT_UNDER_STRAFFEGJENNOMF_RING = "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING",
   IKKE_SYKDOM_AV_VISS_VARIGHET = "IKKE_SYKDOM_AV_VISS_VARIGHET",
   IKKE_SYKDOM_SKADE_LYTE = "IKKE_SYKDOM_SKADE_LYTE",
   IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL = "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL",
   INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING = "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING",
   MANGLENDE_DOKUMENTASJON = "MANGLENDE_DOKUMENTASJON",
   NORGE_IKKE_KOMPETENT_STAT = "NORGE_IKKE_KOMPETENT_STAT",
-  ORDIN_RKVOTE_BRUKT_OPP = "ORDIN\u00C6RKVOTE_BRUKT_OPP",
+  ORDIN_RKVOTE_BRUKT_OPP = "ORDINÆRKVOTE_BRUKT_OPP",
   SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP = "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP",
-  VARIGHET_OVERSKREDET_ARBEIDSS_KER = "VARIGHET_OVERSKREDET_ARBEIDSS\u00D8KER",
+  VARIGHET_OVERSKREDET_ARBEIDSS_KER = "VARIGHET_OVERSKREDET_ARBEIDSSØKER",
   VARIGHET_OVERSKREDET_OVERGANG_UFORE = "VARIGHET_OVERSKREDET_OVERGANG_UFORE",
   VARIGHET_OVERSKREDET_STUDENT = "VARIGHET_OVERSKREDET_STUDENT"
 }
@@ -991,16 +1068,16 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlin
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingBehandlingType {
   Aktivitetsplikt = "Aktivitetsplikt",
   Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
-  F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+  F_rstegangsbehandling = "Førstegangsbehandling",
   Klage = "Klage",
-  Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+  Oppf_lgingsBehandling = "OppfølgingsBehandling",
   Revurdering = "Revurdering",
   SvarFraAndreinstans = "SvarFraAndreinstans",
   Tilbakekreving = "Tilbakekreving"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingSakStatus {
   AVSLUTTET = "AVSLUTTET",
-  L_PENDE = "L\u00D8PENDE",
+  L_PENDE = "LØPENDE",
   OPPRETTET = "OPPRETTET",
   UTREDES = "UTREDES"
 }
@@ -1013,12 +1090,12 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
   AKTIVITETSPLIKTBEHANDLING_AVBRUTT = "AKTIVITETSPLIKTBEHANDLING_AVBRUTT",
   AKTIVITETSPLIKT_11_7 = "AKTIVITETSPLIKT_11_7",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  AVVIST_LEGEERKL_RING = "AVVIST_LEGEERKL\u00C6RING",
+  AVVIST_LEGEERKL_RING = "AVVIST_LEGEERKLÆRING",
   BARNETILLEGG = "BARNETILLEGG",
   BARNETILLEGG_SATS_REGULERING = "BARNETILLEGG_SATS_REGULERING",
   DIALOGMELDING = "DIALOGMELDING",
-  D_DSFALL_BARN = "D\u00D8DSFALL_BARN",
-  D_DSFALL_BRUKER = "D\u00D8DSFALL_BRUKER",
+  D_DSFALL_BARN = "DØDSFALL_BARN",
+  D_DSFALL_BRUKER = "DØDSFALL_BRUKER",
   EFFEKTUER_AKTIVITETSPLIKT = "EFFEKTUER_AKTIVITETSPLIKT",
   EFFEKTUER_AKTIVITETSPLIKT_11_9 = "EFFEKTUER_AKTIVITETSPLIKT_11_9",
   ETABLERING_EGEN_VIRKSOMHET = "ETABLERING_EGEN_VIRKSOMHET",
@@ -1029,12 +1106,12 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
   INSTITUSJONSOPPHOLD = "INSTITUSJONSOPPHOLD",
   KLAGE = "KLAGE",
   KLAGE_TRUKKET = "KLAGE_TRUKKET",
-  LEGEERKL_RING = "LEGEERKL\u00C6RING",
+  LEGEERKL_RING = "LEGEERKLÆRING",
   LOVVALG_OG_MEDLEMSKAP = "LOVVALG_OG_MEDLEMSKAP",
   MELDEKORT = "MELDEKORT",
   MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
   MOTTATT_KABAL_HENDELSE = "MOTTATT_KABAL_HENDELSE",
-  OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
+  OPPF_LGINGSOPPGAVE = "OPPFØLGINGSOPPGAVE",
   OPPHOLDSKRAV = "OPPHOLDSKRAV",
   OVERGANG_ARBEID = "OVERGANG_ARBEID",
   OVERGANG_UFORE = "OVERGANG_UFORE",
@@ -1053,15 +1130,15 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurdering
   REVURDER_SAMORDNING_ARBEIDSGIVER = "REVURDER_SAMORDNING_ARBEIDSGIVER",
   REVURDER_SAMORDNING_BARNEPENSJON = "REVURDER_SAMORDNING_BARNEPENSJON",
   REVURDER_SAMORDNING_TJENESTEPENSJON = "REVURDER_SAMORDNING_TJENESTEPENSJON",
-  REVURDER_SAMORDNING_UF_RE = "REVURDER_SAMORDNING_UF\u00D8RE",
+  REVURDER_SAMORDNING_UF_RE = "REVURDER_SAMORDNING_UFØRE",
   REVURDER_STUDENT = "REVURDER_STUDENT",
   REVURDER_SYKEPENGEERSTATNING = "REVURDER_SYKEPENGEERSTATNING",
   REVURDER_SYKESTIPEND = "REVURDER_SYKESTIPEND",
   REVURDER_YRKESSKADE = "REVURDER_YRKESSKADE",
   SAMORDNING_OG_AVREGNING = "SAMORDNING_OG_AVREGNING",
   SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND = "SYKDOM_ARBEVNE_BEHOV_FOR_BISTAND",
-  S_KNAD = "S\u00D8KNAD",
-  S_KNAD_TRUKKET = "S\u00D8KNAD_TRUKKET",
+  S_KNAD = "SØKNAD",
+  S_KNAD_TRUKKET = "SØKNAD_TRUKKET",
   UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT",
   UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE",
   VEDTAKSLENGDE_MANUELT = "VEDTAKSLENGDE_MANUELT",
@@ -1085,15 +1162,15 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOp
   MANUELL_OPPRETTELSE = "MANUELL_OPPRETTELSE",
   MELDEKORT = "MELDEKORT",
   MIGRER_RETTIGHETSPERIODE = "MIGRER_RETTIGHETSPERIODE",
-  OMGJ_RING_ETTER_KLAGE = "OMGJ\u00D8RING_ETTER_KLAGE",
-  OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS = "OMGJ\u00D8RING_ETTER_SVAR_FRA_KLAGEINSTANS",
-  OPPF_LGINGSOPPGAVE = "OPPF\u00D8LGINGSOPPGAVE",
-  OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING = "OPPF\u00D8LGINGSOPPGAVE_SAMORDNING_GRADERING",
+  OMGJ_RING_ETTER_KLAGE = "OMGJØRING_ETTER_KLAGE",
+  OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS = "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS",
+  OPPF_LGINGSOPPGAVE = "OPPFØLGINGSOPPGAVE",
+  OPPF_LGINGSOPPGAVE_SAMORDNING_GRADERING = "OPPFØLGINGSOPPGAVE_SAMORDNING_GRADERING",
   SVAR_FRA_KLAGEINSTANS = "SVAR_FRA_KLAGEINSTANS",
-  S_KNAD = "S\u00D8KNAD",
+  S_KNAD = "SØKNAD",
   TILBAKEKREVING_HENDELSE = "TILBAKEKREVING_HENDELSE",
   UDEFINERT = "UDEFINERT",
-  UF_RE_VEDTAK_HENDELSE = "UF\u00D8RE_VEDTAK_HENDELSE",
+  UF_RE_VEDTAK_HENDELSE = "UFØRE_VEDTAK_HENDELSE",
   UTVID_VEDTAKSLENGDE = "UTVID_VEDTAKSLENGDE"
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMinsteSats {
@@ -1103,21 +1180,21 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkTilkjentYtelsePeriodeDTOMi
 }
 declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRDTOVilkRType {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-  ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
-  BISTANDSVILK_RET = "BISTANDSVILK\u00C5RET",
+  ALDERSVILK_RET = "ALDERSVILKÅRET",
+  BISTANDSVILK_RET = "BISTANDSVILKÅRET",
   GRUNNLAGET = "GRUNNLAGET",
   INNTEKTSBORTFALL = "INNTEKTSBORTFALL",
   LOVVALG = "LOVVALG",
   MEDLEMSKAP = "MEDLEMSKAP",
   OPPHOLDSKRAV = "OPPHOLDSKRAV",
-  ORDIN_R_KVOTE = "ORDIN\u00C6R_KVOTE",
-  OVERGANGARBEIDVILK_RET = "OVERGANGARBEIDVILK\u00C5RET",
-  OVERGANGUF_REVILK_RET = "OVERGANGUF\u00D8REVILK\u00C5RET",
+  ORDIN_R_KVOTE = "ORDINÆR_KVOTE",
+  OVERGANGARBEIDVILK_RET = "OVERGANGARBEIDVILKÅRET",
+  OVERGANGUF_REVILK_RET = "OVERGANGUFØREVILKÅRET",
   SAMORDNING = "SAMORDNING",
   SAMORDNING_ANNEN_LOVGIVNING = "SAMORDNING_ANNEN_LOVGIVNING",
-  STRAFFEGJENNOMF_RING = "STRAFFEGJENNOMF\u00D8RING",
+  STRAFFEGJENNOMF_RING = "STRAFFEGJENNOMFØRING",
   STUDENT = "STUDENT",
-  SYKDOMSVILK_RET = "SYKDOMSVILK\u00C5RET",
+  SYKDOMSVILK_RET = "SYKDOMSVILKÅRET",
   SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
   SYKEPENGEERSTATNING_KVOTE = "SYKEPENGEERSTATNING_KVOTE"
 }
@@ -1130,9 +1207,9 @@ declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsPeriodeDTOUtfall {
 declare enum NoNavAapBehandlingsflytKontraktStatistikkVilkRsResultatDTOTypeBehandling {
   Aktivitetsplikt = "Aktivitetsplikt",
   Aktivitetsplikt11_9 = "Aktivitetsplikt11_9",
-  F_rstegangsbehandling = "F\u00F8rstegangsbehandling",
+  F_rstegangsbehandling = "Førstegangsbehandling",
   Klage = "Klage",
-  Oppf_lgingsBehandling = "Oppf\u00F8lgingsBehandling",
+  Oppf_lgingsBehandling = "OppfølgingsBehandling",
   Revurdering = "Revurdering",
   SvarFraAndreinstans = "SvarFraAndreinstans",
   Tilbakekreving = "Tilbakekreving"
@@ -1147,12 +1224,12 @@ declare enum NoNavAapOppgaveStatistikkOppgaveHendelseHendelse {
 declare enum NoNavAapOppgaveStatistikkOppgaveTilStatistikkDtoBehandlingstype {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
   FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALF\u00D8RING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
   KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
   REVURDERING = "REVURDERING",
   SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
   TILBAKEKREVING = "TILBAKEKREVING"
@@ -1185,7 +1262,7 @@ declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg {
   AVKLAR_SAK = "AVKLAR_SAK",
   AVKLAR_TEMA = "AVKLAR_TEMA",
   DIGITALISER_DOKUMENT = "DIGITALISER_DOKUMENT",
-  ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALF\u00D8RING",
+  ENDELIG_JOURNALF_RING = "ENDELIG_JOURNALFØRING",
   IVERKSETTES = "IVERKSETTES",
   OVERLEVER_TIL_FAGSYSTEM = "OVERLEVER_TIL_FAGSYSTEM",
   SETT_FAGSAK = "SETT_FAGSAK",
@@ -1195,7 +1272,7 @@ declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg {
 }
 declare enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType {
   MANUELT_FRIVILLIG = "MANUELT_FRIVILLIG",
-  MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
+  MANUELT_P_KREVD = "MANUELT_PÅKREVD",
   VENTEPUNKT = "VENTEPUNKT"
 }
 declare enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus {
@@ -1205,9 +1282,9 @@ declare enum NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus 
   SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER"
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType {
-  DokumentH_ndtering = "DokumentH\u00E5ndtering",
+  DokumentH_ndtering = "DokumentHåndtering",
   Fordeling = "Fordeling",
-  Journalf_ring = "Journalf\u00F8ring"
+  Journalf_ring = "Journalføring"
 }
 declare enum NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus {
   AVSLUTTET = "AVSLUTTET",
@@ -1222,12 +1299,12 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTOStatus {
   SENDT_TILBAKE_FRA_BESLUTTER = "SENDT_TILBAKE_FRA_BESLUTTER"
 }
 declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
-  VENTER_P__BEHANDLING_I_GOSYS = "VENTER_P\u00C5_BEHANDLING_I_GOSYS",
-  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_P\u00C5_MEDISINSKE_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER = "VENTER_P\u00C5_OPPLYSNINGER",
-  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_P\u00C5_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
-  VENTER_P__SVAR_FRA_BRUKER = "VENTER_P\u00C5_SVAR_FRA_BRUKER",
-  VENTER_P__VURDERING_AV_ROL = "VENTER_P\u00C5_VURDERING_AV_ROL"
+  VENTER_P__BEHANDLING_I_GOSYS = "VENTER_PÅ_BEHANDLING_I_GOSYS",
+  VENTER_P__MEDISINSKE_OPPLYSNINGER = "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER = "VENTER_PÅ_OPPLYSNINGER",
+  VENTER_P__OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER = "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER",
+  VENTER_P__SVAR_FRA_BRUKER = "VENTER_PÅ_SVAR_FRA_BRUKER",
+  VENTER_P__VURDERING_AV_ROL = "VENTER_PÅ_VURDERING_AV_ROL"
 }
 type operations = Record<string, never>;
 //#endregion

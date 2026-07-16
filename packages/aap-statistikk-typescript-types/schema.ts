@@ -213,6 +213,7 @@ export interface components {
             "l\u00F8sesAv": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv[];
             /** @enum {string} */
             "l\u00F8sesISteg": NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg;
+            "m\u00E5RevurderesEtterOpph\u00F8r": boolean;
             /** @enum {string} */
             type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
             name: string;
