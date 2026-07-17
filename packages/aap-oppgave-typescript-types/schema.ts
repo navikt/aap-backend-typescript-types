@@ -154,6 +154,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/plukk-oppgave/v2": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/avreserver-oppgaver": {
         parameters: {
             query?: never;
@@ -421,6 +460,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/{referanse}/hent-oppgave-visningsinformasjon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.hent.OppgaveVisningsinformasjonResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/oppgaveliste": {
         parameters: {
             query?: never;
@@ -558,7 +635,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.S\u00F8kDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kDto"];
                 };
             };
             responses: {
@@ -568,7 +645,46 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.S\u00F8kResponse"];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/sok/v2": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponseV2"];
                     };
                 };
             };
@@ -1733,6 +1849,10 @@ export interface components {
             /** Format: int64 */
             versjon: number;
         };
+        /**
+         * @deprecated
+         * @description bruk ReturInformasjonDto
+         */
         "no.nav.aap.oppgave.ReturInformasjon": {
             begrunnelse: string;
             endretAv: string;
@@ -1740,17 +1860,16 @@ export interface components {
             status: NoNavAapOppgaveReturInformasjonStatus;
             "\u00E5rsaker": NoNavAapOppgaveReturInformasjonRsaker[];
         };
+        "no.nav.aap.oppgave.ReturInformasjonDto": {
+            begrunnelse: string;
+            endretAv: string;
+            /** @enum {string} */
+            status: NoNavAapOppgaveReturInformasjonDtoStatus;
+            "\u00E5rsaker": NoNavAapOppgaveReturInformasjonDtoRsaker[];
+        };
         "no.nav.aap.oppgave.SakOgAvklaringsbehov": {
             avklaringsbehovKode: string;
             saksnummer: string;
-        };
-        "no.nav.aap.oppgave.S\u00F8kDto": {
-            "s\u00F8ketekst": string;
-        };
-        "no.nav.aap.oppgave.S\u00F8kResponse": {
-            harAdressebeskyttelse: boolean;
-            harTilgang: boolean;
-            oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
         };
         "no.nav.aap.oppgave.TilbakekrevingsVarsDto": {
             tilbakekrevings_URL: string;
@@ -1935,6 +2054,35 @@ export interface components {
             /** Format: int64 */
             filterId: number;
         };
+        "no.nav.aap.oppgave.hent.OppgaveVisningsinformasjonResponse": {
+            harUlesteDokumenter: boolean;
+            /** Format: int64 */
+            id: number;
+            markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
+            "p\u00E5VentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonDto"];
+            reservertAvIdent?: string | null;
+            reservertAvNavn?: string | null;
+            returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjonDto"];
+            saksnummer?: string | null;
+            skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoDto"];
+            "utl\u00F8ptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonDto"];
+            /** Format: int64 */
+            versjon: number;
+        };
+        "no.nav.aap.oppgave.hent.SkjermingInfoDto": {
+            erSkjermet: boolean;
+            harFortroligAdresse: boolean;
+            harStrengtFortroligAdresse: boolean;
+        };
+        "no.nav.aap.oppgave.hent.VenteInformasjonDto": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            "p\u00E5VentTil": string;
+            "p\u00E5Vent\u00C5rsak": string;
+            venteBegrunnelse?: string | null;
+        };
         "no.nav.aap.oppgave.liste.OppgaveSortering": {
             /** @enum {string|null} */
             sortBy?: NoNavAapOppgaveListeOppgaveSorteringSortBy;
@@ -2030,9 +2178,48 @@ export interface components {
             /** Format: int64 */
             versjon: number;
         };
+        "no.nav.aap.oppgave.plukk.PlukkOppgaveRequest": {
+            /** Format: int64 */
+            oppgaveId: number;
+            /** Format: int64 */
+            versjon: number;
+        };
+        "no.nav.aap.oppgave.plukk.PlukkOppgaveResponse": {
+            /** Format: uuid */
+            behandlingsreferanse: string;
+            /** @enum {string} */
+            behandlingstype: NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype;
+            /** Format: int64 */
+            journalpostId?: number | null;
+            saksnummer?: string | null;
+            tilbakekrevingUrl?: string | null;
+        };
         "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
             /** @enum {string|null} */
             behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
+        };
+        "no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse": {
+            "enhetForK\u00F8": string;
+            "erP\u00E5Vent": boolean;
+            personNavn?: string | null;
+            reservertAvIdent?: string | null;
+            typeMarkeringer: NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer[];
+        };
+        "no.nav.aap.oppgave.s\u00F8k.S\u00F8kDto": {
+            "s\u00F8ketekst": string;
+        };
+        "no.nav.aap.oppgave.s\u00F8k.S\u00F8kRequest": {
+            "s\u00F8ketekst": string;
+        };
+        "no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponse": {
+            harAdressebeskyttelse: boolean;
+            harTilgang: boolean;
+            oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+        };
+        "no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponseV2": {
+            harAdressebeskyttelse: boolean;
+            harTilgang: boolean;
+            oppgaver: components["schemas"]["no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse"][];
         };
         "no.nav.aap.oppgave.tildel.SaksbehandlerDto": {
             navIdent: string;
@@ -2593,6 +2780,23 @@ export enum NoNavAapOppgaveReturInformasjonRsaker {
     MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
     SKRIVEFEIL = "SKRIVEFEIL"
 }
+export enum NoNavAapOppgaveReturInformasjonDtoStatus {
+    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
+    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
+    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER",
+    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER"
+}
+export enum NoNavAapOppgaveReturInformasjonDtoRsaker {
+    ANNET = "ANNET",
+    FEIL_LOVANVENDELSE = "FEIL_LOVANVENDELSE",
+    FOR_DETALJERT = "FOR_DETALJERT",
+    IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET",
+    MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
+    MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALF\u00D8RING",
+    MANGLENDE_KILDEHENVISNING = "MANGLENDE_KILDEHENVISNING",
+    MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
+    SKRIVEFEIL = "SKRIVEFEIL"
+}
 export enum NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus {
     EKSKLUDER = "EKSKLUDER",
     INKLUDER = "INKLUDER"
@@ -2762,6 +2966,19 @@ export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
     HASTER = "HASTER"
 }
+export enum NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype {
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    FORDELING = "FORDELING",
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    JOURNALF_RING = "JOURNALF\u00D8RING",
+    KLAGE = "KLAGE",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    TILBAKEKREVING = "TILBAKEKREVING"
+}
 export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
@@ -2774,6 +2991,10 @@ export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     REVURDERING = "REVURDERING",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     TILBAKEKREVING = "TILBAKEKREVING"
+}
+export enum NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer {
+    AVSLAG_11_5 = "AVSLAG_11_5",
+    HASTER = "HASTER"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
     Value1337 = "1337",
