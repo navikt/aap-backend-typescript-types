@@ -10014,9 +10014,7 @@ export interface components {
         "no.nav.aap.komponenter.verdityper.Bel\u00F8p": {
             verdi: number;
         };
-        "no.nav.aap.komponenter.verdityper.Bruker": {
-            ident: string;
-        };
+        "no.nav.aap.komponenter.verdityper.Bruker": string;
         "no.nav.aap.komponenter.verdityper.Dagsatser": {
             /** Format: int32 */
             antall: number;
