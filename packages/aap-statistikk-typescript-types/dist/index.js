@@ -371,6 +371,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["EFFEKTUER_AKTIVITETSPLIKT"] = "EFFEKTUER_AKTIVITETSPLIKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["EFFEKTUER_AKTIVITETSPLIKT_11_9"] = "EFFEKTUER_AKTIVITETSPLIKT_11_9";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["ETABLERING_EGEN_VIRKSOMHET"] = "ETABLERING_EGEN_VIRKSOMHET";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["FASTSETT_ARBEIDSEVNE"] = "FASTSETT_ARBEIDSEVNE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["FORUTGAENDE_MEDLEMSKAP"] = "FORUTGAENDE_MEDLEMSKAP";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["FRITAK_MELDEPLIKT"] = "FRITAK_MELDEPLIKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["G_REGULERING"] = "G_REGULERING";
@@ -415,6 +416,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VEDTAKSLENGDE_MANUELT"] = "VEDTAKSLENGDE_MANUELT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_AVSLAG_11_27"] = "VURDER_AVSLAG_11_27";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_FRITAK_MELDEPLIKT"] = "VURDER_FRITAK_MELDEPLIKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_KRAV"] = "VURDER_KRAV";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_RETTIGHETSPERIODE"] = "VURDER_RETTIGHETSPERIODE";
 	return NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov;
