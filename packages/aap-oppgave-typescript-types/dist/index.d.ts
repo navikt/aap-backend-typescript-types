@@ -2069,22 +2069,22 @@ interface components {
       /** Format: int64 */
       id: number;
       markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
-      "påVentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonDto"];
+      "påVentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
       reservertAvIdent?: string | null;
       reservertAvNavn?: string | null;
       returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjonDto"];
       saksnummer?: string | null;
-      skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoDto"];
-      "utløptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonDto"];
+      skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoResponse"];
+      "utløptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
       /** Format: int64 */
       versjon: number;
     };
-    "no.nav.aap.oppgave.hent.SkjermingInfoDto": {
+    "no.nav.aap.oppgave.hent.SkjermingInfoResponse": {
       erSkjermet: boolean;
       harFortroligAdresse: boolean;
       harStrengtFortroligAdresse: boolean;
     };
-    "no.nav.aap.oppgave.hent.VenteInformasjonDto": {
+    "no.nav.aap.oppgave.hent.VenteInformasjonResponse": {
       /**
        * Format: date
        * @example 2025-04-01

@@ -2069,22 +2069,22 @@ export interface components {
             /** Format: int64 */
             id: number;
             markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
-            "p\u00E5VentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonDto"];
+            "p\u00E5VentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
             reservertAvIdent?: string | null;
             reservertAvNavn?: string | null;
             returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjonDto"];
             saksnummer?: string | null;
-            skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoDto"];
-            "utl\u00F8ptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonDto"];
+            skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoResponse"];
+            "utl\u00F8ptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
             /** Format: int64 */
             versjon: number;
         };
-        "no.nav.aap.oppgave.hent.SkjermingInfoDto": {
+        "no.nav.aap.oppgave.hent.SkjermingInfoResponse": {
             erSkjermet: boolean;
             harFortroligAdresse: boolean;
             harStrengtFortroligAdresse: boolean;
         };
-        "no.nav.aap.oppgave.hent.VenteInformasjonDto": {
+        "no.nav.aap.oppgave.hent.VenteInformasjonResponse": {
             /**
              * Format: date
              * @example 2025-04-01
