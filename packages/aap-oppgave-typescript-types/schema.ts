@@ -1754,6 +1754,16 @@ export interface components {
         "no.nav.aap.oppgave.AvreserverOppgaveDto": {
             oppgaver: number[];
         };
+        "no.nav.aap.oppgave.BehandlingskontekstResponse": {
+            /** Format: uuid */
+            behandlingsreferanse: string;
+            /** @enum {string} */
+            behandlingstype: NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype;
+            /** Format: int64 */
+            journalpostId?: number | null;
+            saksnummer?: string | null;
+            tilbakekrevingUrl?: string | null;
+        };
         "no.nav.aap.oppgave.DokumenterLestDto": {
             /** Format: uuid */
             behandlingRef: string;
@@ -2185,20 +2195,15 @@ export interface components {
             versjon: number;
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveResponse": {
-            /** Format: uuid */
-            behandlingsreferanse: string;
-            /** @enum {string} */
-            behandlingstype: NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype;
-            /** Format: int64 */
-            journalpostId?: number | null;
-            saksnummer?: string | null;
-            tilbakekrevingUrl?: string | null;
+            behandlingskontekst: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
         };
         "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
             /** @enum {string|null} */
             behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
         };
         "no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse": {
+            avklaringsbehovKode: string;
+            behandlingskontekst: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
             "enhetForK\u00F8": string;
             "erP\u00E5Vent": boolean;
             personNavn?: string | null;
@@ -2740,6 +2745,19 @@ export enum NoNavAapMotorApiJobbInfoDtoStatus {
     KLAR = "KLAR",
     PLUKKET = "PLUKKET"
 }
+export enum NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype {
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
+    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
+    FORDELING = "FORDELING",
+    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
+    JOURNALF_RING = "JOURNALF\u00D8RING",
+    KLAGE = "KLAGE",
+    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
+    REVURDERING = "REVURDERING",
+    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+    TILBAKEKREVING = "TILBAKEKREVING"
+}
 export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
@@ -2965,19 +2983,6 @@ export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType {
 export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
     HASTER = "HASTER"
-}
-export enum NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype {
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    FORDELING = "FORDELING",
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    JOURNALF_RING = "JOURNALF\u00D8RING",
-    KLAGE = "KLAGE",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    TILBAKEKREVING = "TILBAKEKREVING"
 }
 export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",

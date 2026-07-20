@@ -1754,6 +1754,16 @@ interface components {
     "no.nav.aap.oppgave.AvreserverOppgaveDto": {
       oppgaver: number[];
     };
+    "no.nav.aap.oppgave.BehandlingskontekstResponse": {
+      /** Format: uuid */
+      behandlingsreferanse: string;
+      /** @enum {string} */
+      behandlingstype: NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype;
+      /** Format: int64 */
+      journalpostId?: number | null;
+      saksnummer?: string | null;
+      tilbakekrevingUrl?: string | null;
+    };
     "no.nav.aap.oppgave.DokumenterLestDto": {
       /** Format: uuid */
       behandlingRef: string;
@@ -2185,20 +2195,15 @@ interface components {
       versjon: number;
     };
     "no.nav.aap.oppgave.plukk.PlukkOppgaveResponse": {
-      /** Format: uuid */
-      behandlingsreferanse: string;
-      /** @enum {string} */
-      behandlingstype: NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype;
-      /** Format: int64 */
-      journalpostId?: number | null;
-      saksnummer?: string | null;
-      tilbakekrevingUrl?: string | null;
+      behandlingskontekst: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
     };
     "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
       /** @enum {string|null} */
       behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
     };
     "no.nav.aap.oppgave.søk.OppgaveISøkResponse": {
+      avklaringsbehovKode: string;
+      behandlingskontekst: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
       "enhetForKø": string;
       "erPåVent": boolean;
       personNavn?: string | null;
@@ -2740,6 +2745,19 @@ declare enum NoNavAapMotorApiJobbInfoDtoStatus {
   KLAR = "KLAR",
   PLUKKET = "PLUKKET"
 }
+declare enum NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype {
+  AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+  AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
+  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
+  FORDELING = "FORDELING",
+  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
+  JOURNALF_RING = "JOURNALFØRING",
+  KLAGE = "KLAGE",
+  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
+  REVURDERING = "REVURDERING",
+  SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
+  TILBAKEKREVING = "TILBAKEKREVING"
+}
 declare enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
@@ -2966,19 +2984,6 @@ declare enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
   AVSLAG_11_5 = "AVSLAG_11_5",
   HASTER = "HASTER"
 }
-declare enum NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype {
-  AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-  AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-  DOKUMENT_H_NDTERING = "DOKUMENT_HÅNDTERING",
-  FORDELING = "FORDELING",
-  F_RSTEGANGSBEHANDLING = "FØRSTEGANGSBEHANDLING",
-  JOURNALF_RING = "JOURNALFØRING",
-  KLAGE = "KLAGE",
-  OPPF_LGINGSBEHANDLING = "OPPFØLGINGSBEHANDLING",
-  REVURDERING = "REVURDERING",
-  SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-  TILBAKEKREVING = "TILBAKEKREVING"
-}
 declare enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
   AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
   AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
@@ -3066,5 +3071,5 @@ declare enum NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent {
 }
 type operations = Record<string, never>;
 //#endregion
-export { $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus, NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus, NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper, NoNavAapOppgaveDriftFilterDriftRequestType, NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper, NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer, NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer, NoNavAapOppgaveDriftFilterDriftResponseType, NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus, NoNavAapOppgaveDriftMarkeringDriftRequestType, NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus, NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus, NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer, NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer, NoNavAapOppgaveFilterFilterDtoType, NoNavAapOppgaveListeOppgaveSorteringSortBy, NoNavAapOppgaveListeOppgaveSorteringSortOrder, NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser, NoNavAapOppgaveMarkeringMarkeringDtoHendelseType, NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType, NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType, NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType, NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType, NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonDtoRsaker, NoNavAapOppgaveReturInformasjonDtoStatus, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, PathsMineOppgaverGetParametersQuerySortby, PathsMineOppgaverGetParametersQuerySortorder, components, operations, paths, webhooks };
+export { $defs, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType, NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingMetadata, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseBehandlingType, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseRsakTilOpprettelse, NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseStatus, NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus, NoNavAapBehandlingsflytKontraktHendelseInnsendingReferanseType, NoNavAapBehandlingsflytKontraktHendelseMottattDokumentDtoType, NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak, NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus, NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn, NoNavAapMotorApiJobbInfoDtoStatus, NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype, NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus, NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper, NoNavAapOppgaveDriftFilterDriftRequestType, NoNavAapOppgaveDriftFilterDriftResponseBehandlingstyper, NoNavAapOppgaveDriftFilterDriftResponseEkskluderteMarkeringer, NoNavAapOppgaveDriftFilterDriftResponseInkluderteMarkeringer, NoNavAapOppgaveDriftFilterDriftResponseType, NoNavAapOppgaveDriftMarkeringDriftRequestFiltermodus, NoNavAapOppgaveDriftMarkeringDriftRequestType, NoNavAapOppgaveDriftOppgaveDriftsinfoDTOStatus, NoNavAapOppgaveDriftOppgaveHistorikkDtoStatus, NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori, NoNavAapOppgaveFilterFilterDtoBehandlingstyper, NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer, NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer, NoNavAapOppgaveFilterFilterDtoType, NoNavAapOppgaveListeOppgaveSorteringSortBy, NoNavAapOppgaveListeOppgaveSorteringSortOrder, NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper, NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser, NoNavAapOppgaveMarkeringMarkeringDtoHendelseType, NoNavAapOppgaveMarkeringMarkeringDtoMarkeringType, NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType, NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType, NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType, NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType, NoNavAapOppgaveOppgaveDtoBehandlingstype, NoNavAapOppgaveOppgaveDtoReturStatus, NoNavAapOppgaveOppgaveDtoStatus, NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype, NoNavAapOppgaveReturInformasjonDtoRsaker, NoNavAapOppgaveReturInformasjonDtoStatus, NoNavAapOppgaveReturInformasjonRsaker, NoNavAapOppgaveReturInformasjonStatus, NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesISteg, NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonType, NoNavAapPostmottakKontraktHendelseAvklaringsbehovHendelseDtoStatus, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseBehandlingType, NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus, NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent, NoNavAapPostmottakKontraktHendelseEndringDTOStatus, PathsMineOppgaverGetParametersQuerySortby, PathsMineOppgaverGetParametersQuerySortorder, components, operations, paths, webhooks };
 //# sourceMappingURL=index.d.ts.map

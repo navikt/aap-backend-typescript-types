@@ -440,6 +440,20 @@ let NoNavAapMotorApiJobbInfoDtoStatus = /* @__PURE__ */ function(NoNavAapMotorAp
 	NoNavAapMotorApiJobbInfoDtoStatus["PLUKKET"] = "PLUKKET";
 	return NoNavAapMotorApiJobbInfoDtoStatus;
 }({});
+let NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype = /* @__PURE__ */ function(NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype) {
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["FORDELING"] = "FORDELING";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["JOURNALF_RING"] = "JOURNALFØRING";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["KLAGE"] = "KLAGE";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["OPPF_LGINGSBEHANDLING"] = "OPPFØLGINGSBEHANDLING";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["REVURDERING"] = "REVURDERING";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
+	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["TILBAKEKREVING"] = "TILBAKEKREVING";
+	return NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype;
+}({});
 let NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ function(NoNavAapOppgaveOppgaveDtoBehandlingstype) {
 	NoNavAapOppgaveOppgaveDtoBehandlingstype["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
 	NoNavAapOppgaveOppgaveDtoBehandlingstype["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
@@ -700,20 +714,6 @@ let NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType = /* @__PURE__ */ f
 	NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType["HASTER"] = "HASTER";
 	return NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
 }({});
-let NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype = /* @__PURE__ */ function(NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype) {
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["FORDELING"] = "FORDELING";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["JOURNALF_RING"] = "JOURNALFØRING";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["KLAGE"] = "KLAGE";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["OPPF_LGINGSBEHANDLING"] = "OPPFØLGINGSBEHANDLING";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["REVURDERING"] = "REVURDERING";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
-	NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype["TILBAKEKREVING"] = "TILBAKEKREVING";
-	return NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype;
-}({});
 let NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = /* @__PURE__ */ function(NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype) {
 	NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
 	NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
@@ -829,6 +829,7 @@ exports.NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak = NoNavAapBehand
 exports.NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus = NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseBehandlingStatus;
 exports.NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn = NoNavAapBehandlingsflytKontraktHendelseTilbakekrevingsbehandlingOppdatertHendelseVenteGrunn;
 exports.NoNavAapMotorApiJobbInfoDtoStatus = NoNavAapMotorApiJobbInfoDtoStatus;
+exports.NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype = NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype;
 exports.NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus = NoNavAapOppgaveDriftEnhetDriftRequestFiltermodus;
 exports.NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper = NoNavAapOppgaveDriftFilterDriftRequestBehandlingstyper;
 exports.NoNavAapOppgaveDriftFilterDriftRequestType = NoNavAapOppgaveDriftFilterDriftRequestType;
@@ -859,7 +860,6 @@ exports.NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType = NoNavAapOppga
 exports.NoNavAapOppgaveOppgaveDtoBehandlingstype = NoNavAapOppgaveOppgaveDtoBehandlingstype;
 exports.NoNavAapOppgaveOppgaveDtoReturStatus = NoNavAapOppgaveOppgaveDtoReturStatus;
 exports.NoNavAapOppgaveOppgaveDtoStatus = NoNavAapOppgaveOppgaveDtoStatus;
-exports.NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype = NoNavAapOppgavePlukkPlukkOppgaveResponseBehandlingstype;
 exports.NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
 exports.NoNavAapOppgaveReturInformasjonDtoRsaker = NoNavAapOppgaveReturInformasjonDtoRsaker;
 exports.NoNavAapOppgaveReturInformasjonDtoStatus = NoNavAapOppgaveReturInformasjonDtoStatus;
