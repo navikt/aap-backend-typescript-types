@@ -414,6 +414,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT"] = "UTENLANDSOPPHOLD_FOR_SOKNADSTIDSPUNKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["UTVID_VEDTAKSLENGDE"] = "UTVID_VEDTAKSLENGDE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VEDTAKSLENGDE_MANUELT"] = "VEDTAKSLENGDE_MANUELT";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_ARBEIDSOPPTRAPPING"] = "VURDER_ARBEIDSOPPTRAPPING";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_AVSLAG_11_27"] = "VURDER_AVSLAG_11_27";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_FRITAK_MELDEPLIKT"] = "VURDER_FRITAK_MELDEPLIKT";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["VURDER_KRAV"] = "VURDER_KRAV";
