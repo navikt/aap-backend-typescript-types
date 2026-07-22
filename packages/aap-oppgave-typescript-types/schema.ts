@@ -460,6 +460,44 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/{saksnummer}/hent-oppgaver-paa-sak": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description saksnummer */
+                    saksnummer: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.hent.OppgaverP\u00E5SakResponse"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/{referanse}/hent-oppgave-visningsinformasjon": {
         parameters: {
             query?: never;
@@ -2122,6 +2160,16 @@ export interface components {
             /** Format: int64 */
             filterId: number;
         };
+        "no.nav.aap.oppgave.hent.OppgaveP\u00E5SakResponse": {
+            /** Format: uuid */
+            behandlingsreferanse: string;
+            /** Format: int64 */
+            id: number;
+            reservertAvIdent?: string | null;
+            reservertAvNavn?: string | null;
+            /** Format: int64 */
+            versjon: number;
+        };
         "no.nav.aap.oppgave.hent.OppgaveVisningsinformasjonResponse": {
             harUlesteDokumenter: boolean;
             /** Format: int64 */
@@ -2136,6 +2184,9 @@ export interface components {
             "utl\u00F8ptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
             /** Format: int64 */
             versjon: number;
+        };
+        "no.nav.aap.oppgave.hent.OppgaverP\u00E5SakResponse": {
+            oppgaver: components["schemas"]["no.nav.aap.oppgave.hent.OppgaveP\u00E5SakResponse"][];
         };
         "no.nav.aap.oppgave.hent.SkjermingInfoResponse": {
             erSkjermet: boolean;
