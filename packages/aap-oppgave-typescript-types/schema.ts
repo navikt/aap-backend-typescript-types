@@ -1282,6 +1282,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/drift/api/jobb/{jobbId}/leggTilKommentar": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description ID */
+                    jobbId: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.motor.api.`MotorApiKt$motorApi$1$5$LeggTilKommentarRequest`"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.motor.Kommentar"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/drift/api/jobb/rekjor/{jobbId}": {
         parameters: {
             query?: never;
@@ -1725,6 +1767,18 @@ export interface components {
             "\u00E5rsak": NoNavAapBehandlingsflytKontraktHendelseRsakTilReturRsak;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer": Record<string, never>;
+        "no.nav.aap.motor.JobbTilleggsinfo": {
+            kommentarer: components["schemas"]["no.nav.aap.motor.Kommentar"][];
+        };
+        "no.nav.aap.motor.Kommentar": {
+            skrevetAv: string;
+            tekst: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T12:30:00
+             */
+            tidspunkt: string;
+        };
         "no.nav.aap.motor.api.JobbInfoDto": {
             /** Format: int32 */
             "antallFeilendeFors\u00F8k": number;
@@ -1749,7 +1803,11 @@ export interface components {
             "planlagtKj\u00F8retidspunkt": string;
             /** @enum {string} */
             status: NoNavAapMotorApiJobbInfoDtoStatus;
+            tilleggsinfo?: components["schemas"]["no.nav.aap.motor.JobbTilleggsinfo"];
             type: string;
+        };
+        "no.nav.aap.motor.api.`MotorApiKt$motorApi$1$5$LeggTilKommentarRequest`": {
+            kommentar: string;
         };
         "no.nav.aap.oppgave.AvreserverOppgaveDto": {
             oppgaver: number[];
