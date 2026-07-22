@@ -2199,7 +2199,7 @@ export interface components {
              * @example 2025-04-01
              */
             "p\u00E5VentTil": string;
-            "p\u00E5Vent\u00C5rsak": string;
+            "p\u00E5Vent\u00C5rsak"?: string | null;
             venteBegrunnelse?: string | null;
         };
         "no.nav.aap.oppgave.liste.OppgaveSortering": {

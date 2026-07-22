@@ -2199,7 +2199,7 @@ interface components {
        * @example 2025-04-01
        */
       "påVentTil": string;
-      "påVentÅrsak": string;
+      "påVentÅrsak"?: string | null;
       venteBegrunnelse?: string | null;
     };
     "no.nav.aap.oppgave.liste.OppgaveSortering": {
