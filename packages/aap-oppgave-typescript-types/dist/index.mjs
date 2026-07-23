@@ -118,6 +118,7 @@ let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPFØLGING";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_STUDENT_V2"] = "AVKLAR_STUDENT_V2";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_ST_NADSPERIODE"] = "AVKLAR_STØNADSPERIODE";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_SYKDOM"] = "AVKLAR_SYKDOM";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["BARNETILLEGG"] = "BARNETILLEGG";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
@@ -216,6 +217,7 @@ let NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSt
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPFØLGING";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["AVKLAR_STUDENT_V2"] = "AVKLAR_STUDENT_V2";
+	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["AVKLAR_ST_NADSPERIODE"] = "AVKLAR_STØNADSPERIODE";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["AVKLAR_SYKDOM"] = "AVKLAR_SYKDOM";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["BARNETILLEGG"] = "BARNETILLEGG";
 	NoNavAapBehandlingsflytKontraktHendelseBehandlingFlytStoppetHendelseAktivtSteg["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
