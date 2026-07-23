@@ -101,6 +101,7 @@ let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPFØLGING";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_STUDENT_V2"] = "AVKLAR_STUDENT_V2";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_ST_NADSPERIODE"] = "AVKLAR_STØNADSPERIODE";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_SYKDOM"] = "AVKLAR_SYKDOM";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["BARNETILLEGG"] = "BARNETILLEGG";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["BEHANDLENDE_ENHET"] = "BEHANDLENDE_ENHET";
