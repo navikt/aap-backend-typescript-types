@@ -133,7 +133,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveRequest"];
                 };
             };
             responses: {
@@ -143,7 +143,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveResponse"];
                     };
                 };
             };
@@ -673,7 +673,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kRequest"];
                 };
             };
             responses: {
@@ -2320,12 +2320,6 @@ export interface components {
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
         };
-        "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
-            /** Format: int64 */
-            oppgaveId: number;
-            /** Format: int64 */
-            versjon: number;
-        };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveRequest": {
             /** Format: int64 */
             oppgaveId: number;
@@ -2348,16 +2342,13 @@ export interface components {
             reservertAvIdent?: string | null;
             typeMarkeringer: NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer[];
         };
-        "no.nav.aap.oppgave.s\u00F8k.S\u00F8kDto": {
-            "s\u00F8ketekst": string;
-        };
         "no.nav.aap.oppgave.s\u00F8k.S\u00F8kRequest": {
             "s\u00F8ketekst": string;
         };
         "no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponse": {
             harAdressebeskyttelse: boolean;
             harTilgang: boolean;
-            oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+            oppgaver: components["schemas"]["no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse"][];
         };
         "no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponseV2": {
             harAdressebeskyttelse: boolean;

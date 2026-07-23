@@ -133,7 +133,7 @@ interface paths {
       };
       requestBody?: {
         content: {
-          "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveDto"];
+          "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveRequest"];
         };
       };
       responses: {
@@ -143,7 +143,7 @@ interface paths {
             [name: string]: unknown;
           };
           content: {
-            "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
+            "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveResponse"];
           };
         };
       };
@@ -673,7 +673,7 @@ interface paths {
       };
       requestBody?: {
         content: {
-          "application/json": components["schemas"]["no.nav.aap.oppgave.søk.SøkDto"];
+          "application/json": components["schemas"]["no.nav.aap.oppgave.søk.SøkRequest"];
         };
       };
       responses: {
@@ -2320,12 +2320,6 @@ interface components {
       /** @enum {string} */
       markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
     };
-    "no.nav.aap.oppgave.plukk.PlukkOppgaveDto": {
-      /** Format: int64 */
-      oppgaveId: number;
-      /** Format: int64 */
-      versjon: number;
-    };
     "no.nav.aap.oppgave.plukk.PlukkOppgaveRequest": {
       /** Format: int64 */
       oppgaveId: number;
@@ -2348,16 +2342,13 @@ interface components {
       reservertAvIdent?: string | null;
       typeMarkeringer: NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer[];
     };
-    "no.nav.aap.oppgave.søk.SøkDto": {
-      "søketekst": string;
-    };
     "no.nav.aap.oppgave.søk.SøkRequest": {
       "søketekst": string;
     };
     "no.nav.aap.oppgave.søk.SøkResponse": {
       harAdressebeskyttelse: boolean;
       harTilgang: boolean;
-      oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+      oppgaver: components["schemas"]["no.nav.aap.oppgave.søk.OppgaveISøkResponse"][];
     };
     "no.nav.aap.oppgave.søk.SøkResponseV2": {
       harAdressebeskyttelse: boolean;
