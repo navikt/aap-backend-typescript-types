@@ -7791,6 +7791,11 @@ export interface components {
             referanse: string;
             /** @enum {string} */
             relevantKravType: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "NY_STØNADSPERIODE";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            startDato: string;
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
