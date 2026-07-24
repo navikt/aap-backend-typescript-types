@@ -154,45 +154,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/plukk-oppgave/v2": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveRequest"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveResponse"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/avreserver-oppgaver": {
         parameters: {
             query?: never;
@@ -684,45 +645,6 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponse"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/sok/v2": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kRequest"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponseV2"];
                     };
                 };
             };
@@ -2346,11 +2268,6 @@ export interface components {
             "s\u00F8ketekst": string;
         };
         "no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponse": {
-            harAdressebeskyttelse: boolean;
-            harTilgang: boolean;
-            oppgaver: components["schemas"]["no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse"][];
-        };
-        "no.nav.aap.oppgave.s\u00F8k.S\u00F8kResponseV2": {
             harAdressebeskyttelse: boolean;
             harTilgang: boolean;
             oppgaver: components["schemas"]["no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse"][];

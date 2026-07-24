@@ -154,45 +154,6 @@ interface paths {
     patch?: never;
     trace?: never;
   };
-  "/plukk-oppgave/v2": {
-    parameters: {
-      query?: never;
-      header?: never;
-      path?: never;
-      cookie?: never;
-    };
-    get?: never;
-    put?: never;
-    post: {
-      parameters: {
-        query?: never;
-        header?: never;
-        path?: never;
-        cookie?: never;
-      };
-      requestBody?: {
-        content: {
-          "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveRequest"];
-        };
-      };
-      responses: {
-        /** @description OK */
-        200: {
-          headers: {
-            [name: string]: unknown;
-          };
-          content: {
-            "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.PlukkOppgaveResponse"];
-          };
-        };
-      };
-    };
-    delete?: never;
-    options?: never;
-    head?: never;
-    patch?: never;
-    trace?: never;
-  };
   "/avreserver-oppgaver": {
     parameters: {
       query?: never;
@@ -684,45 +645,6 @@ interface paths {
           };
           content: {
             "application/json": components["schemas"]["no.nav.aap.oppgave.søk.SøkResponse"];
-          };
-        };
-      };
-    };
-    delete?: never;
-    options?: never;
-    head?: never;
-    patch?: never;
-    trace?: never;
-  };
-  "/sok/v2": {
-    parameters: {
-      query?: never;
-      header?: never;
-      path?: never;
-      cookie?: never;
-    };
-    get?: never;
-    put?: never;
-    post: {
-      parameters: {
-        query?: never;
-        header?: never;
-        path?: never;
-        cookie?: never;
-      };
-      requestBody?: {
-        content: {
-          "application/json": components["schemas"]["no.nav.aap.oppgave.søk.SøkRequest"];
-        };
-      };
-      responses: {
-        /** @description OK */
-        200: {
-          headers: {
-            [name: string]: unknown;
-          };
-          content: {
-            "application/json": components["schemas"]["no.nav.aap.oppgave.søk.SøkResponseV2"];
           };
         };
       };
@@ -2346,11 +2268,6 @@ interface components {
       "søketekst": string;
     };
     "no.nav.aap.oppgave.søk.SøkResponse": {
-      harAdressebeskyttelse: boolean;
-      harTilgang: boolean;
-      oppgaver: components["schemas"]["no.nav.aap.oppgave.søk.OppgaveISøkResponse"][];
-    };
-    "no.nav.aap.oppgave.søk.SøkResponseV2": {
       harAdressebeskyttelse: boolean;
       harTilgang: boolean;
       oppgaver: components["schemas"]["no.nav.aap.oppgave.søk.OppgaveISøkResponse"][];
