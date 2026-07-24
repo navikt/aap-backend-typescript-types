@@ -2189,7 +2189,7 @@ interface components {
       /** Format: int64 */
       filterId: number;
     };
-    "no.nav.aap.oppgave.hent.OppgavePåSakResponse": {
+    "no.nav.aap.oppgave.hent.OppgavePåBehandlingResponse": {
       /** Format: uuid */
       behandlingsreferanse: string;
       /** Format: int64 */
@@ -2215,7 +2215,7 @@ interface components {
       versjon: number;
     };
     "no.nav.aap.oppgave.hent.OppgaverPåSakResponse": {
-      oppgaver: components["schemas"]["no.nav.aap.oppgave.hent.OppgavePåSakResponse"][];
+      oppgaver: components["schemas"]["no.nav.aap.oppgave.hent.OppgavePåBehandlingResponse"][];
     };
     "no.nav.aap.oppgave.hent.SkjermingInfoResponse": {
       erSkjermet: boolean;
