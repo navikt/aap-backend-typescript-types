@@ -2241,13 +2241,13 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             behandlingOpprettet: string;
-            behandlingskontekstResponse: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
-            oppgaveMetadataResponse: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveMetadataResponse"];
-            oppgavelisteTagsResponse: components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteTagsResponse"];
-            personOgEnhetResponse: components["schemas"]["no.nav.aap.oppgave.liste.PersonOgEnhetResponse"];
+            behandlingskontekst: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
+            oppgaveMetadata: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveMetadataResponse"];
+            oppgavelisteTags: components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteTagsResponse"];
+            personOgEnhet: components["schemas"]["no.nav.aap.oppgave.liste.PersonOgEnhetResponse"];
             reservertAv?: string | null;
             reservertAvNavn?: string | null;
-            tilbakekrevingsVarsDto?: components["schemas"]["no.nav.aap.oppgave.TilbakekrevingsVarsDto"];
+            tilbakekrevingsVars?: components["schemas"]["no.nav.aap.oppgave.TilbakekrevingsVarsDto"];
             veilederArbeid?: string | null;
             veilederSykdom?: string | null;
             vurderingsbehov: string[];
@@ -2306,7 +2306,7 @@ export interface components {
             markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
             "p\u00E5VentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
             returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjonDto"];
-            skjermingInfoResponse: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoResponse"];
+            skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoResponse"];
         };
         "no.nav.aap.oppgave.liste.Paging": {
             /** Format: int32 */
