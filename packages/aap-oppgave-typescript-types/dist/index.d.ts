@@ -2170,6 +2170,7 @@ interface components {
       beskrivelse: string;
       /** Format: int64 */
       id: number;
+      inneholderTilbakekreving: boolean;
       navn: string;
       /** @enum {string} */
       type: NoNavAapOppgaveFilterFilterResponseType;
