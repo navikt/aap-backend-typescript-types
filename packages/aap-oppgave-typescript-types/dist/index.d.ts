@@ -2271,7 +2271,7 @@ interface components {
       antallGjenstaaende?: number | null;
       /** Format: int32 */
       antallTotalt: number;
-      oppgaver: components["schemas"]["no.nav.aap.oppgave.OppgaveDto"][];
+      oppgaver: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveMedKontekstResponse"][];
       sattFilterBehandlingstyper?: NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper[] | null;
     };
     "no.nav.aap.oppgave.liste.OppgavelisteResponsV2": {
