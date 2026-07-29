@@ -920,18 +920,31 @@ export interface paths {
             };
         };
         put?: never;
-        post: {
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/filter/v2": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
             parameters: {
-                query?: never;
+                query?: {
+                    /** @description Enhetsfilter */
+                    enheter?: string[];
+                };
                 header?: never;
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.filter.FilterDto"];
-                };
-            };
+            requestBody?: never;
             responses: {
                 /** @description OK */
                 200: {
@@ -939,48 +952,13 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.filter.FilterDto"];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.filter.FilterResponse"][];
                     };
                 };
             };
         };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/filter/{filterId}/slett": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
         put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.filter.FilterId"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content?: never;
-                };
-            };
-        };
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -2175,7 +2153,7 @@ export interface components {
             endretTidspunkt?: string | null;
             enheter: string[];
             /** Format: int64 */
-            id?: number | null;
+            id: number;
             inkluderteMarkeringer: NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer[];
             navn: string;
             opprettetAv: string;
@@ -2188,9 +2166,13 @@ export interface components {
             type: NoNavAapOppgaveFilterFilterDtoType;
             veileder?: string | null;
         };
-        "no.nav.aap.oppgave.filter.FilterId": {
+        "no.nav.aap.oppgave.filter.FilterResponse": {
+            beskrivelse: string;
             /** Format: int64 */
-            filterId: number;
+            id: number;
+            navn: string;
+            /** @enum {string} */
+            type: NoNavAapOppgaveFilterFilterResponseType;
         };
         "no.nav.aap.oppgave.hent.OppgaveP\u00E5BehandlingResponse": {
             /** Format: uuid */
@@ -3110,6 +3092,11 @@ export enum NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer {
     HASTER = "HASTER"
 }
 export enum NoNavAapOppgaveFilterFilterDtoType {
+    ALLE_OPPGAVER = "ALLE_OPPGAVER",
+    GENERELL = "GENERELL",
+    KVALITETSSIKRING = "KVALITETSSIKRING"
+}
+export enum NoNavAapOppgaveFilterFilterResponseType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
     GENERELL = "GENERELL",
     KVALITETSSIKRING = "KVALITETSSIKRING"

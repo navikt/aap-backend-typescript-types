@@ -652,6 +652,12 @@ let NoNavAapOppgaveFilterFilterDtoType = /* @__PURE__ */ function(NoNavAapOppgav
 	NoNavAapOppgaveFilterFilterDtoType["KVALITETSSIKRING"] = "KVALITETSSIKRING";
 	return NoNavAapOppgaveFilterFilterDtoType;
 }({});
+let NoNavAapOppgaveFilterFilterResponseType = /* @__PURE__ */ function(NoNavAapOppgaveFilterFilterResponseType) {
+	NoNavAapOppgaveFilterFilterResponseType["ALLE_OPPGAVER"] = "ALLE_OPPGAVER";
+	NoNavAapOppgaveFilterFilterResponseType["GENERELL"] = "GENERELL";
+	NoNavAapOppgaveFilterFilterResponseType["KVALITETSSIKRING"] = "KVALITETSSIKRING";
+	return NoNavAapOppgaveFilterFilterResponseType;
+}({});
 let NoNavAapOppgaveListeOppgaveMetadataResponseStatus = /* @__PURE__ */ function(NoNavAapOppgaveListeOppgaveMetadataResponseStatus) {
 	NoNavAapOppgaveListeOppgaveMetadataResponseStatus["AVSLUTTET"] = "AVSLUTTET";
 	NoNavAapOppgaveListeOppgaveMetadataResponseStatus["OPPRETTET"] = "OPPRETTET";
@@ -885,6 +891,7 @@ exports.NoNavAapOppgaveFilterFilterDtoBehandlingstyper = NoNavAapOppgaveFilterFi
 exports.NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer = NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer;
 exports.NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer = NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer;
 exports.NoNavAapOppgaveFilterFilterDtoType = NoNavAapOppgaveFilterFilterDtoType;
+exports.NoNavAapOppgaveFilterFilterResponseType = NoNavAapOppgaveFilterFilterResponseType;
 exports.NoNavAapOppgaveListeOppgaveMetadataResponseStatus = NoNavAapOppgaveListeOppgaveMetadataResponseStatus;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortBy = NoNavAapOppgaveListeOppgaveSorteringSortBy;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortOrder = NoNavAapOppgaveListeOppgaveSorteringSortOrder;
