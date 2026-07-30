@@ -536,45 +536,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/oppgaveliste/v2": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteRequest"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteResponsV2"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/{referanse}/hent-oppgave-enhet": {
         parameters: {
             query?: never;
@@ -643,48 +604,6 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteRespons"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/mine-oppgaver/v2": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: {
-                    /** @description Vis kun på vent-oppgaver. */
-                    kunPaaVent?: boolean;
-                    /** @description Sorter oppgaveliste */
-                    sortby?: PathsMineOppgaverV2GetParametersQuerySortby;
-                    /** @description Sorteringsrekkefølge */
-                    sortorder?: PathsMineOppgaverV2GetParametersQuerySortorder;
-                };
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.liste.OppgavelisteResponsV2"];
                     };
                 };
             };
@@ -2274,14 +2193,6 @@ export interface components {
             oppgaver: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveMedKontekstResponse"][];
             sattFilterBehandlingstyper?: NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper[] | null;
         };
-        "no.nav.aap.oppgave.liste.OppgavelisteResponsV2": {
-            /** Format: int32 */
-            antallGjenstaaende?: number | null;
-            /** Format: int32 */
-            antallTotalt: number;
-            oppgaver: components["schemas"]["no.nav.aap.oppgave.liste.OppgaveMedKontekstResponse"][];
-            sattFilterBehandlingstyper?: NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper[] | null;
-        };
         "no.nav.aap.oppgave.liste.OppgavelisteTagsResponse": {
             forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo"];
             "forrigeP\u00E5VentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
@@ -2498,21 +2409,6 @@ export enum PathsMineOppgaverGetParametersQuerySortby {
     _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
 }
 export enum PathsMineOppgaverGetParametersQuerySortorder {
-    ASC = "ASC",
-    DESC = "DESC"
-}
-export enum PathsMineOppgaverV2GetParametersQuerySortby {
-    AVKLARINGSBEHOV_KODE = "AVKLARINGSBEHOV_KODE",
-    BEHANDLINGSTYPE = "BEHANDLINGSTYPE",
-    BEHANDLING_OPPRETTET = "BEHANDLING_OPPRETTET",
-    OPPRETTET_TIDSPUNKT = "OPPRETTET_TIDSPUNKT",
-    PERSONIDENT = "PERSONIDENT",
-    RESERVERT_AV = "RESERVERT_AV",
-    SAKSNUMMER = "SAKSNUMMER",
-    TILBAKEKREVINGS_BELOP = "TILBAKEKREVINGS_BELOP",
-    _RSAK_TIL_OPPRETTELSE = "\u00C5RSAK_TIL_OPPRETTELSE"
-}
-export enum PathsMineOppgaverV2GetParametersQuerySortorder {
     ASC = "ASC",
     DESC = "DESC"
 }
@@ -3117,19 +3013,6 @@ export enum NoNavAapOppgaveListeOppgaveSorteringSortOrder {
     DESC = "DESC"
 }
 export enum NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper {
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    FORDELING = "FORDELING",
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    JOURNALF_RING = "JOURNALF\u00D8RING",
-    KLAGE = "KLAGE",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    TILBAKEKREVING = "TILBAKEKREVING"
-}
-export enum NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper {
     AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
     AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
     DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",

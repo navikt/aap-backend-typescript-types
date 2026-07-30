@@ -17,23 +17,6 @@ let PathsMineOppgaverGetParametersQuerySortorder = /* @__PURE__ */ function(Path
 	PathsMineOppgaverGetParametersQuerySortorder["DESC"] = "DESC";
 	return PathsMineOppgaverGetParametersQuerySortorder;
 }({});
-let PathsMineOppgaverV2GetParametersQuerySortby = /* @__PURE__ */ function(PathsMineOppgaverV2GetParametersQuerySortby) {
-	PathsMineOppgaverV2GetParametersQuerySortby["AVKLARINGSBEHOV_KODE"] = "AVKLARINGSBEHOV_KODE";
-	PathsMineOppgaverV2GetParametersQuerySortby["BEHANDLINGSTYPE"] = "BEHANDLINGSTYPE";
-	PathsMineOppgaverV2GetParametersQuerySortby["BEHANDLING_OPPRETTET"] = "BEHANDLING_OPPRETTET";
-	PathsMineOppgaverV2GetParametersQuerySortby["OPPRETTET_TIDSPUNKT"] = "OPPRETTET_TIDSPUNKT";
-	PathsMineOppgaverV2GetParametersQuerySortby["PERSONIDENT"] = "PERSONIDENT";
-	PathsMineOppgaverV2GetParametersQuerySortby["RESERVERT_AV"] = "RESERVERT_AV";
-	PathsMineOppgaverV2GetParametersQuerySortby["SAKSNUMMER"] = "SAKSNUMMER";
-	PathsMineOppgaverV2GetParametersQuerySortby["TILBAKEKREVINGS_BELOP"] = "TILBAKEKREVINGS_BELOP";
-	PathsMineOppgaverV2GetParametersQuerySortby["_RSAK_TIL_OPPRETTELSE"] = "ÅRSAK_TIL_OPPRETTELSE";
-	return PathsMineOppgaverV2GetParametersQuerySortby;
-}({});
-let PathsMineOppgaverV2GetParametersQuerySortorder = /* @__PURE__ */ function(PathsMineOppgaverV2GetParametersQuerySortorder) {
-	PathsMineOppgaverV2GetParametersQuerySortorder["ASC"] = "ASC";
-	PathsMineOppgaverV2GetParametersQuerySortorder["DESC"] = "DESC";
-	return PathsMineOppgaverV2GetParametersQuerySortorder;
-}({});
 let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ function(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode) {
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value4101"] = "4101";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode["Value4102"] = "4102";
@@ -694,20 +677,6 @@ let NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper = /* @__PU
 	NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper["TILBAKEKREVING"] = "TILBAKEKREVING";
 	return NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper;
 }({});
-let NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper = /* @__PURE__ */ function(NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper) {
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["FORDELING"] = "FORDELING";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["JOURNALF_RING"] = "JOURNALFØRING";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["KLAGE"] = "KLAGE";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["OPPF_LGINGSBEHANDLING"] = "OPPFØLGINGSBEHANDLING";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["REVURDERING"] = "REVURDERING";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
-	NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper["TILBAKEKREVING"] = "TILBAKEKREVING";
-	return NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper;
-}({});
 let NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = /* @__PURE__ */ function(NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper) {
 	NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
 	NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
@@ -896,7 +865,6 @@ exports.NoNavAapOppgaveListeOppgaveMetadataResponseStatus = NoNavAapOppgaveListe
 exports.NoNavAapOppgaveListeOppgaveSorteringSortBy = NoNavAapOppgaveListeOppgaveSorteringSortBy;
 exports.NoNavAapOppgaveListeOppgaveSorteringSortOrder = NoNavAapOppgaveListeOppgaveSorteringSortOrder;
 exports.NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper = NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper;
-exports.NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper = NoNavAapOppgaveListeOppgavelisteResponsV2SattFilterBehandlingstyper;
 exports.NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper = NoNavAapOppgaveListeUtvidetOppgavelisteFilterBehandlingstyper;
 exports.NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser = NoNavAapOppgaveListeUtvidetOppgavelisteFilterReturStatuser;
 exports.NoNavAapOppgaveMarkeringMarkeringDtoHendelseType = NoNavAapOppgaveMarkeringMarkeringDtoHendelseType;
@@ -925,7 +893,5 @@ exports.NoNavAapPostmottakKontraktHendelseEndringDTORsakTilSattPVent = NoNavAapP
 exports.NoNavAapPostmottakKontraktHendelseEndringDTOStatus = NoNavAapPostmottakKontraktHendelseEndringDTOStatus;
 exports.PathsMineOppgaverGetParametersQuerySortby = PathsMineOppgaverGetParametersQuerySortby;
 exports.PathsMineOppgaverGetParametersQuerySortorder = PathsMineOppgaverGetParametersQuerySortorder;
-exports.PathsMineOppgaverV2GetParametersQuerySortby = PathsMineOppgaverV2GetParametersQuerySortby;
-exports.PathsMineOppgaverV2GetParametersQuerySortorder = PathsMineOppgaverV2GetParametersQuerySortorder;
 
 //# sourceMappingURL=index.js.map
