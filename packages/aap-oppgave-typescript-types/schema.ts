@@ -2160,7 +2160,9 @@ export interface components {
         "no.nav.aap.oppgave.hent.OppgaverP\u00E5SakResponse": {
             oppgaver: components["schemas"]["no.nav.aap.oppgave.hent.OppgaveP\u00E5BehandlingResponse"][];
         };
-        "no.nav.aap.oppgave.hent.SaksnummerResponse": Record<string, never>;
+        "no.nav.aap.oppgave.hent.SaksnummerResponse": {
+            saksnummer: string;
+        };
         "no.nav.aap.oppgave.hent.SkjermingInfoResponse": {
             erSkjermet: boolean;
             harFortroligAdresse: boolean;
