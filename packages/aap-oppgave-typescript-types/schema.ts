@@ -2452,11 +2452,6 @@ export interface components {
             opprettetTidspunkt: string;
             /** Format: uuid */
             referanse: string;
-            /**
-             * @deprecated
-             * @description Dette må oppgave utlede selv i framtiden.
-             */
-            saksnummer?: string | null;
             /** @enum {string} */
             status: NoNavAapPostmottakKontraktHendelseDokumentflytStoppetHendelseStatus;
         };
