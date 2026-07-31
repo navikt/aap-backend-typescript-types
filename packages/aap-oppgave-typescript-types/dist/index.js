@@ -457,51 +457,6 @@ let NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype = /* @__PURE__ */ 
 	NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype["TILBAKEKREVING"] = "TILBAKEKREVING";
 	return NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype;
 }({});
-let NoNavAapOppgaveOppgaveDtoBehandlingstype = /* @__PURE__ */ function(NoNavAapOppgaveOppgaveDtoBehandlingstype) {
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["DOKUMENT_H_NDTERING"] = "DOKUMENT_HÅNDTERING";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["FORDELING"] = "FORDELING";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["F_RSTEGANGSBEHANDLING"] = "FØRSTEGANGSBEHANDLING";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["JOURNALF_RING"] = "JOURNALFØRING";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["KLAGE"] = "KLAGE";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["OPPF_LGINGSBEHANDLING"] = "OPPFØLGINGSBEHANDLING";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["REVURDERING"] = "REVURDERING";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["SVAR_FRA_ANDREINSTANS"] = "SVAR_FRA_ANDREINSTANS";
-	NoNavAapOppgaveOppgaveDtoBehandlingstype["TILBAKEKREVING"] = "TILBAKEKREVING";
-	return NoNavAapOppgaveOppgaveDtoBehandlingstype;
-}({});
-let NoNavAapOppgaveOppgaveDtoReturStatus = /* @__PURE__ */ function(NoNavAapOppgaveOppgaveDtoReturStatus) {
-	NoNavAapOppgaveOppgaveDtoReturStatus["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
-	NoNavAapOppgaveOppgaveDtoReturStatus["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
-	NoNavAapOppgaveOppgaveDtoReturStatus["RETUR_FRA_SAKSBEHANDLER"] = "RETUR_FRA_SAKSBEHANDLER";
-	NoNavAapOppgaveOppgaveDtoReturStatus["RETUR_FRA_VEILEDER"] = "RETUR_FRA_VEILEDER";
-	return NoNavAapOppgaveOppgaveDtoReturStatus;
-}({});
-let NoNavAapOppgaveOppgaveDtoStatus = /* @__PURE__ */ function(NoNavAapOppgaveOppgaveDtoStatus) {
-	NoNavAapOppgaveOppgaveDtoStatus["AVSLUTTET"] = "AVSLUTTET";
-	NoNavAapOppgaveOppgaveDtoStatus["OPPRETTET"] = "OPPRETTET";
-	return NoNavAapOppgaveOppgaveDtoStatus;
-}({});
-let NoNavAapOppgaveReturInformasjonStatus = /* @__PURE__ */ function(NoNavAapOppgaveReturInformasjonStatus) {
-	NoNavAapOppgaveReturInformasjonStatus["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
-	NoNavAapOppgaveReturInformasjonStatus["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
-	NoNavAapOppgaveReturInformasjonStatus["RETUR_FRA_SAKSBEHANDLER"] = "RETUR_FRA_SAKSBEHANDLER";
-	NoNavAapOppgaveReturInformasjonStatus["RETUR_FRA_VEILEDER"] = "RETUR_FRA_VEILEDER";
-	return NoNavAapOppgaveReturInformasjonStatus;
-}({});
-let NoNavAapOppgaveReturInformasjonRsaker = /* @__PURE__ */ function(NoNavAapOppgaveReturInformasjonRsaker) {
-	NoNavAapOppgaveReturInformasjonRsaker["ANNET"] = "ANNET";
-	NoNavAapOppgaveReturInformasjonRsaker["FEIL_LOVANVENDELSE"] = "FEIL_LOVANVENDELSE";
-	NoNavAapOppgaveReturInformasjonRsaker["FOR_DETALJERT"] = "FOR_DETALJERT";
-	NoNavAapOppgaveReturInformasjonRsaker["IKKE_INDIVIDUELL_OG_KONKRET"] = "IKKE_INDIVIDUELL_OG_KONKRET";
-	NoNavAapOppgaveReturInformasjonRsaker["MANGELFULL_BEGRUNNELSE"] = "MANGELFULL_BEGRUNNELSE";
-	NoNavAapOppgaveReturInformasjonRsaker["MANGLENDE_JOURNALF_RING"] = "MANGLENDE_JOURNALFØRING";
-	NoNavAapOppgaveReturInformasjonRsaker["MANGLENDE_KILDEHENVISNING"] = "MANGLENDE_KILDEHENVISNING";
-	NoNavAapOppgaveReturInformasjonRsaker["MANGLENDE_UTREDNING"] = "MANGLENDE_UTREDNING";
-	NoNavAapOppgaveReturInformasjonRsaker["SKRIVEFEIL"] = "SKRIVEFEIL";
-	return NoNavAapOppgaveReturInformasjonRsaker;
-}({});
 let NoNavAapOppgaveReturInformasjonDtoStatus = /* @__PURE__ */ function(NoNavAapOppgaveReturInformasjonDtoStatus) {
 	NoNavAapOppgaveReturInformasjonDtoStatus["RETUR_FRA_BESLUTTER"] = "RETUR_FRA_BESLUTTER";
 	NoNavAapOppgaveReturInformasjonDtoStatus["RETUR_FRA_KVALITETSSIKRER"] = "RETUR_FRA_KVALITETSSIKRER";
@@ -873,14 +828,9 @@ exports.NoNavAapOppgaveMarkeringMarkeringOgHistorikkHendelseType = NoNavAapOppga
 exports.NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType = NoNavAapOppgaveMarkeringMarkeringOgHistorikkMarkeringType;
 exports.NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType = NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType;
 exports.NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType = NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
-exports.NoNavAapOppgaveOppgaveDtoBehandlingstype = NoNavAapOppgaveOppgaveDtoBehandlingstype;
-exports.NoNavAapOppgaveOppgaveDtoReturStatus = NoNavAapOppgaveOppgaveDtoReturStatus;
-exports.NoNavAapOppgaveOppgaveDtoStatus = NoNavAapOppgaveOppgaveDtoStatus;
 exports.NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype = NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
 exports.NoNavAapOppgaveReturInformasjonDtoRsaker = NoNavAapOppgaveReturInformasjonDtoRsaker;
 exports.NoNavAapOppgaveReturInformasjonDtoStatus = NoNavAapOppgaveReturInformasjonDtoStatus;
-exports.NoNavAapOppgaveReturInformasjonRsaker = NoNavAapOppgaveReturInformasjonRsaker;
-exports.NoNavAapOppgaveReturInformasjonStatus = NoNavAapOppgaveReturInformasjonStatus;
 exports.NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer = NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer;
 exports.NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode = NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode;
 exports.NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv = NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv;

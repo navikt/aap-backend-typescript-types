@@ -172,7 +172,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.AvreserverOppgaveDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.plukk.AvreserverOppgaveDto"];
                 };
             };
             responses: {
@@ -211,7 +211,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.DokumenterLestDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.mottattdokument.DokumenterLestDto"];
                 };
             };
             responses: {
@@ -248,7 +248,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.DokumenterLestDto"];
+                    "application/json": components["schemas"]["no.nav.aap.oppgave.mottattdokument.DokumenterLestDto"];
                 };
             };
             responses: {
@@ -371,44 +371,6 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["no.nav.aap.oppgave.tildel.TildeltStatusDto"];
-                    };
-                };
-            };
-        };
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/{referanse}/hent-oppgave": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.OppgaveDto"];
                     };
                 };
             };
@@ -1814,9 +1776,6 @@ export interface components {
         "no.nav.aap.motor.api.`MotorApiKt$motorApi$1$7$AvbrytJobbRequest`": {
             begrunnelse: string;
         };
-        "no.nav.aap.oppgave.AvreserverOppgaveDto": {
-            oppgaver: number[];
-        };
         "no.nav.aap.oppgave.BehandlingskontekstResponse": {
             /** Format: uuid */
             behandlingsreferanse: string;
@@ -1827,111 +1786,15 @@ export interface components {
             saksnummer?: string | null;
             tilbakekrevingUrl?: string | null;
         };
-        "no.nav.aap.oppgave.DokumenterLestDto": {
-            /** Format: uuid */
-            behandlingRef: string;
-        };
-        "no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo": {
+        "no.nav.aap.oppgave.ForrigeKvalitetssikrerDto": {
             forrigeKvalitetssikrerIdent: string;
             forrigeKvalitetssikrerNavn?: string | null;
-        };
-        "no.nav.aap.oppgave.OppgaveDto": {
-            avklaringsbehovKode: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            behandlingOpprettet: string;
-            /** Format: uuid */
-            behandlingRef: string;
-            /** @enum {string} */
-            behandlingstype: NoNavAapOppgaveOppgaveDtoBehandlingstype;
-            endretAv?: string | null;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            endretTidspunkt?: string | null;
-            enhet: string;
-            enhetForrigeOppgave?: components["schemas"]["no.nav.aap.oppgave.enhet.EnhetDto"];
-            erSkjermet?: boolean | null;
-            forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo"];
-            "forrigeP\u00E5Vent\u00C5rsak"?: string | null;
-            forrigeVenteBegrunnelse?: string | null;
-            harFortroligAdresse?: boolean | null;
-            harUlesteDokumenter?: boolean | null;
-            /** Format: int64 */
-            id: number;
-            /** Format: int64 */
-            journalpostId?: number | null;
-            markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
-            "oppf\u00F8lgingsenhet"?: string | null;
-            opprettetAv: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettetTidspunkt: string;
-            personIdent: string;
-            personNavn?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            "p\u00E5VentTil"?: string | null;
-            "p\u00E5Vent\u00C5rsak"?: string | null;
-            reservertAv?: string | null;
-            reservertAvNavn?: string | null;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            reservertTidspunkt?: string | null;
-            returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjon"];
-            /**
-             * @deprecated
-             * @description Bruk returInformasjon
-             * @enum {string|null}
-             */
-            returStatus?: NoNavAapOppgaveOppgaveDtoReturStatus;
-            saksnummer?: string | null;
-            /** @enum {string} */
-            status: NoNavAapOppgaveOppgaveDtoStatus;
-            tilbakekrevingsVarsDto?: components["schemas"]["no.nav.aap.oppgave.TilbakekrevingsVarsDto"];
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            "utl\u00F8ptVentefrist"?: string | null;
-            veilederArbeid?: string | null;
-            veilederSykdom?: string | null;
-            venteBegrunnelse?: string | null;
-            /** Format: int64 */
-            versjon: number;
-            vurderingsbehov: string[];
-            "\u00E5rsakTilOpprettelse"?: string | null;
-            /**
-             * @deprecated
-             * @description Bytt til vurderingsbehov når frontend er oppdatert
-             */
-            "\u00E5rsakerTilBehandling": string[];
         };
         "no.nav.aap.oppgave.OppgaveId": {
             /** Format: int64 */
             id: number;
             /** Format: int64 */
             versjon: number;
-        };
-        /**
-         * @deprecated
-         * @description bruk ReturInformasjonDto
-         */
-        "no.nav.aap.oppgave.ReturInformasjon": {
-            begrunnelse: string;
-            endretAv: string;
-            /** @enum {string} */
-            status: NoNavAapOppgaveReturInformasjonStatus;
-            "\u00E5rsaker": NoNavAapOppgaveReturInformasjonRsaker[];
         };
         "no.nav.aap.oppgave.ReturInformasjonDto": {
             begrunnelse: string;
@@ -2235,7 +2098,7 @@ export interface components {
             sattFilterBehandlingstyper?: NoNavAapOppgaveListeOppgavelisteResponsSattFilterBehandlingstyper[] | null;
         };
         "no.nav.aap.oppgave.liste.OppgavelisteTagsResponse": {
-            forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerInfo"];
+            forrigeKvalitetssikrerInfo?: components["schemas"]["no.nav.aap.oppgave.ForrigeKvalitetssikrerDto"];
             "forrigeP\u00E5VentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
             harUlesteDokumenter?: boolean | null;
             markeringer: components["schemas"]["no.nav.aap.oppgave.markering.MarkeringDto"][];
@@ -2313,6 +2176,13 @@ export interface components {
             hendelseType?: NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType;
             /** @enum {string} */
             markeringType: NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType;
+        };
+        "no.nav.aap.oppgave.mottattdokument.DokumenterLestDto": {
+            /** Format: uuid */
+            behandlingRef: string;
+        };
+        "no.nav.aap.oppgave.plukk.AvreserverOppgaveDto": {
+            oppgaver: number[];
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveRequest": {
             /** Format: int64 */
@@ -2873,46 +2743,6 @@ export enum NoNavAapOppgaveBehandlingskontekstResponseBehandlingstype {
     REVURDERING = "REVURDERING",
     SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
     TILBAKEKREVING = "TILBAKEKREVING"
-}
-export enum NoNavAapOppgaveOppgaveDtoBehandlingstype {
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    FORDELING = "FORDELING",
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    JOURNALF_RING = "JOURNALF\u00D8RING",
-    KLAGE = "KLAGE",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    TILBAKEKREVING = "TILBAKEKREVING"
-}
-export enum NoNavAapOppgaveOppgaveDtoReturStatus {
-    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
-    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER",
-    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER"
-}
-export enum NoNavAapOppgaveOppgaveDtoStatus {
-    AVSLUTTET = "AVSLUTTET",
-    OPPRETTET = "OPPRETTET"
-}
-export enum NoNavAapOppgaveReturInformasjonStatus {
-    RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
-    RETUR_FRA_KVALITETSSIKRER = "RETUR_FRA_KVALITETSSIKRER",
-    RETUR_FRA_SAKSBEHANDLER = "RETUR_FRA_SAKSBEHANDLER",
-    RETUR_FRA_VEILEDER = "RETUR_FRA_VEILEDER"
-}
-export enum NoNavAapOppgaveReturInformasjonRsaker {
-    ANNET = "ANNET",
-    FEIL_LOVANVENDELSE = "FEIL_LOVANVENDELSE",
-    FOR_DETALJERT = "FOR_DETALJERT",
-    IKKE_INDIVIDUELL_OG_KONKRET = "IKKE_INDIVIDUELL_OG_KONKRET",
-    MANGELFULL_BEGRUNNELSE = "MANGELFULL_BEGRUNNELSE",
-    MANGLENDE_JOURNALF_RING = "MANGLENDE_JOURNALF\u00D8RING",
-    MANGLENDE_KILDEHENVISNING = "MANGLENDE_KILDEHENVISNING",
-    MANGLENDE_UTREDNING = "MANGLENDE_UTREDNING",
-    SKRIVEFEIL = "SKRIVEFEIL"
 }
 export enum NoNavAapOppgaveReturInformasjonDtoStatus {
     RETUR_FRA_BESLUTTER = "RETUR_FRA_BESLUTTER",
