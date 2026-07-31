@@ -7096,8 +7096,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.SamordningVurderingDTO": {
             /** Format: int32 */
             gradering?: number | null;
-            /** Format: int32 */
-            kronesum?: number | null;
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
@@ -7109,8 +7107,6 @@ export interface components {
             /** Format: int32 */
             gradering?: number | null;
             kilde: string;
-            /** Format: int32 */
-            kronesum?: number | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             saksRef?: string | null;
             /** @enum {string} */
@@ -8920,7 +8916,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.SamordningVurderingData": {
             /** Format: int32 */
             gradering?: number | null;
-            kronesum?: number | null;
             manuell?: boolean | null;
             periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
             /** @enum {string} */
@@ -8928,18 +8923,6 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.VurderingerForSamordning": {
             begrunnelse?: string | null;
-            /**
-             * Format: date
-             * @deprecated
-             * @description Ikke lenger i bruk
-             * @example 2025-04-01
-             */
-            fristNyRevurdering?: string | null;
-            /**
-             * @deprecated
-             * @description Ikke lenger i bruk
-             */
-            maksDatoEndelig?: boolean | null;
             vurderteSamordningerData: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.SamordningVurderingData"][];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.samordning.refusjonskrav.TjenestepensjonRefusjonskravVurdering": {
