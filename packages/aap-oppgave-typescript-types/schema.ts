@@ -833,7 +833,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.oppgave.filter.FilterDto"][];
+                        "application/json": components["schemas"]["no.nav.aap.oppgave.filter.FilterResponse"][];
                     };
                 };
             };
@@ -878,47 +878,6 @@ export interface paths {
         };
         put?: never;
         post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/produksjonsstyring/antall-oppgaver": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: {
-                content: {
-                    "application/json": components["schemas"]["no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto"];
-                };
-            };
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": {
-                            [key: string]: number;
-                        };
-                    };
-                };
-            };
-        };
         delete?: never;
         options?: never;
         head?: never;
@@ -1960,32 +1919,6 @@ export interface components {
         "no.nav.aap.oppgave.enhet.PersonRequest": {
             ident: string;
         };
-        "no.nav.aap.oppgave.filter.FilterDto": {
-            avklaringsbehovKoder: string[];
-            behandlingstyper: NoNavAapOppgaveFilterFilterDtoBehandlingstyper[];
-            beskrivelse: string;
-            ekskluderteMarkeringer: NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer[];
-            endretAv?: string | null;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            endretTidspunkt?: string | null;
-            enheter: string[];
-            /** Format: int64 */
-            id: number;
-            inkluderteMarkeringer: NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer[];
-            navn: string;
-            opprettetAv: string;
-            /**
-             * Format: date-time
-             * @example 2025-04-01T12:30:00
-             */
-            opprettetTidspunkt: string;
-            /** @enum {string} */
-            type: NoNavAapOppgaveFilterFilterDtoType;
-            veileder?: string | null;
-        };
         "no.nav.aap.oppgave.filter.FilterResponse": {
             beskrivelse: string;
             /** Format: int64 */
@@ -2192,10 +2125,6 @@ export interface components {
         };
         "no.nav.aap.oppgave.plukk.PlukkOppgaveResponse": {
             behandlingskontekst: components["schemas"]["no.nav.aap.oppgave.BehandlingskontekstResponse"];
-        };
-        "no.nav.aap.oppgave.produksjonsstyring.AntallOppgaverDto": {
-            /** @enum {string|null} */
-            behandlingstype?: NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype;
         };
         "no.nav.aap.oppgave.s\u00F8k.OppgaveIS\u00F8kResponse": {
             avklaringsbehovKode: string;
@@ -2833,32 +2762,6 @@ export enum NoNavAapOppgaveEnhetNVRendeEnhetOppgaveKategori {
     NAY = "NAY",
     STUDENT = "STUDENT"
 }
-export enum NoNavAapOppgaveFilterFilterDtoBehandlingstyper {
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    FORDELING = "FORDELING",
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    JOURNALF_RING = "JOURNALF\u00D8RING",
-    KLAGE = "KLAGE",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    TILBAKEKREVING = "TILBAKEKREVING"
-}
-export enum NoNavAapOppgaveFilterFilterDtoEkskluderteMarkeringer {
-    AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER"
-}
-export enum NoNavAapOppgaveFilterFilterDtoInkluderteMarkeringer {
-    AVSLAG_11_5 = "AVSLAG_11_5",
-    HASTER = "HASTER"
-}
-export enum NoNavAapOppgaveFilterFilterDtoType {
-    ALLE_OPPGAVER = "ALLE_OPPGAVER",
-    GENERELL = "GENERELL",
-    KVALITETSSIKRING = "KVALITETSSIKRING"
-}
 export enum NoNavAapOppgaveFilterFilterResponseType {
     ALLE_OPPGAVER = "ALLE_OPPGAVER",
     GENERELL = "GENERELL",
@@ -2938,19 +2841,6 @@ export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoHendelseType {
 export enum NoNavAapOppgaveMarkeringOpprettMarkeringDtoMarkeringType {
     AVSLAG_11_5 = "AVSLAG_11_5",
     HASTER = "HASTER"
-}
-export enum NoNavAapOppgaveProduksjonsstyringAntallOppgaverDtoBehandlingstype {
-    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
-    AKTIVITETSPLIKT_11_9 = "AKTIVITETSPLIKT_11_9",
-    DOKUMENT_H_NDTERING = "DOKUMENT_H\u00C5NDTERING",
-    FORDELING = "FORDELING",
-    F_RSTEGANGSBEHANDLING = "F\u00D8RSTEGANGSBEHANDLING",
-    JOURNALF_RING = "JOURNALF\u00D8RING",
-    KLAGE = "KLAGE",
-    OPPF_LGINGSBEHANDLING = "OPPF\u00D8LGINGSBEHANDLING",
-    REVURDERING = "REVURDERING",
-    SVAR_FRA_ANDREINSTANS = "SVAR_FRA_ANDREINSTANS",
-    TILBAKEKREVING = "TILBAKEKREVING"
 }
 export enum NoNavAapOppgaveSKOppgaveISKResponseTypeMarkeringer {
     AVSLAG_11_5 = "AVSLAG_11_5",
