@@ -387,6 +387,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["LEGEERKL_RING"] = "LEGEERKLÆRING";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["LOVVALG_OG_MEDLEMSKAP"] = "LOVVALG_OG_MEDLEMSKAP";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["MELDEKORT"] = "MELDEKORT";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["MIGRERING_FRA_ARENA"] = "MIGRERING_FRA_ARENA";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["MIGRER_RETTIGHETSPERIODE"] = "MIGRER_RETTIGHETSPERIODE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["MOTTATT_KABAL_HENDELSE"] = "MOTTATT_KABAL_HENDELSE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["OPPF_LGINGSOPPGAVE"] = "OPPFØLGINGSOPPGAVE";
@@ -442,6 +443,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["KLAGE"] = "KLAGE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["MANUELL_OPPRETTELSE"] = "MANUELL_OPPRETTELSE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["MELDEKORT"] = "MELDEKORT";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["MIGRERING_FRA_ARENA"] = "MIGRERING_FRA_ARENA";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["MIGRER_RETTIGHETSPERIODE"] = "MIGRER_RETTIGHETSPERIODE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["OMGJ_RING_ETTER_KLAGE"] = "OMGJØRING_ETTER_KLAGE";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingRsakTilOpprettelse["OMGJ_RING_ETTER_SVAR_FRA_KLAGEINSTANS"] = "OMGJØRING_ETTER_SVAR_FRA_KLAGEINSTANS";
