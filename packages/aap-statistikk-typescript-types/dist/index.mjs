@@ -364,6 +364,7 @@ let NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov = 
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["AKTIVITETSPLIKT_11_7"] = "AKTIVITETSPLIKT_11_7";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["AKTIVITETSPLIKT_11_9"] = "AKTIVITETSPLIKT_11_9";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["AVVIST_LEGEERKL_RING"] = "AVVIST_LEGEERKLÆRING";
+	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["AVVIST_SOKNAD_OM_AAP_UNDER_OPPHOLD_I_UTLANDET"] = "AVVIST_SOKNAD_OM_AAP_UNDER_OPPHOLD_I_UTLANDET";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["BARNETILLEGG"] = "BARNETILLEGG";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["BARNETILLEGG_SATS_REGULERING"] = "BARNETILLEGG_SATS_REGULERING";
 	NoNavAapBehandlingsflytKontraktStatistikkStoppetBehandlingVurderingsbehov["BRUKER_TILBAKE_I_ARBEID"] = "BRUKER_TILBAKE_I_ARBEID";
