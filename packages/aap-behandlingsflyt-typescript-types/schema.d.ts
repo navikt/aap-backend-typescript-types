@@ -7718,12 +7718,7 @@ export interface components {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto": {
-            /**
-             * @deprecated
-             * @description Bruk fullmektigIdentMedType
-             */
             fullmektigIdent?: string | null;
-            fullmektigIdentMedType?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.IdentMedType"];
             fullmektigNavnOgAdresse?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse"];
             harFullmektig: boolean;
             vurderingerMeta: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurderingerMetaResponse"];
@@ -8159,11 +8154,6 @@ export interface components {
             nyeVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"][];
             oppgittStudent?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.student.OppgittStudent"];
             sisteVedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"][];
-            /**
-             * @deprecated
-             * @description Bruk nyeVurderinger
-             */
-            studentvurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.student.StudentVurderingResponse": {
             "avbruddMerEnn6M\u00E5neder"?: boolean | null;
