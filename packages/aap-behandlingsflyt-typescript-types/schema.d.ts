@@ -7718,7 +7718,7 @@ export interface components {
             vurdering?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.klage.fullmektig.FullmektigVurderingDto": {
-            fullmektigIdent?: string | null;
+            fullmektigIdentMedType?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.IdentMedType"];
             fullmektigNavnOgAdresse?: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.klage.fullmektig.NavnOgAdresse"];
             harFullmektig: boolean;
             vurderingerMeta: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurderingerMetaResponse"];
