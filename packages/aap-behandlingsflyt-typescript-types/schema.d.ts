@@ -10138,6 +10138,23 @@ export interface components {
             tidspunkt: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knad": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadV0"];
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadFerieDto": {
+            antallDager?: string | null;
+            /** @enum {string|null} */
+            ferieType?: "DAGER" | "PERIODE" | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fraDato?: string | null;
+            /** @enum {string|null} */
+            skalHaFerie?: "Ja" | "Nei" | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tilDato?: string | null;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadMedlemskapDto": {
             "arbeidetUtenforNorgeF\u00F8rSykdom"?: string | null;
             "harArbeidetINorgeSiste5\u00C5r"?: string | null;
@@ -10155,9 +10172,12 @@ export interface components {
             andreBehandlere?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.BehandlerDto"][] | null;
             andreUtbetalinger?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.AndreUtbetalingerDto"];
             fastlege?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.FastlegeDto"][] | null;
+            ferie?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadFerieDto"];
             medlemskap?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadMedlemskapDto"];
             oppgitteBarn?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.OppgitteBarn"];
             student?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.S\u00F8knadStudentDto"];
+            /** @enum {string|null} */
+            sykepenger?: "Ja" | "Nei" | null;
             yrkesskade: string;
         };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingHendelse": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.FagsysteminfoBehovV0"] | components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.dokumenter.TilbakekrevingHendelseV0"];
