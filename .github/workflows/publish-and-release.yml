@@ -97,10 +97,10 @@ jobs:
           AUTH_TOKEN: "${{secrets.GITHUB_TOKEN}}"
       - name: Publish ublish to NPM
         id: changesets
-        uses: changesets/action@v2
+        uses: changesets/action@v1
         with:
-          publish-script: yarn changeset publish
-          create-github-releases: false
+          publish: yarn changeset publish
+          createGithubReleases: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
