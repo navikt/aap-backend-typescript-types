@@ -99,8 +99,8 @@ jobs:
         id: changesets
         uses: changesets/action@v2
         with:
-          publish: yarn changeset publish
-          createGithubReleases: false
+          publish-script: yarn changeset publish
+          create-github-releases: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
