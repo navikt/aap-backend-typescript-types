@@ -216,6 +216,8 @@ export interface components {
             "m\u00E5RevurderesEtterOpph\u00F8r": boolean;
             /** @enum {string} */
             type: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
+            /** @enum {string|null} */
+            "vurdererVilk\u00E5r"?: NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR;
             name: string;
         };
         /** Format: uuid */
@@ -842,6 +844,7 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg {
     ARBEIDSOPPTRAPPING = "ARBEIDSOPPTRAPPING",
     AVBRYT_AKTIVITETSPLIKTBEHANDLING = "AVBRYT_AKTIVITETSPLIKTBEHANDLING",
     AVBRYT_REVURDERING = "AVBRYT_REVURDERING",
+    AVKLAR_MIGRERINGSDATO = "AVKLAR_MIGRERINGSDATO",
     AVKLAR_OPPF_LGING = "AVKLAR_OPPF\u00D8LGING",
     AVKLAR_STUDENT = "AVKLAR_STUDENT",
     AVKLAR_STUDENT_V2 = "AVKLAR_STUDENT_V2",
@@ -924,6 +927,26 @@ export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType {
     MANUELT_P_KREVD = "MANUELT_P\u00C5KREVD",
     OVERSTYR = "OVERSTYR",
     VENTEPUNKT = "VENTEPUNKT"
+}
+export enum NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR {
+    AKTIVITETSPLIKT = "AKTIVITETSPLIKT",
+    ALDERSVILK_RET = "ALDERSVILK\u00C5RET",
+    BISTANDSVILK_RET = "BISTANDSVILK\u00C5RET",
+    GRUNNLAGET = "GRUNNLAGET",
+    INNTEKTSBORTFALL = "INNTEKTSBORTFALL",
+    LOVVALG = "LOVVALG",
+    MEDLEMSKAP = "MEDLEMSKAP",
+    OPPHOLDSKRAV = "OPPHOLDSKRAV",
+    ORDIN_R_KVOTE = "ORDIN\u00C6R_KVOTE",
+    OVERGANGARBEIDVILK_RET = "OVERGANGARBEIDVILK\u00C5RET",
+    OVERGANGUF_REVILK_RET = "OVERGANGUF\u00D8REVILK\u00C5RET",
+    SAMORDNING = "SAMORDNING",
+    SAMORDNING_ANNEN_LOVGIVNING = "SAMORDNING_ANNEN_LOVGIVNING",
+    STRAFFEGJENNOMF_RING = "STRAFFEGJENNOMF\u00D8RING",
+    STUDENT = "STUDENT",
+    SYKDOMSVILK_RET = "SYKDOMSVILK\u00C5RET",
+    SYKEPENGEERSTATNING = "SYKEPENGEERSTATNING",
+    SYKEPENGEERSTATNING_KVOTE = "SYKEPENGEERSTATNING_KVOTE"
 }
 export enum NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus {
     AVBRUTT = "AVBRUTT",
@@ -1252,6 +1275,7 @@ export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode {
     Value1340 = "1340",
     Value1341 = "1341",
     Value1342 = "1342",
+    Value1343 = "1343",
     Value9001 = "9001"
 }
 export enum NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonLSesAv {

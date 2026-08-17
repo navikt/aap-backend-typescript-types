@@ -100,6 +100,7 @@ let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = /* @__PU
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["ARBEIDSOPPTRAPPING"] = "ARBEIDSOPPTRAPPING";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVBRYT_AKTIVITETSPLIKTBEHANDLING"] = "AVBRYT_AKTIVITETSPLIKTBEHANDLING";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVBRYT_REVURDERING"] = "AVBRYT_REVURDERING";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_MIGRERINGSDATO"] = "AVKLAR_MIGRERINGSDATO";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_OPPF_LGING"] = "AVKLAR_OPPFØLGING";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_STUDENT"] = "AVKLAR_STUDENT";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg["AVKLAR_STUDENT_V2"] = "AVKLAR_STUDENT_V2";
@@ -184,6 +185,27 @@ let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType = /* @__PURE__ 
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType["OVERSTYR"] = "OVERSTYR";
 	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType["VENTEPUNKT"] = "VENTEPUNKT";
 	return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
+}({});
+let NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR = /* @__PURE__ */ function(NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR) {
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["AKTIVITETSPLIKT"] = "AKTIVITETSPLIKT";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["ALDERSVILK_RET"] = "ALDERSVILKÅRET";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["BISTANDSVILK_RET"] = "BISTANDSVILKÅRET";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["GRUNNLAGET"] = "GRUNNLAGET";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["INNTEKTSBORTFALL"] = "INNTEKTSBORTFALL";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["LOVVALG"] = "LOVVALG";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["MEDLEMSKAP"] = "MEDLEMSKAP";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["OPPHOLDSKRAV"] = "OPPHOLDSKRAV";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["ORDIN_R_KVOTE"] = "ORDINÆR_KVOTE";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["OVERGANGARBEIDVILK_RET"] = "OVERGANGARBEIDVILKÅRET";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["OVERGANGUF_REVILK_RET"] = "OVERGANGUFØREVILKÅRET";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["SAMORDNING"] = "SAMORDNING";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["SAMORDNING_ANNEN_LOVGIVNING"] = "SAMORDNING_ANNEN_LOVGIVNING";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["STRAFFEGJENNOMF_RING"] = "STRAFFEGJENNOMFØRING";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["STUDENT"] = "STUDENT";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["SYKDOMSVILK_RET"] = "SYKDOMSVILKÅRET";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["SYKEPENGEERSTATNING"] = "SYKEPENGEERSTATNING";
+	NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR["SYKEPENGEERSTATNING_KVOTE"] = "SYKEPENGEERSTATNING_KVOTE";
+	return NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR;
 }({});
 let NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = /* @__PURE__ */ function(NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus) {
 	NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus["AVBRUTT"] = "AVBRUTT";
@@ -538,6 +560,7 @@ let NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode = /* @__PURE__ */ fu
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode["Value1340"] = "1340";
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode["Value1341"] = "1341";
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode["Value1342"] = "1342";
+	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode["Value1343"] = "1343";
 	NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode["Value9001"] = "9001";
 	return NoNavAapPostmottakKontraktAvklaringsbehovDefinisjonKode;
 }({});
@@ -613,6 +636,7 @@ exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonKode = NoNavAapB
 exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv = NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesAv;
 exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg = NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonLSesISteg;
 exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType = NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonType;
+exports.NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR = NoNavAapBehandlingsflytKontraktAvklaringsbehovDefinisjonVurdererVilkR;
 exports.NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus = NoNavAapBehandlingsflytKontraktHendelseAvklaringsbehovHendelseDtoStatus;
 exports.NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent = NoNavAapBehandlingsflytKontraktHendelseEndringDTORsakTilSattPVent;
 exports.NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus = NoNavAapBehandlingsflytKontraktHendelseEndringDTOStatus;
