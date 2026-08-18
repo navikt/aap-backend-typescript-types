@@ -7711,7 +7711,7 @@ export interface components {
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.TjenestepensjonYtelseDTO": {
             ordning: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.tjenestepensjon.TjenestePensjonOrdning"];
             /** @enum {string} */
-            ytelse: "AFP" | "ALDER" | "BARN" | "BETINGET_TP" | "GJENLEVENDE" | "LIVSVARIG_AFP" | "OPPSATT_BTO_PEN" | "OVERGANGSTILLEGG" | "PAASLAGSPENSJON" | "SAERALDER" | "UFORE" | "UKJENT";
+            ytelse: "AFP" | "ALDER" | "BARN" | "BETINGET_TP" | "GJENLEVENDE" | "LIVSVARIG_AFP" | "OPPSATT_BTO_PEN" | "OVERGANGSTILLEGG" | "PAASLAGSPENSJON" | "SAERALDER" | "SAERALDERSPAASLAG" | "TIDLIGPENSJON" | "TIDLIGPEN_OVERGANG" | "UFORE" | "UKJENT";
             /**
              * Format: date
              * @example 2025-04-01
@@ -8989,7 +8989,7 @@ export interface components {
              */
             ytelseIverksattTom?: string | null;
             /** @enum {string} */
-            ytelseType: "AFP" | "ALDER" | "BARN" | "BETINGET_TP" | "GJENLEVENDE" | "LIVSVARIG_AFP" | "OPPSATT_BTO_PEN" | "OVERGANGSTILLEGG" | "PAASLAGSPENSJON" | "SAERALDER" | "UFORE" | "UKJENT";
+            ytelseType: "AFP" | "ALDER" | "BARN" | "BETINGET_TP" | "GJENLEVENDE" | "LIVSVARIG_AFP" | "OPPSATT_BTO_PEN" | "OVERGANGSTILLEGG" | "PAASLAGSPENSJON" | "SAERALDER" | "SAERALDERSPAASLAG" | "TIDLIGPENSJON" | "TIDLIGPEN_OVERGANG" | "UFORE" | "UKJENT";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.delvurdering.samordning.uf\u00F8revurdering.SamordningUf\u00F8reVurderingDto": {
             begrunnelse: string;
