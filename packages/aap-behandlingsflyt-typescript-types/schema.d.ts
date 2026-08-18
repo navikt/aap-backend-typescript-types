@@ -7582,10 +7582,16 @@ export interface components {
             begrunnelse: string;
             /** @enum {string|null} */
             brukersYtelse?: "FERIE_I_SYKEPENGEPERIODE" | "FORELDREPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "SYKEPENGER" | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            brukersYtelseTom?: string | null;
             harAnnenFullYtelse: boolean;
-            harSykepengegrunnlagOver2G?: boolean | null;
+            harArbeidsgiverSykepengerUtbetaling?: boolean | null;
             referanse: string;
             "skalAvsl\u00E5s1127"?: boolean | null;
+            sykepengegrunnlag?: components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
             vurderingerMeta?: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.vurdering.VurderingerMetaResponse"];
         };
         "no.nav.aap.behandlingsflyt.behandling.grunnlag.samordning.AndreStatligeYtelserPeriodeDto": {
@@ -9177,10 +9183,16 @@ export interface components {
             begrunnelse: string;
             /** @enum {string|null} */
             brukersYtelse?: "FERIE_I_SYKEPENGEPERIODE" | "FORELDREPENGER" | "OMSORGSPENGER" | "OPPLÆRINGSPENGER" | "PLEIEPENGER" | "SVANGERSKAPSPENGER" | "SYKEPENGER" | null;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            brukersYtelseTom?: string | null;
             harAnnenFullYtelse: boolean;
-            harSykepengegrunnlagOver2G?: boolean | null;
+            harArbeidsgiverSykepengerUtbetaling?: boolean | null;
             referanse: string;
             "skalAvsl\u00E5s1127"?: boolean | null;
+            sykepengegrunnlag?: components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.avslag11_27.flate.Avslag11_27VurderingerDto": {
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.avslag11_27.flate.Avslag11_27VurderingDto"][];
