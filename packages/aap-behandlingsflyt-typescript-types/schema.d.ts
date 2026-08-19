@@ -7393,7 +7393,7 @@ export interface components {
             ytterligereNedsattArbeidsevneDato?: string | null;
             ytterligereNedsattBegrunnelse?: string | null;
             /** @enum {string|null} */
-            "ytterligereNedsatt\u00C5rsak"?: "ANNET" | "IKKE_BETYDNING_IKKE_RELEVANT" | "UFØRETIDSPUNKT" | "YTTERLIGERE_NEDSATT" | "ØKT_UFØREGRAD" | null;
+            "ytterligereNedsatt\u00C5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "IKKE_BETYDNING_IKKE_RELEVANT" | "KRAVDATO" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | "YTTERLIGERE_NEDSATT" | "ØKT_UFØREGRAD" | null;
             /** @enum {string|null} */
             "\u00E5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "KRAVDATO" | "SEKSTEN_ÅR_SOM_BEREGNINGSTIDSPUNKT" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | null;
         };
@@ -9256,7 +9256,7 @@ export interface components {
             ytterligereNedsattArbeidsevneDato?: string | null;
             ytterligereNedsattBegrunnelse?: string | null;
             /** @enum {string|null} */
-            "ytterligereNedsatt\u00C5rsak"?: "ANNET" | "IKKE_BETYDNING_IKKE_RELEVANT" | "UFØRETIDSPUNKT" | "YTTERLIGERE_NEDSATT" | "ØKT_UFØREGRAD" | null;
+            "ytterligereNedsatt\u00C5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "IKKE_BETYDNING_IKKE_RELEVANT" | "KRAVDATO" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | "YTTERLIGERE_NEDSATT" | "ØKT_UFØREGRAD" | null;
             /** @enum {string|null} */
             "\u00E5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "KRAVDATO" | "SEKSTEN_ÅR_SOM_BEREGNINGSTIDSPUNKT" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | null;
         };
