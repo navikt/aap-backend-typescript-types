@@ -6760,6 +6760,8 @@ export interface components {
             vurdering: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.trekkklage.flate.TrekkKlageVurderingDto"];
         };
         "no.nav.aap.behandlingsflyt.behandling.avklaringsbehov.l\u00F8sning.TrekkS\u00F8knadL\u00F8sning": {
+            /** @enum {string|null} */
+            aarsak?: "ANNET" | "BRUKER_ONSKER_IKKE_SOKE_LENGER" | "BRUKER_SOKTE_FEIL_YTELSE" | "BRUKER_SOKTE_FOR_TIDLIG" | null;
             begrunnelse: string;
             /** @enum {string} */
             behovstype: "4101" | "4102" | "4201" | "4301" | "5001" | "5002" | "5003" | "5004" | "5005" | "5006" | "5007" | "5008" | "5009" | "5010" | "5011" | "5012" | "5013" | "5014" | "5015" | "5016" | "5017" | "5018" | "5019" | "5020" | "5021" | "5022" | "5023" | "5024" | "5025" | "5026" | "5027" | "5028" | "5029" | "5030" | "5031" | "5032" | "5033" | "5034" | "5035" | "5036" | "5037" | "5038" | "5039" | "5040" | "5041" | "5042" | "5050" | "5051" | "5052" | "5053" | "5054" | "5056" | "5057" | "5058" | "5059" | "5060" | "5096" | "5097" | "5098" | "5099" | "5999" | "6000" | "6001" | "6002" | "6003" | "6004" | "6005" | "6006" | "6007" | "6008" | "6009" | "6010" | "7001" | "8001" | "8002" | "8003" | "8004" | "9001" | "9002" | "9003" | "9004" | "9082" | "9083";
@@ -8401,6 +8403,8 @@ export interface components {
             vurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.s\u00F8knad.TrukketS\u00F8knadVurderingDto"][];
         };
         "no.nav.aap.behandlingsflyt.behandling.s\u00F8knad.TrukketS\u00F8knadVurderingDto": {
+            /** @enum {string|null} */
+            aarsak?: "ANNET" | "BRUKER_ONSKER_IKKE_SOKE_LENGER" | "BRUKER_SOKTE_FEIL_YTELSE" | "BRUKER_SOKTE_FOR_TIDLIG" | null;
             begrunnelse: string;
             journalpostId: string;
             skalTrekkes: boolean;
