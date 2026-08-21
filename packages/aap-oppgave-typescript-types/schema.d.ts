@@ -1581,6 +1581,7 @@ export interface components {
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             /** @enum {string} */
             status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
+            "uf\u00F8reVedtak"?: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.hendelse.Uf\u00F8revedtakDto"];
             versjon: string;
             vurderingsbehov: string[];
             /** @enum {string} */
@@ -1649,6 +1650,15 @@ export interface components {
             /** @enum {string|null} */
             venteGrunn?: "AVVENTER_BRUKERUTTALELSE" | null;
         };
+        "no.nav.aap.behandlingsflyt.kontrakt.hendelse.Uf\u00F8revedtakDto": {
+            /** @enum {string} */
+            resultat: "AVSLAG" | "ENDRET" | "INNVILGELSE" | "OPPHØR";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            virkningsdato: string;
+        };
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.\u00C5rsakTilRetur": {
             /** @enum {string} */
             "\u00E5rsak": "ANNET" | "FEIL_LOVANVENDELSE" | "FOR_DETALJERT" | "IKKE_INDIVIDUELL_OG_KONKRET" | "MANGELFULL_BEGRUNNELSE" | "MANGLENDE_JOURNALFØRING" | "MANGLENDE_KILDEHENVISNING" | "MANGLENDE_UTREDNING" | "SKRIVEFEIL";
@@ -1688,6 +1698,8 @@ export interface components {
              * @example 2025-04-01T12:30:00
              */
             "planlagtKj\u00F8retidspunkt": string;
+            /** Format: int32 */
+            prioritet?: number | null;
             /** @enum {string} */
             status: "AVBRUTT" | "FEILET" | "FERDIG" | "KLAR" | "PLUKKET";
             tilleggsinfo?: components["schemas"]["no.nav.aap.motor.JobbTilleggsinfo"];
