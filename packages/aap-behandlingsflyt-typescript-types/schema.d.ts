@@ -4652,7 +4652,7 @@ export interface paths {
             };
             requestBody?: {
                 content: {
-                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.p\u00E5minnelse.KandidatForP\u00E5minnelseRequest"];
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.dokumentinnhenting.p\u00E5minnelse.KandidatForP\u00E5minnelseRequest"];
                 };
             };
             responses: {
@@ -9878,6 +9878,13 @@ export interface components {
         };
         /** Format: uuid */
         "no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse": string;
+        "no.nav.aap.behandlingsflyt.kontrakt.dokumentinnhenting.p\u00E5minnelse.KandidatForP\u00E5minnelseRequest": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            bestillingOpprettetDato: string;
+        };
         /** Format: uuid */
         "no.nav.aap.behandlingsflyt.kontrakt.hendelse.AvvistLegeerkl\u00E6ringId": string;
         /** Format: uuid */
@@ -10363,13 +10370,6 @@ export interface components {
         "no.nav.aap.behandlingsflyt.pip.IdenterDTO": {
             barn: string[];
             "s\u00F8ker": string[];
-        };
-        "no.nav.aap.behandlingsflyt.p\u00E5minnelse.KandidatForP\u00E5minnelseRequest": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            bestillingOpprettetDato: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.Ident": {
             aktivIdent: boolean;
