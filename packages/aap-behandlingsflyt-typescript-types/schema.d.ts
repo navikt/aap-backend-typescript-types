@@ -4643,7 +4643,30 @@ export interface paths {
             };
         };
         put?: never;
-        post?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.p\u00E5minnelse.KandidatForP\u00E5minnelseRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"][];
+                    };
+                };
+            };
+        };
         delete?: never;
         options?: never;
         head?: never;
@@ -10336,6 +10359,13 @@ export interface components {
         "no.nav.aap.behandlingsflyt.pip.IdenterDTO": {
             barn: string[];
             "s\u00F8ker": string[];
+        };
+        "no.nav.aap.behandlingsflyt.p\u00E5minnelse.KandidatForP\u00E5minnelseRequest": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            bestillingOpprettetDato: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.Ident": {
             aktivIdent: boolean;
