@@ -9153,6 +9153,10 @@ export interface components {
             varMedlemMedNedsattArbeidsevne?: boolean | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.lovvalgmedlemskap.PeriodisertManuellVurderingForLovvalgMedlemskapDto": {
+            /**
+             * @deprecated
+             * @description Bruk begrunnelse i lovvag/medlemskap istedet
+             */
             begrunnelse: string;
             /**
              * Format: date
