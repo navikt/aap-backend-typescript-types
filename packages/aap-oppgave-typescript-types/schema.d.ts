@@ -1577,7 +1577,15 @@ export interface components {
             personIdent: string;
             referanse: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.behandling.BehandlingReferanse"];
             "relevanteIdenterP\u00E5Behandling"?: string[] | null;
+            /**
+             * @deprecated
+             * @description Kan fjernes når oppgave har byttet til å bruke reserverTilPerAvklaringsbehov
+             */
             reserverTil?: string | null;
+            /** @description Key type: kotlin.String */
+            reserverTilPerAvklaringsbehov?: {
+                [key: string]: string;
+            } | null;
             saksnummer: components["schemas"]["no.nav.aap.behandlingsflyt.kontrakt.sak.Saksnummer"];
             /** @enum {string} */
             status: "AVSLUTTET" | "IVERKSETTES" | "OPPRETTET" | "UTREDES";
