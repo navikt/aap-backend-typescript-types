@@ -9405,6 +9405,7 @@ export interface components {
             verdi: string;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.OverstyrMuligRettFra": {
+            begrunnelse: string;
             /**
              * Format: date
              * @example 2025-04-01
@@ -9424,6 +9425,7 @@ export interface components {
             kravType: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato": {
+            begrunnelse: string;
             /**
              * Format: date
              * @example 2025-04-01
