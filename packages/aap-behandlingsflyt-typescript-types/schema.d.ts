@@ -7418,7 +7418,7 @@ export interface components {
             /** @enum {string|null} */
             "ytterligereNedsatt\u00C5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "IKKE_BETYDNING_IKKE_RELEVANT" | "KRAVDATO" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | "YTTERLIGERE_NEDSATT" | "ØKT_UFØREGRAD" | null;
             /** @enum {string|null} */
-            "\u00E5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "KRAVDATO" | "SEKSTEN_ÅR_SOM_BEREGNINGSTIDSPUNKT" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | null;
+            "\u00E5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "KRAVDATO" | "SYKEMELDINGSDATO" | null;
         };
         "no.nav.aap.behandlingsflyt.behandling.beregning.tidspunkt.YrkesskadeBel\u00F8pVurderingResponse": {
             "antatt\u00C5rligInntekt": components["schemas"]["no.nav.aap.komponenter.verdityper.Bel\u00F8p"];
@@ -9306,7 +9306,7 @@ export interface components {
             /** @enum {string|null} */
             "ytterligereNedsatt\u00C5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "IKKE_BETYDNING_IKKE_RELEVANT" | "KRAVDATO" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | "YTTERLIGERE_NEDSATT" | "ØKT_UFØREGRAD" | null;
             /** @enum {string|null} */
-            "\u00E5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "KRAVDATO" | "SEKSTEN_ÅR_SOM_BEREGNINGSTIDSPUNKT" | "SYKEMELDINGSDATO" | "UFØRETIDSPUNKT" | null;
+            "\u00E5rsak"?: "ANNET" | "DATO_PAA_LEGEERKLÆRING" | "HENVIST_TIL_BEHANDLING" | "KRAVDATO" | "SYKEMELDINGSDATO" | null;
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.beregning.InntektsbortfallVurderingDto": {
             begrunnelse: string;
