@@ -464,44 +464,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/behandling/{referanse}/endre-tema": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path: {
-                    /** @description referanse */
-                    referanse: string;
-                };
-                cookie?: never;
-            };
-            requestBody?: never;
-            responses: {
-                /** @description OK */
-                200: {
-                    headers: {
-                        [name: string]: unknown;
-                    };
-                    content: {
-                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.faktagrunnlag.tema.EndreTemaResponse"];
-                    };
-                };
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
     "/api/behandling/{referanse}/grunnlag/finnSak": {
         parameters: {
             query?: never;
@@ -1439,9 +1401,6 @@ export interface components {
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.tema.AvklarTemaVurderingDto": {
             skalTilAap: boolean;
-        };
-        "no.nav.aap.postmottak.api.faktagrunnlag.tema.EndreTemaResponse": {
-            redirectUrl: string;
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.tema.JournalpostMetadata": {
             brevkode?: string | null;
