@@ -9423,7 +9423,7 @@ export interface components {
              */
             dato: string;
             /** @enum {string} */
-            "\u00E5rsak": "IkkeIStandTilÅSøkeTidligere" | "MisvisendeOpplysninger";
+            "\u00E5rsak": "IkkeIStandTilÅSøkeTidligere" | "MisvisendeOpplysninger" | "Ukjent";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.RelevantKravL\u00F8sningDto": {
             begrunnelse: string;
