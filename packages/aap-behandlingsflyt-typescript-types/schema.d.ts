@@ -149,7 +149,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SaksinfoDTO"][];
+                        "application/json": components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SaksInfoTilPostmottak"][];
                     };
                 };
             };
@@ -10529,6 +10529,13 @@ export interface components {
             navn: string;
             /** Format: uuid */
             personReferanse: string;
+        };
+        "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SaksInfoTilPostmottak": {
+            "finnes\u00C5penBehandling": boolean;
+            periode: components["schemas"]["no.nav.aap.komponenter.type.Periode"];
+            /** @enum {string|null} */
+            resultat?: "AVBRUTT" | "AVSLAG" | "INNVILGET" | "KLAGE_AVSLÅTT" | "KLAGE_DELVIS_OMGJØRES" | "KLAGE_OMGJØRES" | "KLAGE_OPPRETTHOLDES" | "KLAGE_TRUKKET" | "TRUKKET" | null;
+            saksnummer: string;
         };
         "no.nav.aap.behandlingsflyt.sakogbehandling.sak.flate.SaksinfoDTO": {
             ident: string;
