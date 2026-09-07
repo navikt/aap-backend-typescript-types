@@ -6086,7 +6086,7 @@ export interface components {
         };
         "no.nav.aap.behandlingsflyt.KravVurderingTestDto": {
             /** @enum {string} */
-            kravType: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            kravType: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             /**
              * Format: date
              * @example 2025-04-01
@@ -7985,7 +7985,7 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             /** @enum {string} */
-            type: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            type: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
@@ -7996,7 +7996,37 @@ export interface components {
             "s\u00F8knaderUtenKravvurdering": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.S\u00F8knadUtenKravDto"][];
             vedtatteVurderinger: components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto"][];
         };
-        "no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KlageDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.RelevantKravDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.TilleggsopplysningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.TrukketS\u00F8knadDto"];
+        "no.nav.aap.behandlingsflyt.behandling.krav.KravVurderingDto": components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.KlageDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.MigrertKravDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.RelevantKravDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.TilleggsopplysningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.behandling.krav.TrukketS\u00F8knadDto"];
+        "no.nav.aap.behandlingsflyt.behandling.krav.MigrertKravDto": {
+            arenaSaksnummer: string;
+            begrunnelse: string;
+            journalpostId?: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            muligRettFra: string;
+            /**
+             * Format: date-time
+             * @example 2025-04-01T10:30:00Z
+             */
+            opprettet: string;
+            /** Format: uuid */
+            referanse: string;
+            /** Format: int32 */
+            "resterendeKvoteOrdin\u00E6r": number;
+            /** @enum {string} */
+            rettighetstype: "ORDINÆR" | "SP_ERSTATNING_11_13" | "UNNTAK_11_12_ÅR_4" | "UNNTAK_11_12_ÅR_5";
+            /** @enum {string} */
+            type: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            virkningstidspunktArena: string;
+            vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
+            vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
+        };
         "no.nav.aap.behandlingsflyt.behandling.krav.RelevantKravDto": {
             begrunnelse: string;
             journalpostId: components["schemas"]["no.nav.aap.verdityper.dokument.JournalpostId"];
@@ -8015,7 +8045,7 @@ export interface components {
             referanse: string;
             "s\u00F8knadsdato": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato"];
             /** @enum {string} */
-            type: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            type: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
@@ -8038,7 +8068,7 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             /** @enum {string} */
-            type: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            type: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
@@ -8053,7 +8083,7 @@ export interface components {
             /** Format: uuid */
             referanse: string;
             /** @enum {string} */
-            type: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            type: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
             vurdertAv: components["schemas"]["no.nav.aap.komponenter.verdityper.Bruker"];
             vurdertIBehandling: components["schemas"]["no.nav.aap.behandlingsflyt.sakogbehandling.behandling.BehandlingId"];
         };
@@ -9403,12 +9433,34 @@ export interface components {
             /** Format: uuid */
             referanse?: string | null;
             /** @enum {string} */
-            kravType: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            kravType: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.KravVurderingL\u00F8sningDto": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.KlageKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.RelevantKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.TilleggsopplysningKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.TrukketS\u00F8knadKravL\u00F8sningDto"];
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.KravVurderingL\u00F8sningDto": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.KlageKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.MigrertKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.RelevantKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.TilleggsopplysningKravL\u00F8sningDto"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.TrukketS\u00F8knadKravL\u00F8sningDto"];
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.Kravreferanse": {
             /** Format: uuid */
             verdi: string;
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.MigrertKravL\u00F8sningDto": {
+            arenaSaksnummer: string;
+            begrunnelse: string;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            muligRettFra: string;
+            /** Format: uuid */
+            referanse?: string | null;
+            /** Format: int32 */
+            "resterendeKvoteOrdin\u00E6r": number;
+            /** @enum {string} */
+            rettighetstype: "ORDINÆR" | "SP_ERSTATNING_11_13" | "UNNTAK_11_12_ÅR_4" | "UNNTAK_11_12_ÅR_5";
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            virkningstidspunktArena: string;
+            /** @enum {string} */
+            kravType: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.OverstyrMuligRettFra": {
             begrunnelse: string;
@@ -9428,7 +9480,7 @@ export interface components {
             referanse?: string | null;
             "s\u00F8knadsdato": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato"];
             /** @enum {string} */
-            kravType: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            kravType: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.S\u00F8knadsdato": {
             begrunnelse: string;
@@ -9446,7 +9498,7 @@ export interface components {
             /** Format: uuid */
             referanse?: string | null;
             /** @enum {string} */
-            kravType: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            kravType: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.krav.TrukketS\u00F8knadKravL\u00F8sningDto": {
             begrunnelse: string;
@@ -9454,7 +9506,7 @@ export interface components {
             /** Format: uuid */
             referanse?: string | null;
             /** @enum {string} */
-            kravType: "KLAGE" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
+            kravType: "KLAGE" | "MIGRERT_KRAV" | "RELEVANT_KRAV" | "TILLEGGSOPPLYSNING" | "TRUKKET_SØKNAD";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.meldeplikt.OverstyringMeldepliktVurderingPeriode": {
             begrunnelse: string;
@@ -9600,23 +9652,27 @@ export interface components {
             begrunnelse: string;
             perioder: components["schemas"]["no.nav.aap.komponenter.type.Periode"][];
         };
-        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.AVSLAG"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.GJENINNTREDEN_ETTER_OPPH\u00D8R"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.GJENOPPTAK_ETTER_STANS"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.NY_ST\u00D8NADSPERIODE"];
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType": components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.AVSLAG"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.GJENINNTREDEN_ETTER_OPPH\u00D8R"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.GJENOPPTAK_ETTER_STANS"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.MIGRERT_ST\u00D8NADSPERIODE"] | components["schemas"]["no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.NY_ST\u00D8NADSPERIODE"];
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.AVSLAG": {
             /** @enum {string} */
-            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "NY_STØNADSPERIODE";
+            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "MIGRERT_STØNADSPERIODE" | "NY_STØNADSPERIODE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.GJENINNTREDEN_ETTER_OPPH\u00D8R": {
             /** @enum {string} */
-            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "NY_STØNADSPERIODE";
+            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "MIGRERT_STØNADSPERIODE" | "NY_STØNADSPERIODE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.GJENOPPTAK_ETTER_STANS": {
             gjennopptakEtter: ("ANNEN_FULL_YTELSE" | "ANNEN_FULL_YTELSE_AVSLAG" | "BRUDD_PÅ_AKTIVITETSPLIKT_OPPHØR" | "BRUDD_PÅ_AKTIVITETSPLIKT_STANS" | "BRUDD_PÅ_OPPHOLDSKRAV_OPPHØR" | "BRUDD_PÅ_OPPHOLDSKRAV_STANS" | "BRUKER_OVER_67" | "BRUKER_UNDER_18" | "HAR_RETT_TIL_FULLT_UTTAK_ALDERSPENSJON" | "IKKE_BEHOV_FOR_OPPFOLGING" | "IKKE_MEDLEM" | "IKKE_MEDLEM_FORUTGÅENDE" | "IKKE_NOK_REDUSERT_ARBEIDSEVNE" | "IKKE_OPPFYLT_OPPHOLDSKRAV_EØS" | "IKKE_RETT_PA_AAP_I_PERIODE_SOM_ARBEIDSSOKER" | "IKKE_RETT_PA_AAP_UNDER_BEHANDLING_AV_UFORE" | "IKKE_RETT_PA_STUDENT" | "IKKE_RETT_PA_SYKEPENGEERSTATNING" | "IKKE_RETT_UNDER_STRAFFEGJENNOMFØRING" | "IKKE_SYKDOM_AV_VISS_VARIGHET" | "IKKE_SYKDOM_SKADE_LYTE" | "IKKE_SYKDOM_SKADE_LYTE_VESENTLIGDEL" | "INNTEKTSTAP_DEKKES_ETTER_ANNEN_LOVGIVNING" | "MANGLENDE_DOKUMENTASJON" | "NORGE_IKKE_KOMPETENT_STAT" | "ORDINÆRKVOTE_BRUKT_OPP" | "SYKEPENGEERSTATNINGKVOTE_BRUKT_OPP" | "VARIGHET_OVERSKREDET_ARBEIDSSØKER" | "VARIGHET_OVERSKREDET_OVERGANG_UFORE" | "VARIGHET_OVERSKREDET_STUDENT")[];
             /** @enum {string} */
-            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "NY_STØNADSPERIODE";
+            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "MIGRERT_STØNADSPERIODE" | "NY_STØNADSPERIODE";
+        };
+        "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.MIGRERT_ST\u00D8NADSPERIODE": {
+            /** @enum {string} */
+            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "MIGRERT_STØNADSPERIODE" | "NY_STØNADSPERIODE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.RelevantKravType.NY_ST\u00D8NADSPERIODE": {
             /** @enum {string} */
-            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "NY_STØNADSPERIODE";
+            type: "AVSLAG" | "GJENINNTREDEN_ETTER_OPPHØR" | "GJENOPPTAK_ETTER_STANS" | "MIGRERT_STØNADSPERIODE" | "NY_STØNADSPERIODE";
         };
         "no.nav.aap.behandlingsflyt.faktagrunnlag.saksbehandler.st\u00F8nadsperiode.StansEllerOpph\u00F8rDto": {
             /** @enum {string} */
