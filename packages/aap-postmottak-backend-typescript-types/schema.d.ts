@@ -1154,6 +1154,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/drift/person/journalposter/s\u00F8k": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.postmottak.api.drift.IdentDto"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["no.nav.aap.postmottak.api.drift.PersonS\u00F8kDriftsinfoDto"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/drift/journalpost/{referanse}/info": {
         parameters: {
             query?: never;
@@ -1295,6 +1334,20 @@ export interface components {
             /** @enum {string|null} */
             "\u00E5rsakTilSettP\u00E5Vent"?: "VENTER_PÅ_BEHANDLING_I_GOSYS" | "VENTER_PÅ_MEDISINSKE_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER" | "VENTER_PÅ_OPPLYSNINGER_FRA_UTENLANDSKE_MYNDIGHETER" | "VENTER_PÅ_SVAR_FRA_BRUKER" | "VENTER_PÅ_VURDERING_AV_ROL" | null;
         };
+        "no.nav.aap.postmottak.api.drift.IdentDto": {
+            ident: string;
+        };
+        "no.nav.aap.postmottak.api.drift.InnkommendeJournalpostDto": {
+            behandlingstema?: string | null;
+            brevkode?: string | null;
+            enhet?: string | null;
+            journalpostId: components["schemas"]["no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId"];
+            regelresultat?: components["schemas"]["no.nav.aap.fordeler.Regelresultat"];
+            /** @enum {string} */
+            status: "EVALUERT" | "GOSYS_FDR" | "GOSYS_JFR" | "IGNORERT" | "VIDERESENDT_TIL_ARENA" | "VIDERSENDT_TIL_KELVIN";
+            /** @enum {string|null} */
+            "\u00E5rsakTilStatus"?: "ALLEREDE_JOURNALFØRT" | "MANGLER_IDENT" | "ORGNR" | "UTGÅTT" | null;
+        };
         "no.nav.aap.postmottak.api.drift.JournalpostDriftsinfoDto": {
             behandlinger: components["schemas"]["no.nav.aap.postmottak.api.drift.BehandlingDriftsinfo"][];
             brevkode?: string | null;
@@ -1312,6 +1365,9 @@ export interface components {
             mottattDato?: string | null;
             saksnummer?: string | null;
             tema?: string | null;
+        };
+        "no.nav.aap.postmottak.api.drift.PersonS\u00F8kDriftsinfoDto": {
+            journalposter: components["schemas"]["no.nav.aap.postmottak.api.drift.InnkommendeJournalpostDto"][];
         };
         "no.nav.aap.postmottak.api.faktagrunnlag.dokument.DokumentDto": {
             dokumentInfoId: string;
@@ -1627,6 +1683,8 @@ export interface components {
             type: "MANUELT_FRIVILLIG" | "MANUELT_PÅKREVD" | "VENTEPUNKT";
             name: string;
         };
+        /** Format: int64 */
+        "no.nav.aap.postmottak.kontrakt.journalpost.JournalpostId": number;
     };
     responses: never;
     parameters: never;
