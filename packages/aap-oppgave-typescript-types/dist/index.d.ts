@@ -773,6 +773,43 @@ interface paths {
     patch?: never;
     trace?: never;
   };
+  "/fjern-uførevedtak-ikon": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get?: never;
+    put?: never;
+    post: {
+      parameters: {
+        query?: never;
+        header?: never;
+        path?: never;
+        cookie?: never;
+      };
+      requestBody?: {
+        content: {
+          "application/json": components["schemas"]["no.nav.aap.oppgave.uføreVedtak.UføreVedtak"];
+        };
+      };
+      responses: {
+        /** @description OK */
+        200: {
+          headers: {
+            [name: string]: unknown;
+          };
+          content?: never;
+        };
+      };
+    };
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   "/mine-siste-oppgaver": {
     parameters: {
       query?: never;
@@ -1754,6 +1791,17 @@ interface components {
       tilbakekrevings_URL: string;
       "tilbakekrevings_beløp": number;
     };
+    "no.nav.aap.oppgave.UførevedtakRespons": {
+      /** Format: uuid */
+      referanse: string;
+      /** @enum {string} */
+      resultat: "AVSLAG" | "ENDRET" | "INNVILGELSE" | "OPPHØR";
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      virkningsdato: string;
+    };
     "no.nav.aap.oppgave.drift.AvklaringsbehovDto": {
       kode: string;
       navn: string;
@@ -1933,6 +1981,7 @@ interface components {
       returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjonDto"];
       saksnummer?: string | null;
       skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoResponse"];
+      "uførevedtakinfo"?: components["schemas"]["no.nav.aap.oppgave.UførevedtakRespons"];
       "utløptVenteInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
       /** Format: int64 */
       versjon: number;
@@ -2022,6 +2071,7 @@ interface components {
       "påVentInfo"?: components["schemas"]["no.nav.aap.oppgave.hent.VenteInformasjonResponse"];
       returInformasjon?: components["schemas"]["no.nav.aap.oppgave.ReturInformasjonDto"];
       skjermingInfo: components["schemas"]["no.nav.aap.oppgave.hent.SkjermingInfoResponse"];
+      "uføreVedtak"?: components["schemas"]["no.nav.aap.oppgave.UførevedtakRespons"];
     };
     "no.nav.aap.oppgave.liste.Paging": {
       /** Format: int32 */
@@ -2151,6 +2201,17 @@ interface components {
       erTildeltInnloggetBruker: boolean;
       tildeltSaksbehandlerIdent?: string | null;
       tildeltSaksbehandlerNavn?: string | null;
+    };
+    "no.nav.aap.oppgave.uføreVedtak.UføreVedtak": {
+      /** Format: uuid */
+      referanse: string;
+      /** @enum {string} */
+      status: "AVSLAG" | "ENDRET" | "INNVILGELSE" | "OPPHØR";
+      /**
+       * Format: date
+       * @example 2025-04-01
+       */
+      virkningsdato: string;
     };
     "no.nav.aap.postmottak.kontrakt.avklaringsbehov.Definisjon": {
       /** @enum {string} */
