@@ -25,15 +25,5 @@ jobs:
         run: yarn install --immutable
       - name: Generer schemas (uten enums)
         run: |
-          for pkg in aap-behandlingsflyt aap-brev aap-postmottak-backend; do
-            yarn openapi-typescript ./packages/${pkg}-typescript-types/openapi.json \
-              -o ./packages/${pkg}-typescript-types/schema.d.ts
-          done
-      - name: Generer schemas (med enums)
-        run: |
-          for pkg in aap-oppgave aap-statistikk; do
-            yarn openapi-typescript ./packages/${pkg}-typescript-types/openapi.json \
-              -o ./packages/${pkg}-typescript-types/schema.ts --enum
-          done
-      - name: Bygg
-        run: yarn run build
+            yarn openapi-typescript ./packages/aap-brev-typescript-types/openapi.json \
+              -o ./packages/aap-brev-typescript-types/schema.d.ts
