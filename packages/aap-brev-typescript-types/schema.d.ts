@@ -1197,6 +1197,7 @@ export interface components {
             faktagrunnlag: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag"][];
             ferdigstillAutomatisk: boolean;
             saksnummer: string;
+            signaturer: components["schemas"]["no.nav.aap.brev.kontrakt.SignaturGrunnlag"][];
             /** @enum {string} */
             sprak: "EN" | "NB" | "NN";
             unikReferanse: string;
