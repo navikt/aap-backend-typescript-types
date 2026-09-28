@@ -1156,6 +1156,7 @@ export interface components {
             brevtype: string;
             /** Format: int64 */
             id: number;
+            journalpostId?: string | null;
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
