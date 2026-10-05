@@ -1261,6 +1261,8 @@ export interface components {
             status: "AVBRUTT" | "FERDIGSTILT" | "UNDER_ARBEID";
         };
         "no.nav.aap.brev.kontrakt.BrevdataDto": {
+            automatiskValgteDelmalIder: string[];
+            automatiskValgteValg: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Valg"][];
             betingetTekst: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.BetingetTekst"][];
             delmaler: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Delmal"][];
             fritekster: components["schemas"]["no.nav.aap.brev.kontrakt.BrevdataDto.Fritekst"][];
