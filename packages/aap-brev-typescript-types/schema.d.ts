@@ -1336,6 +1336,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser": {
             fradragAndreYtelser: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.FradragYtelse"][];
             reduksjonArbeidsgiver: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.ReduksjonArbeidsgiver"][];
+            refusjonskravSosialkontor?: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.RefusjonskravSosialkontor"];
             refusjonskravTjenestepensjon?: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.RefusjonskravTjenestepensjon"];
             samordningAndreYtelser: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.SamordningYtelse"][];
             samordningBarnepensjon: components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.SamordningBarnepensjon"][];
@@ -1368,6 +1369,19 @@ export interface components {
              * @example 2025-04-01
              */
             tilOgMed: string;
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.RefusjonskravSosialkontor": {
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            fraOgMed?: string | null;
+            skalEtterbetalingHoldesIgjen: boolean;
+            /**
+             * Format: date
+             * @example 2025-04-01
+             */
+            tilOgMed?: string | null;
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser.RefusjonskravTjenestepensjon": {
             /**
