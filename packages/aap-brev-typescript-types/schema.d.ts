@@ -200,6 +200,46 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/bestilling/{referanse}/oppdater-mottakere": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.OppdaterMottakereRequest"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/bestilling/{referanse}/forhandsvis": {
         parameters: {
             query?: never;
@@ -667,6 +707,48 @@ export interface paths {
                     };
                     content: {
                         "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.KanDistribuereBrevReponse"];
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/{referanse}/v2/kan-distribuere-brev": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /** @description referanse */
+                    referanse: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: {
+                content: {
+                    "application/json": components["schemas"]["no.nav.aap.brev.kontrakt.KanDistribuereBrevV2Request"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": boolean;
                     };
                 };
             };
@@ -1243,6 +1325,8 @@ export interface components {
             brevmal?: string | null;
             /** @enum {string} */
             brevtype: "AVSLAG" | "AVSLAG_11_27" | "AVSLAG_11_5" | "AVSLAG_UNDER_17_AAR_9_MAANEDER" | "BARNETILLEGG_SATS_REGULERING" | "FORHÅNDSVARSEL_BRUDD_AKTIVITETSPLIKT" | "FORHÅNDSVARSEL_KLAGE_FORMKRAV" | "FORVALTNINGSMELDING" | "INNVILGELSE" | "KLAGE_AVVIST" | "KLAGE_MOTTATT" | "KLAGE_OPPRETTHOLDELSE" | "KLAGE_TRUKKET" | "OMGJØRING_VEDTAK_11_9" | "STANS_AV_YTELSE" | "VARSEL_OM_BESTILLING" | "VEDTAK_11_17" | "VEDTAK_11_18" | "VEDTAK_11_18_OPPHØR_DELVIS_UFØR" | "VEDTAK_11_18_OPPHØR_FULL_UFØR" | "VEDTAK_11_23_SJETTE_LEDD" | "VEDTAK_11_7" | "VEDTAK_11_9" | "VEDTAK_ENDRING" | "VEDTAK_ENDRING_DODSFALL" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_12" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_26" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_27" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_3" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_11_4" | "VEDTAK_FORLENGELSE_UNDER_ETT_ÅR_MEDLEMSKAP" | "VEDTAK_UTVID_VEDTAKSLENGDE";
+            kopimottaker?: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"];
+            mottaker?: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"];
             /**
              * Format: date-time
              * @example 2025-04-01T12:30:00
@@ -1578,6 +1662,10 @@ export interface components {
             type: "AAP_FOM_DATO" | "BARN_UTEN_BARNETILLEGG" | "DATO_AVKLART_FOR_JOBBSOK" | "DODSFALL" | "FORHOLD_TIL_ANDRE_YTELSER" | "FRIST_DATO_11_7" | "FRITAK_MELDEPLIKT" | "GRUNNLAG_ANDRE_YTELSER" | "GRUNNLAG_BEREGNING" | "INNVILGET_UFORETRYGD" | "KRAVDATO_UFORETRYGD" | "SISTE_DAG_MED_YTELSE" | "SYKDOMSVURDERING" | "TIDSPUNKT_VURDERING" | "TILKJENT_YTELSE" | "UTVIDET_AAP_FOM_DATO" | "YRKESSKADE_BEREGNING" | "YRKESSKADE_I_SOKNAD_IKKE_I_REGISTER";
         };
         "no.nav.aap.brev.kontrakt.FerdigstillBrevRequest": {
+            /**
+             * @deprecated
+             * @description Skal fjernes når vi er helt over på den nye brevbyggeren (v3)
+             */
             mottakere: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"][];
             /** Format: uuid */
             referanse: string;
@@ -1641,6 +1729,9 @@ export interface components {
             brukerIdent: string;
             mottakerIdentListe: string[];
         };
+        "no.nav.aap.brev.kontrakt.KanDistribuereBrevV2Request": {
+            mottakerId: string;
+        };
         "no.nav.aap.brev.kontrakt.MottakerDistStatus": {
             kanDistribuere: boolean;
             mottakerIdent: string;
@@ -1658,6 +1749,10 @@ export interface components {
         "no.nav.aap.brev.kontrakt.OppdaterBrevmalRequest": {
             /** Format: uuid */
             referanse: string;
+        };
+        "no.nav.aap.brev.kontrakt.OppdaterMottakereRequest": {
+            kopimottaker?: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"];
+            mottaker: components["schemas"]["no.nav.aap.brev.kontrakt.MottakerDto"];
         };
         "no.nav.aap.brev.kontrakt.Signatur": {
             enhet: string;
