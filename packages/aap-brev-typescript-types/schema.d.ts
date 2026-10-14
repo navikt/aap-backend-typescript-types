@@ -1176,7 +1176,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.brev.api.BrevbestillingDriftsinfoDto"][];
+                        "application/json": components["schemas"]["no.nav.aap.brev.drift.BrevbestillingDriftsinfoDto"][];
                     };
                 };
             };
@@ -1214,7 +1214,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["no.nav.aap.brev.api.BrevbestillingDriftsinfoDto"][];
+                        "application/json": components["schemas"]["no.nav.aap.brev.drift.BrevbestillingDriftsinfoDto"][];
                     };
                 };
             };
@@ -1232,7 +1232,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "java.time.Year": Record<string, never>;
-        "no.nav.aap.brev.api.BrevbestillingDriftsinfoDto": {
+        "no.nav.aap.brev.bestilling.SorterbarSignatur": {
+            enhet?: string | null;
+            navIdent: string;
+            /** @enum {string|null} */
+            rolle?: "BESLUTTER" | "KVALITETSSIKRER" | "SAKSBEHANDLER_NASJONAL" | "SAKSBEHANDLER_OPPFOLGING" | null;
+            /** Format: int32 */
+            "sorteringsn\u00F8kkel": number;
+        };
+        "no.nav.aap.brev.drift.BrevbestillingDriftsinfoDto": {
             behandlingReferanse: string;
             bestillingReferanse: string;
             brevtype: string;
@@ -1251,6 +1259,7 @@ export interface components {
             opprettet: string;
             /** @enum {string|null} */
             prosesseringStatus?: "AVBRUTT" | "BREVBESTILLING_LØST" | "BREV_FERDIGSTILT" | "DISTRIBUERT" | "FERDIG" | "JOURNALFORT" | "JOURNALPOST_FERDIGSTILT" | "JOURNALPOST_VEDLEGG_TILKNYTTET" | "STARTET" | null;
+            signaturer: components["schemas"]["no.nav.aap.brev.bestilling.SorterbarSignatur"][];
             "spr\u00E5k": string;
             /** @enum {string|null} */
             status?: "AVBRUTT" | "FERDIGSTILT" | "UNDER_ARBEID" | null;
