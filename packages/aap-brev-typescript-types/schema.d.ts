@@ -1385,7 +1385,7 @@ export interface components {
         "no.nav.aap.brev.kontrakt.EkspederBehandlerBestillingRequest": {
             journalpostId: string;
         };
-        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AarsakTidspunktVurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AvslagAarsak"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.DatoAvklartForJobbs\u00F8k"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.D\u00F8dsfall"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagAndreYtelser"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.InnvilgetUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.Klage"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.KravdatoUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.UtvidetAapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeIS\u00F8knadIkkeIRegister"];
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag": components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AarsakTidspunktVurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.AvslagAarsak"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.BarnUtenBarnetillegg"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.DatoAvklartForJobbs\u00F8k"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.D\u00F8dsfall"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.ForholdTilAndreYtelser"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FristDato11_7"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.FritakMeldepliktGrunnlag"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagAndreYtelser"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.GrunnlagBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.InnvilgetUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.KravdatoUf\u00F8retrygd"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.NavKontorKlagevurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.NayKlagevurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.Sykdomsvurdering"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.TilkjentYtelse"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.UtvidetAapFomDato"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeBeregning"] | components["schemas"]["no.nav.aap.brev.kontrakt.Faktagrunnlag.YrkesskadeIS\u00F8knadIkkeIRegister"];
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.AapFomDato": {
             /**
              * Format: date
@@ -1649,25 +1649,6 @@ export interface components {
              */
             type: "INNVILGET_UFORETRYGD";
         };
-        "no.nav.aap.brev.kontrakt.Faktagrunnlag.Klage": {
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            klagedato: string;
-            navKontorVurdering?: string | null;
-            nayVurdering?: string | null;
-            /**
-             * Format: date
-             * @example 2025-04-01
-             */
-            "p\u00E5klagetVedtaksdato": string;
-            /**
-             * @description discriminator enum property added by openapi-typescript
-             * @enum {string}
-             */
-            type: "KLAGE";
-        };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.KravdatoUf\u00F8retrygd": {
             /**
              * Format: date
@@ -1679,6 +1660,22 @@ export interface components {
              * @enum {string}
              */
             type: "KRAVDATO_UFORETRYGD";
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.NavKontorKlagevurdering": {
+            begrunnelse: string;
+            /**
+             * @description discriminator enum property added by openapi-typescript
+             * @enum {string}
+             */
+            type: "NAV_KONTOR_KLAGE_VURDERING";
+        };
+        "no.nav.aap.brev.kontrakt.Faktagrunnlag.NayKlagevurdering": {
+            begrunnelse: string;
+            /**
+             * @description discriminator enum property added by openapi-typescript
+             * @enum {string}
+             */
+            type: "NAY_KLAGE_VURDERING";
         };
         "no.nav.aap.brev.kontrakt.Faktagrunnlag.SisteDagMedYtelse": {
             /**
