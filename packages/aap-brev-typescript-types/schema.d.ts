@@ -1661,7 +1661,7 @@ export interface components {
              * Format: date
              * @example 2025-04-01
              */
-            "p\u00E5klagetVedtaksdato": string;
+            "p\u00E5klagetVedtaksdato"?: string | null;
             /**
              * @description discriminator enum property added by openapi-typescript
              * @enum {string}
